@@ -1,0 +1,293 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "mapAddr_A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "mapAddr_A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "mapAddr_A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "mapAddr_A[3]",
+					"strict" : false
+				},
+				{
+					"name" : "mapAddr_A[4]",
+					"strict" : false
+				},
+				{
+					"name" : "mapAddr_A[5]",
+					"strict" : false
+				},
+				{
+					"name" : "mapAddr_A[6]",
+					"strict" : false
+				},
+				{
+					"name" : "mapAddr_A[7]",
+					"strict" : false
+				},
+				{
+					"name" : "mapAddr_A[8]",
+					"strict" : false
+				},
+				{
+					"name" : "mapAddr_A[9]",
+					"strict" : false
+				},
+				{
+					"name" : "mapAddr_A[10]",
+					"strict" : false
+				},
+				{
+					"name" : "mapAddr_A[11]",
+					"strict" : false
+				},
+				{
+					"name" : "mapAddr_A[12]",
+					"strict" : false
+				},
+				{
+					"name" : "mapAddr_A[13]",
+					"strict" : false
+				},
+				{
+					"name" : "mapAddr_B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "mapAddr_B[1]",
+					"strict" : false
+				},
+				{
+					"name" : "mapAddr_B[2]",
+					"strict" : false
+				},
+				{
+					"name" : "mapAddr_B[3]",
+					"strict" : false
+				},
+				{
+					"name" : "mapAddr_B[4]",
+					"strict" : false
+				},
+				{
+					"name" : "mapAddr_B[5]",
+					"strict" : false
+				},
+				{
+					"name" : "mapAddr_B[6]",
+					"strict" : false
+				},
+				{
+					"name" : "mapAddr_B[7]",
+					"strict" : false
+				},
+				{
+					"name" : "mapAddr_B[8]",
+					"strict" : false
+				},
+				{
+					"name" : "mapAddr_B[9]",
+					"strict" : false
+				},
+				{
+					"name" : "mapAddr_B[10]",
+					"strict" : false
+				},
+				{
+					"name" : "mapAddr_B[11]",
+					"strict" : false
+				},
+				{
+					"name" : "mapAddr_B[12]",
+					"strict" : false
+				},
+				{
+					"name" : "mapAddr_B[13]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "mapInit[0]",
+					"strict" : false
+				},
+				{
+					"name" : "op",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "mapInit[1]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "mapInit[2]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_A[3]",
+					"strict" : false
+				},
+				{
+					"name" : "mapInit[3]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_A[4]",
+					"strict" : false
+				},
+				{
+					"name" : "mapInit[4]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_A[5]",
+					"strict" : false
+				},
+				{
+					"name" : "mapInit[5]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_A[6]",
+					"strict" : false
+				},
+				{
+					"name" : "mapInit[6]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_A[7]",
+					"strict" : false
+				},
+				{
+					"name" : "mapInit[7]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_A[8]",
+					"strict" : false
+				},
+				{
+					"name" : "mapInit[8]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_A[9]",
+					"strict" : false
+				},
+				{
+					"name" : "mapInit[9]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_A[10]",
+					"strict" : false
+				},
+				{
+					"name" : "mapInit[10]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_A[11]",
+					"strict" : false
+				},
+				{
+					"name" : "mapInit[11]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_A[12]",
+					"strict" : false
+				},
+				{
+					"name" : "mapInit[12]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_A[13]",
+					"strict" : false
+				},
+				{
+					"name" : "mapInit[13]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_B[1]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_B[2]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_B[3]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_B[4]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_B[5]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_B[6]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_B[7]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_B[8]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_B[9]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_B[10]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_B[11]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_B[12]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_B[13]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

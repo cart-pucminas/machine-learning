@@ -1,0 +1,18 @@
+Analysis & Synthesis Status : Successful - Mon Jun  4 10:42:09 2018
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Revision Name : Kmeans_MuxRamMemoryAddr
+Top-level Entity Name : Kmeans_MuxRamMemoryAddr
+Family : Cyclone IV GX
+Total logic elements : 115
+    Total combinational functions : 115
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 199
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0

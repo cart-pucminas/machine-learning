@@ -1,0 +1,64 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+Entity Kmeans_MuxNextState is
+	
+	GENERIC (NumBitsStates : INTEGER := 4);
+	
+    PORT ( 
+			nrst					 : in  STD_LOGIC;
+			idle		         	 : in  STD_LOGIC_VECTOR (NumBitsStates-1 downto 0);
+			memoryInitialize     	 : in  STD_LOGIC_VECTOR (NumBitsStates-1 downto 0);
+	        controlCentroidInitialize: in  STD_LOGIC_VECTOR (NumBitsStates-1 downto 0);
+			centroidInitialize       : in  STD_LOGIC_VECTOR (NumBitsStates-1 downto 0);
+			mapInitialize            : in  STD_LOGIC_VECTOR (NumBitsStates-1 downto 0);
+			calcMapModule            : in  STD_LOGIC_VECTOR (NumBitsStates-1 downto 0);
+			calcCentroidModule       : in  STD_LOGIC_VECTOR (NumBitsStates-1 downto 0);
+			iterationCount	         : in  STD_LOGIC_VECTOR (NumBitsStates-1 downto 0);
+			outputResult	         : in  STD_LOGIC_VECTOR (NumBitsStates-1 downto 0);
+			op					     : in  STD_LOGIC_VECTOR (NumBitsStates-1 downto 0);
+			next_State	             : out STD_LOGIC_VECTOR (NumBitsStates-1 downto 0)
+		);
+END Kmeans_MuxNextState;
+
+ARCHITECTURE arch of Kmeans_MuxNextState is
+
+BEGIN
+
+PROCESS (nrst)
+BEGIN
+	if nrst = '0' then
+       next_State <= "0001";
+	else
+	   case op is
+			when "0000" => next_State <= idle;
+			when "0001" => next_State <= memoryInitialize;
+			when "0010" => next_State <= controlCentroidInitialize;
+			when "0011" => next_State <= centroidInitialize;
+			when "0100" => next_State <= mapInitialize;
+			when "0101" => next_State <= calcMapModule;
+			when "0110" => next_State <= calcCentroidModule;
+			when "0111" => next_State <= iterationCount;
+			when "1000" => next_State <= outputResult;
+			when others => next_State <= (others => '0');
+	   end case;
+	   
+		
+	end if;
+END PROCESS;	
+
+
+	--resultado que recebe do controlador op que ira conduzir qual das entradas vai para a saida
+--	with op select
+--	
+--	next_State <=	idle			          when "0000",
+--					memoryInitialize          when "0001",
+--					controlCentroidInitialize when "0010",
+--					centroidInitialize 		  when "0011",
+--					mapInitialize 		 	  when "0100",
+--					calcMapModule 		 	  when "0101",
+--					calcCentroidModule	      when "0110",
+--					iterationCount	 		  when "0111",
+--					outputResult	 		  when "1000",
+--					(others => '0')           when others;
+END arch;

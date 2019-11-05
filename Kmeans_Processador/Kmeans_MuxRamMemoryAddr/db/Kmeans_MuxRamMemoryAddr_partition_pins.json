@@ -1,0 +1,749 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "ramAddr_A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ramAddr_A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ramAddr_A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ramAddr_A[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ramAddr_A[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ramAddr_A[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ramAddr_A[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ramAddr_A[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ramAddr_A[8]",
+					"strict" : false
+				},
+				{
+					"name" : "ramAddr_A[9]",
+					"strict" : false
+				},
+				{
+					"name" : "ramAddr_A[10]",
+					"strict" : false
+				},
+				{
+					"name" : "ramAddr_A[11]",
+					"strict" : false
+				},
+				{
+					"name" : "ramAddr_A[12]",
+					"strict" : false
+				},
+				{
+					"name" : "ramAddr_A[13]",
+					"strict" : false
+				},
+				{
+					"name" : "ramAddr_B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ramAddr_B[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ramAddr_B[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ramAddr_B[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ramAddr_B[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ramAddr_B[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ramAddr_B[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ramAddr_B[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ramAddr_B[8]",
+					"strict" : false
+				},
+				{
+					"name" : "ramAddr_B[9]",
+					"strict" : false
+				},
+				{
+					"name" : "ramAddr_B[10]",
+					"strict" : false
+				},
+				{
+					"name" : "ramAddr_B[11]",
+					"strict" : false
+				},
+				{
+					"name" : "ramAddr_B[12]",
+					"strict" : false
+				},
+				{
+					"name" : "ramAddr_B[13]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleKmodes_A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "op[1]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleFP_A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "op[0]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleKmodes_A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidControlInit[0]",
+					"strict" : false
+				},
+				{
+					"name" : "memInitAddr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleFP_A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "op[2]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleKmodes_A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleFP_A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleKmodes_A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidControlInit[1]",
+					"strict" : false
+				},
+				{
+					"name" : "memInitAddr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleFP_A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleKmodes_A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleFP_A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleKmodes_A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidControlInit[2]",
+					"strict" : false
+				},
+				{
+					"name" : "memInitAddr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleFP_A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleKmodes_A[3]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleFP_A[3]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_A[3]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleKmodes_A[3]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_A[3]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidControlInit[3]",
+					"strict" : false
+				},
+				{
+					"name" : "memInitAddr[3]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleFP_A[3]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleKmodes_A[4]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleFP_A[4]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_A[4]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleKmodes_A[4]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_A[4]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidControlInit[4]",
+					"strict" : false
+				},
+				{
+					"name" : "memInitAddr[4]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleFP_A[4]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleKmodes_A[5]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleFP_A[5]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_A[5]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleKmodes_A[5]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_A[5]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidControlInit[5]",
+					"strict" : false
+				},
+				{
+					"name" : "memInitAddr[5]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleFP_A[5]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleKmodes_A[6]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleFP_A[6]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_A[6]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleKmodes_A[6]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_A[6]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidControlInit[6]",
+					"strict" : false
+				},
+				{
+					"name" : "memInitAddr[6]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleFP_A[6]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleFP_A[7]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleKmodes_A[7]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_A[7]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleKmodes_A[7]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_A[7]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidControlInit[7]",
+					"strict" : false
+				},
+				{
+					"name" : "memInitAddr[7]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleFP_A[7]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleFP_A[8]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleKmodes_A[8]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_A[8]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleKmodes_A[8]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_A[8]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidControlInit[8]",
+					"strict" : false
+				},
+				{
+					"name" : "memInitAddr[8]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleFP_A[8]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleFP_A[9]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleKmodes_A[9]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_A[9]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleKmodes_A[9]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_A[9]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidControlInit[9]",
+					"strict" : false
+				},
+				{
+					"name" : "memInitAddr[9]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleFP_A[9]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleFP_A[10]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleKmodes_A[10]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_A[10]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleKmodes_A[10]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_A[10]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidControlInit[10]",
+					"strict" : false
+				},
+				{
+					"name" : "memInitAddr[10]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleFP_A[10]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleFP_A[11]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleKmodes_A[11]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_A[11]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleKmodes_A[11]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_A[11]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidControlInit[11]",
+					"strict" : false
+				},
+				{
+					"name" : "memInitAddr[11]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleFP_A[11]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleFP_A[12]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleKmodes_A[12]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_A[12]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleKmodes_A[12]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_A[12]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidControlInit[12]",
+					"strict" : false
+				},
+				{
+					"name" : "memInitAddr[12]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleFP_A[12]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleFP_A[13]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleKmodes_A[13]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_A[13]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleKmodes_A[13]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_A[13]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidControlInit[13]",
+					"strict" : false
+				},
+				{
+					"name" : "memInitAddr[13]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleFP_A[13]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleFP_B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidInit[0]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleFP_B[1]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_B[1]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidInit[1]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleFP_B[2]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_B[2]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidInit[2]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleFP_B[3]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_B[3]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidInit[3]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleFP_B[4]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_B[4]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidInit[4]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleFP_B[5]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_B[5]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidInit[5]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleFP_B[6]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_B[6]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidInit[6]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleFP_B[7]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_B[7]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidInit[7]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleFP_B[8]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_B[8]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidInit[8]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleFP_B[9]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_B[9]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidInit[9]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleFP_B[10]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_B[10]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidInit[10]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleFP_B[11]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_B[11]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidInit[11]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleFP_B[12]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_B[12]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidInit[12]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleFP_B[13]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_B[13]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidInit[13]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

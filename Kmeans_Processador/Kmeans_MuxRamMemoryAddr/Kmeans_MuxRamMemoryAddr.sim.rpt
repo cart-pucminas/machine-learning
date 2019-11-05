@@ -1,0 +1,797 @@
+Simulator report for Kmeans_MuxRamMemoryAddr
+Mon Oct 31 16:02:19 2016
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 354 nodes    ;
+; Simulation Coverage         ;      18.93 % ;
+; Total Number of Transitions ; 2725         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C35F672C6 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      18.93 % ;
+; Total nodes checked                                 ; 354          ;
+; Total output ports checked                          ; 354          ;
+; Total output ports with complete 1/0-value coverage ; 67           ;
+; Total output ports with no 1/0-value coverage       ; 282          ;
+; Total output ports with no 1-value coverage         ; 282          ;
+; Total output ports with no 0-value coverage         ; 287          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                       ;
++--------------------------------------------+---------------------------------------------------+------------------+
+; Node Name                                  ; Output Port Name                                  ; Output Port Type ;
++--------------------------------------------+---------------------------------------------------+------------------+
+; |Kmeans_MuxRamMemoryAddr|Mux31~0           ; |Kmeans_MuxRamMemoryAddr|Mux31~0                  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux31~1           ; |Kmeans_MuxRamMemoryAddr|Mux31~1                  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux30~0           ; |Kmeans_MuxRamMemoryAddr|Mux30~0                  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux30~1           ; |Kmeans_MuxRamMemoryAddr|Mux30~1                  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux29~0           ; |Kmeans_MuxRamMemoryAddr|Mux29~0                  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux29~1           ; |Kmeans_MuxRamMemoryAddr|Mux29~1                  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux28~0           ; |Kmeans_MuxRamMemoryAddr|Mux28~0                  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux28~1           ; |Kmeans_MuxRamMemoryAddr|Mux28~1                  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux27~0           ; |Kmeans_MuxRamMemoryAddr|Mux27~0                  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux27~1           ; |Kmeans_MuxRamMemoryAddr|Mux27~1                  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux26~0           ; |Kmeans_MuxRamMemoryAddr|Mux26~0                  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux26~1           ; |Kmeans_MuxRamMemoryAddr|Mux26~1                  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux63~0           ; |Kmeans_MuxRamMemoryAddr|Mux63~0                  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux63~1           ; |Kmeans_MuxRamMemoryAddr|Mux63~1                  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux62~0           ; |Kmeans_MuxRamMemoryAddr|Mux62~0                  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux62~1           ; |Kmeans_MuxRamMemoryAddr|Mux62~1                  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux61~0           ; |Kmeans_MuxRamMemoryAddr|Mux61~0                  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux61~1           ; |Kmeans_MuxRamMemoryAddr|Mux61~1                  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux60~0           ; |Kmeans_MuxRamMemoryAddr|Mux60~0                  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux60~1           ; |Kmeans_MuxRamMemoryAddr|Mux60~1                  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux59~0           ; |Kmeans_MuxRamMemoryAddr|Mux59~0                  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux59~1           ; |Kmeans_MuxRamMemoryAddr|Mux59~1                  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux58~0           ; |Kmeans_MuxRamMemoryAddr|Mux58~0                  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux58~1           ; |Kmeans_MuxRamMemoryAddr|Mux58~1                  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux57~0           ; |Kmeans_MuxRamMemoryAddr|Mux57~0                  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux57~1           ; |Kmeans_MuxRamMemoryAddr|Mux57~1                  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[0]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[0]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[1]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[1]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[2]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[2]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[3]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[3]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[4]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[4]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[5]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[5]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[0]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[0]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[1]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[1]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[2]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[2]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[3]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[3]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[4]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[4]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[5]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[5]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[6]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[6]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[0]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[0]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[0] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[0]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|op[0]             ; |Kmeans_MuxRamMemoryAddr|op[0]~corein             ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|op[1]             ; |Kmeans_MuxRamMemoryAddr|op[1]~corein             ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[0]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[0]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[1]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[1]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[1] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[1]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[1]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[1]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[2]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[2]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[2] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[2]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[2]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[2]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[3]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[3]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[3] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[3]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[3]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[3]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[4]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[4]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[4] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[4]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[4]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[4]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[0]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[0]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[0] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[0]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[1]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[1]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[1] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[1]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[2]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[2]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[2] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[2]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[3]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[3]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[3] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[3]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[4]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[4]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[4] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[4]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[5]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[5]~corein      ; combout          ;
++--------------------------------------------+---------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++---------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                            ;
++---------------------------------------------+----------------------------------------------------+------------------+
+; Node Name                                   ; Output Port Name                                   ; Output Port Type ;
++---------------------------------------------+----------------------------------------------------+------------------+
+; |Kmeans_MuxRamMemoryAddr|Mux25~0            ; |Kmeans_MuxRamMemoryAddr|Mux25~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux25~1            ; |Kmeans_MuxRamMemoryAddr|Mux25~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux24~0            ; |Kmeans_MuxRamMemoryAddr|Mux24~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux24~1            ; |Kmeans_MuxRamMemoryAddr|Mux24~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux23~0            ; |Kmeans_MuxRamMemoryAddr|Mux23~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux23~1            ; |Kmeans_MuxRamMemoryAddr|Mux23~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux22~0            ; |Kmeans_MuxRamMemoryAddr|Mux22~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux22~1            ; |Kmeans_MuxRamMemoryAddr|Mux22~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux21~0            ; |Kmeans_MuxRamMemoryAddr|Mux21~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux21~1            ; |Kmeans_MuxRamMemoryAddr|Mux21~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux20~0            ; |Kmeans_MuxRamMemoryAddr|Mux20~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux20~1            ; |Kmeans_MuxRamMemoryAddr|Mux20~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux19~0            ; |Kmeans_MuxRamMemoryAddr|Mux19~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux19~1            ; |Kmeans_MuxRamMemoryAddr|Mux19~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux18~0            ; |Kmeans_MuxRamMemoryAddr|Mux18~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux18~1            ; |Kmeans_MuxRamMemoryAddr|Mux18~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux17~0            ; |Kmeans_MuxRamMemoryAddr|Mux17~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux17~1            ; |Kmeans_MuxRamMemoryAddr|Mux17~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux16~0            ; |Kmeans_MuxRamMemoryAddr|Mux16~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux16~1            ; |Kmeans_MuxRamMemoryAddr|Mux16~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux15~0            ; |Kmeans_MuxRamMemoryAddr|Mux15~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux15~1            ; |Kmeans_MuxRamMemoryAddr|Mux15~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux14~0            ; |Kmeans_MuxRamMemoryAddr|Mux14~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux14~1            ; |Kmeans_MuxRamMemoryAddr|Mux14~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux13~0            ; |Kmeans_MuxRamMemoryAddr|Mux13~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux13~1            ; |Kmeans_MuxRamMemoryAddr|Mux13~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux12~0            ; |Kmeans_MuxRamMemoryAddr|Mux12~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux12~1            ; |Kmeans_MuxRamMemoryAddr|Mux12~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux11~0            ; |Kmeans_MuxRamMemoryAddr|Mux11~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux11~1            ; |Kmeans_MuxRamMemoryAddr|Mux11~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux10~0            ; |Kmeans_MuxRamMemoryAddr|Mux10~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux10~1            ; |Kmeans_MuxRamMemoryAddr|Mux10~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux9~0             ; |Kmeans_MuxRamMemoryAddr|Mux9~0                    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux9~1             ; |Kmeans_MuxRamMemoryAddr|Mux9~1                    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux8~0             ; |Kmeans_MuxRamMemoryAddr|Mux8~0                    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux8~1             ; |Kmeans_MuxRamMemoryAddr|Mux8~1                    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux7~0             ; |Kmeans_MuxRamMemoryAddr|Mux7~0                    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux7~1             ; |Kmeans_MuxRamMemoryAddr|Mux7~1                    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux6~0             ; |Kmeans_MuxRamMemoryAddr|Mux6~0                    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux6~1             ; |Kmeans_MuxRamMemoryAddr|Mux6~1                    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux5~0             ; |Kmeans_MuxRamMemoryAddr|Mux5~0                    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux5~1             ; |Kmeans_MuxRamMemoryAddr|Mux5~1                    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux4~0             ; |Kmeans_MuxRamMemoryAddr|Mux4~0                    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux4~1             ; |Kmeans_MuxRamMemoryAddr|Mux4~1                    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux3~0             ; |Kmeans_MuxRamMemoryAddr|Mux3~0                    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux3~1             ; |Kmeans_MuxRamMemoryAddr|Mux3~1                    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux2~0             ; |Kmeans_MuxRamMemoryAddr|Mux2~0                    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux2~1             ; |Kmeans_MuxRamMemoryAddr|Mux2~1                    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux1~0             ; |Kmeans_MuxRamMemoryAddr|Mux1~0                    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux1~1             ; |Kmeans_MuxRamMemoryAddr|Mux1~1                    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux0~0             ; |Kmeans_MuxRamMemoryAddr|Mux0~0                    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux0~1             ; |Kmeans_MuxRamMemoryAddr|Mux0~1                    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux56~0            ; |Kmeans_MuxRamMemoryAddr|Mux56~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux56~1            ; |Kmeans_MuxRamMemoryAddr|Mux56~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux55~0            ; |Kmeans_MuxRamMemoryAddr|Mux55~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux55~1            ; |Kmeans_MuxRamMemoryAddr|Mux55~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux54~0            ; |Kmeans_MuxRamMemoryAddr|Mux54~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux54~1            ; |Kmeans_MuxRamMemoryAddr|Mux54~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux53~0            ; |Kmeans_MuxRamMemoryAddr|Mux53~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux53~1            ; |Kmeans_MuxRamMemoryAddr|Mux53~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux52~0            ; |Kmeans_MuxRamMemoryAddr|Mux52~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux52~1            ; |Kmeans_MuxRamMemoryAddr|Mux52~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux51~0            ; |Kmeans_MuxRamMemoryAddr|Mux51~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux51~1            ; |Kmeans_MuxRamMemoryAddr|Mux51~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux50~0            ; |Kmeans_MuxRamMemoryAddr|Mux50~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux50~1            ; |Kmeans_MuxRamMemoryAddr|Mux50~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux49~0            ; |Kmeans_MuxRamMemoryAddr|Mux49~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux49~1            ; |Kmeans_MuxRamMemoryAddr|Mux49~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux48~0            ; |Kmeans_MuxRamMemoryAddr|Mux48~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux48~1            ; |Kmeans_MuxRamMemoryAddr|Mux48~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux47~0            ; |Kmeans_MuxRamMemoryAddr|Mux47~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux47~1            ; |Kmeans_MuxRamMemoryAddr|Mux47~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux46~0            ; |Kmeans_MuxRamMemoryAddr|Mux46~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux46~1            ; |Kmeans_MuxRamMemoryAddr|Mux46~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux45~0            ; |Kmeans_MuxRamMemoryAddr|Mux45~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux45~1            ; |Kmeans_MuxRamMemoryAddr|Mux45~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux44~0            ; |Kmeans_MuxRamMemoryAddr|Mux44~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux44~1            ; |Kmeans_MuxRamMemoryAddr|Mux44~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux43~0            ; |Kmeans_MuxRamMemoryAddr|Mux43~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux43~1            ; |Kmeans_MuxRamMemoryAddr|Mux43~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux42~0            ; |Kmeans_MuxRamMemoryAddr|Mux42~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux42~1            ; |Kmeans_MuxRamMemoryAddr|Mux42~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux41~0            ; |Kmeans_MuxRamMemoryAddr|Mux41~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux41~1            ; |Kmeans_MuxRamMemoryAddr|Mux41~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux40~0            ; |Kmeans_MuxRamMemoryAddr|Mux40~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux40~1            ; |Kmeans_MuxRamMemoryAddr|Mux40~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux39~0            ; |Kmeans_MuxRamMemoryAddr|Mux39~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux39~1            ; |Kmeans_MuxRamMemoryAddr|Mux39~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux38~0            ; |Kmeans_MuxRamMemoryAddr|Mux38~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux38~1            ; |Kmeans_MuxRamMemoryAddr|Mux38~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux37~0            ; |Kmeans_MuxRamMemoryAddr|Mux37~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux37~1            ; |Kmeans_MuxRamMemoryAddr|Mux37~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux36~0            ; |Kmeans_MuxRamMemoryAddr|Mux36~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux36~1            ; |Kmeans_MuxRamMemoryAddr|Mux36~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux35~0            ; |Kmeans_MuxRamMemoryAddr|Mux35~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux35~1            ; |Kmeans_MuxRamMemoryAddr|Mux35~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux34~0            ; |Kmeans_MuxRamMemoryAddr|Mux34~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux34~1            ; |Kmeans_MuxRamMemoryAddr|Mux34~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux33~0            ; |Kmeans_MuxRamMemoryAddr|Mux33~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux33~1            ; |Kmeans_MuxRamMemoryAddr|Mux33~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux32~0            ; |Kmeans_MuxRamMemoryAddr|Mux32~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux32~1            ; |Kmeans_MuxRamMemoryAddr|Mux32~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[6]       ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[6]              ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[7]       ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[7]              ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[8]       ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[8]              ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[9]       ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[9]              ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[10]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[10]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[11]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[11]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[12]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[12]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[13]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[13]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[14]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[14]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[15]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[15]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[16]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[16]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[17]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[17]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[18]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[18]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[19]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[19]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[20]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[20]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[21]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[21]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[22]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[22]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[23]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[23]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[24]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[24]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[25]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[25]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[26]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[26]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[27]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[27]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[28]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[28]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[29]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[29]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[30]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[30]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[31]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[31]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[7]       ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[7]              ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[8]       ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[8]              ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[9]       ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[9]              ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[10]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[10]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[11]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[11]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[12]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[12]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[13]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[13]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[14]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[14]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[15]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[15]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[16]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[16]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[17]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[17]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[18]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[18]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[19]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[19]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[20]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[20]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[21]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[21]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[22]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[22]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[23]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[23]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[24]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[24]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[25]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[25]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[26]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[26]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[27]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[27]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[28]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[28]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[29]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[29]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[30]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[30]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[31]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[31]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[6]       ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[6]~corein       ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[6]  ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[6]~corein  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[6]     ; |Kmeans_MuxRamMemoryAddr|memInitAddr[6]~corein     ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[7]       ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[7]~corein       ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[7]  ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[7]~corein  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[7]     ; |Kmeans_MuxRamMemoryAddr|memInitAddr[7]~corein     ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[8]       ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[8]~corein       ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[8]  ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[8]~corein  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[8]     ; |Kmeans_MuxRamMemoryAddr|memInitAddr[8]~corein     ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[9]       ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[9]~corein       ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[9]  ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[9]~corein  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[9]     ; |Kmeans_MuxRamMemoryAddr|memInitAddr[9]~corein     ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[10]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[10]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[10] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[10]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[10]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[10]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[11]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[11]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[11] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[11]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[11]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[11]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[12]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[12]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[12] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[12]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[12]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[12]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[13]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[13]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[13] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[13]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[13]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[13]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[14]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[14]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[14] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[14]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[14]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[14]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[15]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[15]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[15] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[15]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[15]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[15]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[16]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[16]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[16] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[16]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[16]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[16]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[17]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[17]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[17] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[17]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[17]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[17]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[18]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[18]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[18] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[18]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[18]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[18]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[19]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[19]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[19] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[19]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[19]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[19]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[20]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[20]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[20] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[20]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[20]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[20]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[21]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[21]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[21] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[21]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[21]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[21]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[22]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[22]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[22] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[22]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[22]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[22]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[23]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[23]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[23] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[23]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[23]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[23]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[24]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[24]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[24] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[24]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[24]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[24]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[25]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[25]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[25] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[25]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[25]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[25]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[26]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[26]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[26] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[26]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[26]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[26]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[27]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[27]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[27] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[27]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[27]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[27]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[28]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[28]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[28] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[28]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[28]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[28]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[29]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[29]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[29] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[29]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[29]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[29]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[30]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[30]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[30] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[30]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[30]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[30]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[31]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[31]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[31] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[31]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[31]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[31]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[6]  ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[6]~corein  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[7]       ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[7]~corein       ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[7]  ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[7]~corein  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[8]       ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[8]~corein       ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[8]  ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[8]~corein  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[9]       ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[9]~corein       ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[9]  ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[9]~corein  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[10]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[10]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[10] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[10]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[11]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[11]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[11] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[11]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[12]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[12]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[12] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[12]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[13]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[13]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[13] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[13]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[14]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[14]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[14] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[14]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[15]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[15]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[15] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[15]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[16]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[16]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[16] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[16]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[17]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[17]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[17] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[17]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[18]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[18]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[18] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[18]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[19]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[19]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[19] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[19]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[20]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[20]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[20] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[20]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[21]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[21]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[21] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[21]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[22]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[22]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[22] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[22]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[23]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[23]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[23] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[23]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[24]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[24]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[24] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[24]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[25]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[25]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[25] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[25]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[26]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[26]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[26] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[26]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[27]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[27]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[27] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[27]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[28]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[28]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[28] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[28]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[29]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[29]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[29] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[29]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[30]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[30]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[30] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[30]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[31]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[31]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[31] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[31]~corein ; combout          ;
++---------------------------------------------+----------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++---------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                            ;
++---------------------------------------------+----------------------------------------------------+------------------+
+; Node Name                                   ; Output Port Name                                   ; Output Port Type ;
++---------------------------------------------+----------------------------------------------------+------------------+
+; |Kmeans_MuxRamMemoryAddr|Mux25~0            ; |Kmeans_MuxRamMemoryAddr|Mux25~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux25~1            ; |Kmeans_MuxRamMemoryAddr|Mux25~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux24~0            ; |Kmeans_MuxRamMemoryAddr|Mux24~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux24~1            ; |Kmeans_MuxRamMemoryAddr|Mux24~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux23~0            ; |Kmeans_MuxRamMemoryAddr|Mux23~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux23~1            ; |Kmeans_MuxRamMemoryAddr|Mux23~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux22~0            ; |Kmeans_MuxRamMemoryAddr|Mux22~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux22~1            ; |Kmeans_MuxRamMemoryAddr|Mux22~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux21~0            ; |Kmeans_MuxRamMemoryAddr|Mux21~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux21~1            ; |Kmeans_MuxRamMemoryAddr|Mux21~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux20~0            ; |Kmeans_MuxRamMemoryAddr|Mux20~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux20~1            ; |Kmeans_MuxRamMemoryAddr|Mux20~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux19~0            ; |Kmeans_MuxRamMemoryAddr|Mux19~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux19~1            ; |Kmeans_MuxRamMemoryAddr|Mux19~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux18~0            ; |Kmeans_MuxRamMemoryAddr|Mux18~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux18~1            ; |Kmeans_MuxRamMemoryAddr|Mux18~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux17~0            ; |Kmeans_MuxRamMemoryAddr|Mux17~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux17~1            ; |Kmeans_MuxRamMemoryAddr|Mux17~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux16~0            ; |Kmeans_MuxRamMemoryAddr|Mux16~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux16~1            ; |Kmeans_MuxRamMemoryAddr|Mux16~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux15~0            ; |Kmeans_MuxRamMemoryAddr|Mux15~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux15~1            ; |Kmeans_MuxRamMemoryAddr|Mux15~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux14~0            ; |Kmeans_MuxRamMemoryAddr|Mux14~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux14~1            ; |Kmeans_MuxRamMemoryAddr|Mux14~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux13~0            ; |Kmeans_MuxRamMemoryAddr|Mux13~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux13~1            ; |Kmeans_MuxRamMemoryAddr|Mux13~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux12~0            ; |Kmeans_MuxRamMemoryAddr|Mux12~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux12~1            ; |Kmeans_MuxRamMemoryAddr|Mux12~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux11~0            ; |Kmeans_MuxRamMemoryAddr|Mux11~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux11~1            ; |Kmeans_MuxRamMemoryAddr|Mux11~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux10~0            ; |Kmeans_MuxRamMemoryAddr|Mux10~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux10~1            ; |Kmeans_MuxRamMemoryAddr|Mux10~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux9~0             ; |Kmeans_MuxRamMemoryAddr|Mux9~0                    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux9~1             ; |Kmeans_MuxRamMemoryAddr|Mux9~1                    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux8~0             ; |Kmeans_MuxRamMemoryAddr|Mux8~0                    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux8~1             ; |Kmeans_MuxRamMemoryAddr|Mux8~1                    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux7~0             ; |Kmeans_MuxRamMemoryAddr|Mux7~0                    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux7~1             ; |Kmeans_MuxRamMemoryAddr|Mux7~1                    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux6~0             ; |Kmeans_MuxRamMemoryAddr|Mux6~0                    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux6~1             ; |Kmeans_MuxRamMemoryAddr|Mux6~1                    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux5~0             ; |Kmeans_MuxRamMemoryAddr|Mux5~0                    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux5~1             ; |Kmeans_MuxRamMemoryAddr|Mux5~1                    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux4~0             ; |Kmeans_MuxRamMemoryAddr|Mux4~0                    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux4~1             ; |Kmeans_MuxRamMemoryAddr|Mux4~1                    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux3~0             ; |Kmeans_MuxRamMemoryAddr|Mux3~0                    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux3~1             ; |Kmeans_MuxRamMemoryAddr|Mux3~1                    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux2~0             ; |Kmeans_MuxRamMemoryAddr|Mux2~0                    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux2~1             ; |Kmeans_MuxRamMemoryAddr|Mux2~1                    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux1~0             ; |Kmeans_MuxRamMemoryAddr|Mux1~0                    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux1~1             ; |Kmeans_MuxRamMemoryAddr|Mux1~1                    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux0~0             ; |Kmeans_MuxRamMemoryAddr|Mux0~0                    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux0~1             ; |Kmeans_MuxRamMemoryAddr|Mux0~1                    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux56~0            ; |Kmeans_MuxRamMemoryAddr|Mux56~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux56~1            ; |Kmeans_MuxRamMemoryAddr|Mux56~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux55~0            ; |Kmeans_MuxRamMemoryAddr|Mux55~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux55~1            ; |Kmeans_MuxRamMemoryAddr|Mux55~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux54~0            ; |Kmeans_MuxRamMemoryAddr|Mux54~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux54~1            ; |Kmeans_MuxRamMemoryAddr|Mux54~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux53~0            ; |Kmeans_MuxRamMemoryAddr|Mux53~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux53~1            ; |Kmeans_MuxRamMemoryAddr|Mux53~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux52~0            ; |Kmeans_MuxRamMemoryAddr|Mux52~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux52~1            ; |Kmeans_MuxRamMemoryAddr|Mux52~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux51~0            ; |Kmeans_MuxRamMemoryAddr|Mux51~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux51~1            ; |Kmeans_MuxRamMemoryAddr|Mux51~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux50~0            ; |Kmeans_MuxRamMemoryAddr|Mux50~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux50~1            ; |Kmeans_MuxRamMemoryAddr|Mux50~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux49~0            ; |Kmeans_MuxRamMemoryAddr|Mux49~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux49~1            ; |Kmeans_MuxRamMemoryAddr|Mux49~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux48~0            ; |Kmeans_MuxRamMemoryAddr|Mux48~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux48~1            ; |Kmeans_MuxRamMemoryAddr|Mux48~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux47~0            ; |Kmeans_MuxRamMemoryAddr|Mux47~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux47~1            ; |Kmeans_MuxRamMemoryAddr|Mux47~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux46~0            ; |Kmeans_MuxRamMemoryAddr|Mux46~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux46~1            ; |Kmeans_MuxRamMemoryAddr|Mux46~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux45~0            ; |Kmeans_MuxRamMemoryAddr|Mux45~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux45~1            ; |Kmeans_MuxRamMemoryAddr|Mux45~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux44~0            ; |Kmeans_MuxRamMemoryAddr|Mux44~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux44~1            ; |Kmeans_MuxRamMemoryAddr|Mux44~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux43~0            ; |Kmeans_MuxRamMemoryAddr|Mux43~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux43~1            ; |Kmeans_MuxRamMemoryAddr|Mux43~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux42~0            ; |Kmeans_MuxRamMemoryAddr|Mux42~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux42~1            ; |Kmeans_MuxRamMemoryAddr|Mux42~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux41~0            ; |Kmeans_MuxRamMemoryAddr|Mux41~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux41~1            ; |Kmeans_MuxRamMemoryAddr|Mux41~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux40~0            ; |Kmeans_MuxRamMemoryAddr|Mux40~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux40~1            ; |Kmeans_MuxRamMemoryAddr|Mux40~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux39~0            ; |Kmeans_MuxRamMemoryAddr|Mux39~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux39~1            ; |Kmeans_MuxRamMemoryAddr|Mux39~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux38~0            ; |Kmeans_MuxRamMemoryAddr|Mux38~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux38~1            ; |Kmeans_MuxRamMemoryAddr|Mux38~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux37~0            ; |Kmeans_MuxRamMemoryAddr|Mux37~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux37~1            ; |Kmeans_MuxRamMemoryAddr|Mux37~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux36~0            ; |Kmeans_MuxRamMemoryAddr|Mux36~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux36~1            ; |Kmeans_MuxRamMemoryAddr|Mux36~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux35~0            ; |Kmeans_MuxRamMemoryAddr|Mux35~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux35~1            ; |Kmeans_MuxRamMemoryAddr|Mux35~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux34~0            ; |Kmeans_MuxRamMemoryAddr|Mux34~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux34~1            ; |Kmeans_MuxRamMemoryAddr|Mux34~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux33~0            ; |Kmeans_MuxRamMemoryAddr|Mux33~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux33~1            ; |Kmeans_MuxRamMemoryAddr|Mux33~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux32~0            ; |Kmeans_MuxRamMemoryAddr|Mux32~0                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|Mux32~1            ; |Kmeans_MuxRamMemoryAddr|Mux32~1                   ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[6]       ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[6]              ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[7]       ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[7]              ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[8]       ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[8]              ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[9]       ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[9]              ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[10]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[10]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[11]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[11]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[12]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[12]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[13]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[13]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[14]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[14]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[15]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[15]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[16]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[16]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[17]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[17]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[18]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[18]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[19]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[19]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[20]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[20]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[21]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[21]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[22]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[22]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[23]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[23]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[24]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[24]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[25]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[25]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[26]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[26]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[27]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[27]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[28]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[28]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[29]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[29]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[30]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[30]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_A[31]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_A[31]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[7]       ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[7]              ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[8]       ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[8]              ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[9]       ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[9]              ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[10]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[10]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[11]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[11]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[12]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[12]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[13]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[13]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[14]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[14]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[15]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[15]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[16]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[16]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[17]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[17]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[18]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[18]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[19]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[19]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[20]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[20]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[21]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[21]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[22]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[22]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[23]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[23]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[24]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[24]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[25]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[25]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[26]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[26]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[27]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[27]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[28]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[28]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[29]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[29]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[30]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[30]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|ramAddr_B[31]      ; |Kmeans_MuxRamMemoryAddr|ramAddr_B[31]             ; padio            ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[5]       ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[5]~corein       ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[5]  ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[5]~corein  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[5]     ; |Kmeans_MuxRamMemoryAddr|memInitAddr[5]~corein     ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[6]       ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[6]~corein       ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[6]  ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[6]~corein  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[6]     ; |Kmeans_MuxRamMemoryAddr|memInitAddr[6]~corein     ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[7]       ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[7]~corein       ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[7]  ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[7]~corein  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[7]     ; |Kmeans_MuxRamMemoryAddr|memInitAddr[7]~corein     ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[8]       ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[8]~corein       ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[8]  ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[8]~corein  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[8]     ; |Kmeans_MuxRamMemoryAddr|memInitAddr[8]~corein     ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[9]       ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[9]~corein       ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[9]  ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[9]~corein  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[9]     ; |Kmeans_MuxRamMemoryAddr|memInitAddr[9]~corein     ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[10]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[10]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[10] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[10]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[10]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[10]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[11]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[11]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[11] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[11]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[11]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[11]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[12]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[12]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[12] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[12]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[12]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[12]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[13]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[13]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[13] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[13]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[13]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[13]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[14]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[14]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[14] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[14]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[14]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[14]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[15]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[15]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[15] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[15]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[15]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[15]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[16]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[16]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[16] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[16]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[16]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[16]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[17]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[17]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[17] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[17]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[17]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[17]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[18]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[18]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[18] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[18]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[18]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[18]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[19]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[19]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[19] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[19]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[19]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[19]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[20]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[20]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[20] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[20]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[20]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[20]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[21]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[21]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[21] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[21]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[21]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[21]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[22]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[22]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[22] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[22]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[22]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[22]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[23]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[23]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[23] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[23]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[23]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[23]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[24]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[24]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[24] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[24]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[24]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[24]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[25]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[25]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[25] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[25]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[25]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[25]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[26]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[26]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[26] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[26]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[26]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[26]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[27]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[27]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[27] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[27]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[27]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[27]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[28]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[28]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[28] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[28]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[28]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[28]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[29]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[29]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[29] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[29]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[29]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[29]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[30]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[30]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[30] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[30]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[30]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[30]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_A[31]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_A[31]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[31] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_A[31]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|memInitAddr[31]    ; |Kmeans_MuxRamMemoryAddr|memInitAddr[31]~corein    ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[5]  ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[5]~corein  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[6]       ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[6]~corein       ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[6]  ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[6]~corein  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[7]       ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[7]~corein       ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[7]  ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[7]~corein  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[8]       ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[8]~corein       ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[8]  ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[8]~corein  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[9]       ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[9]~corein       ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[9]  ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[9]~corein  ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[10]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[10]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[10] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[10]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[11]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[11]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[11] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[11]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[12]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[12]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[12] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[12]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[13]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[13]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[13] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[13]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[14]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[14]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[14] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[14]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[15]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[15]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[15] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[15]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[16]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[16]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[16] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[16]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[17]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[17]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[17] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[17]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[18]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[18]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[18] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[18]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[19]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[19]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[19] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[19]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[20]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[20]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[20] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[20]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[21]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[21]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[21] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[21]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[22]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[22]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[22] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[22]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[23]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[23]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[23] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[23]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[24]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[24]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[24] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[24]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[25]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[25]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[25] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[25]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[26]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[26]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[26] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[26]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[27]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[27]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[27] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[27]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[28]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[28]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[28] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[28]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[29]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[29]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[29] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[29]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[30]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[30]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[30] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[30]~corein ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|mapAddr_B[31]      ; |Kmeans_MuxRamMemoryAddr|mapAddr_B[31]~corein      ; combout          ;
+; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[31] ; |Kmeans_MuxRamMemoryAddr|centroidAddr_B[31]~corein ; combout          ;
++---------------------------------------------+----------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Mon Oct 31 16:02:18 2016
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off Kmeans_MuxRamMemoryAddr -c Kmeans_MuxRamMemoryAddr
+Info: Using vector source file "Z:/Lucas/Kmeans_Processador/Kmeans_MuxRamMemoryAddr/Kmeans_MuxRamMemoryAddr.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      18.93 %
+Info: Number of transitions in simulation is 2725
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 156 megabytes
+    Info: Processing ended: Mon Oct 31 16:02:19 2016
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

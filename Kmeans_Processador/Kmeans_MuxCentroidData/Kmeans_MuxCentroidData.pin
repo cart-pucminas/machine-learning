@@ -1,0 +1,974 @@
+ -- Copyright (C) 2016  Intel Corporation. All rights reserved.
+ -- Your use of Intel Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Intel Program License 
+ -- Subscription Agreement, the Intel Quartus Prime License Agreement,
+ -- the Intel MegaCore Function License Agreement, or other 
+ -- applicable license agreement, including, without limitation, 
+ -- that your use is for the sole purpose of programming logic 
+ -- devices manufactured by Intel and sold by Intel or its 
+ -- authorized distributors.  Please refer to the applicable 
+ -- agreement for further details.
+ -- 
+ -- This is a Quartus Prime output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus Prime input file. This file cannot be used
+ -- to make Quartus Prime pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus Prime help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCPGM        : Dedicated power pin for configuration, which MUST be connected to 1.8V, 2.5V or 3.0V depending on the requirements of the configuration device.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.2V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --                  Bank 3:       2.5V
+ --                  Bank 4:       2.5V
+ --                  Bank 5:       2.5V
+ --                  Bank 6:       2.5V
+ --                  Bank 7:       2.5V
+ --                  Bank 8:  2.5V
+ --                  Bank 9:  2.5V
+ -- RREF          : External reference resistor for the quad, MUST be connected to
+ --                 GND via a 2k Ohm resistor.
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --                  It can also be used to report unused dedicated pins. The connection
+ --                  on the board for unused dedicated pins depends on whether this will
+ --                  be used in a future design. One example is device migration. When
+ --                  using device migration, refer to the device pin-tables. If it is a
+ --                  GND pin in the pin table or if it will not be used in a future design
+ --                  for another purpose the it MUST be connected to GND. If it is an unused
+ --                  dedicated pin, then it can be connected to a valid signal on the board
+ --                  (low, high, or toggling) if that signal is required for a different
+ --                  revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --                  This pin should be connected to GND. It may also be connected  to a
+ --                  valid signal  on the board  (low, high, or toggling)  if that signal
+ --                  is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin.   For transceiver I/O banks, connect each pin marked GND*
+ --                  either individually through a 10k Ohm resistor to GND or tie all pins
+ --                  together and connect through a single 10k Ohm resistor to GND.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ -- GXB_GND*      : Unused GXB Receiver or dedicated reference clock pin. This pin
+ --                 must be connected to GXB_GND through a 10k Ohm resistor.
+ -- GXB_NC        : Unused GXB Transmitter or dedicated clock output pin. This pin
+ --                 must not be connected.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+CHIP  "Kmeans_MuxCentroidData"  ASSIGNED TO AN: EP4CGX150DF31I7
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+NC                           : A2        :        :                   :         :           :                
+~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : A3        : input  : 2.5 V             :         : 9         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A4        :        :                   :         : 8         :                
+centroidCalc[36]             : A5        : input  : 2.5 V             :         : 8         : N              
+centroidCalc[44]             : A6        : input  : 2.5 V             :         : 8         : N              
+centroidData_A[38]           : A7        : output : 2.5 V             :         : 8         : N              
+centroidCalc[42]             : A8        : input  : 2.5 V             :         : 8         : N              
+centroidCalcFP[43]           : A9        : input  : 2.5 V             :         : 8         : N              
+centroidData_A[43]           : A10       : output : 2.5 V             :         : 8         : N              
+centroidData_A[46]           : A11       : output : 2.5 V             :         : 8         : N              
+centroidData_A[41]           : A12       : output : 2.5 V             :         : 8         : N              
+centroidInit[50]             : A13       : input  : 2.5 V             :         : 8         : N              
+centroidInit[59]             : A14       : input  : 2.5 V             :         : 8         : N              
+GND+                         : A15       :        :                   :         : 7         :                
+centroidData_B[53]           : A16       : output : 2.5 V             :         : 7         : N              
+centroidData_B[51]           : A17       : output : 2.5 V             :         : 7         : N              
+centroidData_B[55]           : A18       : output : 2.5 V             :         : 7         : N              
+centroidInit[62]             : A19       : input  : 2.5 V             :         : 7         : N              
+centroidInit[55]             : A20       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A21       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A22       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A23       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A24       :        :                   :         : 7         :                
+centroidData_B[3]            : A25       : output : 2.5 V             :         : 7         : N              
+centroidData_B[1]            : A26       : output : 2.5 V             :         : 7         : N              
+centroidData_B[10]           : A27       : output : 2.5 V             :         : 7         : N              
+centroidInit[12]             : A28       : input  : 2.5 V             :         : 7         : N              
+centroidInit[0]              : A29       : input  : 2.5 V             :         : 7         : N              
+GXB_GND*                     : AA1       :        :                   :         : QL0       :                
+GXB_GND*                     : AA2       :        :                   :         : QL0       :                
+GND                          : AA3       : gnd    :                   :         :           :                
+GND                          : AA4       : gnd    :                   :         :           :                
+GND                          : AA5       : gnd    :                   :         :           :                
+VCCL_GXB                     : AA6       : power  :                   : 1.2V    :           :                
+VCCA                         : AA7       : power  :                   : 2.5V    :           :                
+GND                          : AA8       : gnd    :                   :         :           :                
+VCCA                         : AA9       : power  :                   : 2.5V    :           :                
+VCCINT                       : AA10      : power  :                   : 1.2V    :           :                
+GND                          : AA11      : gnd    :                   :         :           :                
+centroidData_B[20]           : AA12      : output : 2.5 V             :         : 3         : N              
+centroidData_B[29]           : AA13      : output : 2.5 V             :         : 3         : N              
+VCCINT                       : AA14      : power  :                   : 1.2V    :           :                
+centroidInit[15]             : AA15      : input  : 2.5 V             :         : 3         : N              
+centroidInit[23]             : AA16      : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA17      :        :                   :         : 4         :                
+centroidData_A[12]           : AA18      : output : 2.5 V             :         : 4         : N              
+GND                          : AA19      : gnd    :                   :         :           :                
+centroidCalcFP[14]           : AA20      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA21      :        :                   :         : 4         :                
+centroidData_A[26]           : AA22      : output : 2.5 V             :         : 5         : N              
+VCCIO5                       : AA23      : power  :                   : 2.5V    : 5         :                
+VCCIO5                       : AA24      : power  :                   : 2.5V    : 5         :                
+centroidData_A[21]           : AA25      : output : 2.5 V             :         : 5         : N              
+centroidCalcFP[24]           : AA26      : input  : 2.5 V             :         : 5         : N              
+centroidCalc[29]             : AA27      : input  : 2.5 V             :         : 5         : N              
+centroidData_B[33]           : AA28      : output : 2.5 V             :         : 5         : N              
+centroidData_B[32]           : AA29      : output : 2.5 V             :         : 5         : N              
+centroidInit[40]             : AA30      : input  : 2.5 V             :         : 5         : N              
+GND                          : AB1       : gnd    :                   :         :           :                
+GND                          : AB2       : gnd    :                   :         :           :                
+GXB_NC                       : AB3       :        :                   :         : QL0       :                
+GXB_NC                       : AB4       :        :                   :         : QL0       :                
+GND                          : AB5       : gnd    :                   :         :           :                
+GND                          : AB6       : gnd    :                   :         :           :                
+GND                          : AB7       : gnd    :                   :         :           :                
+VCCINT                       : AB8       : power  :                   : 1.2V    :           :                
+CONF_DONE                    : AB9       :        :                   :         : 3         :                
+GND                          : AB10      : gnd    :                   :         :           :                
+centroidInit[28]             : AB11      : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AB12      : power  :                   : 2.5V    : 3         :                
+centroidData_B[24]           : AB13      : output : 2.5 V             :         : 3         : N              
+centroidData_B[16]           : AB14      : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : AB15      : power  :                   : 2.5V    : 3         :                
+centroidInit[26]             : AB16      : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB17      :        :                   :         : 4         :                
+VCCIO4                       : AB18      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AB19      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AB20      : power  :                   : 2.5V    : 4         :                
+centroidCalcFP[15]           : AB21      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB22      :        :                   :         : 4         :                
+VCCD_PLL                     : AB23      : power  :                   : 1.2V    :           :                
+VCCA                         : AB24      : power  :                   : 2.5V    :           :                
+centroidData_A[23]           : AB25      : output : 2.5 V             :         : 5         : N              
+centroidData_A[29]           : AB26      : output : 2.5 V             :         : 5         : N              
+centroidCalc[30]             : AB27      : input  : 2.5 V             :         : 5         : N              
+centroidCalc[22]             : AB28      : input  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB29      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB30      :        :                   :         : 5         :                
+GXB_GND*                     : AC1       :        :                   :         : QL0       :                
+GXB_GND*                     : AC2       :        :                   :         : QL0       :                
+GND                          : AC3       : gnd    :                   :         :           :                
+GND                          : AC4       : gnd    :                   :         :           :                
+GND                          : AC5       : gnd    :                   :         :           :                
+GND                          : AC6       : gnd    :                   :         :           :                
+MSEL2                        : AC7       :        :                   :         : 3         :                
+MSEL3                        : AC8       :        :                   :         : 3         :                
+VCCIO3                       : AC9       : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AC10      : power  :                   : 2.5V    : 3         :                
+GND                          : AC11      : gnd    :                   :         :           :                
+VCCIO3                       : AC12      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AC13      : power  :                   : 2.5V    : 3         :                
+GND                          : AC14      : gnd    :                   :         :           :                
+VCCIO3                       : AC15      : power  :                   : 2.5V    : 3         :                
+centroidInit[18]             : AC16      : input  : 2.5 V             :         : 3         : N              
+GND                          : AC17      : gnd    :                   :         :           :                
+VCCIO4                       : AC18      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AC19      : power  :                   : 2.5V    : 4         :                
+GND                          : AC20      : gnd    :                   :         :           :                
+VCCIO4                       : AC21      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AC22      : power  :                   : 2.5V    : 4         :                
+GND                          : AC23      : gnd    :                   :         :           :                
+GND                          : AC24      : gnd    :                   :         :           :                
+centroidData_A[18]           : AC25      : output : 2.5 V             :         : 5         : N              
+GND                          : AC26      : gnd    :                   :         :           :                
+centroidCalc[26]             : AC27      : input  : 2.5 V             :         : 5         : N              
+centroidCalcFP[22]           : AC28      : input  : 2.5 V             :         : 5         : N              
+GND                          : AC29      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC30      :        :                   :         : 5         :                
+GND                          : AD1       : gnd    :                   :         :           :                
+GND                          : AD2       : gnd    :                   :         :           :                
+VCCA_GXB                     : AD3       : power  :                   : 2.5V    :           :                
+VCCL_GXB                     : AD4       : power  :                   : 1.2V    :           :                
+GND                          : AD5       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD6       :        :                   :         : 3         :                
+MSEL0                        : AD7       :        :                   :         : 3         :                
+MSEL1                        : AD8       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD9       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD10      :        :                   :         : 3         :                
+VCCIO3                       : AD11      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AD12      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AD13      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AD14      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AD15      : power  :                   : 2.5V    : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD16      :        :                   :         : 4         :                
+VCCIO4                       : AD17      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AD18      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AD19      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AD20      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AD21      : power  :                   : 2.5V    : 4         :                
+centroidCalc[4]              : AD22      : input  : 2.5 V             :         : 4         : N              
+centroidCalc[20]             : AD23      : input  : 2.5 V             :         : 4         : N              
+centroidCalcFP[25]           : AD24      : input  : 2.5 V             :         : 4         : N              
+centroidData_A[24]           : AD25      : output : 2.5 V             :         : 5         : N              
+centroidData_A[31]           : AD26      : output : 2.5 V             :         : 5         : N              
+centroidCalcFP[31]           : AD27      : input  : 2.5 V             :         : 5         : N              
+centroidCalc[24]             : AD28      : input  : 2.5 V             :         : 5         : N              
+centroidCalcFP[30]           : AD29      : input  : 2.5 V             :         : 5         : N              
+centroidCalcFP[26]           : AD30      : input  : 2.5 V             :         : 5         : N              
+RREF                         : AE1       :        :                   :         :           :                
+GND                          : AE2       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE3       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE4       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE5       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE6       :        :                   :         : 3         :                
+~ALTERA_NCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : AE7       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE8       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE9       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE10      :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE11      :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE12      :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE13      :        :                   :         : 3         :                
+centroidInit[25]             : AE14      : input  : 2.5 V             :         : 3         : N              
+centroidInit[17]             : AE15      : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE16      :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE17      :        :                   :         : 4         :                
+centroidCalc[13]             : AE18      : input  : 2.5 V             :         : 4         : N              
+centroidCalc[12]             : AE19      : input  : 2.5 V             :         : 4         : N              
+centroidCalcFP[4]            : AE20      : input  : 2.5 V             :         : 4         : N              
+centroidCalc[11]             : AE21      : input  : 2.5 V             :         : 4         : N              
+centroidCalc[1]              : AE22      : input  : 2.5 V             :         : 4         : N              
+centroidData_A[16]           : AE23      : output : 2.5 V             :         : 4         : N              
+centroidCalc[27]             : AE24      : input  : 2.5 V             :         : 4         : N              
+centroidCalc[23]             : AE25      : input  : 2.5 V             :         : 5         : N              
+centroidData_A[19]           : AE26      : output : 2.5 V             :         : 5         : N              
+centroidCalcFP[16]           : AE27      : input  : 2.5 V             :         : 5         : N              
+centroidCalc[31]             : AE28      : input  : 2.5 V             :         : 5         : N              
+centroidCalcFP[18]           : AE29      : input  : 2.5 V             :         : 5         : N              
+centroidData_A[30]           : AE30      : output : 2.5 V             :         : 5         : N              
+GND                          : AF1       : gnd    :                   :         :           :                
+GND                          : AF2       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF3       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF4       :        :                   :         : 3         :                
+GND                          : AF5       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF6       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF7       :        :                   :         : 3         :                
+GND                          : AF8       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF9       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF10      :        :                   :         : 3         :                
+GND                          : AF11      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF12      :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF13      :        :                   :         : 3         :                
+GND                          : AF14      : gnd    :                   :         :           :                
+centroidData_B[28]           : AF15      : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF16      :        :                   :         : 4         :                
+GND                          : AF17      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF18      :        :                   :         : 4         :                
+centroidData_A[3]            : AF19      : output : 2.5 V             :         : 4         : N              
+GND                          : AF20      : gnd    :                   :         :           :                
+centroidCalcFP[11]           : AF21      : input  : 2.5 V             :         : 4         : N              
+centroidCalc[2]              : AF22      : input  : 2.5 V             :         : 4         : N              
+GND                          : AF23      : gnd    :                   :         :           :                
+centroidCalc[25]             : AF24      : input  : 2.5 V             :         : 4         : N              
+centroidCalcFP[27]           : AF25      : input  : 2.5 V             :         : 4         : N              
+GND                          : AF26      : gnd    :                   :         :           :                
+centroidCalc[19]             : AF27      : input  : 2.5 V             :         : 5         : N              
+centroidCalc[17]             : AF28      : input  : 2.5 V             :         : 5         : N              
+GND                          : AF29      : gnd    :                   :         :           :                
+centroidCalc[16]             : AF30      : input  : 2.5 V             :         : 5         : N              
+NC                           : AG1       :        :                   :         :           :                
+GND                          : AG2       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG3       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG4       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG5       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG6       :        :                   :         : 3         :                
+centroidData_B[17]           : AG7       : output : 2.5 V             :         : 3         : N              
+centroidData_B[23]           : AG8       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG9       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG10      :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG11      :        :                   :         : 3         :                
+centroidData_B[26]           : AG12      : output : 2.5 V             :         : 3         : N              
+centroidData_B[25]           : AG13      : output : 2.5 V             :         : 3         : N              
+centroidInit[19]             : AG14      : input  : 2.5 V             :         : 3         : N              
+centroidData_B[15]           : AG15      : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG16      :        :                   :         : 4         :                
+centroidData_A[5]            : AG17      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG18      :        :                   :         : 4         :                
+centroidCalcFP[12]           : AG19      : input  : 2.5 V             :         : 4         : N              
+centroidCalc[14]             : AG20      : input  : 2.5 V             :         : 4         : N              
+centroidData_A[1]            : AG21      : output : 2.5 V             :         : 4         : N              
+centroidData_A[14]           : AG22      : output : 2.5 V             :         : 4         : N              
+centroidData_A[9]            : AG23      : output : 2.5 V             :         : 4         : N              
+centroidData_A[10]           : AG24      : output : 2.5 V             :         : 4         : N              
+centroidCalcFP[19]           : AG25      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG26      :        :                   :         : 4         :                
+centroidCalcFP[20]           : AG27      : input  : 2.5 V             :         : 4         : N              
+centroidData_A[25]           : AG28      : output : 2.5 V             :         : 4         : N              
+centroidCalcFP[23]           : AG29      : input  : 2.5 V             :         : 5         : N              
+centroidCalcFP[21]           : AG30      : input  : 2.5 V             :         : 5         : N              
+NC                           : AH1       :        :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH2       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH3       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH4       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH5       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH6       :        :                   :         : 3         :                
+centroidData_B[22]           : AH7       : output : 2.5 V             :         : 3         : N              
+centroidData_B[27]           : AH8       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH9       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH10      :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH11      :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH12      :        :                   :         : 3         :                
+centroidData_B[30]           : AH13      : output : 2.5 V             :         : 3         : N              
+centroidInit[29]             : AH14      : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH15      :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH16      :        :                   :         : 3         :                
+centroidCalcFP[5]            : AH17      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH18      :        :                   :         : 4         :                
+centroidData_A[7]            : AH19      : output : 2.5 V             :         : 4         : N              
+centroidCalcFP[6]            : AH20      : input  : 2.5 V             :         : 4         : N              
+centroidCalcFP[7]            : AH21      : input  : 2.5 V             :         : 4         : N              
+centroidData_A[6]            : AH22      : output : 2.5 V             :         : 4         : N              
+centroidData_A[15]           : AH23      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH24      :        :                   :         : 4         :                
+centroidCalc[15]             : AH25      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH26      :        :                   :         : 4         :                
+centroidData_A[20]           : AH27      : output : 2.5 V             :         : 4         : N              
+centroidData_A[27]           : AH28      : output : 2.5 V             :         : 4         : N              
+centroidCalcFP[29]           : AH29      : input  : 2.5 V             :         : 5         : N              
+centroidCalc[21]             : AH30      : input  : 2.5 V             :         : 5         : N              
+nSTATUS                      : AJ1       :        :                   :         : 3         :                
+GND                          : AJ2       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AJ3       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AJ4       :        :                   :         : 3         :                
+GND                          : AJ5       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AJ6       :        :                   :         : 3         :                
+centroidData_B[19]           : AJ7       : output : 2.5 V             :         : 3         : N              
+GND                          : AJ8       : gnd    :                   :         :           :                
+centroidInit[27]             : AJ9       : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AJ10      :        :                   :         : 3         :                
+GND                          : AJ11      : gnd    :                   :         :           :                
+centroidInit[16]             : AJ12      : input  : 2.5 V             :         : 3         : N              
+centroidData_A[0]            : AJ13      : output : 2.5 V             :         : 3         : N              
+GND                          : AJ14      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AJ15      :        :                   :         : 4         :                
+centroidCalcFP[0]            : AJ16      : input  : 2.5 V             :         : 4         : N              
+GND                          : AJ17      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AJ18      :        :                   :         : 4         :                
+centroidCalc[5]              : AJ19      : input  : 2.5 V             :         : 4         : N              
+GND                          : AJ20      : gnd    :                   :         :           :                
+centroidData_A[2]            : AJ21      : output : 2.5 V             :         : 4         : N              
+centroidCalcFP[8]            : AJ22      : input  : 2.5 V             :         : 4         : N              
+GND                          : AJ23      : gnd    :                   :         :           :                
+centroidCalc[8]              : AJ24      : input  : 2.5 V             :         : 4         : N              
+centroidCalcFP[9]            : AJ25      : input  : 2.5 V             :         : 4         : N              
+GND                          : AJ26      : gnd    :                   :         :           :                
+centroidCalc[9]              : AJ27      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AJ28      :        :                   :         : 4         :                
+GND                          : AJ29      : gnd    :                   :         :           :                
+centroidCalcFP[17]           : AJ30      : input  : 2.5 V             :         : 5         : N              
+NC                           : AK2       :        :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AK3       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AK4       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AK5       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AK6       :        :                   :         : 3         :                
+centroidData_B[21]           : AK7       : output : 2.5 V             :         : 3         : N              
+centroidInit[24]             : AK8       : input  : 2.5 V             :         : 3         : N              
+centroidInit[30]             : AK9       : input  : 2.5 V             :         : 3         : N              
+centroidInit[22]             : AK10      : input  : 2.5 V             :         : 3         : N              
+centroidInit[21]             : AK11      : input  : 2.5 V             :         : 3         : N              
+centroidData_B[18]           : AK12      : output : 2.5 V             :         : 3         : N              
+centroidInit[20]             : AK13      : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AK14      :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AK15      :        :                   :         : 4         :                
+centroidCalc[0]              : AK16      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AK17      :        :                   :         : 4         :                
+centroidData_A[13]           : AK18      : output : 2.5 V             :         : 4         : N              
+centroidCalcFP[13]           : AK19      : input  : 2.5 V             :         : 4         : N              
+centroidData_A[4]            : AK20      : output : 2.5 V             :         : 4         : N              
+centroidCalc[7]              : AK21      : input  : 2.5 V             :         : 4         : N              
+centroidCalc[6]              : AK22      : input  : 2.5 V             :         : 4         : N              
+centroidData_A[8]            : AK23      : output : 2.5 V             :         : 4         : N              
+centroidData_A[11]           : AK24      : output : 2.5 V             :         : 4         : N              
+centroidCalcFP[2]            : AK25      : input  : 2.5 V             :         : 4         : N              
+centroidCalcFP[3]            : AK26      : input  : 2.5 V             :         : 4         : N              
+centroidCalcFP[10]           : AK27      : input  : 2.5 V             :         : 4         : N              
+centroidCalc[10]             : AK28      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AK29      :        :                   :         : 4         :                
+nCONFIG                      : B1        :        :                   :         : 9         :                
+GND                          : B2        : gnd    :                   :         :           :                
+~ALTERA_DCLK~                : B3        : output : 2.5 V             :         : 9         : N              
+~ALTERA_NCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : B4        : input  : 2.5 V             :         : 9         : N              
+GND                          : B5        : gnd    :                   :         :           :                
+centroidData_A[37]           : B6        : output : 2.5 V             :         : 8         : N              
+centroidCalc[46]             : B7        : input  : 2.5 V             :         : 8         : N              
+GND                          : B8        : gnd    :                   :         :           :                
+centroidCalcFP[63]           : B9        : input  : 2.5 V             :         : 8         : N              
+centroidCalcFP[36]           : B10       : input  : 2.5 V             :         : 8         : N              
+GND                          : B11       : gnd    :                   :         :           :                
+centroidCalc[41]             : B12       : input  : 2.5 V             :         : 8         : N              
+centroidInit[61]             : B13       : input  : 2.5 V             :         : 8         : N              
+GND                          : B14       : gnd    :                   :         :           :                
+GND+                         : B15       :        :                   :         : 7         :                
+centroidData_B[49]           : B16       : output : 2.5 V             :         : 7         : N              
+GND                          : B17       : gnd    :                   :         :           :                
+centroidInit[58]             : B18       : input  : 2.5 V             :         : 7         : N              
+centroidInit[49]             : B19       : input  : 2.5 V             :         : 7         : N              
+GND                          : B20       : gnd    :                   :         :           :                
+centroidCalcFP[28]           : B21       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : B22       :        :                   :         : 7         :                
+GND                          : B23       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B24       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B25       :        :                   :         : 7         :                
+GND                          : B26       : gnd    :                   :         :           :                
+centroidData_B[2]            : B27       : output : 2.5 V             :         : 7         : N              
+centroidInit[13]             : B28       : input  : 2.5 V             :         : 7         : N              
+GND                          : B29       : gnd    :                   :         :           :                
+centroidInit[10]             : B30       : input  : 2.5 V             :         : 7         : N              
+nCE                          : C1        :        :                   :         : 9         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C2        :        :                   :         : 8         :                
+centroidData_A[33]           : C3        : output : 2.5 V             :         : 8         : N              
+centroidCalc[32]             : C4        : input  : 2.5 V             :         : 8         : N              
+centroidCalc[43]             : C5        : input  : 2.5 V             :         : 8         : N              
+centroidCalcFP[45]           : C6        : input  : 2.5 V             :         : 8         : N              
+centroidData_A[32]           : C7        : output : 2.5 V             :         : 8         : N              
+centroidCalcFP[37]           : C8        : input  : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C9        :        :                   :         : 8         :                
+centroidCalc[40]             : C10       : input  : 2.5 V             :         : 8         : N              
+centroidCalc[63]             : C11       : input  : 2.5 V             :         : 8         : N              
+centroidCalc[39]             : C12       : input  : 2.5 V             :         : 8         : N              
+centroidData_A[63]           : C13       : output : 2.5 V             :         : 8         : N              
+centroidCalcFP[40]           : C14       : input  : 2.5 V             :         : 8         : N              
+centroidCalc[33]             : C15       : input  : 2.5 V             :         : 8         : N              
+centroidInit[51]             : C16       : input  : 2.5 V             :         : 8         : N              
+centroidInit[53]             : C17       : input  : 2.5 V             :         : 7         : N              
+centroidData_B[56]           : C18       : output : 2.5 V             :         : 7         : N              
+centroidInit[52]             : C19       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C20       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C21       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C22       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C23       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C24       :        :                   :         : 7         :                
+centroidData_A[62]           : C25       : output : 2.5 V             :         : 7         : N              
+centroidInit[4]              : C26       : input  : 2.5 V             :         : 7         : N              
+centroidData_B[0]            : C27       : output : 2.5 V             :         : 7         : N              
+centroidData_B[9]            : C28       : output : 2.5 V             :         : 7         : N              
+centroidData_A[51]           : C29       : output : 2.5 V             :         : 6         : N              
+centroidInit[63]             : C30       : input  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D1        :        :                   :         : 8         :                
+GND                          : D2        : gnd    :                   :         :           :                
+centroidData_A[36]           : D3        : output : 2.5 V             :         : 8         : N              
+centroidData_A[35]           : D4        : output : 2.5 V             :         : 8         : N              
+centroidData_A[44]           : D5        : output : 2.5 V             :         : 8         : N              
+centroidData_A[40]           : D6        : output : 2.5 V             :         : 8         : N              
+centroidCalcFP[38]           : D7        : input  : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D8        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D9        :        :                   :         : 8         :                
+centroidCalc[38]             : D10       : input  : 2.5 V             :         : 8         : N              
+centroidCalcFP[35]           : D11       : input  : 2.5 V             :         : 8         : N              
+centroidCalc[45]             : D12       : input  : 2.5 V             :         : 8         : N              
+centroidData_A[34]           : D13       : output : 2.5 V             :         : 8         : N              
+centroidCalcFP[42]           : D14       : input  : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D15       :        :                   :         : 8         :                
+centroidInit[48]             : D16       : input  : 2.5 V             :         : 8         : N              
+centroidInit[57]             : D17       : input  : 2.5 V             :         : 7         : N              
+centroidInit[60]             : D18       : input  : 2.5 V             :         : 7         : N              
+centroidInit[56]             : D19       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D20       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D21       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D22       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D23       :        :                   :         : 7         :                
+centroidData_B[11]           : D24       : output : 2.5 V             :         : 7         : N              
+centroidData_B[8]            : D25       : output : 2.5 V             :         : 7         : N              
+centroidInit[5]              : D26       : input  : 2.5 V             :         : 7         : N              
+centroidData_B[7]            : D27       : output : 2.5 V             :         : 7         : N              
+centroidData_B[5]            : D28       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D29       :        :                   :         : 6         :                
+centroidData_A[49]           : D30       : output : 2.5 V             :         : 6         : N              
+TMS                          : E1        : input  :                   :         : 9         :                
+TDI                          : E2        : input  :                   :         : 9         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E3        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E4        :        :                   :         : 8         :                
+GND                          : E5        : gnd    :                   :         :           :                
+centroidData_A[45]           : E6        : output : 2.5 V             :         : 8         : N              
+centroidData_A[39]           : E7        : output : 2.5 V             :         : 8         : N              
+GND                          : E8        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E9        :        :                   :         : 8         :                
+centroidCalc[37]             : E10       : input  : 2.5 V             :         : 8         : N              
+GND                          : E11       : gnd    :                   :         :           :                
+centroidData_A[42]           : E12       : output : 2.5 V             :         : 8         : N              
+centroidCalc[34]             : E13       : input  : 2.5 V             :         : 8         : N              
+GND                          : E14       : gnd    :                   :         :           :                
+centroidData_B[61]           : E15       : output : 2.5 V             :         : 8         : N              
+centroidData_B[59]           : E16       : output : 2.5 V             :         : 8         : N              
+GND                          : E17       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E18       :        :                   :         : 7         :                
+centroidData_B[54]           : E19       : output : 2.5 V             :         : 7         : N              
+GND                          : E20       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E21       :        :                   :         : 7         :                
+centroidInit[8]              : E22       : input  : 2.5 V             :         : 7         : N              
+GND                          : E23       : gnd    :                   :         :           :                
+centroidData_B[14]           : E24       : output : 2.5 V             :         : 7         : N              
+centroidInit[9]              : E25       : input  : 2.5 V             :         : 7         : N              
+GND                          : E26       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E27       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E28       :        :                   :         : 6         :                
+GND                          : E29       : gnd    :                   :         :           :                
+centroidData_A[61]           : E30       : output : 2.5 V             :         : 6         : N              
+TDO                          : F1        : output :                   :         : 9         :                
+TCK                          : F2        : input  :                   :         : 9         :                
+GND                          : F3        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F4        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F5        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F6        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F7        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F8        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F9        :        :                   :         : 8         :                
+centroidCalcFP[44]           : F10       : input  : 2.5 V             :         : 8         : N              
+centroidCalcFP[46]           : F11       : input  : 2.5 V             :         : 8         : N              
+centroidCalc[35]             : F12       : input  : 2.5 V             :         : 8         : N              
+centroidCalcFP[39]           : F13       : input  : 2.5 V             :         : 8         : N              
+centroidCalcFP[41]           : F14       : input  : 2.5 V             :         : 8         : N              
+centroidData_B[50]           : F15       : output : 2.5 V             :         : 8         : N              
+centroidData_B[57]           : F16       : output : 2.5 V             :         : 8         : N              
+centroidCalc[28]             : F17       : input  : 2.5 V             :         : 7         : N              
+centroidInit[47]             : F18       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F19       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F20       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F21       :        :                   :         : 7         :                
+centroidData_B[6]            : F22       : output : 2.5 V             :         : 7         : N              
+centroidInit[11]             : F23       : input  : 2.5 V             :         : 7         : N              
+centroidInit[6]              : F24       : input  : 2.5 V             :         : 7         : N              
+centroidInit[14]             : F25       : input  : 2.5 V             :         : 7         : N              
+centroidCalc[62]             : F26       : input  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F27       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F28       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F29       :        :                   :         : 6         :                
+centroidCalcFP[55]           : F30       : input  : 2.5 V             :         : 6         : N              
+GND                          : G1        : gnd    :                   :         :           :                
+GND                          : G2        : gnd    :                   :         :           :                
+GND                          : G3        : gnd    :                   :         :           :                
+GND                          : G4        : gnd    :                   :         :           :                
+GND                          : G5        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G6        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G7        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G8        :        :                   :         : 8         :                
+~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : G9        : input  : 2.5 V             :         : 9         : N              
+centroidCalcFP[33]           : G10       : input  : 2.5 V             :         : 8         : N              
+centroidCalcFP[32]           : G11       : input  : 2.5 V             :         : 8         : N              
+centroidCalcFP[34]           : G12       : input  : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G13       :        :                   :         : 8         :                
+centroidData_B[62]           : G14       : output : 2.5 V             :         : 8         : N              
+centroidData_B[58]           : G15       : output : 2.5 V             :         : 8         : N              
+centroidData_B[52]           : G16       : output : 2.5 V             :         : 7         : N              
+centroidData_A[28]           : G17       : output : 2.5 V             :         : 7         : N              
+centroidInit[54]             : G18       : input  : 2.5 V             :         : 7         : N              
+VCCIO7                       : G19       : power  :                   : 2.5V    : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G20       :        :                   :         : 7         :                
+centroidData_B[13]           : G21       : output : 2.5 V             :         : 7         : N              
+centroidInit[2]              : G22       : input  : 2.5 V             :         : 7         : N              
+centroidInit[1]              : G23       : input  : 2.5 V             :         : 7         : N              
+centroidCalcFP[62]           : G24       : input  : 2.5 V             :         : 7         : N              
+centroidInit[3]              : G25       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G26       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G27       :        :                   :         : 6         :                
+centroidData_A[59]           : G28       : output : 2.5 V             :         : 6         : N              
+centroidData_A[52]           : G29       : output : 2.5 V             :         : 6         : N              
+centroidCalcFP[50]           : G30       : input  : 2.5 V             :         : 6         : N              
+GND                          : H1        : gnd    :                   :         :           :                
+GND                          : H2        : gnd    :                   :         :           :                
+GXB_NC                       : H3        :        :                   :         : QL1       :                
+GXB_NC                       : H4        :        :                   :         : QL1       :                
+GND                          : H5        : gnd    :                   :         :           :                
+GND                          : H6        : gnd    :                   :         :           :                
+VCCIO9                       : H7        : power  :                   : 2.5V    : 9         :                
+GND                          : H8        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H9        :        :                   :         : 8         :                
+VCCIO8                       : H10       : power  :                   : 2.5V    : 8         :                
+GND                          : H11       : gnd    :                   :         :           :                
+VCCIO8                       : H12       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : H13       : power  :                   : 2.5V    : 8         :                
+GND                          : H14       : gnd    :                   :         :           :                
+VCCIO8                       : H15       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : H16       : power  :                   : 2.5V    : 8         :                
+GND                          : H17       : gnd    :                   :         :           :                
+VCCIO7                       : H18       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : H19       : power  :                   : 2.5V    : 7         :                
+GND                          : H20       : gnd    :                   :         :           :                
+VCCIO7                       : H21       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : H22       : power  :                   : 2.5V    : 7         :                
+GND                          : H23       : gnd    :                   :         :           :                
+centroidInit[7]              : H24       : input  : 2.5 V             :         : 7         : N              
+centroidData_B[63]           : H25       : output : 2.5 V             :         : 6         : N              
+GND                          : H26       : gnd    :                   :         :           :                
+centroidData_A[58]           : H27       : output : 2.5 V             :         : 6         : N              
+centroidCalcFP[58]           : H28       : input  : 2.5 V             :         : 6         : N              
+GND                          : H29       : gnd    :                   :         :           :                
+centroidCalcFP[61]           : H30       : input  : 2.5 V             :         : 6         : N              
+GXB_GND*                     : J1        :        :                   :         : QL1       :                
+GXB_GND*                     : J2        :        :                   :         : QL1       :                
+GND                          : J3        : gnd    :                   :         :           :                
+GND                          : J4        : gnd    :                   :         :           :                
+GND                          : J5        : gnd    :                   :         :           :                
+VCCA                         : J6        : power  :                   : 2.5V    :           :                
+GND                          : J7        : gnd    :                   :         :           :                
+GND                          : J8        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J9        :        :                   :         : 8         :                
+VCCIO8                       : J10       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J11       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J12       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J13       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J14       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J15       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J16       : power  :                   : 2.5V    : 8         :                
+VCCIO7                       : J17       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : J18       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : J19       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : J20       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : J21       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : J22       : power  :                   : 2.5V    : 7         :                
+VCCD_PLL                     : J23       : power  :                   : 1.2V    :           :                
+GND                          : J24       : gnd    :                   :         :           :                
+centroidCalc[58]             : J25       : input  : 2.5 V             :         : 6         : N              
+centroidData_A[55]           : J26       : output : 2.5 V             :         : 6         : N              
+centroidData_A[57]           : J27       : output : 2.5 V             :         : 6         : N              
+centroidCalcFP[57]           : J28       : input  : 2.5 V             :         : 6         : N              
+centroidCalc[51]             : J29       : input  : 2.5 V             :         : 6         : N              
+centroidCalcFP[52]           : J30       : input  : 2.5 V             :         : 6         : N              
+GND                          : K1        : gnd    :                   :         :           :                
+GND                          : K2        : gnd    :                   :         :           :                
+GXB_NC                       : K3        :        :                   :         : QL1       :                
+GXB_NC                       : K4        :        :                   :         : QL1       :                
+VCCL_GXB                     : K5        : power  :                   : 1.2V    :           :                
+VCCD_PLL                     : K6        : power  :                   : 1.2V    :           :                
+GND                          : K7        : gnd    :                   :         :           :                
+GND                          : K8        : gnd    :                   :         :           :                
+VCCINT                       : K9        : power  :                   : 1.2V    :           :                
+VCC_CLKIN8B                  : K10       : power  :                   : 2.5V    : 8B        :                
+GXB_GND*                     : K11       :        :                   :         : 8B        :                
+GND                          : K12       : gnd    :                   :         :           :                
+VCCINT                       : K13       : power  :                   : 1.2V    :           :                
+GND                          : K14       : gnd    :                   :         :           :                
+GXB_GND*                     : K15       :        :                   :         : 8A        :                
+VCC_CLKIN8A                  : K16       : power  :                   : 2.5V    : 8A        :                
+centroidData_B[48]           : K17       : output : 2.5 V             :         : 7         : N              
+centroidData_B[47]           : K18       : output : 2.5 V             :         : 7         : N              
+centroidData_B[60]           : K19       : output : 2.5 V             :         : 7         : N              
+GND                          : K20       : gnd    :                   :         :           :                
+centroidData_B[4]            : K21       : output : 2.5 V             :         : 7         : N              
+centroidData_B[12]           : K22       : output : 2.5 V             :         : 7         : N              
+VCCA                         : K23       : power  :                   : 2.5V    :           :                
+centroidCalc[57]             : K24       : input  : 2.5 V             :         : 6         : N              
+centroidData_A[48]           : K25       : output : 2.5 V             :         : 6         : N              
+centroidData_A[56]           : K26       : output : 2.5 V             :         : 6         : N              
+centroidData_A[50]           : K27       : output : 2.5 V             :         : 6         : N              
+centroidCalc[50]             : K28       : input  : 2.5 V             :         : 6         : N              
+centroidCalcFP[59]           : K29       : input  : 2.5 V             :         : 6         : N              
+centroidCalc[48]             : K30       : input  : 2.5 V             :         : 6         : N              
+GXB_GND*                     : L1        :        :                   :         : QL1       :                
+GXB_GND*                     : L2        :        :                   :         : QL1       :                
+GND                          : L3        : gnd    :                   :         :           :                
+GND                          : L4        : gnd    :                   :         :           :                
+GND                          : L5        : gnd    :                   :         :           :                
+VCCH_GXB                     : L6        : power  :                   : 2.5V    :           :                
+GND                          : L7        : gnd    :                   :         :           :                
+VCCA                         : L8        : power  :                   : 2.5V    :           :                
+GND                          : L9        : gnd    :                   :         :           :                
+GXB_GND*                     : L10       :        :                   :         : 8B        :                
+GXB_GND*                     : L11       :        :                   :         : 8B        :                
+VCCINT                       : L12       : power  :                   : 1.2V    :           :                
+GND                          : L13       : gnd    :                   :         :           :                
+VCCINT                       : L14       : power  :                   : 1.2V    :           :                
+GXB_GND*                     : L15       :        :                   :         : 8A        :                
+VCCINT                       : L16       : power  :                   : 1.2V    :           :                
+GND                          : L17       : gnd    :                   :         :           :                
+VCCINT                       : L18       : power  :                   : 1.2V    :           :                
+GND                          : L19       : gnd    :                   :         :           :                
+VCCINT                       : L20       : power  :                   : 1.2V    :           :                
+GND                          : L21       : gnd    :                   :         :           :                
+VCCIO6                       : L22       : power  :                   : 2.5V    : 6         :                
+GND                          : L23       : gnd    :                   :         :           :                
+VCCIO6                       : L24       : power  :                   : 2.5V    : 6         :                
+centroidCalc[49]             : L25       : input  : 2.5 V             :         : 6         : N              
+GND                          : L26       : gnd    :                   :         :           :                
+centroidCalc[55]             : L27       : input  : 2.5 V             :         : 6         : N              
+centroidCalc[61]             : L28       : input  : 2.5 V             :         : 6         : N              
+GND                          : L29       : gnd    :                   :         :           :                
+centroidCalcFP[56]           : L30       : input  : 2.5 V             :         : 6         : N              
+GND                          : M1        : gnd    :                   :         :           :                
+GND                          : M2        : gnd    :                   :         :           :                
+GXB_NC                       : M3        :        :                   :         : QL1       :                
+GXB_NC                       : M4        :        :                   :         : QL1       :                
+VCCL_GXB                     : M5        : power  :                   : 1.2V    :           :                
+GND                          : M6        : gnd    :                   :         :           :                
+VCCA_GXB                     : M7        : power  :                   : 2.5V    :           :                
+VCCD_PLL                     : M8        : power  :                   : 1.2V    :           :                
+VCCINT                       : M9        : power  :                   : 1.2V    :           :                
+GXB_GND*                     : M10       :        :                   :         : 8B        :                
+VCCINT                       : M11       : power  :                   : 1.2V    :           :                
+GND                          : M12       : gnd    :                   :         :           :                
+VCCINT                       : M13       : power  :                   : 1.2V    :           :                
+GND                          : M14       : gnd    :                   :         :           :                
+VCCINT                       : M15       : power  :                   : 1.2V    :           :                
+GND                          : M16       : gnd    :                   :         :           :                
+VCCINT                       : M17       : power  :                   : 1.2V    :           :                
+GND                          : M18       : gnd    :                   :         :           :                
+VCCINT                       : M19       : power  :                   : 1.2V    :           :                
+GND                          : M20       : gnd    :                   :         :           :                
+centroidCalc[56]             : M21       : input  : 2.5 V             :         : 6         : N              
+centroidData_A[47]           : M22       : output : 2.5 V             :         : 6         : N              
+VCCIO6                       : M23       : power  :                   : 2.5V    : 6         :                
+VCCIO6                       : M24       : power  :                   : 2.5V    : 6         :                
+centroidCalcFP[51]           : M25       : input  : 2.5 V             :         : 6         : N              
+centroidCalc[54]             : M26       : input  : 2.5 V             :         : 6         : N              
+centroidCalcFP[47]           : M27       : input  : 2.5 V             :         : 6         : N              
+centroidCalc[52]             : M28       : input  : 2.5 V             :         : 6         : N              
+centroidCalcFP[48]           : M29       : input  : 2.5 V             :         : 6         : N              
+centroidData_A[54]           : M30       : output : 2.5 V             :         : 6         : N              
+GXB_GND*                     : N1        :        :                   :         : QL1       :                
+GXB_GND*                     : N2        :        :                   :         : QL1       :                
+GND                          : N3        : gnd    :                   :         :           :                
+GND                          : N4        : gnd    :                   :         :           :                
+VCCH_GXB                     : N5        : power  :                   : 2.5V    :           :                
+GND                          : N6        : gnd    :                   :         :           :                
+VCCL_GXB                     : N7        : power  :                   : 1.2V    :           :                
+VCCINT                       : N8        : power  :                   : 1.2V    :           :                
+GND                          : N9        : gnd    :                   :         :           :                
+VCCINT                       : N10       : power  :                   : 1.2V    :           :                
+GND                          : N11       : gnd    :                   :         :           :                
+VCCINT                       : N12       : power  :                   : 1.2V    :           :                
+GND                          : N13       : gnd    :                   :         :           :                
+VCCINT                       : N14       : power  :                   : 1.2V    :           :                
+GND                          : N15       : gnd    :                   :         :           :                
+VCCINT                       : N16       : power  :                   : 1.2V    :           :                
+GND                          : N17       : gnd    :                   :         :           :                
+VCCINT                       : N18       : power  :                   : 1.2V    :           :                
+GND                          : N19       : gnd    :                   :         :           :                
+VCCINT                       : N20       : power  :                   : 1.2V    :           :                
+centroidCalc[47]             : N21       : input  : 2.5 V             :         : 6         : N              
+VCCIO6                       : N22       : power  :                   : 2.5V    : 6         :                
+VCCIO6                       : N23       : power  :                   : 2.5V    : 6         :                
+centroidCalc[59]             : N24       : input  : 2.5 V             :         : 6         : N              
+centroidCalcFP[54]           : N25       : input  : 2.5 V             :         : 6         : N              
+centroidCalc[60]             : N26       : input  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : N27       :        :                   :         : 6         :                
+centroidData_A[60]           : N28       : output : 2.5 V             :         : 6         : N              
+centroidCalc[53]             : N29       : input  : 2.5 V             :         : 6         : N              
+centroidCalcFP[60]           : N30       : input  : 2.5 V             :         : 6         : N              
+GND                          : P1        : gnd    :                   :         :           :                
+GND                          : P2        : gnd    :                   :         :           :                
+GXB_NC                       : P3        :        :                   :         : QL1       :                
+GXB_NC                       : P4        :        :                   :         : QL1       :                
+GND                          : P5        : gnd    :                   :         :           :                
+VCCL_GXB                     : P6        : power  :                   : 1.2V    :           :                
+VCCD_PLL                     : P7        : power  :                   : 1.2V    :           :                
+GND                          : P8        : gnd    :                   :         :           :                
+VCCINT                       : P9        : power  :                   : 1.2V    :           :                
+GND                          : P10       : gnd    :                   :         :           :                
+VCCINT                       : P11       : power  :                   : 1.2V    :           :                
+GND                          : P12       : gnd    :                   :         :           :                
+VCCINT                       : P13       : power  :                   : 1.2V    :           :                
+GND                          : P14       : gnd    :                   :         :           :                
+VCCINT                       : P15       : power  :                   : 1.2V    :           :                
+GND                          : P16       : gnd    :                   :         :           :                
+VCCINT                       : P17       : power  :                   : 1.2V    :           :                
+GND                          : P18       : gnd    :                   :         :           :                
+VCCINT                       : P19       : power  :                   : 1.2V    :           :                
+GND                          : P20       : gnd    :                   :         :           :                
+centroidCalcFP[49]           : P21       : input  : 2.5 V             :         : 6         : N              
+VCCIO6                       : P22       : power  :                   : 2.5V    : 6         :                
+GND                          : P23       : gnd    :                   :         :           :                
+VCCIO6                       : P24       : power  :                   : 2.5V    : 6         :                
+centroidCalcFP[53]           : P25       : input  : 2.5 V             :         : 6         : N              
+GND                          : P26       : gnd    :                   :         :           :                
+op[1]                        : P27       : input  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : P28       :        :                   :         : 6         :                
+GND                          : P29       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P30       :        :                   :         : 6         :                
+GXB_GND*                     : R1        :        :                   :         : QL1       :                
+GXB_GND*                     : R2        :        :                   :         : QL1       :                
+GND                          : R3        : gnd    :                   :         :           :                
+GND                          : R4        : gnd    :                   :         :           :                
+GND                          : R5        : gnd    :                   :         :           :                
+VCCA_GXB                     : R6        : power  :                   : 2.5V    :           :                
+GND                          : R7        : gnd    :                   :         :           :                
+VCCA                         : R8        : power  :                   : 2.5V    :           :                
+GND                          : R9        : gnd    :                   :         :           :                
+VCCINT                       : R10       : power  :                   : 1.2V    :           :                
+GND                          : R11       : gnd    :                   :         :           :                
+VCCINT                       : R12       : power  :                   : 1.2V    :           :                
+GND                          : R13       : gnd    :                   :         :           :                
+VCCINT                       : R14       : power  :                   : 1.2V    :           :                
+GND                          : R15       : gnd    :                   :         :           :                
+VCCINT                       : R16       : power  :                   : 1.2V    :           :                
+GND                          : R17       : gnd    :                   :         :           :                
+VCCINT                       : R18       : power  :                   : 1.2V    :           :                
+GND                          : R19       : gnd    :                   :         :           :                
+VCCINT                       : R20       : power  :                   : 1.2V    :           :                
+GND                          : R21       : gnd    :                   :         :           :                
+VCCIO6                       : R22       : power  :                   : 2.5V    : 6         :                
+VCCIO6                       : R23       : power  :                   : 2.5V    : 6         :                
+centroidData_A[53]           : R24       : output : 2.5 V             :         : 6         : N              
+centroidData_B[34]           : R25       : output : 2.5 V             :         : 6         : N              
+centroidInit[34]             : R26       : input  : 2.5 V             :         : 6         : N              
+centroidData_B[31]           : R27       : output : 2.5 V             :         : 6         : N              
+centroidData_B[36]           : R28       : output : 2.5 V             :         : 6         : N              
+centroidData_B[38]           : R29       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : R30       :        :                   :         : 6         :                
+GND                          : T1        : gnd    :                   :         :           :                
+GND                          : T2        : gnd    :                   :         :           :                
+GXB_NC                       : T3        :        :                   :         : QL0       :                
+GXB_NC                       : T4        :        :                   :         : QL0       :                
+GND                          : T5        : gnd    :                   :         :           :                
+VCCL_GXB                     : T6        : power  :                   : 1.2V    :           :                
+GND                          : T7        : gnd    :                   :         :           :                
+VCCA                         : T8        : power  :                   : 2.5V    :           :                
+VCCINT                       : T9        : power  :                   : 1.2V    :           :                
+GND                          : T10       : gnd    :                   :         :           :                
+VCCINT                       : T11       : power  :                   : 1.2V    :           :                
+GND                          : T12       : gnd    :                   :         :           :                
+VCCINT                       : T13       : power  :                   : 1.2V    :           :                
+GND                          : T14       : gnd    :                   :         :           :                
+VCCINT                       : T15       : power  :                   : 1.2V    :           :                
+GND                          : T16       : gnd    :                   :         :           :                
+VCCINT                       : T17       : power  :                   : 1.2V    :           :                
+GND                          : T18       : gnd    :                   :         :           :                
+VCCINT                       : T19       : power  :                   : 1.2V    :           :                
+GND                          : T20       : gnd    :                   :         :           :                
+centroidInit[39]             : T21       : input  : 2.5 V             :         : 5         : N              
+GND                          : T22       : gnd    :                   :         :           :                
+centroidData_B[42]           : T23       : output : 2.5 V             :         : 5         : N              
+centroidData_B[35]           : T24       : output : 2.5 V             :         : 5         : N              
+centroidInit[44]             : T25       : input  : 2.5 V             :         : 5         : N              
+centroidData_B[41]           : T26       : output : 2.5 V             :         : 5         : N              
+centroidData_B[40]           : T27       : output : 2.5 V             :         : 5         : N              
+centroidInit[38]             : T28       : input  : 2.5 V             :         : 6         : N              
+GND+                         : T29       :        :                   :         : 6         :                
+GND+                         : T30       :        :                   :         : 6         :                
+GXB_GND*                     : U1        :        :                   :         : QL0       :                
+GXB_GND*                     : U2        :        :                   :         : QL0       :                
+GND                          : U3        : gnd    :                   :         :           :                
+GND                          : U4        : gnd    :                   :         :           :                
+GND                          : U5        : gnd    :                   :         :           :                
+VCCH_GXB                     : U6        : power  :                   : 2.5V    :           :                
+VCCD_PLL                     : U7        : power  :                   : 1.2V    :           :                
+VCCINT                       : U8        : power  :                   : 1.2V    :           :                
+GND                          : U9        : gnd    :                   :         :           :                
+VCCINT                       : U10       : power  :                   : 1.2V    :           :                
+GND                          : U11       : gnd    :                   :         :           :                
+VCCINT                       : U12       : power  :                   : 1.2V    :           :                
+GND                          : U13       : gnd    :                   :         :           :                
+VCCINT                       : U14       : power  :                   : 1.2V    :           :                
+GND                          : U15       : gnd    :                   :         :           :                
+VCCINT                       : U16       : power  :                   : 1.2V    :           :                
+GND                          : U17       : gnd    :                   :         :           :                
+VCCINT                       : U18       : power  :                   : 1.2V    :           :                
+GND                          : U19       : gnd    :                   :         :           :                
+VCCINT                       : U20       : power  :                   : 1.2V    :           :                
+centroidInit[42]             : U21       : input  : 2.5 V             :         : 5         : N              
+VCCIO5                       : U22       : power  :                   : 2.5V    : 5         :                
+GND                          : U23       : gnd    :                   :         :           :                
+VCCIO5                       : U24       : power  :                   : 2.5V    : 5         :                
+centroidInit[35]             : U25       : input  : 2.5 V             :         : 5         : N              
+GND                          : U26       : gnd    :                   :         :           :                
+centroidData_B[39]           : U27       : output : 2.5 V             :         : 5         : N              
+centroidData_B[37]           : U28       : output : 2.5 V             :         : 5         : N              
+GND                          : U29       : gnd    :                   :         :           :                
+centroidData_B[44]           : U30       : output : 2.5 V             :         : 5         : N              
+GND                          : V1        : gnd    :                   :         :           :                
+GND                          : V2        : gnd    :                   :         :           :                
+GXB_NC                       : V3        :        :                   :         : QL0       :                
+GXB_NC                       : V4        :        :                   :         : QL0       :                
+VCCL_GXB                     : V5        : power  :                   : 1.2V    :           :                
+GND                          : V6        : gnd    :                   :         :           :                
+VCCA_GXB                     : V7        : power  :                   : 2.5V    :           :                
+GND                          : V8        : gnd    :                   :         :           :                
+VCCINT                       : V9        : power  :                   : 1.2V    :           :                
+GND                          : V10       : gnd    :                   :         :           :                
+GXB_GND*                     : V11       :        :                   :         : 3B        :                
+GXB_GND*                     : V12       :        :                   :         : 3B        :                
+VCCINT                       : V13       : power  :                   : 1.2V    :           :                
+GND                          : V14       : gnd    :                   :         :           :                
+GXB_GND*                     : V15       :        :                   :         : 3A        :                
+GND                          : V16       : gnd    :                   :         :           :                
+VCCINT                       : V17       : power  :                   : 1.2V    :           :                
+GND                          : V18       : gnd    :                   :         :           :                
+VCCINT                       : V19       : power  :                   : 1.2V    :           :                
+GND                          : V20       : gnd    :                   :         :           :                
+centroidInit[33]             : V21       : input  : 2.5 V             :         : 5         : N              
+VCCIO5                       : V22       : power  :                   : 2.5V    : 5         :                
+VCCIO5                       : V23       : power  :                   : 2.5V    : 5         :                
+GND                          : V24       : gnd    :                   :         :           :                
+centroidInit[46]             : V25       : input  : 2.5 V             :         : 5         : N              
+centroidInit[43]             : V26       : input  : 2.5 V             :         : 5         : N              
+centroidData_B[46]           : V27       : output : 2.5 V             :         : 5         : N              
+centroidData_B[45]           : V28       : output : 2.5 V             :         : 5         : N              
+GND+                         : V29       :        :                   :         : 5         :                
+GND+                         : V30       :        :                   :         : 5         :                
+GXB_GND*                     : W1        :        :                   :         : QL0       :                
+GXB_GND*                     : W2        :        :                   :         : QL0       :                
+GND                          : W3        : gnd    :                   :         :           :                
+GND                          : W4        : gnd    :                   :         :           :                
+GND                          : W5        : gnd    :                   :         :           :                
+GND                          : W6        : gnd    :                   :         :           :                
+VCCH_GXB                     : W7        : power  :                   : 2.5V    :           :                
+VCCINT                       : W8        : power  :                   : 1.2V    :           :                
+GND                          : W9        : gnd    :                   :         :           :                
+VCCINT                       : W10       : power  :                   : 1.2V    :           :                
+GXB_GND*                     : W11       :        :                   :         : 3B        :                
+GXB_GND*                     : W12       :        :                   :         : 3B        :                
+GND                          : W13       : gnd    :                   :         :           :                
+VCCINT                       : W14       : power  :                   : 1.2V    :           :                
+GXB_GND*                     : W15       :        :                   :         : 3A        :                
+VCC_CLKIN3A                  : W16       : power  :                   : 2.5V    : 3A        :                
+GND                          : W17       : gnd    :                   :         :           :                
+VCCINT                       : W18       : power  :                   : 1.2V    :           :                
+GND                          : W19       : gnd    :                   :         :           :                
+VCCINT                       : W20       : power  :                   : 1.2V    :           :                
+GND                          : W21       : gnd    :                   :         :           :                
+VCCIO5                       : W22       : power  :                   : 2.5V    : 5         :                
+VCCIO5                       : W23       : power  :                   : 2.5V    : 5         :                
+VCCIO5                       : W24       : power  :                   : 2.5V    : 5         :                
+centroidInit[45]             : W25       : input  : 2.5 V             :         : 5         : N              
+centroidInit[31]             : W26       : input  : 2.5 V             :         : 5         : N              
+centroidData_B[43]           : W27       : output : 2.5 V             :         : 5         : N              
+centroidInit[36]             : W28       : input  : 2.5 V             :         : 5         : N              
+centroidInit[41]             : W29       : input  : 2.5 V             :         : 5         : N              
+centroidInit[37]             : W30       : input  : 2.5 V             :         : 5         : N              
+GND                          : Y1        : gnd    :                   :         :           :                
+GND                          : Y2        : gnd    :                   :         :           :                
+GXB_NC                       : Y3        :        :                   :         : QL0       :                
+GXB_NC                       : Y4        :        :                   :         : QL0       :                
+VCCL_GXB                     : Y5        : power  :                   : 1.2V    :           :                
+VCCA_GXB                     : Y6        : power  :                   : 2.5V    :           :                
+VCCD_PLL                     : Y7        : power  :                   : 1.2V    :           :                
+VCCD_PLL                     : Y8        : power  :                   : 1.2V    :           :                
+GND                          : Y9        : gnd    :                   :         :           :                
+GND                          : Y10       : gnd    :                   :         :           :                
+VCCINT                       : Y11       : power  :                   : 1.2V    :           :                
+VCC_CLKIN3B                  : Y12       : power  :                   : 2.5V    : 3B        :                
+VCCINT                       : Y13       : power  :                   : 1.2V    :           :                
+GND                          : Y14       : gnd    :                   :         :           :                
+VCCINT                       : Y15       : power  :                   : 1.2V    :           :                
+GND                          : Y16       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y17       :        :                   :         : 4         :                
+centroidCalc[3]              : Y18       : input  : 2.5 V             :         : 4         : N              
+centroidCalcFP[1]            : Y19       : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y20       :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y21       :        :                   :         : 4         :                
+centroidData_A[22]           : Y22       : output : 2.5 V             :         : 5         : N              
+GND                          : Y23       : gnd    :                   :         :           :                
+VCCIO5                       : Y24       : power  :                   : 2.5V    : 5         :                
+centroidData_A[17]           : Y25       : output : 2.5 V             :         : 5         : N              
+GND                          : Y26       : gnd    :                   :         :           :                
+centroidCalc[18]             : Y27       : input  : 2.5 V             :         : 5         : N              
+centroidInit[32]             : Y28       : input  : 2.5 V             :         : 5         : N              
+GND                          : Y29       : gnd    :                   :         :           :                
+op[0]                        : Y30       : input  : 2.5 V             :         : 5         : N              

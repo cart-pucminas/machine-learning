@@ -1,0 +1,394 @@
+Simulator report for Kmeans_MuxMapData
+Mon Oct 31 16:22:32 2016
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 129 nodes    ;
+; Simulation Coverage         ;      17.83 % ;
+; Total Number of Transitions ; 659          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C35F672C6 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      17.83 % ;
+; Total nodes checked                                 ; 129          ;
+; Total output ports checked                          ; 129          ;
+; Total output ports with complete 1/0-value coverage ; 23           ;
+; Total output ports with no 1/0-value coverage       ; 104          ;
+; Total output ports with no 1-value coverage         ; 104          ;
+; Total output ports with no 0-value coverage         ; 106          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-----------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                             ;
++-------------------------------+--------------------------------------+------------------+
+; Node Name                     ; Output Port Name                     ; Output Port Type ;
++-------------------------------+--------------------------------------+------------------+
+; |Kmeans_MuxMapData|mapData~0  ; |Kmeans_MuxMapData|mapData~0         ; combout          ;
+; |Kmeans_MuxMapData|mapData~1  ; |Kmeans_MuxMapData|mapData~1         ; combout          ;
+; |Kmeans_MuxMapData|mapData~2  ; |Kmeans_MuxMapData|mapData~2         ; combout          ;
+; |Kmeans_MuxMapData|mapData~3  ; |Kmeans_MuxMapData|mapData~3         ; combout          ;
+; |Kmeans_MuxMapData|mapData~4  ; |Kmeans_MuxMapData|mapData~4         ; combout          ;
+; |Kmeans_MuxMapData|mapData~5  ; |Kmeans_MuxMapData|mapData~5         ; combout          ;
+; |Kmeans_MuxMapData|mapData[0] ; |Kmeans_MuxMapData|mapData[0]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[1] ; |Kmeans_MuxMapData|mapData[1]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[2] ; |Kmeans_MuxMapData|mapData[2]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[3] ; |Kmeans_MuxMapData|mapData[3]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[4] ; |Kmeans_MuxMapData|mapData[4]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[5] ; |Kmeans_MuxMapData|mapData[5]        ; padio            ;
+; |Kmeans_MuxMapData|mapCalc[0] ; |Kmeans_MuxMapData|mapCalc[0]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[0] ; |Kmeans_MuxMapData|mapInit[0]~corein ; combout          ;
+; |Kmeans_MuxMapData|op         ; |Kmeans_MuxMapData|op~corein         ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[1] ; |Kmeans_MuxMapData|mapCalc[1]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[1] ; |Kmeans_MuxMapData|mapInit[1]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[2] ; |Kmeans_MuxMapData|mapCalc[2]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[2] ; |Kmeans_MuxMapData|mapInit[2]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[3] ; |Kmeans_MuxMapData|mapCalc[3]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[3] ; |Kmeans_MuxMapData|mapInit[3]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[4] ; |Kmeans_MuxMapData|mapCalc[4]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[4] ; |Kmeans_MuxMapData|mapInit[4]~corein ; combout          ;
++-------------------------------+--------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                  ;
++--------------------------------+---------------------------------------+------------------+
+; Node Name                      ; Output Port Name                      ; Output Port Type ;
++--------------------------------+---------------------------------------+------------------+
+; |Kmeans_MuxMapData|mapData~6   ; |Kmeans_MuxMapData|mapData~6          ; combout          ;
+; |Kmeans_MuxMapData|mapData~7   ; |Kmeans_MuxMapData|mapData~7          ; combout          ;
+; |Kmeans_MuxMapData|mapData~8   ; |Kmeans_MuxMapData|mapData~8          ; combout          ;
+; |Kmeans_MuxMapData|mapData~9   ; |Kmeans_MuxMapData|mapData~9          ; combout          ;
+; |Kmeans_MuxMapData|mapData~10  ; |Kmeans_MuxMapData|mapData~10         ; combout          ;
+; |Kmeans_MuxMapData|mapData~11  ; |Kmeans_MuxMapData|mapData~11         ; combout          ;
+; |Kmeans_MuxMapData|mapData~12  ; |Kmeans_MuxMapData|mapData~12         ; combout          ;
+; |Kmeans_MuxMapData|mapData~13  ; |Kmeans_MuxMapData|mapData~13         ; combout          ;
+; |Kmeans_MuxMapData|mapData~14  ; |Kmeans_MuxMapData|mapData~14         ; combout          ;
+; |Kmeans_MuxMapData|mapData~15  ; |Kmeans_MuxMapData|mapData~15         ; combout          ;
+; |Kmeans_MuxMapData|mapData~16  ; |Kmeans_MuxMapData|mapData~16         ; combout          ;
+; |Kmeans_MuxMapData|mapData~17  ; |Kmeans_MuxMapData|mapData~17         ; combout          ;
+; |Kmeans_MuxMapData|mapData~18  ; |Kmeans_MuxMapData|mapData~18         ; combout          ;
+; |Kmeans_MuxMapData|mapData~19  ; |Kmeans_MuxMapData|mapData~19         ; combout          ;
+; |Kmeans_MuxMapData|mapData~20  ; |Kmeans_MuxMapData|mapData~20         ; combout          ;
+; |Kmeans_MuxMapData|mapData~21  ; |Kmeans_MuxMapData|mapData~21         ; combout          ;
+; |Kmeans_MuxMapData|mapData~22  ; |Kmeans_MuxMapData|mapData~22         ; combout          ;
+; |Kmeans_MuxMapData|mapData~23  ; |Kmeans_MuxMapData|mapData~23         ; combout          ;
+; |Kmeans_MuxMapData|mapData~24  ; |Kmeans_MuxMapData|mapData~24         ; combout          ;
+; |Kmeans_MuxMapData|mapData~25  ; |Kmeans_MuxMapData|mapData~25         ; combout          ;
+; |Kmeans_MuxMapData|mapData~26  ; |Kmeans_MuxMapData|mapData~26         ; combout          ;
+; |Kmeans_MuxMapData|mapData~27  ; |Kmeans_MuxMapData|mapData~27         ; combout          ;
+; |Kmeans_MuxMapData|mapData~28  ; |Kmeans_MuxMapData|mapData~28         ; combout          ;
+; |Kmeans_MuxMapData|mapData~29  ; |Kmeans_MuxMapData|mapData~29         ; combout          ;
+; |Kmeans_MuxMapData|mapData~30  ; |Kmeans_MuxMapData|mapData~30         ; combout          ;
+; |Kmeans_MuxMapData|mapData~31  ; |Kmeans_MuxMapData|mapData~31         ; combout          ;
+; |Kmeans_MuxMapData|mapData[6]  ; |Kmeans_MuxMapData|mapData[6]         ; padio            ;
+; |Kmeans_MuxMapData|mapData[7]  ; |Kmeans_MuxMapData|mapData[7]         ; padio            ;
+; |Kmeans_MuxMapData|mapData[8]  ; |Kmeans_MuxMapData|mapData[8]         ; padio            ;
+; |Kmeans_MuxMapData|mapData[9]  ; |Kmeans_MuxMapData|mapData[9]         ; padio            ;
+; |Kmeans_MuxMapData|mapData[10] ; |Kmeans_MuxMapData|mapData[10]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[11] ; |Kmeans_MuxMapData|mapData[11]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[12] ; |Kmeans_MuxMapData|mapData[12]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[13] ; |Kmeans_MuxMapData|mapData[13]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[14] ; |Kmeans_MuxMapData|mapData[14]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[15] ; |Kmeans_MuxMapData|mapData[15]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[16] ; |Kmeans_MuxMapData|mapData[16]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[17] ; |Kmeans_MuxMapData|mapData[17]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[18] ; |Kmeans_MuxMapData|mapData[18]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[19] ; |Kmeans_MuxMapData|mapData[19]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[20] ; |Kmeans_MuxMapData|mapData[20]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[21] ; |Kmeans_MuxMapData|mapData[21]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[22] ; |Kmeans_MuxMapData|mapData[22]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[23] ; |Kmeans_MuxMapData|mapData[23]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[24] ; |Kmeans_MuxMapData|mapData[24]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[25] ; |Kmeans_MuxMapData|mapData[25]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[26] ; |Kmeans_MuxMapData|mapData[26]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[27] ; |Kmeans_MuxMapData|mapData[27]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[28] ; |Kmeans_MuxMapData|mapData[28]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[29] ; |Kmeans_MuxMapData|mapData[29]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[30] ; |Kmeans_MuxMapData|mapData[30]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[31] ; |Kmeans_MuxMapData|mapData[31]        ; padio            ;
+; |Kmeans_MuxMapData|mapCalc[6]  ; |Kmeans_MuxMapData|mapCalc[6]~corein  ; combout          ;
+; |Kmeans_MuxMapData|mapInit[6]  ; |Kmeans_MuxMapData|mapInit[6]~corein  ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[7]  ; |Kmeans_MuxMapData|mapCalc[7]~corein  ; combout          ;
+; |Kmeans_MuxMapData|mapInit[7]  ; |Kmeans_MuxMapData|mapInit[7]~corein  ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[8]  ; |Kmeans_MuxMapData|mapCalc[8]~corein  ; combout          ;
+; |Kmeans_MuxMapData|mapInit[8]  ; |Kmeans_MuxMapData|mapInit[8]~corein  ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[9]  ; |Kmeans_MuxMapData|mapCalc[9]~corein  ; combout          ;
+; |Kmeans_MuxMapData|mapInit[9]  ; |Kmeans_MuxMapData|mapInit[9]~corein  ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[10] ; |Kmeans_MuxMapData|mapCalc[10]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[10] ; |Kmeans_MuxMapData|mapInit[10]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[11] ; |Kmeans_MuxMapData|mapCalc[11]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[11] ; |Kmeans_MuxMapData|mapInit[11]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[12] ; |Kmeans_MuxMapData|mapCalc[12]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[12] ; |Kmeans_MuxMapData|mapInit[12]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[13] ; |Kmeans_MuxMapData|mapCalc[13]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[13] ; |Kmeans_MuxMapData|mapInit[13]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[14] ; |Kmeans_MuxMapData|mapCalc[14]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[14] ; |Kmeans_MuxMapData|mapInit[14]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[15] ; |Kmeans_MuxMapData|mapCalc[15]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[15] ; |Kmeans_MuxMapData|mapInit[15]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[16] ; |Kmeans_MuxMapData|mapCalc[16]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[16] ; |Kmeans_MuxMapData|mapInit[16]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[17] ; |Kmeans_MuxMapData|mapCalc[17]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[17] ; |Kmeans_MuxMapData|mapInit[17]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[18] ; |Kmeans_MuxMapData|mapCalc[18]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[18] ; |Kmeans_MuxMapData|mapInit[18]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[19] ; |Kmeans_MuxMapData|mapCalc[19]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[19] ; |Kmeans_MuxMapData|mapInit[19]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[20] ; |Kmeans_MuxMapData|mapCalc[20]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[20] ; |Kmeans_MuxMapData|mapInit[20]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[21] ; |Kmeans_MuxMapData|mapCalc[21]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[21] ; |Kmeans_MuxMapData|mapInit[21]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[22] ; |Kmeans_MuxMapData|mapCalc[22]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[22] ; |Kmeans_MuxMapData|mapInit[22]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[23] ; |Kmeans_MuxMapData|mapCalc[23]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[23] ; |Kmeans_MuxMapData|mapInit[23]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[24] ; |Kmeans_MuxMapData|mapCalc[24]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[24] ; |Kmeans_MuxMapData|mapInit[24]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[25] ; |Kmeans_MuxMapData|mapCalc[25]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[25] ; |Kmeans_MuxMapData|mapInit[25]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[26] ; |Kmeans_MuxMapData|mapCalc[26]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[26] ; |Kmeans_MuxMapData|mapInit[26]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[27] ; |Kmeans_MuxMapData|mapCalc[27]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[27] ; |Kmeans_MuxMapData|mapInit[27]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[28] ; |Kmeans_MuxMapData|mapCalc[28]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[28] ; |Kmeans_MuxMapData|mapInit[28]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[29] ; |Kmeans_MuxMapData|mapCalc[29]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[29] ; |Kmeans_MuxMapData|mapInit[29]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[30] ; |Kmeans_MuxMapData|mapCalc[30]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[30] ; |Kmeans_MuxMapData|mapInit[30]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[31] ; |Kmeans_MuxMapData|mapCalc[31]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[31] ; |Kmeans_MuxMapData|mapInit[31]~corein ; combout          ;
++--------------------------------+---------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                  ;
++--------------------------------+---------------------------------------+------------------+
+; Node Name                      ; Output Port Name                      ; Output Port Type ;
++--------------------------------+---------------------------------------+------------------+
+; |Kmeans_MuxMapData|mapData~6   ; |Kmeans_MuxMapData|mapData~6          ; combout          ;
+; |Kmeans_MuxMapData|mapData~7   ; |Kmeans_MuxMapData|mapData~7          ; combout          ;
+; |Kmeans_MuxMapData|mapData~8   ; |Kmeans_MuxMapData|mapData~8          ; combout          ;
+; |Kmeans_MuxMapData|mapData~9   ; |Kmeans_MuxMapData|mapData~9          ; combout          ;
+; |Kmeans_MuxMapData|mapData~10  ; |Kmeans_MuxMapData|mapData~10         ; combout          ;
+; |Kmeans_MuxMapData|mapData~11  ; |Kmeans_MuxMapData|mapData~11         ; combout          ;
+; |Kmeans_MuxMapData|mapData~12  ; |Kmeans_MuxMapData|mapData~12         ; combout          ;
+; |Kmeans_MuxMapData|mapData~13  ; |Kmeans_MuxMapData|mapData~13         ; combout          ;
+; |Kmeans_MuxMapData|mapData~14  ; |Kmeans_MuxMapData|mapData~14         ; combout          ;
+; |Kmeans_MuxMapData|mapData~15  ; |Kmeans_MuxMapData|mapData~15         ; combout          ;
+; |Kmeans_MuxMapData|mapData~16  ; |Kmeans_MuxMapData|mapData~16         ; combout          ;
+; |Kmeans_MuxMapData|mapData~17  ; |Kmeans_MuxMapData|mapData~17         ; combout          ;
+; |Kmeans_MuxMapData|mapData~18  ; |Kmeans_MuxMapData|mapData~18         ; combout          ;
+; |Kmeans_MuxMapData|mapData~19  ; |Kmeans_MuxMapData|mapData~19         ; combout          ;
+; |Kmeans_MuxMapData|mapData~20  ; |Kmeans_MuxMapData|mapData~20         ; combout          ;
+; |Kmeans_MuxMapData|mapData~21  ; |Kmeans_MuxMapData|mapData~21         ; combout          ;
+; |Kmeans_MuxMapData|mapData~22  ; |Kmeans_MuxMapData|mapData~22         ; combout          ;
+; |Kmeans_MuxMapData|mapData~23  ; |Kmeans_MuxMapData|mapData~23         ; combout          ;
+; |Kmeans_MuxMapData|mapData~24  ; |Kmeans_MuxMapData|mapData~24         ; combout          ;
+; |Kmeans_MuxMapData|mapData~25  ; |Kmeans_MuxMapData|mapData~25         ; combout          ;
+; |Kmeans_MuxMapData|mapData~26  ; |Kmeans_MuxMapData|mapData~26         ; combout          ;
+; |Kmeans_MuxMapData|mapData~27  ; |Kmeans_MuxMapData|mapData~27         ; combout          ;
+; |Kmeans_MuxMapData|mapData~28  ; |Kmeans_MuxMapData|mapData~28         ; combout          ;
+; |Kmeans_MuxMapData|mapData~29  ; |Kmeans_MuxMapData|mapData~29         ; combout          ;
+; |Kmeans_MuxMapData|mapData~30  ; |Kmeans_MuxMapData|mapData~30         ; combout          ;
+; |Kmeans_MuxMapData|mapData~31  ; |Kmeans_MuxMapData|mapData~31         ; combout          ;
+; |Kmeans_MuxMapData|mapData[6]  ; |Kmeans_MuxMapData|mapData[6]         ; padio            ;
+; |Kmeans_MuxMapData|mapData[7]  ; |Kmeans_MuxMapData|mapData[7]         ; padio            ;
+; |Kmeans_MuxMapData|mapData[8]  ; |Kmeans_MuxMapData|mapData[8]         ; padio            ;
+; |Kmeans_MuxMapData|mapData[9]  ; |Kmeans_MuxMapData|mapData[9]         ; padio            ;
+; |Kmeans_MuxMapData|mapData[10] ; |Kmeans_MuxMapData|mapData[10]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[11] ; |Kmeans_MuxMapData|mapData[11]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[12] ; |Kmeans_MuxMapData|mapData[12]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[13] ; |Kmeans_MuxMapData|mapData[13]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[14] ; |Kmeans_MuxMapData|mapData[14]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[15] ; |Kmeans_MuxMapData|mapData[15]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[16] ; |Kmeans_MuxMapData|mapData[16]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[17] ; |Kmeans_MuxMapData|mapData[17]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[18] ; |Kmeans_MuxMapData|mapData[18]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[19] ; |Kmeans_MuxMapData|mapData[19]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[20] ; |Kmeans_MuxMapData|mapData[20]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[21] ; |Kmeans_MuxMapData|mapData[21]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[22] ; |Kmeans_MuxMapData|mapData[22]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[23] ; |Kmeans_MuxMapData|mapData[23]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[24] ; |Kmeans_MuxMapData|mapData[24]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[25] ; |Kmeans_MuxMapData|mapData[25]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[26] ; |Kmeans_MuxMapData|mapData[26]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[27] ; |Kmeans_MuxMapData|mapData[27]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[28] ; |Kmeans_MuxMapData|mapData[28]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[29] ; |Kmeans_MuxMapData|mapData[29]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[30] ; |Kmeans_MuxMapData|mapData[30]        ; padio            ;
+; |Kmeans_MuxMapData|mapData[31] ; |Kmeans_MuxMapData|mapData[31]        ; padio            ;
+; |Kmeans_MuxMapData|mapCalc[5]  ; |Kmeans_MuxMapData|mapCalc[5]~corein  ; combout          ;
+; |Kmeans_MuxMapData|mapInit[5]  ; |Kmeans_MuxMapData|mapInit[5]~corein  ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[6]  ; |Kmeans_MuxMapData|mapCalc[6]~corein  ; combout          ;
+; |Kmeans_MuxMapData|mapInit[6]  ; |Kmeans_MuxMapData|mapInit[6]~corein  ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[7]  ; |Kmeans_MuxMapData|mapCalc[7]~corein  ; combout          ;
+; |Kmeans_MuxMapData|mapInit[7]  ; |Kmeans_MuxMapData|mapInit[7]~corein  ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[8]  ; |Kmeans_MuxMapData|mapCalc[8]~corein  ; combout          ;
+; |Kmeans_MuxMapData|mapInit[8]  ; |Kmeans_MuxMapData|mapInit[8]~corein  ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[9]  ; |Kmeans_MuxMapData|mapCalc[9]~corein  ; combout          ;
+; |Kmeans_MuxMapData|mapInit[9]  ; |Kmeans_MuxMapData|mapInit[9]~corein  ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[10] ; |Kmeans_MuxMapData|mapCalc[10]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[10] ; |Kmeans_MuxMapData|mapInit[10]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[11] ; |Kmeans_MuxMapData|mapCalc[11]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[11] ; |Kmeans_MuxMapData|mapInit[11]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[12] ; |Kmeans_MuxMapData|mapCalc[12]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[12] ; |Kmeans_MuxMapData|mapInit[12]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[13] ; |Kmeans_MuxMapData|mapCalc[13]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[13] ; |Kmeans_MuxMapData|mapInit[13]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[14] ; |Kmeans_MuxMapData|mapCalc[14]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[14] ; |Kmeans_MuxMapData|mapInit[14]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[15] ; |Kmeans_MuxMapData|mapCalc[15]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[15] ; |Kmeans_MuxMapData|mapInit[15]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[16] ; |Kmeans_MuxMapData|mapCalc[16]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[16] ; |Kmeans_MuxMapData|mapInit[16]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[17] ; |Kmeans_MuxMapData|mapCalc[17]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[17] ; |Kmeans_MuxMapData|mapInit[17]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[18] ; |Kmeans_MuxMapData|mapCalc[18]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[18] ; |Kmeans_MuxMapData|mapInit[18]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[19] ; |Kmeans_MuxMapData|mapCalc[19]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[19] ; |Kmeans_MuxMapData|mapInit[19]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[20] ; |Kmeans_MuxMapData|mapCalc[20]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[20] ; |Kmeans_MuxMapData|mapInit[20]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[21] ; |Kmeans_MuxMapData|mapCalc[21]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[21] ; |Kmeans_MuxMapData|mapInit[21]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[22] ; |Kmeans_MuxMapData|mapCalc[22]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[22] ; |Kmeans_MuxMapData|mapInit[22]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[23] ; |Kmeans_MuxMapData|mapCalc[23]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[23] ; |Kmeans_MuxMapData|mapInit[23]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[24] ; |Kmeans_MuxMapData|mapCalc[24]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[24] ; |Kmeans_MuxMapData|mapInit[24]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[25] ; |Kmeans_MuxMapData|mapCalc[25]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[25] ; |Kmeans_MuxMapData|mapInit[25]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[26] ; |Kmeans_MuxMapData|mapCalc[26]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[26] ; |Kmeans_MuxMapData|mapInit[26]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[27] ; |Kmeans_MuxMapData|mapCalc[27]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[27] ; |Kmeans_MuxMapData|mapInit[27]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[28] ; |Kmeans_MuxMapData|mapCalc[28]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[28] ; |Kmeans_MuxMapData|mapInit[28]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[29] ; |Kmeans_MuxMapData|mapCalc[29]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[29] ; |Kmeans_MuxMapData|mapInit[29]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[30] ; |Kmeans_MuxMapData|mapCalc[30]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[30] ; |Kmeans_MuxMapData|mapInit[30]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapCalc[31] ; |Kmeans_MuxMapData|mapCalc[31]~corein ; combout          ;
+; |Kmeans_MuxMapData|mapInit[31] ; |Kmeans_MuxMapData|mapInit[31]~corein ; combout          ;
++--------------------------------+---------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Mon Oct 31 16:22:31 2016
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off Kmeans_MuxMapData -c Kmeans_MuxMapData
+Info: Using vector source file "Z:/Lucas/Kmeans_Processador/Kmeans_MuxMapData/Kmeans_MuxMapData.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      17.83 %
+Info: Number of transitions in simulation is 659
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 155 megabytes
+    Info: Processing ended: Mon Oct 31 16:22:32 2016
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

@@ -1,0 +1,37 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+Entity Kmeans_MuxRamMemoryAddr is
+
+	GENERIC (TamanhoAddr : INTEGER := 15);
+	
+    PORT ( 
+			memInitAddr     : in  STD_LOGIC_VECTOR (TamanhoAddr-1 downto 0);
+			centroidAddr_A	: in  STD_LOGIC_VECTOR (TamanhoAddr-1 downto 0);
+			centroidAddr_B	: in  STD_LOGIC_VECTOR (TamanhoAddr-1 downto 0);
+			mapAddr_A     	: in  STD_LOGIC_VECTOR (TamanhoAddr-1 downto 0);
+			mapAddr_B     	: in  STD_LOGIC_VECTOR (TamanhoAddr-1 downto 0);
+			outputResultAddr: in  STD_LOGIC_VECTOR (TamanhoAddr-1 downto 0);
+			op				: in  STD_LOGIC_VECTOR (1 downto 0);
+			ramAddr_A		: out STD_LOGIC_VECTOR (TamanhoAddr-1 downto 0);
+			ramAddr_B		: out STD_LOGIC_VECTOR (TamanhoAddr-1 downto 0)
+		);
+END Kmeans_MuxRamMemoryAddr;
+
+ARCHITECTURE arch of Kmeans_MuxRamMemoryAddr is
+
+BEGIN
+
+	--resultado que recebe do controlador op que ira conduzir qual das entradas vai para a saida
+	with op select	
+	ramAddr_A <=  centroidAddr_A when "01",
+				  mapAddr_A 	 when "10",
+				  memInitAddr    when others;
+				  
+	with op select		  
+	ramAddr_B <=  (others =>'0') when "00";
+				  centroidAddr_B when "01",
+				  mapAddr_B 	 when "10",
+				  outputResultAddr when "11";
+				 
+END arch;

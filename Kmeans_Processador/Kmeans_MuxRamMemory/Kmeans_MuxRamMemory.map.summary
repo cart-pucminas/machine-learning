@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Jun  4 10:38:27 2018
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Revision Name : Kmeans_MuxRamMemory
+Top-level Entity Name : Kmeans_MuxRamMemory
+Family : Cyclone IV E
+Total logic elements : 258
+    Total combinational functions : 258
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 451
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

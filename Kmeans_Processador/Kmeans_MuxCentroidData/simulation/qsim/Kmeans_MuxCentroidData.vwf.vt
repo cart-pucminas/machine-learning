@@ -1,0 +1,1129 @@
+// Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus Prime License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "04/18/2017 12:00:50"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          Kmeans_MuxCentroidData
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module Kmeans_MuxCentroidData_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg [63:0] centroidCalc;
+reg [63:0] centroidCalcFP;
+reg [63:0] centroidInit;
+reg [1:0] op;
+// wires                                               
+wire [63:0] centroidData_A;
+wire [63:0] centroidData_B;
+
+// assign statements (if any)                          
+Kmeans_MuxCentroidData i1 (
+// port map - connection between master ports and signals/registers   
+	.centroidCalc(centroidCalc),
+	.centroidCalcFP(centroidCalcFP),
+	.centroidData_A(centroidData_A),
+	.centroidData_B(centroidData_B),
+	.centroidInit(centroidInit),
+	.op(op)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+// op[ 1 ]
+always
+begin
+	op[1] = 1'b0;
+	op[1] = #20000 1'b1;
+	#20000;
+end 
+// op[ 0 ]
+always
+begin
+	op[0] = 1'b0;
+	op[0] = #10000 1'b1;
+	#10000;
+end 
+// centroidInit[ 63 ]
+initial
+begin
+	centroidInit[63] = 1'b0;
+end 
+// centroidInit[ 62 ]
+initial
+begin
+	centroidInit[62] = 1'b0;
+end 
+// centroidInit[ 61 ]
+initial
+begin
+	centroidInit[61] = 1'b0;
+end 
+// centroidInit[ 60 ]
+initial
+begin
+	centroidInit[60] = 1'b0;
+end 
+// centroidInit[ 59 ]
+initial
+begin
+	centroidInit[59] = 1'b0;
+end 
+// centroidInit[ 58 ]
+initial
+begin
+	centroidInit[58] = 1'b0;
+end 
+// centroidInit[ 57 ]
+initial
+begin
+	centroidInit[57] = 1'b0;
+end 
+// centroidInit[ 56 ]
+initial
+begin
+	centroidInit[56] = 1'b0;
+end 
+// centroidInit[ 55 ]
+initial
+begin
+	centroidInit[55] = 1'b0;
+end 
+// centroidInit[ 54 ]
+initial
+begin
+	centroidInit[54] = 1'b0;
+end 
+// centroidInit[ 53 ]
+initial
+begin
+	centroidInit[53] = 1'b0;
+end 
+// centroidInit[ 52 ]
+initial
+begin
+	centroidInit[52] = 1'b0;
+end 
+// centroidInit[ 51 ]
+initial
+begin
+	centroidInit[51] = 1'b0;
+end 
+// centroidInit[ 50 ]
+initial
+begin
+	centroidInit[50] = 1'b0;
+end 
+// centroidInit[ 49 ]
+initial
+begin
+	centroidInit[49] = 1'b0;
+end 
+// centroidInit[ 48 ]
+initial
+begin
+	centroidInit[48] = 1'b0;
+end 
+// centroidInit[ 47 ]
+initial
+begin
+	centroidInit[47] = 1'b0;
+end 
+// centroidInit[ 46 ]
+initial
+begin
+	centroidInit[46] = 1'b0;
+end 
+// centroidInit[ 45 ]
+initial
+begin
+	centroidInit[45] = 1'b0;
+end 
+// centroidInit[ 44 ]
+initial
+begin
+	centroidInit[44] = 1'b0;
+end 
+// centroidInit[ 43 ]
+initial
+begin
+	centroidInit[43] = 1'b0;
+end 
+// centroidInit[ 42 ]
+initial
+begin
+	centroidInit[42] = 1'b0;
+end 
+// centroidInit[ 41 ]
+initial
+begin
+	centroidInit[41] = 1'b0;
+end 
+// centroidInit[ 40 ]
+initial
+begin
+	centroidInit[40] = 1'b0;
+end 
+// centroidInit[ 39 ]
+initial
+begin
+	centroidInit[39] = 1'b0;
+end 
+// centroidInit[ 38 ]
+initial
+begin
+	centroidInit[38] = 1'b0;
+end 
+// centroidInit[ 37 ]
+initial
+begin
+	centroidInit[37] = 1'b0;
+end 
+// centroidInit[ 36 ]
+initial
+begin
+	centroidInit[36] = 1'b0;
+end 
+// centroidInit[ 35 ]
+initial
+begin
+	centroidInit[35] = 1'b0;
+end 
+// centroidInit[ 34 ]
+initial
+begin
+	centroidInit[34] = 1'b0;
+end 
+// centroidInit[ 33 ]
+initial
+begin
+	centroidInit[33] = 1'b0;
+end 
+// centroidInit[ 32 ]
+initial
+begin
+	centroidInit[32] = 1'b0;
+end 
+// centroidInit[ 31 ]
+initial
+begin
+	centroidInit[31] = 1'b0;
+end 
+// centroidInit[ 30 ]
+initial
+begin
+	centroidInit[30] = 1'b0;
+end 
+// centroidInit[ 29 ]
+initial
+begin
+	centroidInit[29] = 1'b0;
+end 
+// centroidInit[ 28 ]
+initial
+begin
+	centroidInit[28] = 1'b0;
+end 
+// centroidInit[ 27 ]
+initial
+begin
+	centroidInit[27] = 1'b0;
+end 
+// centroidInit[ 26 ]
+initial
+begin
+	centroidInit[26] = 1'b0;
+end 
+// centroidInit[ 25 ]
+initial
+begin
+	centroidInit[25] = 1'b0;
+end 
+// centroidInit[ 24 ]
+initial
+begin
+	centroidInit[24] = 1'b0;
+end 
+// centroidInit[ 23 ]
+initial
+begin
+	centroidInit[23] = 1'b0;
+end 
+// centroidInit[ 22 ]
+initial
+begin
+	centroidInit[22] = 1'b0;
+end 
+// centroidInit[ 21 ]
+initial
+begin
+	centroidInit[21] = 1'b0;
+end 
+// centroidInit[ 20 ]
+initial
+begin
+	centroidInit[20] = 1'b0;
+end 
+// centroidInit[ 19 ]
+initial
+begin
+	centroidInit[19] = 1'b0;
+end 
+// centroidInit[ 18 ]
+initial
+begin
+	centroidInit[18] = 1'b0;
+end 
+// centroidInit[ 17 ]
+initial
+begin
+	centroidInit[17] = 1'b0;
+end 
+// centroidInit[ 16 ]
+initial
+begin
+	centroidInit[16] = 1'b0;
+end 
+// centroidInit[ 15 ]
+initial
+begin
+	centroidInit[15] = 1'b0;
+end 
+// centroidInit[ 14 ]
+initial
+begin
+	centroidInit[14] = 1'b0;
+end 
+// centroidInit[ 13 ]
+initial
+begin
+	centroidInit[13] = 1'b0;
+end 
+// centroidInit[ 12 ]
+initial
+begin
+	centroidInit[12] = 1'b0;
+end 
+// centroidInit[ 11 ]
+initial
+begin
+	centroidInit[11] = 1'b0;
+end 
+// centroidInit[ 10 ]
+initial
+begin
+	centroidInit[10] = 1'b0;
+end 
+// centroidInit[ 9 ]
+initial
+begin
+	centroidInit[9] = 1'b0;
+end 
+// centroidInit[ 8 ]
+initial
+begin
+	centroidInit[8] = 1'b0;
+end 
+// centroidInit[ 7 ]
+initial
+begin
+	centroidInit[7] = 1'b0;
+end 
+// centroidInit[ 6 ]
+initial
+begin
+	centroidInit[6] = 1'b0;
+	centroidInit[6] = #540000 1'b1;
+end 
+// centroidInit[ 5 ]
+initial
+begin
+	centroidInit[5] = 1'b0;
+	centroidInit[5] = #220000 1'b1;
+	centroidInit[5] = #320000 1'b0;
+	centroidInit[5] = #320000 1'b1;
+end 
+// centroidInit[ 4 ]
+initial
+begin
+	centroidInit[4] = 1'b0;
+	# 60000;
+	repeat(2)
+	begin
+		centroidInit[4] = 1'b1;
+		centroidInit[4] = #160000 1'b0;
+		# 160000;
+	end
+	centroidInit[4] = 1'b1;
+	centroidInit[4] = #160000 1'b0;
+end 
+// centroidInit[ 3 ]
+initial
+begin
+	centroidInit[3] = 1'b1;
+	# 60000;
+	repeat(5)
+	begin
+		centroidInit[3] = 1'b0;
+		centroidInit[3] = #80000 1'b1;
+		# 80000;
+	end
+	centroidInit[3] = 1'b0;
+	centroidInit[3] = #80000 1'b1;
+end 
+// centroidInit[ 2 ]
+initial
+begin
+	centroidInit[2] = 1'b0;
+	# 20000;
+	repeat(12)
+	begin
+		centroidInit[2] = 1'b1;
+		centroidInit[2] = #40000 1'b0;
+		# 40000;
+	end
+	centroidInit[2] = 1'b1;
+end 
+// centroidInit[ 1 ]
+always
+begin
+	centroidInit[1] = 1'b1;
+	centroidInit[1] = #20000 1'b0;
+	#20000;
+end 
+// centroidInit[ 0 ]
+always
+begin
+	centroidInit[0] = 1'b0;
+	centroidInit[0] = #10000 1'b1;
+	#10000;
+end 
+// centroidCalc[ 63 ]
+initial
+begin
+	centroidCalc[63] = 1'b0;
+end 
+// centroidCalc[ 62 ]
+initial
+begin
+	centroidCalc[62] = 1'b0;
+end 
+// centroidCalc[ 61 ]
+initial
+begin
+	centroidCalc[61] = 1'b0;
+end 
+// centroidCalc[ 60 ]
+initial
+begin
+	centroidCalc[60] = 1'b0;
+end 
+// centroidCalc[ 59 ]
+initial
+begin
+	centroidCalc[59] = 1'b0;
+end 
+// centroidCalc[ 58 ]
+initial
+begin
+	centroidCalc[58] = 1'b0;
+end 
+// centroidCalc[ 57 ]
+initial
+begin
+	centroidCalc[57] = 1'b0;
+end 
+// centroidCalc[ 56 ]
+initial
+begin
+	centroidCalc[56] = 1'b0;
+end 
+// centroidCalc[ 55 ]
+initial
+begin
+	centroidCalc[55] = 1'b0;
+end 
+// centroidCalc[ 54 ]
+initial
+begin
+	centroidCalc[54] = 1'b0;
+end 
+// centroidCalc[ 53 ]
+initial
+begin
+	centroidCalc[53] = 1'b0;
+end 
+// centroidCalc[ 52 ]
+initial
+begin
+	centroidCalc[52] = 1'b0;
+end 
+// centroidCalc[ 51 ]
+initial
+begin
+	centroidCalc[51] = 1'b0;
+end 
+// centroidCalc[ 50 ]
+initial
+begin
+	centroidCalc[50] = 1'b0;
+end 
+// centroidCalc[ 49 ]
+initial
+begin
+	centroidCalc[49] = 1'b0;
+end 
+// centroidCalc[ 48 ]
+initial
+begin
+	centroidCalc[48] = 1'b0;
+end 
+// centroidCalc[ 47 ]
+initial
+begin
+	centroidCalc[47] = 1'b0;
+end 
+// centroidCalc[ 46 ]
+initial
+begin
+	centroidCalc[46] = 1'b0;
+end 
+// centroidCalc[ 45 ]
+initial
+begin
+	centroidCalc[45] = 1'b0;
+end 
+// centroidCalc[ 44 ]
+initial
+begin
+	centroidCalc[44] = 1'b0;
+end 
+// centroidCalc[ 43 ]
+initial
+begin
+	centroidCalc[43] = 1'b0;
+end 
+// centroidCalc[ 42 ]
+initial
+begin
+	centroidCalc[42] = 1'b0;
+end 
+// centroidCalc[ 41 ]
+initial
+begin
+	centroidCalc[41] = 1'b0;
+end 
+// centroidCalc[ 40 ]
+initial
+begin
+	centroidCalc[40] = 1'b0;
+end 
+// centroidCalc[ 39 ]
+initial
+begin
+	centroidCalc[39] = 1'b0;
+end 
+// centroidCalc[ 38 ]
+initial
+begin
+	centroidCalc[38] = 1'b0;
+end 
+// centroidCalc[ 37 ]
+initial
+begin
+	centroidCalc[37] = 1'b0;
+end 
+// centroidCalc[ 36 ]
+initial
+begin
+	centroidCalc[36] = 1'b0;
+end 
+// centroidCalc[ 35 ]
+initial
+begin
+	centroidCalc[35] = 1'b0;
+end 
+// centroidCalc[ 34 ]
+initial
+begin
+	centroidCalc[34] = 1'b0;
+end 
+// centroidCalc[ 33 ]
+initial
+begin
+	centroidCalc[33] = 1'b0;
+end 
+// centroidCalc[ 32 ]
+initial
+begin
+	centroidCalc[32] = 1'b0;
+end 
+// centroidCalc[ 31 ]
+initial
+begin
+	centroidCalc[31] = 1'b0;
+end 
+// centroidCalc[ 30 ]
+initial
+begin
+	centroidCalc[30] = 1'b0;
+end 
+// centroidCalc[ 29 ]
+initial
+begin
+	centroidCalc[29] = 1'b0;
+end 
+// centroidCalc[ 28 ]
+initial
+begin
+	centroidCalc[28] = 1'b0;
+end 
+// centroidCalc[ 27 ]
+initial
+begin
+	centroidCalc[27] = 1'b0;
+end 
+// centroidCalc[ 26 ]
+initial
+begin
+	centroidCalc[26] = 1'b0;
+end 
+// centroidCalc[ 25 ]
+initial
+begin
+	centroidCalc[25] = 1'b0;
+end 
+// centroidCalc[ 24 ]
+initial
+begin
+	centroidCalc[24] = 1'b0;
+end 
+// centroidCalc[ 23 ]
+initial
+begin
+	centroidCalc[23] = 1'b0;
+end 
+// centroidCalc[ 22 ]
+initial
+begin
+	centroidCalc[22] = 1'b0;
+end 
+// centroidCalc[ 21 ]
+initial
+begin
+	centroidCalc[21] = 1'b0;
+end 
+// centroidCalc[ 20 ]
+initial
+begin
+	centroidCalc[20] = 1'b0;
+end 
+// centroidCalc[ 19 ]
+initial
+begin
+	centroidCalc[19] = 1'b0;
+end 
+// centroidCalc[ 18 ]
+initial
+begin
+	centroidCalc[18] = 1'b0;
+end 
+// centroidCalc[ 17 ]
+initial
+begin
+	centroidCalc[17] = 1'b0;
+end 
+// centroidCalc[ 16 ]
+initial
+begin
+	centroidCalc[16] = 1'b0;
+end 
+// centroidCalc[ 15 ]
+initial
+begin
+	centroidCalc[15] = 1'b0;
+end 
+// centroidCalc[ 14 ]
+initial
+begin
+	centroidCalc[14] = 1'b0;
+end 
+// centroidCalc[ 13 ]
+initial
+begin
+	centroidCalc[13] = 1'b0;
+end 
+// centroidCalc[ 12 ]
+initial
+begin
+	centroidCalc[12] = 1'b0;
+end 
+// centroidCalc[ 11 ]
+initial
+begin
+	centroidCalc[11] = 1'b0;
+end 
+// centroidCalc[ 10 ]
+initial
+begin
+	centroidCalc[10] = 1'b0;
+end 
+// centroidCalc[ 9 ]
+initial
+begin
+	centroidCalc[9] = 1'b0;
+end 
+// centroidCalc[ 8 ]
+initial
+begin
+	centroidCalc[8] = 1'b0;
+end 
+// centroidCalc[ 7 ]
+initial
+begin
+	centroidCalc[7] = 1'b0;
+end 
+// centroidCalc[ 6 ]
+initial
+begin
+	centroidCalc[6] = 1'b0;
+	centroidCalc[6] = #440000 1'b1;
+end 
+// centroidCalc[ 5 ]
+initial
+begin
+	centroidCalc[5] = 1'b0;
+	centroidCalc[5] = #120000 1'b1;
+	centroidCalc[5] = #320000 1'b0;
+	centroidCalc[5] = #320000 1'b1;
+end 
+// centroidCalc[ 4 ]
+initial
+begin
+	centroidCalc[4] = 1'b1;
+	# 120000;
+	repeat(2)
+	begin
+		centroidCalc[4] = 1'b0;
+		centroidCalc[4] = #160000 1'b1;
+		# 160000;
+	end
+	centroidCalc[4] = 1'b0;
+	centroidCalc[4] = #160000 1'b1;
+end 
+// centroidCalc[ 3 ]
+initial
+begin
+	centroidCalc[3] = 1'b0;
+	# 40000;
+	repeat(6)
+	begin
+		centroidCalc[3] = 1'b1;
+		centroidCalc[3] = #80000 1'b0;
+		# 80000;
+	end
+end 
+// centroidCalc[ 2 ]
+initial
+begin
+	repeat(12)
+	begin
+		centroidCalc[2] = 1'b1;
+		centroidCalc[2] = #40000 1'b0;
+		# 40000;
+	end
+	centroidCalc[2] = 1'b1;
+end 
+// centroidCalc[ 1 ]
+always
+begin
+	centroidCalc[1] = 1'b0;
+	centroidCalc[1] = #20000 1'b1;
+	#20000;
+end 
+// centroidCalc[ 0 ]
+always
+begin
+	centroidCalc[0] = 1'b0;
+	centroidCalc[0] = #10000 1'b1;
+	#10000;
+end 
+// centroidCalcFP[ 63 ]
+initial
+begin
+	centroidCalcFP[63] = 1'b0;
+end 
+// centroidCalcFP[ 62 ]
+initial
+begin
+	centroidCalcFP[62] = 1'b0;
+end 
+// centroidCalcFP[ 61 ]
+initial
+begin
+	centroidCalcFP[61] = 1'b0;
+end 
+// centroidCalcFP[ 60 ]
+initial
+begin
+	centroidCalcFP[60] = 1'b0;
+end 
+// centroidCalcFP[ 59 ]
+initial
+begin
+	centroidCalcFP[59] = 1'b0;
+end 
+// centroidCalcFP[ 58 ]
+initial
+begin
+	centroidCalcFP[58] = 1'b0;
+end 
+// centroidCalcFP[ 57 ]
+initial
+begin
+	centroidCalcFP[57] = 1'b0;
+end 
+// centroidCalcFP[ 56 ]
+initial
+begin
+	centroidCalcFP[56] = 1'b0;
+end 
+// centroidCalcFP[ 55 ]
+initial
+begin
+	centroidCalcFP[55] = 1'b0;
+end 
+// centroidCalcFP[ 54 ]
+initial
+begin
+	centroidCalcFP[54] = 1'b0;
+end 
+// centroidCalcFP[ 53 ]
+initial
+begin
+	centroidCalcFP[53] = 1'b0;
+end 
+// centroidCalcFP[ 52 ]
+initial
+begin
+	centroidCalcFP[52] = 1'b0;
+end 
+// centroidCalcFP[ 51 ]
+initial
+begin
+	centroidCalcFP[51] = 1'b0;
+end 
+// centroidCalcFP[ 50 ]
+initial
+begin
+	centroidCalcFP[50] = 1'b0;
+end 
+// centroidCalcFP[ 49 ]
+initial
+begin
+	centroidCalcFP[49] = 1'b0;
+end 
+// centroidCalcFP[ 48 ]
+initial
+begin
+	centroidCalcFP[48] = 1'b0;
+end 
+// centroidCalcFP[ 47 ]
+initial
+begin
+	centroidCalcFP[47] = 1'b0;
+end 
+// centroidCalcFP[ 46 ]
+initial
+begin
+	centroidCalcFP[46] = 1'b0;
+end 
+// centroidCalcFP[ 45 ]
+initial
+begin
+	centroidCalcFP[45] = 1'b0;
+end 
+// centroidCalcFP[ 44 ]
+initial
+begin
+	centroidCalcFP[44] = 1'b0;
+end 
+// centroidCalcFP[ 43 ]
+initial
+begin
+	centroidCalcFP[43] = 1'b0;
+end 
+// centroidCalcFP[ 42 ]
+initial
+begin
+	centroidCalcFP[42] = 1'b0;
+end 
+// centroidCalcFP[ 41 ]
+initial
+begin
+	centroidCalcFP[41] = 1'b0;
+end 
+// centroidCalcFP[ 40 ]
+initial
+begin
+	centroidCalcFP[40] = 1'b0;
+end 
+// centroidCalcFP[ 39 ]
+initial
+begin
+	centroidCalcFP[39] = 1'b0;
+end 
+// centroidCalcFP[ 38 ]
+initial
+begin
+	centroidCalcFP[38] = 1'b0;
+end 
+// centroidCalcFP[ 37 ]
+initial
+begin
+	centroidCalcFP[37] = 1'b0;
+end 
+// centroidCalcFP[ 36 ]
+initial
+begin
+	centroidCalcFP[36] = 1'b0;
+end 
+// centroidCalcFP[ 35 ]
+initial
+begin
+	centroidCalcFP[35] = 1'b0;
+end 
+// centroidCalcFP[ 34 ]
+initial
+begin
+	centroidCalcFP[34] = 1'b0;
+end 
+// centroidCalcFP[ 33 ]
+initial
+begin
+	centroidCalcFP[33] = 1'b0;
+end 
+// centroidCalcFP[ 32 ]
+initial
+begin
+	centroidCalcFP[32] = 1'b0;
+end 
+// centroidCalcFP[ 31 ]
+initial
+begin
+	centroidCalcFP[31] = 1'b0;
+end 
+// centroidCalcFP[ 30 ]
+initial
+begin
+	centroidCalcFP[30] = 1'b0;
+end 
+// centroidCalcFP[ 29 ]
+initial
+begin
+	centroidCalcFP[29] = 1'b0;
+end 
+// centroidCalcFP[ 28 ]
+initial
+begin
+	centroidCalcFP[28] = 1'b0;
+end 
+// centroidCalcFP[ 27 ]
+initial
+begin
+	centroidCalcFP[27] = 1'b0;
+end 
+// centroidCalcFP[ 26 ]
+initial
+begin
+	centroidCalcFP[26] = 1'b0;
+end 
+// centroidCalcFP[ 25 ]
+initial
+begin
+	centroidCalcFP[25] = 1'b0;
+end 
+// centroidCalcFP[ 24 ]
+initial
+begin
+	centroidCalcFP[24] = 1'b0;
+end 
+// centroidCalcFP[ 23 ]
+initial
+begin
+	centroidCalcFP[23] = 1'b0;
+end 
+// centroidCalcFP[ 22 ]
+initial
+begin
+	centroidCalcFP[22] = 1'b0;
+end 
+// centroidCalcFP[ 21 ]
+initial
+begin
+	centroidCalcFP[21] = 1'b0;
+end 
+// centroidCalcFP[ 20 ]
+initial
+begin
+	centroidCalcFP[20] = 1'b0;
+end 
+// centroidCalcFP[ 19 ]
+initial
+begin
+	centroidCalcFP[19] = 1'b0;
+end 
+// centroidCalcFP[ 18 ]
+initial
+begin
+	centroidCalcFP[18] = 1'b0;
+end 
+// centroidCalcFP[ 17 ]
+initial
+begin
+	centroidCalcFP[17] = 1'b0;
+end 
+// centroidCalcFP[ 16 ]
+initial
+begin
+	centroidCalcFP[16] = 1'b0;
+end 
+// centroidCalcFP[ 15 ]
+initial
+begin
+	centroidCalcFP[15] = 1'b0;
+end 
+// centroidCalcFP[ 14 ]
+initial
+begin
+	centroidCalcFP[14] = 1'b0;
+end 
+// centroidCalcFP[ 13 ]
+initial
+begin
+	centroidCalcFP[13] = 1'b0;
+end 
+// centroidCalcFP[ 12 ]
+initial
+begin
+	centroidCalcFP[12] = 1'b0;
+end 
+// centroidCalcFP[ 11 ]
+initial
+begin
+	centroidCalcFP[11] = 1'b0;
+end 
+// centroidCalcFP[ 10 ]
+initial
+begin
+	centroidCalcFP[10] = 1'b0;
+end 
+// centroidCalcFP[ 9 ]
+initial
+begin
+	centroidCalcFP[9] = 1'b0;
+end 
+// centroidCalcFP[ 8 ]
+initial
+begin
+	centroidCalcFP[8] = 1'b0;
+end 
+// centroidCalcFP[ 7 ]
+initial
+begin
+	centroidCalcFP[7] = 1'b0;
+	centroidCalcFP[7] = #980000 1'b1;
+end 
+// centroidCalcFP[ 6 ]
+initial
+begin
+	centroidCalcFP[6] = 1'b0;
+	centroidCalcFP[6] = #340000 1'b1;
+	centroidCalcFP[6] = #640000 1'b0;
+end 
+// centroidCalcFP[ 5 ]
+initial
+begin
+	centroidCalcFP[5] = 1'b0;
+	centroidCalcFP[5] = #20000 1'b1;
+	centroidCalcFP[5] = #320000 1'b0;
+	centroidCalcFP[5] = #320000 1'b1;
+	centroidCalcFP[5] = #320000 1'b0;
+end 
+// centroidCalcFP[ 4 ]
+initial
+begin
+	centroidCalcFP[4] = 1'b1;
+	# 20000;
+	repeat(3)
+	begin
+		centroidCalcFP[4] = 1'b0;
+		centroidCalcFP[4] = #160000 1'b1;
+		# 160000;
+	end
+	centroidCalcFP[4] = 1'b0;
+end 
+// centroidCalcFP[ 3 ]
+initial
+begin
+	centroidCalcFP[3] = 1'b1;
+	# 20000;
+	repeat(6)
+	begin
+		centroidCalcFP[3] = 1'b0;
+		centroidCalcFP[3] = #80000 1'b1;
+		# 80000;
+	end
+	centroidCalcFP[3] = 1'b0;
+end 
+// centroidCalcFP[ 2 ]
+initial
+begin
+	centroidCalcFP[2] = 1'b1;
+	# 20000;
+	repeat(12)
+	begin
+		centroidCalcFP[2] = 1'b0;
+		centroidCalcFP[2] = #40000 1'b1;
+		# 40000;
+	end
+	centroidCalcFP[2] = 1'b0;
+end 
+// centroidCalcFP[ 1 ]
+always
+begin
+	centroidCalcFP[1] = 1'b1;
+	centroidCalcFP[1] = #20000 1'b0;
+	#20000;
+end 
+// centroidCalcFP[ 0 ]
+always
+begin
+	centroidCalcFP[0] = 1'b0;
+	centroidCalcFP[0] = #10000 1'b1;
+	#10000;
+end 
+endmodule
+

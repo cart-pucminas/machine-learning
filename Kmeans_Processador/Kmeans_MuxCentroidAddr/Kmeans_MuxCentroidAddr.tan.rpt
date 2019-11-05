@@ -1,0 +1,321 @@
+Classic Timing Analyzer report for Kmeans_MuxCentroidAddr
+Fri Jan 20 11:48:51 2017
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Timing Analyzer Settings
+  4. Parallel Compilation
+  5. tpd
+  6. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                                ;
++------------------------------+-------+---------------+-------------+-------+--------------------+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time ; From  ; To                 ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+-------------+-------+--------------------+------------+----------+--------------+
+; Worst-case tpd               ; N/A   ; None          ; 14.792 ns   ; op[0] ; centroidAddr_B[56] ; --         ; --       ; 0            ;
+; Total number of failed paths ;       ;               ;             ;       ;                    ;            ;          ; 0            ;
++------------------------------+-------+---------------+-------------+-------+--------------------+------------+----------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Settings                                                                                                                            ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+; Option                                                                                               ; Setting            ; From ; To ; Entity Name ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+; Device Name                                                                                          ; EP2C35F672C6       ;      ;    ;             ;
+; Timing Models                                                                                        ; Final              ;      ;    ;             ;
+; Default hold multicycle                                                                              ; Same as Multicycle ;      ;    ;             ;
+; Cut paths between unrelated clock domains                                                            ; On                 ;      ;    ;             ;
+; Cut off read during write signal paths                                                               ; On                 ;      ;    ;             ;
+; Cut off feedback from I/O pins                                                                       ; On                 ;      ;    ;             ;
+; Report Combined Fast/Slow Timing                                                                     ; Off                ;      ;    ;             ;
+; Ignore Clock Settings                                                                                ; Off                ;      ;    ;             ;
+; Analyze latches as synchronous elements                                                              ; On                 ;      ;    ;             ;
+; Enable Recovery/Removal analysis                                                                     ; Off                ;      ;    ;             ;
+; Enable Clock Latency                                                                                 ; Off                ;      ;    ;             ;
+; Use TimeQuest Timing Analyzer                                                                        ; Off                ;      ;    ;             ;
+; Minimum Core Junction Temperature                                                                    ; 0                  ;      ;    ;             ;
+; Maximum Core Junction Temperature                                                                    ; 85                 ;      ;    ;             ;
+; Number of source nodes to report per destination node                                                ; 10                 ;      ;    ;             ;
+; Number of destination nodes to report                                                                ; 10                 ;      ;    ;             ;
+; Number of paths to report                                                                            ; 200                ;      ;    ;             ;
+; Report Minimum Timing Checks                                                                         ; Off                ;      ;    ;             ;
+; Use Fast Timing Models                                                                               ; Off                ;      ;    ;             ;
+; Report IO Paths Separately                                                                           ; Off                ;      ;    ;             ;
+; Perform Multicorner Analysis                                                                         ; On                 ;      ;    ;             ;
+; Reports the worst-case path for each clock domain and analysis                                       ; Off                ;      ;    ;             ;
+; Reports worst-case timing paths for each clock domain and analysis                                   ; On                 ;      ;    ;             ;
+; Specifies the maximum number of worst-case timing paths to report for each clock domain and analysis ; 100                ;      ;    ;             ;
+; Removes common clock path pessimism (CCPP) during slack computation                                  ; Off                ;      ;    ;             ;
+; Output I/O Timing Endpoint                                                                           ; Near End           ;      ;    ;             ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 2      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; tpd                                                                                                                                                             ;
++-----------------------------------------+-----------------------------------------------------+-----------------+--------------------------+--------------------+
+; Slack                                   ; Required P2P Time                                   ; Actual P2P Time ; From                     ; To                 ;
++-----------------------------------------+-----------------------------------------------------+-----------------+--------------------------+--------------------+
+; N/A                                     ; None                                                ; 14.792 ns       ; op[0]                    ; centroidAddr_B[56] ;
+; N/A                                     ; None                                                ; 14.771 ns       ; op[0]                    ; centroidAddr_B[53] ;
+; N/A                                     ; None                                                ; 14.603 ns       ; op[0]                    ; centroidAddr_A[51] ;
+; N/A                                     ; None                                                ; 14.409 ns       ; op[0]                    ; centroidAddr_B[37] ;
+; N/A                                     ; None                                                ; 14.407 ns       ; op[0]                    ; centroidAddr_B[34] ;
+; N/A                                     ; None                                                ; 14.401 ns       ; op[0]                    ; centroidAddr_B[6]  ;
+; N/A                                     ; None                                                ; 14.379 ns       ; op[0]                    ; centroidAddr_B[38] ;
+; N/A                                     ; None                                                ; 14.016 ns       ; op[0]                    ; centroidAddr_A[44] ;
+; N/A                                     ; None                                                ; 13.852 ns       ; op[0]                    ; centroidAddr_B[54] ;
+; N/A                                     ; None                                                ; 13.387 ns       ; op[0]                    ; centroidAddr_B[41] ;
+; N/A                                     ; None                                                ; 13.100 ns       ; op[0]                    ; centroidAddr_B[40] ;
+; N/A                                     ; None                                                ; 12.977 ns       ; op[0]                    ; centroidAddr_B[58] ;
+; N/A                                     ; None                                                ; 12.970 ns       ; op[0]                    ; centroidAddr_B[57] ;
+; N/A                                     ; None                                                ; 12.968 ns       ; op[0]                    ; centroidAddr_B[36] ;
+; N/A                                     ; None                                                ; 12.844 ns       ; centroidInit[38]         ; centroidAddr_B[38] ;
+; N/A                                     ; None                                                ; 12.781 ns       ; centroidCalcModule_B[38] ; centroidAddr_B[38] ;
+; N/A                                     ; None                                                ; 12.759 ns       ; op[0]                    ; centroidAddr_B[51] ;
+; N/A                                     ; None                                                ; 12.748 ns       ; op[0]                    ; centroidAddr_B[59] ;
+; N/A                                     ; None                                                ; 12.746 ns       ; centroidCalcModule_B[6]  ; centroidAddr_B[6]  ;
+; N/A                                     ; None                                                ; 12.745 ns       ; op[0]                    ; centroidAddr_B[49] ;
+; N/A                                     ; None                                                ; 12.698 ns       ; centroidControlInit[51]  ; centroidAddr_A[51] ;
+; N/A                                     ; None                                                ; 12.685 ns       ; centroidInit[56]         ; centroidAddr_B[56] ;
+; N/A                                     ; None                                                ; 12.665 ns       ; op[0]                    ; centroidAddr_B[55] ;
+; N/A                                     ; None                                                ; 12.661 ns       ; op[0]                    ; centroidAddr_B[52] ;
+; N/A                                     ; None                                                ; 12.653 ns       ; centroidInit[37]         ; centroidAddr_B[37] ;
+; N/A                                     ; None                                                ; 12.642 ns       ; op[0]                    ; centroidAddr_B[44] ;
+; N/A                                     ; None                                                ; 12.621 ns       ; op[0]                    ; centroidAddr_B[43] ;
+; N/A                                     ; None                                                ; 12.561 ns       ; centroidCalcModule_A[44] ; centroidAddr_A[44] ;
+; N/A                                     ; None                                                ; 12.557 ns       ; centroidCalcModule_B[53] ; centroidAddr_B[53] ;
+; N/A                                     ; None                                                ; 12.513 ns       ; centroidCalcModule_A[51] ; centroidAddr_A[51] ;
+; N/A                                     ; None                                                ; 12.511 ns       ; op[0]                    ; centroidAddr_B[48] ;
+; N/A                                     ; None                                                ; 12.504 ns       ; op[0]                    ; centroidAddr_B[60] ;
+; N/A                                     ; None                                                ; 12.461 ns       ; centroidInit[6]          ; centroidAddr_B[6]  ;
+; N/A                                     ; None                                                ; 12.392 ns       ; op[0]                    ; centroidAddr_B[42] ;
+; N/A                                     ; None                                                ; 12.337 ns       ; op[0]                    ; centroidAddr_B[33] ;
+; N/A                                     ; None                                                ; 12.298 ns       ; centroidCalcModule_B[34] ; centroidAddr_B[34] ;
+; N/A                                     ; None                                                ; 12.273 ns       ; op[0]                    ; centroidAddr_B[50] ;
+; N/A                                     ; None                                                ; 12.268 ns       ; op[0]                    ; centroidAddr_B[47] ;
+; N/A                                     ; None                                                ; 12.216 ns       ; op[0]                    ; centroidAddr_B[35] ;
+; N/A                                     ; None                                                ; 12.212 ns       ; op[0]                    ; centroidAddr_B[45] ;
+; N/A                                     ; None                                                ; 12.208 ns       ; op[0]                    ; centroidAddr_A[45] ;
+; N/A                                     ; None                                                ; 12.202 ns       ; centroidInit[53]         ; centroidAddr_B[53] ;
+; N/A                                     ; None                                                ; 12.190 ns       ; centroidInit[34]         ; centroidAddr_B[34] ;
+; N/A                                     ; None                                                ; 12.173 ns       ; centroidCalcModule_B[37] ; centroidAddr_B[37] ;
+; N/A                                     ; None                                                ; 12.155 ns       ; op[0]                    ; centroidAddr_B[39] ;
+; N/A                                     ; None                                                ; 12.155 ns       ; op[0]                    ; centroidAddr_B[15] ;
+; N/A                                     ; None                                                ; 12.152 ns       ; op[0]                    ; centroidAddr_B[46] ;
+; N/A                                     ; None                                                ; 12.147 ns       ; op[0]                    ; centroidAddr_A[36] ;
+; N/A                                     ; None                                                ; 12.145 ns       ; op[0]                    ; centroidAddr_B[63] ;
+; N/A                                     ; None                                                ; 12.122 ns       ; op[0]                    ; centroidAddr_A[55] ;
+; N/A                                     ; None                                                ; 12.003 ns       ; op[0]                    ; centroidAddr_B[10] ;
+; N/A                                     ; None                                                ; 11.977 ns       ; centroidCalcModule_B[56] ; centroidAddr_B[56] ;
+; N/A                                     ; None                                                ; 11.973 ns       ; op[0]                    ; centroidAddr_A[56] ;
+; N/A                                     ; None                                                ; 11.972 ns       ; op[0]                    ; centroidAddr_B[3]  ;
+; N/A                                     ; None                                                ; 11.955 ns       ; op[0]                    ; centroidAddr_A[28] ;
+; N/A                                     ; None                                                ; 11.946 ns       ; op[0]                    ; centroidAddr_A[34] ;
+; N/A                                     ; None                                                ; 11.944 ns       ; op[0]                    ; centroidAddr_B[16] ;
+; N/A                                     ; None                                                ; 11.824 ns       ; centroidControlInit[44]  ; centroidAddr_A[44] ;
+; N/A                                     ; None                                                ; 11.812 ns       ; op[0]                    ; centroidAddr_A[18] ;
+; N/A                                     ; None                                                ; 11.765 ns       ; op[0]                    ; centroidAddr_A[61] ;
+; N/A                                     ; None                                                ; 11.761 ns       ; op[0]                    ; centroidAddr_B[2]  ;
+; N/A                                     ; None                                                ; 11.725 ns       ; op[0]                    ; centroidAddr_A[29] ;
+; N/A                                     ; None                                                ; 11.695 ns       ; op[0]                    ; centroidAddr_A[59] ;
+; N/A                                     ; None                                                ; 11.681 ns       ; op[0]                    ; centroidAddr_B[4]  ;
+; N/A                                     ; None                                                ; 11.677 ns       ; op[0]                    ; centroidAddr_A[26] ;
+; N/A                                     ; None                                                ; 11.671 ns       ; op[0]                    ; centroidAddr_A[31] ;
+; N/A                                     ; None                                                ; 11.662 ns       ; op[0]                    ; centroidAddr_A[41] ;
+; N/A                                     ; None                                                ; 11.640 ns       ; centroidCalcModule_A[45] ; centroidAddr_A[45] ;
+; N/A                                     ; None                                                ; 11.637 ns       ; op[0]                    ; centroidAddr_A[25] ;
+; N/A                                     ; None                                                ; 11.585 ns       ; op[0]                    ; centroidAddr_A[57] ;
+; N/A                                     ; None                                                ; 11.546 ns       ; op[0]                    ; centroidAddr_A[58] ;
+; N/A                                     ; None                                                ; 11.511 ns       ; centroidCalcModule_B[15] ; centroidAddr_B[15] ;
+; N/A                                     ; None                                                ; 11.492 ns       ; op[0]                    ; centroidAddr_A[30] ;
+; N/A                                     ; None                                                ; 11.485 ns       ; centroidCalcModule_B[41] ; centroidAddr_B[41] ;
+; N/A                                     ; None                                                ; 11.479 ns       ; op[0]                    ; centroidAddr_A[60] ;
+; N/A                                     ; None                                                ; 11.478 ns       ; op[0]                    ; centroidAddr_A[33] ;
+; N/A                                     ; None                                                ; 11.448 ns       ; op[0]                    ; centroidAddr_A[20] ;
+; N/A                                     ; None                                                ; 11.446 ns       ; op[0]                    ; centroidAddr_A[17] ;
+; N/A                                     ; None                                                ; 11.445 ns       ; op[0]                    ; centroidAddr_A[22] ;
+; N/A                                     ; None                                                ; 11.437 ns       ; op[0]                    ; centroidAddr_A[62] ;
+; N/A                                     ; None                                                ; 11.433 ns       ; centroidInit[40]         ; centroidAddr_B[40] ;
+; N/A                                     ; None                                                ; 11.393 ns       ; op[0]                    ; centroidAddr_B[1]  ;
+; N/A                                     ; None                                                ; 11.383 ns       ; op[0]                    ; centroidAddr_A[39] ;
+; N/A                                     ; None                                                ; 11.382 ns       ; op[0]                    ; centroidAddr_A[35] ;
+; N/A                                     ; None                                                ; 11.366 ns       ; op[0]                    ; centroidAddr_A[19] ;
+; N/A                                     ; None                                                ; 11.364 ns       ; op[0]                    ; centroidAddr_A[40] ;
+; N/A                                     ; None                                                ; 11.340 ns       ; op[0]                    ; centroidAddr_A[38] ;
+; N/A                                     ; None                                                ; 11.339 ns       ; op[0]                    ; centroidAddr_A[48] ;
+; N/A                                     ; None                                                ; 11.331 ns       ; op[0]                    ; centroidAddr_B[0]  ;
+; N/A                                     ; None                                                ; 11.323 ns       ; centroidCalcModule_B[54] ; centroidAddr_B[54] ;
+; N/A                                     ; None                                                ; 11.302 ns       ; op[0]                    ; centroidAddr_A[54] ;
+; N/A                                     ; None                                                ; 11.295 ns       ; centroidInit[41]         ; centroidAddr_B[41] ;
+; N/A                                     ; None                                                ; 11.295 ns       ; op[0]                    ; centroidAddr_A[53] ;
+; N/A                                     ; None                                                ; 11.288 ns       ; op[0]                    ; centroidAddr_A[50] ;
+; N/A                                     ; None                                                ; 11.285 ns       ; op[0]                    ; centroidAddr_A[63] ;
+; N/A                                     ; None                                                ; 11.280 ns       ; op[0]                    ; centroidAddr_A[47] ;
+; N/A                                     ; None                                                ; 11.260 ns       ; op[0]                    ; centroidAddr_B[9]  ;
+; N/A                                     ; None                                                ; 11.260 ns       ; op[0]                    ; centroidAddr_B[5]  ;
+; N/A                                     ; None                                                ; 11.231 ns       ; centroidInit[54]         ; centroidAddr_B[54] ;
+; N/A                                     ; None                                                ; 11.225 ns       ; op[0]                    ; centroidAddr_A[52] ;
+; N/A                                     ; None                                                ; 11.205 ns       ; op[0]                    ; centroidAddr_A[16] ;
+; N/A                                     ; None                                                ; 11.199 ns       ; op[0]                    ; centroidAddr_B[12] ;
+; N/A                                     ; None                                                ; 11.189 ns       ; op[0]                    ; centroidAddr_A[24] ;
+; N/A                                     ; None                                                ; 11.179 ns       ; centroidInit[44]         ; centroidAddr_B[44] ;
+; N/A                                     ; None                                                ; 11.177 ns       ; op[0]                    ; centroidAddr_A[23] ;
+; N/A                                     ; None                                                ; 11.172 ns       ; op[0]                    ; centroidAddr_A[27] ;
+; N/A                                     ; None                                                ; 11.169 ns       ; op[0]                    ; centroidAddr_A[21] ;
+; N/A                                     ; None                                                ; 11.135 ns       ; centroidCalcModule_B[33] ; centroidAddr_B[33] ;
+; N/A                                     ; None                                                ; 11.106 ns       ; op[0]                    ; centroidAddr_A[37] ;
+; N/A                                     ; None                                                ; 11.104 ns       ; op[0]                    ; centroidAddr_A[32] ;
+; N/A                                     ; None                                                ; 11.054 ns       ; op[0]                    ; centroidAddr_A[42] ;
+; N/A                                     ; None                                                ; 11.050 ns       ; op[0]                    ; centroidAddr_B[11] ;
+; N/A                                     ; None                                                ; 11.046 ns       ; op[0]                    ; centroidAddr_B[18] ;
+; N/A                                     ; None                                                ; 11.036 ns       ; op[0]                    ; centroidAddr_B[14] ;
+; N/A                                     ; None                                                ; 11.036 ns       ; op[1]                    ; centroidAddr_B[6]  ;
+; N/A                                     ; None                                                ; 11.035 ns       ; op[0]                    ; centroidAddr_B[8]  ;
+; N/A                                     ; None                                                ; 11.035 ns       ; op[0]                    ; centroidAddr_B[7]  ;
+; N/A                                     ; None                                                ; 11.018 ns       ; op[0]                    ; centroidAddr_A[46] ;
+; N/A                                     ; None                                                ; 11.016 ns       ; op[0]                    ; centroidAddr_B[17] ;
+; N/A                                     ; None                                                ; 10.985 ns       ; op[0]                    ; centroidAddr_A[43] ;
+; N/A                                     ; None                                                ; 10.967 ns       ; op[0]                    ; centroidAddr_A[49] ;
+; N/A                                     ; None                                                ; 10.962 ns       ; centroidCalcModule_B[44] ; centroidAddr_B[44] ;
+; N/A                                     ; None                                                ; 10.955 ns       ; centroidCalcModule_B[57] ; centroidAddr_B[57] ;
+; N/A                                     ; None                                                ; 10.949 ns       ; centroidCalcModule_B[59] ; centroidAddr_B[59] ;
+; N/A                                     ; None                                                ; 10.941 ns       ; centroidInit[55]         ; centroidAddr_B[55] ;
+; N/A                                     ; None                                                ; 10.933 ns       ; op[0]                    ; centroidAddr_A[15] ;
+; N/A                                     ; None                                                ; 10.907 ns       ; centroidCalcModule_B[39] ; centroidAddr_B[39] ;
+; N/A                                     ; None                                                ; 10.889 ns       ; centroidCalcModule_B[58] ; centroidAddr_B[58] ;
+; N/A                                     ; None                                                ; 10.867 ns       ; op[0]                    ; centroidAddr_B[30] ;
+; N/A                                     ; None                                                ; 10.865 ns       ; centroidInit[57]         ; centroidAddr_B[57] ;
+; N/A                                     ; None                                                ; 10.842 ns       ; op[1]                    ; centroidAddr_A[51] ;
+; N/A                                     ; None                                                ; 10.836 ns       ; centroidControlInit[25]  ; centroidAddr_A[25] ;
+; N/A                                     ; None                                                ; 10.809 ns       ; centroidCalcModule_B[43] ; centroidAddr_B[43] ;
+; N/A                                     ; None                                                ; 10.781 ns       ; centroidCalcModule_B[10] ; centroidAddr_B[10] ;
+; N/A                                     ; None                                                ; 10.778 ns       ; op[0]                    ; centroidAddr_B[13] ;
+; N/A                                     ; None                                                ; 10.725 ns       ; centroidCalcModule_B[40] ; centroidAddr_B[40] ;
+; N/A                                     ; None                                                ; 10.705 ns       ; centroidInit[5]          ; centroidAddr_B[5]  ;
+; N/A                                     ; None                                                ; 10.693 ns       ; centroidCalcModule_A[56] ; centroidAddr_A[56] ;
+; N/A                                     ; None                                                ; 10.686 ns       ; centroidInit[36]         ; centroidAddr_B[36] ;
+; N/A                                     ; None                                                ; 10.677 ns       ; centroidCalcModule_A[16] ; centroidAddr_A[16] ;
+; N/A                                     ; None                                                ; 10.659 ns       ; op[0]                    ; centroidAddr_A[14] ;
+; N/A                                     ; None                                                ; 10.655 ns       ; op[0]                    ; centroidAddr_B[20] ;
+; N/A                                     ; None                                                ; 10.652 ns       ; centroidCalcModule_B[30] ; centroidAddr_B[30] ;
+; N/A                                     ; None                                                ; 10.652 ns       ; centroidCalcModule_B[9]  ; centroidAddr_B[9]  ;
+; N/A                                     ; None                                                ; 10.652 ns       ; centroidCalcModule_A[21] ; centroidAddr_A[21] ;
+; N/A                                     ; None                                                ; 10.641 ns       ; centroidInit[42]         ; centroidAddr_B[42] ;
+; N/A                                     ; None                                                ; 10.639 ns       ; op[0]                    ; centroidAddr_B[29] ;
+; N/A                                     ; None                                                ; 10.633 ns       ; op[0]                    ; centroidAddr_B[27] ;
+; N/A                                     ; None                                                ; 10.631 ns       ; op[0]                    ; centroidAddr_B[28] ;
+; N/A                                     ; None                                                ; 10.629 ns       ; centroidCalcModule_B[29] ; centroidAddr_B[29] ;
+; N/A                                     ; None                                                ; 10.609 ns       ; op[0]                    ; centroidAddr_A[6]  ;
+; N/A                                     ; None                                                ; 10.607 ns       ; centroidCalcModule_B[42] ; centroidAddr_B[42] ;
+; N/A                                     ; None                                                ; 10.600 ns       ; op[0]                    ; centroidAddr_B[31] ;
+; N/A                                     ; None                                                ; 10.590 ns       ; centroidCalcModule_B[36] ; centroidAddr_B[36] ;
+; N/A                                     ; None                                                ; 10.582 ns       ; centroidInit[49]         ; centroidAddr_B[49] ;
+; N/A                                     ; None                                                ; 10.582 ns       ; centroidInit[33]         ; centroidAddr_B[33] ;
+; N/A                                     ; None                                                ; 10.579 ns       ; centroidCalcModule_A[18] ; centroidAddr_A[18] ;
+; N/A                                     ; None                                                ; 10.569 ns       ; centroidControlInit[26]  ; centroidAddr_A[26] ;
+; N/A                                     ; None                                                ; 10.558 ns       ; centroidInit[45]         ; centroidAddr_B[45] ;
+; N/A                                     ; None                                                ; 10.547 ns       ; centroidCalcModule_B[46] ; centroidAddr_B[46] ;
+; N/A                                     ; None                                                ; 10.519 ns       ; centroidInit[39]         ; centroidAddr_B[39] ;
+; N/A                                     ; None                                                ; 10.502 ns       ; op[0]                    ; centroidAddr_B[25] ;
+; N/A                                     ; None                                                ; 10.500 ns       ; op[0]                    ; centroidAddr_A[2]  ;
+; N/A                                     ; None                                                ; 10.497 ns       ; centroidInit[12]         ; centroidAddr_B[12] ;
+; N/A                                     ; None                                                ; 10.488 ns       ; centroidCalcModule_A[25] ; centroidAddr_A[25] ;
+; N/A                                     ; None                                                ; 10.470 ns       ; op[0]                    ; centroidAddr_B[26] ;
+; N/A                                     ; None                                                ; 10.468 ns       ; op[0]                    ; centroidAddr_A[7]  ;
+; N/A                                     ; None                                                ; 10.465 ns       ; op[0]                    ; centroidAddr_B[21] ;
+; N/A                                     ; None                                                ; 10.443 ns       ; op[0]                    ; centroidAddr_A[10] ;
+; N/A                                     ; None                                                ; 10.434 ns       ; centroidCalcModule_B[27] ; centroidAddr_B[27] ;
+; N/A                                     ; None                                                ; 10.419 ns       ; centroidCalcModule_B[49] ; centroidAddr_B[49] ;
+; N/A                                     ; None                                                ; 10.415 ns       ; centroidCalcModule_B[28] ; centroidAddr_B[28] ;
+; N/A                                     ; None                                                ; 10.400 ns       ; centroidCalcModule_B[45] ; centroidAddr_B[45] ;
+; N/A                                     ; None                                                ; 10.398 ns       ; op[0]                    ; centroidAddr_B[61] ;
+; N/A                                     ; None                                                ; 10.392 ns       ; op[0]                    ; centroidAddr_A[9]  ;
+; N/A                                     ; None                                                ; 10.380 ns       ; centroidInit[20]         ; centroidAddr_B[20] ;
+; N/A                                     ; None                                                ; 10.378 ns       ; op[0]                    ; centroidAddr_B[62] ;
+; N/A                                     ; None                                                ; 10.368 ns       ; centroidInit[51]         ; centroidAddr_B[51] ;
+; N/A                                     ; None                                                ; 10.330 ns       ; centroidCalcModule_A[26] ; centroidAddr_A[26] ;
+; N/A                                     ; None                                                ; 10.309 ns       ; op[0]                    ; centroidAddr_A[1]  ;
+; N/A                                     ; None                                                ; 10.304 ns       ; op[0]                    ; centroidAddr_A[0]  ;
+; N/A                                     ; None                                                ; 10.300 ns       ; op[0]                    ; centroidAddr_B[22] ;
+; N/A                                     ; None                                                ; 10.298 ns       ; centroidInit[43]         ; centroidAddr_B[43] ;
+; N/A                                     ; None                                                ; 10.296 ns       ; centroidInit[15]         ; centroidAddr_B[15] ;
+; N/A                                     ; None                                                ; 10.292 ns       ; centroidInit[35]         ; centroidAddr_B[35] ;
+; N/A                                     ; None                                                ; 10.290 ns       ; op[0]                    ; centroidAddr_A[5]  ;
+; N/A                                     ; None                                                ; 10.288 ns       ; op[0]                    ; centroidAddr_B[19] ;
+; N/A                                     ; None                                                ; 10.285 ns       ; centroidControlInit[45]  ; centroidAddr_A[45] ;
+; N/A                                     ; None                                                ; 10.285 ns       ; op[0]                    ; centroidAddr_A[8]  ;
+; N/A                                     ; None                                                ; 10.282 ns       ; centroidInit[59]         ; centroidAddr_B[59] ;
+; N/A                                     ; None                                                ; 10.276 ns       ; centroidCalcModule_A[28] ; centroidAddr_A[28] ;
+; N/A                                     ; None                                                ; 10.271 ns       ; centroidInit[46]         ; centroidAddr_B[46] ;
+; N/A                                     ; None                                                ; 10.264 ns       ; centroidCalcModule_A[62] ; centroidAddr_A[62] ;
+; N/A                                     ; None                                                ; 10.261 ns       ; centroidCalcModule_A[41] ; centroidAddr_A[41] ;
+; N/A                                     ; None                                                ; 10.258 ns       ; op[0]                    ; centroidAddr_B[24] ;
+; N/A                                     ; None                                                ; 10.258 ns       ; centroidControlInit[21]  ; centroidAddr_A[21] ;
+; N/A                                     ; None                                                ; 10.255 ns       ; centroidInit[10]         ; centroidAddr_B[10] ;
+; N/A                                     ; None                                                ; 10.255 ns       ; centroidControlInit[61]  ; centroidAddr_A[61] ;
+; N/A                                     ; None                                                ; 10.255 ns       ; op[1]                    ; centroidAddr_A[44] ;
+; N/A                                     ; None                                                ; 10.248 ns       ; op[0]                    ; centroidAddr_A[3]  ;
+; Timing analysis restricted to 200 rows. ; To change the limit use Settings (Assignments menu) ;                 ;                          ;                    ;
++-----------------------------------------+-----------------------------------------------------+-----------------+--------------------------+--------------------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Classic Timing Analyzer
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Fri Jan 20 11:48:51 2017
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off Kmeans_MuxCentroidAddr -c Kmeans_MuxCentroidAddr --timing_analysis_only
+Info: Longest tpd from source pin "op[0]" to destination pin "centroidAddr_B[56]" is 14.792 ns
+    Info: 1: + IC(0.000 ns) + CELL(0.842 ns) = 0.842 ns; Loc. = PIN_R2; Fanout = 128; PIN Node = 'op[0]'
+    Info: 2: + IC(7.785 ns) + CELL(0.275 ns) = 8.902 ns; Loc. = LCCOMB_X20_Y1_N10; Fanout = 1; COMB Node = 'Mux71~0'
+    Info: 3: + IC(3.092 ns) + CELL(2.798 ns) = 14.792 ns; Loc. = PIN_B9; Fanout = 0; PIN Node = 'centroidAddr_B[56]'
+    Info: Total cell delay = 3.915 ns ( 26.47 % )
+    Info: Total interconnect delay = 10.877 ns ( 73.53 % )
+Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 193 megabytes
+    Info: Processing ended: Fri Jan 20 11:48:51 2017
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

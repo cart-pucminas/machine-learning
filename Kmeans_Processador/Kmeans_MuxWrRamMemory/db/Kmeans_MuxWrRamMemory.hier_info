@@ -1,0 +1,27 @@
+|Kmeans_MuxWrRamMemory
+controlBlock_A => Mux0.IN0
+controlBlock_A => Mux0.IN1
+controlBlock_A => Mux0.IN2
+controlBlock_A => Mux0.IN3
+controlBlock_A => Mux0.IN4
+controlBlock_B => Mux1.IN0
+controlBlock_B => Mux1.IN1
+controlBlock_B => Mux1.IN2
+controlBlock_B => Mux1.IN3
+calcCentroidModule_A => Mux0.IN5
+calcCentroidModule_B => Mux1.IN4
+centroidInit_B => Mux1.IN5
+calcCentroidModuleFP_A => Mux0.IN6
+calcCentroidModuleFP_B => Mux1.IN6
+calcCentroidModuleKmodes_A => Mux0.IN7
+calcCentroidModuleKmodes_B => Mux1.IN7
+op[0] => Mux0.IN10
+op[0] => Mux1.IN10
+op[1] => Mux0.IN9
+op[1] => Mux1.IN9
+op[2] => Mux0.IN8
+op[2] => Mux1.IN8
+wrRam_A <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+wrRam_B <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+
+

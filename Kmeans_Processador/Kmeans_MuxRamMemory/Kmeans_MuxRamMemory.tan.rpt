@@ -1,0 +1,310 @@
+Classic Timing Analyzer report for Kmeans_MuxRamMemory
+Mon Oct 31 16:10:26 2016
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Timing Analyzer Settings
+  4. tpd
+  5. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                           ;
++------------------------------+-------+---------------+-------------+-------+---------------+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time ; From  ; To            ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+-------------+-------+---------------+------------+----------+--------------+
+; Worst-case tpd               ; N/A   ; None          ; 14.965 ns   ; op[0] ; ramData_A[25] ; --         ; --       ; 0            ;
+; Total number of failed paths ;       ;               ;             ;       ;               ;            ;          ; 0            ;
++------------------------------+-------+---------------+-------------+-------+---------------+------------+----------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Settings                                                                                                                            ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+; Option                                                                                               ; Setting            ; From ; To ; Entity Name ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+; Device Name                                                                                          ; EP2C35F672C6       ;      ;    ;             ;
+; Timing Models                                                                                        ; Final              ;      ;    ;             ;
+; Default hold multicycle                                                                              ; Same as Multicycle ;      ;    ;             ;
+; Cut paths between unrelated clock domains                                                            ; On                 ;      ;    ;             ;
+; Cut off read during write signal paths                                                               ; On                 ;      ;    ;             ;
+; Cut off feedback from I/O pins                                                                       ; On                 ;      ;    ;             ;
+; Report Combined Fast/Slow Timing                                                                     ; Off                ;      ;    ;             ;
+; Ignore Clock Settings                                                                                ; Off                ;      ;    ;             ;
+; Analyze latches as synchronous elements                                                              ; On                 ;      ;    ;             ;
+; Enable Recovery/Removal analysis                                                                     ; Off                ;      ;    ;             ;
+; Enable Clock Latency                                                                                 ; Off                ;      ;    ;             ;
+; Use TimeQuest Timing Analyzer                                                                        ; Off                ;      ;    ;             ;
+; Minimum Core Junction Temperature                                                                    ; 0                  ;      ;    ;             ;
+; Maximum Core Junction Temperature                                                                    ; 85                 ;      ;    ;             ;
+; Number of source nodes to report per destination node                                                ; 10                 ;      ;    ;             ;
+; Number of destination nodes to report                                                                ; 10                 ;      ;    ;             ;
+; Number of paths to report                                                                            ; 200                ;      ;    ;             ;
+; Report Minimum Timing Checks                                                                         ; Off                ;      ;    ;             ;
+; Use Fast Timing Models                                                                               ; Off                ;      ;    ;             ;
+; Report IO Paths Separately                                                                           ; Off                ;      ;    ;             ;
+; Perform Multicorner Analysis                                                                         ; On                 ;      ;    ;             ;
+; Reports the worst-case path for each clock domain and analysis                                       ; Off                ;      ;    ;             ;
+; Reports worst-case timing paths for each clock domain and analysis                                   ; On                 ;      ;    ;             ;
+; Specifies the maximum number of worst-case timing paths to report for each clock domain and analysis ; 100                ;      ;    ;             ;
+; Removes common clock path pessimism (CCPP) during slack computation                                  ; Off                ;      ;    ;             ;
+; Output I/O Timing Endpoint                                                                           ; Near End           ;      ;    ;             ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; tpd                                                                                                                                                  ;
++-----------------------------------------+-----------------------------------------------------+-----------------+--------------------+---------------+
+; Slack                                   ; Required P2P Time                                   ; Actual P2P Time ; From               ; To            ;
++-----------------------------------------+-----------------------------------------------------+-----------------+--------------------+---------------+
+; N/A                                     ; None                                                ; 14.965 ns       ; op[0]              ; ramData_A[25] ;
+; N/A                                     ; None                                                ; 14.253 ns       ; op[1]              ; ramData_A[25] ;
+; N/A                                     ; None                                                ; 13.885 ns       ; centroidData_A[25] ; ramData_A[25] ;
+; N/A                                     ; None                                                ; 13.611 ns       ; mapData[25]        ; ramData_A[25] ;
+; N/A                                     ; None                                                ; 12.472 ns       ; op[1]              ; ramData_A[15] ;
+; N/A                                     ; None                                                ; 12.436 ns       ; romData[25]        ; ramData_A[25] ;
+; N/A                                     ; None                                                ; 12.277 ns       ; op[1]              ; ramData_A[13] ;
+; N/A                                     ; None                                                ; 12.190 ns       ; op[0]              ; ramData_A[30] ;
+; N/A                                     ; None                                                ; 12.152 ns       ; op[1]              ; ramData_A[11] ;
+; N/A                                     ; None                                                ; 12.140 ns       ; op[1]              ; ramData_A[9]  ;
+; N/A                                     ; None                                                ; 11.974 ns       ; op[0]              ; ramData_A[15] ;
+; N/A                                     ; None                                                ; 11.947 ns       ; op[0]              ; ramData_A[13] ;
+; N/A                                     ; None                                                ; 11.930 ns       ; op[0]              ; ramData_A[11] ;
+; N/A                                     ; None                                                ; 11.909 ns       ; op[1]              ; ramData_A[14] ;
+; N/A                                     ; None                                                ; 11.882 ns       ; op[1]              ; ramData_A[10] ;
+; N/A                                     ; None                                                ; 11.868 ns       ; op[1]              ; ramData_A[12] ;
+; N/A                                     ; None                                                ; 11.805 ns       ; op[1]              ; ramData_A[8]  ;
+; N/A                                     ; None                                                ; 11.766 ns       ; op[0]              ; ramData_A[9]  ;
+; N/A                                     ; None                                                ; 11.711 ns       ; op[1]              ; ramData_B[23] ;
+; N/A                                     ; None                                                ; 11.700 ns       ; op[1]              ; ramData_B[18] ;
+; N/A                                     ; None                                                ; 11.699 ns       ; op[0]              ; ramData_A[26] ;
+; N/A                                     ; None                                                ; 11.688 ns       ; op[1]              ; ramData_B[20] ;
+; N/A                                     ; None                                                ; 11.666 ns       ; op[0]              ; ramData_A[14] ;
+; N/A                                     ; None                                                ; 11.652 ns       ; op[0]              ; ramData_A[12] ;
+; N/A                                     ; None                                                ; 11.621 ns       ; op[1]              ; ramData_A[30] ;
+; N/A                                     ; None                                                ; 11.607 ns       ; op[1]              ; ramData_B[30] ;
+; N/A                                     ; None                                                ; 11.583 ns       ; op[0]              ; ramData_A[8]  ;
+; N/A                                     ; None                                                ; 11.501 ns       ; op[0]              ; ramData_A[10] ;
+; N/A                                     ; None                                                ; 11.478 ns       ; centroidData_A[20] ; ramData_A[20] ;
+; N/A                                     ; None                                                ; 11.462 ns       ; op[1]              ; ramData_B[24] ;
+; N/A                                     ; None                                                ; 11.438 ns       ; op[0]              ; ramData_A[23] ;
+; N/A                                     ; None                                                ; 11.419 ns       ; op[1]              ; ramData_B[22] ;
+; N/A                                     ; None                                                ; 11.409 ns       ; op[1]              ; ramData_B[25] ;
+; N/A                                     ; None                                                ; 11.407 ns       ; op[1]              ; ramData_B[16] ;
+; N/A                                     ; None                                                ; 11.403 ns       ; op[1]              ; ramData_B[17] ;
+; N/A                                     ; None                                                ; 11.384 ns       ; op[0]              ; ramData_A[27] ;
+; N/A                                     ; None                                                ; 11.370 ns       ; op[1]              ; ramData_B[29] ;
+; N/A                                     ; None                                                ; 11.358 ns       ; op[1]              ; ramData_B[31] ;
+; N/A                                     ; None                                                ; 11.308 ns       ; op[0]              ; ramData_A[28] ;
+; N/A                                     ; None                                                ; 11.302 ns       ; op[0]              ; ramData_A[29] ;
+; N/A                                     ; None                                                ; 11.261 ns       ; op[0]              ; ramData_A[24] ;
+; N/A                                     ; None                                                ; 11.229 ns       ; op[1]              ; ramData_B[26] ;
+; N/A                                     ; None                                                ; 11.185 ns       ; op[1]              ; ramData_B[19] ;
+; N/A                                     ; None                                                ; 11.160 ns       ; op[1]              ; ramData_B[28] ;
+; N/A                                     ; None                                                ; 11.151 ns       ; op[1]              ; ramData_B[27] ;
+; N/A                                     ; None                                                ; 11.136 ns       ; op[1]              ; ramData_B[21] ;
+; N/A                                     ; None                                                ; 11.125 ns       ; op[1]              ; ramData_A[3]  ;
+; N/A                                     ; None                                                ; 11.046 ns       ; op[1]              ; ramData_A[0]  ;
+; N/A                                     ; None                                                ; 10.912 ns       ; mapData[12]        ; ramData_A[12] ;
+; N/A                                     ; None                                                ; 10.904 ns       ; op[0]              ; ramData_B[0]  ;
+; N/A                                     ; None                                                ; 10.894 ns       ; op[1]              ; ramData_B[6]  ;
+; N/A                                     ; None                                                ; 10.879 ns       ; op[0]              ; ramData_B[6]  ;
+; N/A                                     ; None                                                ; 10.848 ns       ; op[1]              ; ramData_A[7]  ;
+; N/A                                     ; None                                                ; 10.843 ns       ; mapData[30]        ; ramData_A[30] ;
+; N/A                                     ; None                                                ; 10.833 ns       ; op[1]              ; ramData_A[5]  ;
+; N/A                                     ; None                                                ; 10.814 ns       ; op[1]              ; ramData_A[4]  ;
+; N/A                                     ; None                                                ; 10.811 ns       ; centroidData_A[30] ; ramData_A[30] ;
+; N/A                                     ; None                                                ; 10.803 ns       ; mapData[1]         ; ramData_A[1]  ;
+; N/A                                     ; None                                                ; 10.791 ns       ; mapData[16]        ; ramData_A[16] ;
+; N/A                                     ; None                                                ; 10.787 ns       ; op[1]              ; ramData_A[6]  ;
+; N/A                                     ; None                                                ; 10.781 ns       ; centroidData_A[16] ; ramData_A[16] ;
+; N/A                                     ; None                                                ; 10.762 ns       ; centroidData_B[29] ; ramData_B[29] ;
+; N/A                                     ; None                                                ; 10.737 ns       ; op[1]              ; ramData_A[28] ;
+; N/A                                     ; None                                                ; 10.732 ns       ; op[1]              ; ramData_A[29] ;
+; N/A                                     ; None                                                ; 10.730 ns       ; mapData[27]        ; ramData_A[27] ;
+; N/A                                     ; None                                                ; 10.726 ns       ; op[1]              ; ramData_A[23] ;
+; N/A                                     ; None                                                ; 10.719 ns       ; centroidData_B[5]  ; ramData_B[5]  ;
+; N/A                                     ; None                                                ; 10.704 ns       ; op[1]              ; ramData_A[1]  ;
+; N/A                                     ; None                                                ; 10.693 ns       ; centroidData_A[11] ; ramData_A[11] ;
+; N/A                                     ; None                                                ; 10.691 ns       ; op[1]              ; ramData_A[24] ;
+; N/A                                     ; None                                                ; 10.688 ns       ; op[1]              ; ramData_A[26] ;
+; N/A                                     ; None                                                ; 10.675 ns       ; mapData[13]        ; ramData_A[13] ;
+; N/A                                     ; None                                                ; 10.672 ns       ; op[1]              ; ramData_A[27] ;
+; N/A                                     ; None                                                ; 10.624 ns       ; op[0]              ; ramData_A[7]  ;
+; N/A                                     ; None                                                ; 10.605 ns       ; centroidData_A[13] ; ramData_A[13] ;
+; N/A                                     ; None                                                ; 10.602 ns       ; centroidData_A[8]  ; ramData_A[8]  ;
+; N/A                                     ; None                                                ; 10.594 ns       ; op[0]              ; ramData_A[5]  ;
+; N/A                                     ; None                                                ; 10.593 ns       ; op[1]              ; ramData_B[11] ;
+; N/A                                     ; None                                                ; 10.592 ns       ; op[1]              ; ramData_B[3]  ;
+; N/A                                     ; None                                                ; 10.583 ns       ; op[1]              ; ramData_B[7]  ;
+; N/A                                     ; None                                                ; 10.577 ns       ; op[0]              ; ramData_B[3]  ;
+; N/A                                     ; None                                                ; 10.576 ns       ; op[0]              ; ramData_B[11] ;
+; N/A                                     ; None                                                ; 10.576 ns       ; op[0]              ; ramData_A[4]  ;
+; N/A                                     ; None                                                ; 10.574 ns       ; op[1]              ; ramData_B[15] ;
+; N/A                                     ; None                                                ; 10.574 ns       ; op[1]              ; ramData_B[8]  ;
+; N/A                                     ; None                                                ; 10.573 ns       ; op[1]              ; ramData_B[12] ;
+; N/A                                     ; None                                                ; 10.570 ns       ; op[1]              ; ramData_B[5]  ;
+; N/A                                     ; None                                                ; 10.569 ns       ; op[1]              ; ramData_B[10] ;
+; N/A                                     ; None                                                ; 10.564 ns       ; op[0]              ; ramData_B[7]  ;
+; N/A                                     ; None                                                ; 10.559 ns       ; op[1]              ; ramData_B[13] ;
+; N/A                                     ; None                                                ; 10.559 ns       ; op[0]              ; ramData_B[12] ;
+; N/A                                     ; None                                                ; 10.556 ns       ; op[0]              ; ramData_B[15] ;
+; N/A                                     ; None                                                ; 10.556 ns       ; op[0]              ; ramData_B[8]  ;
+; N/A                                     ; None                                                ; 10.552 ns       ; op[0]              ; ramData_B[10] ;
+; N/A                                     ; None                                                ; 10.552 ns       ; op[0]              ; ramData_B[5]  ;
+; N/A                                     ; None                                                ; 10.545 ns       ; op[1]              ; ramData_B[9]  ;
+; N/A                                     ; None                                                ; 10.544 ns       ; op[0]              ; ramData_B[13] ;
+; N/A                                     ; None                                                ; 10.539 ns       ; op[1]              ; ramData_B[14] ;
+; N/A                                     ; None                                                ; 10.535 ns       ; op[0]              ; ramData_A[6]  ;
+; N/A                                     ; None                                                ; 10.531 ns       ; op[0]              ; ramData_B[9]  ;
+; N/A                                     ; None                                                ; 10.520 ns       ; op[0]              ; ramData_B[14] ;
+; N/A                                     ; None                                                ; 10.502 ns       ; mapData[9]         ; ramData_A[9]  ;
+; N/A                                     ; None                                                ; 10.493 ns       ; op[0]              ; ramData_B[23] ;
+; N/A                                     ; None                                                ; 10.481 ns       ; op[0]              ; ramData_B[18] ;
+; N/A                                     ; None                                                ; 10.470 ns       ; op[0]              ; ramData_B[20] ;
+; N/A                                     ; None                                                ; 10.450 ns       ; mapData[11]        ; ramData_A[11] ;
+; N/A                                     ; None                                                ; 10.440 ns       ; op[1]              ; ramData_B[4]  ;
+; N/A                                     ; None                                                ; 10.433 ns       ; op[0]              ; ramData_A[3]  ;
+; N/A                                     ; None                                                ; 10.421 ns       ; op[0]              ; ramData_B[4]  ;
+; N/A                                     ; None                                                ; 10.418 ns       ; mapData[5]         ; ramData_A[5]  ;
+; N/A                                     ; None                                                ; 10.412 ns       ; mapData[28]        ; ramData_A[28] ;
+; N/A                                     ; None                                                ; 10.412 ns       ; op[1]              ; ramData_A[2]  ;
+; N/A                                     ; None                                                ; 10.406 ns       ; romData[9]         ; ramData_A[9]  ;
+; N/A                                     ; None                                                ; 10.399 ns       ; centroidData_B[16] ; ramData_B[16] ;
+; N/A                                     ; None                                                ; 10.393 ns       ; op[0]              ; ramData_B[30] ;
+; N/A                                     ; None                                                ; 10.379 ns       ; centroidData_A[12] ; ramData_A[12] ;
+; N/A                                     ; None                                                ; 10.374 ns       ; mapData[4]         ; ramData_A[4]  ;
+; N/A                                     ; None                                                ; 10.363 ns       ; centroidData_A[19] ; ramData_A[19] ;
+; N/A                                     ; None                                                ; 10.355 ns       ; op[0]              ; ramData_A[0]  ;
+; N/A                                     ; None                                                ; 10.347 ns       ; centroidData_A[3]  ; ramData_A[3]  ;
+; N/A                                     ; None                                                ; 10.304 ns       ; mapData[6]         ; ramData_A[6]  ;
+; N/A                                     ; None                                                ; 10.302 ns       ; centroidData_B[30] ; ramData_B[30] ;
+; N/A                                     ; None                                                ; 10.292 ns       ; centroidData_B[20] ; ramData_B[20] ;
+; N/A                                     ; None                                                ; 10.277 ns       ; centroidData_B[23] ; ramData_B[23] ;
+; N/A                                     ; None                                                ; 10.273 ns       ; op[1]              ; ramData_B[1]  ;
+; N/A                                     ; None                                                ; 10.257 ns       ; op[1]              ; ramData_B[2]  ;
+; N/A                                     ; None                                                ; 10.254 ns       ; op[0]              ; ramData_B[1]  ;
+; N/A                                     ; None                                                ; 10.248 ns       ; romData[12]        ; ramData_A[12] ;
+; N/A                                     ; None                                                ; 10.244 ns       ; op[0]              ; ramData_B[24] ;
+; N/A                                     ; None                                                ; 10.243 ns       ; op[0]              ; ramData_B[2]  ;
+; N/A                                     ; None                                                ; 10.240 ns       ; romData[5]         ; ramData_A[5]  ;
+; N/A                                     ; None                                                ; 10.239 ns       ; mapData[14]        ; ramData_A[14] ;
+; N/A                                     ; None                                                ; 10.228 ns       ; op[1]              ; ramData_A[20] ;
+; N/A                                     ; None                                                ; 10.201 ns       ; op[0]              ; ramData_B[22] ;
+; N/A                                     ; None                                                ; 10.197 ns       ; centroidData_A[14] ; ramData_A[14] ;
+; N/A                                     ; None                                                ; 10.193 ns       ; op[1]              ; ramData_A[21] ;
+; N/A                                     ; None                                                ; 10.192 ns       ; op[1]              ; ramData_B[0]  ;
+; N/A                                     ; None                                                ; 10.191 ns       ; centroidData_A[9]  ; ramData_A[9]  ;
+; N/A                                     ; None                                                ; 10.190 ns       ; op[0]              ; ramData_B[25] ;
+; N/A                                     ; None                                                ; 10.187 ns       ; op[0]              ; ramData_B[16] ;
+; N/A                                     ; None                                                ; 10.185 ns       ; op[0]              ; ramData_B[17] ;
+; N/A                                     ; None                                                ; 10.160 ns       ; op[0]              ; ramData_A[2]  ;
+; N/A                                     ; None                                                ; 10.153 ns       ; mapData[20]        ; ramData_A[20] ;
+; N/A                                     ; None                                                ; 10.153 ns       ; mapData[10]        ; ramData_A[10] ;
+; N/A                                     ; None                                                ; 10.143 ns       ; op[0]              ; ramData_B[29] ;
+; N/A                                     ; None                                                ; 10.138 ns       ; mapData[8]         ; ramData_A[8]  ;
+; N/A                                     ; None                                                ; 10.135 ns       ; centroidData_A[4]  ; ramData_A[4]  ;
+; N/A                                     ; None                                                ; 10.132 ns       ; op[0]              ; ramData_B[31] ;
+; N/A                                     ; None                                                ; 10.120 ns       ; romData[3]         ; ramData_A[3]  ;
+; N/A                                     ; None                                                ; 10.109 ns       ; mapData[29]        ; ramData_A[29] ;
+; N/A                                     ; None                                                ; 10.096 ns       ; centroidData_A[7]  ; ramData_A[7]  ;
+; N/A                                     ; None                                                ; 10.092 ns       ; op[0]              ; ramData_A[20] ;
+; N/A                                     ; None                                                ; 10.060 ns       ; mapData[3]         ; ramData_A[3]  ;
+; N/A                                     ; None                                                ; 10.021 ns       ; mapData[17]        ; ramData_A[17] ;
+; N/A                                     ; None                                                ; 10.018 ns       ; centroidData_B[22] ; ramData_B[22] ;
+; N/A                                     ; None                                                ; 10.013 ns       ; centroidData_A[23] ; ramData_A[23] ;
+; N/A                                     ; None                                                ; 10.006 ns       ; op[0]              ; ramData_A[1]  ;
+; N/A                                     ; None                                                ; 10.003 ns       ; op[0]              ; ramData_B[26] ;
+; N/A                                     ; None                                                ; 9.996 ns        ; op[1]              ; ramData_A[18] ;
+; N/A                                     ; None                                                ; 9.995 ns        ; centroidData_A[18] ; ramData_A[18] ;
+; N/A                                     ; None                                                ; 9.994 ns        ; romData[0]         ; ramData_A[0]  ;
+; N/A                                     ; None                                                ; 9.988 ns        ; op[1]              ; ramData_A[17] ;
+; N/A                                     ; None                                                ; 9.983 ns        ; op[0]              ; ramData_A[16] ;
+; N/A                                     ; None                                                ; 9.979 ns        ; centroidData_B[31] ; ramData_B[31] ;
+; N/A                                     ; None                                                ; 9.979 ns        ; mapData[2]         ; ramData_A[2]  ;
+; N/A                                     ; None                                                ; 9.972 ns        ; mapData[23]        ; ramData_A[23] ;
+; N/A                                     ; None                                                ; 9.971 ns        ; op[0]              ; ramData_B[19] ;
+; N/A                                     ; None                                                ; 9.962 ns        ; mapData[7]         ; ramData_A[7]  ;
+; N/A                                     ; None                                                ; 9.961 ns        ; centroidData_A[5]  ; ramData_A[5]  ;
+; N/A                                     ; None                                                ; 9.951 ns        ; mapData[21]        ; ramData_A[21] ;
+; N/A                                     ; None                                                ; 9.939 ns        ; op[1]              ; ramData_A[19] ;
+; N/A                                     ; None                                                ; 9.933 ns        ; op[0]              ; ramData_B[28] ;
+; N/A                                     ; None                                                ; 9.933 ns        ; op[0]              ; ramData_B[27] ;
+; N/A                                     ; None                                                ; 9.916 ns        ; op[0]              ; ramData_B[21] ;
+; N/A                                     ; None                                                ; 9.912 ns        ; centroidData_A[17] ; ramData_A[17] ;
+; N/A                                     ; None                                                ; 9.898 ns        ; mapData[24]        ; ramData_A[24] ;
+; N/A                                     ; None                                                ; 9.890 ns        ; mapData[19]        ; ramData_A[19] ;
+; N/A                                     ; None                                                ; 9.888 ns        ; centroidData_B[18] ; ramData_B[18] ;
+; N/A                                     ; None                                                ; 9.886 ns        ; op[0]              ; ramData_A[21] ;
+; N/A                                     ; None                                                ; 9.881 ns        ; centroidData_A[6]  ; ramData_A[6]  ;
+; N/A                                     ; None                                                ; 9.878 ns        ; op[1]              ; ramData_A[16] ;
+; N/A                                     ; None                                                ; 9.877 ns        ; centroidData_B[25] ; ramData_B[25] ;
+; N/A                                     ; None                                                ; 9.862 ns        ; centroidData_B[24] ; ramData_B[24] ;
+; N/A                                     ; None                                                ; 9.862 ns        ; op[0]              ; ramData_A[18] ;
+; N/A                                     ; None                                                ; 9.857 ns        ; centroidData_A[22] ; ramData_A[22] ;
+; N/A                                     ; None                                                ; 9.854 ns        ; romData[15]        ; ramData_A[15] ;
+; N/A                                     ; None                                                ; 9.854 ns        ; centroidData_A[10] ; ramData_A[10] ;
+; N/A                                     ; None                                                ; 9.852 ns        ; op[0]              ; ramData_A[17] ;
+; N/A                                     ; None                                                ; 9.815 ns        ; romData[8]         ; ramData_A[8]  ;
+; N/A                                     ; None                                                ; 9.812 ns        ; centroidData_A[29] ; ramData_A[29] ;
+; N/A                                     ; None                                                ; 9.805 ns        ; op[0]              ; ramData_A[19] ;
+; N/A                                     ; None                                                ; 9.791 ns        ; centroidData_B[26] ; ramData_B[26] ;
+; N/A                                     ; None                                                ; 9.788 ns        ; romData[11]        ; ramData_A[11] ;
+; N/A                                     ; None                                                ; 9.788 ns        ; centroidData_A[2]  ; ramData_A[2]  ;
+; N/A                                     ; None                                                ; 9.785 ns        ; centroidData_A[1]  ; ramData_A[1]  ;
+; N/A                                     ; None                                                ; 9.783 ns        ; romData[13]        ; ramData_A[13] ;
+; N/A                                     ; None                                                ; 9.778 ns        ; centroidData_B[28] ; ramData_B[28] ;
+; N/A                                     ; None                                                ; 9.754 ns        ; romData[7]         ; ramData_A[7]  ;
+; N/A                                     ; None                                                ; 9.749 ns        ; centroidData_A[28] ; ramData_A[28] ;
+; N/A                                     ; None                                                ; 9.737 ns        ; centroidData_B[21] ; ramData_B[21] ;
+; Timing analysis restricted to 200 rows. ; To change the limit use Settings (Assignments menu) ;                 ;                    ;               ;
++-----------------------------------------+-----------------------------------------------------+-----------------+--------------------+---------------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Classic Timing Analyzer
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Mon Oct 31 16:10:25 2016
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off Kmeans_MuxRamMemory -c Kmeans_MuxRamMemory --timing_analysis_only
+Info: Longest tpd from source pin "op[0]" to destination pin "ramData_A[25]" is 14.965 ns
+    Info: 1: + IC(0.000 ns) + CELL(0.832 ns) = 0.832 ns; Loc. = PIN_J6; Fanout = 96; PIN Node = 'op[0]'
+    Info: 2: + IC(6.516 ns) + CELL(0.150 ns) = 7.498 ns; Loc. = LCCOMB_X1_Y7_N24; Fanout = 1; COMB Node = 'Mux6~0'
+    Info: 3: + IC(0.255 ns) + CELL(0.245 ns) = 7.998 ns; Loc. = LCCOMB_X1_Y7_N26; Fanout = 1; COMB Node = 'Mux6~1'
+    Info: 4: + IC(4.325 ns) + CELL(2.642 ns) = 14.965 ns; Loc. = PIN_Y24; Fanout = 0; PIN Node = 'ramData_A[25]'
+    Info: Total cell delay = 3.869 ns ( 25.85 % )
+    Info: Total interconnect delay = 11.096 ns ( 74.15 % )
+Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 171 megabytes
+    Info: Processing ended: Mon Oct 31 16:10:26 2016
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

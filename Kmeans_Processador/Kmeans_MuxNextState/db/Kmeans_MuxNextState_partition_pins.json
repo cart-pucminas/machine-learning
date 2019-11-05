@@ -1,0 +1,237 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "next_State[0]",
+					"strict" : false
+				},
+				{
+					"name" : "next_State[1]",
+					"strict" : false
+				},
+				{
+					"name" : "next_State[2]",
+					"strict" : false
+				},
+				{
+					"name" : "next_State[3]",
+					"strict" : false
+				},
+				{
+					"name" : "calcMapModuleKmodes[0]",
+					"strict" : false
+				},
+				{
+					"name" : "op[1]",
+					"strict" : false
+				},
+				{
+					"name" : "calcCentroidModuleFP[0]",
+					"strict" : false
+				},
+				{
+					"name" : "op[0]",
+					"strict" : false
+				},
+				{
+					"name" : "calcMapModuleFP[0]",
+					"strict" : false
+				},
+				{
+					"name" : "calcCentroidModuleKmodes[0]",
+					"strict" : false
+				},
+				{
+					"name" : "controlCentroidInitialize[0]",
+					"strict" : false
+				},
+				{
+					"name" : "memoryInitialize[0]",
+					"strict" : false
+				},
+				{
+					"name" : "idle[0]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidInitialize[0]",
+					"strict" : false
+				},
+				{
+					"name" : "op[3]",
+					"strict" : false
+				},
+				{
+					"name" : "op[2]",
+					"strict" : false
+				},
+				{
+					"name" : "calcCentroidModule[0]",
+					"strict" : false
+				},
+				{
+					"name" : "iterationCount[0]",
+					"strict" : false
+				},
+				{
+					"name" : "calcMapModule[0]",
+					"strict" : false
+				},
+				{
+					"name" : "outputResult[0]",
+					"strict" : false
+				},
+				{
+					"name" : "nrst",
+					"strict" : false
+				},
+				{
+					"name" : "iterationCount[1]",
+					"strict" : false
+				},
+				{
+					"name" : "calcCentroidModule[1]",
+					"strict" : false
+				},
+				{
+					"name" : "calcMapModule[1]",
+					"strict" : false
+				},
+				{
+					"name" : "outputResult[1]",
+					"strict" : false
+				},
+				{
+					"name" : "calcCentroidModuleFP[1]",
+					"strict" : false
+				},
+				{
+					"name" : "calcMapModuleKmodes[1]",
+					"strict" : false
+				},
+				{
+					"name" : "calcMapModuleFP[1]",
+					"strict" : false
+				},
+				{
+					"name" : "calcCentroidModuleKmodes[1]",
+					"strict" : false
+				},
+				{
+					"name" : "memoryInitialize[1]",
+					"strict" : false
+				},
+				{
+					"name" : "controlCentroidInitialize[1]",
+					"strict" : false
+				},
+				{
+					"name" : "idle[1]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidInitialize[1]",
+					"strict" : false
+				},
+				{
+					"name" : "calcMapModuleKmodes[2]",
+					"strict" : false
+				},
+				{
+					"name" : "calcCentroidModuleFP[2]",
+					"strict" : false
+				},
+				{
+					"name" : "calcMapModuleFP[2]",
+					"strict" : false
+				},
+				{
+					"name" : "calcCentroidModuleKmodes[2]",
+					"strict" : false
+				},
+				{
+					"name" : "calcCentroidModule[2]",
+					"strict" : false
+				},
+				{
+					"name" : "iterationCount[2]",
+					"strict" : false
+				},
+				{
+					"name" : "calcMapModule[2]",
+					"strict" : false
+				},
+				{
+					"name" : "outputResult[2]",
+					"strict" : false
+				},
+				{
+					"name" : "controlCentroidInitialize[2]",
+					"strict" : false
+				},
+				{
+					"name" : "memoryInitialize[2]",
+					"strict" : false
+				},
+				{
+					"name" : "idle[2]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidInitialize[2]",
+					"strict" : false
+				},
+				{
+					"name" : "calcCentroidModuleFP[3]",
+					"strict" : false
+				},
+				{
+					"name" : "calcMapModuleKmodes[3]",
+					"strict" : false
+				},
+				{
+					"name" : "calcMapModuleFP[3]",
+					"strict" : false
+				},
+				{
+					"name" : "calcCentroidModuleKmodes[3]",
+					"strict" : false
+				},
+				{
+					"name" : "iterationCount[3]",
+					"strict" : false
+				},
+				{
+					"name" : "calcCentroidModule[3]",
+					"strict" : false
+				},
+				{
+					"name" : "calcMapModule[3]",
+					"strict" : false
+				},
+				{
+					"name" : "outputResult[3]",
+					"strict" : false
+				},
+				{
+					"name" : "memoryInitialize[3]",
+					"strict" : false
+				},
+				{
+					"name" : "controlCentroidInitialize[3]",
+					"strict" : false
+				},
+				{
+					"name" : "idle[3]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidInitialize[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

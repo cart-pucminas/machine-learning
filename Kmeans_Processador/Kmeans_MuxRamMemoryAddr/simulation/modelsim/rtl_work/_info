@@ -1,0 +1,31 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Lucas/Desktop/Kmeans_Processador/Kmeans_MuxRamMemoryAddr/simulation/modelsim
+Ekmeans_muxrammemoryaddr
+w1491855667
+DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+8C:/Users/Lucas/Desktop/Kmeans_Processador/Kmeans_MuxRamMemoryAddr/Kmeans_MuxRamMemoryAddr.vhd
+FC:/Users/Lucas/Desktop/Kmeans_Processador/Kmeans_MuxRamMemoryAddr/Kmeans_MuxRamMemoryAddr.vhd
+l0
+L11
+Vig]m>2dk5J^]jI^HCI]JG2
+!s100 EBmG2ekZDZ<=No5M4cEE>3
+OV;C;10.4d;61
+31
+!s110 1492006532
+!i10b 1
+!s108 1492006532.000000
+!s90 -reportprogress|300|-93|-work|work|C:/Users/Lucas/Desktop/Kmeans_Processador/Kmeans_MuxRamMemoryAddr/Kmeans_MuxRamMemoryAddr.vhd|
+!s107 C:/Users/Lucas/Desktop/Kmeans_Processador/Kmeans_MuxRamMemoryAddr/Kmeans_MuxRamMemoryAddr.vhd|
+!i113 1
+o-93 -work work
+tExplicit 1

@@ -1,0 +1,851 @@
+ -- Copyright (C) 2016  Intel Corporation. All rights reserved.
+ -- Your use of Intel Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Intel Program License 
+ -- Subscription Agreement, the Intel Quartus Prime License Agreement,
+ -- the Intel MegaCore Function License Agreement, or other 
+ -- applicable license agreement, including, without limitation, 
+ -- that your use is for the sole purpose of programming logic 
+ -- devices manufactured by Intel and sold by Intel or its 
+ -- authorized distributors.  Please refer to the applicable 
+ -- agreement for further details.
+ -- 
+ -- This is a Quartus Prime output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus Prime input file. This file cannot be used
+ -- to make Quartus Prime pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus Prime help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.2V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --                  Bank 1:       2.5V
+ --                  Bank 2:       2.5V
+ --                  Bank 3:       2.5V
+ --                  Bank 4:       2.5V
+ --                  Bank 5:       2.5V
+ --                  Bank 6:       2.5V
+ --                  Bank 7:       2.5V
+ --                  Bank 8:       2.5V
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --                  It can also be used to report unused dedicated pins. The connection
+ --                  on the board for unused dedicated pins depends on whether this will
+ --                  be used in a future design. One example is device migration. When
+ --                  using device migration, refer to the device pin-tables. If it is a
+ --                  GND pin in the pin table or if it will not be used in a future design
+ --                  for another purpose the it MUST be connected to GND. If it is an unused
+ --                  dedicated pin, then it can be connected to a valid signal on the board
+ --                  (low, high, or toggling) if that signal is required for a different
+ --                  revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --                  This pin should be connected to GND. It may also be connected  to a
+ --                  valid signal  on the board  (low, high, or toggling)  if that signal
+ --                  is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin. Connect each pin marked GND* directly to GND
+ --                  or leave it unconnected.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+CHIP  "Kmeans_MuxRamMemory"  ASSIGNED TO AN: EP4CE115F29I7
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+VCCIO8                       : A2        : power  :                   : 2.5V    : 8         :                
+ramData_B[29]                : A3        : output : 2.5 V             :         : 8         : N              
+ramData_B[38]                : A4        : output : 2.5 V             :         : 8         : N              
+VCCIO8                       : A5        : power  :                   : 2.5V    : 8         :                
+centroidInit[63]             : A6        : input  : 2.5 V             :         : 8         : N              
+ramData_B[48]                : A7        : output : 2.5 V             :         : 8         : N              
+ramData_B[35]                : A8        : output : 2.5 V             :         : 8         : N              
+VCCIO8                       : A9        : power  :                   : 2.5V    : 8         :                
+ramData_B[60]                : A10       : output : 2.5 V             :         : 8         : N              
+ramData_B[46]                : A11       : output : 2.5 V             :         : 8         : N              
+centroidCalcKmodes[50]       : A12       : input  : 2.5 V             :         : 8         : N              
+VCCIO8                       : A13       : power  :                   : 2.5V    : 8         :                
+GND+                         : A14       :        :                   :         : 8         :                
+centroidCalcKmodes[34]       : A15       : input  : 2.5 V             :         : 7         : N              
+VCCIO7                       : A16       : power  :                   : 2.5V    : 7         :                
+centroidCalcFP[49]           : A17       : input  : 2.5 V             :         : 7         : N              
+ramData_B[2]                 : A18       : output : 2.5 V             :         : 7         : N              
+centroidInit[13]             : A19       : input  : 2.5 V             :         : 7         : N              
+VCCIO7                       : A20       : power  :                   : 2.5V    : 7         :                
+romData[17]                  : A21       : input  : 2.5 V             :         : 7         : N              
+ramData_A[31]                : A22       : output : 2.5 V             :         : 7         : N              
+centroidCalc[33]             : A23       : input  : 2.5 V             :         : 7         : N              
+VCCIO7                       : A24       : power  :                   : 2.5V    : 7         :                
+centroidCalc[31]             : A25       : input  : 2.5 V             :         : 7         : N              
+centroidCalcFP[32]           : A26       : input  : 2.5 V             :         : 7         : N              
+VCCIO7                       : A27       : power  :                   : 2.5V    : 7         :                
+VCCIO2                       : AA1       : power  :                   : 2.5V    : 2         :                
+GND                          : AA2       : gnd    :                   :         :           :                
+RESERVED_INPUT               : AA3       :        :                   :         : 2         :                
+RESERVED_INPUT               : AA4       :        :                   :         : 2         :                
+RESERVED_INPUT               : AA5       :        :                   :         : 2         :                
+centroidCalc[5]              : AA6       : input  : 2.5 V             :         : 2         : N              
+RESERVED_INPUT               : AA7       :        :                   :         : 2         :                
+centroidCalcFP[29]           : AA8       : input  : 2.5 V             :         : 3         : N              
+GNDA1                        : AA9       : gnd    :                   :         :           :                
+ramData_A[9]                 : AA10      : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : AA11      : power  :                   : 2.5V    : 3         :                
+centroidCalcKmodes[19]       : AA12      : input  : 2.5 V             :         : 3         : N              
+centroidCalc[21]             : AA13      : input  : 2.5 V             :         : 3         : N              
+centroidCalcFP[19]           : AA14      : input  : 2.5 V             :         : 3         : N              
+centroidCalcKmodes[63]       : AA15      : input  : 2.5 V             :         : 4         : N              
+ramData_A[22]                : AA16      : output : 2.5 V             :         : 4         : N              
+centroidCalcFP[61]           : AA17      : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : AA18      : power  :                   : 2.5V    : 4         :                
+romData[60]                  : AA19      : input  : 2.5 V             :         : 4         : N              
+GNDA4                        : AA20      : gnd    :                   :         :           :                
+centroidCalcKmodes[59]       : AA21      : input  : 2.5 V             :         : 4         : N              
+centroidCalc[56]             : AA22      : input  : 2.5 V             :         : 5         : N              
+centroidCalc[2]              : AA23      : input  : 2.5 V             :         : 5         : N              
+centroidCalcKmodes[12]       : AA24      : input  : 2.5 V             :         : 5         : N              
+romData[0]                   : AA25      : input  : 2.5 V             :         : 5         : N              
+centroidCalcKmodes[6]        : AA26      : input  : 2.5 V             :         : 5         : N              
+GND                          : AA27      : gnd    :                   :         :           :                
+VCCIO5                       : AA28      : power  :                   : 2.5V    : 5         :                
+centroidCalcFP[39]           : AB1       : input  : 2.5 V             :         : 2         : N              
+centroidCalcFP[38]           : AB2       : input  : 2.5 V             :         : 2         : N              
+RESERVED_INPUT               : AB3       :        :                   :         : 2         :                
+ramData_A[3]                 : AB4       : output : 2.5 V             :         : 2         : N              
+ramData_A[7]                 : AB5       : output : 2.5 V             :         : 2         : N              
+romData[1]                   : AB6       : input  : 2.5 V             :         : 2         : N              
+ramData_A[29]                : AB7       : output : 2.5 V             :         : 3         : N              
+centroidInit[61]             : AB8       : input  : 2.5 V             :         : 3         : N              
+ramData_B[59]                : AB9       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT               : AB10      :        :                   :         : 3         :                
+romData[27]                  : AB11      : input  : 2.5 V             :         : 3         : N              
+romData[8]                   : AB12      : input  : 2.5 V             :         : 3         : N              
+ramData_A[8]                 : AB13      : output : 2.5 V             :         : 3         : N              
+centroidCalc[20]             : AB14      : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT               : AB15      :        :                   :         : 4         :                
+RESERVED_INPUT               : AB16      :        :                   :         : 4         :                
+centroidCalcKmodes[61]       : AB17      : input  : 2.5 V             :         : 4         : N              
+centroidCalc[57]             : AB18      : input  : 2.5 V             :         : 4         : N              
+centroidCalcKmodes[57]       : AB19      : input  : 2.5 V             :         : 4         : N              
+ramData_A[56]                : AB20      : output : 2.5 V             :         : 4         : N              
+centroidCalcFP[60]           : AB21      : input  : 2.5 V             :         : 4         : N              
+centroidCalc[60]             : AB22      : input  : 2.5 V             :         : 4         : N              
+ramData_A[57]                : AB23      : output : 2.5 V             :         : 5         : N              
+centroidCalcFP[59]           : AB24      : input  : 2.5 V             :         : 5         : N              
+centroidCalcFP[28]           : AB25      : input  : 2.5 V             :         : 5         : N              
+centroidCalcKmodes[0]        : AB26      : input  : 2.5 V             :         : 5         : N              
+centroidCalcFP[2]            : AB27      : input  : 2.5 V             :         : 5         : N              
+romData[28]                  : AB28      : input  : 2.5 V             :         : 5         : N              
+op[0]                        : AC1       : input  : 2.5 V             :         : 2         : N              
+RESERVED_INPUT               : AC2       :        :                   :         : 2         :                
+RESERVED_INPUT               : AC3       :        :                   :         : 2         :                
+centroidInit[57]             : AC4       : input  : 2.5 V             :         : 2         : N              
+romData[3]                   : AC5       : input  : 2.5 V             :         : 2         : N              
+GND                          : AC6       : gnd    :                   :         :           :                
+centroidCalc[3]              : AC7       : input  : 2.5 V             :         : 3         : N              
+centroidCalcKmodes[35]       : AC8       : input  : 2.5 V             :         : 3         : N              
+GND                          : AC9       : gnd    :                   :         :           :                
+op[1]                        : AC10      : input  : 2.5 V             :         : 3         : N              
+ramData_A[20]                : AC11      : output : 2.5 V             :         : 3         : N              
+romData[22]                  : AC12      : input  : 2.5 V             :         : 3         : N              
+GND                          : AC13      : gnd    :                   :         :           :                
+centroidCalc[8]              : AC14      : input  : 2.5 V             :         : 3         : N              
+ramData_A[19]                : AC15      : output : 2.5 V             :         : 4         : N              
+GND                          : AC16      : gnd    :                   :         :           :                
+centroidCalc[44]             : AC17      : input  : 2.5 V             :         : 4         : N              
+centroidCalc[41]             : AC18      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT               : AC19      :        :                   :         : 4         :                
+GND                          : AC20      : gnd    :                   :         :           :                
+romData[59]                  : AC21      : input  : 2.5 V             :         : 4         : N              
+centroidCalc[59]             : AC22      : input  : 2.5 V             :         : 4         : N              
+GND                          : AC23      : gnd    :                   :         :           :                
+centroidCalcKmodes[56]       : AC24      : input  : 2.5 V             :         : 5         : N              
+centroidCalcFP[55]           : AC25      : input  : 2.5 V             :         : 5         : N              
+romData[2]                   : AC26      : input  : 2.5 V             :         : 5         : N              
+centroidCalcKmodes[2]        : AC27      : input  : 2.5 V             :         : 5         : N              
+centroidCalcFP[0]            : AC28      : input  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT               : AD1       :        :                   :         : 2         :                
+RESERVED_INPUT               : AD2       :        :                   :         : 2         :                
+RESERVED_INPUT               : AD3       :        :                   :         : 2         :                
+ramData_B[61]                : AD4       : output : 2.5 V             :         : 3         : N              
+ramData_A[1]                 : AD5       : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : AD6       : power  :                   : 2.5V    : 3         :                
+centroidCalcFP[7]            : AD7       : input  : 2.5 V             :         : 3         : N              
+centroidCalcKmodes[5]        : AD8       : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AD9       : power  :                   : 2.5V    : 3         :                
+centroidCalcFP[25]           : AD10      : input  : 2.5 V             :         : 3         : N              
+centroidCalcFP[21]           : AD11      : input  : 2.5 V             :         : 3         : N              
+ramData_B[25]                : AD12      : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : AD13      : power  :                   : 2.5V    : 3         :                
+centroidCalcFP[20]           : AD14      : input  : 2.5 V             :         : 3         : N              
+centroidCalc[22]             : AD15      : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : AD16      : power  :                   : 2.5V    : 4         :                
+romData[41]                  : AD17      : input  : 2.5 V             :         : 4         : N              
+centroidCalcKmodes[45]       : AD18      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT               : AD19      :        :                   :         : 4         :                
+VCCIO4                       : AD20      : power  :                   : 2.5V    : 4         :                
+romData[57]                  : AD21      : input  : 2.5 V             :         : 4         : N              
+centroidCalcFP[56]           : AD22      : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : AD23      : power  :                   : 2.5V    : 4         :                
+ramData_A[59]                : AD24      : output : 2.5 V             :         : 4         : N              
+ramData_A[58]                : AD25      : output : 2.5 V             :         : 4         : N              
+ramData_A[2]                 : AD26      : output : 2.5 V             :         : 5         : N              
+centroidCalc[6]              : AD27      : input  : 2.5 V             :         : 5         : N              
+centroidCalcKmodes[28]       : AD28      : input  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT               : AE1       :        :                   :         : 2         :                
+RESERVED_INPUT               : AE2       :        :                   :         : 2         :                
+centroidCalcKmodes[3]        : AE3       : input  : 2.5 V             :         : 2         : N              
+centroidCalc[1]              : AE4       : input  : 2.5 V             :         : 3         : N              
+centroidCalcKmodes[1]        : AE5       : input  : 2.5 V             :         : 3         : N              
+centroidCalcFP[3]            : AE6       : input  : 2.5 V             :         : 3         : N              
+romData[29]                  : AE7       : input  : 2.5 V             :         : 3         : N              
+centroidCalcKmodes[9]        : AE8       : input  : 2.5 V             :         : 3         : N              
+romData[9]                   : AE9       : input  : 2.5 V             :         : 3         : N              
+ramData_A[25]                : AE10      : output : 2.5 V             :         : 3         : N              
+centroidInit[59]             : AE11      : input  : 2.5 V             :         : 3         : N              
+centroidInit[46]             : AE12      : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT               : AE13      :        :                   :         : 3         :                
+centroidCalcKmodes[20]       : AE14      : input  : 2.5 V             :         : 3         : N              
+romData[48]                  : AE15      : input  : 2.5 V             :         : 4         : N              
+centroidCalcFP[48]           : AE16      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT               : AE17      :        :                   :         : 4         :                
+centroidCalcFP[44]           : AE18      : input  : 2.5 V             :         : 4         : N              
+romData[45]                  : AE19      : input  : 2.5 V             :         : 4         : N              
+centroidCalcKmodes[44]       : AE20      : input  : 2.5 V             :         : 4         : N              
+romData[13]                  : AE21      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT               : AE22      :        :                   :         : 4         :                
+centroidCalcFP[58]           : AE23      : input  : 2.5 V             :         : 4         : N              
+centroidCalc[55]             : AE24      : input  : 2.5 V             :         : 4         : N              
+centroidCalc[61]             : AE25      : input  : 2.5 V             :         : 4         : N              
+centroidCalcKmodes[60]       : AE26      : input  : 2.5 V             :         : 5         : N              
+centroidCalcFP[6]            : AE27      : input  : 2.5 V             :         : 5         : N              
+centroidCalcFP[12]           : AE28      : input  : 2.5 V             :         : 5         : N              
+GND                          : AF1       : gnd    :                   :         :           :                
+romData[7]                   : AF2       : input  : 2.5 V             :         : 2         : N              
+centroidCalcFP[5]            : AF3       : input  : 2.5 V             :         : 3         : N              
+ramData_A[5]                 : AF4       : output : 2.5 V             :         : 3         : N              
+centroidInit[58]             : AF5       : input  : 2.5 V             :         : 3         : N              
+ramData_B[56]                : AF6       : output : 2.5 V             :         : 3         : N              
+centroidCalcFP[9]            : AF7       : input  : 2.5 V             :         : 3         : N              
+centroidCalcKmodes[27]       : AF8       : input  : 2.5 V             :         : 3         : N              
+centroidCalcKmodes[29]       : AF9       : input  : 2.5 V             :         : 3         : N              
+centroidCalc[9]              : AF10      : input  : 2.5 V             :         : 3         : N              
+ramData_A[27]                : AF11      : output : 2.5 V             :         : 3         : N              
+centroidCalcFP[35]           : AF12      : input  : 2.5 V             :         : 3         : N              
+centroidCalcFP[8]            : AF13      : input  : 2.5 V             :         : 3         : N              
+centroidCalcKmodes[22]       : AF14      : input  : 2.5 V             :         : 3         : N              
+romData[20]                  : AF15      : input  : 2.5 V             :         : 4         : N              
+centroidCalcKmodes[8]        : AF16      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT               : AF17      :        :                   :         : 4         :                
+centroidCalcFP[45]           : AF18      : input  : 2.5 V             :         : 4         : N              
+romData[63]                  : AF19      : input  : 2.5 V             :         : 4         : N              
+romData[43]                  : AF20      : input  : 2.5 V             :         : 4         : N              
+ramData_A[41]                : AF21      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT               : AF22      :        :                   :         : 4         :                
+romData[56]                  : AF23      : input  : 2.5 V             :         : 4         : N              
+centroidCalcKmodes[41]       : AF24      : input  : 2.5 V             :         : 4         : N              
+centroidCalc[63]             : AF25      : input  : 2.5 V             :         : 4         : N              
+romData[61]                  : AF26      : input  : 2.5 V             :         : 4         : N              
+centroidCalcKmodes[58]       : AF27      : input  : 2.5 V             :         : 5         : N              
+GND                          : AF28      : gnd    :                   :         :           :                
+VCCIO2                       : AG1       : power  :                   : 2.5V    : 2         :                
+GND                          : AG2       : gnd    :                   :         :           :                
+centroidCalcFP[1]            : AG3       : input  : 2.5 V             :         : 3         : N              
+centroidCalcKmodes[7]        : AG4       : input  : 2.5 V             :         : 3         : N              
+GND                          : AG5       : gnd    :                   :         :           :                
+romData[25]                  : AG6       : input  : 2.5 V             :         : 3         : N              
+centroidCalc[25]             : AG7       : input  : 2.5 V             :         : 3         : N              
+ramData_A[35]                : AG8       : output : 2.5 V             :         : 3         : N              
+GND                          : AG9       : gnd    :                   :         :           :                
+centroidCalcFP[27]           : AG10      : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT               : AG11      :        :                   :         : 3         :                
+centroidCalcFP[22]           : AG12      : input  : 2.5 V             :         : 3         : N              
+GND                          : AG13      : gnd    :                   :         :           :                
+centroidCalcKmodes[16]       : AG14      : input  : 2.5 V             :         : 3         : N              
+centroidCalc[35]             : AG15      : input  : 2.5 V             :         : 4         : N              
+GND                          : AG16      : gnd    :                   :         :           :                
+ramData_A[21]                : AG17      : output : 2.5 V             :         : 4         : N              
+centroidCalcFP[63]           : AG18      : input  : 2.5 V             :         : 4         : N              
+centroidCalcFP[43]           : AG19      : input  : 2.5 V             :         : 4         : N              
+GND                          : AG20      : gnd    :                   :         :           :                
+ramData_A[44]                : AG21      : output : 2.5 V             :         : 4         : N              
+centroidCalcKmodes[43]       : AG22      : input  : 2.5 V             :         : 4         : N              
+centroidCalc[43]             : AG23      : input  : 2.5 V             :         : 4         : N              
+GND                          : AG24      : gnd    :                   :         :           :                
+centroidCalc[45]             : AG25      : input  : 2.5 V             :         : 4         : N              
+centroidCalc[58]             : AG26      : input  : 2.5 V             :         : 4         : N              
+GND                          : AG27      : gnd    :                   :         :           :                
+VCCIO5                       : AG28      : power  :                   : 2.5V    : 5         :                
+VCCIO3                       : AH2       : power  :                   : 2.5V    : 3         :                
+ramData_B[58]                : AH3       : output : 2.5 V             :         : 3         : N              
+centroidCalc[7]              : AH4       : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AH5       : power  :                   : 2.5V    : 3         :                
+ramData_B[57]                : AH6       : output : 2.5 V             :         : 3         : N              
+centroidCalcKmodes[25]       : AH7       : input  : 2.5 V             :         : 3         : N              
+centroidCalc[27]             : AH8       : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AH9       : power  :                   : 2.5V    : 3         :                
+centroidCalc[29]             : AH10      : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT               : AH11      :        :                   :         : 3         :                
+centroidInit[25]             : AH12      : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AH13      : power  :                   : 2.5V    : 3         :                
+centroidCalc[16]             : AH14      : input  : 2.5 V             :         : 3         : N              
+romData[35]                  : AH15      : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : AH16      : power  :                   : 2.5V    : 4         :                
+ramData_A[48]                : AH17      : output : 2.5 V             :         : 4         : N              
+ramData_A[45]                : AH18      : output : 2.5 V             :         : 4         : N              
+ramData_A[43]                : AH19      : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : AH20      : power  :                   : 2.5V    : 4         :                
+ramData_A[63]                : AH21      : output : 2.5 V             :         : 4         : N              
+centroidCalcFP[41]           : AH22      : input  : 2.5 V             :         : 4         : N              
+romData[44]                  : AH23      : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : AH24      : power  :                   : 2.5V    : 4         :                
+RESERVED_INPUT               : AH25      :        :                   :         : 4         :                
+romData[58]                  : AH26      : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : AH27      : power  :                   : 2.5V    : 4         :                
+VCCIO1                       : B1        : power  :                   : 2.5V    : 1         :                
+GND                          : B2        : gnd    :                   :         :           :                
+centroidInit[28]             : B3        : input  : 2.5 V             :         : 8         : N              
+ramData_B[41]                : B4        : output : 2.5 V             :         : 8         : N              
+GND                          : B5        : gnd    :                   :         :           :                
+centroidInit[42]             : B6        : input  : 2.5 V             :         : 8         : N              
+centroidInit[51]             : B7        : input  : 2.5 V             :         : 8         : N              
+centroidInit[32]             : B8        : input  : 2.5 V             :         : 8         : N              
+GND                          : B9        : gnd    :                   :         :           :                
+centroidInit[49]             : B10       : input  : 2.5 V             :         : 8         : N              
+centroidInit[45]             : B11       : input  : 2.5 V             :         : 8         : N              
+GND                          : B12       : gnd    :                   :         :           :                
+GND                          : B13       : gnd    :                   :         :           :                
+GND+                         : B14       :        :                   :         : 8         :                
+centroidCalc[34]             : B15       : input  : 2.5 V             :         : 7         : N              
+GND                          : B16       : gnd    :                   :         :           :                
+centroidCalcKmodes[14]       : B17       : input  : 2.5 V             :         : 7         : N              
+ramData_B[1]                 : B18       : output : 2.5 V             :         : 7         : N              
+romData[15]                  : B19       : input  : 2.5 V             :         : 7         : N              
+GND                          : B20       : gnd    :                   :         :           :                
+centroidInit[1]              : B21       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT               : B22       :        :                   :         : 7         :                
+romData[34]                  : B23       : input  : 2.5 V             :         : 7         : N              
+GND                          : B24       : gnd    :                   :         :           :                
+centroidCalc[32]             : B25       : input  : 2.5 V             :         : 7         : N              
+centroidCalc[17]             : B26       : input  : 2.5 V             :         : 7         : N              
+GND                          : B27       : gnd    :                   :         :           :                
+VCCIO6                       : B28       : power  :                   : 2.5V    : 6         :                
+GND                          : C1        : gnd    :                   :         :           :                
+ramData_B[12]                : C2        : output : 2.5 V             :         : 1         : N              
+centroidInit[12]             : C3        : input  : 2.5 V             :         : 8         : N              
+ramData_B[30]                : C4        : output : 2.5 V             :         : 8         : N              
+ramData_B[28]                : C5        : output : 2.5 V             :         : 8         : N              
+centroidInit[35]             : C6        : input  : 2.5 V             :         : 8         : N              
+centroidInit[41]             : C7        : input  : 2.5 V             :         : 8         : N              
+centroidInit[36]             : C8        : input  : 2.5 V             :         : 8         : N              
+centroidInit[52]             : C9        : input  : 2.5 V             :         : 8         : N              
+ramData_B[53]                : C10       : output : 2.5 V             :         : 8         : N              
+ramData_B[51]                : C11       : output : 2.5 V             :         : 8         : N              
+centroidCalcKmodes[47]       : C12       : input  : 2.5 V             :         : 8         : N              
+centroidCalcKmodes[46]       : C13       : input  : 2.5 V             :         : 8         : N              
+ramData_A[46]                : C14       : output : 2.5 V             :         : 8         : N              
+centroidCalc[47]             : C15       : input  : 2.5 V             :         : 7         : N              
+centroidCalcKmodes[49]       : C16       : input  : 2.5 V             :         : 7         : N              
+centroidCalcFP[13]           : C17       : input  : 2.5 V             :         : 7         : N              
+centroidCalc[15]             : C18       : input  : 2.5 V             :         : 7         : N              
+romData[11]                  : C19       : input  : 2.5 V             :         : 7         : N              
+centroidInit[2]              : C20       : input  : 2.5 V             :         : 7         : N              
+centroidCalcFP[31]           : C21       : input  : 2.5 V             :         : 7         : N              
+centroidCalcFP[17]           : C22       : input  : 2.5 V             :         : 7         : N              
+romData[33]                  : C23       : input  : 2.5 V             :         : 7         : N              
+romData[32]                  : C24       : input  : 2.5 V             :         : 7         : N              
+centroidCalcFP[33]           : C25       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT               : C26       :        :                   :         : 7         :                
+ramData_B[24]                : C27       : output : 2.5 V             :         : 6         : N              
+GND                          : C28       : gnd    :                   :         :           :                
+ramData_B[4]                 : D1        : output : 2.5 V             :         : 1         : N              
+ramData_B[11]                : D2        : output : 2.5 V             :         : 1         : N              
+GND                          : D3        : gnd    :                   :         :           :                
+ramData_B[36]                : D4        : output : 2.5 V             :         : 8         : N              
+ramData_B[9]                 : D5        : output : 2.5 V             :         : 8         : N              
+centroidInit[29]             : D6        : input  : 2.5 V             :         : 8         : N              
+centroidInit[0]              : D7        : input  : 2.5 V             :         : 8         : N              
+ramData_B[44]                : D8        : output : 2.5 V             :         : 8         : N              
+ramData_B[43]                : D9        : output : 2.5 V             :         : 8         : N              
+ramData_B[47]                : D10       : output : 2.5 V             :         : 8         : N              
+ramData_B[45]                : D11       : output : 2.5 V             :         : 8         : N              
+ramData_A[47]                : D12       : output : 2.5 V             :         : 8         : N              
+centroidCalc[50]             : D13       : input  : 2.5 V             :         : 8         : N              
+ramData_A[49]                : D14       : output : 2.5 V             :         : 8         : N              
+centroidCalc[48]             : D15       : input  : 2.5 V             :         : 7         : N              
+ramData_A[14]                : D16       : output : 2.5 V             :         : 7         : N              
+centroidCalcKmodes[15]       : D17       : input  : 2.5 V             :         : 7         : N              
+centroidInit[10]             : D18       : input  : 2.5 V             :         : 7         : N              
+centroidInit[8]              : D19       : input  : 2.5 V             :         : 7         : N              
+centroidCalcKmodes[11]       : D20       : input  : 2.5 V             :         : 7         : N              
+ramData_A[17]                : D21       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT               : D22       :        :                   :         : 7         :                
+centroidCalcKmodes[31]       : D23       : input  : 2.5 V             :         : 7         : N              
+centroidCalcKmodes[33]       : D24       : input  : 2.5 V             :         : 7         : N              
+centroidCalcFP[34]           : D25       : input  : 2.5 V             :         : 7         : N              
+centroidInit[37]             : D26       : input  : 2.5 V             :         : 6         : N              
+centroidInit[15]             : D27       : input  : 2.5 V             :         : 6         : N              
+centroidInit[24]             : D28       : input  : 2.5 V             :         : 6         : N              
+centroidCalc[52]             : E1        : input  : 2.5 V             :         : 1         : N              
+~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : E2        : input  : 2.5 V             :         : 1         : N              
+ramData_A[51]                : E3        : output : 2.5 V             :         : 1         : N              
+ramData_B[39]                : E4        : output : 2.5 V             :         : 8         : N              
+centroidInit[33]             : E5        : input  : 2.5 V             :         : 8         : N              
+VCCIO8                       : E6        : power  :                   : 2.5V    : 8         :                
+centroidInit[4]              : E7        : input  : 2.5 V             :         : 8         : N              
+centroidInit[30]             : E8        : input  : 2.5 V             :         : 8         : N              
+VCCIO8                       : E9        : power  :                   : 2.5V    : 8         :                
+ramData_B[0]                 : E10       : output : 2.5 V             :         : 8         : N              
+ramData_B[49]                : E11       : output : 2.5 V             :         : 8         : N              
+centroidInit[55]             : E12       : input  : 2.5 V             :         : 8         : N              
+VCCIO8                       : E13       : power  :                   : 2.5V    : 8         :                
+centroidInit[50]             : E14       : input  : 2.5 V             :         : 8         : N              
+centroidCalcFP[47]           : E15       : input  : 2.5 V             :         : 7         : N              
+VCCIO7                       : E16       : power  :                   : 2.5V    : 7         :                
+romData[14]                  : E17       : input  : 2.5 V             :         : 7         : N              
+centroidCalc[11]             : E18       : input  : 2.5 V             :         : 7         : N              
+ramData_A[32]                : E19       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : E20       : power  :                   : 2.5V    : 7         :                
+romData[31]                  : E21       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT               : E22       :        :                   :         : 7         :                
+VCCIO7                       : E23       : power  :                   : 2.5V    : 7         :                
+ramData_A[15]                : E24       : output : 2.5 V             :         : 7         : N              
+centroidCalcKmodes[13]       : E25       : input  : 2.5 V             :         : 7         : N              
+centroidInit[40]             : E26       : input  : 2.5 V             :         : 6         : N              
+ramData_B[26]                : E27       : output : 2.5 V             :         : 6         : N              
+ramData_B[18]                : E28       : output : 2.5 V             :         : 6         : N              
+centroidCalcFP[52]           : F1        : input  : 2.5 V             :         : 1         : N              
+centroidCalcFP[50]           : F2        : input  : 2.5 V             :         : 1         : N              
+centroidCalcFP[53]           : F3        : input  : 2.5 V             :         : 1         : N              
+~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : F4        : input  : 2.5 V             :         : 1         : N              
+centroidCalc[53]             : F5        : input  : 2.5 V             :         : 1         : N              
+GND                          : F6        : gnd    :                   :         :           :                
+centroidInit[38]             : F7        : input  : 2.5 V             :         : 8         : N              
+centroidInit[34]             : F8        : input  : 2.5 V             :         : 8         : N              
+GND                          : F9        : gnd    :                   :         :           :                
+ramData_B[42]                : F10       : output : 2.5 V             :         : 8         : N              
+ramData_B[55]                : F11       : output : 2.5 V             :         : 8         : N              
+centroidInit[54]             : F12       : input  : 2.5 V             :         : 8         : N              
+GND                          : F13       : gnd    :                   :         :           :                
+centroidInit[44]             : F14       : input  : 2.5 V             :         : 8         : N              
+romData[46]                  : F15       : input  : 2.5 V             :         : 7         : N              
+GND                          : F16       : gnd    :                   :         :           :                
+centroidCalc[14]             : F17       : input  : 2.5 V             :         : 7         : N              
+centroidCalcKmodes[32]       : F18       : input  : 2.5 V             :         : 7         : N              
+ramData_A[33]                : F19       : output : 2.5 V             :         : 7         : N              
+GND                          : F20       : gnd    :                   :         :           :                
+centroidInit[3]              : F21       : input  : 2.5 V             :         : 7         : N              
+ramData_B[3]                 : F22       : output : 2.5 V             :         : 7         : N              
+GND                          : F23       : gnd    :                   :         :           :                
+ramData_B[31]                : F24       : output : 2.5 V             :         : 6         : N              
+op[2]                        : F25       : input  : 2.5 V             :         : 6         : N              
+centroidInit[16]             : F26       : input  : 2.5 V             :         : 6         : N              
+ramData_B[15]                : F27       : output : 2.5 V             :         : 6         : N              
+centroidInit[26]             : F28       : input  : 2.5 V             :         : 6         : N              
+centroidCalcFP[51]           : G1        : input  : 2.5 V             :         : 1         : N              
+centroidCalcKmodes[54]       : G2        : input  : 2.5 V             :         : 1         : N              
+ramData_A[50]                : G3        : output : 2.5 V             :         : 1         : N              
+romData[51]                  : G4        : input  : 2.5 V             :         : 1         : N              
+ramData_B[32]                : G5        : output : 2.5 V             :         : 1         : N              
+ramData_A[53]                : G6        : output : 2.5 V             :         : 1         : N              
+centroidInit[9]              : G7        : input  : 2.5 V             :         : 8         : N              
+centroidInit[39]             : G8        : input  : 2.5 V             :         : 8         : N              
+ramData_B[34]                : G9        : output : 2.5 V             :         : 8         : N              
+ramData_B[63]                : G10       : output : 2.5 V             :         : 8         : N              
+ramData_B[52]                : G11       : output : 2.5 V             :         : 8         : N              
+ramData_B[50]                : G12       : output : 2.5 V             :         : 8         : N              
+centroidInit[48]             : G13       : input  : 2.5 V             :         : 8         : N              
+ramData_B[54]                : G14       : output : 2.5 V             :         : 8         : N              
+centroidCalc[46]             : G15       : input  : 2.5 V             :         : 7         : N              
+ramData_B[13]                : G16       : output : 2.5 V             :         : 7         : N              
+centroidCalcFP[15]           : G17       : input  : 2.5 V             :         : 7         : N              
+ramData_B[5]                 : G18       : output : 2.5 V             :         : 7         : N              
+centroidInit[7]              : G19       : input  : 2.5 V             :         : 7         : N              
+ramData_B[7]                 : G20       : output : 2.5 V             :         : 7         : N              
+centroidCalc[13]             : G21       : input  : 2.5 V             :         : 7         : N              
+centroidInit[5]              : G22       : input  : 2.5 V             :         : 7         : N              
+ramData_B[16]                : G23       : output : 2.5 V             :         : 6         : N              
+ramData_A[34]                : G24       : output : 2.5 V             :         : 6         : N              
+ramData_B[19]                : G25       : output : 2.5 V             :         : 6         : N              
+centroidInit[20]             : G26       : input  : 2.5 V             :         : 6         : N              
+centroidCalcFP[42]           : G27       : input  : 2.5 V             :         : 6         : N              
+ramData_B[21]                : G28       : output : 2.5 V             :         : 6         : N              
+VCCIO1                       : H1        : power  :                   : 2.5V    : 1         :                
+GND                          : H2        : gnd    :                   :         :           :                
+centroidCalcKmodes[55]       : H3        : input  : 2.5 V             :         : 1         : N              
+romData[53]                  : H4        : input  : 2.5 V             :         : 1         : N              
+centroidCalcKmodes[52]       : H5        : input  : 2.5 V             :         : 1         : N              
+ramData_A[54]                : H6        : output : 2.5 V             :         : 1         : N              
+centroidInit[11]             : H7        : input  : 2.5 V             :         : 1         : N              
+ramData_B[33]                : H8        : output : 2.5 V             :         : 8         : N              
+GNDA3                        : H9        : gnd    :                   :         :           :                
+RESERVED_INPUT               : H10       :        :                   :         : 8         :                
+VCCIO8                       : H11       : power  :                   : 2.5V    : 8         :                
+centroidInit[43]             : H12       : input  : 2.5 V             :         : 8         : N              
+centroidInit[60]             : H13       : input  : 2.5 V             :         : 8         : N              
+centroidCalcFP[14]           : H14       : input  : 2.5 V             :         : 8         : N              
+centroidCalc[49]             : H15       : input  : 2.5 V             :         : 7         : N              
+romData[47]                  : H16       : input  : 2.5 V             :         : 7         : N              
+ramData_B[8]                 : H17       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : H18       : power  :                   : 2.5V    : 7         :                
+ramData_A[13]                : H19       : output : 2.5 V             :         : 7         : N              
+GNDA2                        : H20       : gnd    :                   :         :           :                
+centroidCalcFP[11]           : H21       : input  : 2.5 V             :         : 7         : N              
+centroidCalcKmodes[17]       : H22       : input  : 2.5 V             :         : 6         : N              
+ramData_B[37]                : H23       : output : 2.5 V             :         : 6         : N              
+centroidInit[21]             : H24       : input  : 2.5 V             :         : 6         : N              
+centroidInit[6]              : H25       : input  : 2.5 V             :         : 6         : N              
+ramData_B[17]                : H26       : output : 2.5 V             :         : 6         : N              
+GND                          : H27       : gnd    :                   :         :           :                
+VCCIO6                       : H28       : power  :                   : 2.5V    : 6         :                
+GND+                         : J1        :        :                   :         : 1         :                
+GND                          : J2        : gnd    :                   :         :           :                
+romData[52]                  : J3        : input  : 2.5 V             :         : 1         : N              
+centroidCalc[54]             : J4        : input  : 2.5 V             :         : 1         : N              
+RESERVED_INPUT               : J5        :        :                   :         : 1         :                
+RESERVED_INPUT               : J6        :        :                   :         : 1         :                
+RESERVED_INPUT               : J7        :        :                   :         : 1         :                
+VCCA3                        : J8        : power  :                   : 2.5V    :           :                
+VCCD_PLL3                    : J9        : power  :                   : 1.2V    :           :                
+RESERVED_INPUT               : J10       :        :                   :         : 8         :                
+GND                          : J11       : gnd    :                   :         :           :                
+centroidInit[53]             : J12       : input  : 2.5 V             :         : 8         : N              
+centroidInit[47]             : J13       : input  : 2.5 V             :         : 8         : N              
+centroidCalcKmodes[48]       : J14       : input  : 2.5 V             :         : 8         : N              
+romData[49]                  : J15       : input  : 2.5 V             :         : 7         : N              
+centroidCalcFP[46]           : J16       : input  : 2.5 V             :         : 7         : N              
+ramData_B[10]                : J17       : output : 2.5 V             :         : 7         : N              
+GND                          : J18       : gnd    :                   :         :           :                
+ramData_A[11]                : J19       : output : 2.5 V             :         : 7         : N              
+VCCD_PLL2                    : J20       : power  :                   : 1.2V    :           :                
+VCCA2                        : J21       : power  :                   : 2.5V    :           :                
+centroidInit[19]             : J22       : input  : 2.5 V             :         : 6         : N              
+ramData_B[23]                : J23       : output : 2.5 V             :         : 6         : N              
+centroidInit[31]             : J24       : input  : 2.5 V             :         : 6         : N              
+romData[42]                  : J25       : input  : 2.5 V             :         : 6         : N              
+centroidCalcKmodes[10]       : J26       : input  : 2.5 V             :         : 6         : N              
+centroidInit[23]             : J27       : input  : 2.5 V             :         : 6         : N              
+centroidInit[22]             : J28       : input  : 2.5 V             :         : 6         : N              
+romData[50]                  : K1        : input  : 2.5 V             :         : 1         : N              
+centroidCalcKmodes[53]       : K2        : input  : 2.5 V             :         : 1         : N              
+ramData_A[52]                : K3        : output : 2.5 V             :         : 1         : N              
+romData[54]                  : K4        : input  : 2.5 V             :         : 1         : N              
+VCCIO1                       : K5        : power  :                   : 2.5V    : 1         :                
+GND                          : K6        : gnd    :                   :         :           :                
+RESERVED_INPUT               : K7        :        :                   :         : 1         :                
+RESERVED_INPUT               : K8        :        :                   :         : 1         :                
+VCCINT                       : K9        : power  :                   : 1.2V    :           :                
+GND                          : K10       : gnd    :                   :         :           :                
+VCCINT                       : K11       : power  :                   : 1.2V    :           :                
+GND                          : K12       : gnd    :                   :         :           :                
+VCCINT                       : K13       : power  :                   : 1.2V    :           :                
+GND                          : K14       : gnd    :                   :         :           :                
+VCCINT                       : K15       : power  :                   : 1.2V    :           :                
+GND                          : K16       : gnd    :                   :         :           :                
+VCCINT                       : K17       : power  :                   : 1.2V    :           :                
+GND                          : K18       : gnd    :                   :         :           :                
+VCCINT                       : K19       : power  :                   : 1.2V    :           :                
+GND                          : K20       : gnd    :                   :         :           :                
+ramData_B[20]                : K21       : output : 2.5 V             :         : 6         : N              
+ramData_B[14]                : K22       : output : 2.5 V             :         : 6         : N              
+GND                          : K23       : gnd    :                   :         :           :                
+VCCIO6                       : K24       : power  :                   : 2.5V    : 6         :                
+ramData_B[6]                 : K25       : output : 2.5 V             :         : 6         : N              
+ramData_B[22]                : K26       : output : 2.5 V             :         : 6         : N              
+centroidCalcKmodes[42]       : K27       : input  : 2.5 V             :         : 6         : N              
+ramData_A[18]                : K28       : output : 2.5 V             :         : 6         : N              
+centroidCalcKmodes[39]       : L1        : input  : 2.5 V             :         : 1         : N              
+centroidCalcKmodes[37]       : L2        : input  : 2.5 V             :         : 1         : N              
+ramData_A[55]                : L3        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT               : L4        :        :                   :         : 1         :                
+centroidCalc[51]             : L5        : input  : 2.5 V             :         : 1         : N              
+RESERVED_INPUT               : L6        :        :                   :         : 1         :                
+RESERVED_INPUT               : L7        :        :                   :         : 1         :                
+RESERVED_INPUT               : L8        :        :                   :         : 1         :                
+GND                          : L9        : gnd    :                   :         :           :                
+VCCINT                       : L10       : power  :                   : 1.2V    :           :                
+GND                          : L11       : gnd    :                   :         :           :                
+VCCINT                       : L12       : power  :                   : 1.2V    :           :                
+GND                          : L13       : gnd    :                   :         :           :                
+VCCINT                       : L14       : power  :                   : 1.2V    :           :                
+GND                          : L15       : gnd    :                   :         :           :                
+VCCINT                       : L16       : power  :                   : 1.2V    :           :                
+GND                          : L17       : gnd    :                   :         :           :                
+VCCINT                       : L18       : power  :                   : 1.2V    :           :                
+GND                          : L19       : gnd    :                   :         :           :                
+VCCINT                       : L20       : power  :                   : 1.2V    :           :                
+centroidInit[14]             : L21       : input  : 2.5 V             :         : 6         : N              
+ramData_B[40]                : L22       : output : 2.5 V             :         : 6         : N              
+centroidCalcFP[18]           : L23       : input  : 2.5 V             :         : 6         : N              
+ramData_A[10]                : L24       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT               : L25       :        :                   :         : 6         :                
+ramData_A[16]                : L26       : output : 2.5 V             :         : 6         : N              
+centroidCalcFP[16]           : L27       : input  : 2.5 V             :         : 6         : N              
+romData[10]                  : L28       : input  : 2.5 V             :         : 6         : N              
+ramData_A[24]                : M1        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT               : M2        :        :                   :         : 1         :                
+centroidCalcFP[54]           : M3        : input  : 2.5 V             :         : 1         : N              
+centroidCalcKmodes[51]       : M4        : input  : 2.5 V             :         : 1         : N              
+romData[55]                  : M5        : input  : 2.5 V             :         : 1         : N              
+nSTATUS                      : M6        :        :                   :         : 1         :                
+RESERVED_INPUT               : M7        :        :                   :         : 1         :                
+RESERVED_INPUT               : M8        :        :                   :         : 1         :                
+VCCINT                       : M9        : power  :                   : 1.2V    :           :                
+GND                          : M10       : gnd    :                   :         :           :                
+VCCINT                       : M11       : power  :                   : 1.2V    :           :                
+GND                          : M12       : gnd    :                   :         :           :                
+VCCINT                       : M13       : power  :                   : 1.2V    :           :                
+GND                          : M14       : gnd    :                   :         :           :                
+VCCINT                       : M15       : power  :                   : 1.2V    :           :                
+GND                          : M16       : gnd    :                   :         :           :                
+VCCINT                       : M17       : power  :                   : 1.2V    :           :                
+GND                          : M18       : gnd    :                   :         :           :                
+VCCINT                       : M19       : power  :                   : 1.2V    :           :                
+GND                          : M20       : gnd    :                   :         :           :                
+RESERVED_INPUT               : M21       :        :                   :         : 6         :                
+MSEL2                        : M22       :        :                   :         : 6         :                
+centroidCalc[10]             : M23       : input  : 2.5 V             :         : 6         : N              
+centroidInit[62]             : M24       : input  : 2.5 V             :         : 6         : N              
+centroidCalcKmodes[4]        : M25       : input  : 2.5 V             :         : 6         : N              
+centroidCalcFP[4]            : M26       : input  : 2.5 V             :         : 6         : N              
+centroidCalc[18]             : M27       : input  : 2.5 V             :         : 6         : N              
+romData[4]                   : M28       : input  : 2.5 V             :         : 6         : N              
+VCCIO1                       : N1        : power  :                   : 2.5V    : 1         :                
+GND                          : N2        : gnd    :                   :         :           :                
+RESERVED_INPUT               : N3        :        :                   :         : 1         :                
+RESERVED_INPUT               : N4        :        :                   :         : 1         :                
+VCCIO1                       : N5        : power  :                   : 2.5V    : 1         :                
+GND                          : N6        : gnd    :                   :         :           :                
+~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : N7        : input  : 2.5 V             :         : 1         : N              
+romData[37]                  : N8        : input  : 2.5 V             :         : 1         : N              
+GND                          : N9        : gnd    :                   :         :           :                
+VCCINT                       : N10       : power  :                   : 1.2V    :           :                
+GND                          : N11       : gnd    :                   :         :           :                
+VCCINT                       : N12       : power  :                   : 1.2V    :           :                
+GND                          : N13       : gnd    :                   :         :           :                
+VCCINT                       : N14       : power  :                   : 1.2V    :           :                
+GND                          : N15       : gnd    :                   :         :           :                
+VCCINT                       : N16       : power  :                   : 1.2V    :           :                
+GND                          : N17       : gnd    :                   :         :           :                
+VCCINT                       : N18       : power  :                   : 1.2V    :           :                
+GND                          : N19       : gnd    :                   :         :           :                
+VCCINT                       : N20       : power  :                   : 1.2V    :           :                
+romData[16]                  : N21       : input  : 2.5 V             :         : 6         : N              
+MSEL0                        : N22       :        :                   :         : 6         :                
+GND                          : N23       : gnd    :                   :         :           :                
+VCCIO6                       : N24       : power  :                   : 2.5V    : 6         :                
+centroidCalcFP[10]           : N25       : input  : 2.5 V             :         : 6         : N              
+centroidCalc[4]              : N26       : input  : 2.5 V             :         : 6         : N              
+GND                          : N27       : gnd    :                   :         :           :                
+VCCIO6                       : N28       : power  :                   : 2.5V    : 6         :                
+centroidCalc[38]             : P1        : input  : 2.5 V             :         : 1         : N              
+ramData_A[38]                : P2        : output : 2.5 V             :         : 1         : N              
+~ALTERA_DCLK~                : P3        : output : 2.5 V             :         : 1         : N              
+nCONFIG                      : P4        :        :                   :         : 1         :                
+TCK                          : P5        : input  :                   :         : 1         :                
+TDO                          : P6        : output :                   :         : 1         :                
+TDI                          : P7        : input  :                   :         : 1         :                
+TMS                          : P8        : input  :                   :         : 1         :                
+VCCINT                       : P9        : power  :                   : 1.2V    :           :                
+GND                          : P10       : gnd    :                   :         :           :                
+VCCINT                       : P11       : power  :                   : 1.2V    :           :                
+GND                          : P12       : gnd    :                   :         :           :                
+VCCINT                       : P13       : power  :                   : 1.2V    :           :                
+GND                          : P14       : gnd    :                   :         :           :                
+VCCINT                       : P15       : power  :                   : 1.2V    :           :                
+GND                          : P16       : gnd    :                   :         :           :                
+VCCINT                       : P17       : power  :                   : 1.2V    :           :                
+GND                          : P18       : gnd    :                   :         :           :                
+VCCINT                       : P19       : power  :                   : 1.2V    :           :                
+GND                          : P20       : gnd    :                   :         :           :                
+centroidCalcKmodes[18]       : P21       : input  : 2.5 V             :         : 5         : N              
+MSEL3                        : P22       :        :                   :         : 6         :                
+MSEL1                        : P23       :        :                   :         : 6         :                
+CONF_DONE                    : P24       :        :                   :         : 6         :                
+ramData_A[4]                 : P25       : output : 2.5 V             :         : 6         : N              
+ramData_B[62]                : P26       : output : 2.5 V             :         : 6         : N              
+centroidCalc[42]             : P27       : input  : 2.5 V             :         : 6         : N              
+~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : P28       : output : 2.5 V             :         : 6         : N              
+centroidCalc[36]             : R1        : input  : 2.5 V             :         : 2         : N              
+romData[39]                  : R2        : input  : 2.5 V             :         : 2         : N              
+centroidCalcFP[36]           : R3        : input  : 2.5 V             :         : 2         : N              
+centroidCalcFP[37]           : R4        : input  : 2.5 V             :         : 2         : N              
+centroidCalcKmodes[38]       : R5        : input  : 2.5 V             :         : 2         : N              
+centroidCalc[37]             : R6        : input  : 2.5 V             :         : 2         : N              
+centroidCalcKmodes[36]       : R7        : input  : 2.5 V             :         : 2         : N              
+nCE                          : R8        :        :                   :         : 1         :                
+GND                          : R9        : gnd    :                   :         :           :                
+VCCINT                       : R10       : power  :                   : 1.2V    :           :                
+GND                          : R11       : gnd    :                   :         :           :                
+VCCINT                       : R12       : power  :                   : 1.2V    :           :                
+GND                          : R13       : gnd    :                   :         :           :                
+VCCINT                       : R14       : power  :                   : 1.2V    :           :                
+GND                          : R15       : gnd    :                   :         :           :                
+VCCINT                       : R16       : power  :                   : 1.2V    :           :                
+GND                          : R17       : gnd    :                   :         :           :                
+VCCINT                       : R18       : power  :                   : 1.2V    :           :                
+GND                          : R19       : gnd    :                   :         :           :                
+VCCINT                       : R20       : power  :                   : 1.2V    :           :                
+ramData_A[42]                : R21       : output : 2.5 V             :         : 5         : N              
+romData[18]                  : R22       : input  : 2.5 V             :         : 5         : N              
+ramData_A[40]                : R23       : output : 2.5 V             :         : 5         : N              
+centroidCalcKmodes[62]       : R24       : input  : 2.5 V             :         : 5         : N              
+ramData_A[61]                : R25       : output : 2.5 V             :         : 5         : N              
+centroidCalcFP[30]           : R26       : input  : 2.5 V             :         : 5         : N              
+romData[62]                  : R27       : input  : 2.5 V             :         : 5         : N              
+centroidCalcKmodes[23]       : R28       : input  : 2.5 V             :         : 5         : N              
+VCCIO2                       : T1        : power  :                   : 2.5V    : 2         :                
+GND                          : T2        : gnd    :                   :         :           :                
+romData[38]                  : T3        : input  : 2.5 V             :         : 2         : N              
+romData[36]                  : T4        : input  : 2.5 V             :         : 2         : N              
+VCCIO2                       : T5        : power  :                   : 2.5V    : 2         :                
+GND                          : T6        : gnd    :                   :         :           :                
+centroidCalc[24]             : T7        : input  : 2.5 V             :         : 2         : N              
+RESERVED_INPUT               : T8        :        :                   :         : 2         :                
+VCCINT                       : T9        : power  :                   : 1.2V    :           :                
+GND                          : T10       : gnd    :                   :         :           :                
+VCCINT                       : T11       : power  :                   : 1.2V    :           :                
+GND                          : T12       : gnd    :                   :         :           :                
+VCCINT                       : T13       : power  :                   : 1.2V    :           :                
+GND                          : T14       : gnd    :                   :         :           :                
+VCCINT                       : T15       : power  :                   : 1.2V    :           :                
+GND                          : T16       : gnd    :                   :         :           :                
+VCCINT                       : T17       : power  :                   : 1.2V    :           :                
+GND                          : T18       : gnd    :                   :         :           :                
+VCCINT                       : T19       : power  :                   : 1.2V    :           :                
+GND                          : T20       : gnd    :                   :         :           :                
+centroidCalcKmodes[26]       : T21       : input  : 2.5 V             :         : 5         : N              
+centroidCalcFP[23]           : T22       : input  : 2.5 V             :         : 5         : N              
+GND                          : T23       : gnd    :                   :         :           :                
+VCCIO5                       : T24       : power  :                   : 2.5V    : 5         :                
+centroidCalcKmodes[30]       : T25       : input  : 2.5 V             :         : 5         : N              
+centroidCalc[30]             : T26       : input  : 2.5 V             :         : 5         : N              
+GND                          : T27       : gnd    :                   :         :           :                
+VCCIO5                       : T28       : power  :                   : 2.5V    : 5         :                
+ramData_A[62]                : U1        : output : 2.5 V             :         : 2         : N              
+ramData_A[37]                : U2        : output : 2.5 V             :         : 2         : N              
+centroidCalc[39]             : U3        : input  : 2.5 V             :         : 2         : N              
+centroidCalcKmodes[24]       : U4        : input  : 2.5 V             :         : 2         : N              
+RESERVED_INPUT               : U5        :        :                   :         : 2         :                
+RESERVED_INPUT               : U6        :        :                   :         : 2         :                
+RESERVED_INPUT               : U7        :        :                   :         : 2         :                
+RESERVED_INPUT               : U8        :        :                   :         : 2         :                
+GND                          : U9        : gnd    :                   :         :           :                
+VCCINT                       : U10       : power  :                   : 1.2V    :           :                
+GND                          : U11       : gnd    :                   :         :           :                
+VCCINT                       : U12       : power  :                   : 1.2V    :           :                
+GND                          : U13       : gnd    :                   :         :           :                
+VCCINT                       : U14       : power  :                   : 1.2V    :           :                
+GND                          : U15       : gnd    :                   :         :           :                
+VCCINT                       : U16       : power  :                   : 1.2V    :           :                
+GND                          : U17       : gnd    :                   :         :           :                
+VCCINT                       : U18       : power  :                   : 1.2V    :           :                
+GND                          : U19       : gnd    :                   :         :           :                
+VCCINT                       : U20       : power  :                   : 1.2V    :           :                
+romData[40]                  : U21       : input  : 2.5 V             :         : 5         : N              
+ramData_A[30]                : U22       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT               : U23       :        :                   :         : 5         :                
+centroidCalc[23]             : U24       : input  : 2.5 V             :         : 5         : N              
+centroidCalc[26]             : U25       : input  : 2.5 V             :         : 5         : N              
+centroidCalcFP[62]           : U26       : input  : 2.5 V             :         : 5         : N              
+centroidCalc[62]             : U27       : input  : 2.5 V             :         : 5         : N              
+centroidCalc[40]             : U28       : input  : 2.5 V             :         : 5         : N              
+ramData_A[39]                : V1        : output : 2.5 V             :         : 2         : N              
+ramData_A[36]                : V2        : output : 2.5 V             :         : 2         : N              
+centroidCalcFP[24]           : V3        : input  : 2.5 V             :         : 2         : N              
+romData[24]                  : V4        : input  : 2.5 V             :         : 2         : N              
+RESERVED_INPUT               : V5        :        :                   :         : 2         :                
+RESERVED_INPUT               : V6        :        :                   :         : 2         :                
+RESERVED_INPUT               : V7        :        :                   :         : 2         :                
+RESERVED_INPUT               : V8        :        :                   :         : 2         :                
+VCCINT                       : V9        : power  :                   : 1.2V    :           :                
+GND                          : V10       : gnd    :                   :         :           :                
+VCCINT                       : V11       : power  :                   : 1.2V    :           :                
+GND                          : V12       : gnd    :                   :         :           :                
+VCCINT                       : V13       : power  :                   : 1.2V    :           :                
+GND                          : V14       : gnd    :                   :         :           :                
+VCCINT                       : V15       : power  :                   : 1.2V    :           :                
+GND                          : V16       : gnd    :                   :         :           :                
+VCCINT                       : V17       : power  :                   : 1.2V    :           :                
+GND                          : V18       : gnd    :                   :         :           :                
+VCCINT                       : V19       : power  :                   : 1.2V    :           :                
+GND                          : V20       : gnd    :                   :         :           :                
+centroidCalcFP[26]           : V21       : input  : 2.5 V             :         : 5         : N              
+centroidCalcFP[40]           : V22       : input  : 2.5 V             :         : 5         : N              
+ramData_A[23]                : V23       : output : 2.5 V             :         : 5         : N              
+romData[30]                  : V24       : input  : 2.5 V             :         : 5         : N              
+romData[26]                  : V25       : input  : 2.5 V             :         : 5         : N              
+ramData_B[27]                : V26       : output : 2.5 V             :         : 5         : N              
+romData[12]                  : V27       : input  : 2.5 V             :         : 5         : N              
+ramData_A[0]                 : V28       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT               : W1        :        :                   :         : 2         :                
+RESERVED_INPUT               : W2        :        :                   :         : 2         :                
+RESERVED_INPUT               : W3        :        :                   :         : 2         :                
+RESERVED_INPUT               : W4        :        :                   :         : 2         :                
+VCCIO2                       : W5        : power  :                   : 2.5V    : 2         :                
+GND                          : W6        : gnd    :                   :         :           :                
+RESERVED_INPUT               : W7        :        :                   :         : 2         :                
+RESERVED_INPUT               : W8        :        :                   :         : 2         :                
+GND                          : W9        : gnd    :                   :         :           :                
+VCCINT                       : W10       : power  :                   : 1.2V    :           :                
+GND                          : W11       : gnd    :                   :         :           :                
+VCCINT                       : W12       : power  :                   : 1.2V    :           :                
+GND                          : W13       : gnd    :                   :         :           :                
+VCCINT                       : W14       : power  :                   : 1.2V    :           :                
+GND                          : W15       : gnd    :                   :         :           :                
+VCCINT                       : W16       : power  :                   : 1.2V    :           :                
+GND                          : W17       : gnd    :                   :         :           :                
+VCCINT                       : W18       : power  :                   : 1.2V    :           :                
+GND                          : W19       : gnd    :                   :         :           :                
+VCCINT                       : W20       : power  :                   : 1.2V    :           :                
+ramData_A[26]                : W21       : output : 2.5 V             :         : 5         : N              
+romData[23]                  : W22       : input  : 2.5 V             :         : 5         : N              
+GND                          : W23       : gnd    :                   :         :           :                
+VCCIO5                       : W24       : power  :                   : 2.5V    : 5         :                
+centroidCalc[0]              : W25       : input  : 2.5 V             :         : 5         : N              
+centroidCalc[28]             : W26       : input  : 2.5 V             :         : 5         : N              
+ramData_A[6]                 : W27       : output : 2.5 V             :         : 5         : N              
+romData[6]                   : W28       : input  : 2.5 V             :         : 5         : N              
+GND+                         : Y1        :        :                   :         : 2         :                
+GND+                         : Y2        :        :                   :         : 2         :                
+RESERVED_INPUT               : Y3        :        :                   :         : 2         :                
+RESERVED_INPUT               : Y4        :        :                   :         : 2         :                
+RESERVED_INPUT               : Y5        :        :                   :         : 2         :                
+RESERVED_INPUT               : Y6        :        :                   :         : 2         :                
+centroidInit[56]             : Y7        : input  : 2.5 V             :         : 2         : N              
+VCCA1                        : Y8        : power  :                   : 2.5V    :           :                
+VCCD_PLL1                    : Y9        : power  :                   : 1.2V    :           :                
+romData[5]                   : Y10       : input  : 2.5 V             :         : 3         : N              
+GND                          : Y11       : gnd    :                   :         :           :                
+romData[21]                  : Y12       : input  : 2.5 V             :         : 3         : N              
+romData[19]                  : Y13       : input  : 2.5 V             :         : 3         : N              
+centroidCalcKmodes[21]       : Y14       : input  : 2.5 V             :         : 3         : N              
+centroidCalc[19]             : Y15       : input  : 2.5 V             :         : 3         : N              
+centroidCalcFP[57]           : Y16       : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT               : Y17       :        :                   :         : 4         :                
+GND                          : Y18       : gnd    :                   :         :           :                
+ramData_A[60]                : Y19       : output : 2.5 V             :         : 4         : N              
+VCCD_PLL4                    : Y20       : power  :                   : 1.2V    :           :                
+VCCA4                        : Y21       : power  :                   : 2.5V    :           :                
+centroidCalcKmodes[40]       : Y22       : input  : 2.5 V             :         : 5         : N              
+centroidInit[27]             : Y23       : input  : 2.5 V             :         : 5         : N              
+ramData_A[28]                : Y24       : output : 2.5 V             :         : 5         : N              
+centroidCalc[12]             : Y25       : input  : 2.5 V             :         : 5         : N              
+ramData_A[12]                : Y26       : output : 2.5 V             :         : 5         : N              
+centroidInit[18]             : Y27       : input  : 2.5 V             :         : 5         : N              
+centroidInit[17]             : Y28       : input  : 2.5 V             :         : 5         : N              

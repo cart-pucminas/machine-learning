@@ -1,0 +1,31 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+Entity Kmeans_MuxMapAddr is
+
+	GENERIC (TamanhoAddr : INTEGER := 15);
+	
+    PORT ( 
+			mapInit          : in  STD_LOGIC_VECTOR (TamanhoAddr-1 downto 0);
+			mapCalcModule_A : in  STD_LOGIC_VECTOR (TamanhoAddr-1 downto 0); --Dado
+			mapCalcModule_B : in  STD_LOGIC_VECTOR (TamanhoAddr-1 downto 0); --Centroid
+			op			     : in  STD_LOGIC;
+			mapAddr_A        : out STD_LOGIC_VECTOR (TamanhoAddr-1 downto 0);
+			mapAddr_B        : out STD_LOGIC_VECTOR (TamanhoAddr-1 downto 0)
+		);
+END Kmeans_MuxMapAddr;
+
+ARCHITECTURE arch of Kmeans_MuxMapAddr is
+
+BEGIN
+
+	--resultado que recebe do controlador op que ira conduzir qual das entradas vai para a saida
+	with op select	
+	mapAddr_A <= mapInit           when '0',
+				 mapCalcModule_A   when '1';
+					  
+	with op select	
+	mapAddr_B <= (others =>'0')    when '0',
+			      mapCalcModule_B  when '1';
+
+END arch;

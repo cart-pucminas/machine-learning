@@ -1,0 +1,310 @@
+Classic Timing Analyzer report for Kmeans_MuxMapAddr
+Tue Nov 01 13:32:13 2016
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Timing Analyzer Settings
+  4. tpd
+  5. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                           ;
++------------------------------+-------+---------------+-------------+-------+---------------+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time ; From  ; To            ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+-------------+-------+---------------+------------+----------+--------------+
+; Worst-case tpd               ; N/A   ; None          ; 14.882 ns   ; op[1] ; mapAddr_A[25] ; --         ; --       ; 0            ;
+; Total number of failed paths ;       ;               ;             ;       ;               ;            ;          ; 0            ;
++------------------------------+-------+---------------+-------------+-------+---------------+------------+----------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Settings                                                                                                                            ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+; Option                                                                                               ; Setting            ; From ; To ; Entity Name ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+; Device Name                                                                                          ; EP2C35F672C6       ;      ;    ;             ;
+; Timing Models                                                                                        ; Final              ;      ;    ;             ;
+; Default hold multicycle                                                                              ; Same as Multicycle ;      ;    ;             ;
+; Cut paths between unrelated clock domains                                                            ; On                 ;      ;    ;             ;
+; Cut off read during write signal paths                                                               ; On                 ;      ;    ;             ;
+; Cut off feedback from I/O pins                                                                       ; On                 ;      ;    ;             ;
+; Report Combined Fast/Slow Timing                                                                     ; Off                ;      ;    ;             ;
+; Ignore Clock Settings                                                                                ; Off                ;      ;    ;             ;
+; Analyze latches as synchronous elements                                                              ; On                 ;      ;    ;             ;
+; Enable Recovery/Removal analysis                                                                     ; Off                ;      ;    ;             ;
+; Enable Clock Latency                                                                                 ; Off                ;      ;    ;             ;
+; Use TimeQuest Timing Analyzer                                                                        ; Off                ;      ;    ;             ;
+; Minimum Core Junction Temperature                                                                    ; 0                  ;      ;    ;             ;
+; Maximum Core Junction Temperature                                                                    ; 85                 ;      ;    ;             ;
+; Number of source nodes to report per destination node                                                ; 10                 ;      ;    ;             ;
+; Number of destination nodes to report                                                                ; 10                 ;      ;    ;             ;
+; Number of paths to report                                                                            ; 200                ;      ;    ;             ;
+; Report Minimum Timing Checks                                                                         ; Off                ;      ;    ;             ;
+; Use Fast Timing Models                                                                               ; Off                ;      ;    ;             ;
+; Report IO Paths Separately                                                                           ; Off                ;      ;    ;             ;
+; Perform Multicorner Analysis                                                                         ; On                 ;      ;    ;             ;
+; Reports the worst-case path for each clock domain and analysis                                       ; Off                ;      ;    ;             ;
+; Reports worst-case timing paths for each clock domain and analysis                                   ; On                 ;      ;    ;             ;
+; Specifies the maximum number of worst-case timing paths to report for each clock domain and analysis ; 100                ;      ;    ;             ;
+; Removes common clock path pessimism (CCPP) during slack computation                                  ; Off                ;      ;    ;             ;
+; Output I/O Timing Endpoint                                                                           ; Near End           ;      ;    ;             ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; tpd                                                                                                                                                    ;
++-----------------------------------------+-----------------------------------------------------+-----------------+----------------------+---------------+
+; Slack                                   ; Required P2P Time                                   ; Actual P2P Time ; From                 ; To            ;
++-----------------------------------------+-----------------------------------------------------+-----------------+----------------------+---------------+
+; N/A                                     ; None                                                ; 14.882 ns       ; op[1]                ; mapAddr_A[25] ;
+; N/A                                     ; None                                                ; 14.643 ns       ; op[1]                ; mapAddr_A[30] ;
+; N/A                                     ; None                                                ; 14.604 ns       ; op[0]                ; mapAddr_A[25] ;
+; N/A                                     ; None                                                ; 14.273 ns       ; op[1]                ; mapAddr_A[3]  ;
+; N/A                                     ; None                                                ; 14.234 ns       ; op[0]                ; mapAddr_A[30] ;
+; N/A                                     ; None                                                ; 13.681 ns       ; op[0]                ; mapAddr_A[3]  ;
+; N/A                                     ; None                                                ; 13.390 ns       ; op[1]                ; mapAddr_A[9]  ;
+; N/A                                     ; None                                                ; 13.111 ns       ; op[1]                ; mapAddr_B[14] ;
+; N/A                                     ; None                                                ; 12.965 ns       ; op[0]                ; mapAddr_B[14] ;
+; N/A                                     ; None                                                ; 12.813 ns       ; op[1]                ; mapAddr_A[6]  ;
+; N/A                                     ; None                                                ; 12.719 ns       ; mapInit[30]          ; mapAddr_A[30] ;
+; N/A                                     ; None                                                ; 12.694 ns       ; op[1]                ; mapAddr_A[23] ;
+; N/A                                     ; None                                                ; 12.693 ns       ; op[1]                ; mapAddr_A[29] ;
+; N/A                                     ; None                                                ; 12.693 ns       ; op[1]                ; mapAddr_A[26] ;
+; N/A                                     ; None                                                ; 12.665 ns       ; mapControlCalc_A[3]  ; mapAddr_A[3]  ;
+; N/A                                     ; None                                                ; 12.663 ns       ; op[1]                ; mapAddr_A[2]  ;
+; N/A                                     ; None                                                ; 12.572 ns       ; op[1]                ; mapAddr_A[0]  ;
+; N/A                                     ; None                                                ; 12.529 ns       ; op[1]                ; mapAddr_A[28] ;
+; N/A                                     ; None                                                ; 12.494 ns       ; mapControlCalc_A[9]  ; mapAddr_A[9]  ;
+; N/A                                     ; None                                                ; 12.452 ns       ; op[0]                ; mapAddr_A[9]  ;
+; N/A                                     ; None                                                ; 12.434 ns       ; mapInit[3]           ; mapAddr_A[3]  ;
+; N/A                                     ; None                                                ; 12.418 ns       ; op[0]                ; mapAddr_A[26] ;
+; N/A                                     ; None                                                ; 12.418 ns       ; op[0]                ; mapAddr_A[23] ;
+; N/A                                     ; None                                                ; 12.416 ns       ; op[0]                ; mapAddr_A[29] ;
+; N/A                                     ; None                                                ; 12.415 ns       ; op[1]                ; mapAddr_A[24] ;
+; N/A                                     ; None                                                ; 12.384 ns       ; op[1]                ; mapAddr_B[25] ;
+; N/A                                     ; None                                                ; 12.372 ns       ; op[1]                ; mapAddr_B[31] ;
+; N/A                                     ; None                                                ; 12.357 ns       ; op[1]                ; mapAddr_A[20] ;
+; N/A                                     ; None                                                ; 12.356 ns       ; mapControlCalc_A[25] ; mapAddr_A[25] ;
+; N/A                                     ; None                                                ; 12.351 ns       ; op[1]                ; mapAddr_A[27] ;
+; N/A                                     ; None                                                ; 12.340 ns       ; op[1]                ; mapAddr_B[12] ;
+; N/A                                     ; None                                                ; 12.338 ns       ; op[1]                ; mapAddr_A[19] ;
+; N/A                                     ; None                                                ; 12.328 ns       ; mapInit[9]           ; mapAddr_A[9]  ;
+; N/A                                     ; None                                                ; 12.325 ns       ; op[1]                ; mapAddr_B[30] ;
+; N/A                                     ; None                                                ; 12.302 ns       ; op[1]                ; mapAddr_B[22] ;
+; N/A                                     ; None                                                ; 12.296 ns       ; mapCalc[9]           ; mapAddr_A[9]  ;
+; N/A                                     ; None                                                ; 12.286 ns       ; op[1]                ; mapAddr_A[16] ;
+; N/A                                     ; None                                                ; 12.283 ns       ; op[1]                ; mapAddr_A[18] ;
+; N/A                                     ; None                                                ; 12.257 ns       ; op[1]                ; mapAddr_A[22] ;
+; N/A                                     ; None                                                ; 12.211 ns       ; op[1]                ; mapAddr_B[15] ;
+; N/A                                     ; None                                                ; 12.208 ns       ; op[0]                ; mapAddr_A[6]  ;
+; N/A                                     ; None                                                ; 12.192 ns       ; op[0]                ; mapAddr_B[12] ;
+; N/A                                     ; None                                                ; 12.162 ns       ; op[1]                ; mapAddr_B[26] ;
+; N/A                                     ; None                                                ; 12.144 ns       ; op[1]                ; mapAddr_B[28] ;
+; N/A                                     ; None                                                ; 12.140 ns       ; op[1]                ; mapAddr_B[24] ;
+; N/A                                     ; None                                                ; 12.117 ns       ; op[1]                ; mapAddr_B[21] ;
+; N/A                                     ; None                                                ; 12.111 ns       ; op[0]                ; mapAddr_A[28] ;
+; N/A                                     ; None                                                ; 12.109 ns       ; op[1]                ; mapAddr_A[31] ;
+; N/A                                     ; None                                                ; 12.104 ns       ; op[1]                ; mapAddr_B[17] ;
+; N/A                                     ; None                                                ; 12.098 ns       ; op[1]                ; mapAddr_A[7]  ;
+; N/A                                     ; None                                                ; 12.096 ns       ; mapControlCalc_A[30] ; mapAddr_A[30] ;
+; N/A                                     ; None                                                ; 12.070 ns       ; op[0]                ; mapAddr_A[2]  ;
+; N/A                                     ; None                                                ; 12.062 ns       ; op[0]                ; mapAddr_B[15] ;
+; N/A                                     ; None                                                ; 12.061 ns       ; op[1]                ; mapAddr_B[19] ;
+; N/A                                     ; None                                                ; 12.053 ns       ; op[1]                ; mapAddr_B[23] ;
+; N/A                                     ; None                                                ; 12.040 ns       ; op[1]                ; mapAddr_B[27] ;
+; N/A                                     ; None                                                ; 12.023 ns       ; mapCalc[3]           ; mapAddr_A[3]  ;
+; N/A                                     ; None                                                ; 12.000 ns       ; op[0]                ; mapAddr_A[24] ;
+; N/A                                     ; None                                                ; 11.991 ns       ; op[1]                ; mapAddr_B[18] ;
+; N/A                                     ; None                                                ; 11.990 ns       ; op[1]                ; mapAddr_B[0]  ;
+; N/A                                     ; None                                                ; 11.963 ns       ; op[0]                ; mapAddr_A[0]  ;
+; N/A                                     ; None                                                ; 11.954 ns       ; op[1]                ; mapAddr_A[21] ;
+; N/A                                     ; None                                                ; 11.943 ns       ; op[0]                ; mapAddr_A[27] ;
+; N/A                                     ; None                                                ; 11.931 ns       ; op[1]                ; mapAddr_B[8]  ;
+; N/A                                     ; None                                                ; 11.910 ns       ; mapControlCalc_A[6]  ; mapAddr_A[6]  ;
+; N/A                                     ; None                                                ; 11.909 ns       ; op[1]                ; mapAddr_B[29] ;
+; N/A                                     ; None                                                ; 11.906 ns       ; op[1]                ; mapAddr_B[20] ;
+; N/A                                     ; None                                                ; 11.903 ns       ; op[1]                ; mapAddr_A[5]  ;
+; N/A                                     ; None                                                ; 11.895 ns       ; mapInit[25]          ; mapAddr_A[25] ;
+; N/A                                     ; None                                                ; 11.886 ns       ; op[1]                ; mapAddr_B[10] ;
+; N/A                                     ; None                                                ; 11.869 ns       ; op[1]                ; mapAddr_B[7]  ;
+; N/A                                     ; None                                                ; 11.862 ns       ; op[1]                ; mapAddr_B[4]  ;
+; N/A                                     ; None                                                ; 11.836 ns       ; op[1]                ; mapAddr_A[1]  ;
+; N/A                                     ; None                                                ; 11.825 ns       ; op[1]                ; mapAddr_A[17] ;
+; N/A                                     ; None                                                ; 11.782 ns       ; op[0]                ; mapAddr_B[8]  ;
+; N/A                                     ; None                                                ; 11.741 ns       ; op[0]                ; mapAddr_B[10] ;
+; N/A                                     ; None                                                ; 11.722 ns       ; op[0]                ; mapAddr_B[7]  ;
+; N/A                                     ; None                                                ; 11.720 ns       ; op[0]                ; mapAddr_B[0]  ;
+; N/A                                     ; None                                                ; 11.716 ns       ; op[0]                ; mapAddr_B[4]  ;
+; N/A                                     ; None                                                ; 11.637 ns       ; op[1]                ; mapAddr_A[4]  ;
+; N/A                                     ; None                                                ; 11.630 ns       ; op[1]                ; mapAddr_A[15] ;
+; N/A                                     ; None                                                ; 11.625 ns       ; op[1]                ; mapAddr_A[11] ;
+; N/A                                     ; None                                                ; 11.590 ns       ; op[1]                ; mapAddr_B[16] ;
+; N/A                                     ; None                                                ; 11.588 ns       ; op[1]                ; mapAddr_B[9]  ;
+; N/A                                     ; None                                                ; 11.574 ns       ; op[1]                ; mapAddr_B[2]  ;
+; N/A                                     ; None                                                ; 11.549 ns       ; op[1]                ; mapAddr_B[11] ;
+; N/A                                     ; None                                                ; 11.544 ns       ; op[1]                ; mapAddr_B[6]  ;
+; N/A                                     ; None                                                ; 11.501 ns       ; op[0]                ; mapAddr_A[19] ;
+; N/A                                     ; None                                                ; 11.495 ns       ; op[1]                ; mapAddr_A[12] ;
+; N/A                                     ; None                                                ; 11.487 ns       ; op[1]                ; mapAddr_A[8]  ;
+; N/A                                     ; None                                                ; 11.477 ns       ; op[1]                ; mapAddr_A[13] ;
+; N/A                                     ; None                                                ; 11.457 ns       ; op[1]                ; mapAddr_B[1]  ;
+; N/A                                     ; None                                                ; 11.457 ns       ; op[0]                ; mapAddr_A[16] ;
+; N/A                                     ; None                                                ; 11.443 ns       ; op[0]                ; mapAddr_B[16] ;
+; N/A                                     ; None                                                ; 11.440 ns       ; op[0]                ; mapAddr_B[9]  ;
+; N/A                                     ; None                                                ; 11.436 ns       ; op[0]                ; mapAddr_A[18] ;
+; N/A                                     ; None                                                ; 11.426 ns       ; op[0]                ; mapAddr_B[2]  ;
+; N/A                                     ; None                                                ; 11.416 ns       ; op[0]                ; mapAddr_A[22] ;
+; N/A                                     ; None                                                ; 11.412 ns       ; op[0]                ; mapAddr_B[25] ;
+; N/A                                     ; None                                                ; 11.399 ns       ; op[0]                ; mapAddr_B[11] ;
+; N/A                                     ; None                                                ; 11.396 ns       ; op[0]                ; mapAddr_B[6]  ;
+; N/A                                     ; None                                                ; 11.330 ns       ; op[0]                ; mapAddr_B[22] ;
+; N/A                                     ; None                                                ; 11.328 ns       ; mapInit[7]           ; mapAddr_A[7]  ;
+; N/A                                     ; None                                                ; 11.308 ns       ; op[0]                ; mapAddr_B[1]  ;
+; N/A                                     ; None                                                ; 11.296 ns       ; op[0]                ; mapAddr_A[20] ;
+; N/A                                     ; None                                                ; 11.288 ns       ; op[1]                ; mapAddr_B[5]  ;
+; N/A                                     ; None                                                ; 11.279 ns       ; op[0]                ; mapAddr_A[31] ;
+; N/A                                     ; None                                                ; 11.261 ns       ; op[0]                ; mapAddr_B[31] ;
+; N/A                                     ; None                                                ; 11.250 ns       ; op[1]                ; mapAddr_A[10] ;
+; N/A                                     ; None                                                ; 11.246 ns       ; op[1]                ; mapAddr_B[13] ;
+; N/A                                     ; None                                                ; 11.244 ns       ; op[1]                ; mapAddr_B[3]  ;
+; N/A                                     ; None                                                ; 11.236 ns       ; op[0]                ; mapAddr_A[1]  ;
+; N/A                                     ; None                                                ; 11.216 ns       ; op[0]                ; mapAddr_B[30] ;
+; N/A                                     ; None                                                ; 11.193 ns       ; mapControlCalc_A[2]  ; mapAddr_A[2]  ;
+; N/A                                     ; None                                                ; 11.189 ns       ; op[1]                ; mapAddr_A[14] ;
+; N/A                                     ; None                                                ; 11.174 ns       ; mapCalc[25]          ; mapAddr_A[25] ;
+; N/A                                     ; None                                                ; 11.172 ns       ; op[0]                ; mapAddr_B[28] ;
+; N/A                                     ; None                                                ; 11.146 ns       ; op[0]                ; mapAddr_B[17] ;
+; N/A                                     ; None                                                ; 11.139 ns       ; op[0]                ; mapAddr_B[5]  ;
+; N/A                                     ; None                                                ; 11.137 ns       ; mapControlCalc_A[16] ; mapAddr_A[16] ;
+; N/A                                     ; None                                                ; 11.125 ns       ; op[0]                ; mapAddr_A[21] ;
+; N/A                                     ; None                                                ; 11.114 ns       ; mapInit[2]           ; mapAddr_A[2]  ;
+; N/A                                     ; None                                                ; 11.100 ns       ; op[0]                ; mapAddr_B[13] ;
+; N/A                                     ; None                                                ; 11.100 ns       ; op[0]                ; mapAddr_A[11] ;
+; N/A                                     ; None                                                ; 11.099 ns       ; op[0]                ; mapAddr_B[3]  ;
+; N/A                                     ; None                                                ; 11.092 ns       ; op[0]                ; mapAddr_B[19] ;
+; N/A                                     ; None                                                ; 11.090 ns       ; op[0]                ; mapAddr_B[23] ;
+; N/A                                     ; None                                                ; 11.065 ns       ; op[0]                ; mapAddr_B[26] ;
+; N/A                                     ; None                                                ; 11.050 ns       ; mapControlCalc_B[14] ; mapAddr_B[14] ;
+; N/A                                     ; None                                                ; 11.047 ns       ; op[0]                ; mapAddr_A[4]  ;
+; N/A                                     ; None                                                ; 11.043 ns       ; op[0]                ; mapAddr_B[24] ;
+; N/A                                     ; None                                                ; 11.033 ns       ; mapInit[11]          ; mapAddr_A[11] ;
+; N/A                                     ; None                                                ; 11.024 ns       ; op[0]                ; mapAddr_A[12] ;
+; N/A                                     ; None                                                ; 11.020 ns       ; op[0]                ; mapAddr_B[21] ;
+; N/A                                     ; None                                                ; 11.005 ns       ; mapControlCalc_B[28] ; mapAddr_B[28] ;
+; N/A                                     ; None                                                ; 10.985 ns       ; mapInit[6]           ; mapAddr_A[6]  ;
+; N/A                                     ; None                                                ; 10.981 ns       ; op[0]                ; mapAddr_A[17] ;
+; N/A                                     ; None                                                ; 10.965 ns       ; mapInit[20]          ; mapAddr_A[20] ;
+; N/A                                     ; None                                                ; 10.953 ns       ; op[0]                ; mapAddr_A[7]  ;
+; N/A                                     ; None                                                ; 10.943 ns       ; op[0]                ; mapAddr_B[27] ;
+; N/A                                     ; None                                                ; 10.942 ns       ; mapInit[12]          ; mapAddr_A[12] ;
+; N/A                                     ; None                                                ; 10.934 ns       ; op[0]                ; mapAddr_B[20] ;
+; N/A                                     ; None                                                ; 10.894 ns       ; op[0]                ; mapAddr_B[18] ;
+; N/A                                     ; None                                                ; 10.843 ns       ; op[0]                ; mapAddr_A[15] ;
+; N/A                                     ; None                                                ; 10.804 ns       ; mapControlCalc_A[1]  ; mapAddr_A[1]  ;
+; N/A                                     ; None                                                ; 10.797 ns       ; op[0]                ; mapAddr_B[29] ;
+; N/A                                     ; None                                                ; 10.774 ns       ; op[0]                ; mapAddr_A[5]  ;
+; N/A                                     ; None                                                ; 10.744 ns       ; mapControlCalc_A[11] ; mapAddr_A[11] ;
+; N/A                                     ; None                                                ; 10.680 ns       ; mapInit[14]          ; mapAddr_A[14] ;
+; N/A                                     ; None                                                ; 10.677 ns       ; op[0]                ; mapAddr_A[8]  ;
+; N/A                                     ; None                                                ; 10.675 ns       ; mapControlCalc_B[30] ; mapAddr_B[30] ;
+; N/A                                     ; None                                                ; 10.667 ns       ; op[0]                ; mapAddr_A[13] ;
+; N/A                                     ; None                                                ; 10.652 ns       ; mapCalc[6]           ; mapAddr_A[6]  ;
+; N/A                                     ; None                                                ; 10.647 ns       ; mapInit[1]           ; mapAddr_A[1]  ;
+; N/A                                     ; None                                                ; 10.504 ns       ; mapInit[23]          ; mapAddr_A[23] ;
+; N/A                                     ; None                                                ; 10.502 ns       ; mapInit[8]           ; mapAddr_A[8]  ;
+; N/A                                     ; None                                                ; 10.471 ns       ; mapControlCalc_A[12] ; mapAddr_A[12] ;
+; N/A                                     ; None                                                ; 10.456 ns       ; mapControlCalc_B[12] ; mapAddr_B[12] ;
+; N/A                                     ; None                                                ; 10.419 ns       ; mapControlCalc_A[7]  ; mapAddr_A[7]  ;
+; N/A                                     ; None                                                ; 10.412 ns       ; mapCalc[2]           ; mapAddr_A[2]  ;
+; N/A                                     ; None                                                ; 10.402 ns       ; mapInit[19]          ; mapAddr_A[19] ;
+; N/A                                     ; None                                                ; 10.374 ns       ; op[0]                ; mapAddr_A[14] ;
+; N/A                                     ; None                                                ; 10.365 ns       ; mapControlCalc_A[5]  ; mapAddr_A[5]  ;
+; N/A                                     ; None                                                ; 10.328 ns       ; mapCalc[24]          ; mapAddr_A[24] ;
+; N/A                                     ; None                                                ; 10.326 ns       ; mapControlCalc_A[14] ; mapAddr_A[14] ;
+; N/A                                     ; None                                                ; 10.315 ns       ; op[0]                ; mapAddr_A[10] ;
+; N/A                                     ; None                                                ; 10.289 ns       ; mapCalc[12]          ; mapAddr_A[12] ;
+; N/A                                     ; None                                                ; 10.269 ns       ; mapControlCalc_A[13] ; mapAddr_A[13] ;
+; N/A                                     ; None                                                ; 10.267 ns       ; mapInit[10]          ; mapAddr_A[10] ;
+; N/A                                     ; None                                                ; 10.259 ns       ; mapInit[13]          ; mapAddr_A[13] ;
+; N/A                                     ; None                                                ; 10.255 ns       ; mapControlCalc_B[7]  ; mapAddr_B[7]  ;
+; N/A                                     ; None                                                ; 10.233 ns       ; mapCalc[0]           ; mapAddr_A[0]  ;
+; N/A                                     ; None                                                ; 10.230 ns       ; mapControlCalc_B[31] ; mapAddr_B[31] ;
+; N/A                                     ; None                                                ; 10.227 ns       ; mapControlCalc_B[22] ; mapAddr_B[22] ;
+; N/A                                     ; None                                                ; 10.186 ns       ; mapControlCalc_B[29] ; mapAddr_B[29] ;
+; N/A                                     ; None                                                ; 10.183 ns       ; mapInit[29]          ; mapAddr_A[29] ;
+; N/A                                     ; None                                                ; 10.182 ns       ; mapInit[4]           ; mapAddr_A[4]  ;
+; N/A                                     ; None                                                ; 10.159 ns       ; mapInit[18]          ; mapAddr_A[18] ;
+; N/A                                     ; None                                                ; 10.148 ns       ; mapCalc[11]          ; mapAddr_A[11] ;
+; N/A                                     ; None                                                ; 10.132 ns       ; mapInit[16]          ; mapAddr_A[16] ;
+; N/A                                     ; None                                                ; 10.123 ns       ; mapCalc[7]           ; mapAddr_A[7]  ;
+; N/A                                     ; None                                                ; 10.117 ns       ; mapControlCalc_A[18] ; mapAddr_A[18] ;
+; N/A                                     ; None                                                ; 10.111 ns       ; mapControlCalc_A[19] ; mapAddr_A[19] ;
+; N/A                                     ; None                                                ; 10.107 ns       ; mapControlCalc_A[8]  ; mapAddr_A[8]  ;
+; N/A                                     ; None                                                ; 10.099 ns       ; mapControlCalc_B[26] ; mapAddr_B[26] ;
+; N/A                                     ; None                                                ; 10.095 ns       ; mapInit[22]          ; mapAddr_A[22] ;
+; N/A                                     ; None                                                ; 10.088 ns       ; mapCalc[14]          ; mapAddr_A[14] ;
+; N/A                                     ; None                                                ; 10.074 ns       ; mapControlCalc_B[25] ; mapAddr_B[25] ;
+; N/A                                     ; None                                                ; 10.065 ns       ; mapControlCalc_A[22] ; mapAddr_A[22] ;
+; N/A                                     ; None                                                ; 10.064 ns       ; mapInit[5]           ; mapAddr_A[5]  ;
+; N/A                                     ; None                                                ; 10.054 ns       ; mapControlCalc_A[23] ; mapAddr_A[23] ;
+; N/A                                     ; None                                                ; 10.052 ns       ; mapControlCalc_B[17] ; mapAddr_B[17] ;
+; N/A                                     ; None                                                ; 10.043 ns       ; mapControlCalc_B[4]  ; mapAddr_B[4]  ;
+; N/A                                     ; None                                                ; 10.040 ns       ; mapCalc[15]          ; mapAddr_A[15] ;
+; N/A                                     ; None                                                ; 10.024 ns       ; mapControlCalc_A[17] ; mapAddr_A[17] ;
+; N/A                                     ; None                                                ; 10.022 ns       ; mapControlCalc_A[29] ; mapAddr_A[29] ;
+; N/A                                     ; None                                                ; 10.022 ns       ; mapControlCalc_A[4]  ; mapAddr_A[4]  ;
+; N/A                                     ; None                                                ; 10.012 ns       ; mapControlCalc_B[24] ; mapAddr_B[24] ;
+; N/A                                     ; None                                                ; 10.011 ns       ; mapControlCalc_A[10] ; mapAddr_A[10] ;
+; N/A                                     ; None                                                ; 10.005 ns       ; mapInit[28]          ; mapAddr_A[28] ;
+; Timing analysis restricted to 200 rows. ; To change the limit use Settings (Assignments menu) ;                 ;                      ;               ;
++-----------------------------------------+-----------------------------------------------------+-----------------+----------------------+---------------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Classic Timing Analyzer
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Tue Nov 01 13:32:13 2016
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off Kmeans_MuxMapAddr -c Kmeans_MuxMapAddr --timing_analysis_only
+Info: Longest tpd from source pin "op[1]" to destination pin "mapAddr_A[25]" is 14.882 ns
+    Info: 1: + IC(0.000 ns) + CELL(0.812 ns) = 0.812 ns; Loc. = PIN_T20; Fanout = 96; PIN Node = 'op[1]'
+    Info: 2: + IC(7.640 ns) + CELL(0.150 ns) = 8.602 ns; Loc. = LCCOMB_X1_Y9_N24; Fanout = 1; COMB Node = 'Mux6~0'
+    Info: 3: + IC(0.269 ns) + CELL(0.438 ns) = 9.309 ns; Loc. = LCCOMB_X1_Y9_N10; Fanout = 1; COMB Node = 'Mux6~1'
+    Info: 4: + IC(2.941 ns) + CELL(2.632 ns) = 14.882 ns; Loc. = PIN_W24; Fanout = 0; PIN Node = 'mapAddr_A[25]'
+    Info: Total cell delay = 4.032 ns ( 27.09 % )
+    Info: Total interconnect delay = 10.850 ns ( 72.91 % )
+Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 171 megabytes
+    Info: Processing ended: Tue Nov 01 13:32:14 2016
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

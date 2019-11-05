@@ -1,0 +1,18 @@
+Analysis & Synthesis Status : Successful - Tue Jun 13 11:46:48 2017
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Revision Name : Kmeans_MuxCentroidAddr
+Top-level Entity Name : Kmeans_MuxCentroidAddr
+Family : Cyclone IV GX
+Total logic elements : 28
+    Total combinational functions : 28
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 85
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0

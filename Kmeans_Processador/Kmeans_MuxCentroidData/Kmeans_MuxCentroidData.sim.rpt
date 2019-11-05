@@ -1,0 +1,510 @@
+Simulator report for Kmeans_MuxCentroidData
+Tue Nov 01 13:47:05 2016
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 193 nodes    ;
+; Simulation Coverage         ;      18.13 % ;
+; Total Number of Transitions ; 925          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C35F672C6 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      18.13 % ;
+; Total nodes checked                                 ; 193          ;
+; Total output ports checked                          ; 193          ;
+; Total output ports with complete 1/0-value coverage ; 35           ;
+; Total output ports with no 1/0-value coverage       ; 156          ;
+; Total output ports with no 1-value coverage         ; 156          ;
+; Total output ports with no 0-value coverage         ; 158          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++---------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                   ;
++-------------------------------------------+------------------------------------------------+------------------+
+; Node Name                                 ; Output Port Name                               ; Output Port Type ;
++-------------------------------------------+------------------------------------------------+------------------+
+; |Kmeans_MuxCentroidData|centroidData_A~0  ; |Kmeans_MuxCentroidData|centroidData_A~0       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~1  ; |Kmeans_MuxCentroidData|centroidData_A~1       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~2  ; |Kmeans_MuxCentroidData|centroidData_A~2       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~3  ; |Kmeans_MuxCentroidData|centroidData_A~3       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~4  ; |Kmeans_MuxCentroidData|centroidData_A~4       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~5  ; |Kmeans_MuxCentroidData|centroidData_A~5       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~0  ; |Kmeans_MuxCentroidData|centroidData_B~0       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~1  ; |Kmeans_MuxCentroidData|centroidData_B~1       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~2  ; |Kmeans_MuxCentroidData|centroidData_B~2       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~3  ; |Kmeans_MuxCentroidData|centroidData_B~3       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~4  ; |Kmeans_MuxCentroidData|centroidData_B~4       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~5  ; |Kmeans_MuxCentroidData|centroidData_B~5       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A[0] ; |Kmeans_MuxCentroidData|centroidData_A[0]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[1] ; |Kmeans_MuxCentroidData|centroidData_A[1]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[2] ; |Kmeans_MuxCentroidData|centroidData_A[2]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[3] ; |Kmeans_MuxCentroidData|centroidData_A[3]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[4] ; |Kmeans_MuxCentroidData|centroidData_A[4]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[5] ; |Kmeans_MuxCentroidData|centroidData_A[5]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[0] ; |Kmeans_MuxCentroidData|centroidData_B[0]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[1] ; |Kmeans_MuxCentroidData|centroidData_B[1]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[2] ; |Kmeans_MuxCentroidData|centroidData_B[2]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[3] ; |Kmeans_MuxCentroidData|centroidData_B[3]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[4] ; |Kmeans_MuxCentroidData|centroidData_B[4]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[5] ; |Kmeans_MuxCentroidData|centroidData_B[5]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidCalc[0]   ; |Kmeans_MuxCentroidData|centroidCalc[0]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|op                ; |Kmeans_MuxCentroidData|op~corein              ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[1]   ; |Kmeans_MuxCentroidData|centroidCalc[1]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[2]   ; |Kmeans_MuxCentroidData|centroidCalc[2]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[3]   ; |Kmeans_MuxCentroidData|centroidCalc[3]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[4]   ; |Kmeans_MuxCentroidData|centroidCalc[4]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[0]   ; |Kmeans_MuxCentroidData|centroidInit[0]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[1]   ; |Kmeans_MuxCentroidData|centroidInit[1]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[2]   ; |Kmeans_MuxCentroidData|centroidInit[2]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[3]   ; |Kmeans_MuxCentroidData|centroidInit[3]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[4]   ; |Kmeans_MuxCentroidData|centroidInit[4]~corein ; combout          ;
++-------------------------------------------+------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-----------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                        ;
++--------------------------------------------+-------------------------------------------------+------------------+
+; Node Name                                  ; Output Port Name                                ; Output Port Type ;
++--------------------------------------------+-------------------------------------------------+------------------+
+; |Kmeans_MuxCentroidData|centroidData_A~6   ; |Kmeans_MuxCentroidData|centroidData_A~6        ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~7   ; |Kmeans_MuxCentroidData|centroidData_A~7        ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~8   ; |Kmeans_MuxCentroidData|centroidData_A~8        ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~9   ; |Kmeans_MuxCentroidData|centroidData_A~9        ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~10  ; |Kmeans_MuxCentroidData|centroidData_A~10       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~11  ; |Kmeans_MuxCentroidData|centroidData_A~11       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~12  ; |Kmeans_MuxCentroidData|centroidData_A~12       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~13  ; |Kmeans_MuxCentroidData|centroidData_A~13       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~14  ; |Kmeans_MuxCentroidData|centroidData_A~14       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~15  ; |Kmeans_MuxCentroidData|centroidData_A~15       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~16  ; |Kmeans_MuxCentroidData|centroidData_A~16       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~17  ; |Kmeans_MuxCentroidData|centroidData_A~17       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~18  ; |Kmeans_MuxCentroidData|centroidData_A~18       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~19  ; |Kmeans_MuxCentroidData|centroidData_A~19       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~20  ; |Kmeans_MuxCentroidData|centroidData_A~20       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~21  ; |Kmeans_MuxCentroidData|centroidData_A~21       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~22  ; |Kmeans_MuxCentroidData|centroidData_A~22       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~23  ; |Kmeans_MuxCentroidData|centroidData_A~23       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~24  ; |Kmeans_MuxCentroidData|centroidData_A~24       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~25  ; |Kmeans_MuxCentroidData|centroidData_A~25       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~26  ; |Kmeans_MuxCentroidData|centroidData_A~26       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~27  ; |Kmeans_MuxCentroidData|centroidData_A~27       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~28  ; |Kmeans_MuxCentroidData|centroidData_A~28       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~29  ; |Kmeans_MuxCentroidData|centroidData_A~29       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~30  ; |Kmeans_MuxCentroidData|centroidData_A~30       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~31  ; |Kmeans_MuxCentroidData|centroidData_A~31       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~6   ; |Kmeans_MuxCentroidData|centroidData_B~6        ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~7   ; |Kmeans_MuxCentroidData|centroidData_B~7        ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~8   ; |Kmeans_MuxCentroidData|centroidData_B~8        ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~9   ; |Kmeans_MuxCentroidData|centroidData_B~9        ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~10  ; |Kmeans_MuxCentroidData|centroidData_B~10       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~11  ; |Kmeans_MuxCentroidData|centroidData_B~11       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~12  ; |Kmeans_MuxCentroidData|centroidData_B~12       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~13  ; |Kmeans_MuxCentroidData|centroidData_B~13       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~14  ; |Kmeans_MuxCentroidData|centroidData_B~14       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~15  ; |Kmeans_MuxCentroidData|centroidData_B~15       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~16  ; |Kmeans_MuxCentroidData|centroidData_B~16       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~17  ; |Kmeans_MuxCentroidData|centroidData_B~17       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~18  ; |Kmeans_MuxCentroidData|centroidData_B~18       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~19  ; |Kmeans_MuxCentroidData|centroidData_B~19       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~20  ; |Kmeans_MuxCentroidData|centroidData_B~20       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~21  ; |Kmeans_MuxCentroidData|centroidData_B~21       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~22  ; |Kmeans_MuxCentroidData|centroidData_B~22       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~23  ; |Kmeans_MuxCentroidData|centroidData_B~23       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~24  ; |Kmeans_MuxCentroidData|centroidData_B~24       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~25  ; |Kmeans_MuxCentroidData|centroidData_B~25       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~26  ; |Kmeans_MuxCentroidData|centroidData_B~26       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~27  ; |Kmeans_MuxCentroidData|centroidData_B~27       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~28  ; |Kmeans_MuxCentroidData|centroidData_B~28       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~29  ; |Kmeans_MuxCentroidData|centroidData_B~29       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~30  ; |Kmeans_MuxCentroidData|centroidData_B~30       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~31  ; |Kmeans_MuxCentroidData|centroidData_B~31       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A[6]  ; |Kmeans_MuxCentroidData|centroidData_A[6]       ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[7]  ; |Kmeans_MuxCentroidData|centroidData_A[7]       ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[8]  ; |Kmeans_MuxCentroidData|centroidData_A[8]       ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[9]  ; |Kmeans_MuxCentroidData|centroidData_A[9]       ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[10] ; |Kmeans_MuxCentroidData|centroidData_A[10]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[11] ; |Kmeans_MuxCentroidData|centroidData_A[11]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[12] ; |Kmeans_MuxCentroidData|centroidData_A[12]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[13] ; |Kmeans_MuxCentroidData|centroidData_A[13]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[14] ; |Kmeans_MuxCentroidData|centroidData_A[14]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[15] ; |Kmeans_MuxCentroidData|centroidData_A[15]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[16] ; |Kmeans_MuxCentroidData|centroidData_A[16]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[17] ; |Kmeans_MuxCentroidData|centroidData_A[17]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[18] ; |Kmeans_MuxCentroidData|centroidData_A[18]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[19] ; |Kmeans_MuxCentroidData|centroidData_A[19]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[20] ; |Kmeans_MuxCentroidData|centroidData_A[20]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[21] ; |Kmeans_MuxCentroidData|centroidData_A[21]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[22] ; |Kmeans_MuxCentroidData|centroidData_A[22]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[23] ; |Kmeans_MuxCentroidData|centroidData_A[23]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[24] ; |Kmeans_MuxCentroidData|centroidData_A[24]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[25] ; |Kmeans_MuxCentroidData|centroidData_A[25]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[26] ; |Kmeans_MuxCentroidData|centroidData_A[26]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[27] ; |Kmeans_MuxCentroidData|centroidData_A[27]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[28] ; |Kmeans_MuxCentroidData|centroidData_A[28]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[29] ; |Kmeans_MuxCentroidData|centroidData_A[29]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[30] ; |Kmeans_MuxCentroidData|centroidData_A[30]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[31] ; |Kmeans_MuxCentroidData|centroidData_A[31]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[6]  ; |Kmeans_MuxCentroidData|centroidData_B[6]       ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[7]  ; |Kmeans_MuxCentroidData|centroidData_B[7]       ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[8]  ; |Kmeans_MuxCentroidData|centroidData_B[8]       ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[9]  ; |Kmeans_MuxCentroidData|centroidData_B[9]       ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[10] ; |Kmeans_MuxCentroidData|centroidData_B[10]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[11] ; |Kmeans_MuxCentroidData|centroidData_B[11]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[12] ; |Kmeans_MuxCentroidData|centroidData_B[12]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[13] ; |Kmeans_MuxCentroidData|centroidData_B[13]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[14] ; |Kmeans_MuxCentroidData|centroidData_B[14]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[15] ; |Kmeans_MuxCentroidData|centroidData_B[15]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[16] ; |Kmeans_MuxCentroidData|centroidData_B[16]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[17] ; |Kmeans_MuxCentroidData|centroidData_B[17]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[18] ; |Kmeans_MuxCentroidData|centroidData_B[18]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[19] ; |Kmeans_MuxCentroidData|centroidData_B[19]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[20] ; |Kmeans_MuxCentroidData|centroidData_B[20]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[21] ; |Kmeans_MuxCentroidData|centroidData_B[21]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[22] ; |Kmeans_MuxCentroidData|centroidData_B[22]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[23] ; |Kmeans_MuxCentroidData|centroidData_B[23]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[24] ; |Kmeans_MuxCentroidData|centroidData_B[24]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[25] ; |Kmeans_MuxCentroidData|centroidData_B[25]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[26] ; |Kmeans_MuxCentroidData|centroidData_B[26]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[27] ; |Kmeans_MuxCentroidData|centroidData_B[27]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[28] ; |Kmeans_MuxCentroidData|centroidData_B[28]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[29] ; |Kmeans_MuxCentroidData|centroidData_B[29]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[30] ; |Kmeans_MuxCentroidData|centroidData_B[30]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[31] ; |Kmeans_MuxCentroidData|centroidData_B[31]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidCalc[6]    ; |Kmeans_MuxCentroidData|centroidCalc[6]~corein  ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[7]    ; |Kmeans_MuxCentroidData|centroidCalc[7]~corein  ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[8]    ; |Kmeans_MuxCentroidData|centroidCalc[8]~corein  ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[9]    ; |Kmeans_MuxCentroidData|centroidCalc[9]~corein  ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[10]   ; |Kmeans_MuxCentroidData|centroidCalc[10]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[11]   ; |Kmeans_MuxCentroidData|centroidCalc[11]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[12]   ; |Kmeans_MuxCentroidData|centroidCalc[12]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[13]   ; |Kmeans_MuxCentroidData|centroidCalc[13]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[14]   ; |Kmeans_MuxCentroidData|centroidCalc[14]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[15]   ; |Kmeans_MuxCentroidData|centroidCalc[15]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[16]   ; |Kmeans_MuxCentroidData|centroidCalc[16]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[17]   ; |Kmeans_MuxCentroidData|centroidCalc[17]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[18]   ; |Kmeans_MuxCentroidData|centroidCalc[18]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[19]   ; |Kmeans_MuxCentroidData|centroidCalc[19]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[20]   ; |Kmeans_MuxCentroidData|centroidCalc[20]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[21]   ; |Kmeans_MuxCentroidData|centroidCalc[21]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[22]   ; |Kmeans_MuxCentroidData|centroidCalc[22]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[23]   ; |Kmeans_MuxCentroidData|centroidCalc[23]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[24]   ; |Kmeans_MuxCentroidData|centroidCalc[24]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[25]   ; |Kmeans_MuxCentroidData|centroidCalc[25]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[26]   ; |Kmeans_MuxCentroidData|centroidCalc[26]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[27]   ; |Kmeans_MuxCentroidData|centroidCalc[27]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[28]   ; |Kmeans_MuxCentroidData|centroidCalc[28]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[29]   ; |Kmeans_MuxCentroidData|centroidCalc[29]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[30]   ; |Kmeans_MuxCentroidData|centroidCalc[30]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[31]   ; |Kmeans_MuxCentroidData|centroidCalc[31]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[6]    ; |Kmeans_MuxCentroidData|centroidInit[6]~corein  ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[7]    ; |Kmeans_MuxCentroidData|centroidInit[7]~corein  ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[8]    ; |Kmeans_MuxCentroidData|centroidInit[8]~corein  ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[9]    ; |Kmeans_MuxCentroidData|centroidInit[9]~corein  ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[10]   ; |Kmeans_MuxCentroidData|centroidInit[10]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[11]   ; |Kmeans_MuxCentroidData|centroidInit[11]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[12]   ; |Kmeans_MuxCentroidData|centroidInit[12]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[13]   ; |Kmeans_MuxCentroidData|centroidInit[13]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[14]   ; |Kmeans_MuxCentroidData|centroidInit[14]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[15]   ; |Kmeans_MuxCentroidData|centroidInit[15]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[16]   ; |Kmeans_MuxCentroidData|centroidInit[16]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[17]   ; |Kmeans_MuxCentroidData|centroidInit[17]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[18]   ; |Kmeans_MuxCentroidData|centroidInit[18]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[19]   ; |Kmeans_MuxCentroidData|centroidInit[19]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[20]   ; |Kmeans_MuxCentroidData|centroidInit[20]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[21]   ; |Kmeans_MuxCentroidData|centroidInit[21]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[22]   ; |Kmeans_MuxCentroidData|centroidInit[22]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[23]   ; |Kmeans_MuxCentroidData|centroidInit[23]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[24]   ; |Kmeans_MuxCentroidData|centroidInit[24]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[25]   ; |Kmeans_MuxCentroidData|centroidInit[25]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[26]   ; |Kmeans_MuxCentroidData|centroidInit[26]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[27]   ; |Kmeans_MuxCentroidData|centroidInit[27]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[28]   ; |Kmeans_MuxCentroidData|centroidInit[28]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[29]   ; |Kmeans_MuxCentroidData|centroidInit[29]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[30]   ; |Kmeans_MuxCentroidData|centroidInit[30]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[31]   ; |Kmeans_MuxCentroidData|centroidInit[31]~corein ; combout          ;
++--------------------------------------------+-------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-----------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                        ;
++--------------------------------------------+-------------------------------------------------+------------------+
+; Node Name                                  ; Output Port Name                                ; Output Port Type ;
++--------------------------------------------+-------------------------------------------------+------------------+
+; |Kmeans_MuxCentroidData|centroidData_A~6   ; |Kmeans_MuxCentroidData|centroidData_A~6        ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~7   ; |Kmeans_MuxCentroidData|centroidData_A~7        ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~8   ; |Kmeans_MuxCentroidData|centroidData_A~8        ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~9   ; |Kmeans_MuxCentroidData|centroidData_A~9        ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~10  ; |Kmeans_MuxCentroidData|centroidData_A~10       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~11  ; |Kmeans_MuxCentroidData|centroidData_A~11       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~12  ; |Kmeans_MuxCentroidData|centroidData_A~12       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~13  ; |Kmeans_MuxCentroidData|centroidData_A~13       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~14  ; |Kmeans_MuxCentroidData|centroidData_A~14       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~15  ; |Kmeans_MuxCentroidData|centroidData_A~15       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~16  ; |Kmeans_MuxCentroidData|centroidData_A~16       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~17  ; |Kmeans_MuxCentroidData|centroidData_A~17       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~18  ; |Kmeans_MuxCentroidData|centroidData_A~18       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~19  ; |Kmeans_MuxCentroidData|centroidData_A~19       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~20  ; |Kmeans_MuxCentroidData|centroidData_A~20       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~21  ; |Kmeans_MuxCentroidData|centroidData_A~21       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~22  ; |Kmeans_MuxCentroidData|centroidData_A~22       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~23  ; |Kmeans_MuxCentroidData|centroidData_A~23       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~24  ; |Kmeans_MuxCentroidData|centroidData_A~24       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~25  ; |Kmeans_MuxCentroidData|centroidData_A~25       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~26  ; |Kmeans_MuxCentroidData|centroidData_A~26       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~27  ; |Kmeans_MuxCentroidData|centroidData_A~27       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~28  ; |Kmeans_MuxCentroidData|centroidData_A~28       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~29  ; |Kmeans_MuxCentroidData|centroidData_A~29       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~30  ; |Kmeans_MuxCentroidData|centroidData_A~30       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A~31  ; |Kmeans_MuxCentroidData|centroidData_A~31       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~6   ; |Kmeans_MuxCentroidData|centroidData_B~6        ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~7   ; |Kmeans_MuxCentroidData|centroidData_B~7        ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~8   ; |Kmeans_MuxCentroidData|centroidData_B~8        ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~9   ; |Kmeans_MuxCentroidData|centroidData_B~9        ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~10  ; |Kmeans_MuxCentroidData|centroidData_B~10       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~11  ; |Kmeans_MuxCentroidData|centroidData_B~11       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~12  ; |Kmeans_MuxCentroidData|centroidData_B~12       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~13  ; |Kmeans_MuxCentroidData|centroidData_B~13       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~14  ; |Kmeans_MuxCentroidData|centroidData_B~14       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~15  ; |Kmeans_MuxCentroidData|centroidData_B~15       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~16  ; |Kmeans_MuxCentroidData|centroidData_B~16       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~17  ; |Kmeans_MuxCentroidData|centroidData_B~17       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~18  ; |Kmeans_MuxCentroidData|centroidData_B~18       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~19  ; |Kmeans_MuxCentroidData|centroidData_B~19       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~20  ; |Kmeans_MuxCentroidData|centroidData_B~20       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~21  ; |Kmeans_MuxCentroidData|centroidData_B~21       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~22  ; |Kmeans_MuxCentroidData|centroidData_B~22       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~23  ; |Kmeans_MuxCentroidData|centroidData_B~23       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~24  ; |Kmeans_MuxCentroidData|centroidData_B~24       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~25  ; |Kmeans_MuxCentroidData|centroidData_B~25       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~26  ; |Kmeans_MuxCentroidData|centroidData_B~26       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~27  ; |Kmeans_MuxCentroidData|centroidData_B~27       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~28  ; |Kmeans_MuxCentroidData|centroidData_B~28       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~29  ; |Kmeans_MuxCentroidData|centroidData_B~29       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~30  ; |Kmeans_MuxCentroidData|centroidData_B~30       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_B~31  ; |Kmeans_MuxCentroidData|centroidData_B~31       ; combout          ;
+; |Kmeans_MuxCentroidData|centroidData_A[6]  ; |Kmeans_MuxCentroidData|centroidData_A[6]       ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[7]  ; |Kmeans_MuxCentroidData|centroidData_A[7]       ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[8]  ; |Kmeans_MuxCentroidData|centroidData_A[8]       ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[9]  ; |Kmeans_MuxCentroidData|centroidData_A[9]       ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[10] ; |Kmeans_MuxCentroidData|centroidData_A[10]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[11] ; |Kmeans_MuxCentroidData|centroidData_A[11]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[12] ; |Kmeans_MuxCentroidData|centroidData_A[12]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[13] ; |Kmeans_MuxCentroidData|centroidData_A[13]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[14] ; |Kmeans_MuxCentroidData|centroidData_A[14]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[15] ; |Kmeans_MuxCentroidData|centroidData_A[15]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[16] ; |Kmeans_MuxCentroidData|centroidData_A[16]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[17] ; |Kmeans_MuxCentroidData|centroidData_A[17]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[18] ; |Kmeans_MuxCentroidData|centroidData_A[18]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[19] ; |Kmeans_MuxCentroidData|centroidData_A[19]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[20] ; |Kmeans_MuxCentroidData|centroidData_A[20]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[21] ; |Kmeans_MuxCentroidData|centroidData_A[21]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[22] ; |Kmeans_MuxCentroidData|centroidData_A[22]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[23] ; |Kmeans_MuxCentroidData|centroidData_A[23]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[24] ; |Kmeans_MuxCentroidData|centroidData_A[24]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[25] ; |Kmeans_MuxCentroidData|centroidData_A[25]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[26] ; |Kmeans_MuxCentroidData|centroidData_A[26]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[27] ; |Kmeans_MuxCentroidData|centroidData_A[27]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[28] ; |Kmeans_MuxCentroidData|centroidData_A[28]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[29] ; |Kmeans_MuxCentroidData|centroidData_A[29]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[30] ; |Kmeans_MuxCentroidData|centroidData_A[30]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_A[31] ; |Kmeans_MuxCentroidData|centroidData_A[31]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[6]  ; |Kmeans_MuxCentroidData|centroidData_B[6]       ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[7]  ; |Kmeans_MuxCentroidData|centroidData_B[7]       ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[8]  ; |Kmeans_MuxCentroidData|centroidData_B[8]       ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[9]  ; |Kmeans_MuxCentroidData|centroidData_B[9]       ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[10] ; |Kmeans_MuxCentroidData|centroidData_B[10]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[11] ; |Kmeans_MuxCentroidData|centroidData_B[11]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[12] ; |Kmeans_MuxCentroidData|centroidData_B[12]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[13] ; |Kmeans_MuxCentroidData|centroidData_B[13]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[14] ; |Kmeans_MuxCentroidData|centroidData_B[14]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[15] ; |Kmeans_MuxCentroidData|centroidData_B[15]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[16] ; |Kmeans_MuxCentroidData|centroidData_B[16]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[17] ; |Kmeans_MuxCentroidData|centroidData_B[17]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[18] ; |Kmeans_MuxCentroidData|centroidData_B[18]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[19] ; |Kmeans_MuxCentroidData|centroidData_B[19]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[20] ; |Kmeans_MuxCentroidData|centroidData_B[20]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[21] ; |Kmeans_MuxCentroidData|centroidData_B[21]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[22] ; |Kmeans_MuxCentroidData|centroidData_B[22]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[23] ; |Kmeans_MuxCentroidData|centroidData_B[23]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[24] ; |Kmeans_MuxCentroidData|centroidData_B[24]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[25] ; |Kmeans_MuxCentroidData|centroidData_B[25]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[26] ; |Kmeans_MuxCentroidData|centroidData_B[26]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[27] ; |Kmeans_MuxCentroidData|centroidData_B[27]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[28] ; |Kmeans_MuxCentroidData|centroidData_B[28]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[29] ; |Kmeans_MuxCentroidData|centroidData_B[29]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[30] ; |Kmeans_MuxCentroidData|centroidData_B[30]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidData_B[31] ; |Kmeans_MuxCentroidData|centroidData_B[31]      ; padio            ;
+; |Kmeans_MuxCentroidData|centroidCalc[5]    ; |Kmeans_MuxCentroidData|centroidCalc[5]~corein  ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[6]    ; |Kmeans_MuxCentroidData|centroidCalc[6]~corein  ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[7]    ; |Kmeans_MuxCentroidData|centroidCalc[7]~corein  ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[8]    ; |Kmeans_MuxCentroidData|centroidCalc[8]~corein  ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[9]    ; |Kmeans_MuxCentroidData|centroidCalc[9]~corein  ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[10]   ; |Kmeans_MuxCentroidData|centroidCalc[10]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[11]   ; |Kmeans_MuxCentroidData|centroidCalc[11]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[12]   ; |Kmeans_MuxCentroidData|centroidCalc[12]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[13]   ; |Kmeans_MuxCentroidData|centroidCalc[13]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[14]   ; |Kmeans_MuxCentroidData|centroidCalc[14]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[15]   ; |Kmeans_MuxCentroidData|centroidCalc[15]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[16]   ; |Kmeans_MuxCentroidData|centroidCalc[16]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[17]   ; |Kmeans_MuxCentroidData|centroidCalc[17]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[18]   ; |Kmeans_MuxCentroidData|centroidCalc[18]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[19]   ; |Kmeans_MuxCentroidData|centroidCalc[19]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[20]   ; |Kmeans_MuxCentroidData|centroidCalc[20]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[21]   ; |Kmeans_MuxCentroidData|centroidCalc[21]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[22]   ; |Kmeans_MuxCentroidData|centroidCalc[22]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[23]   ; |Kmeans_MuxCentroidData|centroidCalc[23]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[24]   ; |Kmeans_MuxCentroidData|centroidCalc[24]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[25]   ; |Kmeans_MuxCentroidData|centroidCalc[25]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[26]   ; |Kmeans_MuxCentroidData|centroidCalc[26]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[27]   ; |Kmeans_MuxCentroidData|centroidCalc[27]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[28]   ; |Kmeans_MuxCentroidData|centroidCalc[28]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[29]   ; |Kmeans_MuxCentroidData|centroidCalc[29]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[30]   ; |Kmeans_MuxCentroidData|centroidCalc[30]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidCalc[31]   ; |Kmeans_MuxCentroidData|centroidCalc[31]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[5]    ; |Kmeans_MuxCentroidData|centroidInit[5]~corein  ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[6]    ; |Kmeans_MuxCentroidData|centroidInit[6]~corein  ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[7]    ; |Kmeans_MuxCentroidData|centroidInit[7]~corein  ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[8]    ; |Kmeans_MuxCentroidData|centroidInit[8]~corein  ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[9]    ; |Kmeans_MuxCentroidData|centroidInit[9]~corein  ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[10]   ; |Kmeans_MuxCentroidData|centroidInit[10]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[11]   ; |Kmeans_MuxCentroidData|centroidInit[11]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[12]   ; |Kmeans_MuxCentroidData|centroidInit[12]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[13]   ; |Kmeans_MuxCentroidData|centroidInit[13]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[14]   ; |Kmeans_MuxCentroidData|centroidInit[14]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[15]   ; |Kmeans_MuxCentroidData|centroidInit[15]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[16]   ; |Kmeans_MuxCentroidData|centroidInit[16]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[17]   ; |Kmeans_MuxCentroidData|centroidInit[17]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[18]   ; |Kmeans_MuxCentroidData|centroidInit[18]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[19]   ; |Kmeans_MuxCentroidData|centroidInit[19]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[20]   ; |Kmeans_MuxCentroidData|centroidInit[20]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[21]   ; |Kmeans_MuxCentroidData|centroidInit[21]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[22]   ; |Kmeans_MuxCentroidData|centroidInit[22]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[23]   ; |Kmeans_MuxCentroidData|centroidInit[23]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[24]   ; |Kmeans_MuxCentroidData|centroidInit[24]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[25]   ; |Kmeans_MuxCentroidData|centroidInit[25]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[26]   ; |Kmeans_MuxCentroidData|centroidInit[26]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[27]   ; |Kmeans_MuxCentroidData|centroidInit[27]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[28]   ; |Kmeans_MuxCentroidData|centroidInit[28]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[29]   ; |Kmeans_MuxCentroidData|centroidInit[29]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[30]   ; |Kmeans_MuxCentroidData|centroidInit[30]~corein ; combout          ;
+; |Kmeans_MuxCentroidData|centroidInit[31]   ; |Kmeans_MuxCentroidData|centroidInit[31]~corein ; combout          ;
++--------------------------------------------+-------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Tue Nov 01 13:47:04 2016
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off Kmeans_MuxCentroidData -c Kmeans_MuxCentroidData
+Info: Using vector source file "Z:/Lucas/Kmeans_Processador/Kmeans_MuxCentroidData/Kmeans_MuxCentroidData.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      18.13 %
+Info: Number of transitions in simulation is 925
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 155 megabytes
+    Info: Processing ended: Tue Nov 01 13:47:05 2016
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

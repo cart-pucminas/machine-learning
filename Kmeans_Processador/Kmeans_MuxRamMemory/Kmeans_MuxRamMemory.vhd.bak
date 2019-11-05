@@ -1,0 +1,32 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+Entity Kmeans_MuxRamMemory is
+
+	GENERIC (Palavra : INTEGER := 32);
+	
+    PORT ( 
+			romData        	: in  STD_LOGIC_VECTOR (Palavra-1 downto 0);
+			centroidData_A	: in  STD_LOGIC_VECTOR (Palavra-1 downto 0);
+			centroidData_B	: in  STD_LOGIC_VECTOR (Palavra-1 downto 0);
+			mapData     	: in  STD_LOGIC_VECTOR (Palavra-1 downto 0);
+			op				: in  STD_LOGIC_VECTOR (1 downto 0);
+			ramData_A		: out STD_LOGIC_VECTOR (Palavra-1 downto 0);
+		    ramData_B		: out STD_LOGIC_VECTOR (Palavra-1 downto 0)
+		);
+END Kmeans_MuxRamMemory;
+
+ARCHITECTURE arch of Kmeans_MuxRamMemory is
+
+BEGIN
+
+	--resultado que recebe do controlador op que ira conduzir qual das entradas vai para a saida
+	with op select	
+	ramData_A <= centroidData_A when "01",
+				 mapData 	    when "10",
+				 romData	    when others;
+				
+	with op select	
+	ramData_B <= centroidData_B when "01",
+				 (others =>'0') when others;
+END arch;

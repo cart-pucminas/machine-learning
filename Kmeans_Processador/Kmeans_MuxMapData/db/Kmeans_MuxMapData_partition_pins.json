@@ -1,0 +1,645 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "mapData[0]",
+					"strict" : false
+				},
+				{
+					"name" : "mapData[1]",
+					"strict" : false
+				},
+				{
+					"name" : "mapData[2]",
+					"strict" : false
+				},
+				{
+					"name" : "mapData[3]",
+					"strict" : false
+				},
+				{
+					"name" : "mapData[4]",
+					"strict" : false
+				},
+				{
+					"name" : "mapData[5]",
+					"strict" : false
+				},
+				{
+					"name" : "mapData[6]",
+					"strict" : false
+				},
+				{
+					"name" : "mapData[7]",
+					"strict" : false
+				},
+				{
+					"name" : "mapData[8]",
+					"strict" : false
+				},
+				{
+					"name" : "mapData[9]",
+					"strict" : false
+				},
+				{
+					"name" : "mapWr",
+					"strict" : false
+				},
+				{
+					"name" : "mapAddr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "mapAddr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "mapAddr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "mapAddr[3]",
+					"strict" : false
+				},
+				{
+					"name" : "mapAddr[4]",
+					"strict" : false
+				},
+				{
+					"name" : "mapAddr[5]",
+					"strict" : false
+				},
+				{
+					"name" : "mapAddr[6]",
+					"strict" : false
+				},
+				{
+					"name" : "mapAddr[7]",
+					"strict" : false
+				},
+				{
+					"name" : "mapAddr[8]",
+					"strict" : false
+				},
+				{
+					"name" : "mapAddr[9]",
+					"strict" : false
+				},
+				{
+					"name" : "mapAddr[10]",
+					"strict" : false
+				},
+				{
+					"name" : "mapAddr[11]",
+					"strict" : false
+				},
+				{
+					"name" : "mapAddr[12]",
+					"strict" : false
+				},
+				{
+					"name" : "mapAddr[13]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcFP[0]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalc[0]",
+					"strict" : false
+				},
+				{
+					"name" : "op[0]",
+					"strict" : false
+				},
+				{
+					"name" : "op[2]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcKmodes[0]",
+					"strict" : false
+				},
+				{
+					"name" : "op[1]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcFP[1]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalc[1]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcKmodes[1]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcFP[2]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalc[2]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcKmodes[2]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcFP[3]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalc[3]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcKmodes[3]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcFP[4]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalc[4]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcKmodes[4]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcFP[5]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalc[5]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcKmodes[5]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcFP[6]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalc[6]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcKmodes[6]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcFP[7]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalc[7]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcKmodes[7]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcFP[8]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalc[8]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcKmodes[8]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcFP[9]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalc[9]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcKmodes[9]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcFP_Wr",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalc_Wr",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcKmodes_Wr",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleKmodes_Addr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_Addr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleFP_Addr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_Addr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleFP_Addr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "outputResult_Addr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleKmodes_Addr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleFP_Addr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_Addr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_Addr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleFP_Addr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleKmodes_Addr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "outputResult_Addr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleKmodes_Addr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleKmodes_Addr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_Addr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleFP_Addr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_Addr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleFP_Addr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "outputResult_Addr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleKmodes_Addr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleFP_Addr[3]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_Addr[3]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_Addr[3]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleFP_Addr[3]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleKmodes_Addr[3]",
+					"strict" : false
+				},
+				{
+					"name" : "outputResult_Addr[3]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleKmodes_Addr[3]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleKmodes_Addr[4]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_Addr[4]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleFP_Addr[4]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_Addr[4]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleFP_Addr[4]",
+					"strict" : false
+				},
+				{
+					"name" : "outputResult_Addr[4]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleKmodes_Addr[4]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleFP_Addr[5]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_Addr[5]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_Addr[5]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleFP_Addr[5]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleKmodes_Addr[5]",
+					"strict" : false
+				},
+				{
+					"name" : "outputResult_Addr[5]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleKmodes_Addr[5]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleKmodes_Addr[6]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_Addr[6]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleFP_Addr[6]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_Addr[6]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleFP_Addr[6]",
+					"strict" : false
+				},
+				{
+					"name" : "outputResult_Addr[6]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleKmodes_Addr[6]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleFP_Addr[7]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_Addr[7]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_Addr[7]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleFP_Addr[7]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleKmodes_Addr[7]",
+					"strict" : false
+				},
+				{
+					"name" : "outputResult_Addr[7]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleKmodes_Addr[7]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleKmodes_Addr[8]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_Addr[8]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleFP_Addr[8]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_Addr[8]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleFP_Addr[8]",
+					"strict" : false
+				},
+				{
+					"name" : "outputResult_Addr[8]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleKmodes_Addr[8]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleFP_Addr[9]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_Addr[9]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_Addr[9]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleFP_Addr[9]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleKmodes_Addr[9]",
+					"strict" : false
+				},
+				{
+					"name" : "outputResult_Addr[9]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleKmodes_Addr[9]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleKmodes_Addr[10]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_Addr[10]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleFP_Addr[10]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_Addr[10]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleFP_Addr[10]",
+					"strict" : false
+				},
+				{
+					"name" : "outputResult_Addr[10]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleKmodes_Addr[10]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleFP_Addr[11]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_Addr[11]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_Addr[11]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleFP_Addr[11]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleKmodes_Addr[11]",
+					"strict" : false
+				},
+				{
+					"name" : "outputResult_Addr[11]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleKmodes_Addr[11]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleKmodes_Addr[12]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_Addr[12]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleFP_Addr[12]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_Addr[12]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleFP_Addr[12]",
+					"strict" : false
+				},
+				{
+					"name" : "outputResult_Addr[12]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleKmodes_Addr[12]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleFP_Addr[13]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_Addr[13]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModule_Addr[13]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleFP_Addr[13]",
+					"strict" : false
+				},
+				{
+					"name" : "mapCalcModuleKmodes_Addr[13]",
+					"strict" : false
+				},
+				{
+					"name" : "outputResult_Addr[13]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModuleKmodes_Addr[13]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

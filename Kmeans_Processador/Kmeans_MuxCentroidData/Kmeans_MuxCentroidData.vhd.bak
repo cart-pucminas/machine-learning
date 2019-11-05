@@ -1,0 +1,30 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+Entity Kmeans_MuxCentroidData is
+
+	GENERIC (Palavra : INTEGER := 32);
+	
+    PORT ( 
+			centroidInit          : in  STD_LOGIC_VECTOR (Palavra-1 downto 0);
+			centroidCalc   	      : in  STD_LOGIC_VECTOR (Palavra-1 downto 0);
+			op				      : in  STD_LOGIC;
+			centroidData_A        : out STD_LOGIC_VECTOR (Palavra-1 downto 0);
+			centroidData_B        : out STD_LOGIC_VECTOR (Palavra-1 downto 0)
+		);
+END Kmeans_MuxCentroidData;
+
+ARCHITECTURE arch of Kmeans_MuxCentroidData is
+
+BEGIN
+
+	--resultado que recebe do controlador op que ira conduzir qual das entradas vai para a saida
+	with op select	
+	centroidData_A <= (others =>'0') when '0',
+					  centroidCalc   when '1';
+					  
+	with op select	
+	centroidData_B <= centroidInit   when '0',
+					 (others =>'0')  when '1';
+
+END arch;

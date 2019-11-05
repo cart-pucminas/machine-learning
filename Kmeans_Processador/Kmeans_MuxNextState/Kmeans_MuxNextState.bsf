@@ -1,0 +1,141 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 424 288)
+	(text "Kmeans_MuxNextState" (rect 5 0 101 12)(font "Arial" ))
+	(text "inst" (rect 8 256 20 268)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "nrst" (rect 0 0 15 12)(font "Arial" ))
+		(text "nrst" (rect 21 27 36 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "idle[numbitsstates-1..0]" (rect 0 0 87 12)(font "Arial" ))
+		(text "idle[numbitsstates-1..0]" (rect 21 43 108 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "memoryInitialize[numbitsstates-1..0]" (rect 0 0 138 12)(font "Arial" ))
+		(text "memoryInitialize[numbitsstates-1..0]" (rect 21 59 159 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "controlCentroidInitialize[numbitsstates-1..0]" (rect 0 0 161 12)(font "Arial" ))
+		(text "controlCentroidInitialize[numbitsstates-1..0]" (rect 21 75 182 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "centroidInitialize[numbitsstates-1..0]" (rect 0 0 133 12)(font "Arial" ))
+		(text "centroidInitialize[numbitsstates-1..0]" (rect 21 91 154 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "calcMapModule[numbitsstates-1..0]" (rect 0 0 136 12)(font "Arial" ))
+		(text "calcMapModule[numbitsstates-1..0]" (rect 21 107 157 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "calcCentroidModule[numbitsstates-1..0]" (rect 0 0 152 12)(font "Arial" ))
+		(text "calcCentroidModule[numbitsstates-1..0]" (rect 21 123 173 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 3))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "iterationCount[numbitsstates-1..0]" (rect 0 0 128 12)(font "Arial" ))
+		(text "iterationCount[numbitsstates-1..0]" (rect 21 139 149 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 3))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "outputResult[numbitsstates-1..0]" (rect 0 0 125 12)(font "Arial" ))
+		(text "outputResult[numbitsstates-1..0]" (rect 21 155 146 167)(font "Arial" ))
+		(line (pt 0 160)(pt 16 160)(line_width 3))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "calcMapModuleFP[numbitsstates-1..0]" (rect 0 0 148 12)(font "Arial" ))
+		(text "calcMapModuleFP[numbitsstates-1..0]" (rect 21 171 169 183)(font "Arial" ))
+		(line (pt 0 176)(pt 16 176)(line_width 3))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "calcCentroidModuleFP[numbitsstates-1..0]" (rect 0 0 164 12)(font "Arial" ))
+		(text "calcCentroidModuleFP[numbitsstates-1..0]" (rect 21 187 185 199)(font "Arial" ))
+		(line (pt 0 192)(pt 16 192)(line_width 3))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "calcMapModuleKmodes[numbitsstates-1..0]" (rect 0 0 171 12)(font "Arial" ))
+		(text "calcMapModuleKmodes[numbitsstates-1..0]" (rect 21 203 192 215)(font "Arial" ))
+		(line (pt 0 208)(pt 16 208)(line_width 3))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "calcCentroidModuleKmodes[numbitsstates-1..0]" (rect 0 0 186 12)(font "Arial" ))
+		(text "calcCentroidModuleKmodes[numbitsstates-1..0]" (rect 21 219 207 231)(font "Arial" ))
+		(line (pt 0 224)(pt 16 224)(line_width 3))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "op[numbitsstates-1..0]" (rect 0 0 84 12)(font "Arial" ))
+		(text "op[numbitsstates-1..0]" (rect 21 235 105 247)(font "Arial" ))
+		(line (pt 0 240)(pt 16 240)(line_width 3))
+	)
+	(port
+		(pt 408 32)
+		(output)
+		(text "next_State[numbitsstates-1..0]" (rect 0 0 118 12)(font "Arial" ))
+		(text "next_State[numbitsstates-1..0]" (rect 269 27 387 39)(font "Arial" ))
+		(line (pt 408 32)(pt 392 32)(line_width 3))
+	)
+	(parameter
+		"NumBitsStates"
+		"4"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 392 256)(line_width 1))
+	)
+	(annotation_block (parameter)(rect 424 -64 524 16))
+)

@@ -1,0 +1,322 @@
+Classic Timing Analyzer report for Kmeans_MuxRamMemoryAddr
+Fri Jan 20 13:11:19 2017
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Timing Analyzer Settings
+  4. Parallel Compilation
+  5. tpd
+  6. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                           ;
++------------------------------+-------+---------------+-------------+-------+---------------+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time ; From  ; To            ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+-------------+-------+---------------+------------+----------+--------------+
+; Worst-case tpd               ; N/A   ; None          ; 16.917 ns   ; op[1] ; ramAddr_A[38] ; --         ; --       ; 0            ;
+; Total number of failed paths ;       ;               ;             ;       ;               ;            ;          ; 0            ;
++------------------------------+-------+---------------+-------------+-------+---------------+------------+----------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Settings                                                                                                                            ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+; Option                                                                                               ; Setting            ; From ; To ; Entity Name ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+; Device Name                                                                                          ; EP2C35F672C6       ;      ;    ;             ;
+; Timing Models                                                                                        ; Final              ;      ;    ;             ;
+; Default hold multicycle                                                                              ; Same as Multicycle ;      ;    ;             ;
+; Cut paths between unrelated clock domains                                                            ; On                 ;      ;    ;             ;
+; Cut off read during write signal paths                                                               ; On                 ;      ;    ;             ;
+; Cut off feedback from I/O pins                                                                       ; On                 ;      ;    ;             ;
+; Report Combined Fast/Slow Timing                                                                     ; Off                ;      ;    ;             ;
+; Ignore Clock Settings                                                                                ; Off                ;      ;    ;             ;
+; Analyze latches as synchronous elements                                                              ; On                 ;      ;    ;             ;
+; Enable Recovery/Removal analysis                                                                     ; Off                ;      ;    ;             ;
+; Enable Clock Latency                                                                                 ; Off                ;      ;    ;             ;
+; Use TimeQuest Timing Analyzer                                                                        ; Off                ;      ;    ;             ;
+; Minimum Core Junction Temperature                                                                    ; 0                  ;      ;    ;             ;
+; Maximum Core Junction Temperature                                                                    ; 85                 ;      ;    ;             ;
+; Number of source nodes to report per destination node                                                ; 10                 ;      ;    ;             ;
+; Number of destination nodes to report                                                                ; 10                 ;      ;    ;             ;
+; Number of paths to report                                                                            ; 200                ;      ;    ;             ;
+; Report Minimum Timing Checks                                                                         ; Off                ;      ;    ;             ;
+; Use Fast Timing Models                                                                               ; Off                ;      ;    ;             ;
+; Report IO Paths Separately                                                                           ; Off                ;      ;    ;             ;
+; Perform Multicorner Analysis                                                                         ; On                 ;      ;    ;             ;
+; Reports the worst-case path for each clock domain and analysis                                       ; Off                ;      ;    ;             ;
+; Reports worst-case timing paths for each clock domain and analysis                                   ; On                 ;      ;    ;             ;
+; Specifies the maximum number of worst-case timing paths to report for each clock domain and analysis ; 100                ;      ;    ;             ;
+; Removes common clock path pessimism (CCPP) during slack computation                                  ; Off                ;      ;    ;             ;
+; Output I/O Timing Endpoint                                                                           ; Near End           ;      ;    ;             ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 2      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; tpd                                                                                                                                                  ;
++-----------------------------------------+-----------------------------------------------------+-----------------+--------------------+---------------+
+; Slack                                   ; Required P2P Time                                   ; Actual P2P Time ; From               ; To            ;
++-----------------------------------------+-----------------------------------------------------+-----------------+--------------------+---------------+
+; N/A                                     ; None                                                ; 16.917 ns       ; op[1]              ; ramAddr_A[38] ;
+; N/A                                     ; None                                                ; 16.342 ns       ; op[0]              ; ramAddr_A[38] ;
+; N/A                                     ; None                                                ; 16.164 ns       ; mapAddr_A[38]      ; ramAddr_A[38] ;
+; N/A                                     ; None                                                ; 16.115 ns       ; op[0]              ; ramAddr_A[53] ;
+; N/A                                     ; None                                                ; 15.975 ns       ; op[1]              ; ramAddr_A[53] ;
+; N/A                                     ; None                                                ; 15.259 ns       ; op[0]              ; ramAddr_A[8]  ;
+; N/A                                     ; None                                                ; 14.986 ns       ; centroidAddr_A[38] ; ramAddr_A[38] ;
+; N/A                                     ; None                                                ; 14.049 ns       ; op[1]              ; ramAddr_A[8]  ;
+; N/A                                     ; None                                                ; 13.918 ns       ; op[0]              ; ramAddr_B[9]  ;
+; N/A                                     ; None                                                ; 13.780 ns       ; op[0]              ; ramAddr_A[52] ;
+; N/A                                     ; None                                                ; 13.750 ns       ; op[1]              ; ramAddr_B[9]  ;
+; N/A                                     ; None                                                ; 13.665 ns       ; mapAddr_A[53]      ; ramAddr_A[53] ;
+; N/A                                     ; None                                                ; 13.634 ns       ; op[1]              ; ramAddr_A[52] ;
+; N/A                                     ; None                                                ; 13.553 ns       ; op[0]              ; ramAddr_A[62] ;
+; N/A                                     ; None                                                ; 13.501 ns       ; op[0]              ; ramAddr_A[60] ;
+; N/A                                     ; None                                                ; 13.467 ns       ; op[0]              ; ramAddr_A[12] ;
+; N/A                                     ; None                                                ; 13.452 ns       ; op[1]              ; ramAddr_B[48] ;
+; N/A                                     ; None                                                ; 13.363 ns       ; op[1]              ; ramAddr_A[62] ;
+; N/A                                     ; None                                                ; 13.340 ns       ; op[0]              ; ramAddr_A[43] ;
+; N/A                                     ; None                                                ; 13.336 ns       ; op[1]              ; ramAddr_A[60] ;
+; N/A                                     ; None                                                ; 13.328 ns       ; op[1]              ; ramAddr_A[34] ;
+; N/A                                     ; None                                                ; 13.307 ns       ; op[0]              ; ramAddr_A[56] ;
+; N/A                                     ; None                                                ; 13.289 ns       ; op[1]              ; ramAddr_A[56] ;
+; N/A                                     ; None                                                ; 13.287 ns       ; op[1]              ; ramAddr_A[20] ;
+; N/A                                     ; None                                                ; 13.262 ns       ; op[0]              ; ramAddr_A[50] ;
+; N/A                                     ; None                                                ; 13.248 ns       ; op[0]              ; ramAddr_A[47] ;
+; N/A                                     ; None                                                ; 13.247 ns       ; op[0]              ; ramAddr_A[7]  ;
+; N/A                                     ; None                                                ; 13.243 ns       ; op[0]              ; ramAddr_A[48] ;
+; N/A                                     ; None                                                ; 13.221 ns       ; centroidAddr_A[53] ; ramAddr_A[53] ;
+; N/A                                     ; None                                                ; 13.220 ns       ; op[1]              ; ramAddr_B[55] ;
+; N/A                                     ; None                                                ; 13.181 ns       ; op[0]              ; ramAddr_A[49] ;
+; N/A                                     ; None                                                ; 13.163 ns       ; centroidAddr_A[8]  ; ramAddr_A[8]  ;
+; N/A                                     ; None                                                ; 13.145 ns       ; centroidAddr_A[60] ; ramAddr_A[60] ;
+; N/A                                     ; None                                                ; 13.127 ns       ; op[0]              ; ramAddr_B[4]  ;
+; N/A                                     ; None                                                ; 13.127 ns       ; op[1]              ; ramAddr_A[50] ;
+; N/A                                     ; None                                                ; 13.121 ns       ; op[1]              ; ramAddr_A[54] ;
+; N/A                                     ; None                                                ; 13.117 ns       ; op[1]              ; ramAddr_A[47] ;
+; N/A                                     ; None                                                ; 13.097 ns       ; op[1]              ; ramAddr_A[48] ;
+; N/A                                     ; None                                                ; 13.088 ns       ; op[1]              ; ramAddr_A[43] ;
+; N/A                                     ; None                                                ; 13.075 ns       ; op[1]              ; ramAddr_B[4]  ;
+; N/A                                     ; None                                                ; 13.035 ns       ; op[1]              ; ramAddr_A[49] ;
+; N/A                                     ; None                                                ; 13.033 ns       ; op[0]              ; ramAddr_A[54] ;
+; N/A                                     ; None                                                ; 13.031 ns       ; op[0]              ; ramAddr_B[11] ;
+; N/A                                     ; None                                                ; 13.028 ns       ; op[0]              ; ramAddr_A[10] ;
+; N/A                                     ; None                                                ; 13.019 ns       ; op[0]              ; ramAddr_B[48] ;
+; N/A                                     ; None                                                ; 12.999 ns       ; op[0]              ; ramAddr_A[14] ;
+; N/A                                     ; None                                                ; 12.997 ns       ; op[0]              ; ramAddr_B[7]  ;
+; N/A                                     ; None                                                ; 12.969 ns       ; op[1]              ; ramAddr_B[7]  ;
+; N/A                                     ; None                                                ; 12.968 ns       ; op[0]              ; ramAddr_A[9]  ;
+; N/A                                     ; None                                                ; 12.945 ns       ; op[0]              ; ramAddr_A[51] ;
+; N/A                                     ; None                                                ; 12.936 ns       ; op[0]              ; ramAddr_A[44] ;
+; N/A                                     ; None                                                ; 12.902 ns       ; op[1]              ; ramAddr_B[46] ;
+; N/A                                     ; None                                                ; 12.892 ns       ; op[1]              ; ramAddr_A[31] ;
+; N/A                                     ; None                                                ; 12.873 ns       ; op[0]              ; ramAddr_A[6]  ;
+; N/A                                     ; None                                                ; 12.868 ns       ; mapAddr_A[8]       ; ramAddr_A[8]  ;
+; N/A                                     ; None                                                ; 12.867 ns       ; op[1]              ; ramAddr_A[18] ;
+; N/A                                     ; None                                                ; 12.867 ns       ; op[0]              ; ramAddr_A[11] ;
+; N/A                                     ; None                                                ; 12.865 ns       ; op[0]              ; ramAddr_B[54] ;
+; N/A                                     ; None                                                ; 12.865 ns       ; op[1]              ; ramAddr_B[54] ;
+; N/A                                     ; None                                                ; 12.858 ns       ; op[0]              ; ramAddr_A[4]  ;
+; N/A                                     ; None                                                ; 12.848 ns       ; mapAddr_A[56]      ; ramAddr_A[56] ;
+; N/A                                     ; None                                                ; 12.847 ns       ; op[1]              ; ramAddr_B[11] ;
+; N/A                                     ; None                                                ; 12.847 ns       ; op[0]              ; ramAddr_A[39] ;
+; N/A                                     ; None                                                ; 12.832 ns       ; mapAddr_B[9]       ; ramAddr_B[9]  ;
+; N/A                                     ; None                                                ; 12.825 ns       ; mapAddr_A[60]      ; ramAddr_A[60] ;
+; N/A                                     ; None                                                ; 12.807 ns       ; op[0]              ; ramAddr_A[3]  ;
+; N/A                                     ; None                                                ; 12.801 ns       ; op[0]              ; ramAddr_B[55] ;
+; N/A                                     ; None                                                ; 12.800 ns       ; op[1]              ; ramAddr_A[51] ;
+; N/A                                     ; None                                                ; 12.794 ns       ; op[0]              ; ramAddr_A[13] ;
+; N/A                                     ; None                                                ; 12.792 ns       ; op[1]              ; ramAddr_A[3]  ;
+; N/A                                     ; None                                                ; 12.779 ns       ; op[1]              ; ramAddr_A[59] ;
+; N/A                                     ; None                                                ; 12.775 ns       ; memInitAddr[56]    ; ramAddr_A[56] ;
+; N/A                                     ; None                                                ; 12.772 ns       ; op[0]              ; ramAddr_A[2]  ;
+; N/A                                     ; None                                                ; 12.740 ns       ; op[0]              ; ramAddr_A[0]  ;
+; N/A                                     ; None                                                ; 12.731 ns       ; op[0]              ; ramAddr_B[2]  ;
+; N/A                                     ; None                                                ; 12.728 ns       ; op[1]              ; ramAddr_A[5]  ;
+; N/A                                     ; None                                                ; 12.727 ns       ; op[0]              ; ramAddr_A[61] ;
+; N/A                                     ; None                                                ; 12.717 ns       ; mapAddr_A[54]      ; ramAddr_A[54] ;
+; N/A                                     ; None                                                ; 12.715 ns       ; op[0]              ; ramAddr_A[5]  ;
+; N/A                                     ; None                                                ; 12.703 ns       ; op[0]              ; ramAddr_A[1]  ;
+; N/A                                     ; None                                                ; 12.696 ns       ; op[1]              ; ramAddr_A[1]  ;
+; N/A                                     ; None                                                ; 12.693 ns       ; op[1]              ; ramAddr_A[12] ;
+; N/A                                     ; None                                                ; 12.692 ns       ; op[0]              ; ramAddr_A[59] ;
+; N/A                                     ; None                                                ; 12.688 ns       ; op[1]              ; ramAddr_B[56] ;
+; N/A                                     ; None                                                ; 12.673 ns       ; op[1]              ; ramAddr_A[7]  ;
+; N/A                                     ; None                                                ; 12.670 ns       ; op[1]              ; ramAddr_A[44] ;
+; N/A                                     ; None                                                ; 12.654 ns       ; centroidAddr_A[56] ; ramAddr_A[56] ;
+; N/A                                     ; None                                                ; 12.632 ns       ; op[0]              ; ramAddr_A[42] ;
+; N/A                                     ; None                                                ; 12.620 ns       ; op[0]              ; ramAddr_A[58] ;
+; N/A                                     ; None                                                ; 12.620 ns       ; op[0]              ; ramAddr_A[46] ;
+; N/A                                     ; None                                                ; 12.618 ns       ; op[1]              ; ramAddr_A[39] ;
+; N/A                                     ; None                                                ; 12.611 ns       ; memInitAddr[8]     ; ramAddr_A[8]  ;
+; N/A                                     ; None                                                ; 12.605 ns       ; op[0]              ; ramAddr_A[41] ;
+; N/A                                     ; None                                                ; 12.599 ns       ; op[1]              ; ramAddr_B[2]  ;
+; N/A                                     ; None                                                ; 12.566 ns       ; centroidAddr_A[54] ; ramAddr_A[54] ;
+; N/A                                     ; None                                                ; 12.564 ns       ; op[0]              ; ramAddr_A[20] ;
+; N/A                                     ; None                                                ; 12.554 ns       ; op[1]              ; ramAddr_A[61] ;
+; N/A                                     ; None                                                ; 12.544 ns       ; op[0]              ; ramAddr_A[45] ;
+; N/A                                     ; None                                                ; 12.539 ns       ; op[0]              ; ramAddr_A[40] ;
+; N/A                                     ; None                                                ; 12.539 ns       ; op[0]              ; ramAddr_A[15] ;
+; N/A                                     ; None                                                ; 12.511 ns       ; op[1]              ; ramAddr_B[52] ;
+; N/A                                     ; None                                                ; 12.491 ns       ; op[1]              ; ramAddr_A[46] ;
+; N/A                                     ; None                                                ; 12.485 ns       ; op[1]              ; ramAddr_B[45] ;
+; N/A                                     ; None                                                ; 12.483 ns       ; op[0]              ; ramAddr_A[34] ;
+; N/A                                     ; None                                                ; 12.473 ns       ; op[0]              ; ramAddr_B[46] ;
+; N/A                                     ; None                                                ; 12.473 ns       ; op[1]              ; ramAddr_A[0]  ;
+; N/A                                     ; None                                                ; 12.434 ns       ; op[1]              ; ramAddr_A[29] ;
+; N/A                                     ; None                                                ; 12.424 ns       ; op[1]              ; ramAddr_A[58] ;
+; N/A                                     ; None                                                ; 12.412 ns       ; op[1]              ; ramAddr_A[42] ;
+; N/A                                     ; None                                                ; 12.411 ns       ; centroidAddr_B[9]  ; ramAddr_B[9]  ;
+; N/A                                     ; None                                                ; 12.409 ns       ; op[0]              ; ramAddr_A[63] ;
+; N/A                                     ; None                                                ; 12.409 ns       ; op[1]              ; ramAddr_A[63] ;
+; N/A                                     ; None                                                ; 12.406 ns       ; op[1]              ; ramAddr_A[25] ;
+; N/A                                     ; None                                                ; 12.398 ns       ; op[0]              ; ramAddr_B[10] ;
+; N/A                                     ; None                                                ; 12.397 ns       ; centroidAddr_A[59] ; ramAddr_A[59] ;
+; N/A                                     ; None                                                ; 12.379 ns       ; op[0]              ; ramAddr_A[18] ;
+; N/A                                     ; None                                                ; 12.376 ns       ; mapAddr_A[59]      ; ramAddr_A[59] ;
+; N/A                                     ; None                                                ; 12.338 ns       ; centroidAddr_A[62] ; ramAddr_A[62] ;
+; N/A                                     ; None                                                ; 12.333 ns       ; op[1]              ; ramAddr_A[41] ;
+; N/A                                     ; None                                                ; 12.324 ns       ; op[1]              ; ramAddr_A[45] ;
+; N/A                                     ; None                                                ; 12.320 ns       ; memInitAddr[60]    ; ramAddr_A[60] ;
+; N/A                                     ; None                                                ; 12.318 ns       ; op[0]              ; ramAddr_A[57] ;
+; N/A                                     ; None                                                ; 12.291 ns       ; op[0]              ; ramAddr_A[55] ;
+; N/A                                     ; None                                                ; 12.285 ns       ; op[1]              ; ramAddr_A[6]  ;
+; N/A                                     ; None                                                ; 12.282 ns       ; op[1]              ; ramAddr_A[40] ;
+; N/A                                     ; None                                                ; 12.269 ns       ; op[0]              ; ramAddr_B[56] ;
+; N/A                                     ; None                                                ; 12.263 ns       ; op[1]              ; ramAddr_A[4]  ;
+; N/A                                     ; None                                                ; 12.259 ns       ; op[1]              ; ramAddr_A[14] ;
+; N/A                                     ; None                                                ; 12.239 ns       ; mapAddr_A[62]      ; ramAddr_A[62] ;
+; N/A                                     ; None                                                ; 12.231 ns       ; op[0]              ; ramAddr_A[25] ;
+; N/A                                     ; None                                                ; 12.228 ns       ; op[0]              ; ramAddr_A[29] ;
+; N/A                                     ; None                                                ; 12.219 ns       ; op[1]              ; ramAddr_B[10] ;
+; N/A                                     ; None                                                ; 12.219 ns       ; op[0]              ; ramAddr_B[1]  ;
+; N/A                                     ; None                                                ; 12.206 ns       ; op[0]              ; ramAddr_B[45] ;
+; N/A                                     ; None                                                ; 12.205 ns       ; op[1]              ; ramAddr_A[9]  ;
+; N/A                                     ; None                                                ; 12.201 ns       ; op[1]              ; ramAddr_A[2]  ;
+; N/A                                     ; None                                                ; 12.197 ns       ; op[1]              ; ramAddr_A[26] ;
+; N/A                                     ; None                                                ; 12.194 ns       ; op[1]              ; ramAddr_A[36] ;
+; N/A                                     ; None                                                ; 12.174 ns       ; op[1]              ; ramAddr_A[27] ;
+; N/A                                     ; None                                                ; 12.154 ns       ; mapAddr_B[4]       ; ramAddr_B[4]  ;
+; N/A                                     ; None                                                ; 12.149 ns       ; op[1]              ; ramAddr_A[55] ;
+; N/A                                     ; None                                                ; 12.136 ns       ; op[1]              ; ramAddr_A[57] ;
+; N/A                                     ; None                                                ; 12.127 ns       ; op[0]              ; ramAddr_A[26] ;
+; N/A                                     ; None                                                ; 12.110 ns       ; mapAddr_B[48]      ; ramAddr_B[48] ;
+; N/A                                     ; None                                                ; 12.107 ns       ; op[1]              ; ramAddr_A[11] ;
+; N/A                                     ; None                                                ; 12.105 ns       ; op[0]              ; ramAddr_A[31] ;
+; N/A                                     ; None                                                ; 12.087 ns       ; op[0]              ; ramAddr_A[27] ;
+; N/A                                     ; None                                                ; 12.077 ns       ; op[0]              ; ramAddr_B[14] ;
+; N/A                                     ; None                                                ; 12.077 ns       ; centroidAddr_A[58] ; ramAddr_A[58] ;
+; N/A                                     ; None                                                ; 12.074 ns       ; op[0]              ; ramAddr_A[28] ;
+; N/A                                     ; None                                                ; 12.069 ns       ; op[0]              ; ramAddr_B[52] ;
+; N/A                                     ; None                                                ; 12.066 ns       ; centroidAddr_B[48] ; ramAddr_B[48] ;
+; N/A                                     ; None                                                ; 12.063 ns       ; op[0]              ; ramAddr_B[5]  ;
+; N/A                                     ; None                                                ; 12.062 ns       ; op[1]              ; ramAddr_A[22] ;
+; N/A                                     ; None                                                ; 12.048 ns       ; op[1]              ; ramAddr_A[13] ;
+; N/A                                     ; None                                                ; 12.035 ns       ; op[1]              ; ramAddr_B[43] ;
+; N/A                                     ; None                                                ; 12.032 ns       ; op[0]              ; ramAddr_B[12] ;
+; N/A                                     ; None                                                ; 12.030 ns       ; op[1]              ; ramAddr_B[49] ;
+; N/A                                     ; None                                                ; 12.030 ns       ; op[1]              ; ramAddr_A[24] ;
+; N/A                                     ; None                                                ; 12.024 ns       ; op[0]              ; ramAddr_A[24] ;
+; N/A                                     ; None                                                ; 12.023 ns       ; op[1]              ; ramAddr_A[33] ;
+; N/A                                     ; None                                                ; 11.999 ns       ; op[1]              ; ramAddr_B[1]  ;
+; N/A                                     ; None                                                ; 11.992 ns       ; op[1]              ; ramAddr_A[10] ;
+; N/A                                     ; None                                                ; 11.987 ns       ; mapAddr_A[58]      ; ramAddr_A[58] ;
+; N/A                                     ; None                                                ; 11.983 ns       ; mapAddr_A[55]      ; ramAddr_A[55] ;
+; N/A                                     ; None                                                ; 11.932 ns       ; op[1]              ; ramAddr_B[51] ;
+; N/A                                     ; None                                                ; 11.920 ns       ; centroidAddr_A[10] ; ramAddr_A[10] ;
+; N/A                                     ; None                                                ; 11.912 ns       ; centroidAddr_A[55] ; ramAddr_A[55] ;
+; N/A                                     ; None                                                ; 11.864 ns       ; op[1]              ; ramAddr_B[50] ;
+; N/A                                     ; None                                                ; 11.863 ns       ; op[1]              ; ramAddr_B[12] ;
+; N/A                                     ; None                                                ; 11.863 ns       ; memInitAddr[54]    ; ramAddr_A[54] ;
+; N/A                                     ; None                                                ; 11.861 ns       ; op[1]              ; ramAddr_A[28] ;
+; N/A                                     ; None                                                ; 11.859 ns       ; op[1]              ; ramAddr_A[23] ;
+; N/A                                     ; None                                                ; 11.819 ns       ; centroidAddr_B[7]  ; ramAddr_B[7]  ;
+; N/A                                     ; None                                                ; 11.816 ns       ; centroidAddr_B[11] ; ramAddr_B[11] ;
+; N/A                                     ; None                                                ; 11.793 ns       ; mapAddr_B[55]      ; ramAddr_B[55] ;
+; N/A                                     ; None                                                ; 11.792 ns       ; centroidAddr_B[46] ; ramAddr_B[46] ;
+; N/A                                     ; None                                                ; 11.786 ns       ; op[0]              ; ramAddr_B[13] ;
+; N/A                                     ; None                                                ; 11.785 ns       ; op[0]              ; ramAddr_A[23] ;
+; N/A                                     ; None                                                ; 11.777 ns       ; op[0]              ; ramAddr_B[8]  ;
+; N/A                                     ; None                                                ; 11.762 ns       ; op[0]              ; ramAddr_B[43] ;
+; N/A                                     ; None                                                ; 11.756 ns       ; op[1]              ; ramAddr_B[47] ;
+; N/A                                     ; None                                                ; 11.756 ns       ; op[1]              ; ramAddr_A[37] ;
+; N/A                                     ; None                                                ; 11.753 ns       ; op[0]              ; ramAddr_B[6]  ;
+; N/A                                     ; None                                                ; 11.750 ns       ; op[1]              ; ramAddr_A[32] ;
+; N/A                                     ; None                                                ; 11.743 ns       ; mapAddr_B[7]       ; ramAddr_B[7]  ;
+; N/A                                     ; None                                                ; 11.742 ns       ; op[1]              ; ramAddr_A[17] ;
+; N/A                                     ; None                                                ; 11.740 ns       ; op[1]              ; ramAddr_A[16] ;
+; N/A                                     ; None                                                ; 11.691 ns       ; memInitAddr[57]    ; ramAddr_A[57] ;
+; N/A                                     ; None                                                ; 11.688 ns       ; memInitAddr[59]    ; ramAddr_A[59] ;
+; N/A                                     ; None                                                ; 11.686 ns       ; mapAddr_B[54]      ; ramAddr_B[54] ;
+; N/A                                     ; None                                                ; 11.676 ns       ; op[0]              ; ramAddr_A[36] ;
+; N/A                                     ; None                                                ; 11.675 ns       ; centroidAddr_A[20] ; ramAddr_A[20] ;
+; N/A                                     ; None                                                ; 11.660 ns       ; op[1]              ; ramAddr_A[19] ;
+; N/A                                     ; None                                                ; 11.647 ns       ; centroidAddr_A[57] ; ramAddr_A[57] ;
+; N/A                                     ; None                                                ; 11.612 ns       ; op[0]              ; ramAddr_B[49] ;
+; N/A                                     ; None                                                ; 11.611 ns       ; op[1]              ; ramAddr_B[5]  ;
+; N/A                                     ; None                                                ; 11.608 ns       ; op[1]              ; ramAddr_B[14] ;
+; N/A                                     ; None                                                ; 11.590 ns       ; op[1]              ; ramAddr_B[13] ;
+; N/A                                     ; None                                                ; 11.587 ns       ; op[1]              ; ramAddr_A[35] ;
+; Timing analysis restricted to 200 rows. ; To change the limit use Settings (Assignments menu) ;                 ;                    ;               ;
++-----------------------------------------+-----------------------------------------------------+-----------------+--------------------+---------------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Classic Timing Analyzer
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Fri Jan 20 13:11:19 2017
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off Kmeans_MuxRamMemoryAddr -c Kmeans_MuxRamMemoryAddr --timing_analysis_only
+Info: Longest tpd from source pin "op[1]" to destination pin "ramAddr_A[38]" is 16.917 ns
+    Info: 1: + IC(0.000 ns) + CELL(0.860 ns) = 0.860 ns; Loc. = PIN_AF20; Fanout = 192; PIN Node = 'op[1]'
+    Info: 2: + IC(6.602 ns) + CELL(0.415 ns) = 7.877 ns; Loc. = LCCOMB_X64_Y16_N4; Fanout = 1; COMB Node = 'Mux25~0'
+    Info: 3: + IC(5.193 ns) + CELL(0.438 ns) = 13.508 ns; Loc. = LCCOMB_X1_Y30_N16; Fanout = 1; COMB Node = 'Mux25~1'
+    Info: 4: + IC(0.757 ns) + CELL(2.652 ns) = 16.917 ns; Loc. = PIN_G1; Fanout = 0; PIN Node = 'ramAddr_A[38]'
+    Info: Total cell delay = 4.365 ns ( 25.80 % )
+    Info: Total interconnect delay = 12.552 ns ( 74.20 % )
+Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 193 megabytes
+    Info: Processing ended: Fri Jan 20 13:11:19 2017
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

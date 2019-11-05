@@ -1,0 +1,26 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+Entity Kmeans_MuxMapData is
+
+	GENERIC (Palavra : INTEGER := 32);
+	
+    PORT ( 
+			mapInit      : in  STD_LOGIC_VECTOR (Palavra-1 downto 0);
+			mapCalc   	 : in  STD_LOGIC_VECTOR (Palavra-1 downto 0);
+			op			 : in  STD_LOGIC;
+			mapData      : out STD_LOGIC_VECTOR (Palavra-1 downto 0)
+		);
+END Kmeans_MuxMapData;
+
+ARCHITECTURE arch of Kmeans_MuxMapData is
+
+BEGIN
+
+	--resultado que recebe do controlador op que ira conduzir qual das entradas vai para a saida
+	with op select
+	
+	mapData <=	mapInit when '0',
+				mapCalc when '1';
+
+END arch;

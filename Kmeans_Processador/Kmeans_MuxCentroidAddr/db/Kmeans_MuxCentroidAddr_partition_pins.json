@@ -1,0 +1,349 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "centroidAddr_A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidAddr_A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidAddr_A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidAddr_A[3]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidAddr_A[4]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidAddr_A[5]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidAddr_A[6]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidAddr_A[7]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidAddr_A[8]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidAddr_A[9]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidAddr_A[10]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidAddr_A[11]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidAddr_A[12]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidAddr_A[13]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidAddr_B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidAddr_B[1]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidAddr_B[2]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidAddr_B[3]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidAddr_B[4]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidAddr_B[5]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidAddr_B[6]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidAddr_B[7]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidAddr_B[8]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidAddr_B[9]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidAddr_B[10]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidAddr_B[11]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidAddr_B[12]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidAddr_B[13]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidControlInit[0]",
+					"strict" : false
+				},
+				{
+					"name" : "op",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidControlInit[1]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidControlInit[2]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_A[3]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidControlInit[3]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_A[4]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidControlInit[4]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_A[5]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidControlInit[5]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_A[6]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidControlInit[6]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_A[7]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidControlInit[7]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_A[8]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidControlInit[8]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_A[9]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidControlInit[9]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_A[10]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidControlInit[10]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_A[11]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidControlInit[11]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_A[12]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidControlInit[12]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_A[13]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidControlInit[13]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidInit[0]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_B[1]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidInit[1]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_B[2]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidInit[2]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_B[3]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidInit[3]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_B[4]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidInit[4]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_B[5]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidInit[5]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_B[6]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidInit[6]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_B[7]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidInit[7]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_B[8]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidInit[8]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_B[9]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidInit[9]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_B[10]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidInit[10]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_B[11]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidInit[11]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_B[12]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidInit[12]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidCalcModule_B[13]",
+					"strict" : false
+				},
+				{
+					"name" : "centroidInit[13]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
