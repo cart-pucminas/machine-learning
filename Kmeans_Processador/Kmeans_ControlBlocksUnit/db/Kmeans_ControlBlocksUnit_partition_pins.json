@@ -1,0 +1,153 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "en_MemoryInitialize",
+					"strict" : false
+				},
+				{
+					"name" : "en_ControlCentroidInitialize",
+					"strict" : false
+				},
+				{
+					"name" : "en_CentroidInitialize",
+					"strict" : false
+				},
+				{
+					"name" : "en_ControlCalcMap",
+					"strict" : false
+				},
+				{
+					"name" : "en_ControlCalcCentroid",
+					"strict" : false
+				},
+				{
+					"name" : "en_IterationCount",
+					"strict" : false
+				},
+				{
+					"name" : "en_OutputResult",
+					"strict" : false
+				},
+				{
+					"name" : "en_CalcMapFP",
+					"strict" : false
+				},
+				{
+					"name" : "en_CalcCentroidFP",
+					"strict" : false
+				},
+				{
+					"name" : "en_CalcMapKmodes",
+					"strict" : false
+				},
+				{
+					"name" : "en_CalcCentroidKmodes",
+					"strict" : false
+				},
+				{
+					"name" : "en_wrRamMemoryA",
+					"strict" : false
+				},
+				{
+					"name" : "en_wrRamMemoryB",
+					"strict" : false
+				},
+				{
+					"name" : "op_muxRamMemory[0]",
+					"strict" : false
+				},
+				{
+					"name" : "op_muxRamMemory[1]",
+					"strict" : false
+				},
+				{
+					"name" : "op_muxRamMemory[2]",
+					"strict" : false
+				},
+				{
+					"name" : "op_muxRamMemoryAddr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "op_muxRamMemoryAddr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "op_muxRamMemoryAddr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "op_muxMapData[0]",
+					"strict" : false
+				},
+				{
+					"name" : "op_muxMapData[1]",
+					"strict" : false
+				},
+				{
+					"name" : "op_muxMapData[2]",
+					"strict" : false
+				},
+				{
+					"name" : "op_muxWrRam[0]",
+					"strict" : false
+				},
+				{
+					"name" : "op_muxWrRam[1]",
+					"strict" : false
+				},
+				{
+					"name" : "op_muxWrRam[2]",
+					"strict" : false
+				},
+				{
+					"name" : "op_muxNextState[0]",
+					"strict" : false
+				},
+				{
+					"name" : "op_muxNextState[1]",
+					"strict" : false
+				},
+				{
+					"name" : "op_muxNextState[2]",
+					"strict" : false
+				},
+				{
+					"name" : "op_muxNextState[3]",
+					"strict" : false
+				},
+				{
+					"name" : "en_Count",
+					"strict" : false
+				},
+				{
+					"name" : "next_State[3]",
+					"strict" : false
+				},
+				{
+					"name" : "next_State[2]",
+					"strict" : false
+				},
+				{
+					"name" : "next_State[1]",
+					"strict" : false
+				},
+				{
+					"name" : "next_State[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "nrst",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

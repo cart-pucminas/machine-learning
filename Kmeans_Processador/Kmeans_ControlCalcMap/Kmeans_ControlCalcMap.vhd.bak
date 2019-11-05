@@ -1,0 +1,186 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+Entity Kmeans_ControlCalcMap is
+
+	GENERIC (Palavra	  : INTEGER := 64;
+			 TamanhoAddr  : INTEGER := 15;
+			 --MaxCentroid  : INTEGER := 1024;
+			 --MaxPontos    : INTEGER := 32256;
+			 MaxCentroidsBits : INTEGER := 10;
+			 MaxPontosBits : INTEGER := 14;
+			 NumBitsStates: INTEGER := 4);
+	
+	PORT(
+		clk  		      		 : in STD_LOGIC;
+		nrst 			   		 : in STD_LOGIC;
+		en_ControlCalcMap        : in STD_LOGIC;  --Habilita Inicializacao deste bloco
+		count_Centroid           : in STD_LOGIC_VECTOR(MaxCentroidsBits-1 downto 0); --Numero de centroids processados
+		count_Dado               : in STD_LOGIC_VECTOR(MaxPontosBits-1 downto 0);   --Numero de pontos processados
+		reg1			  		 : in STD_LOGIC_VECTOR(MaxCentroidsBits-1 downto 0);  --Numero de centroids
+	    reg3			  		 : in STD_LOGIC_VECTOR(MaxPontosBits-1 downto 0);  --Numero de pontos 
+	    reg5 		             : in STD_LOGIC_VECTOR(TamanhoAddr-1 downto 0);
+	    reg6 		      		 : in STD_LOGIC_VECTOR(TamanhoAddr-1 downto 0); 
+	    reg7 		      		 : in STD_LOGIC_VECTOR(Palavra-1 downto 0); 
+	    endCalc 	  			 : in STD_LOGIC;
+		en_CalcMap      		 : out STD_LOGIC;
+		clr_CalcMap	  			 : out STD_LOGIC;
+		wr_RamA 	  			 : out STD_LOGIC; 
+		wr_RamB		  			 : out STD_LOGIC; 
+		o_dado    	  			 : out STD_LOGIC_VECTOR (Palavra-1 downto 0);
+		o_count_Centroid         : out STD_LOGIC_VECTOR(MaxCentroidsBits-1 downto 0); --Numero de centroids processados
+		o_count_Dado             : out STD_LOGIC_VECTOR(MaxPontosBits-1 downto 0);   --Numero de pontos processados
+		next_State      		 : out STD_LOGIC_VECTOR (NumBitsStates-1 downto 0); --Proximo estado(bloco) a ser acessado na FMS 
+		addr_Ram_Dado	     	 : out STD_LOGIC_VECTOR (TamanhoAddr-1 downto 0);
+		addr_Ram_Centroid		 : out STD_LOGIC_VECTOR (TamanhoAddr-1 downto 0);
+		estado					 : out STD_LOGIC_VECTOR (2 downto 0)
+	);
+
+end Kmeans_ControlCalcMap;
+
+ARCHITECTURE arch OF Kmeans_ControlCalcMap IS 
+
+--TYPE state_type is (RESET, IDLE, VERIFYDATA, LOADDATA, VERIFYCENTROID,ENDCENTROIDS, CALCMINDISTANCE, STOREDATA, ENDSTATE);
+TYPE state_type is (RESET, IDLE, VERIFYDATA, LOADDATA, ENDCENTROIDS, CALCMINDISTANCE, STOREDATA, ENDSTATE);
+SIGNAL state, state_fut 	: state_type;	
+
+SIGNAL s_blockState      : STD_LOGIC_VECTOR (NumBitsStates-1 downto 0) := (others => '0');
+SIGNAL s_addrRamDado     : STD_LOGIC_VECTOR (TamanhoAddr-1 downto 0) := (others => '0');
+SIGNAL s_addrRamCentroid : STD_LOGIC_VECTOR (TamanhoAddr-1 downto 0) := (others => '0');
+SIGNAL s_countCentroid   : STD_LOGIC_VECTOR(MaxCentroidsBits-1 downto 0) := (others => '0');
+SIGNAL s_countDado		 : STD_LOGIC_VECTOR(MaxPontosBits-1 downto 0) := (others => '0');
+SIGNAL s_oDado     	     : STD_LOGIC_VECTOR (Palavra-1 downto 0) := (others =>'0');
+SIGNAL s_wrRamA  	     : STD_LOGIC := '0';
+SIGNAL s_wrRamB  	     : STD_LOGIC := '0';
+SIGNAL s_en_CalcMap		 : STD_LOGIC := '0';
+SIGNAL s_clrCalMap		 : STD_LOGIC := '0';
+	
+BEGIN
+
+	PROCESS(clk, nrst, endCalc)
+	
+	BEGIN
+	   if nrst = '0' then
+			state <= RESET;
+	   elsif endCalc = '1' then			
+			state <= ENDCENTROIDS;		
+	   elsif clk'event and clk='1' then					
+			state <= state_fut;				
+	   end if;
+    END PROCESS;
+    
+    PROCESS(clk)
+		BEGIN
+			if clk'event and clk='0' then
+			    s_blockState <= "0101";
+			    s_en_CalcMap <= '0';
+			    s_clrCalMap  <= '1';	
+			    s_wrRamA <= '0';
+			    s_wrRamB <= '0';
+			    
+				case state is
+				when RESET =>					
+					s_countDado <= (others => '0');
+					s_countCentroid <= (others => '0');
+					s_blockState <= "0100";
+					state_fut <= IDLE;
+					estado <= "000";
+					
+				when IDLE =>					
+					s_countDado <= count_Dado;
+					s_countCentroid <= count_Centroid;
+				
+					if en_ControlCalcMap='1' then
+						state_fut <= VERIFYDATA;
+					else
+						state_fut <= IDLE;
+					end if;
+					estado <= "001";
+					
+				when VERIFYDATA =>				
+					if (s_countDado < reg3) then
+						state_fut <= LOADDATA;
+					else
+						state_fut <= ENDSTATE;
+					end if;
+					estado <= "010";
+				
+				when LOADDATA =>
+					s_addrRamDado <= std_logic_vector(resize(unsigned(s_countDado),TamanhoAddr));
+					s_addrRamCentroid <= std_logic_vector(to_unsigned(conv_integer(reg5)+conv_integer(s_countCentroid),TamanhoAddr));	
+					if (s_countCentroid < reg1) then
+						state_fut <= CALCMINDISTANCE;
+					else
+						state_fut <= ENDCENTROIDS;
+					end if;
+					estado <= "011";
+									
+--				when VERIFYCENTROID =>				
+--					if (s_countCentroid < reg1) then
+--						state_fut <= CALCMINDISTANCE;
+--					else
+--						state_fut <= ENDCENTROIDS;
+--					end if;
+				
+				when CALCMINDISTANCE =>
+					s_en_CalcMap <= '1';			
+					s_clrCalMap <= '0';
+										
+--					if endCalc = '1' then														
+--						s_en_CalcMap <= '0';	
+--						s_countCentroid <= s_countCentroid + 1;	
+--						state_fut <= ENDCENTROIDS;				
+--					else
+						state_fut <= CALCMINDISTANCE;
+					--end if;	
+					estado <= "100";									
+				
+--				when ADDCENTROID =>
+--				    s_en_CalcMap <= '0';	
+--					s_countCentroid <= s_countCentroid + 1;
+--					state_fut <= ENDCENTROIDS;
+--					estado <= "000";	
+				
+				when ENDCENTROIDS =>				    
+					if (s_countCentroid < reg1-1) then
+						s_countCentroid <= s_countCentroid + 1;
+						state_fut <= LOADDATA;
+					else
+						state_fut <= STOREDATA;
+					end if;
+					estado <= "101";
+				
+				when STOREDATA =>
+					s_addrRamDado <= std_logic_vector(to_unsigned(conv_integer(reg6)+conv_integer(s_countDado),TamanhoAddr));
+					s_oDado <= reg7;
+					s_wrRamA <= '1';
+					s_countCentroid <= (others =>'0');
+					s_countDado <= s_countDado + 1;	
+					state_fut <= VERIFYDATA;
+					estado <= "110";
+					
+				when ENDSTATE =>
+				    s_blockState <= "0110";
+					s_countDado <= (others => '0');
+					s_countCentroid <= (others => '0');						
+				    state_fut <= IDLE;	
+				    estado <= "111";
+				 end case;									
+			end if;			
+		END PROCESS;
+		
+--Ligacao dos sinais com os dados de saida
+ next_State        <= s_blockState;
+ addr_Ram_Dado     <= s_addrRamDado;
+ addr_Ram_Centroid <= s_addrRamCentroid;
+ o_count_Dado      <= s_countDado;
+ o_count_Centroid  <= s_countCentroid;
+ wr_RamA 		   <= s_wrRamA;
+ wr_RamB 		   <= s_wrRamB;
+ en_CalcMap		   <= s_en_CalcMap;
+ o_dado 		   <= s_oDado;
+ clr_CalcMap       <= s_clrCalMap;
+
+END arch;

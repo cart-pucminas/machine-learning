@@ -1,0 +1,13 @@
+
+State Machine - |Kmeans_ControlCalcMap|state_fut
+Name state_fut.ENDSTATE state_fut.STOREDATA state_fut.MINDISTANCE state_fut.VERIFYDIMENSION state_fut.CALCDISTANCE state_fut.ENDCENTROIDS state_fut.LOADDATA state_fut.VERIFYDATA state_fut.IDLE state_fut.RESET 
+state_fut.RESET 0 0 0 0 0 0 0 0 0 0 
+state_fut.IDLE 0 0 0 0 0 0 0 0 1 1 
+state_fut.VERIFYDATA 0 0 0 0 0 0 0 1 0 1 
+state_fut.LOADDATA 0 0 0 0 0 0 1 0 0 1 
+state_fut.ENDCENTROIDS 0 0 0 0 0 1 0 0 0 1 
+state_fut.CALCDISTANCE 0 0 0 0 1 0 0 0 0 1 
+state_fut.VERIFYDIMENSION 0 0 0 1 0 0 0 0 0 1 
+state_fut.MINDISTANCE 0 0 1 0 0 0 0 0 0 1 
+state_fut.STOREDATA 0 1 0 0 0 0 0 0 0 1 
+state_fut.ENDSTATE 1 0 0 0 0 0 0 0 0 1 

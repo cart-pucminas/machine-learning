@@ -1,0 +1,184 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 312 384)
+	(text "Kmeans_ControlBlocksUnit" (rect 5 0 114 12)(font "Arial" ))
+	(text "inst" (rect 8 352 20 364)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 10 12)(font "Arial" ))
+		(text "clk" (rect 21 27 31 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "nrst" (rect 0 0 15 12)(font "Arial" ))
+		(text "nrst" (rect 21 43 36 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "next_State[3..0]" (rect 0 0 62 12)(font "Arial" ))
+		(text "next_State[3..0]" (rect 21 59 83 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 296 32)
+		(output)
+		(text "en_MemoryInitialize" (rect 0 0 77 12)(font "Arial" ))
+		(text "en_MemoryInitialize" (rect 198 27 275 39)(font "Arial" ))
+		(line (pt 296 32)(pt 280 32)(line_width 1))
+	)
+	(port
+		(pt 296 48)
+		(output)
+		(text "en_ControlCentroidInitialize" (rect 0 0 103 12)(font "Arial" ))
+		(text "en_ControlCentroidInitialize" (rect 172 43 275 55)(font "Arial" ))
+		(line (pt 296 48)(pt 280 48)(line_width 1))
+	)
+	(port
+		(pt 296 64)
+		(output)
+		(text "en_CentroidInitialize" (rect 0 0 75 12)(font "Arial" ))
+		(text "en_CentroidInitialize" (rect 200 59 275 71)(font "Arial" ))
+		(line (pt 296 64)(pt 280 64)(line_width 1))
+	)
+	(port
+		(pt 296 80)
+		(output)
+		(text "en_ControlCalcMap" (rect 0 0 79 12)(font "Arial" ))
+		(text "en_ControlCalcMap" (rect 196 75 275 87)(font "Arial" ))
+		(line (pt 296 80)(pt 280 80)(line_width 1))
+	)
+	(port
+		(pt 296 96)
+		(output)
+		(text "en_ControlCalcCentroid" (rect 0 0 94 12)(font "Arial" ))
+		(text "en_ControlCalcCentroid" (rect 181 91 275 103)(font "Arial" ))
+		(line (pt 296 96)(pt 280 96)(line_width 1))
+	)
+	(port
+		(pt 296 112)
+		(output)
+		(text "en_IterationCount" (rect 0 0 69 12)(font "Arial" ))
+		(text "en_IterationCount" (rect 206 107 275 119)(font "Arial" ))
+		(line (pt 296 112)(pt 280 112)(line_width 1))
+	)
+	(port
+		(pt 296 128)
+		(output)
+		(text "en_OutputResult" (rect 0 0 67 12)(font "Arial" ))
+		(text "en_OutputResult" (rect 208 123 275 135)(font "Arial" ))
+		(line (pt 296 128)(pt 280 128)(line_width 1))
+	)
+	(port
+		(pt 296 144)
+		(output)
+		(text "en_CalcMapFP" (rect 0 0 62 12)(font "Arial" ))
+		(text "en_CalcMapFP" (rect 213 139 275 151)(font "Arial" ))
+		(line (pt 296 144)(pt 280 144)(line_width 1))
+	)
+	(port
+		(pt 296 160)
+		(output)
+		(text "en_CalcCentroidFP" (rect 0 0 77 12)(font "Arial" ))
+		(text "en_CalcCentroidFP" (rect 198 155 275 167)(font "Arial" ))
+		(line (pt 296 160)(pt 280 160)(line_width 1))
+	)
+	(port
+		(pt 296 176)
+		(output)
+		(text "en_CalcMapKmodes" (rect 0 0 84 12)(font "Arial" ))
+		(text "en_CalcMapKmodes" (rect 191 171 275 183)(font "Arial" ))
+		(line (pt 296 176)(pt 280 176)(line_width 1))
+	)
+	(port
+		(pt 296 192)
+		(output)
+		(text "en_CalcCentroidKmodes" (rect 0 0 100 12)(font "Arial" ))
+		(text "en_CalcCentroidKmodes" (rect 175 187 275 199)(font "Arial" ))
+		(line (pt 296 192)(pt 280 192)(line_width 1))
+	)
+	(port
+		(pt 296 208)
+		(output)
+		(text "en_wrRamMemoryA" (rect 0 0 89 12)(font "Arial" ))
+		(text "en_wrRamMemoryA" (rect 186 203 275 215)(font "Arial" ))
+		(line (pt 296 208)(pt 280 208)(line_width 1))
+	)
+	(port
+		(pt 296 224)
+		(output)
+		(text "en_wrRamMemoryB" (rect 0 0 87 12)(font "Arial" ))
+		(text "en_wrRamMemoryB" (rect 188 219 275 231)(font "Arial" ))
+		(line (pt 296 224)(pt 280 224)(line_width 1))
+	)
+	(port
+		(pt 296 240)
+		(output)
+		(text "op_muxRamMemory[2..0]" (rect 0 0 109 12)(font "Arial" ))
+		(text "op_muxRamMemory[2..0]" (rect 166 235 275 247)(font "Arial" ))
+		(line (pt 296 240)(pt 280 240)(line_width 3))
+	)
+	(port
+		(pt 296 256)
+		(output)
+		(text "op_muxRamMemoryAddr[2..0]" (rect 0 0 130 12)(font "Arial" ))
+		(text "op_muxRamMemoryAddr[2..0]" (rect 145 251 275 263)(font "Arial" ))
+		(line (pt 296 256)(pt 280 256)(line_width 3))
+	)
+	(port
+		(pt 296 272)
+		(output)
+		(text "op_muxMapData[2..0]" (rect 0 0 89 12)(font "Arial" ))
+		(text "op_muxMapData[2..0]" (rect 186 267 275 279)(font "Arial" ))
+		(line (pt 296 272)(pt 280 272)(line_width 3))
+	)
+	(port
+		(pt 296 288)
+		(output)
+		(text "op_muxWrRam[2..0]" (rect 0 0 88 12)(font "Arial" ))
+		(text "op_muxWrRam[2..0]" (rect 187 283 275 295)(font "Arial" ))
+		(line (pt 296 288)(pt 280 288)(line_width 3))
+	)
+	(port
+		(pt 296 304)
+		(output)
+		(text "op_muxNextState[3..0]" (rect 0 0 92 12)(font "Arial" ))
+		(text "op_muxNextState[3..0]" (rect 183 299 275 311)(font "Arial" ))
+		(line (pt 296 304)(pt 280 304)(line_width 3))
+	)
+	(port
+		(pt 296 320)
+		(output)
+		(text "en_Count" (rect 0 0 38 12)(font "Arial" ))
+		(text "en_Count" (rect 237 315 275 327)(font "Arial" ))
+		(line (pt 296 320)(pt 280 320)(line_width 1))
+	)
+	(drawing
+		(rectangle (rect 16 16 280 352)(line_width 1))
+	)
+)
