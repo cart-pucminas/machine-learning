@@ -1,0 +1,67 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+Entity Kmeans_MemoryInitialize is
+
+	GENERIC (Palavra      : INTEGER := 64;
+			 TamanhoAddr  : INTEGER := 15;
+			 MaxPontosBits: INTEGER := 14;
+		     NumBitsStates: INTEGER := 4);
+	
+	PORT(
+		clk 		  		: in STD_LOGIC;
+		nrst 		  		: in STD_LOGIC;
+		nPontos    			: in STD_LOGIC_VECTOR(MaxPontosBits-1 downto 0);       --Quantidade de pontos informados
+		en_MemoryInitialize : in STD_LOGIC; 									   --Habilita Inicializacao deste bloco
+	    en_Kmeans           : in STD_LOGIC;								  
+		countData  		    : in STD_LOGIC_VECTOR (MaxPontosBits-1 downto 0);   
+		o_countData			: out STD_LOGIC_VECTOR (MaxPontosBits-1 downto 0);  
+		addr_Rom   			: out STD_LOGIC_VECTOR (TamanhoAddr-1 downto 0);
+		addr_Ram   			: out STD_LOGIC_VECTOR (TamanhoAddr-1 downto 0);
+		next_State			: out STD_LOGIC_VECTOR(NumBitsStates-1 downto 0)       --Proximo estado a ser executado
+	);
+
+end Kmeans_MemoryInitialize;
+
+ARCHITECTURE arch OF Kmeans_MemoryInitialize IS 
+
+SIGNAL s_countData   :  STD_LOGIC_VECTOR (MaxPontosBits-1 downto 0):= (others => '0');
+SIGNAL s_addr_Rom    :  STD_LOGIC_VECTOR (TamanhoAddr-1 downto 0) := (others => '0');
+SIGNAL s_addr_Ram    :  STD_LOGIC_VECTOR (TamanhoAddr-1 downto 0) := (others => '0');
+SIGNAL s_blockState  :  STD_LOGIC_VECTOR (NumBitsStates-1 downto 0) := "0001";
+
+BEGIN
+	PROCESS(clk,nrst, en_MemoryInitialize, en_Kmeans)
+	BEGIN
+		if nrst='0' then--or en_Kmeans='0'  then				
+			s_blockState <= "0001";
+			s_countData  <=(others => '0');
+			s_addr_rom   <=(others => '0');
+			s_addr_ram   <=(others => '0');
+			
+	--	elsif en_Kmeans='1' and en_MemoryInitialize='0' then
+		--	s_blockState <= "0001";
+			
+		elsif clk'event and clk='1' and en_MemoryInitialize='1' then
+			s_countData <= countData;
+			
+			if(s_countData < nPontos) then
+				s_addr_rom <= std_logic_vector(to_unsigned(conv_integer(s_countData),TamanhoAddr));
+				s_addr_ram <= std_logic_vector(to_unsigned(conv_integer(s_countData),TamanhoAddr));					
+				s_countData <= s_countData + 1;
+				s_blockState <= "0001";
+			else
+				s_countData  <= (others => '0');
+				s_blockState <="0010";
+			end if;	
+		end if;
+	END PROCESS;
+
+addr_rom   <= s_addr_rom;
+o_countData <= s_countData;
+addr_ram   <= s_addr_ram;	
+next_State <= s_blockState;
+
+end arch;

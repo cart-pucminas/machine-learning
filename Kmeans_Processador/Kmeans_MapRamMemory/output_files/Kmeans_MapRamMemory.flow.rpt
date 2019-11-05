@@ -1,0 +1,137 @@
+Flow report for Kmeans_MapRamMemory
+Wed Apr 05 22:16:05 2017
+Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Wed Apr 05 22:16:05 2017       ;
+; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
+; Revision Name                      ; Kmeans_MapRamMemory                         ;
+; Top-level Entity Name              ; Kmeans_MapRamMemory                         ;
+; Family                             ; Cyclone IV GX                               ;
+; Device                             ; EP4CGX150DF31I7                             ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; 30 / 149,760 ( < 1 % )                      ;
+;     Total combinational functions  ; 28 / 149,760 ( < 1 % )                      ;
+;     Dedicated logic registers      ; 2 / 149,760 ( < 1 % )                       ;
+; Total registers                    ; 2                                           ;
+; Total pins                         ; 38 / 508 ( 7 % )                            ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 327,680 / 6,635,520 ( 5 % )                 ;
+; Embedded Multiplier 9-bit elements ; 0 / 720 ( 0 % )                             ;
+; Total GXB Receiver Channel PCS     ; 0 / 8 ( 0 % )                               ;
+; Total GXB Receiver Channel PMA     ; 0 / 8 ( 0 % )                               ;
+; Total GXB Transmitter Channel PCS  ; 0 / 8 ( 0 % )                               ;
+; Total GXB Transmitter Channel PMA  ; 0 / 8 ( 0 % )                               ;
+; Total PLLs                         ; 0 / 8 ( 0 % )                               ;
++------------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 04/05/2017 22:10:19 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; Kmeans_MapRamMemory ;
++-------------------+---------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                            ;
++-------------------------------------+----------------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+----------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 141761621757010.149144101804012        ; --            ; --          ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                   ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                 ; <None>        ; --          ; --             ;
+; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP              ; 100                                    ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; -40                                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; Kmeans_MapRamMemory.bsf                ; --            ; --          ; --             ;
+; MISC_FILE                           ; Kmeans_MapRamMemory_inst.vhd           ; --            ; --          ; --             ;
+; MISC_FILE                           ; Kmeans_MapRamMemory.cmp                ; --            ; --          ; --             ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --            ; --          ; --             ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --             ;
++-------------------------------------+----------------------------------------+---------------+-------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:02:04     ; 1.0                     ; 763 MB              ; 00:02:47                           ;
+; Fitter                    ; 00:02:18     ; 1.0                     ; 1423 MB             ; 00:02:12                           ;
+; Assembler                 ; 00:00:29     ; 1.0                     ; 631 MB              ; 00:00:26                           ;
+; TimeQuest Timing Analyzer ; 00:00:16     ; 1.0                     ; 708 MB              ; 00:00:14                           ;
+; EDA Netlist Writer        ; 00:00:07     ; 1.0                     ; 601 MB              ; 00:00:07                           ;
+; Total                     ; 00:05:14     ; --                      ; --                  ; 00:05:46                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                         ;
++---------------------------+------------------+------------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++---------------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis      ; LUCAS-PC         ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                    ; LUCAS-PC         ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler                 ; LUCAS-PC         ; Windows 10 ; 10.0       ; x86_64         ;
+; TimeQuest Timing Analyzer ; LUCAS-PC         ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; LUCAS-PC         ; Windows 10 ; 10.0       ; x86_64         ;
++---------------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off Kmeans_MapRamMemory -c Kmeans_MapRamMemory
+quartus_fit --read_settings_files=off --write_settings_files=off Kmeans_MapRamMemory -c Kmeans_MapRamMemory
+quartus_asm --read_settings_files=off --write_settings_files=off Kmeans_MapRamMemory -c Kmeans_MapRamMemory
+quartus_sta Kmeans_MapRamMemory -c Kmeans_MapRamMemory
+quartus_eda --read_settings_files=off --write_settings_files=off Kmeans_MapRamMemory -c Kmeans_MapRamMemory
+
+
+
