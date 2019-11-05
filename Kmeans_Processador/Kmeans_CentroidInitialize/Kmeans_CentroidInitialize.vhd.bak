@@ -1,0 +1,57 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+USE ieee.std_logic_unsigned.all ;
+use ieee.numeric_std.all;
+
+Entity Kmeans_CentroidInitialize is
+    GENERIC ( TamanhoAddr : INTEGER := 15; 
+		      Palavra     : INTEGER := 64;
+			  --MaxCentroid : INTEGER := 1024;
+			  MaxCentroidsBits : INTEGER := 10;
+			  NumBitsStates: INTEGER := 4); 
+				  
+	 PORT (
+      clk          			 : in STD_LOGIC;
+	  count_Centroid  		 : in STD_LOGIC_VECTOR(MaxCentroidsBits-1 downto 0);
+	  dado         		     : in STD_LOGIC_VECTOR (Palavra-1 downto 0);
+	  en_CentroidInitialize  : in STD_LOGIC;
+	  reg5 		             : in STD_LOGIC_VECTOR(TamanhoAddr-1 downto 0);
+	  o_countCentoid		 : out STD_LOGIC_VECTOR(MaxCentroidsBits-1 downto 0);
+	  o_dado    			 : out STD_LOGIC_VECTOR (Palavra-1 downto 0);
+	  next_State      		 : out STD_LOGIC_VECTOR(NumBitsStates-1 downto 0); --Proximo estado(bloco) a ser acessado na FMS 
+      addr_Ram    			 : out STD_LOGIC_VECTOR (TamanhoAddr-1 downto 0); -- endere�o de escrita na memoria ram    
+      wr_RamB				 : out STD_LOGIC        
+    );
+END Kmeans_CentroidInitialize;
+
+ARCHITECTURE arch of Kmeans_CentroidInitialize is
+SIGNAL s_countCentroid : STD_LOGIC_VECTOR(MaxCentroidsBits-1 downto 0) := (others =>'0');
+SIGNAL s_addrRam       : STD_LOGIC_VECTOR (TamanhoAddr-1 downto 0) := (others =>'0');
+SIGNAL s_dado          : STD_LOGIC_VECTOR (Palavra-1 downto 0) := (others =>'0');
+SIGNAL s_wren		     : STD_LOGIC := '0';
+
+BEGIN
+	PROCESS(clk,en_CentroidInitialize)
+	BEGIN
+	   
+		if clk'event and clk='1' then	
+		        s_countCentroid <= count_Centroid;
+            if en_CentroidInitialize='1' then		
+				s_addrRam <= std_logic_vector(to_unsigned(conv_integer(reg5) + conv_integer(count_Centroid),TamanhoAddr));
+				s_countCentroid <= s_countCentroid + 1;
+				s_dado <= dado;
+				s_wren <= '1';
+			else
+				s_wren <= '0';
+			end if;	
+		end if;
+		
+	END PROCESS;
+	
+o_dado         <= s_dado;
+o_countCentoid <= s_countCentroid;
+addr_Ram       <= s_addrRam;
+next_State     <= "0010";
+wr_RamB        <= s_wren;
+
+END arch;

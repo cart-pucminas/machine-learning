@@ -1,0 +1,974 @@
+ -- Copyright (C) 2016  Intel Corporation. All rights reserved.
+ -- Your use of Intel Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Intel Program License 
+ -- Subscription Agreement, the Intel Quartus Prime License Agreement,
+ -- the Intel MegaCore Function License Agreement, or other 
+ -- applicable license agreement, including, without limitation, 
+ -- that your use is for the sole purpose of programming logic 
+ -- devices manufactured by Intel and sold by Intel or its 
+ -- authorized distributors.  Please refer to the applicable 
+ -- agreement for further details.
+ -- 
+ -- This is a Quartus Prime output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus Prime input file. This file cannot be used
+ -- to make Quartus Prime pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus Prime help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCPGM        : Dedicated power pin for configuration, which MUST be connected to 1.8V, 2.5V or 3.0V depending on the requirements of the configuration device.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.2V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --                  Bank 3:       2.5V
+ --                  Bank 4:       2.5V
+ --                  Bank 5:       2.5V
+ --                  Bank 6:       2.5V
+ --                  Bank 7:       2.5V
+ --                  Bank 8:  2.5V
+ --                  Bank 9:  2.5V
+ -- RREF          : External reference resistor for the quad, MUST be connected to
+ --                 GND via a 2k Ohm resistor.
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --                  It can also be used to report unused dedicated pins. The connection
+ --                  on the board for unused dedicated pins depends on whether this will
+ --                  be used in a future design. One example is device migration. When
+ --                  using device migration, refer to the device pin-tables. If it is a
+ --                  GND pin in the pin table or if it will not be used in a future design
+ --                  for another purpose the it MUST be connected to GND. If it is an unused
+ --                  dedicated pin, then it can be connected to a valid signal on the board
+ --                  (low, high, or toggling) if that signal is required for a different
+ --                  revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --                  This pin should be connected to GND. It may also be connected  to a
+ --                  valid signal  on the board  (low, high, or toggling)  if that signal
+ --                  is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin.   For transceiver I/O banks, connect each pin marked GND*
+ --                  either individually through a 10k Ohm resistor to GND or tie all pins
+ --                  together and connect through a single 10k Ohm resistor to GND.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ -- GXB_GND*      : Unused GXB Receiver or dedicated reference clock pin. This pin
+ --                 must be connected to GXB_GND through a 10k Ohm resistor.
+ -- GXB_NC        : Unused GXB Transmitter or dedicated clock output pin. This pin
+ --                 must not be connected.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+CHIP  "Kmeans_ControlCalcCentroid"  ASSIGNED TO AN: EP4CGX150DF31I7
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+NC                           : A2        :        :                   :         :           :                
+~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : A3        : input  : 2.5 V             :         : 9         : N              
+RESERVED_INPUT               : A4        :        :                   :         : 8         :                
+RESERVED_INPUT               : A5        :        :                   :         : 8         :                
+RESERVED_INPUT               : A6        :        :                   :         : 8         :                
+RESERVED_INPUT               : A7        :        :                   :         : 8         :                
+numYDiv[28]                  : A8        : output : 2.5 V             :         : 8         : N              
+denDiv[24]                   : A9        : output : 2.5 V             :         : 8         : N              
+addr_Ram_Map[10]             : A10       : output : 2.5 V             :         : 8         : N              
+count_Centroid[1]            : A11       : input  : 2.5 V             :         : 8         : N              
+valueDadoX[1]                : A12       : input  : 2.5 V             :         : 8         : N              
+reg1[0]                      : A13       : input  : 2.5 V             :         : 8         : N              
+reg5[2]                      : A14       : input  : 2.5 V             :         : 8         : N              
+GND+                         : A15       :        :                   :         : 7         :                
+numYDiv[24]                  : A16       : output : 2.5 V             :         : 7         : N              
+memValueY[3]                 : A17       : output : 2.5 V             :         : 7         : N              
+reg1[1]                      : A18       : input  : 2.5 V             :         : 7         : N              
+o_count_Centroid[2]          : A19       : output : 2.5 V             :         : 7         : N              
+count_Centroid[0]            : A20       : input  : 2.5 V             :         : 7         : N              
+addr_Ram_Dado[4]             : A21       : output : 2.5 V             :         : 7         : N              
+reg5[4]                      : A22       : input  : 2.5 V             :         : 7         : N              
+reg5[0]                      : A23       : input  : 2.5 V             :         : 7         : N              
+reg5[8]                      : A24       : input  : 2.5 V             :         : 7         : N              
+valueDadoX[4]                : A25       : input  : 2.5 V             :         : 7         : N              
+reg1[4]                      : A26       : input  : 2.5 V             :         : 7         : N              
+memValueY[2]                 : A27       : output : 2.5 V             :         : 7         : N              
+valueDadoX[28]               : A28       : input  : 2.5 V             :         : 7         : N              
+count_Dado[9]                : A29       : input  : 2.5 V             :         : 7         : N              
+GXB_GND*                     : AA1       :        :                   :         : QL0       :                
+GXB_GND*                     : AA2       :        :                   :         : QL0       :                
+GND                          : AA3       : gnd    :                   :         :           :                
+GND                          : AA4       : gnd    :                   :         :           :                
+GND                          : AA5       : gnd    :                   :         :           :                
+VCCL_GXB                     : AA6       : power  :                   : 1.2V    :           :                
+VCCA                         : AA7       : power  :                   : 2.5V    :           :                
+GND                          : AA8       : gnd    :                   :         :           :                
+VCCA                         : AA9       : power  :                   : 2.5V    :           :                
+VCCINT                       : AA10      : power  :                   : 1.2V    :           :                
+GND                          : AA11      : gnd    :                   :         :           :                
+denDiv[15]                   : AA12      : output : 2.5 V             :         : 3         : N              
+denDiv[2]                    : AA13      : output : 2.5 V             :         : 3         : N              
+VCCINT                       : AA14      : power  :                   : 1.2V    :           :                
+valueDadoY[18]               : AA15      : input  : 2.5 V             :         : 3         : N              
+denDiv[9]                    : AA16      : output : 2.5 V             :         : 3         : N              
+denDiv[11]                   : AA17      : output : 2.5 V             :         : 4         : N              
+valueDadoX[17]               : AA18      : input  : 2.5 V             :         : 4         : N              
+GND                          : AA19      : gnd    :                   :         :           :                
+numXDiv[6]                   : AA20      : output : 2.5 V             :         : 4         : N              
+valueDadoX[15]               : AA21      : input  : 2.5 V             :         : 4         : N              
+valueDadoX[11]               : AA22      : input  : 2.5 V             :         : 5         : N              
+VCCIO5                       : AA23      : power  :                   : 2.5V    : 5         :                
+VCCIO5                       : AA24      : power  :                   : 2.5V    : 5         :                
+valueDadoY[12]               : AA25      : input  : 2.5 V             :         : 5         : N              
+valueDadoX[23]               : AA26      : input  : 2.5 V             :         : 5         : N              
+numXDiv[26]                  : AA27      : output : 2.5 V             :         : 5         : N              
+numXDiv[15]                  : AA28      : output : 2.5 V             :         : 5         : N              
+memValueX[13]                : AA29      : output : 2.5 V             :         : 5         : N              
+valueDadoX[13]               : AA30      : input  : 2.5 V             :         : 5         : N              
+GND                          : AB1       : gnd    :                   :         :           :                
+GND                          : AB2       : gnd    :                   :         :           :                
+GXB_NC                       : AB3       :        :                   :         : QL0       :                
+GXB_NC                       : AB4       :        :                   :         : QL0       :                
+GND                          : AB5       : gnd    :                   :         :           :                
+GND                          : AB6       : gnd    :                   :         :           :                
+GND                          : AB7       : gnd    :                   :         :           :                
+VCCINT                       : AB8       : power  :                   : 1.2V    :           :                
+CONF_DONE                    : AB9       :        :                   :         : 3         :                
+GND                          : AB10      : gnd    :                   :         :           :                
+memValueY[21]                : AB11      : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : AB12      : power  :                   : 2.5V    : 3         :                
+denDiv[22]                   : AB13      : output : 2.5 V             :         : 3         : N              
+valueDadoY[3]                : AB14      : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AB15      : power  :                   : 2.5V    : 3         :                
+denDiv[6]                    : AB16      : output : 2.5 V             :         : 3         : N              
+numYDiv[18]                  : AB17      : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : AB18      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AB19      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AB20      : power  :                   : 2.5V    : 4         :                
+numXDiv[14]                  : AB21      : output : 2.5 V             :         : 4         : N              
+memValueX[18]                : AB22      : output : 2.5 V             :         : 4         : N              
+VCCD_PLL                     : AB23      : power  :                   : 1.2V    :           :                
+VCCA                         : AB24      : power  :                   : 2.5V    :           :                
+valueDadoY[13]               : AB25      : input  : 2.5 V             :         : 5         : N              
+numYDiv[14]                  : AB26      : output : 2.5 V             :         : 5         : N              
+numYDiv[6]                   : AB27      : output : 2.5 V             :         : 5         : N              
+memValueX[24]                : AB28      : output : 2.5 V             :         : 5         : N              
+numXDiv[16]                  : AB29      : output : 2.5 V             :         : 5         : N              
+numXDiv[9]                   : AB30      : output : 2.5 V             :         : 5         : N              
+GXB_GND*                     : AC1       :        :                   :         : QL0       :                
+GXB_GND*                     : AC2       :        :                   :         : QL0       :                
+GND                          : AC3       : gnd    :                   :         :           :                
+GND                          : AC4       : gnd    :                   :         :           :                
+GND                          : AC5       : gnd    :                   :         :           :                
+GND                          : AC6       : gnd    :                   :         :           :                
+MSEL2                        : AC7       :        :                   :         : 3         :                
+MSEL3                        : AC8       :        :                   :         : 3         :                
+VCCIO3                       : AC9       : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AC10      : power  :                   : 2.5V    : 3         :                
+GND                          : AC11      : gnd    :                   :         :           :                
+VCCIO3                       : AC12      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AC13      : power  :                   : 2.5V    : 3         :                
+GND                          : AC14      : gnd    :                   :         :           :                
+VCCIO3                       : AC15      : power  :                   : 2.5V    : 3         :                
+valueDadoX[25]               : AC16      : input  : 2.5 V             :         : 3         : N              
+GND                          : AC17      : gnd    :                   :         :           :                
+VCCIO4                       : AC18      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AC19      : power  :                   : 2.5V    : 4         :                
+GND                          : AC20      : gnd    :                   :         :           :                
+VCCIO4                       : AC21      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AC22      : power  :                   : 2.5V    : 4         :                
+GND                          : AC23      : gnd    :                   :         :           :                
+GND                          : AC24      : gnd    :                   :         :           :                
+numXDiv[0]                   : AC25      : output : 2.5 V             :         : 5         : N              
+GND                          : AC26      : gnd    :                   :         :           :                
+memValueX[22]                : AC27      : output : 2.5 V             :         : 5         : N              
+valueDadoX[16]               : AC28      : input  : 2.5 V             :         : 5         : N              
+GND                          : AC29      : gnd    :                   :         :           :                
+denDiv[23]                   : AC30      : output : 2.5 V             :         : 5         : N              
+GND                          : AD1       : gnd    :                   :         :           :                
+GND                          : AD2       : gnd    :                   :         :           :                
+VCCA_GXB                     : AD3       : power  :                   : 2.5V    :           :                
+VCCL_GXB                     : AD4       : power  :                   : 1.2V    :           :                
+GND                          : AD5       : gnd    :                   :         :           :                
+valueMap[8]                  : AD6       : input  : 2.5 V             :         : 3         : N              
+MSEL0                        : AD7       :        :                   :         : 3         :                
+MSEL1                        : AD8       :        :                   :         : 3         :                
+RESERVED_INPUT               : AD9       :        :                   :         : 3         :                
+RESERVED_INPUT               : AD10      :        :                   :         : 3         :                
+VCCIO3                       : AD11      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AD12      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AD13      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AD14      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AD15      : power  :                   : 2.5V    : 3         :                
+denDiv[25]                   : AD16      : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : AD17      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AD18      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AD19      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AD20      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AD21      : power  :                   : 2.5V    : 4         :                
+numXDiv[23]                  : AD22      : output : 2.5 V             :         : 4         : N              
+valueDadoX[2]                : AD23      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT               : AD24      :        :                   :         : 4         :                
+RESERVED_INPUT               : AD25      :        :                   :         : 5         :                
+RESERVED_INPUT               : AD26      :        :                   :         : 5         :                
+en_ControlCalcCentroid       : AD27      : input  : 2.5 V             :         : 5         : N              
+valueDadoY[9]                : AD28      : input  : 2.5 V             :         : 5         : N              
+numXDiv[12]                  : AD29      : output : 2.5 V             :         : 5         : N              
+valueDadoX[7]                : AD30      : input  : 2.5 V             :         : 5         : N              
+RREF                         : AE1       :        :                   :         :           :                
+GND                          : AE2       : gnd    :                   :         :           :                
+RESERVED_INPUT               : AE3       :        :                   :         : 3         :                
+RESERVED_INPUT               : AE4       :        :                   :         : 3         :                
+RESERVED_INPUT               : AE5       :        :                   :         : 3         :                
+RESERVED_INPUT               : AE6       :        :                   :         : 3         :                
+~ALTERA_NCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : AE7       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT               : AE8       :        :                   :         : 3         :                
+RESERVED_INPUT               : AE9       :        :                   :         : 3         :                
+RESERVED_INPUT               : AE10      :        :                   :         : 3         :                
+RESERVED_INPUT               : AE11      :        :                   :         : 3         :                
+RESERVED_INPUT               : AE12      :        :                   :         : 3         :                
+denDiv[8]                    : AE13      : output : 2.5 V             :         : 3         : N              
+memValueY[20]                : AE14      : output : 2.5 V             :         : 3         : N              
+memValueY[28]                : AE15      : output : 2.5 V             :         : 3         : N              
+denDiv[21]                   : AE16      : output : 2.5 V             :         : 4         : N              
+denDiv[17]                   : AE17      : output : 2.5 V             :         : 4         : N              
+memValueX[17]                : AE18      : output : 2.5 V             :         : 4         : N              
+memValueX[19]                : AE19      : output : 2.5 V             :         : 4         : N              
+memValueX[9]                 : AE20      : output : 2.5 V             :         : 4         : N              
+memValueX[7]                 : AE21      : output : 2.5 V             :         : 4         : N              
+numXDiv[25]                  : AE22      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT               : AE23      :        :                   :         : 4         :                
+RESERVED_INPUT               : AE24      :        :                   :         : 4         :                
+valueDadoY[24]               : AE25      : input  : 2.5 V             :         : 5         : N              
+numYDiv[15]                  : AE26      : output : 2.5 V             :         : 5         : N              
+memValueY[17]                : AE27      : output : 2.5 V             :         : 5         : N              
+memValueX[26]                : AE28      : output : 2.5 V             :         : 5         : N              
+valueDadoY[26]               : AE29      : input  : 2.5 V             :         : 5         : N              
+memValueY[19]                : AE30      : output : 2.5 V             :         : 5         : N              
+GND                          : AF1       : gnd    :                   :         :           :                
+GND                          : AF2       : gnd    :                   :         :           :                
+RESERVED_INPUT               : AF3       :        :                   :         : 3         :                
+valueMap[7]                  : AF4       : input  : 2.5 V             :         : 3         : N              
+GND                          : AF5       : gnd    :                   :         :           :                
+RESERVED_INPUT               : AF6       :        :                   :         : 3         :                
+RESERVED_INPUT               : AF7       :        :                   :         : 3         :                
+GND                          : AF8       : gnd    :                   :         :           :                
+RESERVED_INPUT               : AF9       :        :                   :         : 3         :                
+RESERVED_INPUT               : AF10      :        :                   :         : 3         :                
+GND                          : AF11      : gnd    :                   :         :           :                
+RESERVED_INPUT               : AF12      :        :                   :         : 3         :                
+RESERVED_INPUT               : AF13      :        :                   :         : 3         :                
+GND                          : AF14      : gnd    :                   :         :           :                
+valueDadoY[21]               : AF15      : input  : 2.5 V             :         : 3         : N              
+denDiv[20]                   : AF16      : output : 2.5 V             :         : 4         : N              
+GND                          : AF17      : gnd    :                   :         :           :                
+denDiv[26]                   : AF18      : output : 2.5 V             :         : 4         : N              
+numXDiv[21]                  : AF19      : output : 2.5 V             :         : 4         : N              
+GND                          : AF20      : gnd    :                   :         :           :                
+numXDiv[1]                   : AF21      : output : 2.5 V             :         : 4         : N              
+valueDadoX[8]                : AF22      : input  : 2.5 V             :         : 4         : N              
+GND                          : AF23      : gnd    :                   :         :           :                
+RESERVED_INPUT               : AF24      :        :                   :         : 4         :                
+memValueY[24]                : AF25      : output : 2.5 V             :         : 4         : N              
+GND                          : AF26      : gnd    :                   :         :           :                
+valueDadoY[14]               : AF27      : input  : 2.5 V             :         : 5         : N              
+numXDiv[8]                   : AF28      : output : 2.5 V             :         : 5         : N              
+GND                          : AF29      : gnd    :                   :         :           :                
+numXDiv[3]                   : AF30      : output : 2.5 V             :         : 5         : N              
+NC                           : AG1       :        :                   :         :           :                
+GND                          : AG2       : gnd    :                   :         :           :                
+wr_RamB                      : AG3       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT               : AG4       :        :                   :         : 3         :                
+RESERVED_INPUT               : AG5       :        :                   :         : 3         :                
+RESERVED_INPUT               : AG6       :        :                   :         : 3         :                
+denDiv[10]                   : AG7       : output : 2.5 V             :         : 3         : N              
+denDiv[0]                    : AG8       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT               : AG9       :        :                   :         : 3         :                
+memValueY[30]                : AG10      : output : 2.5 V             :         : 3         : N              
+denDiv[12]                   : AG11      : output : 2.5 V             :         : 3         : N              
+memValueY[16]                : AG12      : output : 2.5 V             :         : 3         : N              
+valueDadoY[1]                : AG13      : input  : 2.5 V             :         : 3         : N              
+valueDadoY[5]                : AG14      : input  : 2.5 V             :         : 3         : N              
+memValueY[13]                : AG15      : output : 2.5 V             :         : 3         : N              
+denDiv[14]                   : AG16      : output : 2.5 V             :         : 4         : N              
+memValueY[18]                : AG17      : output : 2.5 V             :         : 4         : N              
+memValueX[21]                : AG18      : output : 2.5 V             :         : 4         : N              
+memValueY[11]                : AG19      : output : 2.5 V             :         : 4         : N              
+numXDiv[10]                  : AG20      : output : 2.5 V             :         : 4         : N              
+valueDadoX[30]               : AG21      : input  : 2.5 V             :         : 4         : N              
+valueDadoX[14]               : AG22      : input  : 2.5 V             :         : 4         : N              
+numXDiv[5]                   : AG23      : output : 2.5 V             :         : 4         : N              
+valueDadoY[11]               : AG24      : input  : 2.5 V             :         : 4         : N              
+memValueY[5]                 : AG25      : output : 2.5 V             :         : 4         : N              
+memValueX[14]                : AG26      : output : 2.5 V             :         : 4         : N              
+memValueX[29]                : AG27      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT               : AG28      :        :                   :         : 4         :                
+numYDiv[8]                   : AG29      : output : 2.5 V             :         : 5         : N              
+numXDiv[4]                   : AG30      : output : 2.5 V             :         : 5         : N              
+NC                           : AH1       :        :                   :         :           :                
+RESERVED_INPUT               : AH2       :        :                   :         : 3         :                
+RESERVED_INPUT               : AH3       :        :                   :         : 3         :                
+RESERVED_INPUT               : AH4       :        :                   :         : 3         :                
+RESERVED_INPUT               : AH5       :        :                   :         : 3         :                
+RESERVED_INPUT               : AH6       :        :                   :         : 3         :                
+denDiv[31]                   : AH7       : output : 2.5 V             :         : 3         : N              
+denDiv[13]                   : AH8       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT               : AH9       :        :                   :         : 3         :                
+RESERVED_INPUT               : AH10      :        :                   :         : 3         :                
+RESERVED_INPUT               : AH11      :        :                   :         : 3         :                
+valueDadoY[22]               : AH12      : input  : 2.5 V             :         : 3         : N              
+valueDadoY[29]               : AH13      : input  : 2.5 V             :         : 3         : N              
+valueDadoY[23]               : AH14      : input  : 2.5 V             :         : 3         : N              
+valueDadoY[30]               : AH15      : input  : 2.5 V             :         : 3         : N              
+memValueX[28]                : AH16      : output : 2.5 V             :         : 3         : N              
+numYDiv[26]                  : AH17      : output : 2.5 V             :         : 4         : N              
+denDiv[16]                   : AH18      : output : 2.5 V             :         : 4         : N              
+numYDiv[7]                   : AH19      : output : 2.5 V             :         : 4         : N              
+numXDiv[19]                  : AH20      : output : 2.5 V             :         : 4         : N              
+memValueX[15]                : AH21      : output : 2.5 V             :         : 4         : N              
+valueDadoX[22]               : AH22      : input  : 2.5 V             :         : 4         : N              
+valueDadoX[18]               : AH23      : input  : 2.5 V             :         : 4         : N              
+count_Centroid[2]            : AH24      : input  : 2.5 V             :         : 4         : N              
+numYDiv[17]                  : AH25      : output : 2.5 V             :         : 4         : N              
+memValueX[1]                 : AH26      : output : 2.5 V             :         : 4         : N              
+memValueY[12]                : AH27      : output : 2.5 V             :         : 4         : N              
+valueDadoX[26]               : AH28      : input  : 2.5 V             :         : 4         : N              
+denDiv[4]                    : AH29      : output : 2.5 V             :         : 5         : N              
+valueDadoX[6]                : AH30      : input  : 2.5 V             :         : 5         : N              
+nSTATUS                      : AJ1       :        :                   :         : 3         :                
+GND                          : AJ2       : gnd    :                   :         :           :                
+RESERVED_INPUT               : AJ3       :        :                   :         : 3         :                
+RESERVED_INPUT               : AJ4       :        :                   :         : 3         :                
+GND                          : AJ5       : gnd    :                   :         :           :                
+RESERVED_INPUT               : AJ6       :        :                   :         : 3         :                
+memValueY[27]                : AJ7       : output : 2.5 V             :         : 3         : N              
+GND                          : AJ8       : gnd    :                   :         :           :                
+valueDadoY[15]               : AJ9       : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT               : AJ10      :        :                   :         : 3         :                
+GND                          : AJ11      : gnd    :                   :         :           :                
+valueDadoY[0]                : AJ12      : input  : 2.5 V             :         : 3         : N              
+denDiv[19]                   : AJ13      : output : 2.5 V             :         : 3         : N              
+GND                          : AJ14      : gnd    :                   :         :           :                
+denDiv[30]                   : AJ15      : output : 2.5 V             :         : 4         : N              
+valueMap[4]                  : AJ16      : input  : 2.5 V             :         : 4         : N              
+GND                          : AJ17      : gnd    :                   :         :           :                
+numYDiv[19]                  : AJ18      : output : 2.5 V             :         : 4         : N              
+valueDadoY[20]               : AJ19      : input  : 2.5 V             :         : 4         : N              
+GND                          : AJ20      : gnd    :                   :         :           :                
+valueDadoY[10]               : AJ21      : input  : 2.5 V             :         : 4         : N              
+numXDiv[28]                  : AJ22      : output : 2.5 V             :         : 4         : N              
+GND                          : AJ23      : gnd    :                   :         :           :                
+valueDadoX[3]                : AJ24      : input  : 2.5 V             :         : 4         : N              
+numYDiv[11]                  : AJ25      : output : 2.5 V             :         : 4         : N              
+GND                          : AJ26      : gnd    :                   :         :           :                
+valueDadoY[6]                : AJ27      : input  : 2.5 V             :         : 4         : N              
+memValueX[8]                 : AJ28      : output : 2.5 V             :         : 4         : N              
+GND                          : AJ29      : gnd    :                   :         :           :                
+estado[0]                    : AJ30      : output : 2.5 V             :         : 5         : N              
+NC                           : AK2       :        :                   :         :           :                
+RESERVED_INPUT               : AK3       :        :                   :         : 3         :                
+RESERVED_INPUT               : AK4       :        :                   :         : 3         :                
+RESERVED_INPUT               : AK5       :        :                   :         : 3         :                
+RESERVED_INPUT               : AK6       :        :                   :         : 3         :                
+numYDiv[22]                  : AK7       : output : 2.5 V             :         : 3         : N              
+valueDadoX[0]                : AK8       : input  : 2.5 V             :         : 3         : N              
+memValueY[14]                : AK9       : output : 2.5 V             :         : 3         : N              
+numYDiv[3]                   : AK10      : output : 2.5 V             :         : 3         : N              
+valueDadoY[19]               : AK11      : input  : 2.5 V             :         : 3         : N              
+valueDadoY[7]                : AK12      : input  : 2.5 V             :         : 3         : N              
+numYDiv[16]                  : AK13      : output : 2.5 V             :         : 3         : N              
+valueDadoX[5]                : AK14      : input  : 2.5 V             :         : 3         : N              
+denDiv[28]                   : AK15      : output : 2.5 V             :         : 4         : N              
+valueMap[5]                  : AK16      : input  : 2.5 V             :         : 4         : N              
+denDiv[27]                   : AK17      : output : 2.5 V             :         : 4         : N              
+valueDadoY[17]               : AK18      : input  : 2.5 V             :         : 4         : N              
+memValueY[26]                : AK19      : output : 2.5 V             :         : 4         : N              
+valueDadoY[16]               : AK20      : input  : 2.5 V             :         : 4         : N              
+numXDiv[11]                  : AK21      : output : 2.5 V             :         : 4         : N              
+memValueX[10]                : AK22      : output : 2.5 V             :         : 4         : N              
+numXDiv[13]                  : AK23      : output : 2.5 V             :         : 4         : N              
+addr_Ram_Map[3]              : AK24      : output : 2.5 V             :         : 4         : N              
+valueDadoX[24]               : AK25      : input  : 2.5 V             :         : 4         : N              
+denDiv[18]                   : AK26      : output : 2.5 V             :         : 4         : N              
+memValueX[25]                : AK27      : output : 2.5 V             :         : 4         : N              
+numXDiv[24]                  : AK28      : output : 2.5 V             :         : 4         : N              
+addr_Ram_Dado[12]            : AK29      : output : 2.5 V             :         : 4         : N              
+nCONFIG                      : B1        :        :                   :         : 9         :                
+GND                          : B2        : gnd    :                   :         :           :                
+~ALTERA_DCLK~                : B3        : output : 2.5 V             :         : 9         : N              
+~ALTERA_NCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : B4        : input  : 2.5 V             :         : 9         : N              
+GND                          : B5        : gnd    :                   :         :           :                
+valueDadoX[19]               : B6        : input  : 2.5 V             :         : 8         : N              
+numYDiv[20]                  : B7        : output : 2.5 V             :         : 8         : N              
+GND                          : B8        : gnd    :                   :         :           :                
+memValueY[23]                : B9        : output : 2.5 V             :         : 8         : N              
+memValueY[22]                : B10       : output : 2.5 V             :         : 8         : N              
+GND                          : B11       : gnd    :                   :         :           :                
+numYDiv[23]                  : B12       : output : 2.5 V             :         : 8         : N              
+numYDiv[4]                   : B13       : output : 2.5 V             :         : 8         : N              
+GND                          : B14       : gnd    :                   :         :           :                
+GND+                         : B15       :        :                   :         : 7         :                
+numXDiv[31]                  : B16       : output : 2.5 V             :         : 7         : N              
+GND                          : B17       : gnd    :                   :         :           :                
+reg1[7]                      : B18       : input  : 2.5 V             :         : 7         : N              
+count_Centroid[4]            : B19       : input  : 2.5 V             :         : 7         : N              
+GND                          : B20       : gnd    :                   :         :           :                
+addr_Ram_Dado[1]             : B21       : output : 2.5 V             :         : 7         : N              
+reg5[13]                     : B22       : input  : 2.5 V             :         : 7         : N              
+GND                          : B23       : gnd    :                   :         :           :                
+addr_Ram_Map[0]              : B24       : output : 2.5 V             :         : 7         : N              
+reg5[3]                      : B25       : input  : 2.5 V             :         : 7         : N              
+GND                          : B26       : gnd    :                   :         :           :                
+reg1[8]                      : B27       : input  : 2.5 V             :         : 7         : N              
+count_Dado[12]               : B28       : input  : 2.5 V             :         : 7         : N              
+GND                          : B29       : gnd    :                   :         :           :                
+wr_RamA                      : B30       : output : 2.5 V             :         : 7         : N              
+nCE                          : C1        :        :                   :         : 9         :                
+RESERVED_INPUT               : C2        :        :                   :         : 8         :                
+RESERVED_INPUT               : C3        :        :                   :         : 8         :                
+RESERVED_INPUT               : C4        :        :                   :         : 8         :                
+RESERVED_INPUT               : C5        :        :                   :         : 8         :                
+next_State[2]                : C6        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT               : C7        :        :                   :         : 8         :                
+RESERVED_INPUT               : C8        :        :                   :         : 8         :                
+RESERVED_INPUT               : C9        :        :                   :         : 8         :                
+numYDiv[1]                   : C10       : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT               : C11       :        :                   :         : 8         :                
+denDiv[3]                    : C12       : output : 2.5 V             :         : 8         : N              
+valueDadoY[27]               : C13       : input  : 2.5 V             :         : 8         : N              
+numYDiv[27]                  : C14       : output : 2.5 V             :         : 8         : N              
+valueDadoY[28]               : C15       : input  : 2.5 V             :         : 8         : N              
+valueDadoX[31]               : C16       : input  : 2.5 V             :         : 8         : N              
+numYDiv[29]                  : C17       : output : 2.5 V             :         : 7         : N              
+reg1[5]                      : C18       : input  : 2.5 V             :         : 7         : N              
+numYDiv[0]                   : C19       : output : 2.5 V             :         : 7         : N              
+memValueY[10]                : C20       : output : 2.5 V             :         : 7         : N              
+memValueX[6]                 : C21       : output : 2.5 V             :         : 7         : N              
+reg5[11]                     : C22       : input  : 2.5 V             :         : 7         : N              
+estado[1]                    : C23       : output : 2.5 V             :         : 7         : N              
+reg5[10]                     : C24       : input  : 2.5 V             :         : 7         : N              
+reg1[9]                      : C25       : input  : 2.5 V             :         : 7         : N              
+count_Centroid[3]            : C26       : input  : 2.5 V             :         : 7         : N              
+reg3[7]                      : C27       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT               : C28       :        :                   :         : 7         :                
+numYDiv[5]                   : C29       : output : 2.5 V             :         : 6         : N              
+valueDadoY[31]               : C30       : input  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT               : D1        :        :                   :         : 8         :                
+GND                          : D2        : gnd    :                   :         :           :                
+RESERVED_INPUT               : D3        :        :                   :         : 8         :                
+RESERVED_INPUT               : D4        :        :                   :         : 8         :                
+RESERVED_INPUT               : D5        :        :                   :         : 8         :                
+RESERVED_INPUT               : D6        :        :                   :         : 8         :                
+RESERVED_INPUT               : D7        :        :                   :         : 8         :                
+RESERVED_INPUT               : D8        :        :                   :         : 8         :                
+RESERVED_INPUT               : D9        :        :                   :         : 8         :                
+RESERVED_INPUT               : D10       :        :                   :         : 8         :                
+valueDadoX[29]               : D11       : input  : 2.5 V             :         : 8         : N              
+denDiv[7]                    : D12       : output : 2.5 V             :         : 8         : N              
+valueDadoY[2]                : D13       : input  : 2.5 V             :         : 8         : N              
+numYDiv[25]                  : D14       : output : 2.5 V             :         : 8         : N              
+valueDadoY[8]                : D15       : input  : 2.5 V             :         : 8         : N              
+valueDadoX[20]               : D16       : input  : 2.5 V             :         : 8         : N              
+numYDiv[30]                  : D17       : output : 2.5 V             :         : 7         : N              
+memValueY[1]                 : D18       : output : 2.5 V             :         : 7         : N              
+memValueX[31]                : D19       : output : 2.5 V             :         : 7         : N              
+count_Centroid[7]            : D20       : input  : 2.5 V             :         : 7         : N              
+valueDadoX[27]               : D21       : input  : 2.5 V             :         : 7         : N              
+addr_Ram_Map[12]             : D22       : output : 2.5 V             :         : 7         : N              
+addr_Ram_Dado[8]             : D23       : output : 2.5 V             :         : 7         : N              
+estado[2]                    : D24       : output : 2.5 V             :         : 7         : N              
+memValueX[30]                : D25       : output : 2.5 V             :         : 7         : N              
+reg5[12]                     : D26       : input  : 2.5 V             :         : 7         : N              
+numXDiv[27]                  : D27       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT               : D28       :        :                   :         : 7         :                
+reg3[9]                      : D29       : input  : 2.5 V             :         : 6         : N              
+count_Dado[1]                : D30       : input  : 2.5 V             :         : 6         : N              
+TMS                          : E1        : input  :                   :         : 9         :                
+TDI                          : E2        : input  :                   :         : 9         :                
+RESERVED_INPUT               : E3        :        :                   :         : 8         :                
+valueMap[6]                  : E4        : input  : 2.5 V             :         : 8         : N              
+GND                          : E5        : gnd    :                   :         :           :                
+RESERVED_INPUT               : E6        :        :                   :         : 8         :                
+RESERVED_INPUT               : E7        :        :                   :         : 8         :                
+GND                          : E8        : gnd    :                   :         :           :                
+RESERVED_INPUT               : E9        :        :                   :         : 8         :                
+RESERVED_INPUT               : E10       :        :                   :         : 8         :                
+GND                          : E11       : gnd    :                   :         :           :                
+RESERVED_INPUT               : E12       :        :                   :         : 8         :                
+denDiv[1]                    : E13       : output : 2.5 V             :         : 8         : N              
+GND                          : E14       : gnd    :                   :         :           :                
+next_State[1]                : E15       : output : 2.5 V             :         : 8         : N              
+valueDadoX[9]                : E16       : input  : 2.5 V             :         : 8         : N              
+GND                          : E17       : gnd    :                   :         :           :                
+next_State[0]                : E18       : output : 2.5 V             :         : 7         : N              
+memValueY[0]                 : E19       : output : 2.5 V             :         : 7         : N              
+GND                          : E20       : gnd    :                   :         :           :                
+reg5[6]                      : E21       : input  : 2.5 V             :         : 7         : N              
+reg5[5]                      : E22       : input  : 2.5 V             :         : 7         : N              
+GND                          : E23       : gnd    :                   :         :           :                
+count_Centroid[6]            : E24       : input  : 2.5 V             :         : 7         : N              
+reg3[10]                     : E25       : input  : 2.5 V             :         : 7         : N              
+GND                          : E26       : gnd    :                   :         :           :                
+addr_Ram_Map[2]              : E27       : output : 2.5 V             :         : 6         : N              
+memValueX[16]                : E28       : output : 2.5 V             :         : 6         : N              
+GND                          : E29       : gnd    :                   :         :           :                
+reg3[14]                     : E30       : input  : 2.5 V             :         : 6         : N              
+TDO                          : F1        : output :                   :         : 9         :                
+TCK                          : F2        : input  :                   :         : 9         :                
+GND                          : F3        : gnd    :                   :         :           :                
+RESERVED_INPUT               : F4        :        :                   :         : 8         :                
+RESERVED_INPUT               : F5        :        :                   :         : 8         :                
+RESERVED_INPUT               : F6        :        :                   :         : 8         :                
+RESERVED_INPUT               : F7        :        :                   :         : 8         :                
+RESERVED_INPUT               : F8        :        :                   :         : 8         :                
+next_State[3]                : F9        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT               : F10       :        :                   :         : 8         :                
+RESERVED_INPUT               : F11       :        :                   :         : 8         :                
+numYDiv[13]                  : F12       : output : 2.5 V             :         : 8         : N              
+memValueY[25]                : F13       : output : 2.5 V             :         : 8         : N              
+reg1[6]                      : F14       : input  : 2.5 V             :         : 8         : N              
+numXDiv[30]                  : F15       : output : 2.5 V             :         : 8         : N              
+reg1[2]                      : F16       : input  : 2.5 V             :         : 8         : N              
+addr_Ram_Dado[6]             : F17       : output : 2.5 V             :         : 7         : N              
+memValueY[4]                 : F18       : output : 2.5 V             :         : 7         : N              
+addr_Ram_Map[9]              : F19       : output : 2.5 V             :         : 7         : N              
+count_Centroid[5]            : F20       : input  : 2.5 V             :         : 7         : N              
+memValueX[3]                 : F21       : output : 2.5 V             :         : 7         : N              
+reg5[1]                      : F22       : input  : 2.5 V             :         : 7         : N              
+addr_Ram_Dado[11]            : F23       : output : 2.5 V             :         : 7         : N              
+reg3[13]                     : F24       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT               : F25       :        :                   :         : 7         :                
+count_Dado[5]                : F26       : input  : 2.5 V             :         : 6         : N              
+count_Dado[7]                : F27       : input  : 2.5 V             :         : 6         : N              
+reg3[11]                     : F28       : input  : 2.5 V             :         : 6         : N              
+memValueY[31]                : F29       : output : 2.5 V             :         : 6         : N              
+reg3[5]                      : F30       : input  : 2.5 V             :         : 6         : N              
+GND                          : G1        : gnd    :                   :         :           :                
+GND                          : G2        : gnd    :                   :         :           :                
+GND                          : G3        : gnd    :                   :         :           :                
+GND                          : G4        : gnd    :                   :         :           :                
+GND                          : G5        : gnd    :                   :         :           :                
+RESERVED_INPUT               : G6        :        :                   :         : 8         :                
+RESERVED_INPUT               : G7        :        :                   :         : 8         :                
+RESERVED_INPUT               : G8        :        :                   :         : 8         :                
+~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : G9        : input  : 2.5 V             :         : 9         : N              
+RESERVED_INPUT               : G10       :        :                   :         : 8         :                
+RESERVED_INPUT               : G11       :        :                   :         : 8         :                
+numYDiv[31]                  : G12       : output : 2.5 V             :         : 8         : N              
+memValueY[15]                : G13       : output : 2.5 V             :         : 8         : N              
+count_Centroid[8]            : G14       : input  : 2.5 V             :         : 8         : N              
+count_Centroid[9]            : G15       : input  : 2.5 V             :         : 8         : N              
+valueDadoY[4]                : G16       : input  : 2.5 V             :         : 7         : N              
+addr_Ram_Map[7]              : G17       : output : 2.5 V             :         : 7         : N              
+reg1[3]                      : G18       : input  : 2.5 V             :         : 7         : N              
+VCCIO7                       : G19       : power  :                   : 2.5V    : 7         :                
+addr_Ram_Dado[2]             : G20       : output : 2.5 V             :         : 7         : N              
+reg5[9]                      : G21       : input  : 2.5 V             :         : 7         : N              
+reg5[7]                      : G22       : input  : 2.5 V             :         : 7         : N              
+count_Dado[6]                : G23       : input  : 2.5 V             :         : 7         : N              
+memValueY[8]                 : G24       : output : 2.5 V             :         : 7         : N              
+count_Dado[0]                : G25       : input  : 2.5 V             :         : 7         : N              
+addr_Ram_Map[4]              : G26       : output : 2.5 V             :         : 6         : N              
+numYDiv[10]                  : G27       : output : 2.5 V             :         : 6         : N              
+addr_Ram_Dado[7]             : G28       : output : 2.5 V             :         : 6         : N              
+count_Dado[10]               : G29       : input  : 2.5 V             :         : 6         : N              
+o_count_Dado[2]              : G30       : output : 2.5 V             :         : 6         : N              
+GND                          : H1        : gnd    :                   :         :           :                
+GND                          : H2        : gnd    :                   :         :           :                
+GXB_NC                       : H3        :        :                   :         : QL1       :                
+GXB_NC                       : H4        :        :                   :         : QL1       :                
+GND                          : H5        : gnd    :                   :         :           :                
+GND                          : H6        : gnd    :                   :         :           :                
+VCCIO9                       : H7        : power  :                   : 2.5V    : 9         :                
+GND                          : H8        : gnd    :                   :         :           :                
+valueMap[9]                  : H9        : input  : 2.5 V             :         : 8         : N              
+VCCIO8                       : H10       : power  :                   : 2.5V    : 8         :                
+GND                          : H11       : gnd    :                   :         :           :                
+VCCIO8                       : H12       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : H13       : power  :                   : 2.5V    : 8         :                
+GND                          : H14       : gnd    :                   :         :           :                
+VCCIO8                       : H15       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : H16       : power  :                   : 2.5V    : 8         :                
+GND                          : H17       : gnd    :                   :         :           :                
+VCCIO7                       : H18       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : H19       : power  :                   : 2.5V    : 7         :                
+GND                          : H20       : gnd    :                   :         :           :                
+VCCIO7                       : H21       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : H22       : power  :                   : 2.5V    : 7         :                
+GND                          : H23       : gnd    :                   :         :           :                
+valueDadoX[10]               : H24       : input  : 2.5 V             :         : 7         : N              
+addr_Ram_Map[11]             : H25       : output : 2.5 V             :         : 6         : N              
+GND                          : H26       : gnd    :                   :         :           :                
+addr_Ram_Dado[0]             : H27       : output : 2.5 V             :         : 6         : N              
+numXDiv[18]                  : H28       : output : 2.5 V             :         : 6         : N              
+GND                          : H29       : gnd    :                   :         :           :                
+o_count_Dado[8]              : H30       : output : 2.5 V             :         : 6         : N              
+GXB_GND*                     : J1        :        :                   :         : QL1       :                
+GXB_GND*                     : J2        :        :                   :         : QL1       :                
+GND                          : J3        : gnd    :                   :         :           :                
+GND                          : J4        : gnd    :                   :         :           :                
+GND                          : J5        : gnd    :                   :         :           :                
+VCCA                         : J6        : power  :                   : 2.5V    :           :                
+GND                          : J7        : gnd    :                   :         :           :                
+GND                          : J8        : gnd    :                   :         :           :                
+RESERVED_INPUT               : J9        :        :                   :         : 8         :                
+VCCIO8                       : J10       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J11       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J12       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J13       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J14       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J15       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J16       : power  :                   : 2.5V    : 8         :                
+VCCIO7                       : J17       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : J18       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : J19       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : J20       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : J21       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : J22       : power  :                   : 2.5V    : 7         :                
+VCCD_PLL                     : J23       : power  :                   : 1.2V    :           :                
+GND                          : J24       : gnd    :                   :         :           :                
+addr_Ram_Dado[13]            : J25       : output : 2.5 V             :         : 6         : N              
+numXDiv[20]                  : J26       : output : 2.5 V             :         : 6         : N              
+addr_Ram_Dado[3]             : J27       : output : 2.5 V             :         : 6         : N              
+valueDadoY[25]               : J28       : input  : 2.5 V             :         : 6         : N              
+reg3[2]                      : J29       : input  : 2.5 V             :         : 6         : N              
+o_count_Dado[1]              : J30       : output : 2.5 V             :         : 6         : N              
+GND                          : K1        : gnd    :                   :         :           :                
+GND                          : K2        : gnd    :                   :         :           :                
+GXB_NC                       : K3        :        :                   :         : QL1       :                
+GXB_NC                       : K4        :        :                   :         : QL1       :                
+VCCL_GXB                     : K5        : power  :                   : 1.2V    :           :                
+VCCD_PLL                     : K6        : power  :                   : 1.2V    :           :                
+GND                          : K7        : gnd    :                   :         :           :                
+GND                          : K8        : gnd    :                   :         :           :                
+VCCINT                       : K9        : power  :                   : 1.2V    :           :                
+VCC_CLKIN8B                  : K10       : power  :                   : 2.5V    : 8B        :                
+GXB_GND*                     : K11       :        :                   :         : 8B        :                
+GND                          : K12       : gnd    :                   :         :           :                
+VCCINT                       : K13       : power  :                   : 1.2V    :           :                
+GND                          : K14       : gnd    :                   :         :           :                
+GXB_GND*                     : K15       :        :                   :         : 8A        :                
+VCC_CLKIN8A                  : K16       : power  :                   : 2.5V    : 8A        :                
+addr_Ram_Map[8]              : K17       : output : 2.5 V             :         : 7         : N              
+numYDiv[21]                  : K18       : output : 2.5 V             :         : 7         : N              
+memValueY[29]                : K19       : output : 2.5 V             :         : 7         : N              
+GND                          : K20       : gnd    :                   :         :           :                
+numXDiv[22]                  : K21       : output : 2.5 V             :         : 7         : N              
+numYDiv[2]                   : K22       : output : 2.5 V             :         : 7         : N              
+VCCA                         : K23       : power  :                   : 2.5V    :           :                
+reg3[4]                      : K24       : input  : 2.5 V             :         : 6         : N              
+reg3[3]                      : K25       : input  : 2.5 V             :         : 6         : N              
+count_Dado[2]                : K26       : input  : 2.5 V             :         : 6         : N              
+addr_Ram_Dado[5]             : K27       : output : 2.5 V             :         : 6         : N              
+o_count_Dado[9]              : K28       : output : 2.5 V             :         : 6         : N              
+o_count_Dado[12]             : K29       : output : 2.5 V             :         : 6         : N              
+o_count_Dado[10]             : K30       : output : 2.5 V             :         : 6         : N              
+GXB_GND*                     : L1        :        :                   :         : QL1       :                
+GXB_GND*                     : L2        :        :                   :         : QL1       :                
+GND                          : L3        : gnd    :                   :         :           :                
+GND                          : L4        : gnd    :                   :         :           :                
+GND                          : L5        : gnd    :                   :         :           :                
+VCCH_GXB                     : L6        : power  :                   : 2.5V    :           :                
+GND                          : L7        : gnd    :                   :         :           :                
+VCCA                         : L8        : power  :                   : 2.5V    :           :                
+GND                          : L9        : gnd    :                   :         :           :                
+GXB_GND*                     : L10       :        :                   :         : 8B        :                
+GXB_GND*                     : L11       :        :                   :         : 8B        :                
+VCCINT                       : L12       : power  :                   : 1.2V    :           :                
+GND                          : L13       : gnd    :                   :         :           :                
+VCCINT                       : L14       : power  :                   : 1.2V    :           :                
+GXB_GND*                     : L15       :        :                   :         : 8A        :                
+VCCINT                       : L16       : power  :                   : 1.2V    :           :                
+GND                          : L17       : gnd    :                   :         :           :                
+VCCINT                       : L18       : power  :                   : 1.2V    :           :                
+GND                          : L19       : gnd    :                   :         :           :                
+VCCINT                       : L20       : power  :                   : 1.2V    :           :                
+GND                          : L21       : gnd    :                   :         :           :                
+VCCIO6                       : L22       : power  :                   : 2.5V    : 6         :                
+GND                          : L23       : gnd    :                   :         :           :                
+VCCIO6                       : L24       : power  :                   : 2.5V    : 6         :                
+addr_Ram_Dado[9]             : L25       : output : 2.5 V             :         : 6         : N              
+GND                          : L26       : gnd    :                   :         :           :                
+reg3[6]                      : L27       : input  : 2.5 V             :         : 6         : N              
+reg3[1]                      : L28       : input  : 2.5 V             :         : 6         : N              
+GND                          : L29       : gnd    :                   :         :           :                
+o_count_Dado[13]             : L30       : output : 2.5 V             :         : 6         : N              
+GND                          : M1        : gnd    :                   :         :           :                
+GND                          : M2        : gnd    :                   :         :           :                
+GXB_NC                       : M3        :        :                   :         : QL1       :                
+GXB_NC                       : M4        :        :                   :         : QL1       :                
+VCCL_GXB                     : M5        : power  :                   : 1.2V    :           :                
+GND                          : M6        : gnd    :                   :         :           :                
+VCCA_GXB                     : M7        : power  :                   : 2.5V    :           :                
+VCCD_PLL                     : M8        : power  :                   : 1.2V    :           :                
+VCCINT                       : M9        : power  :                   : 1.2V    :           :                
+GXB_GND*                     : M10       :        :                   :         : 8B        :                
+VCCINT                       : M11       : power  :                   : 1.2V    :           :                
+GND                          : M12       : gnd    :                   :         :           :                
+VCCINT                       : M13       : power  :                   : 1.2V    :           :                
+GND                          : M14       : gnd    :                   :         :           :                
+VCCINT                       : M15       : power  :                   : 1.2V    :           :                
+GND                          : M16       : gnd    :                   :         :           :                
+VCCINT                       : M17       : power  :                   : 1.2V    :           :                
+GND                          : M18       : gnd    :                   :         :           :                
+VCCINT                       : M19       : power  :                   : 1.2V    :           :                
+GND                          : M20       : gnd    :                   :         :           :                
+o_count_Dado[6]              : M21       : output : 2.5 V             :         : 6         : N              
+o_count_Dado[11]             : M22       : output : 2.5 V             :         : 6         : N              
+VCCIO6                       : M23       : power  :                   : 2.5V    : 6         :                
+VCCIO6                       : M24       : power  :                   : 2.5V    : 6         :                
+reg3[8]                      : M25       : input  : 2.5 V             :         : 6         : N              
+addr_Ram_Map[13]             : M26       : output : 2.5 V             :         : 6         : N              
+o_count_Dado[3]              : M27       : output : 2.5 V             :         : 6         : N              
+o_count_Dado[5]              : M28       : output : 2.5 V             :         : 6         : N              
+reg3[0]                      : M29       : input  : 2.5 V             :         : 6         : N              
+o_count_Dado[4]              : M30       : output : 2.5 V             :         : 6         : N              
+GXB_GND*                     : N1        :        :                   :         : QL1       :                
+GXB_GND*                     : N2        :        :                   :         : QL1       :                
+GND                          : N3        : gnd    :                   :         :           :                
+GND                          : N4        : gnd    :                   :         :           :                
+VCCH_GXB                     : N5        : power  :                   : 2.5V    :           :                
+GND                          : N6        : gnd    :                   :         :           :                
+VCCL_GXB                     : N7        : power  :                   : 1.2V    :           :                
+VCCINT                       : N8        : power  :                   : 1.2V    :           :                
+GND                          : N9        : gnd    :                   :         :           :                
+VCCINT                       : N10       : power  :                   : 1.2V    :           :                
+GND                          : N11       : gnd    :                   :         :           :                
+VCCINT                       : N12       : power  :                   : 1.2V    :           :                
+GND                          : N13       : gnd    :                   :         :           :                
+VCCINT                       : N14       : power  :                   : 1.2V    :           :                
+GND                          : N15       : gnd    :                   :         :           :                
+VCCINT                       : N16       : power  :                   : 1.2V    :           :                
+GND                          : N17       : gnd    :                   :         :           :                
+VCCINT                       : N18       : power  :                   : 1.2V    :           :                
+GND                          : N19       : gnd    :                   :         :           :                
+VCCINT                       : N20       : power  :                   : 1.2V    :           :                
+reg3[12]                     : N21       : input  : 2.5 V             :         : 6         : N              
+VCCIO6                       : N22       : power  :                   : 2.5V    : 6         :                
+VCCIO6                       : N23       : power  :                   : 2.5V    : 6         :                
+o_count_Dado[7]              : N24       : output : 2.5 V             :         : 6         : N              
+o_count_Dado[0]              : N25       : output : 2.5 V             :         : 6         : N              
+o_count_Centroid[8]          : N26       : output : 2.5 V             :         : 6         : N              
+count_Dado[3]                : N27       : input  : 2.5 V             :         : 6         : N              
+count_Dado[4]                : N28       : input  : 2.5 V             :         : 6         : N              
+count_Dado[8]                : N29       : input  : 2.5 V             :         : 6         : N              
+o_count_Centroid[7]          : N30       : output : 2.5 V             :         : 6         : N              
+GND                          : P1        : gnd    :                   :         :           :                
+GND                          : P2        : gnd    :                   :         :           :                
+GXB_NC                       : P3        :        :                   :         : QL1       :                
+GXB_NC                       : P4        :        :                   :         : QL1       :                
+GND                          : P5        : gnd    :                   :         :           :                
+VCCL_GXB                     : P6        : power  :                   : 1.2V    :           :                
+VCCD_PLL                     : P7        : power  :                   : 1.2V    :           :                
+GND                          : P8        : gnd    :                   :         :           :                
+VCCINT                       : P9        : power  :                   : 1.2V    :           :                
+GND                          : P10       : gnd    :                   :         :           :                
+VCCINT                       : P11       : power  :                   : 1.2V    :           :                
+GND                          : P12       : gnd    :                   :         :           :                
+VCCINT                       : P13       : power  :                   : 1.2V    :           :                
+GND                          : P14       : gnd    :                   :         :           :                
+VCCINT                       : P15       : power  :                   : 1.2V    :           :                
+GND                          : P16       : gnd    :                   :         :           :                
+VCCINT                       : P17       : power  :                   : 1.2V    :           :                
+GND                          : P18       : gnd    :                   :         :           :                
+VCCINT                       : P19       : power  :                   : 1.2V    :           :                
+GND                          : P20       : gnd    :                   :         :           :                
+o_count_Dado[14]             : P21       : output : 2.5 V             :         : 6         : N              
+VCCIO6                       : P22       : power  :                   : 2.5V    : 6         :                
+GND                          : P23       : gnd    :                   :         :           :                
+VCCIO6                       : P24       : power  :                   : 2.5V    : 6         :                
+count_Dado[11]               : P25       : input  : 2.5 V             :         : 6         : N              
+GND                          : P26       : gnd    :                   :         :           :                
+reg8[0]                      : P27       : input  : 2.5 V             :         : 6         : N              
+addr_Ram_Map[5]              : P28       : output : 2.5 V             :         : 6         : N              
+GND                          : P29       : gnd    :                   :         :           :                
+o_count_Centroid[4]          : P30       : output : 2.5 V             :         : 6         : N              
+GXB_GND*                     : R1        :        :                   :         : QL1       :                
+GXB_GND*                     : R2        :        :                   :         : QL1       :                
+GND                          : R3        : gnd    :                   :         :           :                
+GND                          : R4        : gnd    :                   :         :           :                
+GND                          : R5        : gnd    :                   :         :           :                
+VCCA_GXB                     : R6        : power  :                   : 2.5V    :           :                
+GND                          : R7        : gnd    :                   :         :           :                
+VCCA                         : R8        : power  :                   : 2.5V    :           :                
+GND                          : R9        : gnd    :                   :         :           :                
+VCCINT                       : R10       : power  :                   : 1.2V    :           :                
+GND                          : R11       : gnd    :                   :         :           :                
+VCCINT                       : R12       : power  :                   : 1.2V    :           :                
+GND                          : R13       : gnd    :                   :         :           :                
+VCCINT                       : R14       : power  :                   : 1.2V    :           :                
+GND                          : R15       : gnd    :                   :         :           :                
+VCCINT                       : R16       : power  :                   : 1.2V    :           :                
+GND                          : R17       : gnd    :                   :         :           :                
+VCCINT                       : R18       : power  :                   : 1.2V    :           :                
+GND                          : R19       : gnd    :                   :         :           :                
+VCCINT                       : R20       : power  :                   : 1.2V    :           :                
+GND                          : R21       : gnd    :                   :         :           :                
+VCCIO6                       : R22       : power  :                   : 2.5V    : 6         :                
+VCCIO6                       : R23       : power  :                   : 2.5V    : 6         :                
+count_Dado[13]               : R24       : input  : 2.5 V             :         : 6         : N              
+reg8[1]                      : R25       : input  : 2.5 V             :         : 6         : N              
+addr_Ram_Map[1]              : R26       : output : 2.5 V             :         : 6         : N              
+o_count_Centroid[5]          : R27       : output : 2.5 V             :         : 6         : N              
+o_count_Centroid[9]          : R28       : output : 2.5 V             :         : 6         : N              
+addr_Ram_Map[6]              : R29       : output : 2.5 V             :         : 6         : N              
+o_count_Centroid[6]          : R30       : output : 2.5 V             :         : 6         : N              
+GND                          : T1        : gnd    :                   :         :           :                
+GND                          : T2        : gnd    :                   :         :           :                
+GXB_NC                       : T3        :        :                   :         : QL0       :                
+GXB_NC                       : T4        :        :                   :         : QL0       :                
+GND                          : T5        : gnd    :                   :         :           :                
+VCCL_GXB                     : T6        : power  :                   : 1.2V    :           :                
+GND                          : T7        : gnd    :                   :         :           :                
+VCCA                         : T8        : power  :                   : 2.5V    :           :                
+VCCINT                       : T9        : power  :                   : 1.2V    :           :                
+GND                          : T10       : gnd    :                   :         :           :                
+VCCINT                       : T11       : power  :                   : 1.2V    :           :                
+GND                          : T12       : gnd    :                   :         :           :                
+VCCINT                       : T13       : power  :                   : 1.2V    :           :                
+GND                          : T14       : gnd    :                   :         :           :                
+VCCINT                       : T15       : power  :                   : 1.2V    :           :                
+GND                          : T16       : gnd    :                   :         :           :                
+VCCINT                       : T17       : power  :                   : 1.2V    :           :                
+GND                          : T18       : gnd    :                   :         :           :                
+VCCINT                       : T19       : power  :                   : 1.2V    :           :                
+GND                          : T20       : gnd    :                   :         :           :                
+memValueY[6]                 : T21       : output : 2.5 V             :         : 5         : N              
+GND                          : T22       : gnd    :                   :         :           :                
+numYDiv[12]                  : T23       : output : 2.5 V             :         : 5         : N              
+memValueX[20]                : T24       : output : 2.5 V             :         : 5         : N              
+memValueX[0]                 : T25       : output : 2.5 V             :         : 5         : N              
+reg8[2]                      : T26       : input  : 2.5 V             :         : 5         : N              
+o_count_Centroid[0]          : T27       : output : 2.5 V             :         : 5         : N              
+addr_Ram_Dado[10]            : T28       : output : 2.5 V             :         : 6         : N              
+GND+                         : T29       :        :                   :         : 6         :                
+GND+                         : T30       :        :                   :         : 6         :                
+GXB_GND*                     : U1        :        :                   :         : QL0       :                
+GXB_GND*                     : U2        :        :                   :         : QL0       :                
+GND                          : U3        : gnd    :                   :         :           :                
+GND                          : U4        : gnd    :                   :         :           :                
+GND                          : U5        : gnd    :                   :         :           :                
+VCCH_GXB                     : U6        : power  :                   : 2.5V    :           :                
+VCCD_PLL                     : U7        : power  :                   : 1.2V    :           :                
+VCCINT                       : U8        : power  :                   : 1.2V    :           :                
+GND                          : U9        : gnd    :                   :         :           :                
+VCCINT                       : U10       : power  :                   : 1.2V    :           :                
+GND                          : U11       : gnd    :                   :         :           :                
+VCCINT                       : U12       : power  :                   : 1.2V    :           :                
+GND                          : U13       : gnd    :                   :         :           :                
+VCCINT                       : U14       : power  :                   : 1.2V    :           :                
+GND                          : U15       : gnd    :                   :         :           :                
+VCCINT                       : U16       : power  :                   : 1.2V    :           :                
+GND                          : U17       : gnd    :                   :         :           :                
+VCCINT                       : U18       : power  :                   : 1.2V    :           :                
+GND                          : U19       : gnd    :                   :         :           :                
+VCCINT                       : U20       : power  :                   : 1.2V    :           :                
+numXDiv[29]                  : U21       : output : 2.5 V             :         : 5         : N              
+VCCIO5                       : U22       : power  :                   : 2.5V    : 5         :                
+GND                          : U23       : gnd    :                   :         :           :                
+VCCIO5                       : U24       : power  :                   : 2.5V    : 5         :                
+denDiv[29]                   : U25       : output : 2.5 V             :         : 5         : N              
+GND                          : U26       : gnd    :                   :         :           :                
+memValueX[4]                 : U27       : output : 2.5 V             :         : 5         : N              
+valueMap[1]                  : U28       : input  : 2.5 V             :         : 5         : N              
+GND                          : U29       : gnd    :                   :         :           :                
+memValueX[23]                : U30       : output : 2.5 V             :         : 5         : N              
+GND                          : V1        : gnd    :                   :         :           :                
+GND                          : V2        : gnd    :                   :         :           :                
+GXB_NC                       : V3        :        :                   :         : QL0       :                
+GXB_NC                       : V4        :        :                   :         : QL0       :                
+VCCL_GXB                     : V5        : power  :                   : 1.2V    :           :                
+GND                          : V6        : gnd    :                   :         :           :                
+VCCA_GXB                     : V7        : power  :                   : 2.5V    :           :                
+GND                          : V8        : gnd    :                   :         :           :                
+VCCINT                       : V9        : power  :                   : 1.2V    :           :                
+GND                          : V10       : gnd    :                   :         :           :                
+GXB_GND*                     : V11       :        :                   :         : 3B        :                
+GXB_GND*                     : V12       :        :                   :         : 3B        :                
+VCCINT                       : V13       : power  :                   : 1.2V    :           :                
+GND                          : V14       : gnd    :                   :         :           :                
+nrst                         : V15       : input  : 2.5 V             :         : 3A        : N              
+GND                          : V16       : gnd    :                   :         :           :                
+VCCINT                       : V17       : power  :                   : 1.2V    :           :                
+GND                          : V18       : gnd    :                   :         :           :                
+VCCINT                       : V19       : power  :                   : 1.2V    :           :                
+GND                          : V20       : gnd    :                   :         :           :                
+memValueY[9]                 : V21       : output : 2.5 V             :         : 5         : N              
+VCCIO5                       : V22       : power  :                   : 2.5V    : 5         :                
+VCCIO5                       : V23       : power  :                   : 2.5V    : 5         :                
+GND                          : V24       : gnd    :                   :         :           :                
+memValueX[5]                 : V25       : output : 2.5 V             :         : 5         : N              
+memValueX[27]                : V26       : output : 2.5 V             :         : 5         : N              
+o_count_Centroid[3]          : V27       : output : 2.5 V             :         : 5         : N              
+valueMap[0]                  : V28       : input  : 2.5 V             :         : 5         : N              
+GND+                         : V29       :        :                   :         : 5         :                
+GND+                         : V30       :        :                   :         : 5         :                
+GXB_GND*                     : W1        :        :                   :         : QL0       :                
+GXB_GND*                     : W2        :        :                   :         : QL0       :                
+GND                          : W3        : gnd    :                   :         :           :                
+GND                          : W4        : gnd    :                   :         :           :                
+GND                          : W5        : gnd    :                   :         :           :                
+GND                          : W6        : gnd    :                   :         :           :                
+VCCH_GXB                     : W7        : power  :                   : 2.5V    :           :                
+VCCINT                       : W8        : power  :                   : 1.2V    :           :                
+GND                          : W9        : gnd    :                   :         :           :                
+VCCINT                       : W10       : power  :                   : 1.2V    :           :                
+GXB_GND*                     : W11       :        :                   :         : 3B        :                
+GXB_GND*                     : W12       :        :                   :         : 3B        :                
+GND                          : W13       : gnd    :                   :         :           :                
+VCCINT                       : W14       : power  :                   : 1.2V    :           :                
+clk                          : W15       : input  : 2.5 V             :         : 3A        : N              
+VCC_CLKIN3A                  : W16       : power  :                   : 2.5V    : 3A        :                
+GND                          : W17       : gnd    :                   :         :           :                
+VCCINT                       : W18       : power  :                   : 1.2V    :           :                
+GND                          : W19       : gnd    :                   :         :           :                
+VCCINT                       : W20       : power  :                   : 1.2V    :           :                
+GND                          : W21       : gnd    :                   :         :           :                
+VCCIO5                       : W22       : power  :                   : 2.5V    : 5         :                
+VCCIO5                       : W23       : power  :                   : 2.5V    : 5         :                
+VCCIO5                       : W24       : power  :                   : 2.5V    : 5         :                
+numYDiv[9]                   : W25       : output : 2.5 V             :         : 5         : N              
+valueMap[3]                  : W26       : input  : 2.5 V             :         : 5         : N              
+memValueX[2]                 : W27       : output : 2.5 V             :         : 5         : N              
+numXDiv[17]                  : W28       : output : 2.5 V             :         : 5         : N              
+o_count_Centroid[1]          : W29       : output : 2.5 V             :         : 5         : N              
+numXDiv[7]                   : W30       : output : 2.5 V             :         : 5         : N              
+GND                          : Y1        : gnd    :                   :         :           :                
+GND                          : Y2        : gnd    :                   :         :           :                
+GXB_NC                       : Y3        :        :                   :         : QL0       :                
+GXB_NC                       : Y4        :        :                   :         : QL0       :                
+VCCL_GXB                     : Y5        : power  :                   : 1.2V    :           :                
+VCCA_GXB                     : Y6        : power  :                   : 2.5V    :           :                
+VCCD_PLL                     : Y7        : power  :                   : 1.2V    :           :                
+VCCD_PLL                     : Y8        : power  :                   : 1.2V    :           :                
+GND                          : Y9        : gnd    :                   :         :           :                
+GND                          : Y10       : gnd    :                   :         :           :                
+VCCINT                       : Y11       : power  :                   : 1.2V    :           :                
+VCC_CLKIN3B                  : Y12       : power  :                   : 2.5V    : 3B        :                
+VCCINT                       : Y13       : power  :                   : 1.2V    :           :                
+GND                          : Y14       : gnd    :                   :         :           :                
+VCCINT                       : Y15       : power  :                   : 1.2V    :           :                
+GND                          : Y16       : gnd    :                   :         :           :                
+denDiv[5]                    : Y17       : output : 2.5 V             :         : 4         : N              
+memValueY[7]                 : Y18       : output : 2.5 V             :         : 4         : N              
+memValueX[12]                : Y19       : output : 2.5 V             :         : 4         : N              
+memValueX[11]                : Y20       : output : 2.5 V             :         : 4         : N              
+valueMap[2]                  : Y21       : input  : 2.5 V             :         : 4         : N              
+valueDadoX[12]               : Y22       : input  : 2.5 V             :         : 5         : N              
+GND                          : Y23       : gnd    :                   :         :           :                
+VCCIO5                       : Y24       : power  :                   : 2.5V    : 5         :                
+valueDadoX[21]               : Y25       : input  : 2.5 V             :         : 5         : N              
+GND                          : Y26       : gnd    :                   :         :           :                
+estado[3]                    : Y27       : output : 2.5 V             :         : 5         : N              
+count_Dado[14]               : Y28       : input  : 2.5 V             :         : 5         : N              
+GND                          : Y29       : gnd    :                   :         :           :                
+numXDiv[2]                   : Y30       : output : 2.5 V             :         : 5         : N              

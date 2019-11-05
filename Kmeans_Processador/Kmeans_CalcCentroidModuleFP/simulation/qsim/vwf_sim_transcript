@@ -1,0 +1,541 @@
+Determining the location of the ModelSim executable...
+
+Using: /home/lucasandrade/intelFPGA/16.1/modelsim_ase/linuxaloem
+
+To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
+Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-Altera will be used.
+
+**** Generating the ModelSim Testbench ****
+
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Kmeans_CalcCentroidModuleFP -c Kmeans_CalcCentroidModuleFP --vector_source="/home/lucasandrade/Documents/Lucas/Int+Float-64 bits-16 dimensoes/Kmeans_Processador/Kmeans_CalcCentroidModuleFP/Kmeans_CalcCentroidModuleFP.vwf" --testbench_file="/home/lucasandrade/Documents/Lucas/Int+Float-64 bits-16 dimensoes/Kmeans_Processador/Kmeans_CalcCentroidModuleFP/simulation/qsim/Kmeans_CalcCentroidModuleFP.vwf.vht"
+
+Inconsistency detected by ld.so: dl-close.c: 811: _dl_close: Assertion `map->l_init_called' failed!
+Info: *******************************************************************Info: Running Quartus Prime EDA Netlist Writer    Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition    Info: Copyright (C) 2016  Intel Corporation. All rights reserved.    Info: Your use of Intel Corporation's design tools, logic functions     Info: and other software and tools, and its AMPP partner logic     Info: functions, and any output files from any of the foregoing     Info: (including device programming or simulation files), and any     Info: associated documentation or information are expressly subject     Info: to the terms and conditions of the Intel Program License     Info: Subscription Agreement, the Intel Quartus Prime License Agreement,    Info: the Intel MegaCore Function License Agreement, or other     Info: applicable license agreement, including, without limitation,     Info: that your use is for the sole purpose of programming logic     Info: devices manufactured by Intel and sold by Intel or its     Info: authorized distributors.  Please refer to the applicable     Info: agreement for further details.    Info: Processing started: Wed Apr  5 16:06:45 2017Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Kmeans_CalcCentroidModuleFP -c Kmeans_CalcCentroidModuleFP --vector_source="/home/lucasandrade/Documents/Lucas/Int+Float-64 bits-16 dimensoes/Kmeans_Processador/Kmeans_CalcCentroidModuleFP/Kmeans_CalcCentroidModuleFP.vwf" --testbench_file="/home/lucasandrade/Documents/Lucas/Int+Float-64 bits-16 dimensoes/Kmeans_Processador/Kmeans_CalcCentroidModuleFP/simulation/qsim/Kmeans_CalcCentroidModuleFP.vwf.vht"Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+
+es
+[4]" in vector source file when writing test bench files
+Completed successfully. 
+
+**** Generating the functional simulation netlist ****
+
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="/home/lucasandrade/Documents/Lucas/Int+Float-64 bits-16 dimensoes/Kmeans_Processador/Kmeans_CalcCentroidModuleFP/simulation/qsim/" Kmeans_CalcCentroidModuleFP -c Kmeans_CalcCentroidModuleFP
+
+Inconsistency detected by ld.so: dl-close.c: 811: _dl_close: Assertion `map->l_init_called' failed!
+Info: *******************************************************************Info: Running Quartus Prime EDA Netlist Writer    Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition    Info: Copyright (C) 2016  Intel Corporation. All rights reserved.    Info: Your use of Intel Corporation's design tools, logic functions     Info: and other software and tools, and its AMPP partner logic     Info: functions, and any output files from any of the foregoing     Info: (including device programming or simulation files), and any     Info: associated documentation or information are expressly subject     Info: to the terms and conditions of the Intel Program License     Info: Subscription Agreement, the Intel Quartus Prime License Agreement,    Info: the Intel MegaCore Function License Agreement, or other     Info: applicable license agreement, including, without limitation,     Info: that your use is for the sole purpose of programming logic     Info: devices manufactured by Intel and sold by Intel or its     Info: authorized distributors.  Please refer to the applicable     Info: agreement for further details.    Info: Processing started: Wed Apr  5 16:06:47 2017Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="/home/lucasandrade/Documents/Lucas/Int+Float-64 bits-16 dimensoes/Kmeans_Processador/Kmeans_CalcCentroidModuleFP/simulation/qsim/" Kmeans_CalcCentroidModuleFP -c Kmeans_CalcCentroidModuleFPWarning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.Info (204019): Generated file Kmeans_CalcCentroidModuleFP.vho in folder "/home/lucasandrade/Documents/Lucas/Int+Float-64 bits-16 dimensoes/Kmeans_Processador/Kmeans_CalcCentroidModuleFP/simulation/qsim//" for EDA simulation toolInfo: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning    Info: Peak virtual memory: 1075 megabytes    Info: Processing ended: Wed Apr  5 16:06:50 2017    Info: Elapsed time: 00:00:03    Info: Total CPU time (on all processors): 00:00:03
+Completed successfully. 
+
+**** Generating the ModelSim .do script ****
+
+/home/lucasandrade/Documents/Lucas/Int+Float-64 bits-16 dimensoes/Kmeans_Processador/Kmeans_CalcCentroidModuleFP/simulation/qsim/Kmeans_CalcCentroidModuleFP.do generated.
+
+Completed successfully. 
+
+**** Running the ModelSim simulation ****
+
+/home/lucasandrade/intelFPGA/16.1/modelsim_ase/linuxaloem/vsim -c -do Kmeans_CalcCentroidModuleFP.do
+
+Reading pref.tcl
+# 10.5b
+# do Kmeans_CalcCentroidModuleFP.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:06:51 on Apr 05,2017# vcom -work work Kmeans_CalcCentroidModuleFP.vho # -- Loading package STANDARD
+# -- Loading package TEXTIO# -- Loading package std_logic_1164# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives# -- Loading package cycloneive_atom_pack# -- Loading package cycloneive_components
+# -- Compiling entity hard_block
+# -- Compiling architecture structure of hard_block
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components# -- Compiling entity Kmeans_CalcCentroidModuleFP# -- Compiling architecture structure of Kmeans_CalcCentroidModuleFP
+# End time: 16:06:53 on Apr 05,2017, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:06:53 on Apr 05,2017# vcom -work work Kmeans_CalcCentroidModuleFP.vwf.vht # -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Kmeans_CalcCentroidModuleFP_vhd_vec_tst# -- Compiling architecture Kmeans_CalcCentroidModuleFP_arch of Kmeans_CalcCentroidModuleFP_vhd_vec_tst
+# End time: 16:06:53 on Apr 05,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Kmeans_CalcCentroidModuleFP_vhd_vec_tst # Start time: 16:06:53 on Apr 05,2017# Loading std.standard# Loading std.textio(body)# Loading ieee.std_logic_1164(body)# Loading work.kmeans_calccentroidmodulefp_vhd_vec_tst(kmeans_calccentroidmodulefp_arch)# Loading ieee.vital_timing(body)# Loading ieee.vital_primitives(body)# Loading altera.dffeas_pack# Loading altera.altera_primitives_components# Loading cycloneive.cycloneive_atom_pack(body)# Loading cycloneive.cycloneive_components# Loading work.kmeans_calccentroidmodulefp(structure)# Loading work.hard_block(structure)# Loading ieee.std_logic_arith(body)# Loading cycloneive.cycloneive_io_obuf(arch)# Loading cycloneive.cycloneive_io_ibuf(arch)# Loading cycloneive.cycloneive_clkctrl(vital_clkctrl)# Loading cycloneive.cycloneive_ena_reg(behave)# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)# Loading altera.dffeas(vital_dffeas)# Loading cycloneive.cycloneive_ram_block(block_arch)# Loading cycloneive.cycloneive_ram_register(reg_arch)# Loading cycloneive.cycloneive_ram_pulse_generator(pgen_arch)# Loading ieee.std_logic_unsigned(body)# Loading cycloneive.cycloneive_mac_mult(vital_cycloneive_mac_mult)# Loading cycloneive.cycloneive_mac_data_reg(vital_cycloneive_mac_data_reg)# Loading cycloneive.cycloneive_mac_sign_reg(cycloneive_mac_sign_reg)# Loading cycloneive.cycloneive_mac_mult_internal(vital_cycloneive_mac_mult_internal)# Loading cycloneive.cycloneive_mac_out(vital_cycloneive_mac_out)# ** Warning: Design size of 838316 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.# Expect performance to be adversely affected.
+# after#35
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|remainder_mult_0|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|remainder_mult_0|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|remainder_mult_0|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|remainder_mult_0|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_0|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_0|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|b1_prod|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|b1_prod|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|b1_prod|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|b1_prod|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|a1_prod|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|a1_prod|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|a1_prod|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|a1_prod|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|remainder_mult_0|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|remainder_mult_0|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|remainder_mult_0|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|remainder_mult_0|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_0|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_0|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|b1_prod|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|b1_prod|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|b1_prod|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|b1_prod|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|a1_prod|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|a1_prod|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|a1_prod|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|a1_prod|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|remainder_mult_0|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|remainder_mult_0|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|remainder_mult_0|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|remainder_mult_0|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_0|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_0|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|b1_prod|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|b1_prod|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|b1_prod|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|b1_prod|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|a1_prod|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|a1_prod|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|a1_prod|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|a1_prod|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|remainder_mult_0|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|remainder_mult_0|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|remainder_mult_0|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|remainder_mult_0|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_0|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_0|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|b1_prod|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|b1_prod|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|b1_prod|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|b1_prod|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|a1_prod|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|a1_prod|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|a1_prod|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|a1_prod|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 3  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|b1_prod|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 3  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|remainder_mult_0|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 3  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|remainder_mult_0|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 3  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 3  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|b1_prod|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 3  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|remainder_mult_0|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 3  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|remainder_mult_0|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 3  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|b1_prod|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|b1_prod|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|b1_prod|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|a1_prod|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|a1_prod|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|a1_prod|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|a1_prod|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|b1_prod|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|b1_prod|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|b1_prod|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|a1_prod|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|a1_prod|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|a1_prod|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|a1_prod|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|remainder_mult_0|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|remainder_mult_0|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_0|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_0|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|remainder_mult_0|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|remainder_mult_0|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_0|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_0|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 5  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|a1_prod|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 5  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|a1_prod|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 5  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|a1_prod|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 5  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|a1_prod|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 5  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|b1_prod|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 5  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|b1_prod|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 5  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_0|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 5  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_0|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 5  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 5  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|a1_prod|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 5  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|a1_prod|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 5  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|a1_prod|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 5  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|a1_prod|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 5  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_0|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 5  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_0|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 5  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 6  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_0|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 6  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_0|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 6  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_0|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 6  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_0|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 7  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|a1_prod|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 7  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|a1_prod|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 7  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|a1_prod|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 7  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|a1_prod|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 8  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_0|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 8  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_0|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 8  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_0|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 8  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_0|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 44  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 44  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 46  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 46  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 48  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 48  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 50  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 50  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 52  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 52  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 54  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 54  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 56  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 56  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 58  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 58  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 60  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 60  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 62  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 62  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 64  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 64  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 66  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 66  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 68  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 68  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 70  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 70  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 72  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 72  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 74  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst7|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 74  Instance: /kmeans_calccentroidmodulefp_vhd_vec_tst/i1/\inst8|Div_FP_altfp_div_ach_component|altfp_div_pst1|q_partial_1|auto_generated|mac_mult1\/mac_multiply
+# Simulation time: 0 ps
+# Simulation time: 0 ps
+# Simulation time: 0 ps
+# Simulation time: 0 ps
+# Simulation time: 0 ps
+# Simulation time: 0 ps
+# Simulation time: 0 ps
+# Simulation time: 0 ps
+# Simulation time: 1440000 ps
+# Simulation time: 1440000 ps
+# Simulation time: 1440000 ps
+# End time: 16:07:24 on Apr 05,2017, Elapsed time: 0:00:31# Errors: 0, Warnings: 157
+Completed successfully. 
+
+**** Converting ModelSim VCD to vector waveform ****
+
+Reading /home/lucasandrade/Documents/Lucas/Int+Float-64 bits-16 dimensoes/Kmeans_Processador/Kmeans_CalcCentroidModuleFP/Kmeans_CalcCentroidModuleFP.vwf...
+
+Reading /home/lucasandrade/Documents/Lucas/Int+Float-64 bits-16 dimensoes/Kmeans_Processador/Kmeans_CalcCentroidModuleFP/simulation/qsim/Kmeans_CalcCentroidModuleFP.msim.vcd...
+
+Processing channel transitions... 
+
+Warning: o_valueX[31] - signal not found in VCD.
+
+Warning: o_valueX[30] - signal not found in VCD.
+
+Warning: o_valueX[29] - signal not found in VCD.
+
+Warning: o_valueX[28] - signal not found in VCD.
+
+Warning: o_valueX[27] - signal not found in VCD.
+
+Warning: o_valueX[26] - signal not found in VCD.
+
+Warning: o_valueX[25] - signal not found in VCD.
+
+Warning: o_valueX[24] - signal not found in VCD.
+
+Warning: o_valueX[23] - signal not found in VCD.
+
+Warning: o_valueX[22] - signal not found in VCD.
+
+Warning: o_valueX[21] - signal not found in VCD.
+
+Warning: o_valueX[20] - signal not found in VCD.
+
+Warning: o_valueX[19] - signal not found in VCD.
+
+Warning: o_valueX[18] - signal not found in VCD.
+
+Warning: o_valueX[17] - signal not found in VCD.
+
+Warning: o_valueX[16] - signal not found in VCD.
+
+Warning: o_valueX[15] - signal not found in VCD.
+
+Warning: o_valueX[14] - signal not found in VCD.
+
+Warning: o_valueX[13] - signal not found in VCD.
+
+Warning: o_valueX[12] - signal not found in VCD.
+
+Warning: o_valueX[11] - signal not found in VCD.
+
+Warning: o_valueX[10] - signal not found in VCD.
+
+Warning: o_valueX[9] - signal not found in VCD.
+
+Warning: o_valueX[8] - signal not found in VCD.
+
+Warning: o_valueX[7] - signal not found in VCD.
+
+Warning: o_valueX[6] - signal not found in VCD.
+
+Warning: o_valueX[5] - signal not found in VCD.
+
+Warning: o_valueX[4] - signal not found in VCD.
+
+Warning: o_valueX[3] - signal not found in VCD.
+
+Warning: o_valueX[2] - signal not found in VCD.
+
+Warning: o_valueX[1] - signal not found in VCD.
+
+Warning: o_valueX[0] - signal not found in VCD.
+
+Warning: o_valueY[31] - signal not found in VCD.
+
+Warning: o_valueY[30] - signal not found in VCD.
+
+Warning: o_valueY[29] - signal not found in VCD.
+
+Warning: o_valueY[28] - signal not found in VCD.
+
+Warning: o_valueY[27] - signal not found in VCD.
+
+Warning: o_valueY[26] - signal not found in VCD.
+
+Warning: o_valueY[25] - signal not found in VCD.
+
+Warning: o_valueY[24] - signal not found in VCD.
+
+Warning: o_valueY[23] - signal not found in VCD.
+
+Warning: o_valueY[22] - signal not found in VCD.
+
+Warning: o_valueY[21] - signal not found in VCD.
+
+Warning: o_valueY[20] - signal not found in VCD.
+
+Warning: o_valueY[19] - signal not found in VCD.
+
+Warning: o_valueY[18] - signal not found in VCD.
+
+Warning: o_valueY[17] - signal not found in VCD.
+
+Warning: o_valueY[16] - signal not found in VCD.
+
+Warning: o_valueY[15] - signal not found in VCD.
+
+Warning: o_valueY[14] - signal not found in VCD.
+
+Warning: o_valueY[13] - signal not found in VCD.
+
+Warning: o_valueY[12] - signal not found in VCD.
+
+Warning: o_valueY[11] - signal not found in VCD.
+
+Warning: o_valueY[10] - signal not found in VCD.
+
+Warning: o_valueY[9] - signal not found in VCD.
+
+Warning: o_valueY[8] - signal not found in VCD.
+
+Warning: o_valueY[7] - signal not found in VCD.
+
+Warning: o_valueY[6] - signal not found in VCD.
+
+Warning: o_valueY[5] - signal not found in VCD.
+
+Warning: o_valueY[4] - signal not found in VCD.
+
+Warning: o_valueY[3] - signal not found in VCD.
+
+Warning: o_valueY[2] - signal not found in VCD.
+
+Warning: o_valueY[1] - signal not found in VCD.
+
+Warning: o_valueY[0] - signal not found in VCD.
+
+Warning: valueX5[31] - signal not found in VCD.
+
+Warning: valueX5[30] - signal not found in VCD.
+
+Warning: valueX5[29] - signal not found in VCD.
+
+Warning: valueX5[28] - signal not found in VCD.
+
+Warning: valueX5[27] - signal not found in VCD.
+
+Warning: valueX5[26] - signal not found in VCD.
+
+Warning: valueX5[25] - signal not found in VCD.
+
+Warning: valueX5[24] - signal not found in VCD.
+
+Warning: valueX5[23] - signal not found in VCD.
+
+Warning: valueX5[22] - signal not found in VCD.
+
+Warning: valueX5[21] - signal not found in VCD.
+
+Warning: valueX5[20] - signal not found in VCD.
+
+Warning: valueX5[19] - signal not found in VCD.
+
+Warning: valueX5[18] - signal not found in VCD.
+
+Warning: valueX5[17] - signal not found in VCD.
+
+Warning: valueX5[16] - signal not found in VCD.
+
+Warning: valueX5[15] - signal not found in VCD.
+
+Warning: valueX5[14] - signal not found in VCD.
+
+Warning: valueX5[13] - signal not found in VCD.
+
+Warning: valueX5[12] - signal not found in VCD.
+
+Warning: valueX5[11] - signal not found in VCD.
+
+Warning: valueX5[10] - signal not found in VCD.
+
+Warning: valueX5[9] - signal not found in VCD.
+
+Warning: valueX5[8] - signal not found in VCD.
+
+Warning: valueX5[7] - signal not found in VCD.
+
+Warning: valueX5[6] - signal not found in VCD.
+
+Warning: valueX5[5] - signal not found in VCD.
+
+Warning: valueX5[4] - signal not found in VCD.
+
+Warning: valueX5[3] - signal not found in VCD.
+
+Warning: valueX5[2] - signal not found in VCD.
+
+Warning: valueX5[1] - signal not found in VCD.
+
+Warning: valueX5[0] - signal not found in VCD.
+
+Warning: valueY[31] - signal not found in VCD.
+
+Warning: valueY[30] - signal not found in VCD.
+
+Warning: valueY[29] - signal not found in VCD.
+
+Warning: valueY[28] - signal not found in VCD.
+
+Warning: valueY[27] - signal not found in VCD.
+
+Warning: valueY[26] - signal not found in VCD.
+
+Warning: valueY[25] - signal not found in VCD.
+
+Warning: valueY[24] - signal not found in VCD.
+
+Warning: valueY[23] - signal not found in VCD.
+
+Warning: valueY[22] - signal not found in VCD.
+
+Warning: valueY[21] - signal not found in VCD.
+
+Warning: valueY[20] - signal not found in VCD.
+
+Warning: valueY[19] - signal not found in VCD.
+
+Warning: valueY[18] - signal not found in VCD.
+
+Warning: valueY[17] - signal not found in VCD.
+
+Warning: valueY[16] - signal not found in VCD.
+
+Warning: valueY[15] - signal not found in VCD.
+
+Warning: valueY[14] - signal not found in VCD.
+
+Warning: valueY[13] - signal not found in VCD.
+
+Warning: valueY[12] - signal not found in VCD.
+
+Warning: valueY[11] - signal not found in VCD.
+
+Warning: valueY[10] - signal not found in VCD.
+
+Warning: valueY[9] - signal not found in VCD.
+
+Warning: valueY[8] - signal not found in VCD.
+
+Warning: valueY[7] - signal not found in VCD.
+
+Warning: valueY[6] - signal not found in VCD.
+
+Warning: valueY[5] - signal not found in VCD.
+
+Warning: valueY[4] - signal not found in VCD.
+
+Warning: valueY[3] - signal not found in VCD.
+
+Warning: valueY[2] - signal not found in VCD.
+
+Warning: valueY[1] - signal not found in VCD.
+
+Warning: valueY[0] - signal not found in VCD.
+
+Warning: denY[31] - signal not found in VCD.
+
+Warning: denY[30] - signal not found in VCD.
+
+Warning: denY[29] - signal not found in VCD.
+
+Warning: denY[28] - signal not found in VCD.
+
+Warning: denY[27] - signal not found in VCD.
+
+Warning: denY[26] - signal not found in VCD.
+
+Warning: denY[25] - signal not found in VCD.
+
+Warning: denY[24] - signal not found in VCD.
+
+Warning: denY[23] - signal not found in VCD.
+
+Warning: denY[22] - signal not found in VCD.
+
+Warning: denY[21] - signal not found in VCD.
+
+Warning: denY[20] - signal not found in VCD.
+
+Warning: denY[19] - signal not found in VCD.
+
+Warning: denY[18] - signal not found in VCD.
+
+Warning: denY[17] - signal not found in VCD.
+
+Warning: denY[16] - signal not found in VCD.
+
+Warning: denY[15] - signal not found in VCD.
+
+Warning: denY[14] - signal not found in VCD.
+
+Warning: denY[13] - signal not found in VCD.
+
+Warning: denY[12] - signal not found in VCD.
+
+Warning: denY[11] - signal not found in VCD.
+
+Warning: denY[10] - signal not found in VCD.
+
+Warning: denY[9] - signal not found in VCD.
+
+Warning: denY[8] - signal not found in VCD.
+
+Warning: denY[7] - signal not found in VCD.
+
+Warning: denY[6] - signal not found in VCD.
+
+Warning: denY[5] - signal not found in VCD.
+
+Warning: denY[4] - signal not found in VCD.
+
+Warning: denY[3] - signal not found in VCD.
+
+Warning: denY[2] - signal not found in VCD.
+
+Warning: denY[1] - signal not found in VCD.
+
+Warning: denY[0] - signal not found in VCD.
+
+Warning: numY[31] - signal not found in VCD.
+
+Warning: numY[30] - signal not found in VCD.
+
+Warning: numY[29] - signal not found in VCD.
+
+Warning: numY[28] - signal not found in VCD.
+
+Warning: numY[27] - signal not found in VCD.
+
+Warning: numY[26] - signal not found in VCD.
+
+Warning: numY[25] - signal not found in VCD.
+
+Warning: numY[24] - signal not found in VCD.
+
+Warning: numY[23] - signal not found in VCD.
+
+Warning: numY[22] - signal not found in VCD.
+
+Warning: numY[21] - signal not found in VCD.
+
+Warning: numY[20] - signal not found in VCD.
+
+Warning: numY[19] - signal not found in VCD.
+
+Warning: numY[18] - signal not found in VCD.
+
+Warning: numY[17] - signal not found in VCD.
+
+Warning: numY[16] - signal not found in VCD.
+
+Warning: numY[15] - signal not found in VCD.
+
+Warning: numY[14] - signal not found in VCD.
+
+Warning: numY[13] - signal not found in VCD.
+
+Warning: numY[12] - signal not found in VCD.
+
+Warning: numY[11] - signal not found in VCD.
+
+Warning: numY[10] - signal not found in VCD.
+
+Warning: numY[9] - signal not found in VCD.
+
+Warning: numY[8] - signal not found in VCD.
+
+Warning: numY[7] - signal not found in VCD.
+
+Warning: numY[6] - signal not found in VCD.
+
+Warning: numY[5] - signal not found in VCD.
+
+Warning: numY[4] - signal not found in VCD.
+
+Warning: numY[3] - signal not found in VCD.
+
+Warning: numY[2] - signal not found in VCD.
+
+Warning: numY[1] - signal not found in VCD.
+
+Warning: numY[0] - signal not found in VCD.
+
+Warning: denIn[31] - signal not found in VCD.
+
+Warning: denIn[30] - signal not found in VCD.
+
+Warning: denIn[29] - signal not found in VCD.
+
+Warning: denIn[28] - signal not found in VCD.
+
+Warning: denIn[27] - signal not found in VCD.
+
+Warning: denIn[26] - signal not found in VCD.
+
+Warning: denIn[25] - signal not found in VCD.
+
+Warning: denIn[24] - signal not found in VCD.
+
+Warning: denIn[23] - signal not found in VCD.
+
+Warning: denIn[22] - signal not found in VCD.
+
+Warning: denIn[21] - signal not found in VCD.
+
+Warning: denIn[20] - signal not found in VCD.
+
+Warning: denIn[19] - signal not found in VCD.
+
+Warning: denIn[18] - signal not found in VCD.
+
+Warning: denIn[17] - signal not found in VCD.
+
+Warning: denIn[16] - signal not found in VCD.
+
+Warning: denIn[15] - signal not found in VCD.
+
+Warning: denIn[14] - signal not found in VCD.
+
+Warning: denIn[13] - signal not found in VCD.
+
+Warning: denIn[12] - signal not found in VCD.
+
+Warning: denIn[11] - signal not found in VCD.
+
+Warning: denIn[10] - signal not found in VCD.
+
+Warning: denIn[9] - signal not found in VCD.
+
+Warning: denIn[8] - signal not found in VCD.
+
+Warning: denIn[7] - signal not found in VCD.
+
+Warning: denIn[6] - signal not found in VCD.
+
+Warning: denIn[5] - signal not found in VCD.
+
+Warning: denIn[4] - signal not found in VCD.
+
+Warning: denIn[3] - signal not found in VCD.
+
+Warning: denIn[2] - signal not found in VCD.
+
+Warning: denIn[1] - signal not found in VCD.
+
+Warning: denIn[0] - signal not found in VCD.
+
+Writing the resulting VWF to /home/lucasandrade/Documents/Lucas/Int+Float-64 bits-16 dimensoes/Kmeans_Processador/Kmeans_CalcCentroidModuleFP/simulation/qsim/Kmeans_CalcCentroidModuleFP_20170405160724.sim.vwf
+
+Finished VCD to VWF conversion.
+
+Completed successfully. 
+
+All completed.

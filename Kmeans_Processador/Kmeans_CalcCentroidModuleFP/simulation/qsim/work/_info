@@ -1,0 +1,147 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/lucasandrade/Documents/Lucas/Kmeans_Processador/Kmeans_CalcCentroidModuleFP/simulation/qsim
+Ehard_block
+Z0 w1491419210
+Z1 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z2 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 K`kJb<]?z4U5EbkG_:lMO3
+Z3 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z6 DPx10 cycloneive 21 cycloneive_components 0 22 HFZ8mBI5?[8TM9e2YGWCa2
+Z7 d/home/lucasandrade/Documents/Lucas/Int+Float-64 bits-16 dimensoes/Kmeans_Processador/Kmeans_CalcCentroidModuleFP/simulation/qsim
+Z8 8Kmeans_CalcCentroidModuleFP.vho
+Z9 FKmeans_CalcCentroidModuleFP.vho
+l0
+L35
+VB]0;STalBkCB1_B4BXQDW2
+!s100 >mXi5[`cD`bFC`UBKA<om3
+Z10 OV;C;10.5b;63
+32
+Z11 !s110 1491419211
+!i10b 1
+Z12 !s108 1491419211.000000
+Z13 !s90 -work|work|Kmeans_CalcCentroidModuleFP.vho|
+Z14 !s107 Kmeans_CalcCentroidModuleFP.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R1
+R2
+R3
+R4
+R5
+R6
+DEx4 work 10 hard_block 0 22 B]0;STalBkCB1_B4BXQDW2
+l65
+L51
+Via>5o7W??azG@W@@eFOTF0
+!s100 [5;Wd8QGQ>@2NGoJ1I]Y43
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Ekmeans_calccentroidmodulefp
+R0
+R2
+R6
+R1
+Z17 DPx6 altera 11 dffeas_pack 0 22 zWCf]NF6heG=Dhmc@B0=T2
+R3
+R4
+R5
+Z18 DPx6 altera 28 altera_primitives_components 0 22 _Q9E2TD5YB<<@P0[5jYTG0
+R7
+R8
+R9
+l0
+L80
+V[FD`8BlceGHomDUB7JXoI3
+!s100 YOUMj4^;dJ>[Wb[b8PDOK3
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R2
+R6
+R1
+R17
+R3
+R4
+R5
+R18
+DEx4 work 27 kmeans_calccentroidmodulefp 0 22 [FD`8BlceGHomDUB7JXoI3
+l7601
+L381
+Vn;ZN<HW;l02P2YzGbchBW3
+!s100 a_Dd8a7VHkSEk0>3Fa?hf0
+R10
+32
+!s110 1491419212
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Ekmeans_calccentroidmodulefp_vhd_vec_tst
+Z19 w1491419206
+R4
+R5
+R7
+Z20 8Kmeans_CalcCentroidModuleFP.vwf.vht
+Z21 FKmeans_CalcCentroidModuleFP.vwf.vht
+l0
+L32
+V@z8R4gP:z`FP^K3D;9I0a3
+!s100 PCiNaAPY[<30I_gnkDjiO2
+R10
+32
+Z22 !s110 1491419213
+!i10b 1
+Z23 !s108 1491419213.000000
+Z24 !s90 -work|work|Kmeans_CalcCentroidModuleFP.vwf.vht|
+Z25 !s107 Kmeans_CalcCentroidModuleFP.vwf.vht|
+!i113 1
+R15
+R16
+Akmeans_calccentroidmodulefp_arch
+R4
+R5
+Z26 DEx4 work 39 kmeans_calccentroidmodulefp_vhd_vec_tst 0 22 @z8R4gP:z`FP^K3D;9I0a3
+l73
+L34
+V>GC9_LzA5@:eSGLb:U7<60
+!s100 dQZ]nRL<NIz=[K:3zm[1l1
+R10
+32
+R22
+!i10b 1
+R23
+R24
+R25
+!i113 1
+R15
+R16

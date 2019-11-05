@@ -1,0 +1,212 @@
+Determining the location of the ModelSim executable...
+
+Using: /home/lucasandrade/intelFPGA/16.1/modelsim_ase/linuxaloem
+
+To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
+Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-Altera will be used.
+
+**** Generating the ModelSim Testbench ****
+
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Kmeans_CalcCentroidModule -c Kmeans_CalcCentroidModule --vector_source="/home/lucasandrade/Documents/Lucas/Int+Float-64 bits-16 dimensoes/Kmeans_Processador/Kmeans_CalcCentroidModule/Kmeans_CalcCentroidModule.vwf" --testbench_file="/home/lucasandrade/Documents/Lucas/Int+Float-64 bits-16 dimensoes/Kmeans_Processador/Kmeans_CalcCentroidModule/simulation/qsim/Kmeans_CalcCentroidModule.vwf.vht"
+
+Inconsistency detected by ld.so: dl-close.c: 811: _dl_close: Assertion `map->l_init_called' failed!
+Info: *******************************************************************Info: Running Quartus Prime EDA Netlist Writer    Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition    Info: Copyright (C) 2016  Intel Corporation. All rights reserved.    Info: Your use of Intel Corporation's design tools, logic functions     Info: and other software and tools, and its AMPP partner logic     Info: functions, and any output files from any of the foregoing     Info: (including device programming or simulation files), and any     Info: associated documentation or information are expressly subject     Info: to the terms and conditions of the Intel Program License     Info: Subscription Agreement, the Intel Quartus Prime License Agreement,    Info: the Intel MegaCore Function License Agreement, or other     Info: applicable license agreement, including, without limitation,     Info: that your use is for the sole purpose of programming logic     Info: devices manufactured by Intel and sold by Intel or its     Info: authorized distributors.  Please refer to the applicable     Info: agreement for further details.    Info: Processing started: Wed Apr  5 14:37:04 2017Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Kmeans_CalcCentroidModule -c Kmeans_CalcCentroidModule --vector_source="/home/lucasandrade/Documents/Lucas/Int+Float-64 bits-16 dimensoes/Kmeans_Processador/Kmeans_CalcCentroidModule/Kmeans_CalcCentroidModule.vwf" --testbench_file="/home/lucasandrade/Documents/Lucas/Int+Float-64 bits-16 dimensoes/Kmeans_Processador/Kmeans_CalcCentroidModule/simulation/qsim/Kmeans_CalcCentroidModule.vwf.vht"Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+01005): Ignoring output pin "addr_Ram_Map[13]" in vector source file when writing test bench files
+n writing test bench files
+Completed successfully. 
+
+**** Generating the functional simulation netlist ****
+
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="/home/lucasandrade/Documents/Lucas/Int+Float-64 bits-16 dimensoes/Kmeans_Processador/Kmeans_CalcCentroidModule/simulation/qsim/" Kmeans_CalcCentroidModule -c Kmeans_CalcCentroidModule
+
+Inconsistency detected by ld.so: dl-close.c: 811: _dl_close: Assertion `map->l_init_called' failed!
+Info: *******************************************************************Info: Running Quartus Prime EDA Netlist Writer    Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition    Info: Copyright (C) 2016  Intel Corporation. All rights reserved.    Info: Your use of Intel Corporation's design tools, logic functions     Info: and other software and tools, and its AMPP partner logic     Info: functions, and any output files from any of the foregoing     Info: (including device programming or simulation files), and any     Info: associated documentation or information are expressly subject     Info: to the terms and conditions of the Intel Program License     Info: Subscription Agreement, the Intel Quartus Prime License Agreement,    Info: the Intel MegaCore Function License Agreement, or other     Info: applicable license agreement, including, without limitation,     Info: that your use is for the sole purpose of programming logic     Info: devices manufactured by Intel and sold by Intel or its     Info: authorized distributors.  Please refer to the applicable     Info: agreement for further details.    Info: Processing started: Wed Apr  5 14:37:06 2017Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="/home/lucasandrade/Documents/Lucas/Int+Float-64 bits-16 dimensoes/Kmeans_Processador/Kmeans_CalcCentroidModule/simulation/qsim/" Kmeans_CalcCentroidModule -c Kmeans_CalcCentroidModuleWarning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.Info (204019): Generated file Kmeans_CalcCentroidModule.vho in folder "/home/lucasandrade/Documents/Lucas/Int+Float-64 bits-16 dimensoes/Kmeans_Processador/Kmeans_CalcCentroidModule/simulation/qsim//" for EDA simulation toolInfo: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning    Info: Peak virtual memory: 1144 megabytes    Info: Processing ended: Wed Apr  5 14:37:09 2017    Info: Elapsed time: 00:00:03    Info: Total CPU time (on all processors): 00:00:03
+Completed successfully. 
+
+**** Generating the ModelSim .do script ****
+
+/home/lucasandrade/Documents/Lucas/Int+Float-64 bits-16 dimensoes/Kmeans_Processador/Kmeans_CalcCentroidModule/simulation/qsim/Kmeans_CalcCentroidModule.do generated.
+
+Completed successfully. 
+
+**** Running the ModelSim simulation ****
+
+/home/lucasandrade/intelFPGA/16.1/modelsim_ase/linuxaloem/vsim -c -do Kmeans_CalcCentroidModule.do
+
+Reading pref.tcl
+# 10.5b
+# do Kmeans_CalcCentroidModule.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:37:10 on Apr 05,2017# vcom -work work Kmeans_CalcCentroidModule.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164# -- Loading package VITAL_Timing# -- Loading package VITAL_Primitives
+# -- Loading package cycloneiv_atom_pack# -- Loading package cycloneiv_components# -- Compiling entity hard_block# -- Compiling architecture structure of hard_block
+# -- Loading package dffeas_pack# -- Loading package altera_primitives_components
+# -- Compiling entity Kmeans_CalcCentroidModule# -- Compiling architecture structure of Kmeans_CalcCentroidModule
+# End time: 14:37:12 on Apr 05,2017, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:37:12 on Apr 05,2017# vcom -work work Kmeans_CalcCentroidModule.vwf.vht # -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164# -- Compiling entity Kmeans_CalcCentroidModule_vhd_vec_tst
+# -- Compiling architecture Kmeans_CalcCentroidModule_arch of Kmeans_CalcCentroidModule_vhd_vec_tst
+# End time: 14:37:12 on Apr 05,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cycloneiv -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Kmeans_CalcCentroidModule_vhd_vec_tst # Start time: 14:37:12 on Apr 05,2017# Loading std.standard# Loading std.textio(body)# Loading ieee.std_logic_1164(body)# Loading work.kmeans_calccentroidmodule_vhd_vec_tst(kmeans_calccentroidmodule_arch)# Loading ieee.vital_timing(body)# Loading ieee.vital_primitives(body)# Loading altera.dffeas_pack# Loading altera.altera_primitives_components# Loading cycloneiv.cycloneiv_atom_pack(body)# Loading cycloneiv.cycloneiv_components# Loading work.kmeans_calccentroidmodule(structure)# Loading work.hard_block(structure)# Loading ieee.std_logic_arith(body)# Loading cycloneiv.cycloneiv_io_obuf(arch)# Loading cycloneiv.cycloneiv_io_ibuf(arch)# Loading cycloneiv.cycloneiv_clkctrl(vital_clkctrl)# Loading cycloneiv.cycloneiv_ena_reg(behave)# Loading cycloneiv.cycloneiv_lcell_comb(vital_lcell_comb)# Loading altera.dffeas(vital_dffeas)# ** Warning: Design size of 621931 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.# Expect performance to be adversely affected.
+# after#35
+# Simulation time: 10000 ps
+# Simulation time: 10000 ps
+# Simulation time: 10000 ps
+# Simulation time: 10000 ps
+# End time: 14:37:25 on Apr 05,2017, Elapsed time: 0:00:13# Errors: 0, Warnings: 1
+Completed successfully. 
+
+**** Converting ModelSim VCD to vector waveform ****
+
+Reading /home/lucasandrade/Documents/Lucas/Int+Float-64 bits-16 dimensoes/Kmeans_Processador/Kmeans_CalcCentroidModule/Kmeans_CalcCentroidModule.vwf...
+
+Reading /home/lucasandrade/Documents/Lucas/Int+Float-64 bits-16 dimensoes/Kmeans_Processador/Kmeans_CalcCentroidModule/simulation/qsim/Kmeans_CalcCentroidModule.msim.vcd...
+
+Processing channel transitions... 
+
+Warning: addr_Ram_Dado[15] - signal not found in VCD.
+
+Warning: addr_Ram_Map[15] - signal not found in VCD.
+
+Warning: valueX[31] - signal not found in VCD.
+
+Warning: valueX[30] - signal not found in VCD.
+
+Warning: valueX[29] - signal not found in VCD.
+
+Warning: valueX[28] - signal not found in VCD.
+
+Warning: valueX[27] - signal not found in VCD.
+
+Warning: valueX[26] - signal not found in VCD.
+
+Warning: valueX[25] - signal not found in VCD.
+
+Warning: valueX[24] - signal not found in VCD.
+
+Warning: valueX[23] - signal not found in VCD.
+
+Warning: valueX[22] - signal not found in VCD.
+
+Warning: valueX[21] - signal not found in VCD.
+
+Warning: valueX[20] - signal not found in VCD.
+
+Warning: valueX[19] - signal not found in VCD.
+
+Warning: valueX[18] - signal not found in VCD.
+
+Warning: valueX[17] - signal not found in VCD.
+
+Warning: valueX[16] - signal not found in VCD.
+
+Warning: valueX[15] - signal not found in VCD.
+
+Warning: valueX[14] - signal not found in VCD.
+
+Warning: valueX[13] - signal not found in VCD.
+
+Warning: valueX[12] - signal not found in VCD.
+
+Warning: valueX[11] - signal not found in VCD.
+
+Warning: valueX[10] - signal not found in VCD.
+
+Warning: valueX[9] - signal not found in VCD.
+
+Warning: valueX[8] - signal not found in VCD.
+
+Warning: valueX[7] - signal not found in VCD.
+
+Warning: valueX[6] - signal not found in VCD.
+
+Warning: valueX[5] - signal not found in VCD.
+
+Warning: valueX[4] - signal not found in VCD.
+
+Warning: valueX[3] - signal not found in VCD.
+
+Warning: valueX[2] - signal not found in VCD.
+
+Warning: valueX[1] - signal not found in VCD.
+
+Warning: valueX[0] - signal not found in VCD.
+
+Warning: valueY[31] - signal not found in VCD.
+
+Warning: valueY[30] - signal not found in VCD.
+
+Warning: valueY[29] - signal not found in VCD.
+
+Warning: valueY[28] - signal not found in VCD.
+
+Warning: valueY[27] - signal not found in VCD.
+
+Warning: valueY[26] - signal not found in VCD.
+
+Warning: valueY[25] - signal not found in VCD.
+
+Warning: valueY[24] - signal not found in VCD.
+
+Warning: valueY[23] - signal not found in VCD.
+
+Warning: valueY[22] - signal not found in VCD.
+
+Warning: valueY[21] - signal not found in VCD.
+
+Warning: valueY[20] - signal not found in VCD.
+
+Warning: valueY[19] - signal not found in VCD.
+
+Warning: valueY[18] - signal not found in VCD.
+
+Warning: valueY[17] - signal not found in VCD.
+
+Warning: valueY[16] - signal not found in VCD.
+
+Warning: valueY[15] - signal not found in VCD.
+
+Warning: valueY[14] - signal not found in VCD.
+
+Warning: valueY[13] - signal not found in VCD.
+
+Warning: valueY[12] - signal not found in VCD.
+
+Warning: valueY[11] - signal not found in VCD.
+
+Warning: valueY[10] - signal not found in VCD.
+
+Warning: valueY[9] - signal not found in VCD.
+
+Warning: valueY[8] - signal not found in VCD.
+
+Warning: valueY[7] - signal not found in VCD.
+
+Warning: valueY[6] - signal not found in VCD.
+
+Warning: valueY[5] - signal not found in VCD.
+
+Warning: valueY[4] - signal not found in VCD.
+
+Warning: valueY[3] - signal not found in VCD.
+
+Warning: valueY[2] - signal not found in VCD.
+
+Warning: valueY[1] - signal not found in VCD.
+
+Warning: valueY[0] - signal not found in VCD.
+
+Writing the resulting VWF to /home/lucasandrade/Documents/Lucas/Int+Float-64 bits-16 dimensoes/Kmeans_Processador/Kmeans_CalcCentroidModule/simulation/qsim/Kmeans_CalcCentroidModule_20170405143725.sim.vwf
+
+Finished VCD to VWF conversion.
+
+Completed successfully. 
+
+All completed.

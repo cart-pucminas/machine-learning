@@ -1,0 +1,706 @@
+Classic Timing Analyzer report for Kmeans_CentroidInitialize
+Wed Jan 18 00:14:06 2017
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Timing Analyzer Settings
+  4. Clock Settings Summary
+  5. Parallel Compilation
+  6. tsu
+  7. tco
+  8. tpd
+  9. th
+ 10. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                                       ;
++------------------------------+-------+---------------+-------------+-------------------+---------------+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time ; From              ; To            ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+-------------+-------------------+---------------+------------+----------+--------------+
+; Worst-case tsu               ; N/A   ; None          ; 6.776 ns    ; count_Centroid[2] ; s_addrRam[14] ; --         ; clk      ; 0            ;
+; Worst-case tco               ; N/A   ; None          ; 8.074 ns    ; s_addrRam[9]      ; addr_Ram[9]   ; clk        ; --       ; 0            ;
+; Worst-case tpd               ; N/A   ; None          ; 10.556 ns   ; dado[50]          ; o_dado[50]    ; --         ; --       ; 0            ;
+; Worst-case th                ; N/A   ; None          ; -3.294 ns   ; reg5[11]          ; s_addrRam[11] ; --         ; clk      ; 0            ;
+; Total number of failed paths ;       ;               ;             ;                   ;               ;            ;          ; 0            ;
++------------------------------+-------+---------------+-------------+-------------------+---------------+------------+----------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Settings                                                                                                                            ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+; Option                                                                                               ; Setting            ; From ; To ; Entity Name ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+; Device Name                                                                                          ; EP2C70F896I8       ;      ;    ;             ;
+; Timing Models                                                                                        ; Final              ;      ;    ;             ;
+; Default hold multicycle                                                                              ; Same as Multicycle ;      ;    ;             ;
+; Cut paths between unrelated clock domains                                                            ; On                 ;      ;    ;             ;
+; Cut off read during write signal paths                                                               ; On                 ;      ;    ;             ;
+; Cut off feedback from I/O pins                                                                       ; On                 ;      ;    ;             ;
+; Report Combined Fast/Slow Timing                                                                     ; Off                ;      ;    ;             ;
+; Ignore Clock Settings                                                                                ; Off                ;      ;    ;             ;
+; Analyze latches as synchronous elements                                                              ; On                 ;      ;    ;             ;
+; Enable Recovery/Removal analysis                                                                     ; Off                ;      ;    ;             ;
+; Enable Clock Latency                                                                                 ; Off                ;      ;    ;             ;
+; Use TimeQuest Timing Analyzer                                                                        ; Off                ;      ;    ;             ;
+; Minimum Core Junction Temperature                                                                    ; -40                ;      ;    ;             ;
+; Maximum Core Junction Temperature                                                                    ; 125                ;      ;    ;             ;
+; Number of source nodes to report per destination node                                                ; 10                 ;      ;    ;             ;
+; Number of destination nodes to report                                                                ; 10                 ;      ;    ;             ;
+; Number of paths to report                                                                            ; 200                ;      ;    ;             ;
+; Report Minimum Timing Checks                                                                         ; Off                ;      ;    ;             ;
+; Use Fast Timing Models                                                                               ; Off                ;      ;    ;             ;
+; Report IO Paths Separately                                                                           ; Off                ;      ;    ;             ;
+; Perform Multicorner Analysis                                                                         ; On                 ;      ;    ;             ;
+; Reports the worst-case path for each clock domain and analysis                                       ; Off                ;      ;    ;             ;
+; Reports worst-case timing paths for each clock domain and analysis                                   ; On                 ;      ;    ;             ;
+; Specifies the maximum number of worst-case timing paths to report for each clock domain and analysis ; 100                ;      ;    ;             ;
+; Removes common clock path pessimism (CCPP) during slack computation                                  ; Off                ;      ;    ;             ;
+; Output I/O Timing Endpoint                                                                           ; Near End           ;      ;    ;             ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Settings Summary                                                                                                                                                             ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; Clock Node Name ; Clock Setting Name ; Type     ; Fmax Requirement ; Early Latency ; Late Latency ; Based on ; Multiply Base Fmax by ; Divide Base Fmax by ; Offset ; Phase offset ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; clk             ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 2      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; tsu                                                                                                                                                            ;
++-----------------------------------------+-----------------------------------------------------+------------+-------------------+--------------------+----------+
+; Slack                                   ; Required tsu                                        ; Actual tsu ; From              ; To                 ; To Clock ;
++-----------------------------------------+-----------------------------------------------------+------------+-------------------+--------------------+----------+
+; N/A                                     ; None                                                ; 6.776 ns   ; count_Centroid[2] ; s_addrRam[14]      ; clk      ;
+; N/A                                     ; None                                                ; 6.690 ns   ; count_Centroid[2] ; s_addrRam[13]      ; clk      ;
+; N/A                                     ; None                                                ; 6.604 ns   ; count_Centroid[2] ; s_addrRam[12]      ; clk      ;
+; N/A                                     ; None                                                ; 6.518 ns   ; count_Centroid[2] ; s_addrRam[11]      ; clk      ;
+; N/A                                     ; None                                                ; 6.432 ns   ; count_Centroid[2] ; s_addrRam[10]      ; clk      ;
+; N/A                                     ; None                                                ; 6.375 ns   ; count_Centroid[1] ; s_addrRam[14]      ; clk      ;
+; N/A                                     ; None                                                ; 6.346 ns   ; count_Centroid[2] ; s_addrRam[9]       ; clk      ;
+; N/A                                     ; None                                                ; 6.289 ns   ; count_Centroid[1] ; s_addrRam[13]      ; clk      ;
+; N/A                                     ; None                                                ; 6.264 ns   ; count_Centroid[6] ; s_addrRam[14]      ; clk      ;
+; N/A                                     ; None                                                ; 6.260 ns   ; count_Centroid[2] ; s_addrRam[8]       ; clk      ;
+; N/A                                     ; None                                                ; 6.203 ns   ; count_Centroid[1] ; s_addrRam[12]      ; clk      ;
+; N/A                                     ; None                                                ; 6.178 ns   ; count_Centroid[6] ; s_addrRam[13]      ; clk      ;
+; N/A                                     ; None                                                ; 6.122 ns   ; reg5[1]           ; s_addrRam[14]      ; clk      ;
+; N/A                                     ; None                                                ; 6.117 ns   ; count_Centroid[0] ; s_addrRam[14]      ; clk      ;
+; N/A                                     ; None                                                ; 6.117 ns   ; count_Centroid[1] ; s_addrRam[11]      ; clk      ;
+; N/A                                     ; None                                                ; 6.092 ns   ; count_Centroid[6] ; s_addrRam[12]      ; clk      ;
+; N/A                                     ; None                                                ; 6.075 ns   ; count_Centroid[5] ; s_addrRam[14]      ; clk      ;
+; N/A                                     ; None                                                ; 6.070 ns   ; count_Centroid[2] ; s_addrRam[7]       ; clk      ;
+; N/A                                     ; None                                                ; 6.036 ns   ; reg5[1]           ; s_addrRam[13]      ; clk      ;
+; N/A                                     ; None                                                ; 6.031 ns   ; count_Centroid[0] ; s_addrRam[13]      ; clk      ;
+; N/A                                     ; None                                                ; 6.031 ns   ; count_Centroid[1] ; s_addrRam[10]      ; clk      ;
+; N/A                                     ; None                                                ; 6.006 ns   ; count_Centroid[6] ; s_addrRam[11]      ; clk      ;
+; N/A                                     ; None                                                ; 5.989 ns   ; count_Centroid[5] ; s_addrRam[13]      ; clk      ;
+; N/A                                     ; None                                                ; 5.984 ns   ; count_Centroid[2] ; s_addrRam[6]       ; clk      ;
+; N/A                                     ; None                                                ; 5.950 ns   ; reg5[1]           ; s_addrRam[12]      ; clk      ;
+; N/A                                     ; None                                                ; 5.945 ns   ; count_Centroid[0] ; s_addrRam[12]      ; clk      ;
+; N/A                                     ; None                                                ; 5.945 ns   ; count_Centroid[1] ; s_addrRam[9]       ; clk      ;
+; N/A                                     ; None                                                ; 5.920 ns   ; count_Centroid[6] ; s_addrRam[10]      ; clk      ;
+; N/A                                     ; None                                                ; 5.903 ns   ; count_Centroid[5] ; s_addrRam[12]      ; clk      ;
+; N/A                                     ; None                                                ; 5.898 ns   ; count_Centroid[2] ; s_addrRam[5]       ; clk      ;
+; N/A                                     ; None                                                ; 5.864 ns   ; reg5[1]           ; s_addrRam[11]      ; clk      ;
+; N/A                                     ; None                                                ; 5.859 ns   ; count_Centroid[0] ; s_addrRam[11]      ; clk      ;
+; N/A                                     ; None                                                ; 5.859 ns   ; count_Centroid[1] ; s_addrRam[8]       ; clk      ;
+; N/A                                     ; None                                                ; 5.851 ns   ; count_Centroid[3] ; s_addrRam[14]      ; clk      ;
+; N/A                                     ; None                                                ; 5.834 ns   ; count_Centroid[6] ; s_addrRam[9]       ; clk      ;
+; N/A                                     ; None                                                ; 5.832 ns   ; reg5[3]           ; s_addrRam[14]      ; clk      ;
+; N/A                                     ; None                                                ; 5.827 ns   ; count_Centroid[4] ; s_addrRam[14]      ; clk      ;
+; N/A                                     ; None                                                ; 5.817 ns   ; count_Centroid[5] ; s_addrRam[11]      ; clk      ;
+; N/A                                     ; None                                                ; 5.812 ns   ; count_Centroid[2] ; s_addrRam[4]       ; clk      ;
+; N/A                                     ; None                                                ; 5.778 ns   ; reg5[1]           ; s_addrRam[10]      ; clk      ;
+; N/A                                     ; None                                                ; 5.773 ns   ; count_Centroid[0] ; s_addrRam[10]      ; clk      ;
+; N/A                                     ; None                                                ; 5.765 ns   ; count_Centroid[3] ; s_addrRam[13]      ; clk      ;
+; N/A                                     ; None                                                ; 5.748 ns   ; count_Centroid[6] ; s_addrRam[8]       ; clk      ;
+; N/A                                     ; None                                                ; 5.746 ns   ; reg5[3]           ; s_addrRam[13]      ; clk      ;
+; N/A                                     ; None                                                ; 5.741 ns   ; count_Centroid[4] ; s_addrRam[13]      ; clk      ;
+; N/A                                     ; None                                                ; 5.731 ns   ; count_Centroid[5] ; s_addrRam[10]      ; clk      ;
+; N/A                                     ; None                                                ; 5.726 ns   ; count_Centroid[2] ; s_addrRam[3]       ; clk      ;
+; N/A                                     ; None                                                ; 5.710 ns   ; reg5[0]           ; s_addrRam[14]      ; clk      ;
+; N/A                                     ; None                                                ; 5.692 ns   ; reg5[1]           ; s_addrRam[9]       ; clk      ;
+; N/A                                     ; None                                                ; 5.687 ns   ; count_Centroid[0] ; s_addrRam[9]       ; clk      ;
+; N/A                                     ; None                                                ; 5.679 ns   ; count_Centroid[3] ; s_addrRam[12]      ; clk      ;
+; N/A                                     ; None                                                ; 5.669 ns   ; count_Centroid[1] ; s_addrRam[7]       ; clk      ;
+; N/A                                     ; None                                                ; 5.665 ns   ; reg5[4]           ; s_addrRam[14]      ; clk      ;
+; N/A                                     ; None                                                ; 5.663 ns   ; count_Centroid[9] ; s_addrRam[14]      ; clk      ;
+; N/A                                     ; None                                                ; 5.660 ns   ; reg5[3]           ; s_addrRam[12]      ; clk      ;
+; N/A                                     ; None                                                ; 5.655 ns   ; count_Centroid[4] ; s_addrRam[12]      ; clk      ;
+; N/A                                     ; None                                                ; 5.645 ns   ; count_Centroid[5] ; s_addrRam[9]       ; clk      ;
+; N/A                                     ; None                                                ; 5.624 ns   ; reg5[0]           ; s_addrRam[13]      ; clk      ;
+; N/A                                     ; None                                                ; 5.606 ns   ; reg5[1]           ; s_addrRam[8]       ; clk      ;
+; N/A                                     ; None                                                ; 5.601 ns   ; count_Centroid[0] ; s_addrRam[8]       ; clk      ;
+; N/A                                     ; None                                                ; 5.593 ns   ; count_Centroid[3] ; s_addrRam[11]      ; clk      ;
+; N/A                                     ; None                                                ; 5.583 ns   ; count_Centroid[1] ; s_addrRam[6]       ; clk      ;
+; N/A                                     ; None                                                ; 5.579 ns   ; reg5[4]           ; s_addrRam[13]      ; clk      ;
+; N/A                                     ; None                                                ; 5.577 ns   ; count_Centroid[9] ; s_addrRam[13]      ; clk      ;
+; N/A                                     ; None                                                ; 5.574 ns   ; reg5[3]           ; s_addrRam[11]      ; clk      ;
+; N/A                                     ; None                                                ; 5.569 ns   ; count_Centroid[4] ; s_addrRam[11]      ; clk      ;
+; N/A                                     ; None                                                ; 5.561 ns   ; count_Centroid[7] ; s_addrRam[14]      ; clk      ;
+; N/A                                     ; None                                                ; 5.559 ns   ; count_Centroid[5] ; s_addrRam[8]       ; clk      ;
+; N/A                                     ; None                                                ; 5.558 ns   ; count_Centroid[6] ; s_addrRam[7]       ; clk      ;
+; N/A                                     ; None                                                ; 5.545 ns   ; count_Centroid[1] ; s_countCentroid[9] ; clk      ;
+; N/A                                     ; None                                                ; 5.538 ns   ; reg5[0]           ; s_addrRam[12]      ; clk      ;
+; N/A                                     ; None                                                ; 5.533 ns   ; reg5[6]           ; s_addrRam[14]      ; clk      ;
+; N/A                                     ; None                                                ; 5.507 ns   ; count_Centroid[3] ; s_addrRam[10]      ; clk      ;
+; N/A                                     ; None                                                ; 5.497 ns   ; count_Centroid[1] ; s_addrRam[5]       ; clk      ;
+; N/A                                     ; None                                                ; 5.493 ns   ; reg5[4]           ; s_addrRam[12]      ; clk      ;
+; N/A                                     ; None                                                ; 5.491 ns   ; count_Centroid[9] ; s_addrRam[12]      ; clk      ;
+; N/A                                     ; None                                                ; 5.488 ns   ; reg5[3]           ; s_addrRam[10]      ; clk      ;
+; N/A                                     ; None                                                ; 5.484 ns   ; reg5[2]           ; s_addrRam[14]      ; clk      ;
+; N/A                                     ; None                                                ; 5.483 ns   ; reg5[7]           ; s_addrRam[14]      ; clk      ;
+; N/A                                     ; None                                                ; 5.483 ns   ; count_Centroid[4] ; s_addrRam[10]      ; clk      ;
+; N/A                                     ; None                                                ; 5.475 ns   ; count_Centroid[7] ; s_addrRam[13]      ; clk      ;
+; N/A                                     ; None                                                ; 5.459 ns   ; count_Centroid[1] ; s_countCentroid[8] ; clk      ;
+; N/A                                     ; None                                                ; 5.452 ns   ; reg5[0]           ; s_addrRam[11]      ; clk      ;
+; N/A                                     ; None                                                ; 5.447 ns   ; reg5[6]           ; s_addrRam[13]      ; clk      ;
+; N/A                                     ; None                                                ; 5.421 ns   ; count_Centroid[3] ; s_addrRam[9]       ; clk      ;
+; N/A                                     ; None                                                ; 5.416 ns   ; reg5[1]           ; s_addrRam[7]       ; clk      ;
+; N/A                                     ; None                                                ; 5.411 ns   ; count_Centroid[0] ; s_addrRam[7]       ; clk      ;
+; N/A                                     ; None                                                ; 5.411 ns   ; count_Centroid[1] ; s_addrRam[4]       ; clk      ;
+; N/A                                     ; None                                                ; 5.407 ns   ; reg5[4]           ; s_addrRam[11]      ; clk      ;
+; N/A                                     ; None                                                ; 5.405 ns   ; count_Centroid[9] ; s_addrRam[11]      ; clk      ;
+; N/A                                     ; None                                                ; 5.402 ns   ; reg5[3]           ; s_addrRam[9]       ; clk      ;
+; N/A                                     ; None                                                ; 5.398 ns   ; reg5[2]           ; s_addrRam[13]      ; clk      ;
+; N/A                                     ; None                                                ; 5.397 ns   ; reg5[7]           ; s_addrRam[13]      ; clk      ;
+; N/A                                     ; None                                                ; 5.397 ns   ; count_Centroid[4] ; s_addrRam[9]       ; clk      ;
+; N/A                                     ; None                                                ; 5.389 ns   ; count_Centroid[7] ; s_addrRam[12]      ; clk      ;
+; N/A                                     ; None                                                ; 5.373 ns   ; count_Centroid[1] ; s_countCentroid[7] ; clk      ;
+; N/A                                     ; None                                                ; 5.369 ns   ; count_Centroid[5] ; s_addrRam[7]       ; clk      ;
+; N/A                                     ; None                                                ; 5.366 ns   ; reg5[0]           ; s_addrRam[10]      ; clk      ;
+; N/A                                     ; None                                                ; 5.361 ns   ; reg5[6]           ; s_addrRam[12]      ; clk      ;
+; N/A                                     ; None                                                ; 5.335 ns   ; count_Centroid[3] ; s_addrRam[8]       ; clk      ;
+; N/A                                     ; None                                                ; 5.330 ns   ; reg5[1]           ; s_addrRam[6]       ; clk      ;
+; N/A                                     ; None                                                ; 5.325 ns   ; count_Centroid[0] ; s_addrRam[6]       ; clk      ;
+; N/A                                     ; None                                                ; 5.325 ns   ; count_Centroid[1] ; s_addrRam[3]       ; clk      ;
+; N/A                                     ; None                                                ; 5.321 ns   ; reg5[4]           ; s_addrRam[10]      ; clk      ;
+; N/A                                     ; None                                                ; 5.319 ns   ; count_Centroid[9] ; s_addrRam[10]      ; clk      ;
+; N/A                                     ; None                                                ; 5.316 ns   ; reg5[3]           ; s_addrRam[8]       ; clk      ;
+; N/A                                     ; None                                                ; 5.312 ns   ; reg5[2]           ; s_addrRam[12]      ; clk      ;
+; N/A                                     ; None                                                ; 5.311 ns   ; reg5[7]           ; s_addrRam[12]      ; clk      ;
+; N/A                                     ; None                                                ; 5.311 ns   ; count_Centroid[4] ; s_addrRam[8]       ; clk      ;
+; N/A                                     ; None                                                ; 5.306 ns   ; count_Centroid[8] ; s_addrRam[14]      ; clk      ;
+; N/A                                     ; None                                                ; 5.303 ns   ; count_Centroid[7] ; s_addrRam[11]      ; clk      ;
+; N/A                                     ; None                                                ; 5.287 ns   ; count_Centroid[1] ; s_countCentroid[6] ; clk      ;
+; N/A                                     ; None                                                ; 5.283 ns   ; count_Centroid[5] ; s_addrRam[6]       ; clk      ;
+; N/A                                     ; None                                                ; 5.280 ns   ; reg5[0]           ; s_addrRam[9]       ; clk      ;
+; N/A                                     ; None                                                ; 5.275 ns   ; reg5[6]           ; s_addrRam[11]      ; clk      ;
+; N/A                                     ; None                                                ; 5.249 ns   ; count_Centroid[2] ; s_addrRam[2]       ; clk      ;
+; N/A                                     ; None                                                ; 5.244 ns   ; reg5[1]           ; s_addrRam[5]       ; clk      ;
+; N/A                                     ; None                                                ; 5.239 ns   ; count_Centroid[0] ; s_addrRam[5]       ; clk      ;
+; N/A                                     ; None                                                ; 5.239 ns   ; count_Centroid[1] ; s_addrRam[2]       ; clk      ;
+; N/A                                     ; None                                                ; 5.235 ns   ; reg5[4]           ; s_addrRam[9]       ; clk      ;
+; N/A                                     ; None                                                ; 5.226 ns   ; reg5[2]           ; s_addrRam[11]      ; clk      ;
+; N/A                                     ; None                                                ; 5.225 ns   ; reg5[7]           ; s_addrRam[11]      ; clk      ;
+; N/A                                     ; None                                                ; 5.220 ns   ; count_Centroid[8] ; s_addrRam[13]      ; clk      ;
+; N/A                                     ; None                                                ; 5.217 ns   ; count_Centroid[7] ; s_addrRam[10]      ; clk      ;
+; N/A                                     ; None                                                ; 5.201 ns   ; count_Centroid[1] ; s_countCentroid[5] ; clk      ;
+; N/A                                     ; None                                                ; 5.194 ns   ; reg5[0]           ; s_addrRam[8]       ; clk      ;
+; N/A                                     ; None                                                ; 5.189 ns   ; reg5[6]           ; s_addrRam[10]      ; clk      ;
+; N/A                                     ; None                                                ; 5.178 ns   ; reg5[5]           ; s_addrRam[14]      ; clk      ;
+; N/A                                     ; None                                                ; 5.173 ns   ; count_Centroid[0] ; s_countCentroid[9] ; clk      ;
+; N/A                                     ; None                                                ; 5.158 ns   ; reg5[1]           ; s_addrRam[4]       ; clk      ;
+; N/A                                     ; None                                                ; 5.153 ns   ; count_Centroid[0] ; s_addrRam[4]       ; clk      ;
+; N/A                                     ; None                                                ; 5.150 ns   ; count_Centroid[2] ; s_countCentroid[9] ; clk      ;
+; N/A                                     ; None                                                ; 5.149 ns   ; reg5[4]           ; s_addrRam[8]       ; clk      ;
+; N/A                                     ; None                                                ; 5.145 ns   ; count_Centroid[3] ; s_addrRam[7]       ; clk      ;
+; N/A                                     ; None                                                ; 5.140 ns   ; reg5[2]           ; s_addrRam[10]      ; clk      ;
+; N/A                                     ; None                                                ; 5.139 ns   ; reg5[7]           ; s_addrRam[10]      ; clk      ;
+; N/A                                     ; None                                                ; 5.134 ns   ; count_Centroid[8] ; s_addrRam[12]      ; clk      ;
+; N/A                                     ; None                                                ; 5.131 ns   ; count_Centroid[7] ; s_addrRam[9]       ; clk      ;
+; N/A                                     ; None                                                ; 5.126 ns   ; reg5[3]           ; s_addrRam[7]       ; clk      ;
+; N/A                                     ; None                                                ; 5.121 ns   ; count_Centroid[4] ; s_addrRam[7]       ; clk      ;
+; N/A                                     ; None                                                ; 5.103 ns   ; reg5[6]           ; s_addrRam[9]       ; clk      ;
+; N/A                                     ; None                                                ; 5.092 ns   ; reg5[5]           ; s_addrRam[13]      ; clk      ;
+; N/A                                     ; None                                                ; 5.087 ns   ; count_Centroid[0] ; s_countCentroid[8] ; clk      ;
+; N/A                                     ; None                                                ; 5.080 ns   ; count_Centroid[6] ; s_addrRam[6]       ; clk      ;
+; N/A                                     ; None                                                ; 5.072 ns   ; reg5[1]           ; s_addrRam[3]       ; clk      ;
+; N/A                                     ; None                                                ; 5.067 ns   ; count_Centroid[0] ; s_addrRam[3]       ; clk      ;
+; N/A                                     ; None                                                ; 5.064 ns   ; count_Centroid[2] ; s_countCentroid[8] ; clk      ;
+; N/A                                     ; None                                                ; 5.059 ns   ; count_Centroid[3] ; s_addrRam[6]       ; clk      ;
+; N/A                                     ; None                                                ; 5.054 ns   ; reg5[2]           ; s_addrRam[9]       ; clk      ;
+; N/A                                     ; None                                                ; 5.053 ns   ; reg5[7]           ; s_addrRam[9]       ; clk      ;
+; N/A                                     ; None                                                ; 5.048 ns   ; count_Centroid[8] ; s_addrRam[11]      ; clk      ;
+; N/A                                     ; None                                                ; 5.045 ns   ; count_Centroid[7] ; s_addrRam[8]       ; clk      ;
+; N/A                                     ; None                                                ; 5.040 ns   ; reg5[3]           ; s_addrRam[6]       ; clk      ;
+; N/A                                     ; None                                                ; 5.035 ns   ; count_Centroid[4] ; s_addrRam[6]       ; clk      ;
+; N/A                                     ; None                                                ; 5.017 ns   ; reg5[6]           ; s_addrRam[8]       ; clk      ;
+; N/A                                     ; None                                                ; 5.011 ns   ; count_Centroid[1] ; s_countCentroid[4] ; clk      ;
+; N/A                                     ; None                                                ; 5.006 ns   ; reg5[5]           ; s_addrRam[12]      ; clk      ;
+; N/A                                     ; None                                                ; 5.004 ns   ; reg5[0]           ; s_addrRam[7]       ; clk      ;
+; N/A                                     ; None                                                ; 5.001 ns   ; count_Centroid[0] ; s_countCentroid[7] ; clk      ;
+; N/A                                     ; None                                                ; 4.986 ns   ; reg5[1]           ; s_addrRam[2]       ; clk      ;
+; N/A                                     ; None                                                ; 4.981 ns   ; count_Centroid[0] ; s_addrRam[2]       ; clk      ;
+; N/A                                     ; None                                                ; 4.978 ns   ; count_Centroid[2] ; s_countCentroid[7] ; clk      ;
+; N/A                                     ; None                                                ; 4.973 ns   ; count_Centroid[3] ; s_addrRam[5]       ; clk      ;
+; N/A                                     ; None                                                ; 4.968 ns   ; reg5[2]           ; s_addrRam[8]       ; clk      ;
+; N/A                                     ; None                                                ; 4.967 ns   ; reg5[7]           ; s_addrRam[8]       ; clk      ;
+; N/A                                     ; None                                                ; 4.962 ns   ; count_Centroid[8] ; s_addrRam[10]      ; clk      ;
+; N/A                                     ; None                                                ; 4.959 ns   ; reg5[4]           ; s_addrRam[7]       ; clk      ;
+; N/A                                     ; None                                                ; 4.954 ns   ; reg5[3]           ; s_addrRam[5]       ; clk      ;
+; N/A                                     ; None                                                ; 4.949 ns   ; count_Centroid[4] ; s_addrRam[5]       ; clk      ;
+; N/A                                     ; None                                                ; 4.931 ns   ; count_Centroid[3] ; s_countCentroid[9] ; clk      ;
+; N/A                                     ; None                                                ; 4.925 ns   ; count_Centroid[1] ; s_countCentroid[3] ; clk      ;
+; N/A                                     ; None                                                ; 4.920 ns   ; reg5[5]           ; s_addrRam[11]      ; clk      ;
+; N/A                                     ; None                                                ; 4.918 ns   ; reg5[0]           ; s_addrRam[6]       ; clk      ;
+; N/A                                     ; None                                                ; 4.915 ns   ; count_Centroid[0] ; s_countCentroid[6] ; clk      ;
+; N/A                                     ; None                                                ; 4.904 ns   ; count_Centroid[4] ; s_countCentroid[9] ; clk      ;
+; N/A                                     ; None                                                ; 4.895 ns   ; count_Centroid[0] ; s_addrRam[1]       ; clk      ;
+; N/A                                     ; None                                                ; 4.892 ns   ; count_Centroid[2] ; s_countCentroid[6] ; clk      ;
+; N/A                                     ; None                                                ; 4.887 ns   ; count_Centroid[3] ; s_addrRam[4]       ; clk      ;
+; N/A                                     ; None                                                ; 4.881 ns   ; reg5[8]           ; s_addrRam[14]      ; clk      ;
+; N/A                                     ; None                                                ; 4.876 ns   ; count_Centroid[8] ; s_addrRam[9]       ; clk      ;
+; N/A                                     ; None                                                ; 4.873 ns   ; reg5[4]           ; s_addrRam[6]       ; clk      ;
+; N/A                                     ; None                                                ; 4.868 ns   ; reg5[3]           ; s_addrRam[4]       ; clk      ;
+; N/A                                     ; None                                                ; 4.863 ns   ; count_Centroid[8] ; s_countCentroid[9] ; clk      ;
+; N/A                                     ; None                                                ; 4.845 ns   ; count_Centroid[3] ; s_countCentroid[8] ; clk      ;
+; N/A                                     ; None                                                ; 4.839 ns   ; count_Centroid[9] ; s_addrRam[9]       ; clk      ;
+; N/A                                     ; None                                                ; 4.839 ns   ; count_Centroid[1] ; s_countCentroid[2] ; clk      ;
+; N/A                                     ; None                                                ; 4.834 ns   ; reg5[5]           ; s_addrRam[10]      ; clk      ;
+; N/A                                     ; None                                                ; 4.832 ns   ; reg5[0]           ; s_addrRam[5]       ; clk      ;
+; N/A                                     ; None                                                ; 4.829 ns   ; count_Centroid[0] ; s_countCentroid[5] ; clk      ;
+; N/A                                     ; None                                                ; 4.827 ns   ; reg5[6]           ; s_addrRam[7]       ; clk      ;
+; N/A                                     ; None                                                ; 4.818 ns   ; count_Centroid[4] ; s_countCentroid[8] ; clk      ;
+; N/A                                     ; None                                                ; 4.806 ns   ; count_Centroid[2] ; s_countCentroid[5] ; clk      ;
+; N/A                                     ; None                                                ; 4.803 ns   ; count_Centroid[5] ; s_addrRam[5]       ; clk      ;
+; N/A                                     ; None                                                ; 4.795 ns   ; reg5[8]           ; s_addrRam[13]      ; clk      ;
+; N/A                                     ; None                                                ; 4.787 ns   ; reg5[4]           ; s_addrRam[5]       ; clk      ;
+; N/A                                     ; None                                                ; 4.778 ns   ; reg5[2]           ; s_addrRam[7]       ; clk      ;
+; N/A                                     ; None                                                ; 4.759 ns   ; count_Centroid[3] ; s_countCentroid[7] ; clk      ;
+; N/A                                     ; None                                                ; 4.752 ns   ; count_Centroid[1] ; s_addrRam[1]       ; clk      ;
+; N/A                                     ; None                                                ; 4.748 ns   ; reg5[5]           ; s_addrRam[9]       ; clk      ;
+; N/A                                     ; None                                                ; 4.746 ns   ; reg5[0]           ; s_addrRam[4]       ; clk      ;
+; Timing analysis restricted to 200 rows. ; To change the limit use Settings (Assignments menu) ;            ;                   ;                    ;          ;
++-----------------------------------------+-----------------------------------------------------+------------+-------------------+--------------------+----------+
+
+
++-----------------------------------------------------------------------------------------+
+; tco                                                                                     ;
++-------+--------------+------------+--------------------+-------------------+------------+
+; Slack ; Required tco ; Actual tco ; From               ; To                ; From Clock ;
++-------+--------------+------------+--------------------+-------------------+------------+
+; N/A   ; None         ; 8.074 ns   ; s_addrRam[9]       ; addr_Ram[9]       ; clk        ;
+; N/A   ; None         ; 8.048 ns   ; s_addrRam[2]       ; addr_Ram[2]       ; clk        ;
+; N/A   ; None         ; 7.834 ns   ; s_countCentroid[7] ; o_countCentoid[7] ; clk        ;
+; N/A   ; None         ; 7.826 ns   ; s_countCentroid[0] ; o_countCentoid[0] ; clk        ;
+; N/A   ; None         ; 7.814 ns   ; s_addrRam[0]       ; addr_Ram[0]       ; clk        ;
+; N/A   ; None         ; 7.804 ns   ; s_addrRam[8]       ; addr_Ram[8]       ; clk        ;
+; N/A   ; None         ; 7.801 ns   ; s_addrRam[1]       ; addr_Ram[1]       ; clk        ;
+; N/A   ; None         ; 7.793 ns   ; s_addrRam[4]       ; addr_Ram[4]       ; clk        ;
+; N/A   ; None         ; 7.792 ns   ; s_countCentroid[2] ; o_countCentoid[2] ; clk        ;
+; N/A   ; None         ; 7.779 ns   ; s_countCentroid[3] ; o_countCentoid[3] ; clk        ;
+; N/A   ; None         ; 7.778 ns   ; s_addrRam[11]      ; addr_Ram[11]      ; clk        ;
+; N/A   ; None         ; 7.761 ns   ; s_countCentroid[8] ; o_countCentoid[8] ; clk        ;
+; N/A   ; None         ; 7.758 ns   ; s_addrRam[13]      ; addr_Ram[13]      ; clk        ;
+; N/A   ; None         ; 7.752 ns   ; s_countCentroid[1] ; o_countCentoid[1] ; clk        ;
+; N/A   ; None         ; 7.749 ns   ; s_addrRam[5]       ; addr_Ram[5]       ; clk        ;
+; N/A   ; None         ; 7.735 ns   ; s_addrRam[12]      ; addr_Ram[12]      ; clk        ;
+; N/A   ; None         ; 7.733 ns   ; s_addrRam[6]       ; addr_Ram[6]       ; clk        ;
+; N/A   ; None         ; 7.726 ns   ; s_addrRam[14]      ; addr_Ram[14]      ; clk        ;
+; N/A   ; None         ; 7.723 ns   ; s_addrRam[10]      ; addr_Ram[10]      ; clk        ;
+; N/A   ; None         ; 7.406 ns   ; s_countCentroid[6] ; o_countCentoid[6] ; clk        ;
+; N/A   ; None         ; 7.387 ns   ; s_countCentroid[9] ; o_countCentoid[9] ; clk        ;
+; N/A   ; None         ; 7.382 ns   ; s_countCentroid[5] ; o_countCentoid[5] ; clk        ;
+; N/A   ; None         ; 7.367 ns   ; s_countCentroid[4] ; o_countCentoid[4] ; clk        ;
+; N/A   ; None         ; 7.356 ns   ; s_addrRam[3]       ; addr_Ram[3]       ; clk        ;
+; N/A   ; None         ; 7.317 ns   ; s_addrRam[7]       ; addr_Ram[7]       ; clk        ;
++-------+--------------+------------+--------------------+-------------------+------------+
+
+
++---------------------------------------------------------------------+
+; tpd                                                                 ;
++-------+-------------------+-----------------+----------+------------+
+; Slack ; Required P2P Time ; Actual P2P Time ; From     ; To         ;
++-------+-------------------+-----------------+----------+------------+
+; N/A   ; None              ; 10.556 ns       ; dado[50] ; o_dado[50] ;
+; N/A   ; None              ; 10.540 ns       ; dado[63] ; o_dado[63] ;
+; N/A   ; None              ; 10.536 ns       ; dado[8]  ; o_dado[8]  ;
+; N/A   ; None              ; 10.531 ns       ; dado[0]  ; o_dado[0]  ;
+; N/A   ; None              ; 10.522 ns       ; dado[33] ; o_dado[33] ;
+; N/A   ; None              ; 10.519 ns       ; dado[1]  ; o_dado[1]  ;
+; N/A   ; None              ; 10.515 ns       ; dado[6]  ; o_dado[6]  ;
+; N/A   ; None              ; 10.486 ns       ; dado[29] ; o_dado[29] ;
+; N/A   ; None              ; 10.479 ns       ; dado[52] ; o_dado[52] ;
+; N/A   ; None              ; 10.468 ns       ; dado[41] ; o_dado[41] ;
+; N/A   ; None              ; 10.467 ns       ; dado[18] ; o_dado[18] ;
+; N/A   ; None              ; 10.460 ns       ; dado[58] ; o_dado[58] ;
+; N/A   ; None              ; 10.460 ns       ; dado[24] ; o_dado[24] ;
+; N/A   ; None              ; 10.456 ns       ; dado[7]  ; o_dado[7]  ;
+; N/A   ; None              ; 10.451 ns       ; dado[55] ; o_dado[55] ;
+; N/A   ; None              ; 10.451 ns       ; dado[39] ; o_dado[39] ;
+; N/A   ; None              ; 10.447 ns       ; dado[22] ; o_dado[22] ;
+; N/A   ; None              ; 10.446 ns       ; dado[2]  ; o_dado[2]  ;
+; N/A   ; None              ; 10.434 ns       ; dado[56] ; o_dado[56] ;
+; N/A   ; None              ; 10.430 ns       ; dado[35] ; o_dado[35] ;
+; N/A   ; None              ; 10.430 ns       ; dado[9]  ; o_dado[9]  ;
+; N/A   ; None              ; 10.423 ns       ; dado[27] ; o_dado[27] ;
+; N/A   ; None              ; 10.416 ns       ; dado[17] ; o_dado[17] ;
+; N/A   ; None              ; 10.413 ns       ; dado[30] ; o_dado[30] ;
+; N/A   ; None              ; 10.410 ns       ; dado[60] ; o_dado[60] ;
+; N/A   ; None              ; 10.402 ns       ; dado[23] ; o_dado[23] ;
+; N/A   ; None              ; 10.392 ns       ; dado[44] ; o_dado[44] ;
+; N/A   ; None              ; 10.368 ns       ; dado[54] ; o_dado[54] ;
+; N/A   ; None              ; 10.352 ns       ; dado[3]  ; o_dado[3]  ;
+; N/A   ; None              ; 10.351 ns       ; dado[49] ; o_dado[49] ;
+; N/A   ; None              ; 10.135 ns       ; dado[12] ; o_dado[12] ;
+; N/A   ; None              ; 10.116 ns       ; dado[37] ; o_dado[37] ;
+; N/A   ; None              ; 10.106 ns       ; dado[48] ; o_dado[48] ;
+; N/A   ; None              ; 10.076 ns       ; dado[15] ; o_dado[15] ;
+; N/A   ; None              ; 10.070 ns       ; dado[51] ; o_dado[51] ;
+; N/A   ; None              ; 10.048 ns       ; dado[40] ; o_dado[40] ;
+; N/A   ; None              ; 9.514 ns        ; dado[53] ; o_dado[53] ;
+; N/A   ; None              ; 9.503 ns        ; dado[5]  ; o_dado[5]  ;
+; N/A   ; None              ; 9.464 ns        ; dado[20] ; o_dado[20] ;
+; N/A   ; None              ; 9.464 ns        ; dado[14] ; o_dado[14] ;
+; N/A   ; None              ; 9.454 ns        ; dado[62] ; o_dado[62] ;
+; N/A   ; None              ; 9.255 ns        ; dado[16] ; o_dado[16] ;
+; N/A   ; None              ; 9.245 ns        ; dado[59] ; o_dado[59] ;
+; N/A   ; None              ; 9.243 ns        ; dado[61] ; o_dado[61] ;
+; N/A   ; None              ; 9.232 ns        ; dado[57] ; o_dado[57] ;
+; N/A   ; None              ; 9.232 ns        ; dado[4]  ; o_dado[4]  ;
+; N/A   ; None              ; 9.223 ns        ; dado[47] ; o_dado[47] ;
+; N/A   ; None              ; 9.215 ns        ; dado[10] ; o_dado[10] ;
+; N/A   ; None              ; 9.205 ns        ; dado[42] ; o_dado[42] ;
+; N/A   ; None              ; 9.193 ns        ; dado[11] ; o_dado[11] ;
+; N/A   ; None              ; 9.192 ns        ; dado[46] ; o_dado[46] ;
+; N/A   ; None              ; 9.185 ns        ; dado[13] ; o_dado[13] ;
+; N/A   ; None              ; 9.183 ns        ; dado[19] ; o_dado[19] ;
+; N/A   ; None              ; 9.173 ns        ; dado[45] ; o_dado[45] ;
+; N/A   ; None              ; 9.172 ns        ; dado[28] ; o_dado[28] ;
+; N/A   ; None              ; 9.162 ns        ; dado[43] ; o_dado[43] ;
+; N/A   ; None              ; 9.162 ns        ; dado[38] ; o_dado[38] ;
+; N/A   ; None              ; 9.143 ns        ; dado[36] ; o_dado[36] ;
+; N/A   ; None              ; 9.143 ns        ; dado[34] ; o_dado[34] ;
+; N/A   ; None              ; 9.132 ns        ; dado[21] ; o_dado[21] ;
+; N/A   ; None              ; 6.065 ns        ; dado[32] ; o_dado[32] ;
+; N/A   ; None              ; 5.828 ns        ; dado[31] ; o_dado[31] ;
+; N/A   ; None              ; 5.029 ns        ; dado[26] ; o_dado[26] ;
+; N/A   ; None              ; 5.026 ns        ; dado[25] ; o_dado[25] ;
++-------+-------------------+-----------------+----------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; th                                                                                                                                                                ;
++-----------------------------------------+-----------------------------------------------------+-----------+-----------------------+--------------------+----------+
+; Minimum Slack                           ; Required th                                         ; Actual th ; From                  ; To                 ; To Clock ;
++-----------------------------------------+-----------------------------------------------------+-----------+-----------------------+--------------------+----------+
+; N/A                                     ; None                                                ; -3.294 ns ; reg5[11]              ; s_addrRam[11]      ; clk      ;
+; N/A                                     ; None                                                ; -3.307 ns ; reg5[9]               ; s_addrRam[9]       ; clk      ;
+; N/A                                     ; None                                                ; -3.310 ns ; reg5[14]              ; s_addrRam[14]      ; clk      ;
+; N/A                                     ; None                                                ; -3.471 ns ; count_Centroid[0]     ; s_countCentroid[0] ; clk      ;
+; N/A                                     ; None                                                ; -3.633 ns ; reg5[5]               ; s_addrRam[5]       ; clk      ;
+; N/A                                     ; None                                                ; -3.652 ns ; count_Centroid[3]     ; s_countCentroid[3] ; clk      ;
+; N/A                                     ; None                                                ; -3.689 ns ; count_Centroid[5]     ; s_countCentroid[5] ; clk      ;
+; N/A                                     ; None                                                ; -3.690 ns ; reg5[2]               ; s_addrRam[2]       ; clk      ;
+; N/A                                     ; None                                                ; -3.705 ns ; count_Centroid[4]     ; s_countCentroid[4] ; clk      ;
+; N/A                                     ; None                                                ; -3.707 ns ; reg5[8]               ; s_addrRam[8]       ; clk      ;
+; N/A                                     ; None                                                ; -3.718 ns ; reg5[10]              ; s_addrRam[10]      ; clk      ;
+; N/A                                     ; None                                                ; -3.723 ns ; count_Centroid[0]     ; s_countCentroid[1] ; clk      ;
+; N/A                                     ; None                                                ; -3.744 ns ; count_Centroid[6]     ; s_countCentroid[6] ; clk      ;
+; N/A                                     ; None                                                ; -3.745 ns ; reg5[0]               ; s_addrRam[0]       ; clk      ;
+; N/A                                     ; None                                                ; -3.749 ns ; count_Centroid[9]     ; s_countCentroid[9] ; clk      ;
+; N/A                                     ; None                                                ; -3.757 ns ; reg5[13]              ; s_addrRam[13]      ; clk      ;
+; N/A                                     ; None                                                ; -3.765 ns ; en_CentroidInitialize ; s_countCentroid[1] ; clk      ;
+; N/A                                     ; None                                                ; -3.765 ns ; en_CentroidInitialize ; s_countCentroid[2] ; clk      ;
+; N/A                                     ; None                                                ; -3.765 ns ; en_CentroidInitialize ; s_countCentroid[3] ; clk      ;
+; N/A                                     ; None                                                ; -3.765 ns ; en_CentroidInitialize ; s_countCentroid[4] ; clk      ;
+; N/A                                     ; None                                                ; -3.765 ns ; en_CentroidInitialize ; s_countCentroid[5] ; clk      ;
+; N/A                                     ; None                                                ; -3.765 ns ; en_CentroidInitialize ; s_countCentroid[6] ; clk      ;
+; N/A                                     ; None                                                ; -3.765 ns ; en_CentroidInitialize ; s_countCentroid[7] ; clk      ;
+; N/A                                     ; None                                                ; -3.765 ns ; en_CentroidInitialize ; s_countCentroid[8] ; clk      ;
+; N/A                                     ; None                                                ; -3.765 ns ; en_CentroidInitialize ; s_countCentroid[9] ; clk      ;
+; N/A                                     ; None                                                ; -3.765 ns ; en_CentroidInitialize ; s_countCentroid[0] ; clk      ;
+; N/A                                     ; None                                                ; -3.766 ns ; count_Centroid[7]     ; s_countCentroid[7] ; clk      ;
+; N/A                                     ; None                                                ; -3.768 ns ; reg5[12]              ; s_addrRam[12]      ; clk      ;
+; N/A                                     ; None                                                ; -3.773 ns ; reg5[11]              ; s_addrRam[12]      ; clk      ;
+; N/A                                     ; None                                                ; -3.784 ns ; count_Centroid[2]     ; s_countCentroid[2] ; clk      ;
+; N/A                                     ; None                                                ; -3.794 ns ; reg5[9]               ; s_addrRam[10]      ; clk      ;
+; N/A                                     ; None                                                ; -3.859 ns ; reg5[11]              ; s_addrRam[13]      ; clk      ;
+; N/A                                     ; None                                                ; -3.880 ns ; reg5[9]               ; s_addrRam[11]      ; clk      ;
+; N/A                                     ; None                                                ; -3.945 ns ; reg5[11]              ; s_addrRam[14]      ; clk      ;
+; N/A                                     ; None                                                ; -3.966 ns ; reg5[9]               ; s_addrRam[12]      ; clk      ;
+; N/A                                     ; None                                                ; -4.043 ns ; reg5[4]               ; s_addrRam[4]       ; clk      ;
+; N/A                                     ; None                                                ; -4.052 ns ; reg5[9]               ; s_addrRam[13]      ; clk      ;
+; N/A                                     ; None                                                ; -4.084 ns ; reg5[6]               ; s_addrRam[6]       ; clk      ;
+; N/A                                     ; None                                                ; -4.096 ns ; count_Centroid[1]     ; s_countCentroid[1] ; clk      ;
+; N/A                                     ; None                                                ; -4.107 ns ; reg5[7]               ; s_addrRam[7]       ; clk      ;
+; N/A                                     ; None                                                ; -4.117 ns ; count_Centroid[8]     ; s_countCentroid[8] ; clk      ;
+; N/A                                     ; None                                                ; -4.120 ns ; reg5[5]               ; s_addrRam[6]       ; clk      ;
+; N/A                                     ; None                                                ; -4.122 ns ; reg5[3]               ; s_addrRam[3]       ; clk      ;
+; N/A                                     ; None                                                ; -4.131 ns ; count_Centroid[3]     ; s_countCentroid[4] ; clk      ;
+; N/A                                     ; None                                                ; -4.133 ns ; count_Centroid[8]     ; s_addrRam[8]       ; clk      ;
+; N/A                                     ; None                                                ; -4.134 ns ; count_Centroid[3]     ; s_addrRam[3]       ; clk      ;
+; N/A                                     ; None                                                ; -4.138 ns ; reg5[9]               ; s_addrRam[14]      ; clk      ;
+; N/A                                     ; None                                                ; -4.151 ns ; count_Centroid[0]     ; s_addrRam[0]       ; clk      ;
+; N/A                                     ; None                                                ; -4.166 ns ; en_CentroidInitialize ; s_addrRam[0]       ; clk      ;
+; N/A                                     ; None                                                ; -4.166 ns ; en_CentroidInitialize ; s_addrRam[1]       ; clk      ;
+; N/A                                     ; None                                                ; -4.166 ns ; en_CentroidInitialize ; s_addrRam[2]       ; clk      ;
+; N/A                                     ; None                                                ; -4.166 ns ; en_CentroidInitialize ; s_addrRam[3]       ; clk      ;
+; N/A                                     ; None                                                ; -4.166 ns ; en_CentroidInitialize ; s_addrRam[4]       ; clk      ;
+; N/A                                     ; None                                                ; -4.166 ns ; en_CentroidInitialize ; s_addrRam[5]       ; clk      ;
+; N/A                                     ; None                                                ; -4.166 ns ; en_CentroidInitialize ; s_addrRam[6]       ; clk      ;
+; N/A                                     ; None                                                ; -4.166 ns ; en_CentroidInitialize ; s_addrRam[7]       ; clk      ;
+; N/A                                     ; None                                                ; -4.166 ns ; en_CentroidInitialize ; s_addrRam[8]       ; clk      ;
+; N/A                                     ; None                                                ; -4.166 ns ; en_CentroidInitialize ; s_addrRam[9]       ; clk      ;
+; N/A                                     ; None                                                ; -4.166 ns ; en_CentroidInitialize ; s_addrRam[10]      ; clk      ;
+; N/A                                     ; None                                                ; -4.166 ns ; en_CentroidInitialize ; s_addrRam[11]      ; clk      ;
+; N/A                                     ; None                                                ; -4.166 ns ; en_CentroidInitialize ; s_addrRam[12]      ; clk      ;
+; N/A                                     ; None                                                ; -4.166 ns ; en_CentroidInitialize ; s_addrRam[13]      ; clk      ;
+; N/A                                     ; None                                                ; -4.166 ns ; en_CentroidInitialize ; s_addrRam[14]      ; clk      ;
+; N/A                                     ; None                                                ; -4.168 ns ; reg5[2]               ; s_addrRam[3]       ; clk      ;
+; N/A                                     ; None                                                ; -4.168 ns ; count_Centroid[5]     ; s_countCentroid[6] ; clk      ;
+; N/A                                     ; None                                                ; -4.182 ns ; count_Centroid[7]     ; s_addrRam[7]       ; clk      ;
+; N/A                                     ; None                                                ; -4.185 ns ; reg5[8]               ; s_addrRam[9]       ; clk      ;
+; N/A                                     ; None                                                ; -4.197 ns ; reg5[10]              ; s_addrRam[11]      ; clk      ;
+; N/A                                     ; None                                                ; -4.201 ns ; count_Centroid[0]     ; s_countCentroid[2] ; clk      ;
+; N/A                                     ; None                                                ; -4.206 ns ; reg5[5]               ; s_addrRam[7]       ; clk      ;
+; N/A                                     ; None                                                ; -4.206 ns ; count_Centroid[4]     ; s_addrRam[4]       ; clk      ;
+; N/A                                     ; None                                                ; -4.222 ns ; reg5[0]               ; s_addrRam[1]       ; clk      ;
+; N/A                                     ; None                                                ; -4.223 ns ; count_Centroid[6]     ; s_countCentroid[7] ; clk      ;
+; N/A                                     ; None                                                ; -4.236 ns ; reg5[13]              ; s_addrRam[14]      ; clk      ;
+; N/A                                     ; None                                                ; -4.240 ns ; reg5[1]               ; s_addrRam[1]       ; clk      ;
+; N/A                                     ; None                                                ; -4.246 ns ; count_Centroid[7]     ; s_countCentroid[8] ; clk      ;
+; N/A                                     ; None                                                ; -4.247 ns ; reg5[12]              ; s_addrRam[13]      ; clk      ;
+; N/A                                     ; None                                                ; -4.254 ns ; reg5[2]               ; s_addrRam[4]       ; clk      ;
+; N/A                                     ; None                                                ; -4.254 ns ; count_Centroid[5]     ; s_countCentroid[7] ; clk      ;
+; N/A                                     ; None                                                ; -4.264 ns ; count_Centroid[2]     ; s_countCentroid[3] ; clk      ;
+; N/A                                     ; None                                                ; -4.271 ns ; reg5[8]               ; s_addrRam[10]      ; clk      ;
+; N/A                                     ; None                                                ; -4.283 ns ; reg5[10]              ; s_addrRam[12]      ; clk      ;
+; N/A                                     ; None                                                ; -4.287 ns ; count_Centroid[0]     ; s_countCentroid[3] ; clk      ;
+; N/A                                     ; None                                                ; -4.294 ns ; count_Centroid[4]     ; s_countCentroid[5] ; clk      ;
+; N/A                                     ; None                                                ; -4.308 ns ; reg5[0]               ; s_addrRam[2]       ; clk      ;
+; N/A                                     ; None                                                ; -4.309 ns ; count_Centroid[6]     ; s_countCentroid[8] ; clk      ;
+; N/A                                     ; None                                                ; -4.321 ns ; count_Centroid[3]     ; s_countCentroid[5] ; clk      ;
+; N/A                                     ; None                                                ; -4.332 ns ; count_Centroid[7]     ; s_countCentroid[9] ; clk      ;
+; N/A                                     ; None                                                ; -4.333 ns ; reg5[12]              ; s_addrRam[14]      ; clk      ;
+; N/A                                     ; None                                                ; -4.340 ns ; reg5[2]               ; s_addrRam[5]       ; clk      ;
+; N/A                                     ; None                                                ; -4.340 ns ; count_Centroid[5]     ; s_countCentroid[8] ; clk      ;
+; N/A                                     ; None                                                ; -4.350 ns ; count_Centroid[2]     ; s_countCentroid[4] ; clk      ;
+; N/A                                     ; None                                                ; -4.357 ns ; reg5[8]               ; s_addrRam[11]      ; clk      ;
+; N/A                                     ; None                                                ; -4.369 ns ; reg5[10]              ; s_addrRam[13]      ; clk      ;
+; N/A                                     ; None                                                ; -4.373 ns ; count_Centroid[0]     ; s_countCentroid[4] ; clk      ;
+; N/A                                     ; None                                                ; -4.380 ns ; count_Centroid[4]     ; s_countCentroid[6] ; clk      ;
+; N/A                                     ; None                                                ; -4.394 ns ; reg5[0]               ; s_addrRam[3]       ; clk      ;
+; N/A                                     ; None                                                ; -4.395 ns ; count_Centroid[6]     ; s_countCentroid[9] ; clk      ;
+; N/A                                     ; None                                                ; -4.396 ns ; reg5[5]               ; s_addrRam[8]       ; clk      ;
+; N/A                                     ; None                                                ; -4.407 ns ; count_Centroid[3]     ; s_countCentroid[6] ; clk      ;
+; N/A                                     ; None                                                ; -4.426 ns ; reg5[2]               ; s_addrRam[6]       ; clk      ;
+; N/A                                     ; None                                                ; -4.426 ns ; count_Centroid[5]     ; s_countCentroid[9] ; clk      ;
+; N/A                                     ; None                                                ; -4.443 ns ; reg5[8]               ; s_addrRam[12]      ; clk      ;
+; N/A                                     ; None                                                ; -4.455 ns ; reg5[10]              ; s_addrRam[14]      ; clk      ;
+; N/A                                     ; None                                                ; -4.466 ns ; count_Centroid[4]     ; s_countCentroid[7] ; clk      ;
+; N/A                                     ; None                                                ; -4.480 ns ; reg5[0]               ; s_addrRam[4]       ; clk      ;
+; N/A                                     ; None                                                ; -4.482 ns ; reg5[5]               ; s_addrRam[9]       ; clk      ;
+; N/A                                     ; None                                                ; -4.486 ns ; count_Centroid[1]     ; s_addrRam[1]       ; clk      ;
+; N/A                                     ; None                                                ; -4.493 ns ; count_Centroid[3]     ; s_countCentroid[7] ; clk      ;
+; N/A                                     ; None                                                ; -4.512 ns ; reg5[2]               ; s_addrRam[7]       ; clk      ;
+; N/A                                     ; None                                                ; -4.521 ns ; reg5[4]               ; s_addrRam[5]       ; clk      ;
+; N/A                                     ; None                                                ; -4.529 ns ; reg5[8]               ; s_addrRam[13]      ; clk      ;
+; N/A                                     ; None                                                ; -4.537 ns ; count_Centroid[5]     ; s_addrRam[5]       ; clk      ;
+; N/A                                     ; None                                                ; -4.540 ns ; count_Centroid[2]     ; s_countCentroid[5] ; clk      ;
+; N/A                                     ; None                                                ; -4.552 ns ; count_Centroid[4]     ; s_countCentroid[8] ; clk      ;
+; N/A                                     ; None                                                ; -4.561 ns ; reg5[6]               ; s_addrRam[7]       ; clk      ;
+; N/A                                     ; None                                                ; -4.563 ns ; count_Centroid[0]     ; s_countCentroid[5] ; clk      ;
+; N/A                                     ; None                                                ; -4.566 ns ; reg5[0]               ; s_addrRam[5]       ; clk      ;
+; N/A                                     ; None                                                ; -4.568 ns ; reg5[5]               ; s_addrRam[10]      ; clk      ;
+; N/A                                     ; None                                                ; -4.573 ns ; count_Centroid[9]     ; s_addrRam[9]       ; clk      ;
+; N/A                                     ; None                                                ; -4.573 ns ; count_Centroid[1]     ; s_countCentroid[2] ; clk      ;
+; N/A                                     ; None                                                ; -4.579 ns ; count_Centroid[3]     ; s_countCentroid[8] ; clk      ;
+; N/A                                     ; None                                                ; -4.597 ns ; count_Centroid[8]     ; s_countCentroid[9] ; clk      ;
+; N/A                                     ; None                                                ; -4.602 ns ; reg5[3]               ; s_addrRam[4]       ; clk      ;
+; N/A                                     ; None                                                ; -4.607 ns ; reg5[4]               ; s_addrRam[6]       ; clk      ;
+; N/A                                     ; None                                                ; -4.610 ns ; count_Centroid[8]     ; s_addrRam[9]       ; clk      ;
+; N/A                                     ; None                                                ; -4.615 ns ; reg5[8]               ; s_addrRam[14]      ; clk      ;
+; N/A                                     ; None                                                ; -4.621 ns ; count_Centroid[3]     ; s_addrRam[4]       ; clk      ;
+; N/A                                     ; None                                                ; -4.626 ns ; count_Centroid[2]     ; s_countCentroid[6] ; clk      ;
+; N/A                                     ; None                                                ; -4.629 ns ; count_Centroid[0]     ; s_addrRam[1]       ; clk      ;
+; N/A                                     ; None                                                ; -4.638 ns ; count_Centroid[4]     ; s_countCentroid[9] ; clk      ;
+; N/A                                     ; None                                                ; -4.649 ns ; count_Centroid[0]     ; s_countCentroid[6] ; clk      ;
+; N/A                                     ; None                                                ; -4.652 ns ; reg5[0]               ; s_addrRam[6]       ; clk      ;
+; N/A                                     ; None                                                ; -4.654 ns ; reg5[5]               ; s_addrRam[11]      ; clk      ;
+; N/A                                     ; None                                                ; -4.659 ns ; count_Centroid[1]     ; s_countCentroid[3] ; clk      ;
+; N/A                                     ; None                                                ; -4.665 ns ; count_Centroid[3]     ; s_countCentroid[9] ; clk      ;
+; N/A                                     ; None                                                ; -4.683 ns ; count_Centroid[4]     ; s_addrRam[5]       ; clk      ;
+; N/A                                     ; None                                                ; -4.688 ns ; reg5[3]               ; s_addrRam[5]       ; clk      ;
+; N/A                                     ; None                                                ; -4.693 ns ; reg5[4]               ; s_addrRam[7]       ; clk      ;
+; N/A                                     ; None                                                ; -4.696 ns ; count_Centroid[8]     ; s_addrRam[10]      ; clk      ;
+; N/A                                     ; None                                                ; -4.701 ns ; reg5[7]               ; s_addrRam[8]       ; clk      ;
+; N/A                                     ; None                                                ; -4.702 ns ; reg5[2]               ; s_addrRam[8]       ; clk      ;
+; N/A                                     ; None                                                ; -4.707 ns ; count_Centroid[3]     ; s_addrRam[5]       ; clk      ;
+; N/A                                     ; None                                                ; -4.712 ns ; count_Centroid[2]     ; s_countCentroid[7] ; clk      ;
+; N/A                                     ; None                                                ; -4.715 ns ; count_Centroid[0]     ; s_addrRam[2]       ; clk      ;
+; N/A                                     ; None                                                ; -4.720 ns ; reg5[1]               ; s_addrRam[2]       ; clk      ;
+; N/A                                     ; None                                                ; -4.735 ns ; count_Centroid[0]     ; s_countCentroid[7] ; clk      ;
+; N/A                                     ; None                                                ; -4.738 ns ; reg5[0]               ; s_addrRam[7]       ; clk      ;
+; N/A                                     ; None                                                ; -4.740 ns ; reg5[5]               ; s_addrRam[12]      ; clk      ;
+; N/A                                     ; None                                                ; -4.745 ns ; count_Centroid[1]     ; s_countCentroid[4] ; clk      ;
+; N/A                                     ; None                                                ; -4.751 ns ; reg5[6]               ; s_addrRam[8]       ; clk      ;
+; N/A                                     ; None                                                ; -4.769 ns ; count_Centroid[4]     ; s_addrRam[6]       ; clk      ;
+; N/A                                     ; None                                                ; -4.774 ns ; reg5[3]               ; s_addrRam[6]       ; clk      ;
+; N/A                                     ; None                                                ; -4.779 ns ; count_Centroid[7]     ; s_addrRam[8]       ; clk      ;
+; N/A                                     ; None                                                ; -4.782 ns ; count_Centroid[8]     ; s_addrRam[11]      ; clk      ;
+; N/A                                     ; None                                                ; -4.787 ns ; reg5[7]               ; s_addrRam[9]       ; clk      ;
+; N/A                                     ; None                                                ; -4.788 ns ; reg5[2]               ; s_addrRam[9]       ; clk      ;
+; N/A                                     ; None                                                ; -4.793 ns ; count_Centroid[3]     ; s_addrRam[6]       ; clk      ;
+; N/A                                     ; None                                                ; -4.798 ns ; count_Centroid[2]     ; s_countCentroid[8] ; clk      ;
+; N/A                                     ; None                                                ; -4.801 ns ; count_Centroid[0]     ; s_addrRam[3]       ; clk      ;
+; N/A                                     ; None                                                ; -4.806 ns ; reg5[1]               ; s_addrRam[3]       ; clk      ;
+; N/A                                     ; None                                                ; -4.814 ns ; count_Centroid[6]     ; s_addrRam[6]       ; clk      ;
+; N/A                                     ; None                                                ; -4.821 ns ; count_Centroid[0]     ; s_countCentroid[8] ; clk      ;
+; N/A                                     ; None                                                ; -4.826 ns ; reg5[5]               ; s_addrRam[13]      ; clk      ;
+; N/A                                     ; None                                                ; -4.837 ns ; reg5[6]               ; s_addrRam[9]       ; clk      ;
+; N/A                                     ; None                                                ; -4.855 ns ; count_Centroid[4]     ; s_addrRam[7]       ; clk      ;
+; N/A                                     ; None                                                ; -4.860 ns ; reg5[3]               ; s_addrRam[7]       ; clk      ;
+; N/A                                     ; None                                                ; -4.865 ns ; count_Centroid[7]     ; s_addrRam[9]       ; clk      ;
+; N/A                                     ; None                                                ; -4.868 ns ; count_Centroid[8]     ; s_addrRam[12]      ; clk      ;
+; N/A                                     ; None                                                ; -4.873 ns ; reg5[7]               ; s_addrRam[10]      ; clk      ;
+; N/A                                     ; None                                                ; -4.874 ns ; reg5[2]               ; s_addrRam[10]      ; clk      ;
+; N/A                                     ; None                                                ; -4.879 ns ; count_Centroid[3]     ; s_addrRam[7]       ; clk      ;
+; N/A                                     ; None                                                ; -4.883 ns ; reg5[4]               ; s_addrRam[8]       ; clk      ;
+; N/A                                     ; None                                                ; -4.884 ns ; count_Centroid[2]     ; s_countCentroid[9] ; clk      ;
+; N/A                                     ; None                                                ; -4.887 ns ; count_Centroid[0]     ; s_addrRam[4]       ; clk      ;
+; N/A                                     ; None                                                ; -4.892 ns ; reg5[1]               ; s_addrRam[4]       ; clk      ;
+; N/A                                     ; None                                                ; -4.907 ns ; count_Centroid[0]     ; s_countCentroid[9] ; clk      ;
+; N/A                                     ; None                                                ; -4.912 ns ; reg5[5]               ; s_addrRam[14]      ; clk      ;
+; N/A                                     ; None                                                ; -4.923 ns ; reg5[6]               ; s_addrRam[10]      ; clk      ;
+; N/A                                     ; None                                                ; -4.928 ns ; reg5[0]               ; s_addrRam[8]       ; clk      ;
+; N/A                                     ; None                                                ; -4.935 ns ; count_Centroid[1]     ; s_countCentroid[5] ; clk      ;
+; N/A                                     ; None                                                ; -4.951 ns ; count_Centroid[7]     ; s_addrRam[10]      ; clk      ;
+; N/A                                     ; None                                                ; -4.954 ns ; count_Centroid[8]     ; s_addrRam[13]      ; clk      ;
+; N/A                                     ; None                                                ; -4.959 ns ; reg5[7]               ; s_addrRam[11]      ; clk      ;
+; N/A                                     ; None                                                ; -4.960 ns ; reg5[2]               ; s_addrRam[11]      ; clk      ;
+; N/A                                     ; None                                                ; -4.969 ns ; reg5[4]               ; s_addrRam[9]       ; clk      ;
+; N/A                                     ; None                                                ; -4.973 ns ; count_Centroid[0]     ; s_addrRam[5]       ; clk      ;
+; N/A                                     ; None                                                ; -4.973 ns ; count_Centroid[1]     ; s_addrRam[2]       ; clk      ;
+; N/A                                     ; None                                                ; -4.978 ns ; reg5[1]               ; s_addrRam[5]       ; clk      ;
+; N/A                                     ; None                                                ; -4.983 ns ; count_Centroid[2]     ; s_addrRam[2]       ; clk      ;
+; N/A                                     ; None                                                ; -5.009 ns ; reg5[6]               ; s_addrRam[11]      ; clk      ;
+; N/A                                     ; None                                                ; -5.014 ns ; reg5[0]               ; s_addrRam[9]       ; clk      ;
+; N/A                                     ; None                                                ; -5.017 ns ; count_Centroid[5]     ; s_addrRam[6]       ; clk      ;
+; N/A                                     ; None                                                ; -5.021 ns ; count_Centroid[1]     ; s_countCentroid[6] ; clk      ;
+; N/A                                     ; None                                                ; -5.037 ns ; count_Centroid[7]     ; s_addrRam[11]      ; clk      ;
+; N/A                                     ; None                                                ; -5.040 ns ; count_Centroid[8]     ; s_addrRam[14]      ; clk      ;
+; N/A                                     ; None                                                ; -5.045 ns ; reg5[7]               ; s_addrRam[12]      ; clk      ;
+; N/A                                     ; None                                                ; -5.045 ns ; count_Centroid[4]     ; s_addrRam[8]       ; clk      ;
+; N/A                                     ; None                                                ; -5.046 ns ; reg5[2]               ; s_addrRam[12]      ; clk      ;
+; N/A                                     ; None                                                ; -5.050 ns ; reg5[3]               ; s_addrRam[8]       ; clk      ;
+; Timing analysis restricted to 200 rows. ; To change the limit use Settings (Assignments menu) ;           ;                       ;                    ;          ;
++-----------------------------------------+-----------------------------------------------------+-----------+-----------------------+--------------------+----------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Classic Timing Analyzer
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Wed Jan 18 00:14:05 2017
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off Kmeans_CentroidInitialize -c Kmeans_CentroidInitialize --timing_analysis_only
+Warning: Found pins functioning as undefined clocks and/or memory enables
+    Info: Assuming node "clk" is an undefined clock
+Info: No valid register-to-register data paths exist for clock "clk"
+Info: tsu for register "s_addrRam[14]" (data pin = "count_Centroid[2]", clock pin = "clk") is 6.776 ns
+    Info: + Longest pin to register delay is 10.133 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.945 ns) = 0.945 ns; Loc. = PIN_M29; Fanout = 4; PIN Node = 'count_Centroid[2]'
+        Info: 2: + IC(6.903 ns) + CELL(0.621 ns) = 8.469 ns; Loc. = LCCOMB_X94_Y40_N4; Fanout = 2; COMB Node = 's_addrRam[2]~20'
+        Info: 3: + IC(0.000 ns) + CELL(0.086 ns) = 8.555 ns; Loc. = LCCOMB_X94_Y40_N6; Fanout = 2; COMB Node = 's_addrRam[3]~22'
+        Info: 4: + IC(0.000 ns) + CELL(0.086 ns) = 8.641 ns; Loc. = LCCOMB_X94_Y40_N8; Fanout = 2; COMB Node = 's_addrRam[4]~24'
+        Info: 5: + IC(0.000 ns) + CELL(0.086 ns) = 8.727 ns; Loc. = LCCOMB_X94_Y40_N10; Fanout = 2; COMB Node = 's_addrRam[5]~26'
+        Info: 6: + IC(0.000 ns) + CELL(0.086 ns) = 8.813 ns; Loc. = LCCOMB_X94_Y40_N12; Fanout = 2; COMB Node = 's_addrRam[6]~28'
+        Info: 7: + IC(0.000 ns) + CELL(0.190 ns) = 9.003 ns; Loc. = LCCOMB_X94_Y40_N14; Fanout = 2; COMB Node = 's_addrRam[7]~30'
+        Info: 8: + IC(0.000 ns) + CELL(0.086 ns) = 9.089 ns; Loc. = LCCOMB_X94_Y40_N16; Fanout = 2; COMB Node = 's_addrRam[8]~32'
+        Info: 9: + IC(0.000 ns) + CELL(0.086 ns) = 9.175 ns; Loc. = LCCOMB_X94_Y40_N18; Fanout = 2; COMB Node = 's_addrRam[9]~34'
+        Info: 10: + IC(0.000 ns) + CELL(0.086 ns) = 9.261 ns; Loc. = LCCOMB_X94_Y40_N20; Fanout = 2; COMB Node = 's_addrRam[10]~36'
+        Info: 11: + IC(0.000 ns) + CELL(0.086 ns) = 9.347 ns; Loc. = LCCOMB_X94_Y40_N22; Fanout = 2; COMB Node = 's_addrRam[11]~38'
+        Info: 12: + IC(0.000 ns) + CELL(0.086 ns) = 9.433 ns; Loc. = LCCOMB_X94_Y40_N24; Fanout = 2; COMB Node = 's_addrRam[12]~40'
+        Info: 13: + IC(0.000 ns) + CELL(0.086 ns) = 9.519 ns; Loc. = LCCOMB_X94_Y40_N26; Fanout = 1; COMB Node = 's_addrRam[13]~42'
+        Info: 14: + IC(0.000 ns) + CELL(0.506 ns) = 10.025 ns; Loc. = LCCOMB_X94_Y40_N28; Fanout = 1; COMB Node = 's_addrRam[14]~43'
+        Info: 15: + IC(0.000 ns) + CELL(0.108 ns) = 10.133 ns; Loc. = LCFF_X94_Y40_N29; Fanout = 1; REG Node = 's_addrRam[14]'
+        Info: Total cell delay = 3.230 ns ( 31.88 % )
+        Info: Total interconnect delay = 6.903 ns ( 68.12 % )
+    Info: + Micro setup delay of destination is -0.040 ns
+    Info: - Shortest clock path from clock "clk" to destination register is 3.317 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.100 ns) = 1.100 ns; Loc. = PIN_T2; Fanout = 1; CLK Node = 'clk'
+        Info: 2: + IC(0.135 ns) + CELL(0.000 ns) = 1.235 ns; Loc. = CLKCTRL_G3; Fanout = 25; COMB Node = 'clk~clkctrl'
+        Info: 3: + IC(1.416 ns) + CELL(0.666 ns) = 3.317 ns; Loc. = LCFF_X94_Y40_N29; Fanout = 1; REG Node = 's_addrRam[14]'
+        Info: Total cell delay = 1.766 ns ( 53.24 % )
+        Info: Total interconnect delay = 1.551 ns ( 46.76 % )
+Info: tco from clock "clk" to destination pin "addr_Ram[9]" through register "s_addrRam[9]" is 8.074 ns
+    Info: + Longest clock path from clock "clk" to source register is 3.317 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.100 ns) = 1.100 ns; Loc. = PIN_T2; Fanout = 1; CLK Node = 'clk'
+        Info: 2: + IC(0.135 ns) + CELL(0.000 ns) = 1.235 ns; Loc. = CLKCTRL_G3; Fanout = 25; COMB Node = 'clk~clkctrl'
+        Info: 3: + IC(1.416 ns) + CELL(0.666 ns) = 3.317 ns; Loc. = LCFF_X94_Y40_N19; Fanout = 1; REG Node = 's_addrRam[9]'
+        Info: Total cell delay = 1.766 ns ( 53.24 % )
+        Info: Total interconnect delay = 1.551 ns ( 46.76 % )
+    Info: + Micro clock to output delay of source is 0.304 ns
+    Info: + Longest register to pin delay is 4.453 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X94_Y40_N19; Fanout = 1; REG Node = 's_addrRam[9]'
+        Info: 2: + IC(1.387 ns) + CELL(3.066 ns) = 4.453 ns; Loc. = PIN_G30; Fanout = 0; PIN Node = 'addr_Ram[9]'
+        Info: Total cell delay = 3.066 ns ( 68.85 % )
+        Info: Total interconnect delay = 1.387 ns ( 31.15 % )
+Info: Longest tpd from source pin "dado[50]" to destination pin "o_dado[50]" is 10.556 ns
+    Info: 1: + IC(0.000 ns) + CELL(0.944 ns) = 0.944 ns; Loc. = PIN_AJ20; Fanout = 1; PIN Node = 'dado[50]'
+    Info: 2: + IC(6.366 ns) + CELL(3.246 ns) = 10.556 ns; Loc. = PIN_AK20; Fanout = 0; PIN Node = 'o_dado[50]'
+    Info: Total cell delay = 4.190 ns ( 39.69 % )
+    Info: Total interconnect delay = 6.366 ns ( 60.31 % )
+Info: th for register "s_addrRam[11]" (data pin = "reg5[11]", clock pin = "clk") is -3.294 ns
+    Info: + Longest clock path from clock "clk" to destination register is 3.317 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.100 ns) = 1.100 ns; Loc. = PIN_T2; Fanout = 1; CLK Node = 'clk'
+        Info: 2: + IC(0.135 ns) + CELL(0.000 ns) = 1.235 ns; Loc. = CLKCTRL_G3; Fanout = 25; COMB Node = 'clk~clkctrl'
+        Info: 3: + IC(1.416 ns) + CELL(0.666 ns) = 3.317 ns; Loc. = LCFF_X94_Y40_N23; Fanout = 1; REG Node = 's_addrRam[11]'
+        Info: Total cell delay = 1.766 ns ( 53.24 % )
+        Info: Total interconnect delay = 1.551 ns ( 46.76 % )
+    Info: + Micro hold delay of destination is 0.306 ns
+    Info: - Shortest pin to register delay is 6.917 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.915 ns) = 0.915 ns; Loc. = PIN_L22; Fanout = 2; PIN Node = 'reg5[11]'
+        Info: 2: + IC(5.271 ns) + CELL(0.623 ns) = 6.809 ns; Loc. = LCCOMB_X94_Y40_N22; Fanout = 1; COMB Node = 's_addrRam[11]~37'
+        Info: 3: + IC(0.000 ns) + CELL(0.108 ns) = 6.917 ns; Loc. = LCFF_X94_Y40_N23; Fanout = 1; REG Node = 's_addrRam[11]'
+        Info: Total cell delay = 1.646 ns ( 23.80 % )
+        Info: Total interconnect delay = 5.271 ns ( 76.20 % )
+Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 195 megabytes
+    Info: Processing ended: Wed Jan 18 00:14:06 2017
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
+
+

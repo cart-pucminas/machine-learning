@@ -1,0 +1,22 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+USE ieee.std_logic_unsigned.all ;
+use ieee.numeric_std.all;
+
+Entity DivValueFinal is
+    GENERIC ( PalavraXY      : INTEGER := 32 ); 
+				  
+	 PORT (	  
+	  valueX		  : in STD_LOGIC_VECTOR(PalavraXY-1 downto 0);
+	  valueY 	      : in STD_LOGIC_VECTOR(PalavraXY-1 downto 0);	  
+	  o_value		  : out STD_LOGIC_VECTOR(Palavra-1 downto 0)
+    );
+END DivValueFinal;
+
+ARCHITECTURE arch of DivValueFinal is
+
+BEGIN	
+	
+o_value <= valueX & valueY;
+
+END arch;

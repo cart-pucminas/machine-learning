@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Jun 13 11:24:39 2017
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Revision Name : Kmeans_CalcCentroidModuleFP
+Top-level Entity Name : Kmeans_CalcCentroidModuleFP
+Family : Cyclone IV E
+Total logic elements : 5,296
+    Total combinational functions : 4,020
+    Dedicated logic registers : 2,485
+Total registers : 2485
+Total pins : 221
+Total virtual pins : 0
+Total memory bits : 9,411
+Embedded Multiplier 9-bit elements : 32
+Total PLLs : 0

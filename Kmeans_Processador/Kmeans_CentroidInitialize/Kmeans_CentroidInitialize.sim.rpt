@@ -1,0 +1,654 @@
+Simulator report for Kmeans_CentroidInitialize
+Wed Jan 18 00:28:56 2017
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 282 nodes    ;
+; Simulation Coverage         ;      23.76 % ;
+; Total Number of Transitions ; 1505         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport  ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport  ; Transport     ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      23.76 % ;
+; Total nodes checked                                 ; 282          ;
+; Total output ports checked                          ; 282          ;
+; Total output ports with complete 1/0-value coverage ; 67           ;
+; Total output ports with no 1/0-value coverage       ; 207          ;
+; Total output ports with no 1-value coverage         ; 207          ;
+; Total output ports with no 0-value coverage         ; 215          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                            ;
++--------------------------------------------------+--------------------------------------------------+------------------+
+; Node Name                                        ; Output Port Name                                 ; Output Port Type ;
++--------------------------------------------------+--------------------------------------------------+------------------+
+; |Kmeans_CentroidInitialize|s_countCentroid[0]    ; |Kmeans_CentroidInitialize|s_countCentroid[0]    ; regout           ;
+; |Kmeans_CentroidInitialize|s_countCentroid[1]    ; |Kmeans_CentroidInitialize|s_countCentroid[1]    ; regout           ;
+; |Kmeans_CentroidInitialize|s_countCentroid[2]    ; |Kmeans_CentroidInitialize|s_countCentroid[2]    ; regout           ;
+; |Kmeans_CentroidInitialize|s_countCentroid[3]    ; |Kmeans_CentroidInitialize|s_countCentroid[3]    ; regout           ;
+; |Kmeans_CentroidInitialize|s_countCentroid[4]    ; |Kmeans_CentroidInitialize|s_countCentroid[4]    ; regout           ;
+; |Kmeans_CentroidInitialize|s_addrRam[0]          ; |Kmeans_CentroidInitialize|s_addrRam[0]          ; regout           ;
+; |Kmeans_CentroidInitialize|s_addrRam[1]          ; |Kmeans_CentroidInitialize|s_addrRam[1]          ; regout           ;
+; |Kmeans_CentroidInitialize|s_addrRam[2]          ; |Kmeans_CentroidInitialize|s_addrRam[2]          ; regout           ;
+; |Kmeans_CentroidInitialize|s_addrRam[3]          ; |Kmeans_CentroidInitialize|s_addrRam[3]          ; regout           ;
+; |Kmeans_CentroidInitialize|s_addrRam[4]          ; |Kmeans_CentroidInitialize|s_addrRam[4]          ; regout           ;
+; |Kmeans_CentroidInitialize|clk                   ; |Kmeans_CentroidInitialize|clk                   ; out              ;
+; |Kmeans_CentroidInitialize|count_Centroid[0]     ; |Kmeans_CentroidInitialize|count_Centroid[0]     ; out              ;
+; |Kmeans_CentroidInitialize|count_Centroid[1]     ; |Kmeans_CentroidInitialize|count_Centroid[1]     ; out              ;
+; |Kmeans_CentroidInitialize|count_Centroid[2]     ; |Kmeans_CentroidInitialize|count_Centroid[2]     ; out              ;
+; |Kmeans_CentroidInitialize|count_Centroid[3]     ; |Kmeans_CentroidInitialize|count_Centroid[3]     ; out              ;
+; |Kmeans_CentroidInitialize|count_Centroid[4]     ; |Kmeans_CentroidInitialize|count_Centroid[4]     ; out              ;
+; |Kmeans_CentroidInitialize|dado[0]               ; |Kmeans_CentroidInitialize|dado[0]               ; out              ;
+; |Kmeans_CentroidInitialize|dado[1]               ; |Kmeans_CentroidInitialize|dado[1]               ; out              ;
+; |Kmeans_CentroidInitialize|dado[2]               ; |Kmeans_CentroidInitialize|dado[2]               ; out              ;
+; |Kmeans_CentroidInitialize|dado[3]               ; |Kmeans_CentroidInitialize|dado[3]               ; out              ;
+; |Kmeans_CentroidInitialize|dado[4]               ; |Kmeans_CentroidInitialize|dado[4]               ; out              ;
+; |Kmeans_CentroidInitialize|dado[5]               ; |Kmeans_CentroidInitialize|dado[5]               ; out              ;
+; |Kmeans_CentroidInitialize|en_CentroidInitialize ; |Kmeans_CentroidInitialize|en_CentroidInitialize ; out              ;
+; |Kmeans_CentroidInitialize|o_countCentoid[0]     ; |Kmeans_CentroidInitialize|o_countCentoid[0]     ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_countCentoid[1]     ; |Kmeans_CentroidInitialize|o_countCentoid[1]     ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_countCentoid[2]     ; |Kmeans_CentroidInitialize|o_countCentoid[2]     ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_countCentoid[3]     ; |Kmeans_CentroidInitialize|o_countCentoid[3]     ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_countCentoid[4]     ; |Kmeans_CentroidInitialize|o_countCentoid[4]     ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[0]             ; |Kmeans_CentroidInitialize|o_dado[0]             ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[1]             ; |Kmeans_CentroidInitialize|o_dado[1]             ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[2]             ; |Kmeans_CentroidInitialize|o_dado[2]             ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[3]             ; |Kmeans_CentroidInitialize|o_dado[3]             ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[4]             ; |Kmeans_CentroidInitialize|o_dado[4]             ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[5]             ; |Kmeans_CentroidInitialize|o_dado[5]             ; pin_out          ;
+; |Kmeans_CentroidInitialize|addr_Ram[0]           ; |Kmeans_CentroidInitialize|addr_Ram[0]           ; pin_out          ;
+; |Kmeans_CentroidInitialize|addr_Ram[1]           ; |Kmeans_CentroidInitialize|addr_Ram[1]           ; pin_out          ;
+; |Kmeans_CentroidInitialize|addr_Ram[2]           ; |Kmeans_CentroidInitialize|addr_Ram[2]           ; pin_out          ;
+; |Kmeans_CentroidInitialize|addr_Ram[3]           ; |Kmeans_CentroidInitialize|addr_Ram[3]           ; pin_out          ;
+; |Kmeans_CentroidInitialize|addr_Ram[4]           ; |Kmeans_CentroidInitialize|addr_Ram[4]           ; pin_out          ;
+; |Kmeans_CentroidInitialize|Add0~0                ; |Kmeans_CentroidInitialize|Add0~0                ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~1                ; |Kmeans_CentroidInitialize|Add0~1                ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~2                ; |Kmeans_CentroidInitialize|Add0~2                ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~3                ; |Kmeans_CentroidInitialize|Add0~3                ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~4                ; |Kmeans_CentroidInitialize|Add0~4                ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~5                ; |Kmeans_CentroidInitialize|Add0~5                ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~6                ; |Kmeans_CentroidInitialize|Add0~6                ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~7                ; |Kmeans_CentroidInitialize|Add0~7                ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~8                ; |Kmeans_CentroidInitialize|Add0~8                ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~11               ; |Kmeans_CentroidInitialize|Add0~11               ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~12               ; |Kmeans_CentroidInitialize|Add0~12               ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~13               ; |Kmeans_CentroidInitialize|Add0~13               ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~16               ; |Kmeans_CentroidInitialize|Add0~16               ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~17               ; |Kmeans_CentroidInitialize|Add0~17               ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~18               ; |Kmeans_CentroidInitialize|Add0~18               ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~21               ; |Kmeans_CentroidInitialize|Add0~21               ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~22               ; |Kmeans_CentroidInitialize|Add0~22               ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~23               ; |Kmeans_CentroidInitialize|Add0~23               ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~26               ; |Kmeans_CentroidInitialize|Add0~26               ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~27               ; |Kmeans_CentroidInitialize|Add0~27               ; out0             ;
+; |Kmeans_CentroidInitialize|Add1~0                ; |Kmeans_CentroidInitialize|Add1~0                ; out0             ;
+; |Kmeans_CentroidInitialize|Add1~1                ; |Kmeans_CentroidInitialize|Add1~1                ; out0             ;
+; |Kmeans_CentroidInitialize|Add1~2                ; |Kmeans_CentroidInitialize|Add1~2                ; out0             ;
+; |Kmeans_CentroidInitialize|Add1~3                ; |Kmeans_CentroidInitialize|Add1~3                ; out0             ;
+; |Kmeans_CentroidInitialize|Add1~4                ; |Kmeans_CentroidInitialize|Add1~4                ; out0             ;
+; |Kmeans_CentroidInitialize|Add1~5                ; |Kmeans_CentroidInitialize|Add1~5                ; out0             ;
+; |Kmeans_CentroidInitialize|Add1~6                ; |Kmeans_CentroidInitialize|Add1~6                ; out0             ;
+; |Kmeans_CentroidInitialize|Add1~7                ; |Kmeans_CentroidInitialize|Add1~7                ; out0             ;
++--------------------------------------------------+--------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                         ;
++-----------------------------------------------+-----------------------------------------------+------------------+
+; Node Name                                     ; Output Port Name                              ; Output Port Type ;
++-----------------------------------------------+-----------------------------------------------+------------------+
+; |Kmeans_CentroidInitialize|s_countCentroid[6] ; |Kmeans_CentroidInitialize|s_countCentroid[6] ; regout           ;
+; |Kmeans_CentroidInitialize|s_countCentroid[7] ; |Kmeans_CentroidInitialize|s_countCentroid[7] ; regout           ;
+; |Kmeans_CentroidInitialize|s_countCentroid[8] ; |Kmeans_CentroidInitialize|s_countCentroid[8] ; regout           ;
+; |Kmeans_CentroidInitialize|s_countCentroid[9] ; |Kmeans_CentroidInitialize|s_countCentroid[9] ; regout           ;
+; |Kmeans_CentroidInitialize|s_addrRam[6]       ; |Kmeans_CentroidInitialize|s_addrRam[6]       ; regout           ;
+; |Kmeans_CentroidInitialize|s_addrRam[7]       ; |Kmeans_CentroidInitialize|s_addrRam[7]       ; regout           ;
+; |Kmeans_CentroidInitialize|s_addrRam[8]       ; |Kmeans_CentroidInitialize|s_addrRam[8]       ; regout           ;
+; |Kmeans_CentroidInitialize|s_addrRam[9]       ; |Kmeans_CentroidInitialize|s_addrRam[9]       ; regout           ;
+; |Kmeans_CentroidInitialize|s_addrRam[10]      ; |Kmeans_CentroidInitialize|s_addrRam[10]      ; regout           ;
+; |Kmeans_CentroidInitialize|s_addrRam[11]      ; |Kmeans_CentroidInitialize|s_addrRam[11]      ; regout           ;
+; |Kmeans_CentroidInitialize|s_addrRam[12]      ; |Kmeans_CentroidInitialize|s_addrRam[12]      ; regout           ;
+; |Kmeans_CentroidInitialize|s_addrRam[13]      ; |Kmeans_CentroidInitialize|s_addrRam[13]      ; regout           ;
+; |Kmeans_CentroidInitialize|s_addrRam[14]      ; |Kmeans_CentroidInitialize|s_addrRam[14]      ; regout           ;
+; |Kmeans_CentroidInitialize|count_Centroid[6]  ; |Kmeans_CentroidInitialize|count_Centroid[6]  ; out              ;
+; |Kmeans_CentroidInitialize|count_Centroid[7]  ; |Kmeans_CentroidInitialize|count_Centroid[7]  ; out              ;
+; |Kmeans_CentroidInitialize|count_Centroid[8]  ; |Kmeans_CentroidInitialize|count_Centroid[8]  ; out              ;
+; |Kmeans_CentroidInitialize|count_Centroid[9]  ; |Kmeans_CentroidInitialize|count_Centroid[9]  ; out              ;
+; |Kmeans_CentroidInitialize|dado[7]            ; |Kmeans_CentroidInitialize|dado[7]            ; out              ;
+; |Kmeans_CentroidInitialize|dado[8]            ; |Kmeans_CentroidInitialize|dado[8]            ; out              ;
+; |Kmeans_CentroidInitialize|dado[9]            ; |Kmeans_CentroidInitialize|dado[9]            ; out              ;
+; |Kmeans_CentroidInitialize|dado[10]           ; |Kmeans_CentroidInitialize|dado[10]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[11]           ; |Kmeans_CentroidInitialize|dado[11]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[12]           ; |Kmeans_CentroidInitialize|dado[12]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[13]           ; |Kmeans_CentroidInitialize|dado[13]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[14]           ; |Kmeans_CentroidInitialize|dado[14]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[15]           ; |Kmeans_CentroidInitialize|dado[15]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[16]           ; |Kmeans_CentroidInitialize|dado[16]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[17]           ; |Kmeans_CentroidInitialize|dado[17]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[18]           ; |Kmeans_CentroidInitialize|dado[18]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[19]           ; |Kmeans_CentroidInitialize|dado[19]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[20]           ; |Kmeans_CentroidInitialize|dado[20]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[21]           ; |Kmeans_CentroidInitialize|dado[21]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[22]           ; |Kmeans_CentroidInitialize|dado[22]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[23]           ; |Kmeans_CentroidInitialize|dado[23]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[24]           ; |Kmeans_CentroidInitialize|dado[24]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[25]           ; |Kmeans_CentroidInitialize|dado[25]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[26]           ; |Kmeans_CentroidInitialize|dado[26]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[27]           ; |Kmeans_CentroidInitialize|dado[27]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[28]           ; |Kmeans_CentroidInitialize|dado[28]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[29]           ; |Kmeans_CentroidInitialize|dado[29]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[30]           ; |Kmeans_CentroidInitialize|dado[30]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[31]           ; |Kmeans_CentroidInitialize|dado[31]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[32]           ; |Kmeans_CentroidInitialize|dado[32]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[33]           ; |Kmeans_CentroidInitialize|dado[33]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[34]           ; |Kmeans_CentroidInitialize|dado[34]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[35]           ; |Kmeans_CentroidInitialize|dado[35]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[36]           ; |Kmeans_CentroidInitialize|dado[36]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[37]           ; |Kmeans_CentroidInitialize|dado[37]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[38]           ; |Kmeans_CentroidInitialize|dado[38]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[39]           ; |Kmeans_CentroidInitialize|dado[39]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[40]           ; |Kmeans_CentroidInitialize|dado[40]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[41]           ; |Kmeans_CentroidInitialize|dado[41]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[42]           ; |Kmeans_CentroidInitialize|dado[42]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[43]           ; |Kmeans_CentroidInitialize|dado[43]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[44]           ; |Kmeans_CentroidInitialize|dado[44]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[45]           ; |Kmeans_CentroidInitialize|dado[45]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[46]           ; |Kmeans_CentroidInitialize|dado[46]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[47]           ; |Kmeans_CentroidInitialize|dado[47]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[48]           ; |Kmeans_CentroidInitialize|dado[48]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[49]           ; |Kmeans_CentroidInitialize|dado[49]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[50]           ; |Kmeans_CentroidInitialize|dado[50]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[51]           ; |Kmeans_CentroidInitialize|dado[51]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[52]           ; |Kmeans_CentroidInitialize|dado[52]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[53]           ; |Kmeans_CentroidInitialize|dado[53]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[54]           ; |Kmeans_CentroidInitialize|dado[54]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[55]           ; |Kmeans_CentroidInitialize|dado[55]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[56]           ; |Kmeans_CentroidInitialize|dado[56]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[57]           ; |Kmeans_CentroidInitialize|dado[57]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[58]           ; |Kmeans_CentroidInitialize|dado[58]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[59]           ; |Kmeans_CentroidInitialize|dado[59]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[60]           ; |Kmeans_CentroidInitialize|dado[60]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[61]           ; |Kmeans_CentroidInitialize|dado[61]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[62]           ; |Kmeans_CentroidInitialize|dado[62]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[63]           ; |Kmeans_CentroidInitialize|dado[63]           ; out              ;
+; |Kmeans_CentroidInitialize|reg5[0]            ; |Kmeans_CentroidInitialize|reg5[0]            ; out              ;
+; |Kmeans_CentroidInitialize|reg5[1]            ; |Kmeans_CentroidInitialize|reg5[1]            ; out              ;
+; |Kmeans_CentroidInitialize|reg5[2]            ; |Kmeans_CentroidInitialize|reg5[2]            ; out              ;
+; |Kmeans_CentroidInitialize|reg5[3]            ; |Kmeans_CentroidInitialize|reg5[3]            ; out              ;
+; |Kmeans_CentroidInitialize|reg5[4]            ; |Kmeans_CentroidInitialize|reg5[4]            ; out              ;
+; |Kmeans_CentroidInitialize|reg5[5]            ; |Kmeans_CentroidInitialize|reg5[5]            ; out              ;
+; |Kmeans_CentroidInitialize|reg5[6]            ; |Kmeans_CentroidInitialize|reg5[6]            ; out              ;
+; |Kmeans_CentroidInitialize|reg5[7]            ; |Kmeans_CentroidInitialize|reg5[7]            ; out              ;
+; |Kmeans_CentroidInitialize|reg5[8]            ; |Kmeans_CentroidInitialize|reg5[8]            ; out              ;
+; |Kmeans_CentroidInitialize|reg5[9]            ; |Kmeans_CentroidInitialize|reg5[9]            ; out              ;
+; |Kmeans_CentroidInitialize|reg5[10]           ; |Kmeans_CentroidInitialize|reg5[10]           ; out              ;
+; |Kmeans_CentroidInitialize|reg5[11]           ; |Kmeans_CentroidInitialize|reg5[11]           ; out              ;
+; |Kmeans_CentroidInitialize|reg5[12]           ; |Kmeans_CentroidInitialize|reg5[12]           ; out              ;
+; |Kmeans_CentroidInitialize|reg5[13]           ; |Kmeans_CentroidInitialize|reg5[13]           ; out              ;
+; |Kmeans_CentroidInitialize|reg5[14]           ; |Kmeans_CentroidInitialize|reg5[14]           ; out              ;
+; |Kmeans_CentroidInitialize|o_countCentoid[6]  ; |Kmeans_CentroidInitialize|o_countCentoid[6]  ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_countCentoid[7]  ; |Kmeans_CentroidInitialize|o_countCentoid[7]  ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_countCentoid[8]  ; |Kmeans_CentroidInitialize|o_countCentoid[8]  ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_countCentoid[9]  ; |Kmeans_CentroidInitialize|o_countCentoid[9]  ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[7]          ; |Kmeans_CentroidInitialize|o_dado[7]          ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[8]          ; |Kmeans_CentroidInitialize|o_dado[8]          ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[9]          ; |Kmeans_CentroidInitialize|o_dado[9]          ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[10]         ; |Kmeans_CentroidInitialize|o_dado[10]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[11]         ; |Kmeans_CentroidInitialize|o_dado[11]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[12]         ; |Kmeans_CentroidInitialize|o_dado[12]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[13]         ; |Kmeans_CentroidInitialize|o_dado[13]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[14]         ; |Kmeans_CentroidInitialize|o_dado[14]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[15]         ; |Kmeans_CentroidInitialize|o_dado[15]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[16]         ; |Kmeans_CentroidInitialize|o_dado[16]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[17]         ; |Kmeans_CentroidInitialize|o_dado[17]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[18]         ; |Kmeans_CentroidInitialize|o_dado[18]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[19]         ; |Kmeans_CentroidInitialize|o_dado[19]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[20]         ; |Kmeans_CentroidInitialize|o_dado[20]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[21]         ; |Kmeans_CentroidInitialize|o_dado[21]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[22]         ; |Kmeans_CentroidInitialize|o_dado[22]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[23]         ; |Kmeans_CentroidInitialize|o_dado[23]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[24]         ; |Kmeans_CentroidInitialize|o_dado[24]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[25]         ; |Kmeans_CentroidInitialize|o_dado[25]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[26]         ; |Kmeans_CentroidInitialize|o_dado[26]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[27]         ; |Kmeans_CentroidInitialize|o_dado[27]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[28]         ; |Kmeans_CentroidInitialize|o_dado[28]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[29]         ; |Kmeans_CentroidInitialize|o_dado[29]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[30]         ; |Kmeans_CentroidInitialize|o_dado[30]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[31]         ; |Kmeans_CentroidInitialize|o_dado[31]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[32]         ; |Kmeans_CentroidInitialize|o_dado[32]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[33]         ; |Kmeans_CentroidInitialize|o_dado[33]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[34]         ; |Kmeans_CentroidInitialize|o_dado[34]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[35]         ; |Kmeans_CentroidInitialize|o_dado[35]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[36]         ; |Kmeans_CentroidInitialize|o_dado[36]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[37]         ; |Kmeans_CentroidInitialize|o_dado[37]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[38]         ; |Kmeans_CentroidInitialize|o_dado[38]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[39]         ; |Kmeans_CentroidInitialize|o_dado[39]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[40]         ; |Kmeans_CentroidInitialize|o_dado[40]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[41]         ; |Kmeans_CentroidInitialize|o_dado[41]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[42]         ; |Kmeans_CentroidInitialize|o_dado[42]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[43]         ; |Kmeans_CentroidInitialize|o_dado[43]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[44]         ; |Kmeans_CentroidInitialize|o_dado[44]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[45]         ; |Kmeans_CentroidInitialize|o_dado[45]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[46]         ; |Kmeans_CentroidInitialize|o_dado[46]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[47]         ; |Kmeans_CentroidInitialize|o_dado[47]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[48]         ; |Kmeans_CentroidInitialize|o_dado[48]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[49]         ; |Kmeans_CentroidInitialize|o_dado[49]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[50]         ; |Kmeans_CentroidInitialize|o_dado[50]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[51]         ; |Kmeans_CentroidInitialize|o_dado[51]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[52]         ; |Kmeans_CentroidInitialize|o_dado[52]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[53]         ; |Kmeans_CentroidInitialize|o_dado[53]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[54]         ; |Kmeans_CentroidInitialize|o_dado[54]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[55]         ; |Kmeans_CentroidInitialize|o_dado[55]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[56]         ; |Kmeans_CentroidInitialize|o_dado[56]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[57]         ; |Kmeans_CentroidInitialize|o_dado[57]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[58]         ; |Kmeans_CentroidInitialize|o_dado[58]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[59]         ; |Kmeans_CentroidInitialize|o_dado[59]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[60]         ; |Kmeans_CentroidInitialize|o_dado[60]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[61]         ; |Kmeans_CentroidInitialize|o_dado[61]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[62]         ; |Kmeans_CentroidInitialize|o_dado[62]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[63]         ; |Kmeans_CentroidInitialize|o_dado[63]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|next_State[0]      ; |Kmeans_CentroidInitialize|next_State[0]      ; pin_out          ;
+; |Kmeans_CentroidInitialize|next_State[1]      ; |Kmeans_CentroidInitialize|next_State[1]      ; pin_out          ;
+; |Kmeans_CentroidInitialize|next_State[2]      ; |Kmeans_CentroidInitialize|next_State[2]      ; pin_out          ;
+; |Kmeans_CentroidInitialize|next_State[3]      ; |Kmeans_CentroidInitialize|next_State[3]      ; pin_out          ;
+; |Kmeans_CentroidInitialize|addr_Ram[6]        ; |Kmeans_CentroidInitialize|addr_Ram[6]        ; pin_out          ;
+; |Kmeans_CentroidInitialize|addr_Ram[7]        ; |Kmeans_CentroidInitialize|addr_Ram[7]        ; pin_out          ;
+; |Kmeans_CentroidInitialize|addr_Ram[8]        ; |Kmeans_CentroidInitialize|addr_Ram[8]        ; pin_out          ;
+; |Kmeans_CentroidInitialize|addr_Ram[9]        ; |Kmeans_CentroidInitialize|addr_Ram[9]        ; pin_out          ;
+; |Kmeans_CentroidInitialize|addr_Ram[10]       ; |Kmeans_CentroidInitialize|addr_Ram[10]       ; pin_out          ;
+; |Kmeans_CentroidInitialize|addr_Ram[11]       ; |Kmeans_CentroidInitialize|addr_Ram[11]       ; pin_out          ;
+; |Kmeans_CentroidInitialize|addr_Ram[12]       ; |Kmeans_CentroidInitialize|addr_Ram[12]       ; pin_out          ;
+; |Kmeans_CentroidInitialize|addr_Ram[13]       ; |Kmeans_CentroidInitialize|addr_Ram[13]       ; pin_out          ;
+; |Kmeans_CentroidInitialize|addr_Ram[14]       ; |Kmeans_CentroidInitialize|addr_Ram[14]       ; pin_out          ;
+; |Kmeans_CentroidInitialize|Add0~9             ; |Kmeans_CentroidInitialize|Add0~9             ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~10            ; |Kmeans_CentroidInitialize|Add0~10            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~14            ; |Kmeans_CentroidInitialize|Add0~14            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~15            ; |Kmeans_CentroidInitialize|Add0~15            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~19            ; |Kmeans_CentroidInitialize|Add0~19            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~20            ; |Kmeans_CentroidInitialize|Add0~20            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~24            ; |Kmeans_CentroidInitialize|Add0~24            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~25            ; |Kmeans_CentroidInitialize|Add0~25            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~28            ; |Kmeans_CentroidInitialize|Add0~28            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~29            ; |Kmeans_CentroidInitialize|Add0~29            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~30            ; |Kmeans_CentroidInitialize|Add0~30            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~31            ; |Kmeans_CentroidInitialize|Add0~31            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~32            ; |Kmeans_CentroidInitialize|Add0~32            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~33            ; |Kmeans_CentroidInitialize|Add0~33            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~34            ; |Kmeans_CentroidInitialize|Add0~34            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~35            ; |Kmeans_CentroidInitialize|Add0~35            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~36            ; |Kmeans_CentroidInitialize|Add0~36            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~37            ; |Kmeans_CentroidInitialize|Add0~37            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~38            ; |Kmeans_CentroidInitialize|Add0~38            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~39            ; |Kmeans_CentroidInitialize|Add0~39            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~40            ; |Kmeans_CentroidInitialize|Add0~40            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~41            ; |Kmeans_CentroidInitialize|Add0~41            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~42            ; |Kmeans_CentroidInitialize|Add0~42            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~43            ; |Kmeans_CentroidInitialize|Add0~43            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~44            ; |Kmeans_CentroidInitialize|Add0~44            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~45            ; |Kmeans_CentroidInitialize|Add0~45            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~46            ; |Kmeans_CentroidInitialize|Add0~46            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~47            ; |Kmeans_CentroidInitialize|Add0~47            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~48            ; |Kmeans_CentroidInitialize|Add0~48            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~49            ; |Kmeans_CentroidInitialize|Add0~49            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~50            ; |Kmeans_CentroidInitialize|Add0~50            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~51            ; |Kmeans_CentroidInitialize|Add0~51            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~52            ; |Kmeans_CentroidInitialize|Add0~52            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~53            ; |Kmeans_CentroidInitialize|Add0~53            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~54            ; |Kmeans_CentroidInitialize|Add0~54            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~55            ; |Kmeans_CentroidInitialize|Add0~55            ; out0             ;
+; |Kmeans_CentroidInitialize|Add1~9             ; |Kmeans_CentroidInitialize|Add1~9             ; out0             ;
+; |Kmeans_CentroidInitialize|Add1~10            ; |Kmeans_CentroidInitialize|Add1~10            ; out0             ;
+; |Kmeans_CentroidInitialize|Add1~11            ; |Kmeans_CentroidInitialize|Add1~11            ; out0             ;
+; |Kmeans_CentroidInitialize|Add1~12            ; |Kmeans_CentroidInitialize|Add1~12            ; out0             ;
+; |Kmeans_CentroidInitialize|Add1~13            ; |Kmeans_CentroidInitialize|Add1~13            ; out0             ;
+; |Kmeans_CentroidInitialize|Add1~14            ; |Kmeans_CentroidInitialize|Add1~14            ; out0             ;
+; |Kmeans_CentroidInitialize|Add1~15            ; |Kmeans_CentroidInitialize|Add1~15            ; out0             ;
+; |Kmeans_CentroidInitialize|Add1~16            ; |Kmeans_CentroidInitialize|Add1~16            ; out0             ;
++-----------------------------------------------+-----------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                         ;
++-----------------------------------------------+-----------------------------------------------+------------------+
+; Node Name                                     ; Output Port Name                              ; Output Port Type ;
++-----------------------------------------------+-----------------------------------------------+------------------+
+; |Kmeans_CentroidInitialize|s_countCentroid[5] ; |Kmeans_CentroidInitialize|s_countCentroid[5] ; regout           ;
+; |Kmeans_CentroidInitialize|s_countCentroid[6] ; |Kmeans_CentroidInitialize|s_countCentroid[6] ; regout           ;
+; |Kmeans_CentroidInitialize|s_countCentroid[7] ; |Kmeans_CentroidInitialize|s_countCentroid[7] ; regout           ;
+; |Kmeans_CentroidInitialize|s_countCentroid[8] ; |Kmeans_CentroidInitialize|s_countCentroid[8] ; regout           ;
+; |Kmeans_CentroidInitialize|s_countCentroid[9] ; |Kmeans_CentroidInitialize|s_countCentroid[9] ; regout           ;
+; |Kmeans_CentroidInitialize|s_addrRam[5]       ; |Kmeans_CentroidInitialize|s_addrRam[5]       ; regout           ;
+; |Kmeans_CentroidInitialize|s_addrRam[6]       ; |Kmeans_CentroidInitialize|s_addrRam[6]       ; regout           ;
+; |Kmeans_CentroidInitialize|s_addrRam[7]       ; |Kmeans_CentroidInitialize|s_addrRam[7]       ; regout           ;
+; |Kmeans_CentroidInitialize|s_addrRam[8]       ; |Kmeans_CentroidInitialize|s_addrRam[8]       ; regout           ;
+; |Kmeans_CentroidInitialize|s_addrRam[9]       ; |Kmeans_CentroidInitialize|s_addrRam[9]       ; regout           ;
+; |Kmeans_CentroidInitialize|s_addrRam[10]      ; |Kmeans_CentroidInitialize|s_addrRam[10]      ; regout           ;
+; |Kmeans_CentroidInitialize|s_addrRam[11]      ; |Kmeans_CentroidInitialize|s_addrRam[11]      ; regout           ;
+; |Kmeans_CentroidInitialize|s_addrRam[12]      ; |Kmeans_CentroidInitialize|s_addrRam[12]      ; regout           ;
+; |Kmeans_CentroidInitialize|s_addrRam[13]      ; |Kmeans_CentroidInitialize|s_addrRam[13]      ; regout           ;
+; |Kmeans_CentroidInitialize|s_addrRam[14]      ; |Kmeans_CentroidInitialize|s_addrRam[14]      ; regout           ;
+; |Kmeans_CentroidInitialize|count_Centroid[5]  ; |Kmeans_CentroidInitialize|count_Centroid[5]  ; out              ;
+; |Kmeans_CentroidInitialize|count_Centroid[6]  ; |Kmeans_CentroidInitialize|count_Centroid[6]  ; out              ;
+; |Kmeans_CentroidInitialize|count_Centroid[7]  ; |Kmeans_CentroidInitialize|count_Centroid[7]  ; out              ;
+; |Kmeans_CentroidInitialize|count_Centroid[8]  ; |Kmeans_CentroidInitialize|count_Centroid[8]  ; out              ;
+; |Kmeans_CentroidInitialize|count_Centroid[9]  ; |Kmeans_CentroidInitialize|count_Centroid[9]  ; out              ;
+; |Kmeans_CentroidInitialize|dado[6]            ; |Kmeans_CentroidInitialize|dado[6]            ; out              ;
+; |Kmeans_CentroidInitialize|dado[7]            ; |Kmeans_CentroidInitialize|dado[7]            ; out              ;
+; |Kmeans_CentroidInitialize|dado[8]            ; |Kmeans_CentroidInitialize|dado[8]            ; out              ;
+; |Kmeans_CentroidInitialize|dado[9]            ; |Kmeans_CentroidInitialize|dado[9]            ; out              ;
+; |Kmeans_CentroidInitialize|dado[10]           ; |Kmeans_CentroidInitialize|dado[10]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[11]           ; |Kmeans_CentroidInitialize|dado[11]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[12]           ; |Kmeans_CentroidInitialize|dado[12]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[13]           ; |Kmeans_CentroidInitialize|dado[13]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[14]           ; |Kmeans_CentroidInitialize|dado[14]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[15]           ; |Kmeans_CentroidInitialize|dado[15]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[16]           ; |Kmeans_CentroidInitialize|dado[16]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[17]           ; |Kmeans_CentroidInitialize|dado[17]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[18]           ; |Kmeans_CentroidInitialize|dado[18]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[19]           ; |Kmeans_CentroidInitialize|dado[19]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[20]           ; |Kmeans_CentroidInitialize|dado[20]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[21]           ; |Kmeans_CentroidInitialize|dado[21]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[22]           ; |Kmeans_CentroidInitialize|dado[22]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[23]           ; |Kmeans_CentroidInitialize|dado[23]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[24]           ; |Kmeans_CentroidInitialize|dado[24]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[25]           ; |Kmeans_CentroidInitialize|dado[25]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[26]           ; |Kmeans_CentroidInitialize|dado[26]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[27]           ; |Kmeans_CentroidInitialize|dado[27]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[28]           ; |Kmeans_CentroidInitialize|dado[28]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[29]           ; |Kmeans_CentroidInitialize|dado[29]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[30]           ; |Kmeans_CentroidInitialize|dado[30]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[31]           ; |Kmeans_CentroidInitialize|dado[31]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[32]           ; |Kmeans_CentroidInitialize|dado[32]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[33]           ; |Kmeans_CentroidInitialize|dado[33]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[34]           ; |Kmeans_CentroidInitialize|dado[34]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[35]           ; |Kmeans_CentroidInitialize|dado[35]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[36]           ; |Kmeans_CentroidInitialize|dado[36]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[37]           ; |Kmeans_CentroidInitialize|dado[37]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[38]           ; |Kmeans_CentroidInitialize|dado[38]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[39]           ; |Kmeans_CentroidInitialize|dado[39]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[40]           ; |Kmeans_CentroidInitialize|dado[40]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[41]           ; |Kmeans_CentroidInitialize|dado[41]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[42]           ; |Kmeans_CentroidInitialize|dado[42]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[43]           ; |Kmeans_CentroidInitialize|dado[43]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[44]           ; |Kmeans_CentroidInitialize|dado[44]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[45]           ; |Kmeans_CentroidInitialize|dado[45]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[46]           ; |Kmeans_CentroidInitialize|dado[46]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[47]           ; |Kmeans_CentroidInitialize|dado[47]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[48]           ; |Kmeans_CentroidInitialize|dado[48]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[49]           ; |Kmeans_CentroidInitialize|dado[49]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[50]           ; |Kmeans_CentroidInitialize|dado[50]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[51]           ; |Kmeans_CentroidInitialize|dado[51]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[52]           ; |Kmeans_CentroidInitialize|dado[52]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[53]           ; |Kmeans_CentroidInitialize|dado[53]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[54]           ; |Kmeans_CentroidInitialize|dado[54]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[55]           ; |Kmeans_CentroidInitialize|dado[55]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[56]           ; |Kmeans_CentroidInitialize|dado[56]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[57]           ; |Kmeans_CentroidInitialize|dado[57]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[58]           ; |Kmeans_CentroidInitialize|dado[58]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[59]           ; |Kmeans_CentroidInitialize|dado[59]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[60]           ; |Kmeans_CentroidInitialize|dado[60]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[61]           ; |Kmeans_CentroidInitialize|dado[61]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[62]           ; |Kmeans_CentroidInitialize|dado[62]           ; out              ;
+; |Kmeans_CentroidInitialize|dado[63]           ; |Kmeans_CentroidInitialize|dado[63]           ; out              ;
+; |Kmeans_CentroidInitialize|reg5[0]            ; |Kmeans_CentroidInitialize|reg5[0]            ; out              ;
+; |Kmeans_CentroidInitialize|reg5[1]            ; |Kmeans_CentroidInitialize|reg5[1]            ; out              ;
+; |Kmeans_CentroidInitialize|reg5[2]            ; |Kmeans_CentroidInitialize|reg5[2]            ; out              ;
+; |Kmeans_CentroidInitialize|reg5[3]            ; |Kmeans_CentroidInitialize|reg5[3]            ; out              ;
+; |Kmeans_CentroidInitialize|reg5[4]            ; |Kmeans_CentroidInitialize|reg5[4]            ; out              ;
+; |Kmeans_CentroidInitialize|reg5[5]            ; |Kmeans_CentroidInitialize|reg5[5]            ; out              ;
+; |Kmeans_CentroidInitialize|reg5[6]            ; |Kmeans_CentroidInitialize|reg5[6]            ; out              ;
+; |Kmeans_CentroidInitialize|reg5[7]            ; |Kmeans_CentroidInitialize|reg5[7]            ; out              ;
+; |Kmeans_CentroidInitialize|reg5[8]            ; |Kmeans_CentroidInitialize|reg5[8]            ; out              ;
+; |Kmeans_CentroidInitialize|reg5[9]            ; |Kmeans_CentroidInitialize|reg5[9]            ; out              ;
+; |Kmeans_CentroidInitialize|reg5[10]           ; |Kmeans_CentroidInitialize|reg5[10]           ; out              ;
+; |Kmeans_CentroidInitialize|reg5[11]           ; |Kmeans_CentroidInitialize|reg5[11]           ; out              ;
+; |Kmeans_CentroidInitialize|reg5[12]           ; |Kmeans_CentroidInitialize|reg5[12]           ; out              ;
+; |Kmeans_CentroidInitialize|reg5[13]           ; |Kmeans_CentroidInitialize|reg5[13]           ; out              ;
+; |Kmeans_CentroidInitialize|reg5[14]           ; |Kmeans_CentroidInitialize|reg5[14]           ; out              ;
+; |Kmeans_CentroidInitialize|o_countCentoid[5]  ; |Kmeans_CentroidInitialize|o_countCentoid[5]  ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_countCentoid[6]  ; |Kmeans_CentroidInitialize|o_countCentoid[6]  ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_countCentoid[7]  ; |Kmeans_CentroidInitialize|o_countCentoid[7]  ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_countCentoid[8]  ; |Kmeans_CentroidInitialize|o_countCentoid[8]  ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_countCentoid[9]  ; |Kmeans_CentroidInitialize|o_countCentoid[9]  ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[6]          ; |Kmeans_CentroidInitialize|o_dado[6]          ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[7]          ; |Kmeans_CentroidInitialize|o_dado[7]          ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[8]          ; |Kmeans_CentroidInitialize|o_dado[8]          ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[9]          ; |Kmeans_CentroidInitialize|o_dado[9]          ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[10]         ; |Kmeans_CentroidInitialize|o_dado[10]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[11]         ; |Kmeans_CentroidInitialize|o_dado[11]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[12]         ; |Kmeans_CentroidInitialize|o_dado[12]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[13]         ; |Kmeans_CentroidInitialize|o_dado[13]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[14]         ; |Kmeans_CentroidInitialize|o_dado[14]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[15]         ; |Kmeans_CentroidInitialize|o_dado[15]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[16]         ; |Kmeans_CentroidInitialize|o_dado[16]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[17]         ; |Kmeans_CentroidInitialize|o_dado[17]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[18]         ; |Kmeans_CentroidInitialize|o_dado[18]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[19]         ; |Kmeans_CentroidInitialize|o_dado[19]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[20]         ; |Kmeans_CentroidInitialize|o_dado[20]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[21]         ; |Kmeans_CentroidInitialize|o_dado[21]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[22]         ; |Kmeans_CentroidInitialize|o_dado[22]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[23]         ; |Kmeans_CentroidInitialize|o_dado[23]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[24]         ; |Kmeans_CentroidInitialize|o_dado[24]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[25]         ; |Kmeans_CentroidInitialize|o_dado[25]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[26]         ; |Kmeans_CentroidInitialize|o_dado[26]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[27]         ; |Kmeans_CentroidInitialize|o_dado[27]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[28]         ; |Kmeans_CentroidInitialize|o_dado[28]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[29]         ; |Kmeans_CentroidInitialize|o_dado[29]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[30]         ; |Kmeans_CentroidInitialize|o_dado[30]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[31]         ; |Kmeans_CentroidInitialize|o_dado[31]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[32]         ; |Kmeans_CentroidInitialize|o_dado[32]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[33]         ; |Kmeans_CentroidInitialize|o_dado[33]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[34]         ; |Kmeans_CentroidInitialize|o_dado[34]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[35]         ; |Kmeans_CentroidInitialize|o_dado[35]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[36]         ; |Kmeans_CentroidInitialize|o_dado[36]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[37]         ; |Kmeans_CentroidInitialize|o_dado[37]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[38]         ; |Kmeans_CentroidInitialize|o_dado[38]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[39]         ; |Kmeans_CentroidInitialize|o_dado[39]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[40]         ; |Kmeans_CentroidInitialize|o_dado[40]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[41]         ; |Kmeans_CentroidInitialize|o_dado[41]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[42]         ; |Kmeans_CentroidInitialize|o_dado[42]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[43]         ; |Kmeans_CentroidInitialize|o_dado[43]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[44]         ; |Kmeans_CentroidInitialize|o_dado[44]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[45]         ; |Kmeans_CentroidInitialize|o_dado[45]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[46]         ; |Kmeans_CentroidInitialize|o_dado[46]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[47]         ; |Kmeans_CentroidInitialize|o_dado[47]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[48]         ; |Kmeans_CentroidInitialize|o_dado[48]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[49]         ; |Kmeans_CentroidInitialize|o_dado[49]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[50]         ; |Kmeans_CentroidInitialize|o_dado[50]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[51]         ; |Kmeans_CentroidInitialize|o_dado[51]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[52]         ; |Kmeans_CentroidInitialize|o_dado[52]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[53]         ; |Kmeans_CentroidInitialize|o_dado[53]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[54]         ; |Kmeans_CentroidInitialize|o_dado[54]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[55]         ; |Kmeans_CentroidInitialize|o_dado[55]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[56]         ; |Kmeans_CentroidInitialize|o_dado[56]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[57]         ; |Kmeans_CentroidInitialize|o_dado[57]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[58]         ; |Kmeans_CentroidInitialize|o_dado[58]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[59]         ; |Kmeans_CentroidInitialize|o_dado[59]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[60]         ; |Kmeans_CentroidInitialize|o_dado[60]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[61]         ; |Kmeans_CentroidInitialize|o_dado[61]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[62]         ; |Kmeans_CentroidInitialize|o_dado[62]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|o_dado[63]         ; |Kmeans_CentroidInitialize|o_dado[63]         ; pin_out          ;
+; |Kmeans_CentroidInitialize|next_State[0]      ; |Kmeans_CentroidInitialize|next_State[0]      ; pin_out          ;
+; |Kmeans_CentroidInitialize|next_State[1]      ; |Kmeans_CentroidInitialize|next_State[1]      ; pin_out          ;
+; |Kmeans_CentroidInitialize|next_State[2]      ; |Kmeans_CentroidInitialize|next_State[2]      ; pin_out          ;
+; |Kmeans_CentroidInitialize|next_State[3]      ; |Kmeans_CentroidInitialize|next_State[3]      ; pin_out          ;
+; |Kmeans_CentroidInitialize|addr_Ram[5]        ; |Kmeans_CentroidInitialize|addr_Ram[5]        ; pin_out          ;
+; |Kmeans_CentroidInitialize|addr_Ram[6]        ; |Kmeans_CentroidInitialize|addr_Ram[6]        ; pin_out          ;
+; |Kmeans_CentroidInitialize|addr_Ram[7]        ; |Kmeans_CentroidInitialize|addr_Ram[7]        ; pin_out          ;
+; |Kmeans_CentroidInitialize|addr_Ram[8]        ; |Kmeans_CentroidInitialize|addr_Ram[8]        ; pin_out          ;
+; |Kmeans_CentroidInitialize|addr_Ram[9]        ; |Kmeans_CentroidInitialize|addr_Ram[9]        ; pin_out          ;
+; |Kmeans_CentroidInitialize|addr_Ram[10]       ; |Kmeans_CentroidInitialize|addr_Ram[10]       ; pin_out          ;
+; |Kmeans_CentroidInitialize|addr_Ram[11]       ; |Kmeans_CentroidInitialize|addr_Ram[11]       ; pin_out          ;
+; |Kmeans_CentroidInitialize|addr_Ram[12]       ; |Kmeans_CentroidInitialize|addr_Ram[12]       ; pin_out          ;
+; |Kmeans_CentroidInitialize|addr_Ram[13]       ; |Kmeans_CentroidInitialize|addr_Ram[13]       ; pin_out          ;
+; |Kmeans_CentroidInitialize|addr_Ram[14]       ; |Kmeans_CentroidInitialize|addr_Ram[14]       ; pin_out          ;
+; |Kmeans_CentroidInitialize|Add0~9             ; |Kmeans_CentroidInitialize|Add0~9             ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~10            ; |Kmeans_CentroidInitialize|Add0~10            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~14            ; |Kmeans_CentroidInitialize|Add0~14            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~15            ; |Kmeans_CentroidInitialize|Add0~15            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~19            ; |Kmeans_CentroidInitialize|Add0~19            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~20            ; |Kmeans_CentroidInitialize|Add0~20            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~24            ; |Kmeans_CentroidInitialize|Add0~24            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~25            ; |Kmeans_CentroidInitialize|Add0~25            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~28            ; |Kmeans_CentroidInitialize|Add0~28            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~29            ; |Kmeans_CentroidInitialize|Add0~29            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~30            ; |Kmeans_CentroidInitialize|Add0~30            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~31            ; |Kmeans_CentroidInitialize|Add0~31            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~32            ; |Kmeans_CentroidInitialize|Add0~32            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~33            ; |Kmeans_CentroidInitialize|Add0~33            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~34            ; |Kmeans_CentroidInitialize|Add0~34            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~35            ; |Kmeans_CentroidInitialize|Add0~35            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~36            ; |Kmeans_CentroidInitialize|Add0~36            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~37            ; |Kmeans_CentroidInitialize|Add0~37            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~38            ; |Kmeans_CentroidInitialize|Add0~38            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~39            ; |Kmeans_CentroidInitialize|Add0~39            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~40            ; |Kmeans_CentroidInitialize|Add0~40            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~41            ; |Kmeans_CentroidInitialize|Add0~41            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~42            ; |Kmeans_CentroidInitialize|Add0~42            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~43            ; |Kmeans_CentroidInitialize|Add0~43            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~44            ; |Kmeans_CentroidInitialize|Add0~44            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~45            ; |Kmeans_CentroidInitialize|Add0~45            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~46            ; |Kmeans_CentroidInitialize|Add0~46            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~47            ; |Kmeans_CentroidInitialize|Add0~47            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~48            ; |Kmeans_CentroidInitialize|Add0~48            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~49            ; |Kmeans_CentroidInitialize|Add0~49            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~50            ; |Kmeans_CentroidInitialize|Add0~50            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~51            ; |Kmeans_CentroidInitialize|Add0~51            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~52            ; |Kmeans_CentroidInitialize|Add0~52            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~53            ; |Kmeans_CentroidInitialize|Add0~53            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~54            ; |Kmeans_CentroidInitialize|Add0~54            ; out0             ;
+; |Kmeans_CentroidInitialize|Add0~55            ; |Kmeans_CentroidInitialize|Add0~55            ; out0             ;
+; |Kmeans_CentroidInitialize|Add1~8             ; |Kmeans_CentroidInitialize|Add1~8             ; out0             ;
+; |Kmeans_CentroidInitialize|Add1~9             ; |Kmeans_CentroidInitialize|Add1~9             ; out0             ;
+; |Kmeans_CentroidInitialize|Add1~10            ; |Kmeans_CentroidInitialize|Add1~10            ; out0             ;
+; |Kmeans_CentroidInitialize|Add1~11            ; |Kmeans_CentroidInitialize|Add1~11            ; out0             ;
+; |Kmeans_CentroidInitialize|Add1~12            ; |Kmeans_CentroidInitialize|Add1~12            ; out0             ;
+; |Kmeans_CentroidInitialize|Add1~13            ; |Kmeans_CentroidInitialize|Add1~13            ; out0             ;
+; |Kmeans_CentroidInitialize|Add1~14            ; |Kmeans_CentroidInitialize|Add1~14            ; out0             ;
+; |Kmeans_CentroidInitialize|Add1~15            ; |Kmeans_CentroidInitialize|Add1~15            ; out0             ;
+; |Kmeans_CentroidInitialize|Add1~16            ; |Kmeans_CentroidInitialize|Add1~16            ; out0             ;
++-----------------------------------------------+-----------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Wed Jan 18 00:28:55 2017
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off Kmeans_CentroidInitialize -c Kmeans_CentroidInitialize
+Info: Using vector source file "C:/Users/Lucas/Documents/PUC/Iniciação Científica/KMeans/Kmeans_Processador/Kmeans_CentroidInitialize/Kmeans_CentroidInitialize.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of Kmeans_CentroidInitialize.vwf called Kmeans_CentroidInitialize.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      23.76 %
+Info: Number of transitions in simulation is 1505
+Info: Vector file Kmeans_CentroidInitialize.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 160 megabytes
+    Info: Processing ended: Wed Jan 18 00:28:56 2017
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
+
+
