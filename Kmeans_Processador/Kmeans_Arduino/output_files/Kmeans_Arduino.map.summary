@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Jun 28 11:56:53 2017
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Revision Name : Kmeans_Arduino
+Top-level Entity Name : Kmeans_Arduino
+Family : Cyclone IV E
+Total logic elements : 132
+    Total combinational functions : 105
+    Dedicated logic registers : 66
+Total registers : 66
+Total pins : 32
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

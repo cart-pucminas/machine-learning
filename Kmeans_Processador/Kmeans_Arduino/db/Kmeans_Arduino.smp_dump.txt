@@ -1,0 +1,22 @@
+
+State Machine - |Kmeans_Arduino|state_fut
+Name state_fut.WAIT_STOP state_fut.WAIT_ACK_2 state_fut.WAIT_ACK_1 state_fut.READ_CMD state_fut.WRITE_CMD state_fut.SEND_ACK_1 state_fut.READ_ADDRESS state_fut.IDLE 
+state_fut.IDLE 0 0 0 0 0 0 0 0 
+state_fut.READ_ADDRESS 0 0 0 0 0 0 1 1 
+state_fut.SEND_ACK_1 0 0 0 0 0 1 0 1 
+state_fut.WRITE_CMD 0 0 0 0 1 0 0 1 
+state_fut.READ_CMD 0 0 0 1 0 0 0 1 
+state_fut.WAIT_ACK_1 0 0 1 0 0 0 0 1 
+state_fut.WAIT_ACK_2 0 1 0 0 0 0 0 1 
+state_fut.WAIT_STOP 1 0 0 0 0 0 0 1 
+
+State Machine - |Kmeans_Arduino|state
+Name state.WAIT_STOP state.WAIT_ACK_2 state.WAIT_ACK_1 state.READ_CMD state.WRITE_CMD state.SEND_ACK_1 state.READ_ADDRESS state.IDLE 
+state.IDLE 0 0 0 0 0 0 0 0 
+state.READ_ADDRESS 0 0 0 0 0 0 1 1 
+state.SEND_ACK_1 0 0 0 0 0 1 0 1 
+state.WRITE_CMD 0 0 0 0 1 0 0 1 
+state.READ_CMD 0 0 0 1 0 0 0 1 
+state.WAIT_ACK_1 0 0 1 0 0 0 0 1 
+state.WAIT_ACK_2 0 1 0 0 0 0 0 1 
+state.WAIT_STOP 1 0 0 0 0 0 0 1 

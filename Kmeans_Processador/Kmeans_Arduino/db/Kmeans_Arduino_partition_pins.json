@@ -1,0 +1,137 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "in_progress",
+					"strict" : false
+				},
+				{
+					"name" : "tx_done",
+					"strict" : false
+				},
+				{
+					"name" : "rx_byte[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_byte[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_byte[2]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_byte[3]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_byte[4]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_byte[5]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_byte[6]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_byte[7]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_data_rdy",
+					"strict" : false
+				},
+				{
+					"name" : "readDone",
+					"strict" : false
+				},
+				{
+					"name" : "scl",
+					"strict" : false
+				},
+				{
+					"name" : "sda",
+					"strict" : false
+				},
+				{
+					"name" : "tx_byte[0]",
+					"strict" : false
+				},
+				{
+					"name" : "tx_byte[1]",
+					"strict" : false
+				},
+				{
+					"name" : "tx_byte[2]",
+					"strict" : false
+				},
+				{
+					"name" : "tx_byte[3]",
+					"strict" : false
+				},
+				{
+					"name" : "tx_byte[4]",
+					"strict" : false
+				},
+				{
+					"name" : "tx_byte[5]",
+					"strict" : false
+				},
+				{
+					"name" : "tx_byte[6]",
+					"strict" : false
+				},
+				{
+					"name" : "tx_byte[7]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "dado[0]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[1]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[2]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[3]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[4]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[5]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[6]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[7]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
