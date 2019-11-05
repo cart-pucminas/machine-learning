@@ -1,0 +1,273 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "o_count_Map[0]",
+					"strict" : false
+				},
+				{
+					"name" : "o_count_Map[1]",
+					"strict" : false
+				},
+				{
+					"name" : "o_count_Map[2]",
+					"strict" : false
+				},
+				{
+					"name" : "o_count_Map[3]",
+					"strict" : false
+				},
+				{
+					"name" : "o_count_Map[4]",
+					"strict" : false
+				},
+				{
+					"name" : "o_count_Map[5]",
+					"strict" : false
+				},
+				{
+					"name" : "o_count_Map[6]",
+					"strict" : false
+				},
+				{
+					"name" : "o_count_Map[7]",
+					"strict" : false
+				},
+				{
+					"name" : "o_count_Map[8]",
+					"strict" : false
+				},
+				{
+					"name" : "o_count_Map[9]",
+					"strict" : false
+				},
+				{
+					"name" : "o_count_Map[10]",
+					"strict" : false
+				},
+				{
+					"name" : "o_count_Map[11]",
+					"strict" : false
+				},
+				{
+					"name" : "o_count_Map[12]",
+					"strict" : false
+				},
+				{
+					"name" : "o_count_Map[13]",
+					"strict" : false
+				},
+				{
+					"name" : "o_count_Map[14]",
+					"strict" : false
+				},
+				{
+					"name" : "addr_Ram[0]",
+					"strict" : false
+				},
+				{
+					"name" : "addr_Ram[1]",
+					"strict" : false
+				},
+				{
+					"name" : "addr_Ram[2]",
+					"strict" : false
+				},
+				{
+					"name" : "addr_Ram[3]",
+					"strict" : false
+				},
+				{
+					"name" : "addr_Ram[4]",
+					"strict" : false
+				},
+				{
+					"name" : "addr_Ram[5]",
+					"strict" : false
+				},
+				{
+					"name" : "addr_Ram[6]",
+					"strict" : false
+				},
+				{
+					"name" : "addr_Ram[7]",
+					"strict" : false
+				},
+				{
+					"name" : "addr_Ram[8]",
+					"strict" : false
+				},
+				{
+					"name" : "addr_Ram[9]",
+					"strict" : false
+				},
+				{
+					"name" : "addr_Ram[10]",
+					"strict" : false
+				},
+				{
+					"name" : "addr_Ram[11]",
+					"strict" : false
+				},
+				{
+					"name" : "addr_Ram[12]",
+					"strict" : false
+				},
+				{
+					"name" : "addr_Ram[13]",
+					"strict" : false
+				},
+				{
+					"name" : "next_State[0]",
+					"strict" : false
+				},
+				{
+					"name" : "next_State[1]",
+					"strict" : false
+				},
+				{
+					"name" : "next_State[2]",
+					"strict" : false
+				},
+				{
+					"name" : "en_Saida",
+					"strict" : false
+				},
+				{
+					"name" : "count_Map[0]",
+					"strict" : false
+				},
+				{
+					"name" : "reg3[14]",
+					"strict" : false
+				},
+				{
+					"name" : "reg3[13]",
+					"strict" : false
+				},
+				{
+					"name" : "reg3[12]",
+					"strict" : false
+				},
+				{
+					"name" : "reg3[11]",
+					"strict" : false
+				},
+				{
+					"name" : "reg3[10]",
+					"strict" : false
+				},
+				{
+					"name" : "reg3[9]",
+					"strict" : false
+				},
+				{
+					"name" : "reg3[8]",
+					"strict" : false
+				},
+				{
+					"name" : "reg3[7]",
+					"strict" : false
+				},
+				{
+					"name" : "reg3[6]",
+					"strict" : false
+				},
+				{
+					"name" : "reg3[5]",
+					"strict" : false
+				},
+				{
+					"name" : "reg3[4]",
+					"strict" : false
+				},
+				{
+					"name" : "reg3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "reg3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "reg3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "reg3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "count_Map[1]",
+					"strict" : false
+				},
+				{
+					"name" : "count_Map[2]",
+					"strict" : false
+				},
+				{
+					"name" : "count_Map[3]",
+					"strict" : false
+				},
+				{
+					"name" : "count_Map[4]",
+					"strict" : false
+				},
+				{
+					"name" : "count_Map[5]",
+					"strict" : false
+				},
+				{
+					"name" : "count_Map[6]",
+					"strict" : false
+				},
+				{
+					"name" : "count_Map[7]",
+					"strict" : false
+				},
+				{
+					"name" : "count_Map[8]",
+					"strict" : false
+				},
+				{
+					"name" : "count_Map[9]",
+					"strict" : false
+				},
+				{
+					"name" : "count_Map[10]",
+					"strict" : false
+				},
+				{
+					"name" : "count_Map[11]",
+					"strict" : false
+				},
+				{
+					"name" : "count_Map[12]",
+					"strict" : false
+				},
+				{
+					"name" : "count_Map[13]",
+					"strict" : false
+				},
+				{
+					"name" : "count_Map[14]",
+					"strict" : false
+				},
+				{
+					"name" : "nrst",
+					"strict" : false
+				},
+				{
+					"name" : "en_OutputResult",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

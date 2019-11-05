@@ -1,0 +1,12 @@
+
+State Machine - |Kmeans_OutputResult|state_fut
+Name state_fut.READDATA state_fut.IDLE state_fut.RESET 
+state_fut.RESET 0 0 0 
+state_fut.IDLE 0 1 1 
+state_fut.READDATA 1 0 1 
+
+State Machine - |Kmeans_OutputResult|state
+Name state.READDATA state.IDLE state.RESET 
+state.RESET 0 0 0 
+state.IDLE 0 1 1 
+state.READDATA 1 0 1 

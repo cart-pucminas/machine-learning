@@ -1,0 +1,109 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "saida[0]",
+					"strict" : false
+				},
+				{
+					"name" : "saida[1]",
+					"strict" : false
+				},
+				{
+					"name" : "saida[2]",
+					"strict" : false
+				},
+				{
+					"name" : "saida[3]",
+					"strict" : false
+				},
+				{
+					"name" : "saida[4]",
+					"strict" : false
+				},
+				{
+					"name" : "saida[5]",
+					"strict" : false
+				},
+				{
+					"name" : "saida[6]",
+					"strict" : false
+				},
+				{
+					"name" : "saida[7]",
+					"strict" : false
+				},
+				{
+					"name" : "saida[8]",
+					"strict" : false
+				},
+				{
+					"name" : "saida[9]",
+					"strict" : false
+				},
+				{
+					"name" : "hex0",
+					"strict" : false
+				},
+				{
+					"name" : "hex3",
+					"strict" : false
+				},
+				{
+					"name" : "hex4",
+					"strict" : false
+				},
+				{
+					"name" : "hex5",
+					"strict" : false
+				},
+				{
+					"name" : "en_Saida",
+					"strict" : false
+				},
+				{
+					"name" : "ent[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ent[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ent[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ent[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ent[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ent[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ent[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ent[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ent[8]",
+					"strict" : false
+				},
+				{
+					"name" : "ent[9]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,29 @@
+--|| Kmeans Processador 
+--|| Desenvolvedor: Lucas Andrade Maciel
+--|| Grupo: CArT - Computer Architecture and Parallel Processing Team
+--|| Bloco: Result
+--|| Descricao: Este bloco exibe os resultados de saida do kmeans quando ele eh habilitado pelo bloco de output result. Caso contrario exibe zero.
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+USE ieee.std_logic_unsigned.all ;
+
+Entity Kmeans_Result is
+    GENERIC (MaxCentroidsBits : INTEGER := 64);
+				  
+	 PORT (
+     en_Saida    : in STD_LOGIC;		                           --Habilita a saida dos resultados bloco							   
+	  ent			  : in STD_LOGIC_VECTOR (Palavra-1 downto 0);   --Valor de entrada lido da memoria ram	 
+	  saida		  : out STD_LOGIC_VECTOR (Palavra-1 downto 0)   --Valor do resultado da saida 
+	 );
+END Kmeans_Result;
+
+ARCHITECTURE arch of Kmeans_Result is
+
+BEGIN
+   
+	with en_Saida select
+		saida <= (others =>'0') when '0',
+					 ent 				when '1';
+					
+END arch;

@@ -1,0 +1,698 @@
+Simulator report for Kmeans_OutputResult
+Fri Jan 20 14:15:18 2017
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 304 nodes    ;
+; Simulation Coverage         ;       3.10 % ;
+; Total Number of Transitions ; 264          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport  ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport  ; Transport     ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;       3.10 % ;
+; Total nodes checked                                 ; 304          ;
+; Total output ports checked                          ; 290          ;
+; Total output ports with complete 1/0-value coverage ; 9            ;
+; Total output ports with no 1/0-value coverage       ; 243          ;
+; Total output ports with no 1-value coverage         ; 271          ;
+; Total output ports with no 0-value coverage         ; 253          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                  ;
++-------------------------------------+-------------------------------------+------------------+
+; Node Name                           ; Output Port Name                    ; Output Port Type ;
++-------------------------------------+-------------------------------------+------------------+
+; |Kmeans_OutputResult|s_addr_Ram[0]  ; |Kmeans_OutputResult|s_addr_Ram[0]  ; regout           ;
+; |Kmeans_OutputResult|s_countMap~12  ; |Kmeans_OutputResult|s_countMap~12  ; out              ;
+; |Kmeans_OutputResult|s_countMap~13  ; |Kmeans_OutputResult|s_countMap~13  ; out              ;
+; |Kmeans_OutputResult|s_countMap[0]  ; |Kmeans_OutputResult|s_countMap[0]  ; regout           ;
+; |Kmeans_OutputResult|clk            ; |Kmeans_OutputResult|clk            ; out              ;
+; |Kmeans_OutputResult|o_count_Map[0] ; |Kmeans_OutputResult|o_count_Map[0] ; pin_out          ;
+; |Kmeans_OutputResult|addr_Ram[0]    ; |Kmeans_OutputResult|addr_Ram[0]    ; pin_out          ;
+; |Kmeans_OutputResult|Add0~0         ; |Kmeans_OutputResult|Add0~0         ; out0             ;
+; |Kmeans_OutputResult|Add0~1         ; |Kmeans_OutputResult|Add0~1         ; out0             ;
++-------------------------------------+-------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                       ;
++--------------------------------------+--------------------------------------+------------------+
+; Node Name                            ; Output Port Name                     ; Output Port Type ;
++--------------------------------------+--------------------------------------+------------------+
+; |Kmeans_OutputResult|s_addr_Ram[3]   ; |Kmeans_OutputResult|s_addr_Ram[3]   ; regout           ;
+; |Kmeans_OutputResult|s_countMap~0    ; |Kmeans_OutputResult|s_countMap~0    ; out              ;
+; |Kmeans_OutputResult|s_countMap~1    ; |Kmeans_OutputResult|s_countMap~1    ; out              ;
+; |Kmeans_OutputResult|s_countMap~2    ; |Kmeans_OutputResult|s_countMap~2    ; out              ;
+; |Kmeans_OutputResult|s_countMap~3    ; |Kmeans_OutputResult|s_countMap~3    ; out              ;
+; |Kmeans_OutputResult|s_countMap~4    ; |Kmeans_OutputResult|s_countMap~4    ; out              ;
+; |Kmeans_OutputResult|s_countMap~5    ; |Kmeans_OutputResult|s_countMap~5    ; out              ;
+; |Kmeans_OutputResult|s_countMap~6    ; |Kmeans_OutputResult|s_countMap~6    ; out              ;
+; |Kmeans_OutputResult|s_countMap~7    ; |Kmeans_OutputResult|s_countMap~7    ; out              ;
+; |Kmeans_OutputResult|s_countMap~8    ; |Kmeans_OutputResult|s_countMap~8    ; out              ;
+; |Kmeans_OutputResult|s_countMap~9    ; |Kmeans_OutputResult|s_countMap~9    ; out              ;
+; |Kmeans_OutputResult|s_countMap~10   ; |Kmeans_OutputResult|s_countMap~10   ; out              ;
+; |Kmeans_OutputResult|s_countMap~11   ; |Kmeans_OutputResult|s_countMap~11   ; out              ;
+; |Kmeans_OutputResult|s_addr_Ram[4]   ; |Kmeans_OutputResult|s_addr_Ram[4]   ; regout           ;
+; |Kmeans_OutputResult|s_addr_Ram[5]   ; |Kmeans_OutputResult|s_addr_Ram[5]   ; regout           ;
+; |Kmeans_OutputResult|s_addr_Ram[6]   ; |Kmeans_OutputResult|s_addr_Ram[6]   ; regout           ;
+; |Kmeans_OutputResult|s_addr_Ram[7]   ; |Kmeans_OutputResult|s_addr_Ram[7]   ; regout           ;
+; |Kmeans_OutputResult|s_addr_Ram[8]   ; |Kmeans_OutputResult|s_addr_Ram[8]   ; regout           ;
+; |Kmeans_OutputResult|s_addr_Ram[9]   ; |Kmeans_OutputResult|s_addr_Ram[9]   ; regout           ;
+; |Kmeans_OutputResult|s_addr_Ram[10]  ; |Kmeans_OutputResult|s_addr_Ram[10]  ; regout           ;
+; |Kmeans_OutputResult|s_addr_Ram[11]  ; |Kmeans_OutputResult|s_addr_Ram[11]  ; regout           ;
+; |Kmeans_OutputResult|s_addr_Ram[12]  ; |Kmeans_OutputResult|s_addr_Ram[12]  ; regout           ;
+; |Kmeans_OutputResult|s_addr_Ram[13]  ; |Kmeans_OutputResult|s_addr_Ram[13]  ; regout           ;
+; |Kmeans_OutputResult|s_addr_Ram[14]  ; |Kmeans_OutputResult|s_addr_Ram[14]  ; regout           ;
+; |Kmeans_OutputResult|s_countMap[2]   ; |Kmeans_OutputResult|s_countMap[2]   ; regout           ;
+; |Kmeans_OutputResult|s_countMap[3]   ; |Kmeans_OutputResult|s_countMap[3]   ; regout           ;
+; |Kmeans_OutputResult|s_countMap[4]   ; |Kmeans_OutputResult|s_countMap[4]   ; regout           ;
+; |Kmeans_OutputResult|s_countMap[5]   ; |Kmeans_OutputResult|s_countMap[5]   ; regout           ;
+; |Kmeans_OutputResult|s_countMap[6]   ; |Kmeans_OutputResult|s_countMap[6]   ; regout           ;
+; |Kmeans_OutputResult|s_countMap[7]   ; |Kmeans_OutputResult|s_countMap[7]   ; regout           ;
+; |Kmeans_OutputResult|s_countMap[8]   ; |Kmeans_OutputResult|s_countMap[8]   ; regout           ;
+; |Kmeans_OutputResult|s_countMap[9]   ; |Kmeans_OutputResult|s_countMap[9]   ; regout           ;
+; |Kmeans_OutputResult|s_countMap[10]  ; |Kmeans_OutputResult|s_countMap[10]  ; regout           ;
+; |Kmeans_OutputResult|s_countMap[11]  ; |Kmeans_OutputResult|s_countMap[11]  ; regout           ;
+; |Kmeans_OutputResult|s_countMap[12]  ; |Kmeans_OutputResult|s_countMap[12]  ; regout           ;
+; |Kmeans_OutputResult|s_countMap[13]  ; |Kmeans_OutputResult|s_countMap[13]  ; regout           ;
+; |Kmeans_OutputResult|nrst            ; |Kmeans_OutputResult|nrst            ; out              ;
+; |Kmeans_OutputResult|reg3[0]         ; |Kmeans_OutputResult|reg3[0]         ; out              ;
+; |Kmeans_OutputResult|reg3[1]         ; |Kmeans_OutputResult|reg3[1]         ; out              ;
+; |Kmeans_OutputResult|reg3[2]         ; |Kmeans_OutputResult|reg3[2]         ; out              ;
+; |Kmeans_OutputResult|reg3[3]         ; |Kmeans_OutputResult|reg3[3]         ; out              ;
+; |Kmeans_OutputResult|reg3[4]         ; |Kmeans_OutputResult|reg3[4]         ; out              ;
+; |Kmeans_OutputResult|reg3[5]         ; |Kmeans_OutputResult|reg3[5]         ; out              ;
+; |Kmeans_OutputResult|reg3[6]         ; |Kmeans_OutputResult|reg3[6]         ; out              ;
+; |Kmeans_OutputResult|reg3[7]         ; |Kmeans_OutputResult|reg3[7]         ; out              ;
+; |Kmeans_OutputResult|reg3[8]         ; |Kmeans_OutputResult|reg3[8]         ; out              ;
+; |Kmeans_OutputResult|reg3[9]         ; |Kmeans_OutputResult|reg3[9]         ; out              ;
+; |Kmeans_OutputResult|reg3[10]        ; |Kmeans_OutputResult|reg3[10]        ; out              ;
+; |Kmeans_OutputResult|reg3[11]        ; |Kmeans_OutputResult|reg3[11]        ; out              ;
+; |Kmeans_OutputResult|reg3[12]        ; |Kmeans_OutputResult|reg3[12]        ; out              ;
+; |Kmeans_OutputResult|reg3[13]        ; |Kmeans_OutputResult|reg3[13]        ; out              ;
+; |Kmeans_OutputResult|reg6[0]         ; |Kmeans_OutputResult|reg6[0]         ; out              ;
+; |Kmeans_OutputResult|reg6[1]         ; |Kmeans_OutputResult|reg6[1]         ; out              ;
+; |Kmeans_OutputResult|reg6[2]         ; |Kmeans_OutputResult|reg6[2]         ; out              ;
+; |Kmeans_OutputResult|reg6[3]         ; |Kmeans_OutputResult|reg6[3]         ; out              ;
+; |Kmeans_OutputResult|reg6[4]         ; |Kmeans_OutputResult|reg6[4]         ; out              ;
+; |Kmeans_OutputResult|reg6[5]         ; |Kmeans_OutputResult|reg6[5]         ; out              ;
+; |Kmeans_OutputResult|reg6[6]         ; |Kmeans_OutputResult|reg6[6]         ; out              ;
+; |Kmeans_OutputResult|reg6[7]         ; |Kmeans_OutputResult|reg6[7]         ; out              ;
+; |Kmeans_OutputResult|reg6[8]         ; |Kmeans_OutputResult|reg6[8]         ; out              ;
+; |Kmeans_OutputResult|reg6[9]         ; |Kmeans_OutputResult|reg6[9]         ; out              ;
+; |Kmeans_OutputResult|reg6[10]        ; |Kmeans_OutputResult|reg6[10]        ; out              ;
+; |Kmeans_OutputResult|reg6[11]        ; |Kmeans_OutputResult|reg6[11]        ; out              ;
+; |Kmeans_OutputResult|reg6[12]        ; |Kmeans_OutputResult|reg6[12]        ; out              ;
+; |Kmeans_OutputResult|reg6[13]        ; |Kmeans_OutputResult|reg6[13]        ; out              ;
+; |Kmeans_OutputResult|en_OutputResult ; |Kmeans_OutputResult|en_OutputResult ; out              ;
+; |Kmeans_OutputResult|o_count_Map[2]  ; |Kmeans_OutputResult|o_count_Map[2]  ; pin_out          ;
+; |Kmeans_OutputResult|o_count_Map[3]  ; |Kmeans_OutputResult|o_count_Map[3]  ; pin_out          ;
+; |Kmeans_OutputResult|o_count_Map[4]  ; |Kmeans_OutputResult|o_count_Map[4]  ; pin_out          ;
+; |Kmeans_OutputResult|o_count_Map[5]  ; |Kmeans_OutputResult|o_count_Map[5]  ; pin_out          ;
+; |Kmeans_OutputResult|o_count_Map[6]  ; |Kmeans_OutputResult|o_count_Map[6]  ; pin_out          ;
+; |Kmeans_OutputResult|o_count_Map[7]  ; |Kmeans_OutputResult|o_count_Map[7]  ; pin_out          ;
+; |Kmeans_OutputResult|o_count_Map[8]  ; |Kmeans_OutputResult|o_count_Map[8]  ; pin_out          ;
+; |Kmeans_OutputResult|o_count_Map[9]  ; |Kmeans_OutputResult|o_count_Map[9]  ; pin_out          ;
+; |Kmeans_OutputResult|o_count_Map[10] ; |Kmeans_OutputResult|o_count_Map[10] ; pin_out          ;
+; |Kmeans_OutputResult|o_count_Map[11] ; |Kmeans_OutputResult|o_count_Map[11] ; pin_out          ;
+; |Kmeans_OutputResult|o_count_Map[12] ; |Kmeans_OutputResult|o_count_Map[12] ; pin_out          ;
+; |Kmeans_OutputResult|o_count_Map[13] ; |Kmeans_OutputResult|o_count_Map[13] ; pin_out          ;
+; |Kmeans_OutputResult|addr_Ram[3]     ; |Kmeans_OutputResult|addr_Ram[3]     ; pin_out          ;
+; |Kmeans_OutputResult|addr_Ram[4]     ; |Kmeans_OutputResult|addr_Ram[4]     ; pin_out          ;
+; |Kmeans_OutputResult|addr_Ram[5]     ; |Kmeans_OutputResult|addr_Ram[5]     ; pin_out          ;
+; |Kmeans_OutputResult|addr_Ram[6]     ; |Kmeans_OutputResult|addr_Ram[6]     ; pin_out          ;
+; |Kmeans_OutputResult|addr_Ram[7]     ; |Kmeans_OutputResult|addr_Ram[7]     ; pin_out          ;
+; |Kmeans_OutputResult|addr_Ram[8]     ; |Kmeans_OutputResult|addr_Ram[8]     ; pin_out          ;
+; |Kmeans_OutputResult|addr_Ram[9]     ; |Kmeans_OutputResult|addr_Ram[9]     ; pin_out          ;
+; |Kmeans_OutputResult|addr_Ram[10]    ; |Kmeans_OutputResult|addr_Ram[10]    ; pin_out          ;
+; |Kmeans_OutputResult|addr_Ram[11]    ; |Kmeans_OutputResult|addr_Ram[11]    ; pin_out          ;
+; |Kmeans_OutputResult|addr_Ram[12]    ; |Kmeans_OutputResult|addr_Ram[12]    ; pin_out          ;
+; |Kmeans_OutputResult|addr_Ram[13]    ; |Kmeans_OutputResult|addr_Ram[13]    ; pin_out          ;
+; |Kmeans_OutputResult|addr_Ram[14]    ; |Kmeans_OutputResult|addr_Ram[14]    ; pin_out          ;
+; |Kmeans_OutputResult|next_State[0]   ; |Kmeans_OutputResult|next_State[0]   ; pin_out          ;
+; |Kmeans_OutputResult|next_State[1]   ; |Kmeans_OutputResult|next_State[1]   ; pin_out          ;
+; |Kmeans_OutputResult|next_State[2]   ; |Kmeans_OutputResult|next_State[2]   ; pin_out          ;
+; |Kmeans_OutputResult|LessThan0~0     ; |Kmeans_OutputResult|LessThan0~0     ; out0             ;
+; |Kmeans_OutputResult|LessThan0~1     ; |Kmeans_OutputResult|LessThan0~1     ; out0             ;
+; |Kmeans_OutputResult|LessThan0~2     ; |Kmeans_OutputResult|LessThan0~2     ; out0             ;
+; |Kmeans_OutputResult|LessThan0~3     ; |Kmeans_OutputResult|LessThan0~3     ; out0             ;
+; |Kmeans_OutputResult|LessThan0~4     ; |Kmeans_OutputResult|LessThan0~4     ; out0             ;
+; |Kmeans_OutputResult|LessThan0~5     ; |Kmeans_OutputResult|LessThan0~5     ; out0             ;
+; |Kmeans_OutputResult|LessThan0~6     ; |Kmeans_OutputResult|LessThan0~6     ; out0             ;
+; |Kmeans_OutputResult|LessThan0~7     ; |Kmeans_OutputResult|LessThan0~7     ; out0             ;
+; |Kmeans_OutputResult|LessThan0~8     ; |Kmeans_OutputResult|LessThan0~8     ; out0             ;
+; |Kmeans_OutputResult|LessThan0~9     ; |Kmeans_OutputResult|LessThan0~9     ; out0             ;
+; |Kmeans_OutputResult|LessThan0~10    ; |Kmeans_OutputResult|LessThan0~10    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~11    ; |Kmeans_OutputResult|LessThan0~11    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~12    ; |Kmeans_OutputResult|LessThan0~12    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~13    ; |Kmeans_OutputResult|LessThan0~13    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~14    ; |Kmeans_OutputResult|LessThan0~14    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~15    ; |Kmeans_OutputResult|LessThan0~15    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~16    ; |Kmeans_OutputResult|LessThan0~16    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~17    ; |Kmeans_OutputResult|LessThan0~17    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~18    ; |Kmeans_OutputResult|LessThan0~18    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~19    ; |Kmeans_OutputResult|LessThan0~19    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~20    ; |Kmeans_OutputResult|LessThan0~20    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~21    ; |Kmeans_OutputResult|LessThan0~21    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~22    ; |Kmeans_OutputResult|LessThan0~22    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~23    ; |Kmeans_OutputResult|LessThan0~23    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~24    ; |Kmeans_OutputResult|LessThan0~24    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~25    ; |Kmeans_OutputResult|LessThan0~25    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~26    ; |Kmeans_OutputResult|LessThan0~26    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~27    ; |Kmeans_OutputResult|LessThan0~27    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~28    ; |Kmeans_OutputResult|LessThan0~28    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~29    ; |Kmeans_OutputResult|LessThan0~29    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~30    ; |Kmeans_OutputResult|LessThan0~30    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~31    ; |Kmeans_OutputResult|LessThan0~31    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~32    ; |Kmeans_OutputResult|LessThan0~32    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~33    ; |Kmeans_OutputResult|LessThan0~33    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~34    ; |Kmeans_OutputResult|LessThan0~34    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~35    ; |Kmeans_OutputResult|LessThan0~35    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~36    ; |Kmeans_OutputResult|LessThan0~36    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~37    ; |Kmeans_OutputResult|LessThan0~37    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~38    ; |Kmeans_OutputResult|LessThan0~38    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~39    ; |Kmeans_OutputResult|LessThan0~39    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~40    ; |Kmeans_OutputResult|LessThan0~40    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~41    ; |Kmeans_OutputResult|LessThan0~41    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~42    ; |Kmeans_OutputResult|LessThan0~42    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~43    ; |Kmeans_OutputResult|LessThan0~43    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~44    ; |Kmeans_OutputResult|LessThan0~44    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~45    ; |Kmeans_OutputResult|LessThan0~45    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~46    ; |Kmeans_OutputResult|LessThan0~46    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~47    ; |Kmeans_OutputResult|LessThan0~47    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~48    ; |Kmeans_OutputResult|LessThan0~48    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~49    ; |Kmeans_OutputResult|LessThan0~49    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~50    ; |Kmeans_OutputResult|LessThan0~50    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~51    ; |Kmeans_OutputResult|LessThan0~51    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~52    ; |Kmeans_OutputResult|LessThan0~52    ; out0             ;
+; |Kmeans_OutputResult|Add0~3          ; |Kmeans_OutputResult|Add0~3          ; out0             ;
+; |Kmeans_OutputResult|Add0~4          ; |Kmeans_OutputResult|Add0~4          ; out0             ;
+; |Kmeans_OutputResult|Add0~5          ; |Kmeans_OutputResult|Add0~5          ; out0             ;
+; |Kmeans_OutputResult|Add0~6          ; |Kmeans_OutputResult|Add0~6          ; out0             ;
+; |Kmeans_OutputResult|Add0~7          ; |Kmeans_OutputResult|Add0~7          ; out0             ;
+; |Kmeans_OutputResult|Add0~8          ; |Kmeans_OutputResult|Add0~8          ; out0             ;
+; |Kmeans_OutputResult|Add0~9          ; |Kmeans_OutputResult|Add0~9          ; out0             ;
+; |Kmeans_OutputResult|Add0~10         ; |Kmeans_OutputResult|Add0~10         ; out0             ;
+; |Kmeans_OutputResult|Add0~11         ; |Kmeans_OutputResult|Add0~11         ; out0             ;
+; |Kmeans_OutputResult|Add0~12         ; |Kmeans_OutputResult|Add0~12         ; out0             ;
+; |Kmeans_OutputResult|Add0~13         ; |Kmeans_OutputResult|Add0~13         ; out0             ;
+; |Kmeans_OutputResult|Add0~14         ; |Kmeans_OutputResult|Add0~14         ; out0             ;
+; |Kmeans_OutputResult|Add0~15         ; |Kmeans_OutputResult|Add0~15         ; out0             ;
+; |Kmeans_OutputResult|Add0~16         ; |Kmeans_OutputResult|Add0~16         ; out0             ;
+; |Kmeans_OutputResult|Add0~17         ; |Kmeans_OutputResult|Add0~17         ; out0             ;
+; |Kmeans_OutputResult|Add0~18         ; |Kmeans_OutputResult|Add0~18         ; out0             ;
+; |Kmeans_OutputResult|Add0~19         ; |Kmeans_OutputResult|Add0~19         ; out0             ;
+; |Kmeans_OutputResult|Add0~20         ; |Kmeans_OutputResult|Add0~20         ; out0             ;
+; |Kmeans_OutputResult|Add0~21         ; |Kmeans_OutputResult|Add0~21         ; out0             ;
+; |Kmeans_OutputResult|Add0~22         ; |Kmeans_OutputResult|Add0~22         ; out0             ;
+; |Kmeans_OutputResult|Add0~23         ; |Kmeans_OutputResult|Add0~23         ; out0             ;
+; |Kmeans_OutputResult|Add0~24         ; |Kmeans_OutputResult|Add0~24         ; out0             ;
+; |Kmeans_OutputResult|Add0~25         ; |Kmeans_OutputResult|Add0~25         ; out0             ;
+; |Kmeans_OutputResult|Add0~26         ; |Kmeans_OutputResult|Add0~26         ; out0             ;
+; |Kmeans_OutputResult|Add0~27         ; |Kmeans_OutputResult|Add0~27         ; out0             ;
+; |Kmeans_OutputResult|Add0~28         ; |Kmeans_OutputResult|Add0~28         ; out0             ;
+; |Kmeans_OutputResult|Add0~29         ; |Kmeans_OutputResult|Add0~29         ; out0             ;
+; |Kmeans_OutputResult|Add0~30         ; |Kmeans_OutputResult|Add0~30         ; out0             ;
+; |Kmeans_OutputResult|Add0~31         ; |Kmeans_OutputResult|Add0~31         ; out0             ;
+; |Kmeans_OutputResult|Add0~32         ; |Kmeans_OutputResult|Add0~32         ; out0             ;
+; |Kmeans_OutputResult|Add0~33         ; |Kmeans_OutputResult|Add0~33         ; out0             ;
+; |Kmeans_OutputResult|Add0~34         ; |Kmeans_OutputResult|Add0~34         ; out0             ;
+; |Kmeans_OutputResult|Add0~35         ; |Kmeans_OutputResult|Add0~35         ; out0             ;
+; |Kmeans_OutputResult|Add0~36         ; |Kmeans_OutputResult|Add0~36         ; out0             ;
+; |Kmeans_OutputResult|Add0~37         ; |Kmeans_OutputResult|Add0~37         ; out0             ;
+; |Kmeans_OutputResult|Add0~38         ; |Kmeans_OutputResult|Add0~38         ; out0             ;
+; |Kmeans_OutputResult|Add0~39         ; |Kmeans_OutputResult|Add0~39         ; out0             ;
+; |Kmeans_OutputResult|Add0~40         ; |Kmeans_OutputResult|Add0~40         ; out0             ;
+; |Kmeans_OutputResult|Add0~41         ; |Kmeans_OutputResult|Add0~41         ; out0             ;
+; |Kmeans_OutputResult|Add0~42         ; |Kmeans_OutputResult|Add0~42         ; out0             ;
+; |Kmeans_OutputResult|Add0~43         ; |Kmeans_OutputResult|Add0~43         ; out0             ;
+; |Kmeans_OutputResult|Add0~44         ; |Kmeans_OutputResult|Add0~44         ; out0             ;
+; |Kmeans_OutputResult|Add0~45         ; |Kmeans_OutputResult|Add0~45         ; out0             ;
+; |Kmeans_OutputResult|Add0~46         ; |Kmeans_OutputResult|Add0~46         ; out0             ;
+; |Kmeans_OutputResult|Add0~47         ; |Kmeans_OutputResult|Add0~47         ; out0             ;
+; |Kmeans_OutputResult|Add0~48         ; |Kmeans_OutputResult|Add0~48         ; out0             ;
+; |Kmeans_OutputResult|Add0~49         ; |Kmeans_OutputResult|Add0~49         ; out0             ;
+; |Kmeans_OutputResult|Add0~50         ; |Kmeans_OutputResult|Add0~50         ; out0             ;
+; |Kmeans_OutputResult|Add0~51         ; |Kmeans_OutputResult|Add0~51         ; out0             ;
+; |Kmeans_OutputResult|Add0~52         ; |Kmeans_OutputResult|Add0~52         ; out0             ;
+; |Kmeans_OutputResult|Add0~53         ; |Kmeans_OutputResult|Add0~53         ; out0             ;
+; |Kmeans_OutputResult|Add0~54         ; |Kmeans_OutputResult|Add0~54         ; out0             ;
+; |Kmeans_OutputResult|Add0~55         ; |Kmeans_OutputResult|Add0~55         ; out0             ;
+; |Kmeans_OutputResult|Add0~56         ; |Kmeans_OutputResult|Add0~56         ; out0             ;
+; |Kmeans_OutputResult|Add0~57         ; |Kmeans_OutputResult|Add0~57         ; out0             ;
+; |Kmeans_OutputResult|Add0~58         ; |Kmeans_OutputResult|Add0~58         ; out0             ;
+; |Kmeans_OutputResult|Add0~59         ; |Kmeans_OutputResult|Add0~59         ; out0             ;
+; |Kmeans_OutputResult|Add0~60         ; |Kmeans_OutputResult|Add0~60         ; out0             ;
+; |Kmeans_OutputResult|Add0~61         ; |Kmeans_OutputResult|Add0~61         ; out0             ;
+; |Kmeans_OutputResult|Add0~62         ; |Kmeans_OutputResult|Add0~62         ; out0             ;
+; |Kmeans_OutputResult|Add0~63         ; |Kmeans_OutputResult|Add0~63         ; out0             ;
+; |Kmeans_OutputResult|Add0~64         ; |Kmeans_OutputResult|Add0~64         ; out0             ;
+; |Kmeans_OutputResult|Add0~65         ; |Kmeans_OutputResult|Add0~65         ; out0             ;
+; |Kmeans_OutputResult|Add0~66         ; |Kmeans_OutputResult|Add0~66         ; out0             ;
+; |Kmeans_OutputResult|Add1~0          ; |Kmeans_OutputResult|Add1~0          ; out0             ;
+; |Kmeans_OutputResult|Add1~1          ; |Kmeans_OutputResult|Add1~1          ; out0             ;
+; |Kmeans_OutputResult|Add1~2          ; |Kmeans_OutputResult|Add1~2          ; out0             ;
+; |Kmeans_OutputResult|Add1~3          ; |Kmeans_OutputResult|Add1~3          ; out0             ;
+; |Kmeans_OutputResult|Add1~4          ; |Kmeans_OutputResult|Add1~4          ; out0             ;
+; |Kmeans_OutputResult|Add1~5          ; |Kmeans_OutputResult|Add1~5          ; out0             ;
+; |Kmeans_OutputResult|Add1~6          ; |Kmeans_OutputResult|Add1~6          ; out0             ;
+; |Kmeans_OutputResult|Add1~7          ; |Kmeans_OutputResult|Add1~7          ; out0             ;
+; |Kmeans_OutputResult|Add1~8          ; |Kmeans_OutputResult|Add1~8          ; out0             ;
+; |Kmeans_OutputResult|Add1~9          ; |Kmeans_OutputResult|Add1~9          ; out0             ;
+; |Kmeans_OutputResult|Add1~10         ; |Kmeans_OutputResult|Add1~10         ; out0             ;
+; |Kmeans_OutputResult|Add1~11         ; |Kmeans_OutputResult|Add1~11         ; out0             ;
+; |Kmeans_OutputResult|Add1~12         ; |Kmeans_OutputResult|Add1~12         ; out0             ;
+; |Kmeans_OutputResult|Add1~13         ; |Kmeans_OutputResult|Add1~13         ; out0             ;
+; |Kmeans_OutputResult|Add1~14         ; |Kmeans_OutputResult|Add1~14         ; out0             ;
+; |Kmeans_OutputResult|Add1~15         ; |Kmeans_OutputResult|Add1~15         ; out0             ;
+; |Kmeans_OutputResult|Add1~16         ; |Kmeans_OutputResult|Add1~16         ; out0             ;
+; |Kmeans_OutputResult|Add1~17         ; |Kmeans_OutputResult|Add1~17         ; out0             ;
+; |Kmeans_OutputResult|Add1~18         ; |Kmeans_OutputResult|Add1~18         ; out0             ;
+; |Kmeans_OutputResult|Add1~19         ; |Kmeans_OutputResult|Add1~19         ; out0             ;
+; |Kmeans_OutputResult|Add1~20         ; |Kmeans_OutputResult|Add1~20         ; out0             ;
+; |Kmeans_OutputResult|Add1~21         ; |Kmeans_OutputResult|Add1~21         ; out0             ;
+; |Kmeans_OutputResult|Add1~22         ; |Kmeans_OutputResult|Add1~22         ; out0             ;
+; |Kmeans_OutputResult|Add1~23         ; |Kmeans_OutputResult|Add1~23         ; out0             ;
+; |Kmeans_OutputResult|Add1~24         ; |Kmeans_OutputResult|Add1~24         ; out0             ;
+; |Kmeans_OutputResult|Add1~25         ; |Kmeans_OutputResult|Add1~25         ; out0             ;
+; |Kmeans_OutputResult|Add1~26         ; |Kmeans_OutputResult|Add1~26         ; out0             ;
+; |Kmeans_OutputResult|Add1~27         ; |Kmeans_OutputResult|Add1~27         ; out0             ;
+; |Kmeans_OutputResult|Add1~28         ; |Kmeans_OutputResult|Add1~28         ; out0             ;
+; |Kmeans_OutputResult|Add1~29         ; |Kmeans_OutputResult|Add1~29         ; out0             ;
+; |Kmeans_OutputResult|Add1~30         ; |Kmeans_OutputResult|Add1~30         ; out0             ;
+; |Kmeans_OutputResult|Add1~31         ; |Kmeans_OutputResult|Add1~31         ; out0             ;
+; |Kmeans_OutputResult|Add1~32         ; |Kmeans_OutputResult|Add1~32         ; out0             ;
+; |Kmeans_OutputResult|Add1~33         ; |Kmeans_OutputResult|Add1~33         ; out0             ;
+; |Kmeans_OutputResult|Add1~34         ; |Kmeans_OutputResult|Add1~34         ; out0             ;
+; |Kmeans_OutputResult|Add1~35         ; |Kmeans_OutputResult|Add1~35         ; out0             ;
+; |Kmeans_OutputResult|Add1~36         ; |Kmeans_OutputResult|Add1~36         ; out0             ;
+; |Kmeans_OutputResult|Add2~1          ; |Kmeans_OutputResult|Add2~1          ; out0             ;
+; |Kmeans_OutputResult|Add2~2          ; |Kmeans_OutputResult|Add2~2          ; out0             ;
+; |Kmeans_OutputResult|Add2~3          ; |Kmeans_OutputResult|Add2~3          ; out0             ;
+; |Kmeans_OutputResult|Add2~4          ; |Kmeans_OutputResult|Add2~4          ; out0             ;
+; |Kmeans_OutputResult|Add2~5          ; |Kmeans_OutputResult|Add2~5          ; out0             ;
+; |Kmeans_OutputResult|Add2~6          ; |Kmeans_OutputResult|Add2~6          ; out0             ;
+; |Kmeans_OutputResult|Add2~7          ; |Kmeans_OutputResult|Add2~7          ; out0             ;
+; |Kmeans_OutputResult|Add2~8          ; |Kmeans_OutputResult|Add2~8          ; out0             ;
+; |Kmeans_OutputResult|Add2~9          ; |Kmeans_OutputResult|Add2~9          ; out0             ;
+; |Kmeans_OutputResult|Add2~10         ; |Kmeans_OutputResult|Add2~10         ; out0             ;
+; |Kmeans_OutputResult|Add2~11         ; |Kmeans_OutputResult|Add2~11         ; out0             ;
+; |Kmeans_OutputResult|Add2~12         ; |Kmeans_OutputResult|Add2~12         ; out0             ;
+; |Kmeans_OutputResult|Add2~13         ; |Kmeans_OutputResult|Add2~13         ; out0             ;
+; |Kmeans_OutputResult|Add2~14         ; |Kmeans_OutputResult|Add2~14         ; out0             ;
+; |Kmeans_OutputResult|Add2~15         ; |Kmeans_OutputResult|Add2~15         ; out0             ;
+; |Kmeans_OutputResult|Add2~16         ; |Kmeans_OutputResult|Add2~16         ; out0             ;
+; |Kmeans_OutputResult|Add2~17         ; |Kmeans_OutputResult|Add2~17         ; out0             ;
+; |Kmeans_OutputResult|Add2~18         ; |Kmeans_OutputResult|Add2~18         ; out0             ;
+; |Kmeans_OutputResult|Add2~19         ; |Kmeans_OutputResult|Add2~19         ; out0             ;
+; |Kmeans_OutputResult|Add2~20         ; |Kmeans_OutputResult|Add2~20         ; out0             ;
+; |Kmeans_OutputResult|Add2~21         ; |Kmeans_OutputResult|Add2~21         ; out0             ;
+; |Kmeans_OutputResult|Add2~22         ; |Kmeans_OutputResult|Add2~22         ; out0             ;
+; |Kmeans_OutputResult|Add2~23         ; |Kmeans_OutputResult|Add2~23         ; out0             ;
+; |Kmeans_OutputResult|Add2~24         ; |Kmeans_OutputResult|Add2~24         ; out0             ;
++--------------------------------------+--------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                       ;
++--------------------------------------+--------------------------------------+------------------+
+; Node Name                            ; Output Port Name                     ; Output Port Type ;
++--------------------------------------+--------------------------------------+------------------+
+; |Kmeans_OutputResult|s_addr_Ram[3]   ; |Kmeans_OutputResult|s_addr_Ram[3]   ; regout           ;
+; |Kmeans_OutputResult|s_addr_Ram[2]   ; |Kmeans_OutputResult|s_addr_Ram[2]   ; regout           ;
+; |Kmeans_OutputResult|s_addr_Ram[1]   ; |Kmeans_OutputResult|s_addr_Ram[1]   ; regout           ;
+; |Kmeans_OutputResult|s_countMap~0    ; |Kmeans_OutputResult|s_countMap~0    ; out              ;
+; |Kmeans_OutputResult|s_countMap~1    ; |Kmeans_OutputResult|s_countMap~1    ; out              ;
+; |Kmeans_OutputResult|s_countMap~2    ; |Kmeans_OutputResult|s_countMap~2    ; out              ;
+; |Kmeans_OutputResult|s_countMap~3    ; |Kmeans_OutputResult|s_countMap~3    ; out              ;
+; |Kmeans_OutputResult|s_countMap~4    ; |Kmeans_OutputResult|s_countMap~4    ; out              ;
+; |Kmeans_OutputResult|s_countMap~5    ; |Kmeans_OutputResult|s_countMap~5    ; out              ;
+; |Kmeans_OutputResult|s_countMap~6    ; |Kmeans_OutputResult|s_countMap~6    ; out              ;
+; |Kmeans_OutputResult|s_countMap~7    ; |Kmeans_OutputResult|s_countMap~7    ; out              ;
+; |Kmeans_OutputResult|s_countMap~8    ; |Kmeans_OutputResult|s_countMap~8    ; out              ;
+; |Kmeans_OutputResult|s_countMap~9    ; |Kmeans_OutputResult|s_countMap~9    ; out              ;
+; |Kmeans_OutputResult|s_countMap~10   ; |Kmeans_OutputResult|s_countMap~10   ; out              ;
+; |Kmeans_OutputResult|s_countMap~11   ; |Kmeans_OutputResult|s_countMap~11   ; out              ;
+; |Kmeans_OutputResult|s_addr_Ram[4]   ; |Kmeans_OutputResult|s_addr_Ram[4]   ; regout           ;
+; |Kmeans_OutputResult|s_addr_Ram[5]   ; |Kmeans_OutputResult|s_addr_Ram[5]   ; regout           ;
+; |Kmeans_OutputResult|s_addr_Ram[6]   ; |Kmeans_OutputResult|s_addr_Ram[6]   ; regout           ;
+; |Kmeans_OutputResult|s_addr_Ram[7]   ; |Kmeans_OutputResult|s_addr_Ram[7]   ; regout           ;
+; |Kmeans_OutputResult|s_addr_Ram[8]   ; |Kmeans_OutputResult|s_addr_Ram[8]   ; regout           ;
+; |Kmeans_OutputResult|s_addr_Ram[9]   ; |Kmeans_OutputResult|s_addr_Ram[9]   ; regout           ;
+; |Kmeans_OutputResult|s_addr_Ram[10]  ; |Kmeans_OutputResult|s_addr_Ram[10]  ; regout           ;
+; |Kmeans_OutputResult|s_addr_Ram[11]  ; |Kmeans_OutputResult|s_addr_Ram[11]  ; regout           ;
+; |Kmeans_OutputResult|s_addr_Ram[12]  ; |Kmeans_OutputResult|s_addr_Ram[12]  ; regout           ;
+; |Kmeans_OutputResult|s_addr_Ram[13]  ; |Kmeans_OutputResult|s_addr_Ram[13]  ; regout           ;
+; |Kmeans_OutputResult|s_addr_Ram[14]  ; |Kmeans_OutputResult|s_addr_Ram[14]  ; regout           ;
+; |Kmeans_OutputResult|s_blockState[3] ; |Kmeans_OutputResult|s_blockState[3] ; regout           ;
+; |Kmeans_OutputResult|s_countMap[1]   ; |Kmeans_OutputResult|s_countMap[1]   ; regout           ;
+; |Kmeans_OutputResult|s_countMap[2]   ; |Kmeans_OutputResult|s_countMap[2]   ; regout           ;
+; |Kmeans_OutputResult|s_countMap[3]   ; |Kmeans_OutputResult|s_countMap[3]   ; regout           ;
+; |Kmeans_OutputResult|s_countMap[4]   ; |Kmeans_OutputResult|s_countMap[4]   ; regout           ;
+; |Kmeans_OutputResult|s_countMap[5]   ; |Kmeans_OutputResult|s_countMap[5]   ; regout           ;
+; |Kmeans_OutputResult|s_countMap[6]   ; |Kmeans_OutputResult|s_countMap[6]   ; regout           ;
+; |Kmeans_OutputResult|s_countMap[7]   ; |Kmeans_OutputResult|s_countMap[7]   ; regout           ;
+; |Kmeans_OutputResult|s_countMap[8]   ; |Kmeans_OutputResult|s_countMap[8]   ; regout           ;
+; |Kmeans_OutputResult|s_countMap[9]   ; |Kmeans_OutputResult|s_countMap[9]   ; regout           ;
+; |Kmeans_OutputResult|s_countMap[10]  ; |Kmeans_OutputResult|s_countMap[10]  ; regout           ;
+; |Kmeans_OutputResult|s_countMap[11]  ; |Kmeans_OutputResult|s_countMap[11]  ; regout           ;
+; |Kmeans_OutputResult|s_countMap[12]  ; |Kmeans_OutputResult|s_countMap[12]  ; regout           ;
+; |Kmeans_OutputResult|s_countMap[13]  ; |Kmeans_OutputResult|s_countMap[13]  ; regout           ;
+; |Kmeans_OutputResult|nrst            ; |Kmeans_OutputResult|nrst            ; out              ;
+; |Kmeans_OutputResult|reg3[0]         ; |Kmeans_OutputResult|reg3[0]         ; out              ;
+; |Kmeans_OutputResult|reg3[1]         ; |Kmeans_OutputResult|reg3[1]         ; out              ;
+; |Kmeans_OutputResult|reg3[2]         ; |Kmeans_OutputResult|reg3[2]         ; out              ;
+; |Kmeans_OutputResult|reg3[3]         ; |Kmeans_OutputResult|reg3[3]         ; out              ;
+; |Kmeans_OutputResult|reg3[4]         ; |Kmeans_OutputResult|reg3[4]         ; out              ;
+; |Kmeans_OutputResult|reg3[5]         ; |Kmeans_OutputResult|reg3[5]         ; out              ;
+; |Kmeans_OutputResult|reg3[6]         ; |Kmeans_OutputResult|reg3[6]         ; out              ;
+; |Kmeans_OutputResult|reg3[7]         ; |Kmeans_OutputResult|reg3[7]         ; out              ;
+; |Kmeans_OutputResult|reg3[8]         ; |Kmeans_OutputResult|reg3[8]         ; out              ;
+; |Kmeans_OutputResult|reg3[9]         ; |Kmeans_OutputResult|reg3[9]         ; out              ;
+; |Kmeans_OutputResult|reg3[10]        ; |Kmeans_OutputResult|reg3[10]        ; out              ;
+; |Kmeans_OutputResult|reg3[11]        ; |Kmeans_OutputResult|reg3[11]        ; out              ;
+; |Kmeans_OutputResult|reg3[12]        ; |Kmeans_OutputResult|reg3[12]        ; out              ;
+; |Kmeans_OutputResult|reg3[13]        ; |Kmeans_OutputResult|reg3[13]        ; out              ;
+; |Kmeans_OutputResult|reg6[0]         ; |Kmeans_OutputResult|reg6[0]         ; out              ;
+; |Kmeans_OutputResult|reg6[1]         ; |Kmeans_OutputResult|reg6[1]         ; out              ;
+; |Kmeans_OutputResult|reg6[2]         ; |Kmeans_OutputResult|reg6[2]         ; out              ;
+; |Kmeans_OutputResult|reg6[3]         ; |Kmeans_OutputResult|reg6[3]         ; out              ;
+; |Kmeans_OutputResult|reg6[4]         ; |Kmeans_OutputResult|reg6[4]         ; out              ;
+; |Kmeans_OutputResult|reg6[5]         ; |Kmeans_OutputResult|reg6[5]         ; out              ;
+; |Kmeans_OutputResult|reg6[6]         ; |Kmeans_OutputResult|reg6[6]         ; out              ;
+; |Kmeans_OutputResult|reg6[7]         ; |Kmeans_OutputResult|reg6[7]         ; out              ;
+; |Kmeans_OutputResult|reg6[8]         ; |Kmeans_OutputResult|reg6[8]         ; out              ;
+; |Kmeans_OutputResult|reg6[9]         ; |Kmeans_OutputResult|reg6[9]         ; out              ;
+; |Kmeans_OutputResult|reg6[10]        ; |Kmeans_OutputResult|reg6[10]        ; out              ;
+; |Kmeans_OutputResult|reg6[11]        ; |Kmeans_OutputResult|reg6[11]        ; out              ;
+; |Kmeans_OutputResult|reg6[12]        ; |Kmeans_OutputResult|reg6[12]        ; out              ;
+; |Kmeans_OutputResult|reg6[13]        ; |Kmeans_OutputResult|reg6[13]        ; out              ;
+; |Kmeans_OutputResult|o_count_Map[1]  ; |Kmeans_OutputResult|o_count_Map[1]  ; pin_out          ;
+; |Kmeans_OutputResult|o_count_Map[2]  ; |Kmeans_OutputResult|o_count_Map[2]  ; pin_out          ;
+; |Kmeans_OutputResult|o_count_Map[3]  ; |Kmeans_OutputResult|o_count_Map[3]  ; pin_out          ;
+; |Kmeans_OutputResult|o_count_Map[4]  ; |Kmeans_OutputResult|o_count_Map[4]  ; pin_out          ;
+; |Kmeans_OutputResult|o_count_Map[5]  ; |Kmeans_OutputResult|o_count_Map[5]  ; pin_out          ;
+; |Kmeans_OutputResult|o_count_Map[6]  ; |Kmeans_OutputResult|o_count_Map[6]  ; pin_out          ;
+; |Kmeans_OutputResult|o_count_Map[7]  ; |Kmeans_OutputResult|o_count_Map[7]  ; pin_out          ;
+; |Kmeans_OutputResult|o_count_Map[8]  ; |Kmeans_OutputResult|o_count_Map[8]  ; pin_out          ;
+; |Kmeans_OutputResult|o_count_Map[9]  ; |Kmeans_OutputResult|o_count_Map[9]  ; pin_out          ;
+; |Kmeans_OutputResult|o_count_Map[10] ; |Kmeans_OutputResult|o_count_Map[10] ; pin_out          ;
+; |Kmeans_OutputResult|o_count_Map[11] ; |Kmeans_OutputResult|o_count_Map[11] ; pin_out          ;
+; |Kmeans_OutputResult|o_count_Map[12] ; |Kmeans_OutputResult|o_count_Map[12] ; pin_out          ;
+; |Kmeans_OutputResult|o_count_Map[13] ; |Kmeans_OutputResult|o_count_Map[13] ; pin_out          ;
+; |Kmeans_OutputResult|addr_Ram[1]     ; |Kmeans_OutputResult|addr_Ram[1]     ; pin_out          ;
+; |Kmeans_OutputResult|addr_Ram[2]     ; |Kmeans_OutputResult|addr_Ram[2]     ; pin_out          ;
+; |Kmeans_OutputResult|addr_Ram[3]     ; |Kmeans_OutputResult|addr_Ram[3]     ; pin_out          ;
+; |Kmeans_OutputResult|addr_Ram[4]     ; |Kmeans_OutputResult|addr_Ram[4]     ; pin_out          ;
+; |Kmeans_OutputResult|addr_Ram[5]     ; |Kmeans_OutputResult|addr_Ram[5]     ; pin_out          ;
+; |Kmeans_OutputResult|addr_Ram[6]     ; |Kmeans_OutputResult|addr_Ram[6]     ; pin_out          ;
+; |Kmeans_OutputResult|addr_Ram[7]     ; |Kmeans_OutputResult|addr_Ram[7]     ; pin_out          ;
+; |Kmeans_OutputResult|addr_Ram[8]     ; |Kmeans_OutputResult|addr_Ram[8]     ; pin_out          ;
+; |Kmeans_OutputResult|addr_Ram[9]     ; |Kmeans_OutputResult|addr_Ram[9]     ; pin_out          ;
+; |Kmeans_OutputResult|addr_Ram[10]    ; |Kmeans_OutputResult|addr_Ram[10]    ; pin_out          ;
+; |Kmeans_OutputResult|addr_Ram[11]    ; |Kmeans_OutputResult|addr_Ram[11]    ; pin_out          ;
+; |Kmeans_OutputResult|addr_Ram[12]    ; |Kmeans_OutputResult|addr_Ram[12]    ; pin_out          ;
+; |Kmeans_OutputResult|addr_Ram[13]    ; |Kmeans_OutputResult|addr_Ram[13]    ; pin_out          ;
+; |Kmeans_OutputResult|addr_Ram[14]    ; |Kmeans_OutputResult|addr_Ram[14]    ; pin_out          ;
+; |Kmeans_OutputResult|next_State[0]   ; |Kmeans_OutputResult|next_State[0]   ; pin_out          ;
+; |Kmeans_OutputResult|next_State[1]   ; |Kmeans_OutputResult|next_State[1]   ; pin_out          ;
+; |Kmeans_OutputResult|next_State[2]   ; |Kmeans_OutputResult|next_State[2]   ; pin_out          ;
+; |Kmeans_OutputResult|next_State[3]   ; |Kmeans_OutputResult|next_State[3]   ; pin_out          ;
+; |Kmeans_OutputResult|LessThan0~0     ; |Kmeans_OutputResult|LessThan0~0     ; out0             ;
+; |Kmeans_OutputResult|LessThan0~4     ; |Kmeans_OutputResult|LessThan0~4     ; out0             ;
+; |Kmeans_OutputResult|LessThan0~5     ; |Kmeans_OutputResult|LessThan0~5     ; out0             ;
+; |Kmeans_OutputResult|LessThan0~7     ; |Kmeans_OutputResult|LessThan0~7     ; out0             ;
+; |Kmeans_OutputResult|LessThan0~9     ; |Kmeans_OutputResult|LessThan0~9     ; out0             ;
+; |Kmeans_OutputResult|LessThan0~11    ; |Kmeans_OutputResult|LessThan0~11    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~13    ; |Kmeans_OutputResult|LessThan0~13    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~15    ; |Kmeans_OutputResult|LessThan0~15    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~17    ; |Kmeans_OutputResult|LessThan0~17    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~19    ; |Kmeans_OutputResult|LessThan0~19    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~21    ; |Kmeans_OutputResult|LessThan0~21    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~23    ; |Kmeans_OutputResult|LessThan0~23    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~25    ; |Kmeans_OutputResult|LessThan0~25    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~27    ; |Kmeans_OutputResult|LessThan0~27    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~29    ; |Kmeans_OutputResult|LessThan0~29    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~31    ; |Kmeans_OutputResult|LessThan0~31    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~33    ; |Kmeans_OutputResult|LessThan0~33    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~35    ; |Kmeans_OutputResult|LessThan0~35    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~37    ; |Kmeans_OutputResult|LessThan0~37    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~39    ; |Kmeans_OutputResult|LessThan0~39    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~41    ; |Kmeans_OutputResult|LessThan0~41    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~43    ; |Kmeans_OutputResult|LessThan0~43    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~45    ; |Kmeans_OutputResult|LessThan0~45    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~47    ; |Kmeans_OutputResult|LessThan0~47    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~49    ; |Kmeans_OutputResult|LessThan0~49    ; out0             ;
+; |Kmeans_OutputResult|LessThan0~51    ; |Kmeans_OutputResult|LessThan0~51    ; out0             ;
+; |Kmeans_OutputResult|Add0~2          ; |Kmeans_OutputResult|Add0~2          ; out0             ;
+; |Kmeans_OutputResult|Add0~3          ; |Kmeans_OutputResult|Add0~3          ; out0             ;
+; |Kmeans_OutputResult|Add0~4          ; |Kmeans_OutputResult|Add0~4          ; out0             ;
+; |Kmeans_OutputResult|Add0~5          ; |Kmeans_OutputResult|Add0~5          ; out0             ;
+; |Kmeans_OutputResult|Add0~6          ; |Kmeans_OutputResult|Add0~6          ; out0             ;
+; |Kmeans_OutputResult|Add0~7          ; |Kmeans_OutputResult|Add0~7          ; out0             ;
+; |Kmeans_OutputResult|Add0~8          ; |Kmeans_OutputResult|Add0~8          ; out0             ;
+; |Kmeans_OutputResult|Add0~9          ; |Kmeans_OutputResult|Add0~9          ; out0             ;
+; |Kmeans_OutputResult|Add0~10         ; |Kmeans_OutputResult|Add0~10         ; out0             ;
+; |Kmeans_OutputResult|Add0~11         ; |Kmeans_OutputResult|Add0~11         ; out0             ;
+; |Kmeans_OutputResult|Add0~12         ; |Kmeans_OutputResult|Add0~12         ; out0             ;
+; |Kmeans_OutputResult|Add0~13         ; |Kmeans_OutputResult|Add0~13         ; out0             ;
+; |Kmeans_OutputResult|Add0~14         ; |Kmeans_OutputResult|Add0~14         ; out0             ;
+; |Kmeans_OutputResult|Add0~15         ; |Kmeans_OutputResult|Add0~15         ; out0             ;
+; |Kmeans_OutputResult|Add0~16         ; |Kmeans_OutputResult|Add0~16         ; out0             ;
+; |Kmeans_OutputResult|Add0~17         ; |Kmeans_OutputResult|Add0~17         ; out0             ;
+; |Kmeans_OutputResult|Add0~18         ; |Kmeans_OutputResult|Add0~18         ; out0             ;
+; |Kmeans_OutputResult|Add0~19         ; |Kmeans_OutputResult|Add0~19         ; out0             ;
+; |Kmeans_OutputResult|Add0~20         ; |Kmeans_OutputResult|Add0~20         ; out0             ;
+; |Kmeans_OutputResult|Add0~21         ; |Kmeans_OutputResult|Add0~21         ; out0             ;
+; |Kmeans_OutputResult|Add0~22         ; |Kmeans_OutputResult|Add0~22         ; out0             ;
+; |Kmeans_OutputResult|Add0~23         ; |Kmeans_OutputResult|Add0~23         ; out0             ;
+; |Kmeans_OutputResult|Add0~24         ; |Kmeans_OutputResult|Add0~24         ; out0             ;
+; |Kmeans_OutputResult|Add0~25         ; |Kmeans_OutputResult|Add0~25         ; out0             ;
+; |Kmeans_OutputResult|Add0~26         ; |Kmeans_OutputResult|Add0~26         ; out0             ;
+; |Kmeans_OutputResult|Add0~27         ; |Kmeans_OutputResult|Add0~27         ; out0             ;
+; |Kmeans_OutputResult|Add0~28         ; |Kmeans_OutputResult|Add0~28         ; out0             ;
+; |Kmeans_OutputResult|Add0~29         ; |Kmeans_OutputResult|Add0~29         ; out0             ;
+; |Kmeans_OutputResult|Add0~30         ; |Kmeans_OutputResult|Add0~30         ; out0             ;
+; |Kmeans_OutputResult|Add0~31         ; |Kmeans_OutputResult|Add0~31         ; out0             ;
+; |Kmeans_OutputResult|Add0~32         ; |Kmeans_OutputResult|Add0~32         ; out0             ;
+; |Kmeans_OutputResult|Add0~33         ; |Kmeans_OutputResult|Add0~33         ; out0             ;
+; |Kmeans_OutputResult|Add0~34         ; |Kmeans_OutputResult|Add0~34         ; out0             ;
+; |Kmeans_OutputResult|Add0~35         ; |Kmeans_OutputResult|Add0~35         ; out0             ;
+; |Kmeans_OutputResult|Add0~36         ; |Kmeans_OutputResult|Add0~36         ; out0             ;
+; |Kmeans_OutputResult|Add0~37         ; |Kmeans_OutputResult|Add0~37         ; out0             ;
+; |Kmeans_OutputResult|Add0~38         ; |Kmeans_OutputResult|Add0~38         ; out0             ;
+; |Kmeans_OutputResult|Add0~39         ; |Kmeans_OutputResult|Add0~39         ; out0             ;
+; |Kmeans_OutputResult|Add0~40         ; |Kmeans_OutputResult|Add0~40         ; out0             ;
+; |Kmeans_OutputResult|Add0~41         ; |Kmeans_OutputResult|Add0~41         ; out0             ;
+; |Kmeans_OutputResult|Add0~42         ; |Kmeans_OutputResult|Add0~42         ; out0             ;
+; |Kmeans_OutputResult|Add0~43         ; |Kmeans_OutputResult|Add0~43         ; out0             ;
+; |Kmeans_OutputResult|Add0~44         ; |Kmeans_OutputResult|Add0~44         ; out0             ;
+; |Kmeans_OutputResult|Add0~45         ; |Kmeans_OutputResult|Add0~45         ; out0             ;
+; |Kmeans_OutputResult|Add0~46         ; |Kmeans_OutputResult|Add0~46         ; out0             ;
+; |Kmeans_OutputResult|Add0~47         ; |Kmeans_OutputResult|Add0~47         ; out0             ;
+; |Kmeans_OutputResult|Add0~48         ; |Kmeans_OutputResult|Add0~48         ; out0             ;
+; |Kmeans_OutputResult|Add0~49         ; |Kmeans_OutputResult|Add0~49         ; out0             ;
+; |Kmeans_OutputResult|Add0~50         ; |Kmeans_OutputResult|Add0~50         ; out0             ;
+; |Kmeans_OutputResult|Add0~51         ; |Kmeans_OutputResult|Add0~51         ; out0             ;
+; |Kmeans_OutputResult|Add0~52         ; |Kmeans_OutputResult|Add0~52         ; out0             ;
+; |Kmeans_OutputResult|Add0~53         ; |Kmeans_OutputResult|Add0~53         ; out0             ;
+; |Kmeans_OutputResult|Add0~54         ; |Kmeans_OutputResult|Add0~54         ; out0             ;
+; |Kmeans_OutputResult|Add0~55         ; |Kmeans_OutputResult|Add0~55         ; out0             ;
+; |Kmeans_OutputResult|Add0~56         ; |Kmeans_OutputResult|Add0~56         ; out0             ;
+; |Kmeans_OutputResult|Add0~57         ; |Kmeans_OutputResult|Add0~57         ; out0             ;
+; |Kmeans_OutputResult|Add0~58         ; |Kmeans_OutputResult|Add0~58         ; out0             ;
+; |Kmeans_OutputResult|Add0~59         ; |Kmeans_OutputResult|Add0~59         ; out0             ;
+; |Kmeans_OutputResult|Add0~60         ; |Kmeans_OutputResult|Add0~60         ; out0             ;
+; |Kmeans_OutputResult|Add0~61         ; |Kmeans_OutputResult|Add0~61         ; out0             ;
+; |Kmeans_OutputResult|Add0~62         ; |Kmeans_OutputResult|Add0~62         ; out0             ;
+; |Kmeans_OutputResult|Add0~63         ; |Kmeans_OutputResult|Add0~63         ; out0             ;
+; |Kmeans_OutputResult|Add0~64         ; |Kmeans_OutputResult|Add0~64         ; out0             ;
+; |Kmeans_OutputResult|Add0~65         ; |Kmeans_OutputResult|Add0~65         ; out0             ;
+; |Kmeans_OutputResult|Add0~66         ; |Kmeans_OutputResult|Add0~66         ; out0             ;
+; |Kmeans_OutputResult|Add1~0          ; |Kmeans_OutputResult|Add1~0          ; out0             ;
+; |Kmeans_OutputResult|Add1~1          ; |Kmeans_OutputResult|Add1~1          ; out0             ;
+; |Kmeans_OutputResult|Add1~2          ; |Kmeans_OutputResult|Add1~2          ; out0             ;
+; |Kmeans_OutputResult|Add1~3          ; |Kmeans_OutputResult|Add1~3          ; out0             ;
+; |Kmeans_OutputResult|Add1~4          ; |Kmeans_OutputResult|Add1~4          ; out0             ;
+; |Kmeans_OutputResult|Add1~5          ; |Kmeans_OutputResult|Add1~5          ; out0             ;
+; |Kmeans_OutputResult|Add1~6          ; |Kmeans_OutputResult|Add1~6          ; out0             ;
+; |Kmeans_OutputResult|Add1~7          ; |Kmeans_OutputResult|Add1~7          ; out0             ;
+; |Kmeans_OutputResult|Add1~8          ; |Kmeans_OutputResult|Add1~8          ; out0             ;
+; |Kmeans_OutputResult|Add1~9          ; |Kmeans_OutputResult|Add1~9          ; out0             ;
+; |Kmeans_OutputResult|Add1~10         ; |Kmeans_OutputResult|Add1~10         ; out0             ;
+; |Kmeans_OutputResult|Add1~11         ; |Kmeans_OutputResult|Add1~11         ; out0             ;
+; |Kmeans_OutputResult|Add1~12         ; |Kmeans_OutputResult|Add1~12         ; out0             ;
+; |Kmeans_OutputResult|Add1~13         ; |Kmeans_OutputResult|Add1~13         ; out0             ;
+; |Kmeans_OutputResult|Add1~14         ; |Kmeans_OutputResult|Add1~14         ; out0             ;
+; |Kmeans_OutputResult|Add1~15         ; |Kmeans_OutputResult|Add1~15         ; out0             ;
+; |Kmeans_OutputResult|Add1~16         ; |Kmeans_OutputResult|Add1~16         ; out0             ;
+; |Kmeans_OutputResult|Add1~17         ; |Kmeans_OutputResult|Add1~17         ; out0             ;
+; |Kmeans_OutputResult|Add1~18         ; |Kmeans_OutputResult|Add1~18         ; out0             ;
+; |Kmeans_OutputResult|Add1~19         ; |Kmeans_OutputResult|Add1~19         ; out0             ;
+; |Kmeans_OutputResult|Add1~20         ; |Kmeans_OutputResult|Add1~20         ; out0             ;
+; |Kmeans_OutputResult|Add1~21         ; |Kmeans_OutputResult|Add1~21         ; out0             ;
+; |Kmeans_OutputResult|Add1~22         ; |Kmeans_OutputResult|Add1~22         ; out0             ;
+; |Kmeans_OutputResult|Add1~23         ; |Kmeans_OutputResult|Add1~23         ; out0             ;
+; |Kmeans_OutputResult|Add1~24         ; |Kmeans_OutputResult|Add1~24         ; out0             ;
+; |Kmeans_OutputResult|Add1~25         ; |Kmeans_OutputResult|Add1~25         ; out0             ;
+; |Kmeans_OutputResult|Add1~26         ; |Kmeans_OutputResult|Add1~26         ; out0             ;
+; |Kmeans_OutputResult|Add1~27         ; |Kmeans_OutputResult|Add1~27         ; out0             ;
+; |Kmeans_OutputResult|Add1~28         ; |Kmeans_OutputResult|Add1~28         ; out0             ;
+; |Kmeans_OutputResult|Add1~29         ; |Kmeans_OutputResult|Add1~29         ; out0             ;
+; |Kmeans_OutputResult|Add1~30         ; |Kmeans_OutputResult|Add1~30         ; out0             ;
+; |Kmeans_OutputResult|Add1~31         ; |Kmeans_OutputResult|Add1~31         ; out0             ;
+; |Kmeans_OutputResult|Add1~32         ; |Kmeans_OutputResult|Add1~32         ; out0             ;
+; |Kmeans_OutputResult|Add1~33         ; |Kmeans_OutputResult|Add1~33         ; out0             ;
+; |Kmeans_OutputResult|Add1~34         ; |Kmeans_OutputResult|Add1~34         ; out0             ;
+; |Kmeans_OutputResult|Add1~35         ; |Kmeans_OutputResult|Add1~35         ; out0             ;
+; |Kmeans_OutputResult|Add1~36         ; |Kmeans_OutputResult|Add1~36         ; out0             ;
+; |Kmeans_OutputResult|Add2~0          ; |Kmeans_OutputResult|Add2~0          ; out0             ;
+; |Kmeans_OutputResult|Add2~1          ; |Kmeans_OutputResult|Add2~1          ; out0             ;
+; |Kmeans_OutputResult|Add2~2          ; |Kmeans_OutputResult|Add2~2          ; out0             ;
+; |Kmeans_OutputResult|Add2~3          ; |Kmeans_OutputResult|Add2~3          ; out0             ;
+; |Kmeans_OutputResult|Add2~4          ; |Kmeans_OutputResult|Add2~4          ; out0             ;
+; |Kmeans_OutputResult|Add2~5          ; |Kmeans_OutputResult|Add2~5          ; out0             ;
+; |Kmeans_OutputResult|Add2~6          ; |Kmeans_OutputResult|Add2~6          ; out0             ;
+; |Kmeans_OutputResult|Add2~7          ; |Kmeans_OutputResult|Add2~7          ; out0             ;
+; |Kmeans_OutputResult|Add2~8          ; |Kmeans_OutputResult|Add2~8          ; out0             ;
+; |Kmeans_OutputResult|Add2~9          ; |Kmeans_OutputResult|Add2~9          ; out0             ;
+; |Kmeans_OutputResult|Add2~10         ; |Kmeans_OutputResult|Add2~10         ; out0             ;
+; |Kmeans_OutputResult|Add2~11         ; |Kmeans_OutputResult|Add2~11         ; out0             ;
+; |Kmeans_OutputResult|Add2~12         ; |Kmeans_OutputResult|Add2~12         ; out0             ;
+; |Kmeans_OutputResult|Add2~13         ; |Kmeans_OutputResult|Add2~13         ; out0             ;
+; |Kmeans_OutputResult|Add2~14         ; |Kmeans_OutputResult|Add2~14         ; out0             ;
+; |Kmeans_OutputResult|Add2~15         ; |Kmeans_OutputResult|Add2~15         ; out0             ;
+; |Kmeans_OutputResult|Add2~16         ; |Kmeans_OutputResult|Add2~16         ; out0             ;
+; |Kmeans_OutputResult|Add2~17         ; |Kmeans_OutputResult|Add2~17         ; out0             ;
+; |Kmeans_OutputResult|Add2~18         ; |Kmeans_OutputResult|Add2~18         ; out0             ;
+; |Kmeans_OutputResult|Add2~19         ; |Kmeans_OutputResult|Add2~19         ; out0             ;
+; |Kmeans_OutputResult|Add2~20         ; |Kmeans_OutputResult|Add2~20         ; out0             ;
+; |Kmeans_OutputResult|Add2~21         ; |Kmeans_OutputResult|Add2~21         ; out0             ;
+; |Kmeans_OutputResult|Add2~22         ; |Kmeans_OutputResult|Add2~22         ; out0             ;
+; |Kmeans_OutputResult|Add2~23         ; |Kmeans_OutputResult|Add2~23         ; out0             ;
+; |Kmeans_OutputResult|Add2~24         ; |Kmeans_OutputResult|Add2~24         ; out0             ;
++--------------------------------------+--------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Fri Jan 20 14:15:18 2017
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off Kmeans_OutputResult -c Kmeans_OutputResult
+Info: Using vector source file "C:/Users/Lucas/Documents/PUC/Iniciação Científica/KMeans/Kmeans_Processador/Kmeans_OutputResult/Kmeans_OutputResult.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of Kmeans_OutputResult.vwf called Kmeans_OutputResult.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is       3.10 %
+Info: Number of transitions in simulation is 264
+Info: Vector file Kmeans_OutputResult.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 160 megabytes
+    Info: Processing ended: Fri Jan 20 14:15:18 2017
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
+
+
