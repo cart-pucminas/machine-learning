@@ -1,0 +1,101 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "o_count_Iteration[0]",
+					"strict" : false
+				},
+				{
+					"name" : "o_count_Iteration[1]",
+					"strict" : false
+				},
+				{
+					"name" : "o_count_Iteration[2]",
+					"strict" : false
+				},
+				{
+					"name" : "o_count_Iteration[3]",
+					"strict" : false
+				},
+				{
+					"name" : "o_count_Iteration[4]",
+					"strict" : false
+				},
+				{
+					"name" : "o_count_Iteration[5]",
+					"strict" : false
+				},
+				{
+					"name" : "o_count_Iteration[6]",
+					"strict" : false
+				},
+				{
+					"name" : "next_State[0]",
+					"strict" : false
+				},
+				{
+					"name" : "next_State[1]",
+					"strict" : false
+				},
+				{
+					"name" : "next_State[2]",
+					"strict" : false
+				},
+				{
+					"name" : "next_State[3]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "nrst",
+					"strict" : false
+				},
+				{
+					"name" : "reg2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "reg2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "reg2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "reg2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "reg2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "reg2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "reg2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "en_IterationCount",
+					"strict" : false
+				},
+				{
+					"name" : "kmodesInput",
+					"strict" : false
+				},
+				{
+					"name" : "floatInput",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
