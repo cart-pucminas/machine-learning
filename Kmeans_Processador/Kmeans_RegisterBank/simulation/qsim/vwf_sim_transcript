@@ -1,0 +1,77 @@
+Determining the location of the ModelSim executable...
+
+Using: /home/lucasandrade/intelFPGA/16.1/modelsim_ase/linuxaloem
+
+To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
+Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-Altera will be used.
+
+**** Generating the ModelSim Testbench ****
+
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Kmeans_RegisterBank -c Kmeans_RegisterBank --vector_source="/home/lucasandrade/Documents/Lucas/Int+Float-64 bits/Kmeans_Processador/Kmeans_RegisterBank/Kmeans_RegisterBank.vwf" --testbench_file="/home/lucasandrade/Documents/Lucas/Int+Float-64 bits/Kmeans_Processador/Kmeans_RegisterBank/simulation/qsim/Kmeans_RegisterBank.vwf.vht"
+
+Info: *******************************************************************Info: Running Quartus Prime EDA Netlist Writer    Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition    Info: Copyright (C) 2016  Intel Corporation. All rights reserved.    Info: Your use of Intel Corporation's design tools, logic functions     Info: and other software and tools, and its AMPP partner logic     Info: functions, and any output files from any of the foregoing     Info: (including device programming or simulation files), and any     Info: associated documentation or information are expressly subject     Info: to the terms and conditions of the Intel Program License     Info: Subscription Agreement, the Intel Quartus Prime License Agreement,    Info: the Intel MegaCore Function License Agreement, or other     Info: applicable license agreement, including, without limitation,     Info: that your use is for the sole purpose of programming logic     Info: devices manufactured by Intel and sold by Intel or its     Info: authorized distributors.  Please refer to the applicable     Info: agreement for further details.    Info: Processing started: Thu Mar 23 15:40:59 2017Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Kmeans_RegisterBank -c Kmeans_RegisterBank --vector_source="/home/lucasandrade/Documents/Lucas/Int+Float-64 bits/Kmeans_Processador/Kmeans_RegisterBank/Kmeans_RegisterBank.vwf" --testbench_file="/home/lucasandrade/Documents/Lucas/Int+Float-64 bits/Kmeans_Processador/Kmeans_RegisterBank/simulation/qsim/Kmeans_RegisterBank.vwf.vht"Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Inconsistency detected by ld.so: dl-close.c: 811: _dl_close: Assertion `map->l_init_called' failed!
+ source file when writing test bench files
+Completed successfully. 
+
+**** Generating the functional simulation netlist ****
+
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="/home/lucasandrade/Documents/Lucas/Int+Float-64 bits/Kmeans_Processador/Kmeans_RegisterBank/simulation/qsim/" Kmeans_RegisterBank -c Kmeans_RegisterBank
+
+Inconsistency detected by ld.so: dl-close.c: 811: _dl_close: Assertion `map->l_init_called' failed!
+Info: *******************************************************************Info: Running Quartus Prime EDA Netlist Writer    Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition    Info: Copyright (C) 2016  Intel Corporation. All rights reserved.    Info: Your use of Intel Corporation's design tools, logic functions     Info: and other software and tools, and its AMPP partner logic     Info: functions, and any output files from any of the foregoing     Info: (including device programming or simulation files), and any     Info: associated documentation or information are expressly subject     Info: to the terms and conditions of the Intel Program License     Info: Subscription Agreement, the Intel Quartus Prime License Agreement,    Info: the Intel MegaCore Function License Agreement, or other     Info: applicable license agreement, including, without limitation,     Info: that your use is for the sole purpose of programming logic     Info: devices manufactured by Intel and sold by Intel or its     Info: authorized distributors.  Please refer to the applicable     Info: agreement for further details.    Info: Processing started: Thu Mar 23 15:41:01 2017Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="/home/lucasandrade/Documents/Lucas/Int+Float-64 bits/Kmeans_Processador/Kmeans_RegisterBank/simulation/qsim/" Kmeans_RegisterBank -c Kmeans_RegisterBankWarning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.Info (204019): Generated file Kmeans_RegisterBank.vho in folder "/home/lucasandrade/Documents/Lucas/Int+Float-64 bits/Kmeans_Processador/Kmeans_RegisterBank/simulation/qsim//" for EDA simulation toolInfo: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning    Info: Peak virtual memory: 1122 megabytes    Info: Processing ended: Thu Mar 23 15:41:02 2017    Info: Elapsed time: 00:00:01    Info: Total CPU time (on all processors): 00:00:01
+Completed successfully. 
+
+**** Generating the ModelSim .do script ****
+
+/home/lucasandrade/Documents/Lucas/Int+Float-64 bits/Kmeans_Processador/Kmeans_RegisterBank/simulation/qsim/Kmeans_RegisterBank.do generated.
+
+Completed successfully. 
+
+**** Running the ModelSim simulation ****
+
+/home/lucasandrade/intelFPGA/16.1/modelsim_ase/linuxaloem/vsim -c -do Kmeans_RegisterBank.do
+
+Reading pref.tcl
+# 10.5b
+# do Kmeans_RegisterBank.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:41:04 on Mar 23,2017# vcom -work work Kmeans_RegisterBank.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives# -- Loading package cycloneiv_atom_pack# -- Loading package cycloneiv_components# -- Compiling entity hard_block
+# -- Compiling architecture structure of hard_block
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components# -- Compiling entity Kmeans_RegisterBank
+# -- Compiling architecture structure of Kmeans_RegisterBank
+# End time: 15:41:05 on Mar 23,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:41:05 on Mar 23,2017# vcom -work work Kmeans_RegisterBank.vwf.vht # -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Kmeans_RegisterBank_vhd_vec_tst# -- Compiling architecture Kmeans_RegisterBank_arch of Kmeans_RegisterBank_vhd_vec_tst
+# End time: 15:41:05 on Mar 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cycloneiv -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Kmeans_RegisterBank_vhd_vec_tst # Start time: 15:41:05 on Mar 23,2017# Loading std.standard# Loading std.textio(body)# Loading ieee.std_logic_1164(body)# Loading work.kmeans_registerbank_vhd_vec_tst(kmeans_registerbank_arch)# Loading ieee.vital_timing(body)# Loading ieee.vital_primitives(body)# Loading altera.dffeas_pack# Loading altera.altera_primitives_components# Loading cycloneiv.cycloneiv_atom_pack(body)# Loading cycloneiv.cycloneiv_components# Loading work.kmeans_registerbank(structure)# Loading work.hard_block(structure)# Loading ieee.std_logic_arith(body)# Loading cycloneiv.cycloneiv_io_obuf(arch)# Loading cycloneiv.cycloneiv_io_ibuf(arch)# Loading cycloneiv.cycloneiv_clkctrl(vital_clkctrl)# Loading cycloneiv.cycloneiv_ena_reg(behave)# Loading altera.dffeas(vital_dffeas)# Loading cycloneiv.cycloneiv_lcell_comb(vital_lcell_comb)# ** Warning: Design size of 26797 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.# Expect performance to be adversely affected.
+# after#35
+# End time: 15:41:06 on Mar 23,2017, Elapsed time: 0:00:01# Errors: 0, Warnings: 1
+Completed successfully. 
+
+**** Converting ModelSim VCD to vector waveform ****
+
+Reading /home/lucasandrade/Documents/Lucas/Int+Float-64 bits/Kmeans_Processador/Kmeans_RegisterBank/Kmeans_RegisterBank.vwf...
+
+Reading /home/lucasandrade/Documents/Lucas/Int+Float-64 bits/Kmeans_Processador/Kmeans_RegisterBank/simulation/qsim/Kmeans_RegisterBank.msim.vcd...
+
+Processing channel transitions... 
+
+Writing the resulting VWF to /home/lucasandrade/Documents/Lucas/Int+Float-64 bits/Kmeans_Processador/Kmeans_RegisterBank/simulation/qsim/Kmeans_RegisterBank_20170323154106.sim.vwf
+
+Finished VCD to VWF conversion.
+
+Completed successfully. 
+
+All completed.

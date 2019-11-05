@@ -1,0 +1,133 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 368 160)
+	(text "Kmeans_RegisterBank" (rect 5 0 99 12)(font "Arial" ))
+	(text "inst" (rect 8 128 20 140)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 10 12)(font "Arial" ))
+		(text "clk" (rect 21 27 31 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "nrst" (rect 0 0 15 12)(font "Arial" ))
+		(text "nrst" (rect 21 43 36 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "nCentroids[maxcentroidsbits-1..0]" (rect 0 0 129 12)(font "Arial" ))
+		(text "nCentroids[maxcentroidsbits-1..0]" (rect 21 59 150 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "nIteracoes[maxiteracoesbits-1..0]" (rect 0 0 128 12)(font "Arial" ))
+		(text "nIteracoes[maxiteracoesbits-1..0]" (rect 21 75 149 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "nPontos[maxpontosbits-1..0]" (rect 0 0 109 12)(font "Arial" ))
+		(text "nPontos[maxpontosbits-1..0]" (rect 21 91 130 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "nDimensoes[maxdimensoesbits-1..0]" (rect 0 0 143 12)(font "Arial" ))
+		(text "nDimensoes[maxdimensoesbits-1..0]" (rect 21 107 164 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 352 32)
+		(output)
+		(text "reg1[maxcentroidsbits-1..0]" (rect 0 0 103 12)(font "Arial" ))
+		(text "reg1[maxcentroidsbits-1..0]" (rect 228 27 331 39)(font "Arial" ))
+		(line (pt 352 32)(pt 336 32)(line_width 3))
+	)
+	(port
+		(pt 352 48)
+		(output)
+		(text "reg2[maxiteracoesbits-1..0]" (rect 0 0 105 12)(font "Arial" ))
+		(text "reg2[maxiteracoesbits-1..0]" (rect 226 43 331 55)(font "Arial" ))
+		(line (pt 352 48)(pt 336 48)(line_width 3))
+	)
+	(port
+		(pt 352 64)
+		(output)
+		(text "reg3[maxpontosbits-1..0]" (rect 0 0 95 12)(font "Arial" ))
+		(text "reg3[maxpontosbits-1..0]" (rect 236 59 331 71)(font "Arial" ))
+		(line (pt 352 64)(pt 336 64)(line_width 3))
+	)
+	(port
+		(pt 352 80)
+		(output)
+		(text "reg5[tamanhoaddr-1..0]" (rect 0 0 90 12)(font "Arial" ))
+		(text "reg5[tamanhoaddr-1..0]" (rect 241 75 331 87)(font "Arial" ))
+		(line (pt 352 80)(pt 336 80)(line_width 3))
+	)
+	(port
+		(pt 352 96)
+		(output)
+		(text "reg8[2..0]" (rect 0 0 37 12)(font "Arial" ))
+		(text "reg8[2..0]" (rect 294 91 331 103)(font "Arial" ))
+		(line (pt 352 96)(pt 336 96)(line_width 3))
+	)
+	(parameter
+		"TamanhoAddr"
+		"14"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"MaxCentroidsBits"
+		"10"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"MaxPontosBits"
+		"15"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"MaxIteracoesBits"
+		"7"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"MaxDimensoesBits"
+		"4"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 336 128)(line_width 1))
+	)
+	(annotation_block (parameter)(rect 368 -64 468 16))
+)

@@ -1,0 +1,90 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+Entity Kmeans_RegisterBank is
+
+	GENERIC (Palavra     : INTEGER := 64;
+			 TamanhoAddr : INTEGER := 15;
+			 MaxCentroidsBits : INTEGER := 10;
+			 MaxPontosBits : INTEGER := 14;
+			 MaxIteracoesBits : INTEGER := 7);
+	
+	PORT(
+	    clk					 : in STD_LOGIC;
+	    nrst		         : in STD_LOGIC;
+		en_Kmeans		     : in STD_LOGIC;
+		en_Saida		     : in STD_LOGIC;
+		nCentroids    		 : in STD_LOGIC_VECTOR(MaxCentroidsBits-1 downto 0); 	    --Numero de centroids- MAX 1024
+		nIteracoes     		 : in STD_LOGIC_VECTOR(MaxIteracoesBits-1 downto 0); 	    --Numero de iteracoes- MAX 128
+		nPontos       		 : in STD_LOGIC_VECTOR(MaxPontosBits-1 downto 0); 	        --Numero de pontos  - MAX 15872//MAX 32256
+		i_reg4 		  		 : in  STD_LOGIC_VECTOR(Palavra-1 downto 0);	
+		i_reg7 		  		 : in  STD_LOGIC_VECTOR(Palavra-1 downto 0);	
+		reg1 		  		 : out STD_LOGIC_VECTOR(MaxCentroidsBits-1 downto 0);	    --Registrador 1
+		reg2 		  		 : out STD_LOGIC_VECTOR(MaxIteracoesBits-1 downto 0);  	    --Registrador 2
+		reg3 		  		 : out STD_LOGIC_VECTOR(MaxPontosBits-1 downto 0);     	    --Registrador 3
+		reg4 		  		 : out STD_LOGIC_VECTOR(Palavra-1 downto 0);	   			--Registrador 4
+		reg5 		  		 : out STD_LOGIC_VECTOR(TamanhoAddr-1 downto 0);  			--Registrador 5
+		reg6 		  		 : out STD_LOGIC_VECTOR(TamanhoAddr-1 downto 0);  			--Registrador 6
+		reg7 		  		 : out STD_LOGIC_VECTOR(Palavra-1 downto 0)  				--Registrador 7
+	);
+
+end Kmeans_RegisterBank;
+
+ARCHITECTURE arch OF Kmeans_RegisterBank IS 
+	SIGNAL s_nPontos : INTEGER RANGE 0 TO 15872 := 0;
+	SIGNAL s_reg1    : STD_LOGIC_VECTOR(MaxCentroidsBits-1 downto 0) := (others => '0');
+	SIGNAL s_reg2    : STD_LOGIC_VECTOR(MaxIteracoesBits-1 downto 0) := (others => '0');
+	SIGNAL s_reg3    : STD_LOGIC_VECTOR(MaxPontosBits-1 downto 0) := (others => '0');
+	SIGNAL s_reg4    : STD_LOGIC_VECTOR(Palavra-1 downto 0) := (others => '0');
+	SIGNAL s_reg5    : STD_LOGIC_VECTOR(TamanhoAddr-1 downto 0) := (others => '0');
+	SIGNAL s_reg6    : STD_LOGIC_VECTOR(TamanhoAddr-1 downto 0) := (others => '0');
+	SIGNAL s_reg7    : STD_LOGIC_VECTOR(Palavra-1 downto 0) := (others => '0');
+		
+	BEGIN
+		PROCESS(en_Kmeans, clk, nrst, nPontos) --nCentroids, nPontos, nIteracoes, s_nPontos)
+		BEGIN	
+		    if (conv_integer(nPontos) > 15872) then
+				s_nPontos <= 15872;
+			else		
+				s_nPontos <= conv_integer(nPontos);
+			end if;	
+			 
+		    if nrst = '0' then
+				s_reg1 <= (others => '0');
+				s_reg2 <= (others => '0');
+				s_reg3 <= (others => '0');
+				s_reg4 <= (others => '0');
+				s_reg5 <= (others => '0');
+				s_reg6 <= (others => '0');
+				s_reg7 <= (others => '0');
+				
+			elsif clk'event and clk = '1' and en_Kmeans = '1' then 	
+				s_reg1 <= nCentroids;
+				s_reg2 <= nIteracoes;
+				s_reg3 <= std_logic_vector(to_unsigned(s_nPontos,MaxPontosBits));
+				--Valor da distancia minima calculada
+				s_reg4 <= i_reg4;    
+				--Posiçao inicial na memória interna de centroids
+				s_reg5 <= std_logic_vector(to_unsigned(s_nPontos,TamanhoAddr));            
+			   --Posiçao inicial na memória interna do mapeamento final	
+				s_reg6 <= std_logic_vector(to_unsigned(s_nPontos + conv_integer(nCentroids),TamanhoAddr));
+				--Registrador auxiliar 
+				if en_Saida='1' then				
+					s_reg7 <= i_reg7;
+				else
+			  	    s_reg7 <= (others => '0');
+			  	end if;    
+			end if;
+		END PROCESS;
+		
+	reg1 <= s_reg1;		
+	reg2 <= s_reg2;	
+	reg3 <= s_reg3;	
+	reg4 <= s_reg4;	
+	reg5 <= s_reg5;	
+	reg6 <= s_reg6;	
+	reg7 <= s_reg7;	
+
+end arch;

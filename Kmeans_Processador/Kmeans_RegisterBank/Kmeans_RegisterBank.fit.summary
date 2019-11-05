@@ -1,0 +1,20 @@
+Fitter Status : Successful - Tue Jun 13 11:55:55 2017
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Revision Name : Kmeans_RegisterBank
+Top-level Entity Name : Kmeans_RegisterBank
+Family : Cyclone IV GX
+Device : EP4CGX150DF31I7
+Timing Models : Final
+Total logic elements : 109 / 149,760 ( < 1 % )
+    Total combinational functions : 79 / 149,760 ( < 1 % )
+    Dedicated logic registers : 49 / 149,760 ( < 1 % )
+Total registers : 49
+Total pins : 87 / 508 ( 17 % )
+Total virtual pins : 0
+Total memory bits : 0 / 6,635,520 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 720 ( 0 % )
+Total GXB Receiver Channel PCS : 0 / 8 ( 0 % )
+Total GXB Receiver Channel PMA : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PCS : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PMA : 0 / 8 ( 0 % )
+Total PLLs : 0 / 8 ( 0 % )

@@ -1,0 +1,353 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "reg1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "reg1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "reg1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "reg1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "reg1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "reg1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "reg1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "reg1[7]",
+					"strict" : false
+				},
+				{
+					"name" : "reg1[8]",
+					"strict" : false
+				},
+				{
+					"name" : "reg1[9]",
+					"strict" : false
+				},
+				{
+					"name" : "reg2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "reg2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "reg2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "reg2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "reg2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "reg2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "reg2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "reg3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "reg3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "reg3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "reg3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "reg3[4]",
+					"strict" : false
+				},
+				{
+					"name" : "reg3[5]",
+					"strict" : false
+				},
+				{
+					"name" : "reg3[6]",
+					"strict" : false
+				},
+				{
+					"name" : "reg3[7]",
+					"strict" : false
+				},
+				{
+					"name" : "reg3[8]",
+					"strict" : false
+				},
+				{
+					"name" : "reg3[9]",
+					"strict" : false
+				},
+				{
+					"name" : "reg3[10]",
+					"strict" : false
+				},
+				{
+					"name" : "reg3[11]",
+					"strict" : false
+				},
+				{
+					"name" : "reg3[12]",
+					"strict" : false
+				},
+				{
+					"name" : "reg3[13]",
+					"strict" : false
+				},
+				{
+					"name" : "reg3[14]",
+					"strict" : false
+				},
+				{
+					"name" : "reg5[0]",
+					"strict" : false
+				},
+				{
+					"name" : "reg5[1]",
+					"strict" : false
+				},
+				{
+					"name" : "reg5[2]",
+					"strict" : false
+				},
+				{
+					"name" : "reg5[3]",
+					"strict" : false
+				},
+				{
+					"name" : "reg5[4]",
+					"strict" : false
+				},
+				{
+					"name" : "reg5[5]",
+					"strict" : false
+				},
+				{
+					"name" : "reg5[6]",
+					"strict" : false
+				},
+				{
+					"name" : "reg5[7]",
+					"strict" : false
+				},
+				{
+					"name" : "reg5[8]",
+					"strict" : false
+				},
+				{
+					"name" : "reg5[9]",
+					"strict" : false
+				},
+				{
+					"name" : "reg5[10]",
+					"strict" : false
+				},
+				{
+					"name" : "reg5[11]",
+					"strict" : false
+				},
+				{
+					"name" : "reg5[12]",
+					"strict" : false
+				},
+				{
+					"name" : "reg5[13]",
+					"strict" : false
+				},
+				{
+					"name" : "reg8[0]",
+					"strict" : false
+				},
+				{
+					"name" : "reg8[1]",
+					"strict" : false
+				},
+				{
+					"name" : "reg8[2]",
+					"strict" : false
+				},
+				{
+					"name" : "nCentroids[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "nrst",
+					"strict" : false
+				},
+				{
+					"name" : "nCentroids[1]",
+					"strict" : false
+				},
+				{
+					"name" : "nCentroids[2]",
+					"strict" : false
+				},
+				{
+					"name" : "nCentroids[3]",
+					"strict" : false
+				},
+				{
+					"name" : "nCentroids[4]",
+					"strict" : false
+				},
+				{
+					"name" : "nCentroids[5]",
+					"strict" : false
+				},
+				{
+					"name" : "nCentroids[6]",
+					"strict" : false
+				},
+				{
+					"name" : "nCentroids[7]",
+					"strict" : false
+				},
+				{
+					"name" : "nCentroids[8]",
+					"strict" : false
+				},
+				{
+					"name" : "nCentroids[9]",
+					"strict" : false
+				},
+				{
+					"name" : "nIteracoes[0]",
+					"strict" : false
+				},
+				{
+					"name" : "nIteracoes[1]",
+					"strict" : false
+				},
+				{
+					"name" : "nIteracoes[2]",
+					"strict" : false
+				},
+				{
+					"name" : "nIteracoes[3]",
+					"strict" : false
+				},
+				{
+					"name" : "nIteracoes[4]",
+					"strict" : false
+				},
+				{
+					"name" : "nIteracoes[5]",
+					"strict" : false
+				},
+				{
+					"name" : "nIteracoes[6]",
+					"strict" : false
+				},
+				{
+					"name" : "nPontos[0]",
+					"strict" : false
+				},
+				{
+					"name" : "nPontos[14]",
+					"strict" : false
+				},
+				{
+					"name" : "nPontos[1]",
+					"strict" : false
+				},
+				{
+					"name" : "nPontos[2]",
+					"strict" : false
+				},
+				{
+					"name" : "nPontos[3]",
+					"strict" : false
+				},
+				{
+					"name" : "nPontos[4]",
+					"strict" : false
+				},
+				{
+					"name" : "nPontos[5]",
+					"strict" : false
+				},
+				{
+					"name" : "nPontos[6]",
+					"strict" : false
+				},
+				{
+					"name" : "nPontos[7]",
+					"strict" : false
+				},
+				{
+					"name" : "nPontos[8]",
+					"strict" : false
+				},
+				{
+					"name" : "nPontos[9]",
+					"strict" : false
+				},
+				{
+					"name" : "nPontos[10]",
+					"strict" : false
+				},
+				{
+					"name" : "nPontos[11]",
+					"strict" : false
+				},
+				{
+					"name" : "nPontos[12]",
+					"strict" : false
+				},
+				{
+					"name" : "nPontos[13]",
+					"strict" : false
+				},
+				{
+					"name" : "nDimensoes[1]",
+					"strict" : false
+				},
+				{
+					"name" : "nDimensoes[2]",
+					"strict" : false
+				},
+				{
+					"name" : "nDimensoes[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
