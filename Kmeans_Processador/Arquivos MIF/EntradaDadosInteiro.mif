@@ -1,0 +1,66 @@
+-- Copyright (C) 2016  Intel Corporation. All rights reserved.
+-- Your use of Intel Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Intel Program License 
+-- Subscription Agreement, the Intel Quartus Prime License Agreement,
+-- the Intel MegaCore Function License Agreement, or other 
+-- applicable license agreement, including, without limitation, 
+-- that your use is for the sole purpose of programming logic 
+-- devices manufactured by Intel and sold by Intel or its 
+-- authorized distributors.  Please refer to the applicable 
+-- agreement for further details.
+
+
+
+WIDTH=64;
+DEPTH=32768;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=UNS;
+
+CONTENT BEGIN
+	0      :   2;
+	1      :   4;
+	2      :   10;
+	3      :   12;
+	4      :   3;
+	5      :   20;
+	6      :   30;
+	7      :   11;
+	8      :   25;
+	9      :   1024;
+	10     :   4313543;
+	11     :   9874568;
+	12     :   87452136;
+	13     :   7412;
+	14     :   875;
+	15     :   1;
+	16     :   41257458;
+	17     :   54120;
+	18     :   7896523;
+	19     :   1025453251;
+	20     :   7;
+	21     :   254;
+	22     :   2451335;
+	23     :   32152;
+	24     :   3214;
+	25     :   78880;
+	26     :   95;
+	27     :   100;
+	28     :   302;
+	29     :   823;
+	30     :   62;
+	31     :   14;
+	32     :   2012541254;
+	33     :   32541;
+	34     :   54874;
+	35     :   9856;
+	36     :   12054687;
+	37     :   9874563;
+	38     :   321452129;
+	39     :   4021000000;
+	[40..32767]  :   0;
+END;
