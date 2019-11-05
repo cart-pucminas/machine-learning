@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Jun 29 14:33:04 2017
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Revision Name : Kmeans_CountClk
+Top-level Entity Name : Kmeans_CountClk
+Family : Cyclone IV E
+Total logic elements : 182
+    Total combinational functions : 176
+    Dedicated logic registers : 85
+Total registers : 85
+Total pins : 146
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

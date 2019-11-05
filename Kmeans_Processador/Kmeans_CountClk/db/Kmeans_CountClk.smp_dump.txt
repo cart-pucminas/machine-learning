@@ -1,0 +1,18 @@
+
+State Machine - |Kmeans_CountClk|state_fut
+Name state_fut.WAITDATA2 state_fut.WAITDATA state_fut.READDATA state_fut.COUNT state_fut.IDLE state_fut.RESET 
+state_fut.RESET 0 0 0 0 0 0 
+state_fut.IDLE 0 0 0 0 1 1 
+state_fut.COUNT 0 0 0 1 0 1 
+state_fut.READDATA 0 0 1 0 0 1 
+state_fut.WAITDATA 0 1 0 0 0 1 
+state_fut.WAITDATA2 1 0 0 0 0 1 
+
+State Machine - |Kmeans_CountClk|state
+Name state.WAITDATA2 state.WAITDATA state.READDATA state.COUNT state.IDLE state.RESET 
+state.RESET 0 0 0 0 0 0 
+state.IDLE 0 0 0 0 1 1 
+state.COUNT 0 0 0 1 0 1 
+state.READDATA 0 0 1 0 0 1 
+state.WAITDATA 0 1 0 0 0 1 
+state.WAITDATA2 1 0 0 0 0 1 
