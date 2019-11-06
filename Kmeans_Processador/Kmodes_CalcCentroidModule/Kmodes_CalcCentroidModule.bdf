@@ -1,0 +1,2974 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect -88 192 80 208)
+	(text "INPUT" (rect 125 0 154 9)(font "Arial" (font_size 6)))
+	(text "clk" (rect 5 0 19 10)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 149 16)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -88 208 80 224)
+	(text "INPUT" (rect 125 0 154 9)(font "Arial" (font_size 6)))
+	(text "nrst" (rect 5 0 25 12)(font "Intel Clear" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 149 16)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -152 224 80 240)
+	(text "INPUT" (rect 189 0 218 9)(font "Arial" (font_size 6)))
+	(text "en_KmodesControlCentroid" (rect 5 0 140 12)(font "Intel Clear" ))
+	(pt 232 8)
+	(drawing
+		(line (pt 148 12)(pt 173 12))
+		(line (pt 148 4)(pt 173 4))
+		(line (pt 177 8)(pt 232 8))
+		(line (pt 148 12)(pt 148 4))
+		(line (pt 173 4)(pt 177 8))
+		(line (pt 173 12)(pt 177 8))
+	)
+	(text "VCC" (rect 192 7 213 16)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -88 240 80 256)
+	(text "INPUT" (rect 125 0 154 9)(font "Arial" (font_size 6)))
+	(text "reg1[9..0]" (rect 5 0 53 12)(font "Intel Clear" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 149 16)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -88 288 80 304)
+	(text "INPUT" (rect 125 0 154 9)(font "Arial" (font_size 6)))
+	(text "reg8[2..0]" (rect 5 0 53 12)(font "Intel Clear" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 149 16)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -88 272 80 288)
+	(text "INPUT" (rect 125 0 154 9)(font "Arial" (font_size 6)))
+	(text "reg5[13..0]" (rect 5 0 59 12)(font "Intel Clear" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 149 16)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -88 256 80 272)
+	(text "INPUT" (rect 125 0 154 9)(font "Arial" (font_size 6)))
+	(text "reg3[14..0]" (rect 5 0 59 12)(font "Intel Clear" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 149 16)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 824 48 1008 64)
+	(text "INPUT" (rect 141 0 170 9)(font "Arial" (font_size 6)))
+	(text "valueDado[63..0]" (rect 5 0 88 12)(font "Intel Clear" ))
+	(pt 184 8)
+	(drawing
+		(line (pt 100 12)(pt 125 12))
+		(line (pt 100 4)(pt 125 4))
+		(line (pt 129 8)(pt 184 8))
+		(line (pt 100 12)(pt 100 4))
+		(line (pt 125 4)(pt 129 8))
+		(line (pt 125 12)(pt 129 8))
+	)
+	(text "VCC" (rect 144 7 165 16)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -144 144 32 160)
+	(text "INPUT" (rect 133 0 162 9)(font "Arial" (font_size 6)))
+	(text "valueMap[9..0]" (rect 5 0 76 12)(font "Intel Clear" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
+	)
+	(text "VCC" (rect 136 7 157 16)(font "Arial" (font_size 6)))
+)
+(pin
+	(output)
+	(rect 728 272 904 288)
+	(text "OUTPUT" (rect 1 0 41 9)(font "Arial" (font_size 6)))
+	(text "wr_RamA" (rect 90 0 138 10)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 728 288 904 304)
+	(text "OUTPUT" (rect 1 0 41 9)(font "Arial" (font_size 6)))
+	(text "wr_RamB" (rect 90 0 137 12)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 3528 64 3740 80)
+	(text "OUTPUT" (rect 1 0 41 9)(font "Arial" (font_size 6)))
+	(text "newCentroidValue[63..0]" (rect 90 0 206 10)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 720 192 896 208)
+	(text "OUTPUT" (rect 1 0 41 9)(font "Arial" (font_size 6)))
+	(text "next_State[3..0]" (rect 90 0 164 10)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 720 208 928 224)
+	(text "OUTPUT" (rect 1 0 41 9)(font "Arial" (font_size 6)))
+	(text "addr_Ram_Dado[13..0]" (rect 90 0 202 12)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 720 224 923 240)
+	(text "OUTPUT" (rect 1 0 41 9)(font "Arial" (font_size 6)))
+	(text "addr_Ram_Map[13..0]" (rect 90 0 197 12)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 672 416 848 432)
+	(text "OUTPUT" (rect 1 0 41 9)(font "Arial" (font_size 6)))
+	(text "estado[3..0]" (rect 90 0 149 12)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 3264 1624 3440 1640)
+	(text "OUTPUT" (rect 1 0 41 9)(font "Arial" (font_size 6)))
+	(text "endCalcFreq" (rect 90 0 152 12)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 3264 1688 3440 1704)
+	(text "OUTPUT" (rect 1 0 41 9)(font "Arial" (font_size 6)))
+	(text "endCalcMode" (rect 90 0 157 12)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 720 136 911 152)
+	(text "OUTPUT" (rect 1 0 41 9)(font "Arial" (font_size 6)))
+	(text "countCentroid[9..0]" (rect 90 0 185 12)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 1456 -176 1632 -160)
+	(text "OUTPUT" (rect 1 0 41 9)(font "Arial" (font_size 6)))
+	(text "outDado0[7..0]" (rect 90 0 164 12)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 1456 -152 1632 -136)
+	(text "OUTPUT" (rect 1 0 41 9)(font "Arial" (font_size 6)))
+	(text "outDado1[7..0]" (rect 90 0 164 12)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 1464 -128 1640 -112)
+	(text "OUTPUT" (rect 1 0 41 9)(font "Arial" (font_size 6)))
+	(text "outDado2[7..0]" (rect 90 0 164 12)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 1504 -96 1680 -80)
+	(text "OUTPUT" (rect 1 0 41 9)(font "Arial" (font_size 6)))
+	(text "outDado3[7..0]" (rect 90 0 164 12)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 2464 -112 2640 -96)
+	(text "OUTPUT" (rect 1 0 41 9)(font "Arial" (font_size 6)))
+	(text "outBuffer0[7..0]" (rect 90 0 167 12)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 2560 16 2736 32)
+	(text "OUTPUT" (rect 1 0 41 9)(font "Arial" (font_size 6)))
+	(text "outBuffer1[7..0]" (rect 90 0 167 12)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(symbol
+	(rect 200 168 608 408)
+	(text "Kmodes_ControlCalcCentroid" (rect 5 0 146 10)(font "Arial" ))
+	(text "inst1" (rect 8 224 31 234)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 10)(font "Arial" ))
+		(text "clk" (rect 21 27 35 37)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "nrst" (rect 0 0 18 10)(font "Arial" ))
+		(text "nrst" (rect 21 43 39 53)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "en_KmodesControlCentroid" (rect 0 0 132 10)(font "Arial" ))
+		(text "en_KmodesControlCentroid" (rect 21 59 153 69)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "reg1[maxcentroidsbits-1..0]" (rect 0 0 128 10)(font "Arial" ))
+		(text "reg1[maxcentroidsbits-1..0]" (rect 21 75 149 85)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "reg3[maxpontosbits-1..0]" (rect 0 0 116 10)(font "Arial" ))
+		(text "reg3[maxpontosbits-1..0]" (rect 21 91 137 101)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "reg5[tamanhoaddr-1..0]" (rect 0 0 110 10)(font "Arial" ))
+		(text "reg5[tamanhoaddr-1..0]" (rect 21 107 131 117)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "reg8[2..0]" (rect 0 0 44 10)(font "Arial" ))
+		(text "reg8[2..0]" (rect 21 123 65 133)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 3))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "count_Centroid[maxcentroidsbits-1..0]" (rect 0 0 179 10)(font "Arial" ))
+		(text "count_Centroid[maxcentroidsbits-1..0]" (rect 21 139 200 149)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 3))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "count_Dado[maxpontosbits-1..0]" (rect 0 0 153 10)(font "Arial" ))
+		(text "count_Dado[maxpontosbits-1..0]" (rect 21 155 174 165)(font "Arial" ))
+		(line (pt 0 160)(pt 16 160)(line_width 3))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "end_CalcFreq" (rect 0 0 68 10)(font "Arial" ))
+		(text "end_CalcFreq" (rect 21 171 89 181)(font "Arial" ))
+		(line (pt 0 176)(pt 16 176))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "end_CalcMode" (rect 0 0 73 10)(font "Arial" ))
+		(text "end_CalcMode" (rect 21 187 94 197)(font "Arial" ))
+		(line (pt 0 192)(pt 16 192))
+	)
+	(port
+		(pt 408 32)
+		(output)
+		(text "next_State[numbitsstates-1..0]" (rect 0 0 143 10)(font "Arial" ))
+		(text "next_State[numbitsstates-1..0]" (rect 266 27 409 37)(font "Arial" ))
+		(line (pt 408 32)(pt 392 32)(line_width 3))
+	)
+	(port
+		(pt 408 48)
+		(output)
+		(text "addr_Ram_Dado[tamanhoaddr-1..0]" (rect 0 0 171 10)(font "Arial" ))
+		(text "addr_Ram_Dado[tamanhoaddr-1..0]" (rect 243 43 414 53)(font "Arial" ))
+		(line (pt 408 48)(pt 392 48)(line_width 3))
+	)
+	(port
+		(pt 408 64)
+		(output)
+		(text "addr_Ram_Map[tamanhoaddr-1..0]" (rect 0 0 166 10)(font "Arial" ))
+		(text "addr_Ram_Map[tamanhoaddr-1..0]" (rect 247 59 413 69)(font "Arial" ))
+		(line (pt 408 64)(pt 392 64)(line_width 3))
+	)
+	(port
+		(pt 408 80)
+		(output)
+		(text "o_count_Centroid[maxcentroidsbits-1..0]" (rect 0 0 191 10)(font "Arial" ))
+		(text "o_count_Centroid[maxcentroidsbits-1..0]" (rect 226 75 417 85)(font "Arial" ))
+		(line (pt 408 80)(pt 392 80)(line_width 3))
+	)
+	(port
+		(pt 408 96)
+		(output)
+		(text "o_count_Dado[maxpontosbits-1..0]" (rect 0 0 165 10)(font "Arial" ))
+		(text "o_count_Dado[maxpontosbits-1..0]" (rect 248 91 413 101)(font "Arial" ))
+		(line (pt 408 96)(pt 392 96)(line_width 3))
+	)
+	(port
+		(pt 408 112)
+		(output)
+		(text "wr_RamA" (rect 0 0 48 10)(font "Arial" ))
+		(text "wr_RamA" (rect 347 107 395 117)(font "Arial" ))
+		(line (pt 408 112)(pt 392 112))
+	)
+	(port
+		(pt 408 128)
+		(output)
+		(text "wr_RamB" (rect 0 0 48 10)(font "Arial" ))
+		(text "wr_RamB" (rect 347 123 395 133)(font "Arial" ))
+		(line (pt 408 128)(pt 392 128))
+	)
+	(port
+		(pt 408 144)
+		(output)
+		(text "en_CountFreqData" (rect 0 0 92 10)(font "Arial" ))
+		(text "en_CountFreqData" (rect 310 139 402 149)(font "Arial" ))
+		(line (pt 408 144)(pt 392 144))
+	)
+	(port
+		(pt 408 160)
+		(output)
+		(text "en_FindMaxValue" (rect 0 0 87 10)(font "Arial" ))
+		(text "en_FindMaxValue" (rect 314 155 401 165)(font "Arial" ))
+		(line (pt 408 160)(pt 392 160))
+	)
+	(port
+		(pt 408 176)
+		(output)
+		(text "clearFreqVector" (rect 0 0 76 10)(font "Arial" ))
+		(text "clearFreqVector" (rect 323 171 399 181)(font "Arial" ))
+		(line (pt 408 176)(pt 392 176))
+	)
+	(port
+		(pt 408 192)
+		(output)
+		(text "estado[3..0]" (rect 0 0 55 10)(font "Arial" ))
+		(text "estado[3..0]" (rect 341 187 396 197)(font "Arial" ))
+		(line (pt 408 192)(pt 392 192)(line_width 3))
+	)
+	(parameter
+		"TamanhoAddr"
+		"14"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"Palavra"
+		"64"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"TamanhoAtributo"
+		"8"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"MaxCentroidsBits"
+		"10"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"MaxPontosBits"
+		"15"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"NumBitsStates"
+		"4"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 392 224))
+	)
+	(annotation_block (parameter)(rect 304 408 520 512))
+)
+(symbol
+	(rect 1072 24 1376 200)
+	(text "BufferInControl" (rect 5 0 78 10)(font "Arial" ))
+	(text "inst" (rect 8 160 25 170)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "valueDado[palavra-1..0]" (rect 0 0 113 10)(font "Arial" ))
+		(text "valueDado[palavra-1..0]" (rect 21 27 134 37)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 304 32)
+		(output)
+		(text "value0[tamanhoatributo-1..0]" (rect 0 0 135 10)(font "Arial" ))
+		(text "value0[tamanhoatributo-1..0]" (rect 169 27 304 37)(font "Arial" ))
+		(line (pt 304 32)(pt 288 32)(line_width 3))
+	)
+	(port
+		(pt 304 48)
+		(output)
+		(text "value1[tamanhoatributo-1..0]" (rect 0 0 135 10)(font "Arial" ))
+		(text "value1[tamanhoatributo-1..0]" (rect 169 43 304 53)(font "Arial" ))
+		(line (pt 304 48)(pt 288 48)(line_width 3))
+	)
+	(port
+		(pt 304 64)
+		(output)
+		(text "value2[tamanhoatributo-1..0]" (rect 0 0 135 10)(font "Arial" ))
+		(text "value2[tamanhoatributo-1..0]" (rect 169 59 304 69)(font "Arial" ))
+		(line (pt 304 64)(pt 288 64)(line_width 3))
+	)
+	(port
+		(pt 304 80)
+		(output)
+		(text "value3[tamanhoatributo-1..0]" (rect 0 0 135 10)(font "Arial" ))
+		(text "value3[tamanhoatributo-1..0]" (rect 169 75 304 85)(font "Arial" ))
+		(line (pt 304 80)(pt 288 80)(line_width 3))
+	)
+	(port
+		(pt 304 96)
+		(output)
+		(text "value4[tamanhoatributo-1..0]" (rect 0 0 135 10)(font "Arial" ))
+		(text "value4[tamanhoatributo-1..0]" (rect 169 91 304 101)(font "Arial" ))
+		(line (pt 304 96)(pt 288 96)(line_width 3))
+	)
+	(port
+		(pt 304 112)
+		(output)
+		(text "value5[tamanhoatributo-1..0]" (rect 0 0 135 10)(font "Arial" ))
+		(text "value5[tamanhoatributo-1..0]" (rect 169 107 304 117)(font "Arial" ))
+		(line (pt 304 112)(pt 288 112)(line_width 3))
+	)
+	(port
+		(pt 304 128)
+		(output)
+		(text "value6[tamanhoatributo-1..0]" (rect 0 0 135 10)(font "Arial" ))
+		(text "value6[tamanhoatributo-1..0]" (rect 169 123 304 133)(font "Arial" ))
+		(line (pt 304 128)(pt 288 128)(line_width 3))
+	)
+	(port
+		(pt 304 144)
+		(output)
+		(text "value7[tamanhoatributo-1..0]" (rect 0 0 135 10)(font "Arial" ))
+		(text "value7[tamanhoatributo-1..0]" (rect 169 139 304 149)(font "Arial" ))
+		(line (pt 304 144)(pt 288 144)(line_width 3))
+	)
+	(parameter
+		"Palavra"
+		"64"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"TamanhoAtributo"
+		"8"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"MaxCentroidsBits"
+		"10"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 288 160))
+	)
+	(annotation_block (parameter)(rect 1096 -8 1312 24))
+)
+(symbol
+	(rect 1912 -104 2320 72)
+	(text "BufferFrequenceData" (rect 5 0 107 10)(font "Arial" ))
+	(text "inst2" (rect 8 160 31 170)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 10)(font "Arial" ))
+		(text "clk" (rect 21 27 35 37)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "en_CountFreqData" (rect 0 0 92 10)(font "Arial" ))
+		(text "en_CountFreqData" (rect 21 43 113 53)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "en_FindMaxValue" (rect 0 0 87 10)(font "Arial" ))
+		(text "en_FindMaxValue" (rect 21 59 108 69)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "valueAtr[tamanhoatributo-1..0]" (rect 0 0 142 10)(font "Arial" ))
+		(text "valueAtr[tamanhoatributo-1..0]" (rect 21 75 163 85)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "valueMap[maxcentroidsbits-1..0]" (rect 0 0 153 10)(font "Arial" ))
+		(text "valueMap[maxcentroidsbits-1..0]" (rect 21 91 174 101)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "count_Centroid[maxcentroidsbits-1..0]" (rect 0 0 179 10)(font "Arial" ))
+		(text "count_Centroid[maxcentroidsbits-1..0]" (rect 21 107 200 117)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "clearFreqVector" (rect 0 0 76 10)(font "Arial" ))
+		(text "clearFreqVector" (rect 21 123 97 133)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128))
+	)
+	(port
+		(pt 408 32)
+		(output)
+		(text "end_CalcFreq" (rect 0 0 68 10)(font "Arial" ))
+		(text "end_CalcFreq" (rect 330 27 398 37)(font "Arial" ))
+		(line (pt 408 32)(pt 392 32))
+	)
+	(port
+		(pt 408 48)
+		(output)
+		(text "end_CalcMode" (rect 0 0 73 10)(font "Arial" ))
+		(text "end_CalcMode" (rect 326 43 399 53)(font "Arial" ))
+		(line (pt 408 48)(pt 392 48))
+	)
+	(port
+		(pt 408 64)
+		(output)
+		(text "newCentroidValue[tamanhoatributo-1..0]" (rect 0 0 191 10)(font "Arial" ))
+		(text "newCentroidValue[tamanhoatributo-1..0]" (rect 226 59 417 69)(font "Arial" ))
+		(line (pt 408 64)(pt 392 64)(line_width 3))
+	)
+	(parameter
+		"TamanhoAtributo"
+		"8"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"MaxPontosBits"
+		"15"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"MaxCentroidsBits"
+		"10"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"ValAtributo"
+		"256"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"MaxSomaPontos"
+		"12"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 392 160))
+	)
+	(annotation_block (parameter)(rect 2048 -176 2264 -104))
+)
+(symbol
+	(rect 1912 120 2320 296)
+	(text "BufferFrequenceData" (rect 5 0 107 10)(font "Arial" ))
+	(text "inst3" (rect 8 160 31 170)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 10)(font "Arial" ))
+		(text "clk" (rect 21 27 35 37)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "en_CountFreqData" (rect 0 0 92 10)(font "Arial" ))
+		(text "en_CountFreqData" (rect 21 43 113 53)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "en_FindMaxValue" (rect 0 0 87 10)(font "Arial" ))
+		(text "en_FindMaxValue" (rect 21 59 108 69)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "valueAtr[tamanhoatributo-1..0]" (rect 0 0 142 10)(font "Arial" ))
+		(text "valueAtr[tamanhoatributo-1..0]" (rect 21 75 163 85)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "valueMap[maxcentroidsbits-1..0]" (rect 0 0 153 10)(font "Arial" ))
+		(text "valueMap[maxcentroidsbits-1..0]" (rect 21 91 174 101)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "count_Centroid[maxcentroidsbits-1..0]" (rect 0 0 179 10)(font "Arial" ))
+		(text "count_Centroid[maxcentroidsbits-1..0]" (rect 21 107 200 117)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "clearFreqVector" (rect 0 0 76 10)(font "Arial" ))
+		(text "clearFreqVector" (rect 21 123 97 133)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128))
+	)
+	(port
+		(pt 408 32)
+		(output)
+		(text "end_CalcFreq" (rect 0 0 68 10)(font "Arial" ))
+		(text "end_CalcFreq" (rect 330 27 398 37)(font "Arial" ))
+		(line (pt 408 32)(pt 392 32))
+	)
+	(port
+		(pt 408 48)
+		(output)
+		(text "end_CalcMode" (rect 0 0 73 10)(font "Arial" ))
+		(text "end_CalcMode" (rect 326 43 399 53)(font "Arial" ))
+		(line (pt 408 48)(pt 392 48))
+	)
+	(port
+		(pt 408 64)
+		(output)
+		(text "newCentroidValue[tamanhoatributo-1..0]" (rect 0 0 191 10)(font "Arial" ))
+		(text "newCentroidValue[tamanhoatributo-1..0]" (rect 226 59 417 69)(font "Arial" ))
+		(line (pt 408 64)(pt 392 64)(line_width 3))
+	)
+	(parameter
+		"TamanhoAtributo"
+		"8"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"MaxPontosBits"
+		"15"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"MaxCentroidsBits"
+		"10"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"ValAtributo"
+		"256"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"MaxSomaPontos"
+		"12"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 392 160))
+	)
+	(annotation_block (parameter)(rect 2048 48 2264 120))
+)
+(symbol
+	(rect 1912 344 2320 520)
+	(text "BufferFrequenceData" (rect 5 0 107 10)(font "Arial" ))
+	(text "inst4" (rect 8 160 31 170)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 10)(font "Arial" ))
+		(text "clk" (rect 21 27 35 37)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "en_CountFreqData" (rect 0 0 92 10)(font "Arial" ))
+		(text "en_CountFreqData" (rect 21 43 113 53)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "en_FindMaxValue" (rect 0 0 87 10)(font "Arial" ))
+		(text "en_FindMaxValue" (rect 21 59 108 69)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "valueAtr[tamanhoatributo-1..0]" (rect 0 0 142 10)(font "Arial" ))
+		(text "valueAtr[tamanhoatributo-1..0]" (rect 21 75 163 85)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "valueMap[maxcentroidsbits-1..0]" (rect 0 0 153 10)(font "Arial" ))
+		(text "valueMap[maxcentroidsbits-1..0]" (rect 21 91 174 101)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "count_Centroid[maxcentroidsbits-1..0]" (rect 0 0 179 10)(font "Arial" ))
+		(text "count_Centroid[maxcentroidsbits-1..0]" (rect 21 107 200 117)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "clearFreqVector" (rect 0 0 76 10)(font "Arial" ))
+		(text "clearFreqVector" (rect 21 123 97 133)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128))
+	)
+	(port
+		(pt 408 32)
+		(output)
+		(text "end_CalcFreq" (rect 0 0 68 10)(font "Arial" ))
+		(text "end_CalcFreq" (rect 330 27 398 37)(font "Arial" ))
+		(line (pt 408 32)(pt 392 32))
+	)
+	(port
+		(pt 408 48)
+		(output)
+		(text "end_CalcMode" (rect 0 0 73 10)(font "Arial" ))
+		(text "end_CalcMode" (rect 326 43 399 53)(font "Arial" ))
+		(line (pt 408 48)(pt 392 48))
+	)
+	(port
+		(pt 408 64)
+		(output)
+		(text "newCentroidValue[tamanhoatributo-1..0]" (rect 0 0 191 10)(font "Arial" ))
+		(text "newCentroidValue[tamanhoatributo-1..0]" (rect 226 59 417 69)(font "Arial" ))
+		(line (pt 408 64)(pt 392 64)(line_width 3))
+	)
+	(parameter
+		"TamanhoAtributo"
+		"8"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"MaxPontosBits"
+		"15"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"MaxCentroidsBits"
+		"10"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"ValAtributo"
+		"256"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"MaxSomaPontos"
+		"12"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 392 160))
+	)
+	(annotation_block (parameter)(rect 2048 272 2264 344))
+)
+(symbol
+	(rect 1912 584 2320 760)
+	(text "BufferFrequenceData" (rect 5 0 107 10)(font "Arial" ))
+	(text "inst5" (rect 8 160 31 170)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 10)(font "Arial" ))
+		(text "clk" (rect 21 27 35 37)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "en_CountFreqData" (rect 0 0 92 10)(font "Arial" ))
+		(text "en_CountFreqData" (rect 21 43 113 53)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "en_FindMaxValue" (rect 0 0 87 10)(font "Arial" ))
+		(text "en_FindMaxValue" (rect 21 59 108 69)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "valueAtr[tamanhoatributo-1..0]" (rect 0 0 142 10)(font "Arial" ))
+		(text "valueAtr[tamanhoatributo-1..0]" (rect 21 75 163 85)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "valueMap[maxcentroidsbits-1..0]" (rect 0 0 153 10)(font "Arial" ))
+		(text "valueMap[maxcentroidsbits-1..0]" (rect 21 91 174 101)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "count_Centroid[maxcentroidsbits-1..0]" (rect 0 0 179 10)(font "Arial" ))
+		(text "count_Centroid[maxcentroidsbits-1..0]" (rect 21 107 200 117)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "clearFreqVector" (rect 0 0 76 10)(font "Arial" ))
+		(text "clearFreqVector" (rect 21 123 97 133)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128))
+	)
+	(port
+		(pt 408 32)
+		(output)
+		(text "end_CalcFreq" (rect 0 0 68 10)(font "Arial" ))
+		(text "end_CalcFreq" (rect 330 27 398 37)(font "Arial" ))
+		(line (pt 408 32)(pt 392 32))
+	)
+	(port
+		(pt 408 48)
+		(output)
+		(text "end_CalcMode" (rect 0 0 73 10)(font "Arial" ))
+		(text "end_CalcMode" (rect 326 43 399 53)(font "Arial" ))
+		(line (pt 408 48)(pt 392 48))
+	)
+	(port
+		(pt 408 64)
+		(output)
+		(text "newCentroidValue[tamanhoatributo-1..0]" (rect 0 0 191 10)(font "Arial" ))
+		(text "newCentroidValue[tamanhoatributo-1..0]" (rect 226 59 417 69)(font "Arial" ))
+		(line (pt 408 64)(pt 392 64)(line_width 3))
+	)
+	(parameter
+		"TamanhoAtributo"
+		"8"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"MaxPontosBits"
+		"15"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"MaxCentroidsBits"
+		"10"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"ValAtributo"
+		"256"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"MaxSomaPontos"
+		"12"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 392 160))
+	)
+	(annotation_block (parameter)(rect 2048 512 2264 584))
+)
+(symbol
+	(rect 1920 824 2328 1000)
+	(text "BufferFrequenceData" (rect 5 0 107 10)(font "Arial" ))
+	(text "inst6" (rect 8 160 31 170)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 10)(font "Arial" ))
+		(text "clk" (rect 21 27 35 37)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "en_CountFreqData" (rect 0 0 92 10)(font "Arial" ))
+		(text "en_CountFreqData" (rect 21 43 113 53)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "en_FindMaxValue" (rect 0 0 87 10)(font "Arial" ))
+		(text "en_FindMaxValue" (rect 21 59 108 69)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "valueAtr[tamanhoatributo-1..0]" (rect 0 0 142 10)(font "Arial" ))
+		(text "valueAtr[tamanhoatributo-1..0]" (rect 21 75 163 85)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "valueMap[maxcentroidsbits-1..0]" (rect 0 0 153 10)(font "Arial" ))
+		(text "valueMap[maxcentroidsbits-1..0]" (rect 21 91 174 101)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "count_Centroid[maxcentroidsbits-1..0]" (rect 0 0 179 10)(font "Arial" ))
+		(text "count_Centroid[maxcentroidsbits-1..0]" (rect 21 107 200 117)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "clearFreqVector" (rect 0 0 76 10)(font "Arial" ))
+		(text "clearFreqVector" (rect 21 123 97 133)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128))
+	)
+	(port
+		(pt 408 32)
+		(output)
+		(text "end_CalcFreq" (rect 0 0 68 10)(font "Arial" ))
+		(text "end_CalcFreq" (rect 330 27 398 37)(font "Arial" ))
+		(line (pt 408 32)(pt 392 32))
+	)
+	(port
+		(pt 408 48)
+		(output)
+		(text "end_CalcMode" (rect 0 0 73 10)(font "Arial" ))
+		(text "end_CalcMode" (rect 326 43 399 53)(font "Arial" ))
+		(line (pt 408 48)(pt 392 48))
+	)
+	(port
+		(pt 408 64)
+		(output)
+		(text "newCentroidValue[tamanhoatributo-1..0]" (rect 0 0 191 10)(font "Arial" ))
+		(text "newCentroidValue[tamanhoatributo-1..0]" (rect 226 59 417 69)(font "Arial" ))
+		(line (pt 408 64)(pt 392 64)(line_width 3))
+	)
+	(parameter
+		"TamanhoAtributo"
+		"8"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"MaxPontosBits"
+		"15"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"MaxCentroidsBits"
+		"10"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"ValAtributo"
+		"256"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"MaxSomaPontos"
+		"12"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 392 160))
+	)
+	(annotation_block (parameter)(rect 2056 752 2272 824))
+)
+(symbol
+	(rect 1936 1048 2344 1224)
+	(text "BufferFrequenceData" (rect 5 0 107 10)(font "Arial" ))
+	(text "inst7" (rect 8 160 31 170)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 10)(font "Arial" ))
+		(text "clk" (rect 21 27 35 37)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "en_CountFreqData" (rect 0 0 92 10)(font "Arial" ))
+		(text "en_CountFreqData" (rect 21 43 113 53)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "en_FindMaxValue" (rect 0 0 87 10)(font "Arial" ))
+		(text "en_FindMaxValue" (rect 21 59 108 69)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "valueAtr[tamanhoatributo-1..0]" (rect 0 0 142 10)(font "Arial" ))
+		(text "valueAtr[tamanhoatributo-1..0]" (rect 21 75 163 85)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "valueMap[maxcentroidsbits-1..0]" (rect 0 0 153 10)(font "Arial" ))
+		(text "valueMap[maxcentroidsbits-1..0]" (rect 21 91 174 101)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "count_Centroid[maxcentroidsbits-1..0]" (rect 0 0 179 10)(font "Arial" ))
+		(text "count_Centroid[maxcentroidsbits-1..0]" (rect 21 107 200 117)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "clearFreqVector" (rect 0 0 76 10)(font "Arial" ))
+		(text "clearFreqVector" (rect 21 123 97 133)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128))
+	)
+	(port
+		(pt 408 32)
+		(output)
+		(text "end_CalcFreq" (rect 0 0 68 10)(font "Arial" ))
+		(text "end_CalcFreq" (rect 330 27 398 37)(font "Arial" ))
+		(line (pt 408 32)(pt 392 32))
+	)
+	(port
+		(pt 408 48)
+		(output)
+		(text "end_CalcMode" (rect 0 0 73 10)(font "Arial" ))
+		(text "end_CalcMode" (rect 326 43 399 53)(font "Arial" ))
+		(line (pt 408 48)(pt 392 48))
+	)
+	(port
+		(pt 408 64)
+		(output)
+		(text "newCentroidValue[tamanhoatributo-1..0]" (rect 0 0 191 10)(font "Arial" ))
+		(text "newCentroidValue[tamanhoatributo-1..0]" (rect 226 59 417 69)(font "Arial" ))
+		(line (pt 408 64)(pt 392 64)(line_width 3))
+	)
+	(parameter
+		"TamanhoAtributo"
+		"8"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"MaxPontosBits"
+		"15"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"MaxCentroidsBits"
+		"10"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"ValAtributo"
+		"256"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"MaxSomaPontos"
+		"12"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 392 160))
+	)
+	(annotation_block (parameter)(rect 2072 976 2288 1048))
+)
+(symbol
+	(rect 1920 1280 2328 1456)
+	(text "BufferFrequenceData" (rect 5 0 107 10)(font "Arial" ))
+	(text "inst8" (rect 8 160 31 170)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 10)(font "Arial" ))
+		(text "clk" (rect 21 27 35 37)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "en_CountFreqData" (rect 0 0 92 10)(font "Arial" ))
+		(text "en_CountFreqData" (rect 21 43 113 53)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "en_FindMaxValue" (rect 0 0 87 10)(font "Arial" ))
+		(text "en_FindMaxValue" (rect 21 59 108 69)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "valueAtr[tamanhoatributo-1..0]" (rect 0 0 142 10)(font "Arial" ))
+		(text "valueAtr[tamanhoatributo-1..0]" (rect 21 75 163 85)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "valueMap[maxcentroidsbits-1..0]" (rect 0 0 153 10)(font "Arial" ))
+		(text "valueMap[maxcentroidsbits-1..0]" (rect 21 91 174 101)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "count_Centroid[maxcentroidsbits-1..0]" (rect 0 0 179 10)(font "Arial" ))
+		(text "count_Centroid[maxcentroidsbits-1..0]" (rect 21 107 200 117)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "clearFreqVector" (rect 0 0 76 10)(font "Arial" ))
+		(text "clearFreqVector" (rect 21 123 97 133)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128))
+	)
+	(port
+		(pt 408 32)
+		(output)
+		(text "end_CalcFreq" (rect 0 0 68 10)(font "Arial" ))
+		(text "end_CalcFreq" (rect 330 27 398 37)(font "Arial" ))
+		(line (pt 408 32)(pt 392 32))
+	)
+	(port
+		(pt 408 48)
+		(output)
+		(text "end_CalcMode" (rect 0 0 73 10)(font "Arial" ))
+		(text "end_CalcMode" (rect 326 43 399 53)(font "Arial" ))
+		(line (pt 408 48)(pt 392 48))
+	)
+	(port
+		(pt 408 64)
+		(output)
+		(text "newCentroidValue[tamanhoatributo-1..0]" (rect 0 0 191 10)(font "Arial" ))
+		(text "newCentroidValue[tamanhoatributo-1..0]" (rect 226 59 417 69)(font "Arial" ))
+		(line (pt 408 64)(pt 392 64)(line_width 3))
+	)
+	(parameter
+		"TamanhoAtributo"
+		"8"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"MaxPontosBits"
+		"15"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"MaxCentroidsBits"
+		"10"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"ValAtributo"
+		"256"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"MaxSomaPontos"
+		"12"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 392 160))
+	)
+	(annotation_block (parameter)(rect 2056 1208 2272 1280))
+)
+(symbol
+	(rect 1912 1504 2320 1680)
+	(text "BufferFrequenceData" (rect 5 0 107 10)(font "Arial" ))
+	(text "inst9" (rect 8 160 31 170)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 10)(font "Arial" ))
+		(text "clk" (rect 21 27 35 37)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "en_CountFreqData" (rect 0 0 92 10)(font "Arial" ))
+		(text "en_CountFreqData" (rect 21 43 113 53)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "en_FindMaxValue" (rect 0 0 87 10)(font "Arial" ))
+		(text "en_FindMaxValue" (rect 21 59 108 69)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "valueAtr[tamanhoatributo-1..0]" (rect 0 0 142 10)(font "Arial" ))
+		(text "valueAtr[tamanhoatributo-1..0]" (rect 21 75 163 85)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "valueMap[maxcentroidsbits-1..0]" (rect 0 0 153 10)(font "Arial" ))
+		(text "valueMap[maxcentroidsbits-1..0]" (rect 21 91 174 101)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "count_Centroid[maxcentroidsbits-1..0]" (rect 0 0 179 10)(font "Arial" ))
+		(text "count_Centroid[maxcentroidsbits-1..0]" (rect 21 107 200 117)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "clearFreqVector" (rect 0 0 76 10)(font "Arial" ))
+		(text "clearFreqVector" (rect 21 123 97 133)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128))
+	)
+	(port
+		(pt 408 32)
+		(output)
+		(text "end_CalcFreq" (rect 0 0 68 10)(font "Arial" ))
+		(text "end_CalcFreq" (rect 330 27 398 37)(font "Arial" ))
+		(line (pt 408 32)(pt 392 32))
+	)
+	(port
+		(pt 408 48)
+		(output)
+		(text "end_CalcMode" (rect 0 0 73 10)(font "Arial" ))
+		(text "end_CalcMode" (rect 326 43 399 53)(font "Arial" ))
+		(line (pt 408 48)(pt 392 48))
+	)
+	(port
+		(pt 408 64)
+		(output)
+		(text "newCentroidValue[tamanhoatributo-1..0]" (rect 0 0 191 10)(font "Arial" ))
+		(text "newCentroidValue[tamanhoatributo-1..0]" (rect 226 59 417 69)(font "Arial" ))
+		(line (pt 408 64)(pt 392 64)(line_width 3))
+	)
+	(parameter
+		"TamanhoAtributo"
+		"8"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"MaxPontosBits"
+		"15"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"MaxCentroidsBits"
+		"10"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"ValAtributo"
+		"256"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"MaxSomaPontos"
+		"12"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 392 160))
+	)
+	(annotation_block (parameter)(rect 2048 1432 2264 1504))
+)
+(symbol
+	(rect 3088 40 3456 216)
+	(text "BufferOutControl" (rect 5 0 86 10)(font "Arial" ))
+	(text "inst11" (rect 8 160 37 170)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "value_Buffer0[tamanhoatributo-1..0]" (rect 0 0 169 10)(font "Arial" ))
+		(text "value_Buffer0[tamanhoatributo-1..0]" (rect 21 27 190 37)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "value_Buffer1[tamanhoatributo-1..0]" (rect 0 0 169 10)(font "Arial" ))
+		(text "value_Buffer1[tamanhoatributo-1..0]" (rect 21 43 190 53)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "value_Buffer2[tamanhoatributo-1..0]" (rect 0 0 169 10)(font "Arial" ))
+		(text "value_Buffer2[tamanhoatributo-1..0]" (rect 21 59 190 69)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "value_Buffer3[tamanhoatributo-1..0]" (rect 0 0 169 10)(font "Arial" ))
+		(text "value_Buffer3[tamanhoatributo-1..0]" (rect 21 75 190 85)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "value_Buffer4[tamanhoatributo-1..0]" (rect 0 0 169 10)(font "Arial" ))
+		(text "value_Buffer4[tamanhoatributo-1..0]" (rect 21 91 190 101)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "value_Buffer5[tamanhoatributo-1..0]" (rect 0 0 169 10)(font "Arial" ))
+		(text "value_Buffer5[tamanhoatributo-1..0]" (rect 21 107 190 117)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "value_Buffer6[tamanhoatributo-1..0]" (rect 0 0 169 10)(font "Arial" ))
+		(text "value_Buffer6[tamanhoatributo-1..0]" (rect 21 123 190 133)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 3))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "value_Buffer7[tamanhoatributo-1..0]" (rect 0 0 169 10)(font "Arial" ))
+		(text "value_Buffer7[tamanhoatributo-1..0]" (rect 21 139 190 149)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 3))
+	)
+	(port
+		(pt 368 32)
+		(output)
+		(text "newCentroidValue[palavra-1..0]" (rect 0 0 148 10)(font "Arial" ))
+		(text "newCentroidValue[palavra-1..0]" (rect 222 27 370 37)(font "Arial" ))
+		(line (pt 368 32)(pt 352 32)(line_width 3))
+	)
+	(parameter
+		"Palavra"
+		"64"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"TamanhoAtributo"
+		"8"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"MaxCentroidsBits"
+		"10"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 352 160))
+	)
+	(annotation_block (parameter)(rect 3216 -16 3432 40))
+)
+(symbol
+	(rect 3048 1128 3112 1272)
+	(text "AND8" (rect 1 0 29 9)(font "Arial" (font_size 6)))
+	(text "inst10" (rect 3 133 34 145)(font "Intel Clear" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN1" (rect 2 7 24 18)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 2 7 24 18)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 18 16))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "IN3" (rect 2 39 23 50)(font "Courier New" (bold))(invisible))
+		(text "IN3" (rect 2 39 23 50)(font "Courier New" (bold))(invisible))
+		(line (pt 0 48)(pt 18 48))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN2" (rect 2 23 23 34)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 2 23 23 34)(font "Courier New" (bold))(invisible))
+		(line (pt 0 32)(pt 18 32))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "IN4" (rect 2 55 24 66)(font "Courier New" (bold))(invisible))
+		(text "IN4" (rect 2 55 24 66)(font "Courier New" (bold))(invisible))
+		(line (pt 0 64)(pt 18 64))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "IN7" (rect 2 103 23 114)(font "Courier New" (bold))(invisible))
+		(text "IN7" (rect 2 103 23 114)(font "Courier New" (bold))(invisible))
+		(line (pt 0 112)(pt 18 112))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "IN6" (rect 2 87 23 98)(font "Courier New" (bold))(invisible))
+		(text "IN6" (rect 2 87 23 98)(font "Courier New" (bold))(invisible))
+		(line (pt 0 96)(pt 18 96))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "IN8" (rect 2 119 23 130)(font "Courier New" (bold))(invisible))
+		(text "IN8" (rect 2 119 23 130)(font "Courier New" (bold))(invisible))
+		(line (pt 0 128)(pt 18 128))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "IN5" (rect 2 71 23 82)(font "Courier New" (bold))(invisible))
+		(text "IN5" (rect 2 71 23 82)(font "Courier New" (bold))(invisible))
+		(line (pt 0 80)(pt 18 80))
+	)
+	(port
+		(pt 64 72)
+		(output)
+		(text "OUT" (rect 48 63 70 74)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 63 70 74)(font "Courier New" (bold))(invisible))
+		(line (pt 46 72)(pt 64 72))
+	)
+	(drawing
+		(line (pt 18 131)(pt 18 13))
+		(line (pt 18 59)(pt 33 59))
+		(line (pt 18 86)(pt 33 86))
+		(arc (pt 33 85)(pt 33 59)(rect 20 59 47 86))
+	)
+)
+(symbol
+	(rect 3048 1320 3112 1464)
+	(text "AND8" (rect 1 0 29 9)(font "Arial" (font_size 6)))
+	(text "inst12" (rect 3 133 34 145)(font "Intel Clear" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN1" (rect 2 7 24 18)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 2 7 24 18)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 18 16))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "IN3" (rect 2 39 23 50)(font "Courier New" (bold))(invisible))
+		(text "IN3" (rect 2 39 23 50)(font "Courier New" (bold))(invisible))
+		(line (pt 0 48)(pt 18 48))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN2" (rect 2 23 23 34)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 2 23 23 34)(font "Courier New" (bold))(invisible))
+		(line (pt 0 32)(pt 18 32))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "IN4" (rect 2 55 24 66)(font "Courier New" (bold))(invisible))
+		(text "IN4" (rect 2 55 24 66)(font "Courier New" (bold))(invisible))
+		(line (pt 0 64)(pt 18 64))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "IN7" (rect 2 103 23 114)(font "Courier New" (bold))(invisible))
+		(text "IN7" (rect 2 103 23 114)(font "Courier New" (bold))(invisible))
+		(line (pt 0 112)(pt 18 112))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "IN6" (rect 2 87 23 98)(font "Courier New" (bold))(invisible))
+		(text "IN6" (rect 2 87 23 98)(font "Courier New" (bold))(invisible))
+		(line (pt 0 96)(pt 18 96))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "IN8" (rect 2 119 23 130)(font "Courier New" (bold))(invisible))
+		(text "IN8" (rect 2 119 23 130)(font "Courier New" (bold))(invisible))
+		(line (pt 0 128)(pt 18 128))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "IN5" (rect 2 71 23 82)(font "Courier New" (bold))(invisible))
+		(text "IN5" (rect 2 71 23 82)(font "Courier New" (bold))(invisible))
+		(line (pt 0 80)(pt 18 80))
+	)
+	(port
+		(pt 64 72)
+		(output)
+		(text "OUT" (rect 48 63 70 74)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 63 70 74)(font "Courier New" (bold))(invisible))
+		(line (pt 46 72)(pt 64 72))
+	)
+	(drawing
+		(line (pt 18 131)(pt 18 13))
+		(line (pt 18 59)(pt 33 59))
+		(line (pt 18 86)(pt 33 86))
+		(arc (pt 33 85)(pt 33 59)(rect 20 59 47 86))
+	)
+)
+(connector
+	(pt 80 216)
+	(pt 200 216)
+)
+(connector
+	(pt 80 232)
+	(pt 200 232)
+)
+(connector
+	(pt 80 248)
+	(pt 200 248)
+	(bus)
+)
+(connector
+	(pt 80 296)
+	(pt 200 296)
+	(bus)
+)
+(connector
+	(pt 80 280)
+	(pt 200 280)
+	(bus)
+)
+(connector
+	(pt 80 264)
+	(pt 200 264)
+	(bus)
+)
+(connector
+	(pt 664 128)
+	(pt 176 128)
+	(bus)
+)
+(connector
+	(pt 176 128)
+	(pt 176 312)
+	(bus)
+)
+(connector
+	(pt 200 312)
+	(pt 176 312)
+	(bus)
+)
+(connector
+	(pt 608 264)
+	(pt 680 264)
+	(bus)
+)
+(connector
+	(pt 680 112)
+	(pt 680 264)
+	(bus)
+)
+(connector
+	(pt 152 112)
+	(pt 680 112)
+	(bus)
+)
+(connector
+	(pt 152 112)
+	(pt 152 328)
+	(bus)
+)
+(connector
+	(pt 152 328)
+	(pt 200 328)
+	(bus)
+)
+(connector
+	(pt 608 280)
+	(pt 728 280)
+)
+(connector
+	(pt 608 296)
+	(pt 728 296)
+)
+(connector
+	(pt 200 344)
+	(pt 152 344)
+)
+(connector
+	(pt 720 232)
+	(pt 608 232)
+	(bus)
+)
+(connector
+	(pt 608 216)
+	(pt 720 216)
+	(bus)
+)
+(connector
+	(pt 608 200)
+	(pt 720 200)
+	(bus)
+)
+(connector
+	(pt 640 424)
+	(pt 672 424)
+	(bus)
+)
+(connector
+	(pt 608 312)
+	(pt 968 312)
+)
+(connector
+	(pt 968 208)
+	(pt 968 312)
+)
+(connector
+	(pt 608 328)
+	(pt 984 328)
+)
+(connector
+	(pt 984 224)
+	(pt 984 328)
+)
+(connector
+	(pt 200 360)
+	(pt 184 360)
+)
+(connector
+	(pt 1008 56)
+	(pt 1072 56)
+	(bus)
+)
+(connector
+	(pt 1512 56)
+	(pt 1512 -24)
+	(bus)
+)
+(connector
+	(pt 1512 -24)
+	(pt 1912 -24)
+	(bus)
+)
+(connector
+	(pt 32 152)
+	(pt 96 152)
+	(bus)
+)
+(connector
+	(pt 1776 224)
+	(pt 984 224)
+)
+(connector
+	(pt 1776 -40)
+	(pt 1912 -40)
+)
+(connector
+	(pt 1912 8)
+	(pt 1792 8)
+	(bus)
+)
+(connector
+	(pt 608 248)
+	(pt 664 248)
+	(bus)
+)
+(connector
+	(pt 664 248)
+	(pt 1792 248)
+	(bus)
+)
+(connector
+	(pt 128 -72)
+	(pt 128 200)
+)
+(connector
+	(pt 80 200)
+	(pt 128 200)
+)
+(connector
+	(pt 128 200)
+	(pt 200 200)
+)
+(connector
+	(text "valueMap[9..0]" (rect 1810 -16 1881 -4)(font "Intel Clear" ))
+	(pt 1912 -8)
+	(pt 1880 -8)
+	(bus)
+)
+(connector
+	(text "valueMap[9..0]" (rect 1824 432 1895 444)(font "Intel Clear" ))
+	(pt 1912 440)
+	(pt 1888 440)
+	(bus)
+)
+(connector
+	(text "valueMap[9..0]" (rect 1816 208 1887 220)(font "Intel Clear" ))
+	(pt 1880 216)
+	(pt 1912 216)
+	(bus)
+)
+(connector
+	(text "valueMap[9..0]" (rect 1816 672 1887 684)(font "Intel Clear" ))
+	(pt 1912 680)
+	(pt 1888 680)
+	(bus)
+)
+(connector
+	(text "valueMap[9..0]" (rect 1824 912 1895 924)(font "Intel Clear" ))
+	(pt 1920 920)
+	(pt 1888 920)
+	(bus)
+)
+(connector
+	(text "valueMap[9..0]" (rect 1832 1136 1903 1148)(font "Intel Clear" ))
+	(pt 1936 1144)
+	(pt 1904 1144)
+	(bus)
+)
+(connector
+	(text "valueMap[9..0]" (rect 1824 1368 1895 1380)(font "Intel Clear" ))
+	(pt 1920 1376)
+	(pt 1896 1376)
+	(bus)
+)
+(connector
+	(text "valueMap[9..0]" (rect 1816 1592 1887 1604)(font "Intel Clear" ))
+	(pt 1912 1600)
+	(pt 1880 1600)
+	(bus)
+)
+(connector
+	(pt 1912 152)
+	(pt 1736 152)
+)
+(connector
+	(pt 1912 -72)
+	(pt 1736 -72)
+)
+(connector
+	(pt 1736 -72)
+	(pt 128 -72)
+)
+(connector
+	(pt 1912 376)
+	(pt 1736 376)
+)
+(connector
+	(pt 1736 -72)
+	(pt 1736 152)
+)
+(connector
+	(pt 1912 616)
+	(pt 1736 616)
+)
+(connector
+	(pt 1736 152)
+	(pt 1736 376)
+)
+(connector
+	(pt 1920 856)
+	(pt 1736 856)
+)
+(connector
+	(pt 1736 376)
+	(pt 1736 616)
+)
+(connector
+	(pt 1936 1080)
+	(pt 1736 1080)
+)
+(connector
+	(pt 1736 616)
+	(pt 1736 856)
+)
+(connector
+	(pt 1920 1312)
+	(pt 1736 1312)
+)
+(connector
+	(pt 1736 856)
+	(pt 1736 1080)
+)
+(connector
+	(pt 1912 1536)
+	(pt 1736 1536)
+)
+(connector
+	(pt 1736 1080)
+	(pt 1736 1312)
+)
+(connector
+	(pt 1736 1312)
+	(pt 1736 1536)
+)
+(connector
+	(pt 1912 232)
+	(pt 1792 232)
+	(bus)
+)
+(connector
+	(pt 1792 232)
+	(pt 1792 8)
+	(bus)
+)
+(connector
+	(pt 1912 184)
+	(pt 1776 184)
+)
+(connector
+	(pt 1776 -40)
+	(pt 1776 184)
+)
+(connector
+	(pt 1720 200)
+	(pt 1720 72)
+	(bus)
+)
+(connector
+	(pt 1912 200)
+	(pt 1720 200)
+	(bus)
+)
+(connector
+	(pt 1912 408)
+	(pt 1776 408)
+)
+(connector
+	(pt 1776 184)
+	(pt 1776 224)
+)
+(connector
+	(pt 1704 424)
+	(pt 1704 88)
+	(bus)
+)
+(connector
+	(pt 1704 424)
+	(pt 1912 424)
+	(bus)
+)
+(connector
+	(pt 1912 456)
+	(pt 1792 456)
+	(bus)
+)
+(connector
+	(pt 1792 232)
+	(pt 1792 248)
+	(bus)
+)
+(connector
+	(pt 1688 664)
+	(pt 1688 104)
+	(bus)
+)
+(connector
+	(pt 1688 664)
+	(pt 1912 664)
+	(bus)
+)
+(connector
+	(pt 1912 648)
+	(pt 1776 648)
+)
+(connector
+	(pt 1776 224)
+	(pt 1776 408)
+)
+(connector
+	(pt 1912 -56)
+	(pt 1752 -56)
+)
+(connector
+	(pt 1752 168)
+	(pt 1912 168)
+)
+(connector
+	(pt 968 208)
+	(pt 1752 208)
+)
+(connector
+	(pt 1752 -56)
+	(pt 1752 168)
+)
+(connector
+	(pt 1752 168)
+	(pt 1752 208)
+)
+(connector
+	(pt 1912 632)
+	(pt 1752 632)
+)
+(connector
+	(pt 1752 392)
+	(pt 1912 392)
+)
+(connector
+	(pt 1752 208)
+	(pt 1752 392)
+)
+(connector
+	(pt 1912 696)
+	(pt 1792 696)
+	(bus)
+)
+(connector
+	(pt 1792 248)
+	(pt 1792 456)
+	(bus)
+)
+(connector
+	(pt 1920 872)
+	(pt 1752 872)
+)
+(connector
+	(pt 1752 392)
+	(pt 1752 632)
+)
+(connector
+	(pt 1920 888)
+	(pt 1776 888)
+)
+(connector
+	(pt 1776 408)
+	(pt 1776 648)
+)
+(connector
+	(pt 1920 936)
+	(pt 1792 936)
+	(bus)
+)
+(connector
+	(pt 1792 456)
+	(pt 1792 696)
+	(bus)
+)
+(connector
+	(pt 1664 904)
+	(pt 1664 120)
+	(bus)
+)
+(connector
+	(pt 1664 904)
+	(pt 1920 904)
+	(bus)
+)
+(connector
+	(pt 1936 1128)
+	(pt 1640 1128)
+	(bus)
+)
+(connector
+	(pt 1616 1360)
+	(pt 1616 152)
+	(bus)
+)
+(connector
+	(pt 1616 1360)
+	(pt 1920 1360)
+	(bus)
+)
+(connector
+	(pt 1584 168)
+	(pt 1584 1584)
+	(bus)
+)
+(connector
+	(pt 1584 1584)
+	(pt 1912 1584)
+	(bus)
+)
+(connector
+	(pt 1936 1096)
+	(pt 1752 1096)
+)
+(connector
+	(pt 1752 632)
+	(pt 1752 872)
+)
+(connector
+	(pt 1936 1112)
+	(pt 1776 1112)
+)
+(connector
+	(pt 1776 648)
+	(pt 1776 888)
+)
+(connector
+	(pt 1936 1160)
+	(pt 1792 1160)
+	(bus)
+)
+(connector
+	(pt 1792 696)
+	(pt 1792 936)
+	(bus)
+)
+(connector
+	(pt 1920 1328)
+	(pt 1752 1328)
+)
+(connector
+	(pt 1752 872)
+	(pt 1752 1096)
+)
+(connector
+	(pt 1920 1344)
+	(pt 1776 1344)
+)
+(connector
+	(pt 1776 888)
+	(pt 1776 1112)
+)
+(connector
+	(pt 1920 1392)
+	(pt 1792 1392)
+	(bus)
+)
+(connector
+	(pt 1792 936)
+	(pt 1792 1160)
+	(bus)
+)
+(connector
+	(pt 1912 1552)
+	(pt 1752 1552)
+)
+(connector
+	(pt 1752 1096)
+	(pt 1752 1328)
+)
+(connector
+	(pt 1752 1328)
+	(pt 1752 1552)
+)
+(connector
+	(pt 1912 1568)
+	(pt 1776 1568)
+)
+(connector
+	(pt 1776 1112)
+	(pt 1776 1344)
+)
+(connector
+	(pt 1776 1344)
+	(pt 1776 1568)
+)
+(connector
+	(pt 1912 1616)
+	(pt 1792 1616)
+	(bus)
+)
+(connector
+	(pt 1792 1160)
+	(pt 1792 1392)
+	(bus)
+)
+(connector
+	(pt 1792 1392)
+	(pt 1792 1616)
+	(bus)
+)
+(connector
+	(pt 184 1704)
+	(pt 184 360)
+)
+(connector
+	(pt 152 1752)
+	(pt 152 344)
+)
+(connector
+	(pt 720 144)
+	(pt 664 144)
+	(bus)
+)
+(connector
+	(pt 664 128)
+	(pt 664 144)
+	(bus)
+)
+(connector
+	(pt 664 144)
+	(pt 664 248)
+	(bus)
+)
+(connector
+	(pt 1416 56)
+	(pt 1416 -168)
+	(bus)
+)
+(connector
+	(pt 1416 -168)
+	(pt 1456 -168)
+	(bus)
+)
+(connector
+	(pt 1376 56)
+	(pt 1416 56)
+	(bus)
+)
+(connector
+	(pt 1416 56)
+	(pt 1512 56)
+	(bus)
+)
+(connector
+	(pt 1456 -144)
+	(pt 1440 -144)
+	(bus)
+)
+(connector
+	(pt 1440 -144)
+	(pt 1440 72)
+	(bus)
+)
+(connector
+	(pt 1376 72)
+	(pt 1440 72)
+	(bus)
+)
+(connector
+	(pt 1440 72)
+	(pt 1720 72)
+	(bus)
+)
+(connector
+	(pt 1464 -120)
+	(pt 1464 88)
+	(bus)
+)
+(connector
+	(pt 1376 88)
+	(pt 1464 88)
+	(bus)
+)
+(connector
+	(pt 1464 88)
+	(pt 1704 88)
+	(bus)
+)
+(connector
+	(pt 1504 -88)
+	(pt 1488 -88)
+	(bus)
+)
+(connector
+	(pt 1488 -88)
+	(pt 1488 104)
+	(bus)
+)
+(connector
+	(pt 1376 104)
+	(pt 1488 104)
+	(bus)
+)
+(connector
+	(pt 1488 104)
+	(pt 1688 104)
+	(bus)
+)
+(connector
+	(pt 1640 1128)
+	(pt 1640 136)
+	(bus)
+)
+(connector
+	(pt 2320 408)
+	(pt 2536 408)
+	(bus)
+)
+(connector
+	(pt 2320 648)
+	(pt 2552 648)
+	(bus)
+)
+(connector
+	(pt 2328 888)
+	(pt 2576 888)
+	(bus)
+)
+(connector
+	(pt 2344 1112)
+	(pt 2600 1112)
+	(bus)
+)
+(connector
+	(pt 2328 1344)
+	(pt 2616 1344)
+	(bus)
+)
+(connector
+	(pt 2320 1568)
+	(pt 2640 1568)
+	(bus)
+)
+(connector
+	(pt 1376 168)
+	(pt 1584 168)
+	(bus)
+)
+(connector
+	(pt 1376 152)
+	(pt 1616 152)
+	(bus)
+)
+(connector
+	(pt 1376 136)
+	(pt 1640 136)
+	(bus)
+)
+(connector
+	(pt 1376 120)
+	(pt 1664 120)
+	(bus)
+)
+(connector
+	(pt 2464 -104)
+	(pt 2456 -104)
+	(bus)
+)
+(connector
+	(pt 2456 -40)
+	(pt 2456 -104)
+	(bus)
+)
+(connector
+	(pt 2320 -40)
+	(pt 2456 -40)
+	(bus)
+)
+(connector
+	(pt 2456 -40)
+	(pt 2520 -40)
+	(bus)
+)
+(connector
+	(pt 2400 24)
+	(pt 2560 24)
+	(bus)
+)
+(connector
+	(pt 2400 24)
+	(pt 2400 184)
+	(bus)
+)
+(connector
+	(pt 2320 184)
+	(pt 2400 184)
+	(bus)
+)
+(connector
+	(pt 2400 184)
+	(pt 2520 184)
+	(bus)
+)
+(connector
+	(pt 640 424)
+	(pt 640 360)
+	(bus)
+)
+(connector
+	(pt 608 360)
+	(pt 640 360)
+	(bus)
+)
+(connector
+	(pt 608 344)
+	(pt 1808 344)
+)
+(connector
+	(pt 1912 24)
+	(pt 1808 24)
+)
+(connector
+	(pt 1808 248)
+	(pt 1912 248)
+)
+(connector
+	(pt 1808 24)
+	(pt 1808 248)
+)
+(connector
+	(pt 1912 472)
+	(pt 1808 472)
+)
+(connector
+	(pt 1808 248)
+	(pt 1808 344)
+)
+(connector
+	(pt 1912 712)
+	(pt 1808 712)
+)
+(connector
+	(pt 1808 344)
+	(pt 1808 472)
+)
+(connector
+	(pt 1920 952)
+	(pt 1808 952)
+)
+(connector
+	(pt 1808 472)
+	(pt 1808 712)
+)
+(connector
+	(pt 1936 1176)
+	(pt 1808 1176)
+)
+(connector
+	(pt 1808 712)
+	(pt 1808 952)
+)
+(connector
+	(pt 1920 1408)
+	(pt 1808 1408)
+)
+(connector
+	(pt 1808 952)
+	(pt 1808 1176)
+)
+(connector
+	(pt 1912 1632)
+	(pt 1808 1632)
+)
+(connector
+	(pt 1808 1176)
+	(pt 1808 1408)
+)
+(connector
+	(pt 1808 1408)
+	(pt 1808 1632)
+)
+(connector
+	(pt 3232 1752)
+	(pt 152 1752)
+)
+(connector
+	(pt 3232 1200)
+	(pt 3112 1200)
+)
+(connector
+	(pt 3192 1704)
+	(pt 184 1704)
+)
+(connector
+	(pt 3192 1392)
+	(pt 3112 1392)
+)
+(connector
+	(pt 3264 1632)
+	(pt 3232 1632)
+)
+(connector
+	(pt 3232 1752)
+	(pt 3232 1632)
+)
+(connector
+	(pt 3232 1632)
+	(pt 3232 1200)
+)
+(connector
+	(pt 3264 1696)
+	(pt 3192 1696)
+)
+(connector
+	(pt 3192 1704)
+	(pt 3192 1696)
+)
+(connector
+	(pt 3192 1696)
+	(pt 3192 1392)
+)
+(connector
+	(pt 2960 1536)
+	(pt 2320 1536)
+)
+(connector
+	(pt 2960 1256)
+	(pt 2960 1536)
+)
+(connector
+	(pt 2960 1256)
+	(pt 3048 1256)
+)
+(connector
+	(pt 3016 1552)
+	(pt 2320 1552)
+)
+(connector
+	(pt 3016 1552)
+	(pt 3016 1448)
+)
+(connector
+	(pt 3016 1448)
+	(pt 3048 1448)
+)
+(connector
+	(pt 2328 1312)
+	(pt 2584 1312)
+)
+(connector
+	(pt 2584 1240)
+	(pt 2584 1312)
+)
+(connector
+	(pt 3048 1240)
+	(pt 2584 1240)
+)
+(connector
+	(pt 2328 1328)
+	(pt 2584 1328)
+)
+(connector
+	(pt 2584 1328)
+	(pt 2584 1432)
+)
+(connector
+	(pt 3048 1432)
+	(pt 2584 1432)
+)
+(connector
+	(pt 2344 1096)
+	(pt 2664 1096)
+)
+(connector
+	(pt 2664 1416)
+	(pt 2664 1096)
+)
+(connector
+	(pt 3048 1416)
+	(pt 2664 1416)
+)
+(connector
+	(pt 2344 1080)
+	(pt 2680 1080)
+)
+(connector
+	(pt 2680 1224)
+	(pt 2680 1080)
+)
+(connector
+	(pt 3048 1224)
+	(pt 2680 1224)
+)
+(connector
+	(pt 2328 872)
+	(pt 2696 872)
+)
+(connector
+	(pt 2696 1400)
+	(pt 2696 872)
+)
+(connector
+	(pt 3048 1400)
+	(pt 2696 1400)
+)
+(connector
+	(pt 2328 856)
+	(pt 2712 856)
+)
+(connector
+	(pt 2712 1208)
+	(pt 2712 856)
+)
+(connector
+	(pt 2712 1208)
+	(pt 3048 1208)
+)
+(connector
+	(pt 2320 632)
+	(pt 2736 632)
+)
+(connector
+	(pt 2736 632)
+	(pt 2736 1384)
+)
+(connector
+	(pt 2736 1384)
+	(pt 3048 1384)
+)
+(connector
+	(pt 2320 616)
+	(pt 2752 616)
+)
+(connector
+	(pt 2752 1192)
+	(pt 2752 616)
+)
+(connector
+	(pt 2752 1192)
+	(pt 3048 1192)
+)
+(connector
+	(pt 2320 392)
+	(pt 2776 392)
+)
+(connector
+	(pt 2776 1368)
+	(pt 2776 392)
+)
+(connector
+	(pt 2776 1368)
+	(pt 3048 1368)
+)
+(connector
+	(pt 2320 376)
+	(pt 2800 376)
+)
+(connector
+	(pt 2800 376)
+	(pt 2800 1176)
+)
+(connector
+	(pt 2800 1176)
+	(pt 3048 1176)
+)
+(connector
+	(pt 2824 1352)
+	(pt 2824 360)
+)
+(connector
+	(pt 2824 1352)
+	(pt 3048 1352)
+)
+(connector
+	(pt 2320 168)
+	(pt 2336 168)
+)
+(connector
+	(pt 2336 360)
+	(pt 2336 168)
+)
+(connector
+	(pt 2824 360)
+	(pt 2336 360)
+)
+(connector
+	(pt 2320 152)
+	(pt 2352 152)
+)
+(connector
+	(pt 2352 344)
+	(pt 2352 152)
+)
+(connector
+	(pt 2840 344)
+	(pt 2352 344)
+)
+(connector
+	(pt 2520 184)
+	(pt 2520 88)
+	(bus)
+)
+(connector
+	(pt 2520 -40)
+	(pt 2520 72)
+	(bus)
+)
+(connector
+	(pt 2536 408)
+	(pt 2536 104)
+	(bus)
+)
+(connector
+	(pt 2552 648)
+	(pt 2552 120)
+	(bus)
+)
+(connector
+	(pt 2576 888)
+	(pt 2576 136)
+	(bus)
+)
+(connector
+	(pt 2600 1112)
+	(pt 2600 152)
+	(bus)
+)
+(connector
+	(pt 2616 1344)
+	(pt 2616 168)
+	(bus)
+)
+(connector
+	(pt 2640 1568)
+	(pt 2640 184)
+	(bus)
+)
+(connector
+	(pt 3528 72)
+	(pt 3456 72)
+	(bus)
+)
+(connector
+	(pt 2520 72)
+	(pt 3088 72)
+	(bus)
+)
+(connector
+	(pt 2520 88)
+	(pt 3088 88)
+	(bus)
+)
+(connector
+	(pt 2536 104)
+	(pt 3088 104)
+	(bus)
+)
+(connector
+	(pt 2552 120)
+	(pt 3088 120)
+	(bus)
+)
+(connector
+	(pt 2576 136)
+	(pt 3088 136)
+	(bus)
+)
+(connector
+	(pt 2600 152)
+	(pt 3088 152)
+	(bus)
+)
+(connector
+	(pt 2616 168)
+	(pt 3088 168)
+	(bus)
+)
+(connector
+	(pt 2640 184)
+	(pt 3088 184)
+	(bus)
+)
+(connector
+	(pt 2840 1160)
+	(pt 2840 344)
+)
+(connector
+	(pt 2840 1160)
+	(pt 3048 1160)
+)
+(connector
+	(pt 2320 -56)
+	(pt 2864 -56)
+)
+(connector
+	(pt 2320 -72)
+	(pt 2888 -72)
+)
+(connector
+	(pt 2888 1144)
+	(pt 2888 -72)
+)
+(connector
+	(pt 2888 1144)
+	(pt 3048 1144)
+)
+(connector
+	(pt 2864 1336)
+	(pt 2864 -56)
+)
+(connector
+	(pt 2864 1336)
+	(pt 3048 1336)
+)
+(junction (pt 664 248))
+(junction (pt 128 200))
+(junction (pt 1736 -72))
+(junction (pt 1736 152))
+(junction (pt 1736 376))
+(junction (pt 1736 616))
+(junction (pt 1736 856))
+(junction (pt 1736 1080))
+(junction (pt 1736 1312))
+(junction (pt 1792 232))
+(junction (pt 1776 184))
+(junction (pt 1776 224))
+(junction (pt 1792 248))
+(junction (pt 1776 408))
+(junction (pt 1752 168))
+(junction (pt 1752 208))
+(junction (pt 1752 392))
+(junction (pt 1792 456))
+(junction (pt 1752 632))
+(junction (pt 1776 648))
+(junction (pt 1792 696))
+(junction (pt 1752 872))
+(junction (pt 1776 888))
+(junction (pt 1792 936))
+(junction (pt 1752 1096))
+(junction (pt 1776 1112))
+(junction (pt 1792 1160))
+(junction (pt 1752 1328))
+(junction (pt 1776 1344))
+(junction (pt 1792 1392))
+(junction (pt 664 144))
+(junction (pt 1416 56))
+(junction (pt 1440 72))
+(junction (pt 1464 88))
+(junction (pt 1488 104))
+(junction (pt 2456 -40))
+(junction (pt 2400 184))
+(junction (pt 1808 248))
+(junction (pt 1808 344))
+(junction (pt 1808 472))
+(junction (pt 1808 712))
+(junction (pt 1808 952))
+(junction (pt 1808 1176))
+(junction (pt 1808 1408))
+(junction (pt 3232 1632))
+(junction (pt 3192 1696))

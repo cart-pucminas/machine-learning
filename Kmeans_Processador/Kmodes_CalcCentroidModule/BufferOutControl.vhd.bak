@@ -1,0 +1,56 @@
+--|| Kmeans Processador 
+--|| Desenvolvedor: Lucas Andrade Maciel
+--|| Grupo: CArT - Computer Architecture and Parallel Processing Team
+--|| Bloco: BufferInControl - Kmodes CalcCentroidModule 
+--|| Descricao: Este bloco determina qual buffer sera acionado.
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+USE ieee.std_logic_unsigned.all ;
+use ieee.numeric_std.all;
+
+Entity BufferOutControl is
+    GENERIC (Palavra          : INTEGER := 64; 
+	          MaxCentroidsBits : INTEGER := 10); 
+				  
+	 PORT (
+	  valueMap		   : in STD_LOGIC_VECTOR(MaxCentroidsBits-1 downto 0);   --Valor do mapeamento do atual do dado
+	  en_Buffer7      : out STD_LOGIC;	                                    --Informa que a atualizacao das frequencias foi finalizada
+	  en_Buffer6      : out STD_LOGIC;	                                    --Informa que a atualizacao das frequencias foi finalizada
+	  en_Buffer5      : out STD_LOGIC;	                                    --Informa que a atualizacao das frequencias foi finalizada
+	  en_Buffer4      : out STD_LOGIC;	                                    --Informa que a atualizacao das frequencias foi finalizada
+	  en_Buffer3      : out STD_LOGIC;	                                    --Informa que a atualizacao das frequencias foi finalizada
+	  en_Buffer2      : out STD_LOGIC;	                                    --Informa que a atualizacao das frequencias foi finalizada
+	  en_Buffer1      : out STD_LOGIC;	                                    --Informa que a atualizacao das frequencias foi finalizada
+	  en_Buffer0      : out STD_LOGIC	                                    --Informa que a atualizacao das frequencias foi finalizada
+    );
+END BufferOutControl;
+
+ARCHITECTURE arch of BufferOutControl is
+
+BEGIN
+   PROCESS(valueMap)
+   BEGIN  
+	   en_Buffer7 <= '0';
+		en_Buffer6 <= '0';
+		en_Buffer5 <= '0';
+		en_Buffer4 <= '0';
+		en_Buffer3 <= '0';
+		en_Buffer2 <= '0';
+		en_Buffer1 <= '0';
+		en_Buffer0 <= '0';
+		
+		case valueMap is
+			when "0000000000" => en_Buffer0 <= '1';
+			when "0000000001" => en_Buffer1 <= '1';
+			when "0000000010" => en_Buffer2 <= '1';
+			when "0000000011" => en_Buffer3 <= '1';
+			when "0000000100" => en_Buffer4 <= '1';
+			when "0000000101" => en_Buffer5 <= '1';
+			when "0000000110" => en_Buffer6 <= '1';
+			when "0000000111" => en_Buffer7 <= '1';
+		end case;	
+   END PROCESS;	
+
+END arch;

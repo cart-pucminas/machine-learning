@@ -1,0 +1,126 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 424 192)
+	(text "BufferFrequenceData" (rect 5 0 92 12)(font "Arial" ))
+	(text "inst" (rect 8 160 20 172)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 10 12)(font "Arial" ))
+		(text "clk" (rect 21 27 31 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "en_CountFreqData" (rect 0 0 76 12)(font "Arial" ))
+		(text "en_CountFreqData" (rect 21 43 97 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "en_FindMaxValue" (rect 0 0 73 12)(font "Arial" ))
+		(text "en_FindMaxValue" (rect 21 59 94 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "valueAtr[tamanhoatributo-1..0]" (rect 0 0 119 12)(font "Arial" ))
+		(text "valueAtr[tamanhoatributo-1..0]" (rect 21 75 140 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "valueMap[maxcentroidsbits-1..0]" (rect 0 0 126 12)(font "Arial" ))
+		(text "valueMap[maxcentroidsbits-1..0]" (rect 21 91 147 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "count_Centroid[maxcentroidsbits-1..0]" (rect 0 0 147 12)(font "Arial" ))
+		(text "count_Centroid[maxcentroidsbits-1..0]" (rect 21 107 168 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "clearFreqVector" (rect 0 0 66 12)(font "Arial" ))
+		(text "clearFreqVector" (rect 21 123 87 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 1))
+	)
+	(port
+		(pt 408 32)
+		(output)
+		(text "end_CalcFreq" (rect 0 0 56 12)(font "Arial" ))
+		(text "end_CalcFreq" (rect 331 27 387 39)(font "Arial" ))
+		(line (pt 408 32)(pt 392 32)(line_width 1))
+	)
+	(port
+		(pt 408 48)
+		(output)
+		(text "end_CalcMode" (rect 0 0 60 12)(font "Arial" ))
+		(text "end_CalcMode" (rect 327 43 387 55)(font "Arial" ))
+		(line (pt 408 48)(pt 392 48)(line_width 1))
+	)
+	(port
+		(pt 408 64)
+		(output)
+		(text "newCentroidValue[tamanhoatributo-1..0]" (rect 0 0 155 12)(font "Arial" ))
+		(text "newCentroidValue[tamanhoatributo-1..0]" (rect 232 59 387 71)(font "Arial" ))
+		(line (pt 408 64)(pt 392 64)(line_width 3))
+	)
+	(parameter
+		"TamanhoAtributo"
+		"8"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"MaxPontosBits"
+		"15"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"MaxCentroidsBits"
+		"10"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"ValAtributo"
+		"256"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"MaxSomaPontos"
+		"12"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 392 160)(line_width 1))
+	)
+	(annotation_block (parameter)(rect 424 -64 524 16))
+)
