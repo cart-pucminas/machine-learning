@@ -1,0 +1,48 @@
+--|| Kmeans Processador 
+--|| Desenvolvedor: Lucas Andrade Maciel
+--|| Grupo: CArT - Computer Architecture and Parallel Processing Team
+--|| Bloco: Verifica Min Distancia
+--|| Descricao: Este bloco armazena a menor distancia entre todos os pontos e um centroid no reg4 e o numero do centroid correspondente no reg7.
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use ieee.std_logic_unsigned.all ;
+use ieee.numeric_std.all;
+
+Entity CountEqualZero is
+     GENERIC ( TamanhoSoma      : INTEGER := 128;
+	            PalavraXY        : INTEGER := 32;
+			      MaxCentroidsBits : INTEGER := 10);  
+				  
+	 PORT (
+     clk            : in STD_LOGIC;                                       --Sinal de clock
+	  en_MinDistance : in STD_LOGIC;	  												  --Habilita a execucao deste bloco
+	  count_Centroid : in STD_LOGIC_VECTOR(MaxCentroidsBits-1 downto 0);   --Contador que informa qual sera o centroid verificado
+	  result 		  : out STD_LOGIC  	     --Saida atualizada
+	 );
+END CountEqualZero;
+
+ARCHITECTURE arch of CountEqualZero is
+
+--Sinais de dados 
+SIGNAL s_result : STD_LOGIC := '0';
+SIGNAL s_countCentroid: STD_LOGIC_VECTOR (MaxCentroidsBits-1 downto 0) := (others => '0');
+
+BEGIN
+
+	PROCESS(clk, count_Centroid, en_MinDistance)
+		 
+	BEGIN
+		if clk'event and clk='1' then
+		   s_countCentroid <= count_Centroid;
+		   s_result <='0';		
+			if (en_MinDistance = '1') and (s_countCentroid=0) then					
+			       s_result <= '1';				   				
+			end if;	
+		end if;	
+		
+	END PROCESS;
+
+result <= s_result;
+
+END arch;

@@ -1,0 +1,974 @@
+ -- Copyright (C) 2016  Intel Corporation. All rights reserved.
+ -- Your use of Intel Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Intel Program License 
+ -- Subscription Agreement, the Intel Quartus Prime License Agreement,
+ -- the Intel MegaCore Function License Agreement, or other 
+ -- applicable license agreement, including, without limitation, 
+ -- that your use is for the sole purpose of programming logic 
+ -- devices manufactured by Intel and sold by Intel or its 
+ -- authorized distributors.  Please refer to the applicable 
+ -- agreement for further details.
+ -- 
+ -- This is a Quartus Prime output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus Prime input file. This file cannot be used
+ -- to make Quartus Prime pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus Prime help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCPGM        : Dedicated power pin for configuration, which MUST be connected to 1.8V, 2.5V or 3.0V depending on the requirements of the configuration device.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.2V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --                  Bank 3:       2.5V
+ --                  Bank 4:       2.5V
+ --                  Bank 5:       2.5V
+ --                  Bank 6:       2.5V
+ --                  Bank 7:       2.5V
+ --                  Bank 8:  2.5V
+ --                  Bank 9:  2.5V
+ -- RREF          : External reference resistor for the quad, MUST be connected to
+ --                 GND via a 2k Ohm resistor.
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --                  It can also be used to report unused dedicated pins. The connection
+ --                  on the board for unused dedicated pins depends on whether this will
+ --                  be used in a future design. One example is device migration. When
+ --                  using device migration, refer to the device pin-tables. If it is a
+ --                  GND pin in the pin table or if it will not be used in a future design
+ --                  for another purpose the it MUST be connected to GND. If it is an unused
+ --                  dedicated pin, then it can be connected to a valid signal on the board
+ --                  (low, high, or toggling) if that signal is required for a different
+ --                  revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --                  This pin should be connected to GND. It may also be connected  to a
+ --                  valid signal  on the board  (low, high, or toggling)  if that signal
+ --                  is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin.   For transceiver I/O banks, connect each pin marked GND*
+ --                  either individually through a 10k Ohm resistor to GND or tie all pins
+ --                  together and connect through a single 10k Ohm resistor to GND.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ -- GXB_GND*      : Unused GXB Receiver or dedicated reference clock pin. This pin
+ --                 must be connected to GXB_GND through a 10k Ohm resistor.
+ -- GXB_NC        : Unused GXB Transmitter or dedicated clock output pin. This pin
+ --                 must not be connected.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+CHIP  "Kmeans_CalcMap"  ASSIGNED TO AN: EP4CGX150DF31I7
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+NC                           : A2        :        :                   :         :           :                
+~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : A3        : input  : 2.5 V             :         : 9         : N              
+RESERVED_INPUT               : A4        :        :                   :         : 8         :                
+RESERVED_INPUT               : A5        :        :                   :         : 8         :                
+RESERVED_INPUT               : A6        :        :                   :         : 8         :                
+RESERVED_INPUT               : A7        :        :                   :         : 8         :                
+RESERVED_INPUT               : A8        :        :                   :         : 8         :                
+RESERVED_INPUT               : A9        :        :                   :         : 8         :                
+RESERVED_INPUT               : A10       :        :                   :         : 8         :                
+RESERVED_INPUT               : A11       :        :                   :         : 8         :                
+RESERVED_INPUT               : A12       :        :                   :         : 8         :                
+RESERVED_INPUT               : A13       :        :                   :         : 8         :                
+RESERVED_INPUT               : A14       :        :                   :         : 8         :                
+GND+                         : A15       :        :                   :         : 7         :                
+distanceCalc[45]             : A16       : output : 2.5 V             :         : 7         : N              
+distanceCalc[25]             : A17       : output : 2.5 V             :         : 7         : N              
+distanceCalc[20]             : A18       : output : 2.5 V             :         : 7         : N              
+distanceCalc[16]             : A19       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT               : A20       :        :                   :         : 7         :                
+RESERVED_INPUT               : A21       :        :                   :         : 7         :                
+RESERVED_INPUT               : A22       :        :                   :         : 7         :                
+RESERVED_INPUT               : A23       :        :                   :         : 7         :                
+RESERVED_INPUT               : A24       :        :                   :         : 7         :                
+RESERVED_INPUT               : A25       :        :                   :         : 7         :                
+RESERVED_INPUT               : A26       :        :                   :         : 7         :                
+RESERVED_INPUT               : A27       :        :                   :         : 7         :                
+RESERVED_INPUT               : A28       :        :                   :         : 7         :                
+RESERVED_INPUT               : A29       :        :                   :         : 7         :                
+GXB_GND*                     : AA1       :        :                   :         : QL0       :                
+GXB_GND*                     : AA2       :        :                   :         : QL0       :                
+GND                          : AA3       : gnd    :                   :         :           :                
+GND                          : AA4       : gnd    :                   :         :           :                
+GND                          : AA5       : gnd    :                   :         :           :                
+VCCL_GXB                     : AA6       : power  :                   : 1.2V    :           :                
+VCCA                         : AA7       : power  :                   : 2.5V    :           :                
+GND                          : AA8       : gnd    :                   :         :           :                
+VCCA                         : AA9       : power  :                   : 2.5V    :           :                
+VCCINT                       : AA10      : power  :                   : 1.2V    :           :                
+GND                          : AA11      : gnd    :                   :         :           :                
+dado[13]                     : AA12      : input  : 2.5 V             :         : 3         : N              
+centroid[21]                 : AA13      : input  : 2.5 V             :         : 3         : N              
+VCCINT                       : AA14      : power  :                   : 1.2V    :           :                
+centroid[18]                 : AA15      : input  : 2.5 V             :         : 3         : N              
+dado[18]                     : AA16      : input  : 2.5 V             :         : 3         : N              
+distanceCalc[46]             : AA17      : output : 2.5 V             :         : 4         : N              
+dado[59]                     : AA18      : input  : 2.5 V             :         : 4         : N              
+GND                          : AA19      : gnd    :                   :         :           :                
+centroid[37]                 : AA20      : input  : 2.5 V             :         : 4         : N              
+dado[40]                     : AA21      : input  : 2.5 V             :         : 4         : N              
+centroid[42]                 : AA22      : input  : 2.5 V             :         : 5         : N              
+VCCIO5                       : AA23      : power  :                   : 2.5V    : 5         :                
+VCCIO5                       : AA24      : power  :                   : 2.5V    : 5         :                
+centroid[41]                 : AA25      : input  : 2.5 V             :         : 5         : N              
+distanceCalc[71]             : AA26      : output : 2.5 V             :         : 5         : N              
+centroid[36]                 : AA27      : input  : 2.5 V             :         : 5         : N              
+distanceCalc[17]             : AA28      : output : 2.5 V             :         : 5         : N              
+distanceCalc[29]             : AA29      : output : 2.5 V             :         : 5         : N              
+distanceCalc[114]            : AA30      : output : 2.5 V             :         : 5         : N              
+GND                          : AB1       : gnd    :                   :         :           :                
+GND                          : AB2       : gnd    :                   :         :           :                
+GXB_NC                       : AB3       :        :                   :         : QL0       :                
+GXB_NC                       : AB4       :        :                   :         : QL0       :                
+GND                          : AB5       : gnd    :                   :         :           :                
+GND                          : AB6       : gnd    :                   :         :           :                
+GND                          : AB7       : gnd    :                   :         :           :                
+VCCINT                       : AB8       : power  :                   : 1.2V    :           :                
+CONF_DONE                    : AB9       :        :                   :         : 3         :                
+GND                          : AB10      : gnd    :                   :         :           :                
+centroid[27]                 : AB11      : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AB12      : power  :                   : 2.5V    : 3         :                
+centroid[22]                 : AB13      : input  : 2.5 V             :         : 3         : N              
+centroid[10]                 : AB14      : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AB15      : power  :                   : 2.5V    : 3         :                
+dado[0]                      : AB16      : input  : 2.5 V             :         : 3         : N              
+distanceCalc[53]             : AB17      : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : AB18      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AB19      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AB20      : power  :                   : 2.5V    : 4         :                
+dado[61]                     : AB21      : input  : 2.5 V             :         : 4         : N              
+dado[37]                     : AB22      : input  : 2.5 V             :         : 4         : N              
+VCCD_PLL                     : AB23      : power  :                   : 1.2V    :           :                
+VCCA                         : AB24      : power  :                   : 2.5V    :           :                
+distanceCalc[64]             : AB25      : output : 2.5 V             :         : 5         : N              
+centroid[49]                 : AB26      : input  : 2.5 V             :         : 5         : N              
+centroid[58]                 : AB27      : input  : 2.5 V             :         : 5         : N              
+centroid[57]                 : AB28      : input  : 2.5 V             :         : 5         : N              
+distanceCalc[97]             : AB29      : output : 2.5 V             :         : 5         : N              
+distanceCalc[69]             : AB30      : output : 2.5 V             :         : 5         : N              
+GXB_GND*                     : AC1       :        :                   :         : QL0       :                
+GXB_GND*                     : AC2       :        :                   :         : QL0       :                
+GND                          : AC3       : gnd    :                   :         :           :                
+GND                          : AC4       : gnd    :                   :         :           :                
+GND                          : AC5       : gnd    :                   :         :           :                
+GND                          : AC6       : gnd    :                   :         :           :                
+MSEL2                        : AC7       :        :                   :         : 3         :                
+MSEL3                        : AC8       :        :                   :         : 3         :                
+VCCIO3                       : AC9       : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AC10      : power  :                   : 2.5V    : 3         :                
+GND                          : AC11      : gnd    :                   :         :           :                
+VCCIO3                       : AC12      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AC13      : power  :                   : 2.5V    : 3         :                
+GND                          : AC14      : gnd    :                   :         :           :                
+VCCIO3                       : AC15      : power  :                   : 2.5V    : 3         :                
+dado[4]                      : AC16      : input  : 2.5 V             :         : 3         : N              
+GND                          : AC17      : gnd    :                   :         :           :                
+VCCIO4                       : AC18      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AC19      : power  :                   : 2.5V    : 4         :                
+GND                          : AC20      : gnd    :                   :         :           :                
+VCCIO4                       : AC21      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AC22      : power  :                   : 2.5V    : 4         :                
+GND                          : AC23      : gnd    :                   :         :           :                
+GND                          : AC24      : gnd    :                   :         :           :                
+centroid[52]                 : AC25      : input  : 2.5 V             :         : 5         : N              
+GND                          : AC26      : gnd    :                   :         :           :                
+distanceCalc[127]            : AC27      : output : 2.5 V             :         : 5         : N              
+distanceCalc[66]             : AC28      : output : 2.5 V             :         : 5         : N              
+GND                          : AC29      : gnd    :                   :         :           :                
+distanceCalc[68]             : AC30      : output : 2.5 V             :         : 5         : N              
+GND                          : AD1       : gnd    :                   :         :           :                
+GND                          : AD2       : gnd    :                   :         :           :                
+VCCA_GXB                     : AD3       : power  :                   : 2.5V    :           :                
+VCCL_GXB                     : AD4       : power  :                   : 1.2V    :           :                
+GND                          : AD5       : gnd    :                   :         :           :                
+RESERVED_INPUT               : AD6       :        :                   :         : 3         :                
+MSEL0                        : AD7       :        :                   :         : 3         :                
+MSEL1                        : AD8       :        :                   :         : 3         :                
+centroid[13]                 : AD9       : input  : 2.5 V             :         : 3         : N              
+dado[14]                     : AD10      : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AD11      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AD12      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AD13      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AD14      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AD15      : power  :                   : 2.5V    : 3         :                
+distanceCalc[8]              : AD16      : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : AD17      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AD18      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AD19      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AD20      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AD21      : power  :                   : 2.5V    : 4         :                
+distanceCalc[96]             : AD22      : output : 2.5 V             :         : 4         : N              
+dado[51]                     : AD23      : input  : 2.5 V             :         : 4         : N              
+en_CalcMap                   : AD24      : input  : 2.5 V             :         : 4         : N              
+centroid[46]                 : AD25      : input  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT               : AD26      :        :                   :         : 5         :                
+centroid[33]                 : AD27      : input  : 2.5 V             :         : 5         : N              
+dado[42]                     : AD28      : input  : 2.5 V             :         : 5         : N              
+distanceCalc[86]             : AD29      : output : 2.5 V             :         : 5         : N              
+distanceCalc[107]            : AD30      : output : 2.5 V             :         : 5         : N              
+RREF                         : AE1       :        :                   :         :           :                
+GND                          : AE2       : gnd    :                   :         :           :                
+dado[26]                     : AE3       : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT               : AE4       :        :                   :         : 3         :                
+RESERVED_INPUT               : AE5       :        :                   :         : 3         :                
+RESERVED_INPUT               : AE6       :        :                   :         : 3         :                
+~ALTERA_NCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : AE7       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT               : AE8       :        :                   :         : 3         :                
+RESERVED_INPUT               : AE9       :        :                   :         : 3         :                
+RESERVED_INPUT               : AE10      :        :                   :         : 3         :                
+centroid[12]                 : AE11      : input  : 2.5 V             :         : 3         : N              
+centroid[17]                 : AE12      : input  : 2.5 V             :         : 3         : N              
+centroid[26]                 : AE13      : input  : 2.5 V             :         : 3         : N              
+dado[2]                      : AE14      : input  : 2.5 V             :         : 3         : N              
+centroid[6]                  : AE15      : input  : 2.5 V             :         : 3         : N              
+distanceCalc[42]             : AE16      : output : 2.5 V             :         : 4         : N              
+distanceCalc[58]             : AE17      : output : 2.5 V             :         : 4         : N              
+distanceCalc[56]             : AE18      : output : 2.5 V             :         : 4         : N              
+centroid[56]                 : AE19      : input  : 2.5 V             :         : 4         : N              
+centroid[39]                 : AE20      : input  : 2.5 V             :         : 4         : N              
+centroid[35]                 : AE21      : input  : 2.5 V             :         : 4         : N              
+distanceCalc[100]            : AE22      : output : 2.5 V             :         : 4         : N              
+dado[41]                     : AE23      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT               : AE24      :        :                   :         : 4         :                
+centroid[48]                 : AE25      : input  : 2.5 V             :         : 5         : N              
+distanceCalc[43]             : AE26      : output : 2.5 V             :         : 5         : N              
+centroid[43]                 : AE27      : input  : 2.5 V             :         : 5         : N              
+dado[44]                     : AE28      : input  : 2.5 V             :         : 5         : N              
+distanceCalc[67]             : AE29      : output : 2.5 V             :         : 5         : N              
+distanceCalc[77]             : AE30      : output : 2.5 V             :         : 5         : N              
+GND                          : AF1       : gnd    :                   :         :           :                
+GND                          : AF2       : gnd    :                   :         :           :                
+RESERVED_INPUT               : AF3       :        :                   :         : 3         :                
+RESERVED_INPUT               : AF4       :        :                   :         : 3         :                
+GND                          : AF5       : gnd    :                   :         :           :                
+RESERVED_INPUT               : AF6       :        :                   :         : 3         :                
+RESERVED_INPUT               : AF7       :        :                   :         : 3         :                
+GND                          : AF8       : gnd    :                   :         :           :                
+RESERVED_INPUT               : AF9       :        :                   :         : 3         :                
+RESERVED_INPUT               : AF10      :        :                   :         : 3         :                
+GND                          : AF11      : gnd    :                   :         :           :                
+centroid[30]                 : AF12      : input  : 2.5 V             :         : 3         : N              
+centroid[29]                 : AF13      : input  : 2.5 V             :         : 3         : N              
+GND                          : AF14      : gnd    :                   :         :           :                
+centroid[2]                  : AF15      : input  : 2.5 V             :         : 3         : N              
+distanceCalc[28]             : AF16      : output : 2.5 V             :         : 4         : N              
+GND                          : AF17      : gnd    :                   :         :           :                
+distanceCalc[49]             : AF18      : output : 2.5 V             :         : 4         : N              
+centroid[61]                 : AF19      : input  : 2.5 V             :         : 4         : N              
+GND                          : AF20      : gnd    :                   :         :           :                
+dado[50]                     : AF21      : input  : 2.5 V             :         : 4         : N              
+dado[57]                     : AF22      : input  : 2.5 V             :         : 4         : N              
+GND                          : AF23      : gnd    :                   :         :           :                
+distanceCalc[109]            : AF24      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT               : AF25      :        :                   :         : 4         :                
+GND                          : AF26      : gnd    :                   :         :           :                
+distanceCalc[94]             : AF27      : output : 2.5 V             :         : 5         : N              
+distanceCalc[118]            : AF28      : output : 2.5 V             :         : 5         : N              
+GND                          : AF29      : gnd    :                   :         :           :                
+dado[46]                     : AF30      : input  : 2.5 V             :         : 5         : N              
+NC                           : AG1       :        :                   :         :           :                
+GND                          : AG2       : gnd    :                   :         :           :                
+dado[31]                     : AG3       : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT               : AG4       :        :                   :         : 3         :                
+dado[11]                     : AG5       : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT               : AG6       :        :                   :         : 3         :                
+centroid[20]                 : AG7       : input  : 2.5 V             :         : 3         : N              
+centroid[3]                  : AG8       : input  : 2.5 V             :         : 3         : N              
+centroid[5]                  : AG9       : input  : 2.5 V             :         : 3         : N              
+dado[28]                     : AG10      : input  : 2.5 V             :         : 3         : N              
+dado[27]                     : AG11      : input  : 2.5 V             :         : 3         : N              
+dado[8]                      : AG12      : input  : 2.5 V             :         : 3         : N              
+dado[25]                     : AG13      : input  : 2.5 V             :         : 3         : N              
+centroid[28]                 : AG14      : input  : 2.5 V             :         : 3         : N              
+dado[3]                      : AG15      : input  : 2.5 V             :         : 3         : N              
+distanceCalc[15]             : AG16      : output : 2.5 V             :         : 4         : N              
+distanceCalc[51]             : AG17      : output : 2.5 V             :         : 4         : N              
+centroid[50]                 : AG18      : input  : 2.5 V             :         : 4         : N              
+dado[62]                     : AG19      : input  : 2.5 V             :         : 4         : N              
+dado[53]                     : AG20      : input  : 2.5 V             :         : 4         : N              
+dado[54]                     : AG21      : input  : 2.5 V             :         : 4         : N              
+dado[52]                     : AG22      : input  : 2.5 V             :         : 4         : N              
+distanceCalc[82]             : AG23      : output : 2.5 V             :         : 4         : N              
+dado[56]                     : AG24      : input  : 2.5 V             :         : 4         : N              
+distanceCalc[73]             : AG25      : output : 2.5 V             :         : 4         : N              
+o_endCalc                    : AG26      : output : 2.5 V             :         : 4         : N              
+distanceCalc[87]             : AG27      : output : 2.5 V             :         : 4         : N              
+dado[48]                     : AG28      : input  : 2.5 V             :         : 4         : N              
+distanceCalc[116]            : AG29      : output : 2.5 V             :         : 5         : N              
+dado[45]                     : AG30      : input  : 2.5 V             :         : 5         : N              
+NC                           : AH1       :        :                   :         :           :                
+dado[7]                      : AH2       : input  : 2.5 V             :         : 3         : N              
+dado[12]                     : AH3       : input  : 2.5 V             :         : 3         : N              
+centroid[14]                 : AH4       : input  : 2.5 V             :         : 3         : N              
+centroid[4]                  : AH5       : input  : 2.5 V             :         : 3         : N              
+centroid[8]                  : AH6       : input  : 2.5 V             :         : 3         : N              
+dado[17]                     : AH7       : input  : 2.5 V             :         : 3         : N              
+dado[21]                     : AH8       : input  : 2.5 V             :         : 3         : N              
+centroid[25]                 : AH9       : input  : 2.5 V             :         : 3         : N              
+dado[30]                     : AH10      : input  : 2.5 V             :         : 3         : N              
+dado[24]                     : AH11      : input  : 2.5 V             :         : 3         : N              
+dado[19]                     : AH12      : input  : 2.5 V             :         : 3         : N              
+dado[5]                      : AH13      : input  : 2.5 V             :         : 3         : N              
+centroid[24]                 : AH14      : input  : 2.5 V             :         : 3         : N              
+distanceCalc[44]             : AH15      : output : 2.5 V             :         : 3         : N              
+distanceCalc[30]             : AH16      : output : 2.5 V             :         : 3         : N              
+centroid[54]                 : AH17      : input  : 2.5 V             :         : 4         : N              
+distanceCalc[57]             : AH18      : output : 2.5 V             :         : 4         : N              
+centroid[63]                 : AH19      : input  : 2.5 V             :         : 4         : N              
+centroid[59]                 : AH20      : input  : 2.5 V             :         : 4         : N              
+dado[55]                     : AH21      : input  : 2.5 V             :         : 4         : N              
+dado[58]                     : AH22      : input  : 2.5 V             :         : 4         : N              
+distanceCalc[110]            : AH23      : output : 2.5 V             :         : 4         : N              
+dado[63]                     : AH24      : input  : 2.5 V             :         : 4         : N              
+distanceCalc[120]            : AH25      : output : 2.5 V             :         : 4         : N              
+centroid[34]                 : AH26      : input  : 2.5 V             :         : 4         : N              
+centroid[45]                 : AH27      : input  : 2.5 V             :         : 4         : N              
+centroid[47]                 : AH28      : input  : 2.5 V             :         : 4         : N              
+dado[36]                     : AH29      : input  : 2.5 V             :         : 5         : N              
+dado[1]                      : AH30      : input  : 2.5 V             :         : 5         : N              
+nSTATUS                      : AJ1       :        :                   :         : 3         :                
+GND                          : AJ2       : gnd    :                   :         :           :                
+centroid[15]                 : AJ3       : input  : 2.5 V             :         : 3         : N              
+centroid[0]                  : AJ4       : input  : 2.5 V             :         : 3         : N              
+GND                          : AJ5       : gnd    :                   :         :           :                
+dado[9]                      : AJ6       : input  : 2.5 V             :         : 3         : N              
+centroid[23]                 : AJ7       : input  : 2.5 V             :         : 3         : N              
+GND                          : AJ8       : gnd    :                   :         :           :                
+dado[22]                     : AJ9       : input  : 2.5 V             :         : 3         : N              
+centroid[31]                 : AJ10      : input  : 2.5 V             :         : 3         : N              
+GND                          : AJ11      : gnd    :                   :         :           :                
+centroid[11]                 : AJ12      : input  : 2.5 V             :         : 3         : N              
+distanceCalc[54]             : AJ13      : output : 2.5 V             :         : 3         : N              
+GND                          : AJ14      : gnd    :                   :         :           :                
+distanceCalc[55]             : AJ15      : output : 2.5 V             :         : 4         : N              
+GND+                         : AJ16      :        :                   :         : 4         :                
+GND                          : AJ17      : gnd    :                   :         :           :                
+distanceCalc[50]             : AJ18      : output : 2.5 V             :         : 4         : N              
+distanceCalc[62]             : AJ19      : output : 2.5 V             :         : 4         : N              
+GND                          : AJ20      : gnd    :                   :         :           :                
+dado[49]                     : AJ21      : input  : 2.5 V             :         : 4         : N              
+centroid[40]                 : AJ22      : input  : 2.5 V             :         : 4         : N              
+GND                          : AJ23      : gnd    :                   :         :           :                
+distanceCalc[125]            : AJ24      : output : 2.5 V             :         : 4         : N              
+distanceCalc[89]             : AJ25      : output : 2.5 V             :         : 4         : N              
+GND                          : AJ26      : gnd    :                   :         :           :                
+distanceCalc[113]            : AJ27      : output : 2.5 V             :         : 4         : N              
+centroid[55]                 : AJ28      : input  : 2.5 V             :         : 4         : N              
+GND                          : AJ29      : gnd    :                   :         :           :                
+distanceCalc[78]             : AJ30      : output : 2.5 V             :         : 5         : N              
+NC                           : AK2       :        :                   :         :           :                
+dado[10]                     : AK3       : input  : 2.5 V             :         : 3         : N              
+dado[6]                      : AK4       : input  : 2.5 V             :         : 3         : N              
+centroid[7]                  : AK5       : input  : 2.5 V             :         : 3         : N              
+dado[15]                     : AK6       : input  : 2.5 V             :         : 3         : N              
+dado[16]                     : AK7       : input  : 2.5 V             :         : 3         : N              
+centroid[16]                 : AK8       : input  : 2.5 V             :         : 3         : N              
+dado[23]                     : AK9       : input  : 2.5 V             :         : 3         : N              
+dado[20]                     : AK10      : input  : 2.5 V             :         : 3         : N              
+centroid[9]                  : AK11      : input  : 2.5 V             :         : 3         : N              
+distanceCalc[38]             : AK12      : output : 2.5 V             :         : 3         : N              
+dado[29]                     : AK13      : input  : 2.5 V             :         : 3         : N              
+centroid[1]                  : AK14      : input  : 2.5 V             :         : 3         : N              
+distanceCalc[27]             : AK15      : output : 2.5 V             :         : 4         : N              
+GND+                         : AK16      :        :                   :         : 4         :                
+distanceCalc[48]             : AK17      : output : 2.5 V             :         : 4         : N              
+distanceCalc[60]             : AK18      : output : 2.5 V             :         : 4         : N              
+dado[60]                     : AK19      : input  : 2.5 V             :         : 4         : N              
+centroid[60]                 : AK20      : input  : 2.5 V             :         : 4         : N              
+dado[38]                     : AK21      : input  : 2.5 V             :         : 4         : N              
+centroid[51]                 : AK22      : input  : 2.5 V             :         : 4         : N              
+distanceCalc[72]             : AK23      : output : 2.5 V             :         : 4         : N              
+distanceCalc[92]             : AK24      : output : 2.5 V             :         : 4         : N              
+distanceCalc[123]            : AK25      : output : 2.5 V             :         : 4         : N              
+distanceCalc[75]             : AK26      : output : 2.5 V             :         : 4         : N              
+distanceCalc[63]             : AK27      : output : 2.5 V             :         : 4         : N              
+distanceCalc[80]             : AK28      : output : 2.5 V             :         : 4         : N              
+dado[39]                     : AK29      : input  : 2.5 V             :         : 4         : N              
+nCONFIG                      : B1        :        :                   :         : 9         :                
+GND                          : B2        : gnd    :                   :         :           :                
+~ALTERA_DCLK~                : B3        : output : 2.5 V             :         : 9         : N              
+~ALTERA_NCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : B4        : input  : 2.5 V             :         : 9         : N              
+GND                          : B5        : gnd    :                   :         :           :                
+RESERVED_INPUT               : B6        :        :                   :         : 8         :                
+RESERVED_INPUT               : B7        :        :                   :         : 8         :                
+GND                          : B8        : gnd    :                   :         :           :                
+RESERVED_INPUT               : B9        :        :                   :         : 8         :                
+RESERVED_INPUT               : B10       :        :                   :         : 8         :                
+GND                          : B11       : gnd    :                   :         :           :                
+centroid[19]                 : B12       : input  : 2.5 V             :         : 8         : N              
+RESERVED_INPUT               : B13       :        :                   :         : 8         :                
+GND                          : B14       : gnd    :                   :         :           :                
+GND+                         : B15       :        :                   :         : 7         :                
+distanceCalc[34]             : B16       : output : 2.5 V             :         : 7         : N              
+GND                          : B17       : gnd    :                   :         :           :                
+distanceCalc[10]             : B18       : output : 2.5 V             :         : 7         : N              
+distanceCalc[4]              : B19       : output : 2.5 V             :         : 7         : N              
+GND                          : B20       : gnd    :                   :         :           :                
+RESERVED_INPUT               : B21       :        :                   :         : 7         :                
+RESERVED_INPUT               : B22       :        :                   :         : 7         :                
+GND                          : B23       : gnd    :                   :         :           :                
+RESERVED_INPUT               : B24       :        :                   :         : 7         :                
+RESERVED_INPUT               : B25       :        :                   :         : 7         :                
+GND                          : B26       : gnd    :                   :         :           :                
+RESERVED_INPUT               : B27       :        :                   :         : 7         :                
+RESERVED_INPUT               : B28       :        :                   :         : 7         :                
+GND                          : B29       : gnd    :                   :         :           :                
+RESERVED_INPUT               : B30       :        :                   :         : 7         :                
+nCE                          : C1        :        :                   :         : 9         :                
+RESERVED_INPUT               : C2        :        :                   :         : 8         :                
+RESERVED_INPUT               : C3        :        :                   :         : 8         :                
+RESERVED_INPUT               : C4        :        :                   :         : 8         :                
+RESERVED_INPUT               : C5        :        :                   :         : 8         :                
+RESERVED_INPUT               : C6        :        :                   :         : 8         :                
+RESERVED_INPUT               : C7        :        :                   :         : 8         :                
+RESERVED_INPUT               : C8        :        :                   :         : 8         :                
+RESERVED_INPUT               : C9        :        :                   :         : 8         :                
+RESERVED_INPUT               : C10       :        :                   :         : 8         :                
+RESERVED_INPUT               : C11       :        :                   :         : 8         :                
+RESERVED_INPUT               : C12       :        :                   :         : 8         :                
+RESERVED_INPUT               : C13       :        :                   :         : 8         :                
+RESERVED_INPUT               : C14       :        :                   :         : 8         :                
+RESERVED_INPUT               : C15       :        :                   :         : 8         :                
+RESERVED_INPUT               : C16       :        :                   :         : 8         :                
+RESERVED_INPUT               : C17       :        :                   :         : 7         :                
+distanceCalc[23]             : C18       : output : 2.5 V             :         : 7         : N              
+distanceCalc[2]              : C19       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT               : C20       :        :                   :         : 7         :                
+RESERVED_INPUT               : C21       :        :                   :         : 7         :                
+RESERVED_INPUT               : C22       :        :                   :         : 7         :                
+RESERVED_INPUT               : C23       :        :                   :         : 7         :                
+RESERVED_INPUT               : C24       :        :                   :         : 7         :                
+RESERVED_INPUT               : C25       :        :                   :         : 7         :                
+RESERVED_INPUT               : C26       :        :                   :         : 7         :                
+RESERVED_INPUT               : C27       :        :                   :         : 7         :                
+RESERVED_INPUT               : C28       :        :                   :         : 7         :                
+RESERVED_INPUT               : C29       :        :                   :         : 6         :                
+RESERVED_INPUT               : C30       :        :                   :         : 6         :                
+RESERVED_INPUT               : D1        :        :                   :         : 8         :                
+GND                          : D2        : gnd    :                   :         :           :                
+RESERVED_INPUT               : D3        :        :                   :         : 8         :                
+RESERVED_INPUT               : D4        :        :                   :         : 8         :                
+RESERVED_INPUT               : D5        :        :                   :         : 8         :                
+RESERVED_INPUT               : D6        :        :                   :         : 8         :                
+RESERVED_INPUT               : D7        :        :                   :         : 8         :                
+RESERVED_INPUT               : D8        :        :                   :         : 8         :                
+RESERVED_INPUT               : D9        :        :                   :         : 8         :                
+RESERVED_INPUT               : D10       :        :                   :         : 8         :                
+RESERVED_INPUT               : D11       :        :                   :         : 8         :                
+RESERVED_INPUT               : D12       :        :                   :         : 8         :                
+RESERVED_INPUT               : D13       :        :                   :         : 8         :                
+RESERVED_INPUT               : D14       :        :                   :         : 8         :                
+RESERVED_INPUT               : D15       :        :                   :         : 8         :                
+RESERVED_INPUT               : D16       :        :                   :         : 8         :                
+RESERVED_INPUT               : D17       :        :                   :         : 7         :                
+distanceCalc[26]             : D18       : output : 2.5 V             :         : 7         : N              
+distanceCalc[11]             : D19       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT               : D20       :        :                   :         : 7         :                
+RESERVED_INPUT               : D21       :        :                   :         : 7         :                
+RESERVED_INPUT               : D22       :        :                   :         : 7         :                
+RESERVED_INPUT               : D23       :        :                   :         : 7         :                
+RESERVED_INPUT               : D24       :        :                   :         : 7         :                
+RESERVED_INPUT               : D25       :        :                   :         : 7         :                
+RESERVED_INPUT               : D26       :        :                   :         : 7         :                
+RESERVED_INPUT               : D27       :        :                   :         : 7         :                
+RESERVED_INPUT               : D28       :        :                   :         : 7         :                
+RESERVED_INPUT               : D29       :        :                   :         : 6         :                
+RESERVED_INPUT               : D30       :        :                   :         : 6         :                
+TMS                          : E1        : input  :                   :         : 9         :                
+TDI                          : E2        : input  :                   :         : 9         :                
+RESERVED_INPUT               : E3        :        :                   :         : 8         :                
+RESERVED_INPUT               : E4        :        :                   :         : 8         :                
+GND                          : E5        : gnd    :                   :         :           :                
+RESERVED_INPUT               : E6        :        :                   :         : 8         :                
+RESERVED_INPUT               : E7        :        :                   :         : 8         :                
+GND                          : E8        : gnd    :                   :         :           :                
+RESERVED_INPUT               : E9        :        :                   :         : 8         :                
+RESERVED_INPUT               : E10       :        :                   :         : 8         :                
+GND                          : E11       : gnd    :                   :         :           :                
+RESERVED_INPUT               : E12       :        :                   :         : 8         :                
+RESERVED_INPUT               : E13       :        :                   :         : 8         :                
+GND                          : E14       : gnd    :                   :         :           :                
+RESERVED_INPUT               : E15       :        :                   :         : 8         :                
+RESERVED_INPUT               : E16       :        :                   :         : 8         :                
+GND                          : E17       : gnd    :                   :         :           :                
+RESERVED_INPUT               : E18       :        :                   :         : 7         :                
+RESERVED_INPUT               : E19       :        :                   :         : 7         :                
+GND                          : E20       : gnd    :                   :         :           :                
+RESERVED_INPUT               : E21       :        :                   :         : 7         :                
+RESERVED_INPUT               : E22       :        :                   :         : 7         :                
+GND                          : E23       : gnd    :                   :         :           :                
+RESERVED_INPUT               : E24       :        :                   :         : 7         :                
+RESERVED_INPUT               : E25       :        :                   :         : 7         :                
+GND                          : E26       : gnd    :                   :         :           :                
+RESERVED_INPUT               : E27       :        :                   :         : 6         :                
+RESERVED_INPUT               : E28       :        :                   :         : 6         :                
+GND                          : E29       : gnd    :                   :         :           :                
+RESERVED_INPUT               : E30       :        :                   :         : 6         :                
+TDO                          : F1        : output :                   :         : 9         :                
+TCK                          : F2        : input  :                   :         : 9         :                
+GND                          : F3        : gnd    :                   :         :           :                
+RESERVED_INPUT               : F4        :        :                   :         : 8         :                
+RESERVED_INPUT               : F5        :        :                   :         : 8         :                
+RESERVED_INPUT               : F6        :        :                   :         : 8         :                
+RESERVED_INPUT               : F7        :        :                   :         : 8         :                
+RESERVED_INPUT               : F8        :        :                   :         : 8         :                
+RESERVED_INPUT               : F9        :        :                   :         : 8         :                
+RESERVED_INPUT               : F10       :        :                   :         : 8         :                
+RESERVED_INPUT               : F11       :        :                   :         : 8         :                
+RESERVED_INPUT               : F12       :        :                   :         : 8         :                
+RESERVED_INPUT               : F13       :        :                   :         : 8         :                
+RESERVED_INPUT               : F14       :        :                   :         : 8         :                
+RESERVED_INPUT               : F15       :        :                   :         : 8         :                
+RESERVED_INPUT               : F16       :        :                   :         : 8         :                
+dado[34]                     : F17       : input  : 2.5 V             :         : 7         : N              
+distanceCalc[0]              : F18       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT               : F19       :        :                   :         : 7         :                
+RESERVED_INPUT               : F20       :        :                   :         : 7         :                
+RESERVED_INPUT               : F21       :        :                   :         : 7         :                
+RESERVED_INPUT               : F22       :        :                   :         : 7         :                
+RESERVED_INPUT               : F23       :        :                   :         : 7         :                
+RESERVED_INPUT               : F24       :        :                   :         : 7         :                
+RESERVED_INPUT               : F25       :        :                   :         : 7         :                
+RESERVED_INPUT               : F26       :        :                   :         : 6         :                
+RESERVED_INPUT               : F27       :        :                   :         : 6         :                
+RESERVED_INPUT               : F28       :        :                   :         : 6         :                
+RESERVED_INPUT               : F29       :        :                   :         : 6         :                
+RESERVED_INPUT               : F30       :        :                   :         : 6         :                
+GND                          : G1        : gnd    :                   :         :           :                
+GND                          : G2        : gnd    :                   :         :           :                
+GND                          : G3        : gnd    :                   :         :           :                
+GND                          : G4        : gnd    :                   :         :           :                
+GND                          : G5        : gnd    :                   :         :           :                
+RESERVED_INPUT               : G6        :        :                   :         : 8         :                
+RESERVED_INPUT               : G7        :        :                   :         : 8         :                
+RESERVED_INPUT               : G8        :        :                   :         : 8         :                
+~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : G9        : input  : 2.5 V             :         : 9         : N              
+RESERVED_INPUT               : G10       :        :                   :         : 8         :                
+RESERVED_INPUT               : G11       :        :                   :         : 8         :                
+RESERVED_INPUT               : G12       :        :                   :         : 8         :                
+RESERVED_INPUT               : G13       :        :                   :         : 8         :                
+RESERVED_INPUT               : G14       :        :                   :         : 8         :                
+RESERVED_INPUT               : G15       :        :                   :         : 8         :                
+distanceCalc[5]              : G16       : output : 2.5 V             :         : 7         : N              
+dado[32]                     : G17       : input  : 2.5 V             :         : 7         : N              
+distanceCalc[35]             : G18       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : G19       : power  :                   : 2.5V    : 7         :                
+RESERVED_INPUT               : G20       :        :                   :         : 7         :                
+RESERVED_INPUT               : G21       :        :                   :         : 7         :                
+RESERVED_INPUT               : G22       :        :                   :         : 7         :                
+RESERVED_INPUT               : G23       :        :                   :         : 7         :                
+RESERVED_INPUT               : G24       :        :                   :         : 7         :                
+RESERVED_INPUT               : G25       :        :                   :         : 7         :                
+RESERVED_INPUT               : G26       :        :                   :         : 6         :                
+RESERVED_INPUT               : G27       :        :                   :         : 6         :                
+RESERVED_INPUT               : G28       :        :                   :         : 6         :                
+RESERVED_INPUT               : G29       :        :                   :         : 6         :                
+distanceCalc[21]             : G30       : output : 2.5 V             :         : 6         : N              
+GND                          : H1        : gnd    :                   :         :           :                
+GND                          : H2        : gnd    :                   :         :           :                
+GXB_NC                       : H3        :        :                   :         : QL1       :                
+GXB_NC                       : H4        :        :                   :         : QL1       :                
+GND                          : H5        : gnd    :                   :         :           :                
+GND                          : H6        : gnd    :                   :         :           :                
+VCCIO9                       : H7        : power  :                   : 2.5V    : 9         :                
+GND                          : H8        : gnd    :                   :         :           :                
+RESERVED_INPUT               : H9        :        :                   :         : 8         :                
+VCCIO8                       : H10       : power  :                   : 2.5V    : 8         :                
+GND                          : H11       : gnd    :                   :         :           :                
+VCCIO8                       : H12       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : H13       : power  :                   : 2.5V    : 8         :                
+GND                          : H14       : gnd    :                   :         :           :                
+VCCIO8                       : H15       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : H16       : power  :                   : 2.5V    : 8         :                
+GND                          : H17       : gnd    :                   :         :           :                
+VCCIO7                       : H18       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : H19       : power  :                   : 2.5V    : 7         :                
+GND                          : H20       : gnd    :                   :         :           :                
+VCCIO7                       : H21       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : H22       : power  :                   : 2.5V    : 7         :                
+GND                          : H23       : gnd    :                   :         :           :                
+RESERVED_INPUT               : H24       :        :                   :         : 7         :                
+RESERVED_INPUT               : H25       :        :                   :         : 6         :                
+GND                          : H26       : gnd    :                   :         :           :                
+RESERVED_INPUT               : H27       :        :                   :         : 6         :                
+RESERVED_INPUT               : H28       :        :                   :         : 6         :                
+GND                          : H29       : gnd    :                   :         :           :                
+distanceCalc[18]             : H30       : output : 2.5 V             :         : 6         : N              
+GXB_GND*                     : J1        :        :                   :         : QL1       :                
+GXB_GND*                     : J2        :        :                   :         : QL1       :                
+GND                          : J3        : gnd    :                   :         :           :                
+GND                          : J4        : gnd    :                   :         :           :                
+GND                          : J5        : gnd    :                   :         :           :                
+VCCA                         : J6        : power  :                   : 2.5V    :           :                
+GND                          : J7        : gnd    :                   :         :           :                
+GND                          : J8        : gnd    :                   :         :           :                
+RESERVED_INPUT               : J9        :        :                   :         : 8         :                
+VCCIO8                       : J10       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J11       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J12       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J13       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J14       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J15       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J16       : power  :                   : 2.5V    : 8         :                
+VCCIO7                       : J17       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : J18       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : J19       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : J20       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : J21       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : J22       : power  :                   : 2.5V    : 7         :                
+VCCD_PLL                     : J23       : power  :                   : 1.2V    :           :                
+GND                          : J24       : gnd    :                   :         :           :                
+RESERVED_INPUT               : J25       :        :                   :         : 6         :                
+RESERVED_INPUT               : J26       :        :                   :         : 6         :                
+RESERVED_INPUT               : J27       :        :                   :         : 6         :                
+RESERVED_INPUT               : J28       :        :                   :         : 6         :                
+distanceCalc[1]              : J29       : output : 2.5 V             :         : 6         : N              
+distanceCalc[3]              : J30       : output : 2.5 V             :         : 6         : N              
+GND                          : K1        : gnd    :                   :         :           :                
+GND                          : K2        : gnd    :                   :         :           :                
+GXB_NC                       : K3        :        :                   :         : QL1       :                
+GXB_NC                       : K4        :        :                   :         : QL1       :                
+VCCL_GXB                     : K5        : power  :                   : 1.2V    :           :                
+VCCD_PLL                     : K6        : power  :                   : 1.2V    :           :                
+GND                          : K7        : gnd    :                   :         :           :                
+GND                          : K8        : gnd    :                   :         :           :                
+VCCINT                       : K9        : power  :                   : 1.2V    :           :                
+VCC_CLKIN8B                  : K10       : power  :                   : 2.5V    : 8B        :                
+GXB_GND*                     : K11       :        :                   :         : 8B        :                
+GND                          : K12       : gnd    :                   :         :           :                
+VCCINT                       : K13       : power  :                   : 1.2V    :           :                
+GND                          : K14       : gnd    :                   :         :           :                
+GXB_GND*                     : K15       :        :                   :         : 8A        :                
+VCC_CLKIN8A                  : K16       : power  :                   : 2.5V    : 8A        :                
+distanceCalc[37]             : K17       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT               : K18       :        :                   :         : 7         :                
+RESERVED_INPUT               : K19       :        :                   :         : 7         :                
+GND                          : K20       : gnd    :                   :         :           :                
+RESERVED_INPUT               : K21       :        :                   :         : 7         :                
+RESERVED_INPUT               : K22       :        :                   :         : 7         :                
+VCCA                         : K23       : power  :                   : 2.5V    :           :                
+RESERVED_INPUT               : K24       :        :                   :         : 6         :                
+RESERVED_INPUT               : K25       :        :                   :         : 6         :                
+RESERVED_INPUT               : K26       :        :                   :         : 6         :                
+RESERVED_INPUT               : K27       :        :                   :         : 6         :                
+RESERVED_INPUT               : K28       :        :                   :         : 6         :                
+RESERVED_INPUT               : K29       :        :                   :         : 6         :                
+distanceCalc[40]             : K30       : output : 2.5 V             :         : 6         : N              
+GXB_GND*                     : L1        :        :                   :         : QL1       :                
+GXB_GND*                     : L2        :        :                   :         : QL1       :                
+GND                          : L3        : gnd    :                   :         :           :                
+GND                          : L4        : gnd    :                   :         :           :                
+GND                          : L5        : gnd    :                   :         :           :                
+VCCH_GXB                     : L6        : power  :                   : 2.5V    :           :                
+GND                          : L7        : gnd    :                   :         :           :                
+VCCA                         : L8        : power  :                   : 2.5V    :           :                
+GND                          : L9        : gnd    :                   :         :           :                
+GXB_GND*                     : L10       :        :                   :         : 8B        :                
+GXB_GND*                     : L11       :        :                   :         : 8B        :                
+VCCINT                       : L12       : power  :                   : 1.2V    :           :                
+GND                          : L13       : gnd    :                   :         :           :                
+VCCINT                       : L14       : power  :                   : 1.2V    :           :                
+GXB_GND*                     : L15       :        :                   :         : 8A        :                
+VCCINT                       : L16       : power  :                   : 1.2V    :           :                
+GND                          : L17       : gnd    :                   :         :           :                
+VCCINT                       : L18       : power  :                   : 1.2V    :           :                
+GND                          : L19       : gnd    :                   :         :           :                
+VCCINT                       : L20       : power  :                   : 1.2V    :           :                
+GND                          : L21       : gnd    :                   :         :           :                
+VCCIO6                       : L22       : power  :                   : 2.5V    : 6         :                
+GND                          : L23       : gnd    :                   :         :           :                
+VCCIO6                       : L24       : power  :                   : 2.5V    : 6         :                
+RESERVED_INPUT               : L25       :        :                   :         : 6         :                
+GND                          : L26       : gnd    :                   :         :           :                
+distanceCalc[22]             : L27       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT               : L28       :        :                   :         : 6         :                
+GND                          : L29       : gnd    :                   :         :           :                
+distanceCalc[47]             : L30       : output : 2.5 V             :         : 6         : N              
+GND                          : M1        : gnd    :                   :         :           :                
+GND                          : M2        : gnd    :                   :         :           :                
+GXB_NC                       : M3        :        :                   :         : QL1       :                
+GXB_NC                       : M4        :        :                   :         : QL1       :                
+VCCL_GXB                     : M5        : power  :                   : 1.2V    :           :                
+GND                          : M6        : gnd    :                   :         :           :                
+VCCA_GXB                     : M7        : power  :                   : 2.5V    :           :                
+VCCD_PLL                     : M8        : power  :                   : 1.2V    :           :                
+VCCINT                       : M9        : power  :                   : 1.2V    :           :                
+GXB_GND*                     : M10       :        :                   :         : 8B        :                
+VCCINT                       : M11       : power  :                   : 1.2V    :           :                
+GND                          : M12       : gnd    :                   :         :           :                
+VCCINT                       : M13       : power  :                   : 1.2V    :           :                
+GND                          : M14       : gnd    :                   :         :           :                
+VCCINT                       : M15       : power  :                   : 1.2V    :           :                
+GND                          : M16       : gnd    :                   :         :           :                
+VCCINT                       : M17       : power  :                   : 1.2V    :           :                
+GND                          : M18       : gnd    :                   :         :           :                
+VCCINT                       : M19       : power  :                   : 1.2V    :           :                
+GND                          : M20       : gnd    :                   :         :           :                
+RESERVED_INPUT               : M21       :        :                   :         : 6         :                
+RESERVED_INPUT               : M22       :        :                   :         : 6         :                
+VCCIO6                       : M23       : power  :                   : 2.5V    : 6         :                
+VCCIO6                       : M24       : power  :                   : 2.5V    : 6         :                
+distanceCalc[59]             : M25       : output : 2.5 V             :         : 6         : N              
+distanceCalc[19]             : M26       : output : 2.5 V             :         : 6         : N              
+distanceCalc[39]             : M27       : output : 2.5 V             :         : 6         : N              
+distanceCalc[52]             : M28       : output : 2.5 V             :         : 6         : N              
+distanceCalc[32]             : M29       : output : 2.5 V             :         : 6         : N              
+distanceCalc[24]             : M30       : output : 2.5 V             :         : 6         : N              
+GXB_GND*                     : N1        :        :                   :         : QL1       :                
+GXB_GND*                     : N2        :        :                   :         : QL1       :                
+GND                          : N3        : gnd    :                   :         :           :                
+GND                          : N4        : gnd    :                   :         :           :                
+VCCH_GXB                     : N5        : power  :                   : 2.5V    :           :                
+GND                          : N6        : gnd    :                   :         :           :                
+VCCL_GXB                     : N7        : power  :                   : 1.2V    :           :                
+VCCINT                       : N8        : power  :                   : 1.2V    :           :                
+GND                          : N9        : gnd    :                   :         :           :                
+VCCINT                       : N10       : power  :                   : 1.2V    :           :                
+GND                          : N11       : gnd    :                   :         :           :                
+VCCINT                       : N12       : power  :                   : 1.2V    :           :                
+GND                          : N13       : gnd    :                   :         :           :                
+VCCINT                       : N14       : power  :                   : 1.2V    :           :                
+GND                          : N15       : gnd    :                   :         :           :                
+VCCINT                       : N16       : power  :                   : 1.2V    :           :                
+GND                          : N17       : gnd    :                   :         :           :                
+VCCINT                       : N18       : power  :                   : 1.2V    :           :                
+GND                          : N19       : gnd    :                   :         :           :                
+VCCINT                       : N20       : power  :                   : 1.2V    :           :                
+distanceCalc[119]            : N21       : output : 2.5 V             :         : 6         : N              
+VCCIO6                       : N22       : power  :                   : 2.5V    : 6         :                
+VCCIO6                       : N23       : power  :                   : 2.5V    : 6         :                
+distanceCalc[102]            : N24       : output : 2.5 V             :         : 6         : N              
+distanceCalc[61]             : N25       : output : 2.5 V             :         : 6         : N              
+distanceCalc[81]             : N26       : output : 2.5 V             :         : 6         : N              
+dado[43]                     : N27       : input  : 2.5 V             :         : 6         : N              
+distanceCalc[105]            : N28       : output : 2.5 V             :         : 6         : N              
+distanceCalc[115]            : N29       : output : 2.5 V             :         : 6         : N              
+distanceCalc[103]            : N30       : output : 2.5 V             :         : 6         : N              
+GND                          : P1        : gnd    :                   :         :           :                
+GND                          : P2        : gnd    :                   :         :           :                
+GXB_NC                       : P3        :        :                   :         : QL1       :                
+GXB_NC                       : P4        :        :                   :         : QL1       :                
+GND                          : P5        : gnd    :                   :         :           :                
+VCCL_GXB                     : P6        : power  :                   : 1.2V    :           :                
+VCCD_PLL                     : P7        : power  :                   : 1.2V    :           :                
+GND                          : P8        : gnd    :                   :         :           :                
+VCCINT                       : P9        : power  :                   : 1.2V    :           :                
+GND                          : P10       : gnd    :                   :         :           :                
+VCCINT                       : P11       : power  :                   : 1.2V    :           :                
+GND                          : P12       : gnd    :                   :         :           :                
+VCCINT                       : P13       : power  :                   : 1.2V    :           :                
+GND                          : P14       : gnd    :                   :         :           :                
+VCCINT                       : P15       : power  :                   : 1.2V    :           :                
+GND                          : P16       : gnd    :                   :         :           :                
+VCCINT                       : P17       : power  :                   : 1.2V    :           :                
+GND                          : P18       : gnd    :                   :         :           :                
+VCCINT                       : P19       : power  :                   : 1.2V    :           :                
+GND                          : P20       : gnd    :                   :         :           :                
+RESERVED_INPUT               : P21       :        :                   :         : 6         :                
+VCCIO6                       : P22       : power  :                   : 2.5V    : 6         :                
+GND                          : P23       : gnd    :                   :         :           :                
+VCCIO6                       : P24       : power  :                   : 2.5V    : 6         :                
+distanceCalc[13]             : P25       : output : 2.5 V             :         : 6         : N              
+GND                          : P26       : gnd    :                   :         :           :                
+distanceCalc[99]             : P27       : output : 2.5 V             :         : 6         : N              
+distanceCalc[31]             : P28       : output : 2.5 V             :         : 6         : N              
+GND                          : P29       : gnd    :                   :         :           :                
+distanceCalc[65]             : P30       : output : 2.5 V             :         : 6         : N              
+GXB_GND*                     : R1        :        :                   :         : QL1       :                
+GXB_GND*                     : R2        :        :                   :         : QL1       :                
+GND                          : R3        : gnd    :                   :         :           :                
+GND                          : R4        : gnd    :                   :         :           :                
+GND                          : R5        : gnd    :                   :         :           :                
+VCCA_GXB                     : R6        : power  :                   : 2.5V    :           :                
+GND                          : R7        : gnd    :                   :         :           :                
+VCCA                         : R8        : power  :                   : 2.5V    :           :                
+GND                          : R9        : gnd    :                   :         :           :                
+VCCINT                       : R10       : power  :                   : 1.2V    :           :                
+GND                          : R11       : gnd    :                   :         :           :                
+VCCINT                       : R12       : power  :                   : 1.2V    :           :                
+GND                          : R13       : gnd    :                   :         :           :                
+VCCINT                       : R14       : power  :                   : 1.2V    :           :                
+GND                          : R15       : gnd    :                   :         :           :                
+VCCINT                       : R16       : power  :                   : 1.2V    :           :                
+GND                          : R17       : gnd    :                   :         :           :                
+VCCINT                       : R18       : power  :                   : 1.2V    :           :                
+GND                          : R19       : gnd    :                   :         :           :                
+VCCINT                       : R20       : power  :                   : 1.2V    :           :                
+GND                          : R21       : gnd    :                   :         :           :                
+VCCIO6                       : R22       : power  :                   : 2.5V    : 6         :                
+VCCIO6                       : R23       : power  :                   : 2.5V    : 6         :                
+distanceCalc[104]            : R24       : output : 2.5 V             :         : 6         : N              
+distanceCalc[6]              : R25       : output : 2.5 V             :         : 6         : N              
+distanceCalc[91]             : R26       : output : 2.5 V             :         : 6         : N              
+distanceCalc[9]              : R27       : output : 2.5 V             :         : 6         : N              
+distanceCalc[7]              : R28       : output : 2.5 V             :         : 6         : N              
+dado[47]                     : R29       : input  : 2.5 V             :         : 6         : N              
+distanceCalc[95]             : R30       : output : 2.5 V             :         : 6         : N              
+GND                          : T1        : gnd    :                   :         :           :                
+GND                          : T2        : gnd    :                   :         :           :                
+GXB_NC                       : T3        :        :                   :         : QL0       :                
+GXB_NC                       : T4        :        :                   :         : QL0       :                
+GND                          : T5        : gnd    :                   :         :           :                
+VCCL_GXB                     : T6        : power  :                   : 1.2V    :           :                
+GND                          : T7        : gnd    :                   :         :           :                
+VCCA                         : T8        : power  :                   : 2.5V    :           :                
+VCCINT                       : T9        : power  :                   : 1.2V    :           :                
+GND                          : T10       : gnd    :                   :         :           :                
+VCCINT                       : T11       : power  :                   : 1.2V    :           :                
+GND                          : T12       : gnd    :                   :         :           :                
+VCCINT                       : T13       : power  :                   : 1.2V    :           :                
+GND                          : T14       : gnd    :                   :         :           :                
+VCCINT                       : T15       : power  :                   : 1.2V    :           :                
+GND                          : T16       : gnd    :                   :         :           :                
+VCCINT                       : T17       : power  :                   : 1.2V    :           :                
+GND                          : T18       : gnd    :                   :         :           :                
+VCCINT                       : T19       : power  :                   : 1.2V    :           :                
+GND                          : T20       : gnd    :                   :         :           :                
+distanceCalc[74]             : T21       : output : 2.5 V             :         : 5         : N              
+GND                          : T22       : gnd    :                   :         :           :                
+distanceCalc[88]             : T23       : output : 2.5 V             :         : 5         : N              
+distanceCalc[126]            : T24       : output : 2.5 V             :         : 5         : N              
+distanceCalc[108]            : T25       : output : 2.5 V             :         : 5         : N              
+distanceCalc[84]             : T26       : output : 2.5 V             :         : 5         : N              
+distanceCalc[70]             : T27       : output : 2.5 V             :         : 5         : N              
+centroid[32]                 : T28       : input  : 2.5 V             :         : 6         : N              
+GND+                         : T29       :        :                   :         : 6         :                
+GND+                         : T30       :        :                   :         : 6         :                
+GXB_GND*                     : U1        :        :                   :         : QL0       :                
+GXB_GND*                     : U2        :        :                   :         : QL0       :                
+GND                          : U3        : gnd    :                   :         :           :                
+GND                          : U4        : gnd    :                   :         :           :                
+GND                          : U5        : gnd    :                   :         :           :                
+VCCH_GXB                     : U6        : power  :                   : 2.5V    :           :                
+VCCD_PLL                     : U7        : power  :                   : 1.2V    :           :                
+VCCINT                       : U8        : power  :                   : 1.2V    :           :                
+GND                          : U9        : gnd    :                   :         :           :                
+VCCINT                       : U10       : power  :                   : 1.2V    :           :                
+GND                          : U11       : gnd    :                   :         :           :                
+VCCINT                       : U12       : power  :                   : 1.2V    :           :                
+GND                          : U13       : gnd    :                   :         :           :                
+VCCINT                       : U14       : power  :                   : 1.2V    :           :                
+GND                          : U15       : gnd    :                   :         :           :                
+VCCINT                       : U16       : power  :                   : 1.2V    :           :                
+GND                          : U17       : gnd    :                   :         :           :                
+VCCINT                       : U18       : power  :                   : 1.2V    :           :                
+GND                          : U19       : gnd    :                   :         :           :                
+VCCINT                       : U20       : power  :                   : 1.2V    :           :                
+distanceCalc[121]            : U21       : output : 2.5 V             :         : 5         : N              
+VCCIO5                       : U22       : power  :                   : 2.5V    : 5         :                
+GND                          : U23       : gnd    :                   :         :           :                
+VCCIO5                       : U24       : power  :                   : 2.5V    : 5         :                
+distanceCalc[117]            : U25       : output : 2.5 V             :         : 5         : N              
+GND                          : U26       : gnd    :                   :         :           :                
+distanceCalc[79]             : U27       : output : 2.5 V             :         : 5         : N              
+distanceCalc[106]            : U28       : output : 2.5 V             :         : 5         : N              
+GND                          : U29       : gnd    :                   :         :           :                
+distanceCalc[12]             : U30       : output : 2.5 V             :         : 5         : N              
+GND                          : V1        : gnd    :                   :         :           :                
+GND                          : V2        : gnd    :                   :         :           :                
+GXB_NC                       : V3        :        :                   :         : QL0       :                
+GXB_NC                       : V4        :        :                   :         : QL0       :                
+VCCL_GXB                     : V5        : power  :                   : 1.2V    :           :                
+GND                          : V6        : gnd    :                   :         :           :                
+VCCA_GXB                     : V7        : power  :                   : 2.5V    :           :                
+GND                          : V8        : gnd    :                   :         :           :                
+VCCINT                       : V9        : power  :                   : 1.2V    :           :                
+GND                          : V10       : gnd    :                   :         :           :                
+GXB_GND*                     : V11       :        :                   :         : 3B        :                
+GXB_GND*                     : V12       :        :                   :         : 3B        :                
+VCCINT                       : V13       : power  :                   : 1.2V    :           :                
+GND                          : V14       : gnd    :                   :         :           :                
+aclr_Shift                   : V15       : input  : 2.5 V             :         : 3A        : N              
+GND                          : V16       : gnd    :                   :         :           :                
+VCCINT                       : V17       : power  :                   : 1.2V    :           :                
+GND                          : V18       : gnd    :                   :         :           :                
+VCCINT                       : V19       : power  :                   : 1.2V    :           :                
+GND                          : V20       : gnd    :                   :         :           :                
+distanceCalc[33]             : V21       : output : 2.5 V             :         : 5         : N              
+VCCIO5                       : V22       : power  :                   : 2.5V    : 5         :                
+VCCIO5                       : V23       : power  :                   : 2.5V    : 5         :                
+GND                          : V24       : gnd    :                   :         :           :                
+distanceCalc[124]            : V25       : output : 2.5 V             :         : 5         : N              
+distanceCalc[85]             : V26       : output : 2.5 V             :         : 5         : N              
+distanceCalc[112]            : V27       : output : 2.5 V             :         : 5         : N              
+distanceCalc[76]             : V28       : output : 2.5 V             :         : 5         : N              
+GND+                         : V29       :        :                   :         : 5         :                
+GND+                         : V30       :        :                   :         : 5         :                
+GXB_GND*                     : W1        :        :                   :         : QL0       :                
+GXB_GND*                     : W2        :        :                   :         : QL0       :                
+GND                          : W3        : gnd    :                   :         :           :                
+GND                          : W4        : gnd    :                   :         :           :                
+GND                          : W5        : gnd    :                   :         :           :                
+GND                          : W6        : gnd    :                   :         :           :                
+VCCH_GXB                     : W7        : power  :                   : 2.5V    :           :                
+VCCINT                       : W8        : power  :                   : 1.2V    :           :                
+GND                          : W9        : gnd    :                   :         :           :                
+VCCINT                       : W10       : power  :                   : 1.2V    :           :                
+GXB_GND*                     : W11       :        :                   :         : 3B        :                
+GXB_GND*                     : W12       :        :                   :         : 3B        :                
+GND                          : W13       : gnd    :                   :         :           :                
+VCCINT                       : W14       : power  :                   : 1.2V    :           :                
+clk                          : W15       : input  : 2.5 V             :         : 3A        : N              
+VCC_CLKIN3A                  : W16       : power  :                   : 2.5V    : 3A        :                
+GND                          : W17       : gnd    :                   :         :           :                
+VCCINT                       : W18       : power  :                   : 1.2V    :           :                
+GND                          : W19       : gnd    :                   :         :           :                
+VCCINT                       : W20       : power  :                   : 1.2V    :           :                
+GND                          : W21       : gnd    :                   :         :           :                
+VCCIO5                       : W22       : power  :                   : 2.5V    : 5         :                
+VCCIO5                       : W23       : power  :                   : 2.5V    : 5         :                
+VCCIO5                       : W24       : power  :                   : 2.5V    : 5         :                
+distanceCalc[90]             : W25       : output : 2.5 V             :         : 5         : N              
+distanceCalc[101]            : W26       : output : 2.5 V             :         : 5         : N              
+distanceCalc[122]            : W27       : output : 2.5 V             :         : 5         : N              
+distanceCalc[93]             : W28       : output : 2.5 V             :         : 5         : N              
+distanceCalc[83]             : W29       : output : 2.5 V             :         : 5         : N              
+distanceCalc[111]            : W30       : output : 2.5 V             :         : 5         : N              
+GND                          : Y1        : gnd    :                   :         :           :                
+GND                          : Y2        : gnd    :                   :         :           :                
+GXB_NC                       : Y3        :        :                   :         : QL0       :                
+GXB_NC                       : Y4        :        :                   :         : QL0       :                
+VCCL_GXB                     : Y5        : power  :                   : 1.2V    :           :                
+VCCA_GXB                     : Y6        : power  :                   : 2.5V    :           :                
+VCCD_PLL                     : Y7        : power  :                   : 1.2V    :           :                
+VCCD_PLL                     : Y8        : power  :                   : 1.2V    :           :                
+GND                          : Y9        : gnd    :                   :         :           :                
+GND                          : Y10       : gnd    :                   :         :           :                
+VCCINT                       : Y11       : power  :                   : 1.2V    :           :                
+VCC_CLKIN3B                  : Y12       : power  :                   : 2.5V    : 3B        :                
+VCCINT                       : Y13       : power  :                   : 1.2V    :           :                
+GND                          : Y14       : gnd    :                   :         :           :                
+VCCINT                       : Y15       : power  :                   : 1.2V    :           :                
+GND                          : Y16       : gnd    :                   :         :           :                
+distanceCalc[14]             : Y17       : output : 2.5 V             :         : 4         : N              
+centroid[62]                 : Y18       : input  : 2.5 V             :         : 4         : N              
+dado[33]                     : Y19       : input  : 2.5 V             :         : 4         : N              
+centroid[38]                 : Y20       : input  : 2.5 V             :         : 4         : N              
+dado[35]                     : Y21       : input  : 2.5 V             :         : 4         : N              
+centroid[44]                 : Y22       : input  : 2.5 V             :         : 5         : N              
+GND                          : Y23       : gnd    :                   :         :           :                
+VCCIO5                       : Y24       : power  :                   : 2.5V    : 5         :                
+distanceCalc[41]             : Y25       : output : 2.5 V             :         : 5         : N              
+GND                          : Y26       : gnd    :                   :         :           :                
+centroid[53]                 : Y27       : input  : 2.5 V             :         : 5         : N              
+distanceCalc[36]             : Y28       : output : 2.5 V             :         : 5         : N              
+GND                          : Y29       : gnd    :                   :         :           :                
+distanceCalc[98]             : Y30       : output : 2.5 V             :         : 5         : N              

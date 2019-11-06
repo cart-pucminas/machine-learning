@@ -1,0 +1,41 @@
+--|| Kmeans Processador 
+--|| Desenvolvedor: Lucas Andrade Maciel
+--|| Grupo: CArT - Computer Architecture and Parallel Processing Team
+--|| Bloco: Mux Map Addr
+--|| Descricao: Este bloco define de qual bloco devera ser considerado o endereco de mapeamento para ser escrito/lido na memoria ram 
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+Entity VerificaMaior is
+
+	GENERIC (TamanhoAddr : INTEGER := 15);
+	
+    PORT ( 
+	 valueDadoX	   	: in STD_LOGIC_VECTOR(PalavraXY-1 downto 0);   	 --Valor dado(x)
+	 valueDadoY    	: in STD_LOGIC_VECTOR(PalavraXY-1 downto 0);   	 --Valor dado(y)
+	 valueCentroidX	: in STD_LOGIC_VECTOR(PalavraXY-1 downto 0);   	 --Valor centroid(x)
+	 valueCentroidY	: in STD_LOGIC_VECTOR(PalavraXY-1 downto 0)      --Valor centroid(y)
+	 opX			      : in  STD_LOGIC;                                 --Operador que seleciona qual sera o valor escolhido
+	 opY			      : in  STD_LOGIC;                                 --Operador que seleciona qual sera o valor escolhido
+	 o_valueDadoX	   : out STD_LOGIC_VECTOR(PalavraXY-1 downto 0);   --Valor dado(x)
+	 o_valueDadoY    : out STD_LOGIC_VECTOR(PalavraXY-1 downto 0);   --Valor dado(y)
+	 o_valueCentroidX: out STD_LOGIC_VECTOR(PalavraXY-1 downto 0);   --Valor centroid(x)
+	 o_valueCentroidY: out STD_LOGIC_VECTOR(PalavraXY-1 downto 0)    --Valor centroid(y)
+	);
+END VerificaMaior;
+
+ARCHITECTURE arch of VerificaMaior is
+
+BEGIN
+
+	--resultado que recebe do controlador op que ira conduzir qual das entradas irao para as saidas
+	with op select	
+	mapAddr_A <= mapInit           when '0',
+					 mapCalcModule_A   when '1';
+					  
+	with op select	
+	mapAddr_B <= (others =>'0')    when '0',
+					  mapCalcModule_B  when '1';
+
+END arch;

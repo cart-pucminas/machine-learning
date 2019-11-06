@@ -1,0 +1,196 @@
+Determining the location of the ModelSim executable...
+
+Using: /home/lucasandrade/intelFPGA/16.1/modelsim_ase/linuxaloem
+
+To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
+Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-Altera will be used.
+
+**** Generating the ModelSim Testbench ****
+
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Kmeans_CalcMapModuleFP -c Kmeans_CalcMapModuleFP --vector_source="/home/lucasandrade/Documents/Lucas/Int+Float-64 bits-16 dimensoes/Kmeans_Processador/Kmeans_CalcMapModuleFP/Kmeans_CalcMapModuleFP.vwf" --testbench_file="/home/lucasandrade/Documents/Lucas/Int+Float-64 bits-16 dimensoes/Kmeans_Processador/Kmeans_CalcMapModuleFP/simulation/qsim/Kmeans_CalcMapModuleFP.vwf.vht"
+
+Inconsistency detected by ld.so: dl-close.c: 811: _dl_close: Assertion `map->l_init_called' failed!
+Info: *******************************************************************Info: Running Quartus Prime EDA Netlist Writer    Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition    Info: Copyright (C) 2016  Intel Corporation. All rights reserved.    Info: Your use of Intel Corporation's design tools, logic functions     Info: and other software and tools, and its AMPP partner logic     Info: functions, and any output files from any of the foregoing     Info: (including device programming or simulation files), and any     Info: associated documentation or information are expressly subject     Info: to the terms and conditions of the Intel Program License     Info: Subscription Agreement, the Intel Quartus Prime License Agreement,    Info: the Intel MegaCore Function License Agreement, or other     Info: applicable license agreement, including, without limitation,     Info: that your use is for the sole purpose of programming logic     Info: devices manufactured by Intel and sold by Intel or its     Info: authorized distributors.  Please refer to the applicable     Info: agreement for further details.    Info: Processing started: Thu Apr  6 16:33:11 2017Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Kmeans_CalcMapModuleFP -c Kmeans_CalcMapModuleFP --vector_source="/home/lucasandrade/Documents/Lucas/Int+Float-64 bits-16 dimensoes/Kmeans_Processador/Kmeans_CalcMapModuleFP/Kmeans_CalcMapModuleFP.vwf" --testbench_file="/home/lucasandrade/Documents/Lucas/Int+Float-64 bits-16 dimensoes/Kmeans_Processador/Kmeans_CalcMapModuleFP/simulation/qsim/Kmeans_CalcMapModuleFP.vwf.vht"Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+rce file when writing test bench files
+in vector source file when writing test bench files
+Completed successfully. 
+
+**** Generating the functional simulation netlist ****
+
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="/home/lucasandrade/Documents/Lucas/Int+Float-64 bits-16 dimensoes/Kmeans_Processador/Kmeans_CalcMapModuleFP/simulation/qsim/" Kmeans_CalcMapModuleFP -c Kmeans_CalcMapModuleFP
+
+Inconsistency detected by ld.so: dl-close.c: 811: _dl_close: Assertion `map->l_init_called' failed!
+Info: *******************************************************************Info: Running Quartus Prime EDA Netlist Writer    Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition    Info: Copyright (C) 2016  Intel Corporation. All rights reserved.    Info: Your use of Intel Corporation's design tools, logic functions     Info: and other software and tools, and its AMPP partner logic     Info: functions, and any output files from any of the foregoing     Info: (including device programming or simulation files), and any     Info: associated documentation or information are expressly subject     Info: to the terms and conditions of the Intel Program License     Info: Subscription Agreement, the Intel Quartus Prime License Agreement,    Info: the Intel MegaCore Function License Agreement, or other     Info: applicable license agreement, including, without limitation,     Info: that your use is for the sole purpose of programming logic     Info: devices manufactured by Intel and sold by Intel or its     Info: authorized distributors.  Please refer to the applicable     Info: agreement for further details.    Info: Processing started: Thu Apr  6 16:33:13 2017Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="/home/lucasandrade/Documents/Lucas/Int+Float-64 bits-16 dimensoes/Kmeans_Processador/Kmeans_CalcMapModuleFP/simulation/qsim/" Kmeans_CalcMapModuleFP -c Kmeans_CalcMapModuleFPWarning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.Info (204019): Generated file Kmeans_CalcMapModuleFP.vho in folder "/home/lucasandrade/Documents/Lucas/Int+Float-64 bits-16 dimensoes/Kmeans_Processador/Kmeans_CalcMapModuleFP/simulation/qsim//" for EDA simulation toolInfo: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning    Info: Peak virtual memory: 1076 megabytes    Info: Processing ended: Thu Apr  6 16:33:15 2017    Info: Elapsed time: 00:00:02    Info: Total CPU time (on all processors): 00:00:03
+Completed successfully. 
+
+**** Generating the ModelSim .do script ****
+
+/home/lucasandrade/Documents/Lucas/Int+Float-64 bits-16 dimensoes/Kmeans_Processador/Kmeans_CalcMapModuleFP/simulation/qsim/Kmeans_CalcMapModuleFP.do generated.
+
+Completed successfully. 
+
+**** Running the ModelSim simulation ****
+
+/home/lucasandrade/intelFPGA/16.1/modelsim_ase/linuxaloem/vsim -c -do Kmeans_CalcMapModuleFP.do
+
+Reading pref.tcl
+# 10.5b
+# do Kmeans_CalcMapModuleFP.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:33:16 on Apr 06,2017# vcom -work work Kmeans_CalcMapModuleFP.vho # -- Loading package STANDARD
+# -- Loading package TEXTIO# -- Loading package std_logic_1164# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cycloneive_atom_pack# -- Loading package cycloneive_components
+# -- Compiling entity hard_block
+# -- Compiling architecture structure of hard_block
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components# -- Compiling entity Kmeans_CalcMapModuleFP
+# -- Compiling architecture structure of Kmeans_CalcMapModuleFP
+# End time: 16:33:18 on Apr 06,2017, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:33:18 on Apr 06,2017# vcom -work work Kmeans_CalcMapModuleFP.vwf.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164# -- Compiling entity Kmeans_CalcMapModuleFP_vhd_vec_tst# -- Compiling architecture Kmeans_CalcMapModuleFP_arch of Kmeans_CalcMapModuleFP_vhd_vec_tst
+# End time: 16:33:19 on Apr 06,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Kmeans_CalcMapModuleFP_vhd_vec_tst # Start time: 16:33:19 on Apr 06,2017# Loading std.standard# Loading std.textio(body)# Loading ieee.std_logic_1164(body)# Loading work.kmeans_calcmapmodulefp_vhd_vec_tst(kmeans_calcmapmodulefp_arch)# Loading ieee.vital_timing(body)# Loading ieee.vital_primitives(body)# Loading altera.dffeas_pack# Loading altera.altera_primitives_components# Loading cycloneive.cycloneive_atom_pack(body)# Loading cycloneive.cycloneive_components# Loading work.kmeans_calcmapmodulefp(structure)# Loading work.hard_block(structure)# Loading ieee.std_logic_arith(body)# Loading cycloneive.cycloneive_io_obuf(arch)# Loading cycloneive.cycloneive_io_ibuf(arch)# Loading cycloneive.cycloneive_clkctrl(vital_clkctrl)# Loading cycloneive.cycloneive_ena_reg(behave)# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)# Loading altera.dffeas(vital_dffeas)# Loading cycloneive.cycloneive_ram_block(block_arch)# Loading cycloneive.cycloneive_ram_register(reg_arch)# Loading cycloneive.cycloneive_ram_pulse_generator(pgen_arch)# Loading ieee.std_logic_unsigned(body)# Loading cycloneive.cycloneive_mac_mult(vital_cycloneive_mac_mult)# Loading cycloneive.cycloneive_mac_data_reg(vital_cycloneive_mac_data_reg)# Loading cycloneive.cycloneive_mac_sign_reg(cycloneive_mac_sign_reg)# Loading cycloneive.cycloneive_mac_mult_internal(vital_cycloneive_mac_mult_internal)# Loading cycloneive.cycloneive_mac_out(vital_cycloneive_mac_out)# ** Warning: Design size of 750971 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.# Expect performance to be adversely affected.
+# after#35
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst8|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst8|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst8|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst8|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst8|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult5\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst8|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult5\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst8|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult7\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst8|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult7\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst7|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst7|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst7|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst7|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst7|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult5\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst7|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult5\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst7|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult7\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst7|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult7\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst8|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst8|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst8|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst8|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst8|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult5\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst8|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult5\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst8|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult7\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst8|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult7\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst7|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst7|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult1\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst7|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst7|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst7|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult5\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst7|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult5\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst7|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult7\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst7|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult7\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 3  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst7|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult5\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 3  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst7|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 3  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst8|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult5\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 3  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst8|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst8|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst8|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult5\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst8|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult7\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst8|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult7\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst7|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult3\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst7|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult5\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst7|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult7\/mac_multiply# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calcmapmodulefp_vhd_vec_tst/i1/\inst|inst7|MultEn_FP_altfp_mult_t6k_component|man_product2_mult|auto_generated|mac_mult7\/mac_multiply
+# Simulation time: 0 ps
+# Simulation time: 0 ps
+# Simulation time: 0 ps
+# Simulation time: 0 ps
+# Simulation time: 0 ps
+# Simulation time: 0 ps
+# Simulation time: 0 ps
+# Simulation time: 0 ps
+# End time: 16:33:42 on Apr 06,2017, Elapsed time: 0:00:23# Errors: 0, Warnings: 45
+Completed successfully. 
+
+**** Converting ModelSim VCD to vector waveform ****
+
+Reading /home/lucasandrade/Documents/Lucas/Int+Float-64 bits-16 dimensoes/Kmeans_Processador/Kmeans_CalcMapModuleFP/Kmeans_CalcMapModuleFP.vwf...
+
+Reading /home/lucasandrade/Documents/Lucas/Int+Float-64 bits-16 dimensoes/Kmeans_Processador/Kmeans_CalcMapModuleFP/simulation/qsim/Kmeans_CalcMapModuleFP.msim.vcd...
+
+Processing channel transitions... 
+
+Warning: o_dado[63] - signal not found in VCD.
+
+Warning: o_dado[62] - signal not found in VCD.
+
+Warning: o_dado[61] - signal not found in VCD.
+
+Warning: o_dado[60] - signal not found in VCD.
+
+Warning: o_dado[59] - signal not found in VCD.
+
+Warning: o_dado[58] - signal not found in VCD.
+
+Warning: o_dado[57] - signal not found in VCD.
+
+Warning: o_dado[56] - signal not found in VCD.
+
+Warning: o_dado[55] - signal not found in VCD.
+
+Warning: o_dado[54] - signal not found in VCD.
+
+Warning: o_dado[53] - signal not found in VCD.
+
+Warning: o_dado[52] - signal not found in VCD.
+
+Warning: o_dado[51] - signal not found in VCD.
+
+Warning: o_dado[50] - signal not found in VCD.
+
+Warning: o_dado[49] - signal not found in VCD.
+
+Warning: o_dado[48] - signal not found in VCD.
+
+Warning: o_dado[47] - signal not found in VCD.
+
+Warning: o_dado[46] - signal not found in VCD.
+
+Warning: o_dado[45] - signal not found in VCD.
+
+Warning: o_dado[44] - signal not found in VCD.
+
+Warning: o_dado[43] - signal not found in VCD.
+
+Warning: o_dado[42] - signal not found in VCD.
+
+Warning: o_dado[41] - signal not found in VCD.
+
+Warning: o_dado[40] - signal not found in VCD.
+
+Warning: o_dado[39] - signal not found in VCD.
+
+Warning: o_dado[38] - signal not found in VCD.
+
+Warning: o_dado[37] - signal not found in VCD.
+
+Warning: o_dado[36] - signal not found in VCD.
+
+Warning: o_dado[35] - signal not found in VCD.
+
+Warning: o_dado[34] - signal not found in VCD.
+
+Warning: o_dado[33] - signal not found in VCD.
+
+Warning: o_dado[32] - signal not found in VCD.
+
+Warning: o_dado[31] - signal not found in VCD.
+
+Warning: o_dado[30] - signal not found in VCD.
+
+Warning: o_dado[29] - signal not found in VCD.
+
+Warning: o_dado[28] - signal not found in VCD.
+
+Warning: o_dado[27] - signal not found in VCD.
+
+Warning: o_dado[26] - signal not found in VCD.
+
+Warning: o_dado[25] - signal not found in VCD.
+
+Warning: o_dado[24] - signal not found in VCD.
+
+Warning: o_dado[23] - signal not found in VCD.
+
+Warning: o_dado[22] - signal not found in VCD.
+
+Warning: o_dado[21] - signal not found in VCD.
+
+Warning: o_dado[20] - signal not found in VCD.
+
+Warning: o_dado[19] - signal not found in VCD.
+
+Warning: o_dado[18] - signal not found in VCD.
+
+Warning: o_dado[17] - signal not found in VCD.
+
+Warning: o_dado[16] - signal not found in VCD.
+
+Warning: o_dado[15] - signal not found in VCD.
+
+Warning: o_dado[14] - signal not found in VCD.
+
+Warning: o_dado[13] - signal not found in VCD.
+
+Warning: o_dado[12] - signal not found in VCD.
+
+Warning: o_dado[11] - signal not found in VCD.
+
+Warning: o_dado[10] - signal not found in VCD.
+
+Writing the resulting VWF to /home/lucasandrade/Documents/Lucas/Int+Float-64 bits-16 dimensoes/Kmeans_Processador/Kmeans_CalcMapModuleFP/simulation/qsim/Kmeans_CalcMapModuleFP_20170406163343.sim.vwf
+
+Finished VCD to VWF conversion.
+
+Completed successfully. 
+
+All completed.

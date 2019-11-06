@@ -1,0 +1,1049 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "o_endCalc",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[127]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[126]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[125]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[124]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[123]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[122]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[121]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[120]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[119]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[118]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[117]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[116]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[115]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[114]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[113]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[112]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[111]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[110]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[109]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[108]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[107]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[106]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[105]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[104]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[103]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[102]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[101]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[100]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[99]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[98]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[97]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[96]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[95]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[94]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[93]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[92]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[91]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[90]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[89]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[88]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[87]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[86]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[85]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[84]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[83]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[82]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[81]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[80]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[79]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[78]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[77]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[76]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[75]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[74]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[73]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[72]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[71]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[70]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[69]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[68]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[67]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[66]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[65]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[64]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[63]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[62]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[61]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[60]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[59]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[58]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[57]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[56]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[55]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[54]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[53]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[52]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[51]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[50]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[49]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[48]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[47]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[46]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[45]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[44]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[43]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[42]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[41]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[40]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[39]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[38]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[37]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[36]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[35]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[34]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[33]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[32]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[31]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[30]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[29]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[28]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[27]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[26]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[25]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[24]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[23]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[22]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[21]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[20]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[19]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[18]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[17]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[16]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[15]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[14]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[13]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[12]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[11]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[10]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[9]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[8]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[7]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[6]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[5]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[4]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[3]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[2]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[1]",
+					"strict" : false
+				},
+				{
+					"name" : "distanceCalc[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "aclr_Shift",
+					"strict" : false
+				},
+				{
+					"name" : "en_CalcMap",
+					"strict" : false
+				},
+				{
+					"name" : "dado[31]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[31]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[30]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[30]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[29]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[29]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[28]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[28]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[27]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[27]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[26]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[26]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[25]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[25]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[24]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[24]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[23]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[23]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[22]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[22]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[21]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[21]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[20]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[20]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[19]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[19]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[18]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[18]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[17]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[17]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[16]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[16]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[15]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[15]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[14]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[14]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[13]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[13]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[12]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[12]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[11]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[11]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[10]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[10]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[9]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[9]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[8]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[8]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[7]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[7]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[6]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[6]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[5]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[5]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[4]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[4]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[3]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[3]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[2]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[2]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[1]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[1]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[0]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[0]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[63]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[63]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[62]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[62]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[61]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[61]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[60]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[60]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[59]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[59]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[58]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[58]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[57]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[57]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[56]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[56]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[55]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[55]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[54]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[54]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[53]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[53]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[52]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[52]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[51]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[51]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[50]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[50]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[49]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[49]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[48]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[48]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[47]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[47]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[46]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[46]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[45]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[45]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[44]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[44]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[43]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[43]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[42]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[42]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[41]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[41]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[40]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[40]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[39]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[39]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[38]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[38]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[37]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[37]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[36]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[36]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[35]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[35]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[34]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[34]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[33]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[33]",
+					"strict" : false
+				},
+				{
+					"name" : "dado[32]",
+					"strict" : false
+				},
+				{
+					"name" : "centroid[32]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

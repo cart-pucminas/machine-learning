@@ -1,0 +1,9 @@
+v1
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Kmeans_CalcMap:inst1|CalcMinDistance:inst|lpm_mult:Mult1|mult_u9t:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Kmeans_CalcMap:inst1|CalcMinDistance:inst|lpm_mult:Mult0|mult_u9t:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Kmeans_CalcMap:inst1|CalcMinDistance:inst|lpm_mult:Mult1|mult_u9t:auto_generated|mac_out8,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Kmeans_CalcMap:inst1|CalcMinDistance:inst|lpm_mult:Mult0|mult_u9t:auto_generated|mac_out8,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Kmeans_CalcMap:inst1|CalcMinDistance:inst|lpm_mult:Mult1|mult_u9t:auto_generated|mac_out4,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Kmeans_CalcMap:inst1|CalcMinDistance:inst|lpm_mult:Mult0|mult_u9t:auto_generated|mac_out4,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Kmeans_CalcMap:inst1|CalcMinDistance:inst|lpm_mult:Mult1|mult_u9t:auto_generated|mac_out6,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Kmeans_CalcMap:inst1|CalcMinDistance:inst|lpm_mult:Mult0|mult_u9t:auto_generated|mac_out6,

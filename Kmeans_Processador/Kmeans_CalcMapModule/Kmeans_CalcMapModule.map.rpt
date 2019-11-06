@@ -1,0 +1,800 @@
+Analysis & Synthesis report for Kmeans_CalcMapModule
+Tue Jun 13 11:38:43 2017
+Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis DSP Block Usage Summary
+  9. State Machine - |Kmeans_CalcMapModule|Kmeans_ControlCalcMap:inst|state_fut
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: Kmeans_CalcMap:inst1|ShiftReg:inst1|lpm_shiftreg:lpm_shiftreg_component
+ 14. Parameter Settings for User Entity Instance: Kmeans_CalcMap:inst1|CalcMinDistance:inst
+ 15. Parameter Settings for User Entity Instance: Kmeans_ControlCalcMap:inst
+ 16. Parameter Settings for User Entity Instance: MinDistance:inst2
+ 17. Parameter Settings for Inferred Entity Instance: Kmeans_ControlCalcMap:inst|lpm_mult:Mult1
+ 18. Parameter Settings for Inferred Entity Instance: Kmeans_ControlCalcMap:inst|lpm_mult:Mult0
+ 19. Parameter Settings for Inferred Entity Instance: Kmeans_CalcMap:inst1|CalcMinDistance:inst|lpm_mult:Mult1
+ 20. Parameter Settings for Inferred Entity Instance: Kmeans_CalcMap:inst1|CalcMinDistance:inst|lpm_mult:Mult0
+ 21. lpm_shiftreg Parameter Settings by Entity Instance
+ 22. lpm_mult Parameter Settings by Entity Instance
+ 23. Post-Synthesis Netlist Statistics for Top Partition
+ 24. Elapsed Time Per Partition
+ 25. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Jun 13 11:38:43 2017       ;
+; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
+; Revision Name                      ; Kmeans_CalcMapModule                        ;
+; Top-level Entity Name              ; Kmeans_CalcMapModule                        ;
+; Family                             ; Cyclone IV GX                               ;
+; Total logic elements               ; 1,682                                       ;
+;     Total combinational functions  ; 1,152                                       ;
+;     Dedicated logic registers      ; 961                                         ;
+; Total registers                    ; 961                                         ;
+; Total pins                         ; 350                                         ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 16                                          ;
+; Total GXB Receiver Channel PCS     ; 0                                           ;
+; Total GXB Receiver Channel PMA     ; 0                                           ;
+; Total GXB Transmitter Channel PCS  ; 0                                           ;
+; Total GXB Transmitter Channel PMA  ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                            ;
++----------------------------------------------------------------------------+----------------------+----------------------+
+; Option                                                                     ; Setting              ; Default Value        ;
++----------------------------------------------------------------------------+----------------------+----------------------+
+; Device                                                                     ; EP4CGX150DF31I7      ;                      ;
+; Top-level entity name                                                      ; Kmeans_CalcMapModule ; Kmeans_CalcMapModule ;
+; Family name                                                                ; Cyclone IV GX        ; Cyclone IV GX        ;
+; Use smart compilation                                                      ; Off                  ; Off                  ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                   ; On                   ;
+; Enable compact report table                                                ; Off                  ; Off                  ;
+; Restructure Multiplexers                                                   ; Auto                 ; Auto                 ;
+; Create Debugging Nodes for IP Cores                                        ; Off                  ; Off                  ;
+; Preserve fewer node names                                                  ; On                   ; On                   ;
+; OpenCore Plus hardware evaluation                                          ; Enable               ; Enable               ;
+; Verilog Version                                                            ; Verilog_2001         ; Verilog_2001         ;
+; VHDL Version                                                               ; VHDL_1993            ; VHDL_1993            ;
+; State Machine Processing                                                   ; Auto                 ; Auto                 ;
+; Safe State Machine                                                         ; Off                  ; Off                  ;
+; Extract Verilog State Machines                                             ; On                   ; On                   ;
+; Extract VHDL State Machines                                                ; On                   ; On                   ;
+; Ignore Verilog initial constructs                                          ; Off                  ; Off                  ;
+; Iteration limit for constant Verilog loops                                 ; 5000                 ; 5000                 ;
+; Iteration limit for non-constant Verilog loops                             ; 250                  ; 250                  ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                   ; On                   ;
+; Infer RAMs from Raw Logic                                                  ; On                   ; On                   ;
+; Parallel Synthesis                                                         ; On                   ; On                   ;
+; DSP Block Balancing                                                        ; Auto                 ; Auto                 ;
+; NOT Gate Push-Back                                                         ; On                   ; On                   ;
+; Power-Up Don't Care                                                        ; On                   ; On                   ;
+; Remove Redundant Logic Cells                                               ; Off                  ; Off                  ;
+; Remove Duplicate Registers                                                 ; On                   ; On                   ;
+; Ignore CARRY Buffers                                                       ; Off                  ; Off                  ;
+; Ignore CASCADE Buffers                                                     ; Off                  ; Off                  ;
+; Ignore GLOBAL Buffers                                                      ; Off                  ; Off                  ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                  ; Off                  ;
+; Ignore LCELL Buffers                                                       ; Off                  ; Off                  ;
+; Ignore SOFT Buffers                                                        ; On                   ; On                   ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                  ; Off                  ;
+; Optimization Technique                                                     ; Balanced             ; Balanced             ;
+; Carry Chain Length                                                         ; 70                   ; 70                   ;
+; Auto Carry Chains                                                          ; On                   ; On                   ;
+; Auto Open-Drain Pins                                                       ; On                   ; On                   ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                  ; Off                  ;
+; Auto ROM Replacement                                                       ; On                   ; On                   ;
+; Auto RAM Replacement                                                       ; On                   ; On                   ;
+; Auto DSP Block Replacement                                                 ; On                   ; On                   ;
+; Auto Shift Register Replacement                                            ; Auto                 ; Auto                 ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto                 ; Auto                 ;
+; Auto Clock Enable Replacement                                              ; On                   ; On                   ;
+; Strict RAM Replacement                                                     ; Off                  ; Off                  ;
+; Allow Synchronous Control Signals                                          ; On                   ; On                   ;
+; Force Use of Synchronous Clear Signals                                     ; Off                  ; Off                  ;
+; Auto RAM Block Balancing                                                   ; On                   ; On                   ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                  ; Off                  ;
+; Auto Resource Sharing                                                      ; Off                  ; Off                  ;
+; Allow Any RAM Size For Recognition                                         ; Off                  ; Off                  ;
+; Allow Any ROM Size For Recognition                                         ; Off                  ; Off                  ;
+; Allow Any Shift Register Size For Recognition                              ; Off                  ; Off                  ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                   ; On                   ;
+; Ignore translate_off and synthesis_off directives                          ; Off                  ; Off                  ;
+; Timing-Driven Synthesis                                                    ; On                   ; On                   ;
+; Report Parameter Settings                                                  ; On                   ; On                   ;
+; Report Source Assignments                                                  ; On                   ; On                   ;
+; Report Connectivity Checks                                                 ; On                   ; On                   ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                  ; Off                  ;
+; Synchronization Register Chain Length                                      ; 2                    ; 2                    ;
+; PowerPlay Power Optimization During Synthesis                              ; Normal compilation   ; Normal compilation   ;
+; HDL message level                                                          ; Level2               ; Level2               ;
+; Suppress Register Optimization Related Messages                            ; Off                  ; Off                  ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000                 ; 5000                 ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000                 ; 5000                 ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                  ; 100                  ;
+; Clock MUX Protection                                                       ; On                   ; On                   ;
+; Auto Gated Clock Conversion                                                ; Off                  ; Off                  ;
+; Block Design Naming                                                        ; Auto                 ; Auto                 ;
+; SDC constraint protection                                                  ; Off                  ; Off                  ;
+; Synthesis Effort                                                           ; Auto                 ; Auto                 ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                   ; On                   ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                  ; Off                  ;
+; Analysis & Synthesis Message Level                                         ; Medium               ; Medium               ;
+; Disable Register Merging Across Hierarchies                                ; Auto                 ; Auto                 ;
+; Resource Aware Inference For Block RAM                                     ; On                   ; On                   ;
++----------------------------------------------------------------------------+----------------------+----------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 8           ;
+;                            ;             ;
+; Average used               ; 1.01        ;
+; Maximum used               ; 8           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.1%      ;
+;     Processor 3            ;   0.1%      ;
+;     Processor 4            ;   0.1%      ;
+;     Processor 5            ;   0.1%      ;
+;     Processor 6            ;   0.1%      ;
+;     Processor 7            ;   0.1%      ;
+;     Processor 8            ;   0.1%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                        ;
++----------------------------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                   ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                            ; Library ;
++----------------------------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------+---------+
+; ../Kmeans_ControlCalcMap/Kmeans_ControlCalcMap.vhd ; yes             ; User VHDL File                     ; /home/lucas/Documentos/Kmeans/Testes/Kmeans_Processador/Kmeans_ControlCalcMap/Kmeans_ControlCalcMap.vhd ;         ;
+; ../Kmeans_CalcMap/CalcMinDistance.vhd              ; yes             ; User VHDL File                     ; /home/lucas/Documentos/Kmeans/Testes/Kmeans_Processador/Kmeans_CalcMap/CalcMinDistance.vhd              ;         ;
+; ../Kmeans_CalcMap/ShiftReg.vhd                     ; yes             ; User Wizard-Generated File         ; /home/lucas/Documentos/Kmeans/Testes/Kmeans_Processador/Kmeans_CalcMap/ShiftReg.vhd                     ;         ;
+; ../Kmeans_CalcMap/Kmeans_CalcMap.bdf               ; yes             ; User Block Diagram/Schematic File  ; /home/lucas/Documentos/Kmeans/Testes/Kmeans_Processador/Kmeans_CalcMap/Kmeans_CalcMap.bdf               ;         ;
+; Kmeans_CalcMapModule.bdf                           ; yes             ; User Block Diagram/Schematic File  ; /home/lucas/Documentos/Kmeans/Testes/Kmeans_Processador/Kmeans_CalcMapModule/Kmeans_CalcMapModule.bdf   ;         ;
+; MinDistance.vhd                                    ; yes             ; User VHDL File                     ; /home/lucas/Documentos/Kmeans/Testes/Kmeans_Processador/Kmeans_CalcMapModule/MinDistance.vhd            ;         ;
+; lpm_shiftreg.tdf                                   ; yes             ; Megafunction                       ; /home/lucas/intelFPGA_lite/16.1/quartus/libraries/megafunctions/lpm_shiftreg.tdf                        ;         ;
+; lpm_constant.inc                                   ; yes             ; Megafunction                       ; /home/lucas/intelFPGA_lite/16.1/quartus/libraries/megafunctions/lpm_constant.inc                        ;         ;
+; dffeea.inc                                         ; yes             ; Megafunction                       ; /home/lucas/intelFPGA_lite/16.1/quartus/libraries/megafunctions/dffeea.inc                              ;         ;
+; aglobal161.inc                                     ; yes             ; Megafunction                       ; /home/lucas/intelFPGA_lite/16.1/quartus/libraries/megafunctions/aglobal161.inc                          ;         ;
+; lpm_mult.tdf                                       ; yes             ; Megafunction                       ; /home/lucas/intelFPGA_lite/16.1/quartus/libraries/megafunctions/lpm_mult.tdf                            ;         ;
+; lpm_add_sub.inc                                    ; yes             ; Megafunction                       ; /home/lucas/intelFPGA_lite/16.1/quartus/libraries/megafunctions/lpm_add_sub.inc                         ;         ;
+; multcore.inc                                       ; yes             ; Megafunction                       ; /home/lucas/intelFPGA_lite/16.1/quartus/libraries/megafunctions/multcore.inc                            ;         ;
+; bypassff.inc                                       ; yes             ; Megafunction                       ; /home/lucas/intelFPGA_lite/16.1/quartus/libraries/megafunctions/bypassff.inc                            ;         ;
+; altshift.inc                                       ; yes             ; Megafunction                       ; /home/lucas/intelFPGA_lite/16.1/quartus/libraries/megafunctions/altshift.inc                            ;         ;
+; multcore.tdf                                       ; yes             ; Megafunction                       ; /home/lucas/intelFPGA_lite/16.1/quartus/libraries/megafunctions/multcore.tdf                            ;         ;
+; csa_add.inc                                        ; yes             ; Megafunction                       ; /home/lucas/intelFPGA_lite/16.1/quartus/libraries/megafunctions/csa_add.inc                             ;         ;
+; mpar_add.inc                                       ; yes             ; Megafunction                       ; /home/lucas/intelFPGA_lite/16.1/quartus/libraries/megafunctions/mpar_add.inc                            ;         ;
+; muleabz.inc                                        ; yes             ; Megafunction                       ; /home/lucas/intelFPGA_lite/16.1/quartus/libraries/megafunctions/muleabz.inc                             ;         ;
+; mul_lfrg.inc                                       ; yes             ; Megafunction                       ; /home/lucas/intelFPGA_lite/16.1/quartus/libraries/megafunctions/mul_lfrg.inc                            ;         ;
+; mul_boothc.inc                                     ; yes             ; Megafunction                       ; /home/lucas/intelFPGA_lite/16.1/quartus/libraries/megafunctions/mul_boothc.inc                          ;         ;
+; alt_ded_mult.inc                                   ; yes             ; Megafunction                       ; /home/lucas/intelFPGA_lite/16.1/quartus/libraries/megafunctions/alt_ded_mult.inc                        ;         ;
+; alt_ded_mult_y.inc                                 ; yes             ; Megafunction                       ; /home/lucas/intelFPGA_lite/16.1/quartus/libraries/megafunctions/alt_ded_mult_y.inc                      ;         ;
+; dffpipe.inc                                        ; yes             ; Megafunction                       ; /home/lucas/intelFPGA_lite/16.1/quartus/libraries/megafunctions/dffpipe.inc                             ;         ;
+; mpar_add.tdf                                       ; yes             ; Megafunction                       ; /home/lucas/intelFPGA_lite/16.1/quartus/libraries/megafunctions/mpar_add.tdf                            ;         ;
+; lpm_add_sub.tdf                                    ; yes             ; Megafunction                       ; /home/lucas/intelFPGA_lite/16.1/quartus/libraries/megafunctions/lpm_add_sub.tdf                         ;         ;
+; addcore.inc                                        ; yes             ; Megafunction                       ; /home/lucas/intelFPGA_lite/16.1/quartus/libraries/megafunctions/addcore.inc                             ;         ;
+; look_add.inc                                       ; yes             ; Megafunction                       ; /home/lucas/intelFPGA_lite/16.1/quartus/libraries/megafunctions/look_add.inc                            ;         ;
+; alt_stratix_add_sub.inc                            ; yes             ; Megafunction                       ; /home/lucas/intelFPGA_lite/16.1/quartus/libraries/megafunctions/alt_stratix_add_sub.inc                 ;         ;
+; db/add_sub_qgh.tdf                                 ; yes             ; Auto-Generated Megafunction        ; /home/lucas/Documentos/Kmeans/Testes/Kmeans_Processador/Kmeans_CalcMapModule/db/add_sub_qgh.tdf         ;         ;
+; db/add_sub_rgh.tdf                                 ; yes             ; Auto-Generated Megafunction        ; /home/lucas/Documentos/Kmeans/Testes/Kmeans_Processador/Kmeans_CalcMapModule/db/add_sub_rgh.tdf         ;         ;
+; altshift.tdf                                       ; yes             ; Megafunction                       ; /home/lucas/intelFPGA_lite/16.1/quartus/libraries/megafunctions/altshift.tdf                            ;         ;
+; db/add_sub_ugh.tdf                                 ; yes             ; Auto-Generated Megafunction        ; /home/lucas/Documentos/Kmeans/Testes/Kmeans_Processador/Kmeans_CalcMapModule/db/add_sub_ugh.tdf         ;         ;
+; db/add_sub_vgh.tdf                                 ; yes             ; Auto-Generated Megafunction        ; /home/lucas/Documentos/Kmeans/Testes/Kmeans_Processador/Kmeans_CalcMapModule/db/add_sub_vgh.tdf         ;         ;
+; db/mult_u9t.tdf                                    ; yes             ; Auto-Generated Megafunction        ; /home/lucas/Documentos/Kmeans/Testes/Kmeans_Processador/Kmeans_CalcMapModule/db/mult_u9t.tdf            ;         ;
++----------------------------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary ;
++--------------------------+------------------+
+; Resource                 ; Usage            ;
++--------------------------+------------------+
+; I/O pins                 ; 350              ;
+;                          ;                  ;
+; DSP block 9-bit elements ; 16               ;
+;                          ;                  ;
+; Maximum fan-out node     ; clk~input        ;
+; Maximum fan-out          ; 961              ;
+; Total fan-out            ; 6977             ;
+; Average fan-out          ; 2.47             ;
++--------------------------+------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                       ;
++---------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+--------------+
+; Compilation Hierarchy Node                        ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                     ; Entity Name           ; Library Name ;
++---------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+--------------+
+; |Kmeans_CalcMapModule                             ; 1152 (0)            ; 961 (0)                   ; 0           ; 16           ; 0       ; 8         ; 0         ; 350  ; 0            ; |Kmeans_CalcMapModule                                                                                                                                                   ; Kmeans_CalcMapModule  ; work         ;
+;    |Kmeans_CalcMap:inst1|                         ; 442 (0)             ; 389 (0)                   ; 0           ; 16           ; 0       ; 8         ; 0         ; 0    ; 0            ; |Kmeans_CalcMapModule|Kmeans_CalcMap:inst1                                                                                                                              ; Kmeans_CalcMap        ; work         ;
+;       |CalcMinDistance:inst|                      ; 442 (258)           ; 385 (385)                 ; 0           ; 16           ; 0       ; 8         ; 0         ; 0    ; 0            ; |Kmeans_CalcMapModule|Kmeans_CalcMap:inst1|CalcMinDistance:inst                                                                                                         ; CalcMinDistance       ; work         ;
+;          |lpm_mult:Mult0|                         ; 92 (0)              ; 0 (0)                     ; 0           ; 8            ; 0       ; 4         ; 0         ; 0    ; 0            ; |Kmeans_CalcMapModule|Kmeans_CalcMap:inst1|CalcMinDistance:inst|lpm_mult:Mult0                                                                                          ; lpm_mult              ; work         ;
+;             |mult_u9t:auto_generated|             ; 92 (92)             ; 0 (0)                     ; 0           ; 8            ; 0       ; 4         ; 0         ; 0    ; 0            ; |Kmeans_CalcMapModule|Kmeans_CalcMap:inst1|CalcMinDistance:inst|lpm_mult:Mult0|mult_u9t:auto_generated                                                                  ; mult_u9t              ; work         ;
+;          |lpm_mult:Mult1|                         ; 92 (0)              ; 0 (0)                     ; 0           ; 8            ; 0       ; 4         ; 0         ; 0    ; 0            ; |Kmeans_CalcMapModule|Kmeans_CalcMap:inst1|CalcMinDistance:inst|lpm_mult:Mult1                                                                                          ; lpm_mult              ; work         ;
+;             |mult_u9t:auto_generated|             ; 92 (92)             ; 0 (0)                     ; 0           ; 8            ; 0       ; 4         ; 0         ; 0    ; 0            ; |Kmeans_CalcMapModule|Kmeans_CalcMap:inst1|CalcMinDistance:inst|lpm_mult:Mult1|mult_u9t:auto_generated                                                                  ; mult_u9t              ; work         ;
+;       |ShiftReg:inst1|                            ; 0 (0)               ; 4 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Kmeans_CalcMapModule|Kmeans_CalcMap:inst1|ShiftReg:inst1                                                                                                               ; ShiftReg              ; work         ;
+;          |lpm_shiftreg:lpm_shiftreg_component|    ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Kmeans_CalcMapModule|Kmeans_CalcMap:inst1|ShiftReg:inst1|lpm_shiftreg:lpm_shiftreg_component                                                                           ; lpm_shiftreg          ; work         ;
+;    |Kmeans_ControlCalcMap:inst|                   ; 578 (462)           ; 296 (296)                 ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Kmeans_CalcMapModule|Kmeans_ControlCalcMap:inst                                                                                                                        ; Kmeans_ControlCalcMap ; work         ;
+;       |lpm_mult:Mult0|                            ; 64 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Kmeans_CalcMapModule|Kmeans_ControlCalcMap:inst|lpm_mult:Mult0                                                                                                         ; lpm_mult              ; work         ;
+;          |multcore:mult_core|                     ; 64 (39)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Kmeans_CalcMapModule|Kmeans_ControlCalcMap:inst|lpm_mult:Mult0|multcore:mult_core                                                                                      ; multcore              ; work         ;
+;             |mpar_add:padder|                     ; 25 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Kmeans_CalcMapModule|Kmeans_ControlCalcMap:inst|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder                                                                      ; mpar_add              ; work         ;
+;                |lpm_add_sub:adder[0]|             ; 13 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Kmeans_CalcMapModule|Kmeans_ControlCalcMap:inst|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]                                                 ; lpm_add_sub           ; work         ;
+;                   |add_sub_ugh:auto_generated|    ; 13 (13)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Kmeans_CalcMapModule|Kmeans_ControlCalcMap:inst|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_ugh:auto_generated                      ; add_sub_ugh           ; work         ;
+;                |mpar_add:sub_par_add|             ; 12 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Kmeans_CalcMapModule|Kmeans_ControlCalcMap:inst|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add                                                 ; mpar_add              ; work         ;
+;                   |lpm_add_sub:adder[0]|          ; 12 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Kmeans_CalcMapModule|Kmeans_ControlCalcMap:inst|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]                            ; lpm_add_sub           ; work         ;
+;                      |add_sub_vgh:auto_generated| ; 12 (12)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Kmeans_CalcMapModule|Kmeans_ControlCalcMap:inst|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_vgh:auto_generated ; add_sub_vgh           ; work         ;
+;       |lpm_mult:Mult1|                            ; 52 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Kmeans_CalcMapModule|Kmeans_ControlCalcMap:inst|lpm_mult:Mult1                                                                                                         ; lpm_mult              ; work         ;
+;          |multcore:mult_core|                     ; 52 (30)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Kmeans_CalcMapModule|Kmeans_ControlCalcMap:inst|lpm_mult:Mult1|multcore:mult_core                                                                                      ; multcore              ; work         ;
+;             |mpar_add:padder|                     ; 22 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Kmeans_CalcMapModule|Kmeans_ControlCalcMap:inst|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder                                                                      ; mpar_add              ; work         ;
+;                |lpm_add_sub:adder[0]|             ; 11 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Kmeans_CalcMapModule|Kmeans_ControlCalcMap:inst|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]                                                 ; lpm_add_sub           ; work         ;
+;                   |add_sub_qgh:auto_generated|    ; 11 (11)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Kmeans_CalcMapModule|Kmeans_ControlCalcMap:inst|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_qgh:auto_generated                      ; add_sub_qgh           ; work         ;
+;                |mpar_add:sub_par_add|             ; 11 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Kmeans_CalcMapModule|Kmeans_ControlCalcMap:inst|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add                                                 ; mpar_add              ; work         ;
+;                   |lpm_add_sub:adder[0]|          ; 11 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Kmeans_CalcMapModule|Kmeans_ControlCalcMap:inst|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]                            ; lpm_add_sub           ; work         ;
+;                      |add_sub_rgh:auto_generated| ; 11 (11)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Kmeans_CalcMapModule|Kmeans_ControlCalcMap:inst|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_rgh:auto_generated ; add_sub_rgh           ; work         ;
+;    |MinDistance:inst2|                            ; 132 (132)           ; 276 (276)                 ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Kmeans_CalcMapModule|MinDistance:inst2                                                                                                                                 ; MinDistance           ; work         ;
++---------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis DSP Block Usage Summary        ;
++---------------------------------------+-------------+
+; Statistic                             ; Number Used ;
++---------------------------------------+-------------+
+; Simple Multipliers (9-bit)            ; 0           ;
+; Simple Multipliers (18-bit)           ; 8           ;
+; Simple Multipliers (36-bit)           ; 0           ;
+; Multiply Accumulators (18-bit)        ; 0           ;
+; Two-Multipliers Adders (9-bit)        ; 0           ;
+; Two-Multipliers Adders (18-bit)       ; 0           ;
+; Four-Multipliers Adders (9-bit)       ; 0           ;
+; Four-Multipliers Adders (18-bit)      ; 0           ;
+; Embedded Multiplier Blocks            ; --          ;
+; Embedded Multiplier 9-bit elements    ; 16          ;
+; Signed Embedded Multipliers           ; 2           ;
+; Unsigned Embedded Multipliers         ; 2           ;
+; Mixed Sign Embedded Multipliers       ; 4           ;
+; Variable Sign Embedded Multipliers    ; 0           ;
+; Dedicated Input Shift Register Chains ; 0           ;
++---------------------------------------+-------------+
+Note: number of Embedded Multiplier Blocks used is only available after a successful fit.
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |Kmeans_CalcMapModule|Kmeans_ControlCalcMap:inst|state_fut                                                                                                                                                                                ;
++---------------------------+--------------------+---------------------+-----------------------+---------------------------+------------------------+------------------------+--------------------+----------------------+----------------+-----------------+
+; Name                      ; state_fut.ENDSTATE ; state_fut.STOREDATA ; state_fut.MINDISTANCE ; state_fut.VERIFYDIMENSION ; state_fut.CALCDISTANCE ; state_fut.ENDCENTROIDS ; state_fut.LOADDATA ; state_fut.VERIFYDATA ; state_fut.IDLE ; state_fut.RESET ;
++---------------------------+--------------------+---------------------+-----------------------+---------------------------+------------------------+------------------------+--------------------+----------------------+----------------+-----------------+
+; state_fut.RESET           ; 0                  ; 0                   ; 0                     ; 0                         ; 0                      ; 0                      ; 0                  ; 0                    ; 0              ; 0               ;
+; state_fut.IDLE            ; 0                  ; 0                   ; 0                     ; 0                         ; 0                      ; 0                      ; 0                  ; 0                    ; 1              ; 1               ;
+; state_fut.VERIFYDATA      ; 0                  ; 0                   ; 0                     ; 0                         ; 0                      ; 0                      ; 0                  ; 1                    ; 0              ; 1               ;
+; state_fut.LOADDATA        ; 0                  ; 0                   ; 0                     ; 0                         ; 0                      ; 0                      ; 1                  ; 0                    ; 0              ; 1               ;
+; state_fut.ENDCENTROIDS    ; 0                  ; 0                   ; 0                     ; 0                         ; 0                      ; 1                      ; 0                  ; 0                    ; 0              ; 1               ;
+; state_fut.CALCDISTANCE    ; 0                  ; 0                   ; 0                     ; 0                         ; 1                      ; 0                      ; 0                  ; 0                    ; 0              ; 1               ;
+; state_fut.VERIFYDIMENSION ; 0                  ; 0                   ; 0                     ; 1                         ; 0                      ; 0                      ; 0                  ; 0                    ; 0              ; 1               ;
+; state_fut.MINDISTANCE     ; 0                  ; 0                   ; 1                     ; 0                         ; 0                      ; 0                      ; 0                  ; 0                    ; 0              ; 1               ;
+; state_fut.STOREDATA       ; 0                  ; 1                   ; 0                     ; 0                         ; 0                      ; 0                      ; 0                  ; 0                    ; 0              ; 1               ;
+; state_fut.ENDSTATE        ; 1                  ; 0                   ; 0                     ; 0                         ; 0                      ; 0                      ; 0                  ; 0                    ; 0              ; 1               ;
++---------------------------+--------------------+---------------------+-----------------------+---------------------------+------------------------+------------------------+--------------------+----------------------+----------------+-----------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                           ;
++-------------------------------------------------------------------+--------------------------------------------------------------------------+
+; Register name                                                     ; Reason for Removal                                                       ;
++-------------------------------------------------------------------+--------------------------------------------------------------------------+
+; Kmeans_ControlCalcMap:inst|s_blockState[1]                        ; Stuck at GND due to stuck port data_in                                   ;
+; Kmeans_ControlCalcMap:inst|s_blockState[2]                        ; Stuck at VCC due to stuck port data_in                                   ;
+; Kmeans_ControlCalcMap:inst|s_blockState[3]                        ; Stuck at GND due to stuck port data_in                                   ;
+; Kmeans_CalcMap:inst1|CalcMinDistance:inst|s_distanceCalc[64..127] ; Merged with Kmeans_CalcMap:inst1|CalcMinDistance:inst|s_distanceCalc[63] ;
+; Kmeans_ControlCalcMap:inst|s_distanceCalc[64..127]                ; Merged with Kmeans_ControlCalcMap:inst|s_distanceCalc[63]                ;
+; Kmeans_ControlCalcMap:inst|state_fut.VERIFYDIMENSION              ; Lost fanout                                                              ;
+; Total Number of Removed Registers = 132                           ;                                                                          ;
++-------------------------------------------------------------------+--------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 961   ;
+; Number of registers using Synchronous Clear  ; 23    ;
+; Number of registers using Synchronous Load   ; 188   ;
+; Number of registers using Asynchronous Clear ; 15    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 583   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------+
+; 4:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; Yes        ; |Kmeans_CalcMapModule|Kmeans_ControlCalcMap:inst|s_addrRamDado[2]     ;
+; 6:1                ; 13 bits   ; 52 LEs        ; 13 LEs               ; 39 LEs                 ; Yes        ; |Kmeans_CalcMapModule|Kmeans_ControlCalcMap:inst|s_countDimensions[3] ;
+; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |Kmeans_CalcMapModule|Kmeans_ControlCalcMap:inst|s_countDado[3]       ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 10 LEs               ; 20 LEs                 ; Yes        ; |Kmeans_CalcMapModule|Kmeans_ControlCalcMap:inst|s_countCentroid[9]   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Kmeans_CalcMap:inst1|ShiftReg:inst1|lpm_shiftreg:lpm_shiftreg_component ;
++------------------------+---------------+-----------------------------------------------------------------------------+
+; Parameter Name         ; Value         ; Type                                                                        ;
++------------------------+---------------+-----------------------------------------------------------------------------+
+; LPM_WIDTH              ; 4             ; Signed Integer                                                              ;
+; LPM_DIRECTION          ; LEFT          ; Untyped                                                                     ;
+; LPM_AVALUE             ; UNUSED        ; Untyped                                                                     ;
+; LPM_SVALUE             ; UNUSED        ; Untyped                                                                     ;
+; DEVICE_FAMILY          ; Cyclone IV GX ; Untyped                                                                     ;
+; AUTO_CARRY_CHAINS      ; ON            ; AUTO_CARRY                                                                  ;
+; IGNORE_CARRY_BUFFERS   ; OFF           ; IGNORE_CARRY                                                                ;
+; AUTO_CASCADE_CHAINS    ; ON            ; AUTO_CASCADE                                                                ;
+; IGNORE_CASCADE_BUFFERS ; OFF           ; IGNORE_CASCADE                                                              ;
++------------------------+---------------+-----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Kmeans_CalcMap:inst1|CalcMinDistance:inst ;
++------------------+-------+-------------------------------------------------------------+
+; Parameter Name   ; Value ; Type                                                        ;
++------------------+-------+-------------------------------------------------------------+
+; palavra          ; 64    ; Signed Integer                                              ;
+; palavraxy        ; 32    ; Signed Integer                                              ;
+; tamanhosoma      ; 128   ; Signed Integer                                              ;
+; maxcentroidsbits ; 10    ; Signed Integer                                              ;
++------------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Kmeans_ControlCalcMap:inst ;
++-------------------+-------+---------------------------------------------+
+; Parameter Name    ; Value ; Type                                        ;
++-------------------+-------+---------------------------------------------+
+; palavra           ; 64    ; Signed Integer                              ;
+; tamanhoaddr       ; 14    ; Signed Integer                              ;
+; maxcentroidsbits  ; 10    ; Signed Integer                              ;
+; maxpontosbits     ; 15    ; Signed Integer                              ;
+; maxcountcentroids ; 13    ; Signed Integer                              ;
+; tamanhosoma       ; 128   ; Signed Integer                              ;
+; numbitsstates     ; 4     ; Signed Integer                              ;
++-------------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MinDistance:inst2 ;
++------------------+-------+-------------------------------------+
+; Parameter Name   ; Value ; Type                                ;
++------------------+-------+-------------------------------------+
+; tamanhosoma      ; 128   ; Signed Integer                      ;
+; maxcentroidsbits ; 10    ; Signed Integer                      ;
++------------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: Kmeans_ControlCalcMap:inst|lpm_mult:Mult1 ;
++------------------------------------------------+---------------+---------------------------+
+; Parameter Name                                 ; Value         ; Type                      ;
++------------------------------------------------+---------------+---------------------------+
+; AUTO_CARRY_CHAINS                              ; ON            ; AUTO_CARRY                ;
+; IGNORE_CARRY_BUFFERS                           ; OFF           ; IGNORE_CARRY              ;
+; AUTO_CASCADE_CHAINS                            ; ON            ; AUTO_CASCADE              ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF           ; IGNORE_CASCADE            ;
+; LPM_WIDTHA                                     ; 10            ; Untyped                   ;
+; LPM_WIDTHB                                     ; 3             ; Untyped                   ;
+; LPM_WIDTHP                                     ; 13            ; Untyped                   ;
+; LPM_WIDTHR                                     ; 13            ; Untyped                   ;
+; LPM_WIDTHS                                     ; 1             ; Untyped                   ;
+; LPM_REPRESENTATION                             ; UNSIGNED      ; Untyped                   ;
+; LPM_PIPELINE                                   ; 0             ; Untyped                   ;
+; LATENCY                                        ; 0             ; Untyped                   ;
+; INPUT_A_IS_CONSTANT                            ; NO            ; Untyped                   ;
+; INPUT_B_IS_CONSTANT                            ; NO            ; Untyped                   ;
+; USE_EAB                                        ; OFF           ; Untyped                   ;
+; MAXIMIZE_SPEED                                 ; 6             ; Untyped                   ;
+; DEVICE_FAMILY                                  ; Cyclone IV GX ; Untyped                   ;
+; CARRY_CHAIN                                    ; MANUAL        ; Untyped                   ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT           ; TECH_MAPPER_APEX20K       ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO          ; Untyped                   ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0             ; Untyped                   ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0             ; Untyped                   ;
+; CBXI_PARAMETER                                 ; NOTHING       ; Untyped                   ;
+; INPUT_A_FIXED_VALUE                            ; Bx            ; Untyped                   ;
+; INPUT_B_FIXED_VALUE                            ; Bx            ; Untyped                   ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF           ; Untyped                   ;
++------------------------------------------------+---------------+---------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: Kmeans_ControlCalcMap:inst|lpm_mult:Mult0 ;
++------------------------------------------------+---------------+---------------------------+
+; Parameter Name                                 ; Value         ; Type                      ;
++------------------------------------------------+---------------+---------------------------+
+; AUTO_CARRY_CHAINS                              ; ON            ; AUTO_CARRY                ;
+; IGNORE_CARRY_BUFFERS                           ; OFF           ; IGNORE_CARRY              ;
+; AUTO_CASCADE_CHAINS                            ; ON            ; AUTO_CASCADE              ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF           ; IGNORE_CASCADE            ;
+; LPM_WIDTHA                                     ; 14            ; Untyped                   ;
+; LPM_WIDTHB                                     ; 3             ; Untyped                   ;
+; LPM_WIDTHP                                     ; 17            ; Untyped                   ;
+; LPM_WIDTHR                                     ; 17            ; Untyped                   ;
+; LPM_WIDTHS                                     ; 1             ; Untyped                   ;
+; LPM_REPRESENTATION                             ; UNSIGNED      ; Untyped                   ;
+; LPM_PIPELINE                                   ; 0             ; Untyped                   ;
+; LATENCY                                        ; 0             ; Untyped                   ;
+; INPUT_A_IS_CONSTANT                            ; NO            ; Untyped                   ;
+; INPUT_B_IS_CONSTANT                            ; NO            ; Untyped                   ;
+; USE_EAB                                        ; OFF           ; Untyped                   ;
+; MAXIMIZE_SPEED                                 ; 5             ; Untyped                   ;
+; DEVICE_FAMILY                                  ; Cyclone IV GX ; Untyped                   ;
+; CARRY_CHAIN                                    ; MANUAL        ; Untyped                   ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT           ; TECH_MAPPER_APEX20K       ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO          ; Untyped                   ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0             ; Untyped                   ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0             ; Untyped                   ;
+; CBXI_PARAMETER                                 ; NOTHING       ; Untyped                   ;
+; INPUT_A_FIXED_VALUE                            ; Bx            ; Untyped                   ;
+; INPUT_B_FIXED_VALUE                            ; Bx            ; Untyped                   ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF           ; Untyped                   ;
++------------------------------------------------+---------------+---------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: Kmeans_CalcMap:inst1|CalcMinDistance:inst|lpm_mult:Mult1 ;
++------------------------------------------------+---------------+------------------------------------------+
+; Parameter Name                                 ; Value         ; Type                                     ;
++------------------------------------------------+---------------+------------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON            ; AUTO_CARRY                               ;
+; IGNORE_CARRY_BUFFERS                           ; OFF           ; IGNORE_CARRY                             ;
+; AUTO_CASCADE_CHAINS                            ; ON            ; AUTO_CASCADE                             ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF           ; IGNORE_CASCADE                           ;
+; LPM_WIDTHA                                     ; 32            ; Untyped                                  ;
+; LPM_WIDTHB                                     ; 32            ; Untyped                                  ;
+; LPM_WIDTHP                                     ; 64            ; Untyped                                  ;
+; LPM_WIDTHR                                     ; 64            ; Untyped                                  ;
+; LPM_WIDTHS                                     ; 1             ; Untyped                                  ;
+; LPM_REPRESENTATION                             ; SIGNED        ; Untyped                                  ;
+; LPM_PIPELINE                                   ; 0             ; Untyped                                  ;
+; LATENCY                                        ; 0             ; Untyped                                  ;
+; INPUT_A_IS_CONSTANT                            ; NO            ; Untyped                                  ;
+; INPUT_B_IS_CONSTANT                            ; NO            ; Untyped                                  ;
+; USE_EAB                                        ; OFF           ; Untyped                                  ;
+; MAXIMIZE_SPEED                                 ; 5             ; Untyped                                  ;
+; DEVICE_FAMILY                                  ; Cyclone IV GX ; Untyped                                  ;
+; CARRY_CHAIN                                    ; MANUAL        ; Untyped                                  ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT           ; TECH_MAPPER_APEX20K                      ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO          ; Untyped                                  ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0             ; Untyped                                  ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0             ; Untyped                                  ;
+; CBXI_PARAMETER                                 ; mult_u9t      ; Untyped                                  ;
+; INPUT_A_FIXED_VALUE                            ; Bx            ; Untyped                                  ;
+; INPUT_B_FIXED_VALUE                            ; Bx            ; Untyped                                  ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF           ; Untyped                                  ;
++------------------------------------------------+---------------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: Kmeans_CalcMap:inst1|CalcMinDistance:inst|lpm_mult:Mult0 ;
++------------------------------------------------+---------------+------------------------------------------+
+; Parameter Name                                 ; Value         ; Type                                     ;
++------------------------------------------------+---------------+------------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON            ; AUTO_CARRY                               ;
+; IGNORE_CARRY_BUFFERS                           ; OFF           ; IGNORE_CARRY                             ;
+; AUTO_CASCADE_CHAINS                            ; ON            ; AUTO_CASCADE                             ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF           ; IGNORE_CASCADE                           ;
+; LPM_WIDTHA                                     ; 32            ; Untyped                                  ;
+; LPM_WIDTHB                                     ; 32            ; Untyped                                  ;
+; LPM_WIDTHP                                     ; 64            ; Untyped                                  ;
+; LPM_WIDTHR                                     ; 64            ; Untyped                                  ;
+; LPM_WIDTHS                                     ; 1             ; Untyped                                  ;
+; LPM_REPRESENTATION                             ; SIGNED        ; Untyped                                  ;
+; LPM_PIPELINE                                   ; 0             ; Untyped                                  ;
+; LATENCY                                        ; 0             ; Untyped                                  ;
+; INPUT_A_IS_CONSTANT                            ; NO            ; Untyped                                  ;
+; INPUT_B_IS_CONSTANT                            ; NO            ; Untyped                                  ;
+; USE_EAB                                        ; OFF           ; Untyped                                  ;
+; MAXIMIZE_SPEED                                 ; 5             ; Untyped                                  ;
+; DEVICE_FAMILY                                  ; Cyclone IV GX ; Untyped                                  ;
+; CARRY_CHAIN                                    ; MANUAL        ; Untyped                                  ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT           ; TECH_MAPPER_APEX20K                      ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO          ; Untyped                                  ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0             ; Untyped                                  ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0             ; Untyped                                  ;
+; CBXI_PARAMETER                                 ; mult_u9t      ; Untyped                                  ;
+; INPUT_A_FIXED_VALUE                            ; Bx            ; Untyped                                  ;
+; INPUT_B_FIXED_VALUE                            ; Bx            ; Untyped                                  ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF           ; Untyped                                  ;
++------------------------------------------------+---------------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; lpm_shiftreg Parameter Settings by Entity Instance                                                   ;
++----------------------------+-------------------------------------------------------------------------+
+; Name                       ; Value                                                                   ;
++----------------------------+-------------------------------------------------------------------------+
+; Number of entity instances ; 1                                                                       ;
+; Entity Instance            ; Kmeans_CalcMap:inst1|ShiftReg:inst1|lpm_shiftreg:lpm_shiftreg_component ;
+;     -- LPM_WIDTH           ; 4                                                                       ;
+;     -- LPM_DIRECTION       ; LEFT                                                                    ;
++----------------------------+-------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------+
+; lpm_mult Parameter Settings by Entity Instance                                                   ;
++---------------------------------------+----------------------------------------------------------+
+; Name                                  ; Value                                                    ;
++---------------------------------------+----------------------------------------------------------+
+; Number of entity instances            ; 4                                                        ;
+; Entity Instance                       ; Kmeans_ControlCalcMap:inst|lpm_mult:Mult1                ;
+;     -- LPM_WIDTHA                     ; 10                                                       ;
+;     -- LPM_WIDTHB                     ; 3                                                        ;
+;     -- LPM_WIDTHP                     ; 13                                                       ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED                                                 ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                       ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                       ;
+;     -- USE_EAB                        ; OFF                                                      ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                     ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                       ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                       ;
+; Entity Instance                       ; Kmeans_ControlCalcMap:inst|lpm_mult:Mult0                ;
+;     -- LPM_WIDTHA                     ; 14                                                       ;
+;     -- LPM_WIDTHB                     ; 3                                                        ;
+;     -- LPM_WIDTHP                     ; 17                                                       ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED                                                 ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                       ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                       ;
+;     -- USE_EAB                        ; OFF                                                      ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                     ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                       ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                       ;
+; Entity Instance                       ; Kmeans_CalcMap:inst1|CalcMinDistance:inst|lpm_mult:Mult1 ;
+;     -- LPM_WIDTHA                     ; 32                                                       ;
+;     -- LPM_WIDTHB                     ; 32                                                       ;
+;     -- LPM_WIDTHP                     ; 64                                                       ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                                   ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                       ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                       ;
+;     -- USE_EAB                        ; OFF                                                      ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                     ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                       ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                       ;
+; Entity Instance                       ; Kmeans_CalcMap:inst1|CalcMinDistance:inst|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 32                                                       ;
+;     -- LPM_WIDTHB                     ; 32                                                       ;
+;     -- LPM_WIDTHP                     ; 64                                                       ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                                   ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                       ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                       ;
+;     -- USE_EAB                        ; OFF                                                      ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                     ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                       ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                       ;
++---------------------------------------+----------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 350                         ;
+; cycloneiii_ff         ; 961                         ;
+;     CLR               ; 15                          ;
+;     ENA               ; 372                         ;
+;     ENA SCLR          ; 23                          ;
+;     ENA SLD           ; 188                         ;
+;     plain             ; 363                         ;
+; cycloneiii_lcell_comb ; 1154                        ;
+;     arith             ; 841                         ;
+;         2 data inputs ; 97                          ;
+;         3 data inputs ; 744                         ;
+;     normal            ; 313                         ;
+;         0 data inputs ; 6                           ;
+;         1 data inputs ; 8                           ;
+;         2 data inputs ; 68                          ;
+;         3 data inputs ; 34                          ;
+;         4 data inputs ; 197                         ;
+; cycloneiii_mac_mult   ; 8                           ;
+; cycloneiii_mac_out    ; 8                           ;
+;                       ;                             ;
+; Max LUT depth         ; 14.70                       ;
+; Average LUT depth     ; 5.32                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:03     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+    Info: Processing started: Tue Jun 13 11:38:26 2017
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Kmeans_CalcMapModule -c Kmeans_CalcMapModule
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file /home/lucas/Documentos/Kmeans/Testes/Kmeans_Processador/Kmeans_ControlCalcMap/Kmeans_ControlCalcMap.vhd
+    Info (12022): Found design unit 1: Kmeans_ControlCalcMap-arch File: /home/lucas/Documentos/Kmeans/Testes/Kmeans_Processador/Kmeans_ControlCalcMap/Kmeans_ControlCalcMap.vhd Line: 54
+    Info (12023): Found entity 1: Kmeans_ControlCalcMap File: /home/lucas/Documentos/Kmeans/Testes/Kmeans_Processador/Kmeans_ControlCalcMap/Kmeans_ControlCalcMap.vhd Line: 13
+Info (12021): Found 2 design units, including 1 entities, in source file /home/lucas/Documentos/Kmeans/Testes/Kmeans_Processador/Kmeans_CalcMap/CalcMinDistance.vhd
+    Info (12022): Found design unit 1: CalcMinDistance-arch File: /home/lucas/Documentos/Kmeans/Testes/Kmeans_Processador/Kmeans_CalcMap/CalcMinDistance.vhd Line: 35
+    Info (12023): Found entity 1: CalcMinDistance File: /home/lucas/Documentos/Kmeans/Testes/Kmeans_Processador/Kmeans_CalcMap/CalcMinDistance.vhd Line: 14
+Info (12021): Found 2 design units, including 1 entities, in source file /home/lucas/Documentos/Kmeans/Testes/Kmeans_Processador/Kmeans_CalcMap/ShiftReg.vhd
+    Info (12022): Found design unit 1: shiftreg-SYN File: /home/lucas/Documentos/Kmeans/Testes/Kmeans_Processador/Kmeans_CalcMap/ShiftReg.vhd Line: 53
+    Info (12023): Found entity 1: ShiftReg File: /home/lucas/Documentos/Kmeans/Testes/Kmeans_Processador/Kmeans_CalcMap/ShiftReg.vhd Line: 42
+Info (12021): Found 1 design units, including 1 entities, in source file /home/lucas/Documentos/Kmeans/Testes/Kmeans_Processador/Kmeans_CalcMap/Kmeans_CalcMap.bdf
+    Info (12023): Found entity 1: Kmeans_CalcMap
+Info (12021): Found 1 design units, including 1 entities, in source file Kmeans_CalcMapModule.bdf
+    Info (12023): Found entity 1: Kmeans_CalcMapModule
+Info (12021): Found 2 design units, including 1 entities, in source file MinDistance.vhd
+    Info (12022): Found design unit 1: MinDistance-arch File: /home/lucas/Documentos/Kmeans/Testes/Kmeans_Processador/Kmeans_CalcMapModule/MinDistance.vhd Line: 29
+    Info (12023): Found entity 1: MinDistance File: /home/lucas/Documentos/Kmeans/Testes/Kmeans_Processador/Kmeans_CalcMapModule/MinDistance.vhd Line: 12
+Info (12127): Elaborating entity "Kmeans_CalcMapModule" for the top level hierarchy
+Info (12128): Elaborating entity "Kmeans_CalcMap" for hierarchy "Kmeans_CalcMap:inst1"
+Info (12128): Elaborating entity "ShiftReg" for hierarchy "Kmeans_CalcMap:inst1|ShiftReg:inst1"
+Info (12128): Elaborating entity "lpm_shiftreg" for hierarchy "Kmeans_CalcMap:inst1|ShiftReg:inst1|lpm_shiftreg:lpm_shiftreg_component" File: /home/lucas/Documentos/Kmeans/Testes/Kmeans_Processador/Kmeans_CalcMap/ShiftReg.vhd Line: 76
+Info (12130): Elaborated megafunction instantiation "Kmeans_CalcMap:inst1|ShiftReg:inst1|lpm_shiftreg:lpm_shiftreg_component" File: /home/lucas/Documentos/Kmeans/Testes/Kmeans_Processador/Kmeans_CalcMap/ShiftReg.vhd Line: 76
+Info (12133): Instantiated megafunction "Kmeans_CalcMap:inst1|ShiftReg:inst1|lpm_shiftreg:lpm_shiftreg_component" with the following parameter: File: /home/lucas/Documentos/Kmeans/Testes/Kmeans_Processador/Kmeans_CalcMap/ShiftReg.vhd Line: 76
+    Info (12134): Parameter "lpm_direction" = "LEFT"
+    Info (12134): Parameter "lpm_type" = "LPM_SHIFTREG"
+    Info (12134): Parameter "lpm_width" = "4"
+Info (12128): Elaborating entity "CalcMinDistance" for hierarchy "Kmeans_CalcMap:inst1|CalcMinDistance:inst"
+Info (12128): Elaborating entity "Kmeans_ControlCalcMap" for hierarchy "Kmeans_ControlCalcMap:inst"
+Info (10018): Can't recognize finite state machine "state" because it has a complex reset state
+Info (12128): Elaborating entity "MinDistance" for hierarchy "MinDistance:inst2"
+Info (278001): Inferred 4 megafunctions from design logic
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Kmeans_ControlCalcMap:inst|Mult1" File: /home/lucas/intelFPGA_lite/16.1/quartus/libraries/vhdl/synopsys/ieee/syn_arit.vhd Line: 687
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Kmeans_ControlCalcMap:inst|Mult0" File: /home/lucas/intelFPGA_lite/16.1/quartus/libraries/vhdl/synopsys/ieee/syn_arit.vhd Line: 687
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Kmeans_CalcMap:inst1|CalcMinDistance:inst|Mult1" File: /home/lucas/Documentos/Kmeans/Testes/Kmeans_Processador/Kmeans_CalcMap/CalcMinDistance.vhd Line: 86
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Kmeans_CalcMap:inst1|CalcMinDistance:inst|Mult0" File: /home/lucas/Documentos/Kmeans/Testes/Kmeans_Processador/Kmeans_CalcMap/CalcMinDistance.vhd Line: 80
+Info (12130): Elaborated megafunction instantiation "Kmeans_ControlCalcMap:inst|lpm_mult:Mult1" File: /home/lucas/intelFPGA_lite/16.1/quartus/libraries/vhdl/synopsys/ieee/syn_arit.vhd Line: 687
+Info (12133): Instantiated megafunction "Kmeans_ControlCalcMap:inst|lpm_mult:Mult1" with the following parameter: File: /home/lucas/intelFPGA_lite/16.1/quartus/libraries/vhdl/synopsys/ieee/syn_arit.vhd Line: 687
+    Info (12134): Parameter "LPM_WIDTHA" = "10"
+    Info (12134): Parameter "LPM_WIDTHB" = "3"
+    Info (12134): Parameter "LPM_WIDTHP" = "13"
+    Info (12134): Parameter "LPM_WIDTHR" = "13"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "6"
+Info (12131): Elaborated megafunction instantiation "Kmeans_ControlCalcMap:inst|lpm_mult:Mult1|multcore:mult_core", which is child of megafunction instantiation "Kmeans_ControlCalcMap:inst|lpm_mult:Mult1" File: /home/lucas/intelFPGA_lite/16.1/quartus/libraries/megafunctions/lpm_mult.tdf Line: 324
+Info (12131): Elaborated megafunction instantiation "Kmeans_ControlCalcMap:inst|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder", which is child of megafunction instantiation "Kmeans_ControlCalcMap:inst|lpm_mult:Mult1" File: /home/lucas/intelFPGA_lite/16.1/quartus/libraries/megafunctions/multcore.tdf Line: 283
+Info (12131): Elaborated megafunction instantiation "Kmeans_ControlCalcMap:inst|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]", which is child of megafunction instantiation "Kmeans_ControlCalcMap:inst|lpm_mult:Mult1" File: /home/lucas/intelFPGA_lite/16.1/quartus/libraries/megafunctions/mpar_add.tdf Line: 78
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_qgh.tdf
+    Info (12023): Found entity 1: add_sub_qgh File: /home/lucas/Documentos/Kmeans/Testes/Kmeans_Processador/Kmeans_CalcMapModule/db/add_sub_qgh.tdf Line: 23
+Info (12131): Elaborated megafunction instantiation "Kmeans_ControlCalcMap:inst|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add", which is child of megafunction instantiation "Kmeans_ControlCalcMap:inst|lpm_mult:Mult1" File: /home/lucas/intelFPGA_lite/16.1/quartus/libraries/megafunctions/mpar_add.tdf Line: 138
+Info (12131): Elaborated megafunction instantiation "Kmeans_ControlCalcMap:inst|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]", which is child of megafunction instantiation "Kmeans_ControlCalcMap:inst|lpm_mult:Mult1" File: /home/lucas/intelFPGA_lite/16.1/quartus/libraries/megafunctions/mpar_add.tdf Line: 78
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_rgh.tdf
+    Info (12023): Found entity 1: add_sub_rgh File: /home/lucas/Documentos/Kmeans/Testes/Kmeans_Processador/Kmeans_CalcMapModule/db/add_sub_rgh.tdf Line: 23
+Info (12131): Elaborated megafunction instantiation "Kmeans_ControlCalcMap:inst|lpm_mult:Mult1|altshift:external_latency_ffs", which is child of megafunction instantiation "Kmeans_ControlCalcMap:inst|lpm_mult:Mult1" File: /home/lucas/intelFPGA_lite/16.1/quartus/libraries/megafunctions/lpm_mult.tdf Line: 352
+Info (12130): Elaborated megafunction instantiation "Kmeans_ControlCalcMap:inst|lpm_mult:Mult0" File: /home/lucas/intelFPGA_lite/16.1/quartus/libraries/vhdl/synopsys/ieee/syn_arit.vhd Line: 687
+Info (12133): Instantiated megafunction "Kmeans_ControlCalcMap:inst|lpm_mult:Mult0" with the following parameter: File: /home/lucas/intelFPGA_lite/16.1/quartus/libraries/vhdl/synopsys/ieee/syn_arit.vhd Line: 687
+    Info (12134): Parameter "LPM_WIDTHA" = "14"
+    Info (12134): Parameter "LPM_WIDTHB" = "3"
+    Info (12134): Parameter "LPM_WIDTHP" = "17"
+    Info (12134): Parameter "LPM_WIDTHR" = "17"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12131): Elaborated megafunction instantiation "Kmeans_ControlCalcMap:inst|lpm_mult:Mult0|multcore:mult_core", which is child of megafunction instantiation "Kmeans_ControlCalcMap:inst|lpm_mult:Mult0" File: /home/lucas/intelFPGA_lite/16.1/quartus/libraries/megafunctions/lpm_mult.tdf Line: 324
+Info (12131): Elaborated megafunction instantiation "Kmeans_ControlCalcMap:inst|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder", which is child of megafunction instantiation "Kmeans_ControlCalcMap:inst|lpm_mult:Mult0" File: /home/lucas/intelFPGA_lite/16.1/quartus/libraries/megafunctions/multcore.tdf Line: 283
+Info (12131): Elaborated megafunction instantiation "Kmeans_ControlCalcMap:inst|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]", which is child of megafunction instantiation "Kmeans_ControlCalcMap:inst|lpm_mult:Mult0" File: /home/lucas/intelFPGA_lite/16.1/quartus/libraries/megafunctions/mpar_add.tdf Line: 78
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_ugh.tdf
+    Info (12023): Found entity 1: add_sub_ugh File: /home/lucas/Documentos/Kmeans/Testes/Kmeans_Processador/Kmeans_CalcMapModule/db/add_sub_ugh.tdf Line: 23
+Info (12131): Elaborated megafunction instantiation "Kmeans_ControlCalcMap:inst|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add", which is child of megafunction instantiation "Kmeans_ControlCalcMap:inst|lpm_mult:Mult0" File: /home/lucas/intelFPGA_lite/16.1/quartus/libraries/megafunctions/mpar_add.tdf Line: 138
+Info (12131): Elaborated megafunction instantiation "Kmeans_ControlCalcMap:inst|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]", which is child of megafunction instantiation "Kmeans_ControlCalcMap:inst|lpm_mult:Mult0" File: /home/lucas/intelFPGA_lite/16.1/quartus/libraries/megafunctions/mpar_add.tdf Line: 78
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_vgh.tdf
+    Info (12023): Found entity 1: add_sub_vgh File: /home/lucas/Documentos/Kmeans/Testes/Kmeans_Processador/Kmeans_CalcMapModule/db/add_sub_vgh.tdf Line: 23
+Info (12131): Elaborated megafunction instantiation "Kmeans_ControlCalcMap:inst|lpm_mult:Mult0|altshift:external_latency_ffs", which is child of megafunction instantiation "Kmeans_ControlCalcMap:inst|lpm_mult:Mult0" File: /home/lucas/intelFPGA_lite/16.1/quartus/libraries/megafunctions/lpm_mult.tdf Line: 352
+Info (12130): Elaborated megafunction instantiation "Kmeans_CalcMap:inst1|CalcMinDistance:inst|lpm_mult:Mult1" File: /home/lucas/Documentos/Kmeans/Testes/Kmeans_Processador/Kmeans_CalcMap/CalcMinDistance.vhd Line: 86
+Info (12133): Instantiated megafunction "Kmeans_CalcMap:inst1|CalcMinDistance:inst|lpm_mult:Mult1" with the following parameter: File: /home/lucas/Documentos/Kmeans/Testes/Kmeans_Processador/Kmeans_CalcMap/CalcMinDistance.vhd Line: 86
+    Info (12134): Parameter "LPM_WIDTHA" = "32"
+    Info (12134): Parameter "LPM_WIDTHB" = "32"
+    Info (12134): Parameter "LPM_WIDTHP" = "64"
+    Info (12134): Parameter "LPM_WIDTHR" = "64"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_u9t.tdf
+    Info (12023): Found entity 1: mult_u9t File: /home/lucas/Documentos/Kmeans/Testes/Kmeans_Processador/Kmeans_CalcMapModule/db/mult_u9t.tdf Line: 31
+Warning (14284): Synthesized away the following node(s):
+    Warning (14285): Synthesized away the following LCELL buffer node(s):
+        Warning (14320): Synthesized away node "Kmeans_ControlCalcMap:inst|lpm_mult:Mult0|multcore:mult_core|decoder_node[2][13]" File: /home/lucas/intelFPGA_lite/16.1/quartus/libraries/megafunctions/multcore.tdf Line: 252
+        Warning (14320): Synthesized away node "Kmeans_ControlCalcMap:inst|lpm_mult:Mult0|multcore:mult_core|decoder_node[2][12]" File: /home/lucas/intelFPGA_lite/16.1/quartus/libraries/megafunctions/multcore.tdf Line: 252
+        Warning (14320): Synthesized away node "Kmeans_ControlCalcMap:inst|lpm_mult:Mult0|multcore:mult_core|decoder_node[1][13]" File: /home/lucas/intelFPGA_lite/16.1/quartus/libraries/megafunctions/multcore.tdf Line: 252
+Info (13014): Ignored 496 buffer(s)
+    Info (13019): Ignored 496 SOFT buffer(s)
+Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
+    Warning (13310): Register "Kmeans_ControlCalcMap:inst|state.VERIFYDIMENSION" is converted into an equivalent circuit using register "Kmeans_ControlCalcMap:inst|state.VERIFYDIMENSION~_emulated" and latch "Kmeans_ControlCalcMap:inst|state.VERIFYDIMENSION~1" File: /home/lucas/Documentos/Kmeans/Testes/Kmeans_Processador/Kmeans_ControlCalcMap/Kmeans_ControlCalcMap.vhd Line: 57
+    Warning (13310): Register "Kmeans_ControlCalcMap:inst|state.RESET" is converted into an equivalent circuit using register "Kmeans_ControlCalcMap:inst|state.RESET~_emulated" and latch "Kmeans_ControlCalcMap:inst|state.RESET~1" File: /home/lucas/Documentos/Kmeans/Testes/Kmeans_Processador/Kmeans_ControlCalcMap/Kmeans_ControlCalcMap.vhd Line: 57
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "next_State[3]" is stuck at GND
+    Warning (13410): Pin "next_State[2]" is stuck at VCC
+    Warning (13410): Pin "next_State[1]" is stuck at GND
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 1 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 2052 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 173 input pins
+    Info (21059): Implemented 177 output pins
+    Info (21061): Implemented 1686 logic cells
+    Info (21062): Implemented 16 DSP elements
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 13 warnings
+    Info: Peak virtual memory: 1132 megabytes
+    Info: Processing ended: Tue Jun 13 11:38:43 2017
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:38
+
+

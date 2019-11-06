@@ -1,0 +1,163 @@
+# do Kmeans_CalcMapModule.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 11:49:49 on Apr 10,2017
+# vcom -work work Kmeans_CalcMapModule.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cycloneiv_atom_pack
+# -- Loading package cycloneiv_components
+# -- Compiling entity hard_block
+# -- Compiling architecture structure of hard_block
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Compiling entity Kmeans_CalcMapModule
+# -- Compiling architecture structure of Kmeans_CalcMapModule
+# End time: 11:49:54 on Apr 10,2017, Elapsed time: 0:00:05
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 11:49:55 on Apr 10,2017
+# vcom -work work Kmeans_CalcMapModule.vwf.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Kmeans_CalcMapModule_vhd_vec_tst
+# -- Compiling architecture Kmeans_CalcMapModule_arch of Kmeans_CalcMapModule_vhd_vec_tst
+# End time: 11:49:56 on Apr 10,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cycloneiv -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Kmeans_CalcMapModule_vhd_vec_tst 
+# Start time: 11:50:01 on Apr 10,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.kmeans_calcmapmodule_vhd_vec_tst(kmeans_calcmapmodule_arch)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading altera.dffeas_pack
+# Loading altera.altera_primitives_components
+# Loading cycloneiv.cycloneiv_atom_pack(body)
+# Loading cycloneiv.cycloneiv_components
+# Loading work.kmeans_calcmapmodule(structure)
+# Loading work.hard_block(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneiv.cycloneiv_io_obuf(arch)
+# Loading cycloneiv.cycloneiv_io_ibuf(arch)
+# Loading cycloneiv.cycloneiv_clkctrl(vital_clkctrl)
+# Loading cycloneiv.cycloneiv_ena_reg(behave)
+# Loading cycloneiv.cycloneiv_lcell_comb(vital_lcell_comb)
+# Loading altera.dffeas(vital_dffeas)
+# Loading ieee.std_logic_unsigned(body)
+# Loading cycloneiv.cycloneiv_mac_mult(vital_cycloneiv_mac_mult)
+# Loading cycloneiv.cycloneiv_mac_data_reg(vital_cycloneiv_mac_data_reg)
+# Loading cycloneiv.cycloneiv_mac_sign_reg(cycloneiv_mac_sign_reg)
+# Loading cycloneiv.cycloneiv_mac_mult_internal(vital_cycloneiv_mac_mult_internal)
+# Loading cycloneiv.cycloneiv_mac_out(vital_cycloneiv_mac_out)
+# ** Warning: Design size of 330151 statements exceeds ModelSim Altera Starter recommended capacity.
+# Expect performance to be adversely affected.
+# after#35
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult5\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult5\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult7\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult7\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult5\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult5\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult7\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult7\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult5\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult5\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult7\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult7\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult5\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult5\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult7\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult7\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult5\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult5\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult7\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult7\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult5\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult5\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult7\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult7\/mac_multiply
+# Simulation time: 0 ps
+# Simulation time: 0 ps
+# Simulation time: 0 ps
+# Simulation time: 0 ps
+# Simulation time: 0 ps
+# Simulation time: 0 ps
+# Simulation time: 0 ps
+# Simulation time: 0 ps
+# Simulation time: 720000 ps
+# Simulation time: 720000 ps
+# Simulation time: 720000 ps
+# Simulation time: 720000 ps
+# End time: 11:50:40 on Apr 10,2017, Elapsed time: 0:00:39
+# Errors: 0, Warnings: 45

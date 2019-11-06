@@ -1,0 +1,16 @@
+Fitter Status : Successful - Tue Jun 13 11:22:58 2017
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Revision Name : Kmeans_CalcMapModuleFP
+Top-level Entity Name : Kmeans_CalcMapModuleFP
+Family : Cyclone IV E
+Device : EP4CE115F29I7
+Timing Models : Final
+Total logic elements : 4,238 / 114,480 ( 4 % )
+    Total combinational functions : 4,037 / 114,480 ( 4 % )
+    Dedicated logic registers : 1,855 / 114,480 ( 2 % )
+Total registers : 1855
+Total pins : 370 / 529 ( 70 % )
+Total virtual pins : 0
+Total memory bits : 199 / 3,981,312 ( < 1 % )
+Embedded Multiplier 9-bit elements : 14 / 532 ( 3 % )
+Total PLLs : 0 / 4 ( 0 % )

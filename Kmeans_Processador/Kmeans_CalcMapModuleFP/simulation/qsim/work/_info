@@ -1,0 +1,147 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/lucasandrade/Documents/Lucas/Int+Float-64 bits-16 dimensoes/Kmeans_Processador/Kmeans_CalcMapModuleFP/simulation/qsim
+Ehard_block
+Z1 w1491507195
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 K`kJb<]?z4U5EbkG_:lMO3
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z7 DPx10 cycloneive 21 cycloneive_components 0 22 HFZ8mBI5?[8TM9e2YGWCa2
+R0
+Z8 8Kmeans_CalcMapModuleFP.vho
+Z9 FKmeans_CalcMapModuleFP.vho
+l0
+L35
+VB]0;STalBkCB1_B4BXQDW2
+!s100 >mXi5[`cD`bFC`UBKA<om3
+Z10 OV;C;10.5b;63
+32
+Z11 !s110 1491507196
+!i10b 1
+Z12 !s108 1491507196.000000
+Z13 !s90 -work|work|Kmeans_CalcMapModuleFP.vho|
+Z14 !s107 Kmeans_CalcMapModuleFP.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 10 hard_block 0 22 B]0;STalBkCB1_B4BXQDW2
+l65
+L51
+Via>5o7W??azG@W@@eFOTF0
+!s100 [5;Wd8QGQ>@2NGoJ1I]Y43
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Ekmeans_calcmapmodulefp
+R1
+R3
+R7
+R2
+Z17 DPx6 altera 11 dffeas_pack 0 22 zWCf]NF6heG=Dhmc@B0=T2
+R4
+R5
+R6
+Z18 DPx6 altera 28 altera_primitives_components 0 22 _Q9E2TD5YB<<@P0[5jYTG0
+R0
+R8
+R9
+l0
+L80
+VSe;oZEiMISG^WUAMi6G<X2
+!s100 [[P^TL^_`gjEf<P36L16J3
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R3
+R7
+R2
+R17
+R4
+R5
+R6
+R18
+DEx4 work 22 kmeans_calcmapmodulefp 0 22 Se;oZEiMISG^WUAMi6G<X2
+l6239
+L364
+Vda7PdPTj1==DfQm9V2ca?1
+!s100 zgSPWAl>4Ul1ES6CBBz]@1
+R10
+32
+!s110 1491507197
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Ekmeans_calcmapmodulefp_vhd_vec_tst
+Z19 w1491507191
+R5
+R6
+R0
+Z20 8Kmeans_CalcMapModuleFP.vwf.vht
+Z21 FKmeans_CalcMapModuleFP.vwf.vht
+l0
+L32
+VJoabfO;h;aT`MY^XT2l231
+!s100 95zJGeZ:4[bi>27UgTMfQ0
+R10
+32
+Z22 !s110 1491507199
+!i10b 1
+Z23 !s108 1491507198.000000
+Z24 !s90 -work|work|Kmeans_CalcMapModuleFP.vwf.vht|
+Z25 !s107 Kmeans_CalcMapModuleFP.vwf.vht|
+!i113 1
+R15
+R16
+Akmeans_calcmapmodulefp_arch
+R5
+R6
+Z26 DEx4 work 34 kmeans_calcmapmodulefp_vhd_vec_tst 0 22 JoabfO;h;aT`MY^XT2l231
+l79
+L34
+VYl03N9ZF]EXflA;Uc5iz20
+!s100 _3zfUMmRe^N0bg8zYUPnz3
+R10
+32
+R22
+!i10b 1
+R23
+R24
+R25
+!i113 1
+R15
+R16

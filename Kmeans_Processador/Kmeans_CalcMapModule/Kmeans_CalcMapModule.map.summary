@@ -1,0 +1,18 @@
+Analysis & Synthesis Status : Successful - Tue Jun 13 11:38:43 2017
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Revision Name : Kmeans_CalcMapModule
+Top-level Entity Name : Kmeans_CalcMapModule
+Family : Cyclone IV GX
+Total logic elements : 1,682
+    Total combinational functions : 1,152
+    Dedicated logic registers : 961
+Total registers : 961
+Total pins : 350
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 16
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0

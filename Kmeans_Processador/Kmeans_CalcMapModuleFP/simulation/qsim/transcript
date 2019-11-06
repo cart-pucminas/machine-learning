@@ -1,0 +1,15 @@
+# do Kmeans_CalcMapModuleFP.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:44:19 on Apr 07,2017
+# vcom -work work Kmeans_CalcMapModuleFP.vho 
+# -- Loading package STANDARD
+# init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/Lucas/Documents/PUC/Iniciação Científica/KMeans/Int+Float-64 bits-16 dimensoes/Kmeans_Processador/Kmeans_CalcMapModuleFP/simulation/qsim/work/_lib.qdb): unable to open database file
+# mtilibWrite(): INTERNAL ERROR: Unexpected null object encountered
+# ** Fatal: (vcom-9) Problem while writing token file "C:/Users/Lucas/Documents/PUC/Iniciação Científica/KMeans/Int+Float-64 bits-16 dimensoes/Kmeans_Processador/Kmeans_CalcMapModuleFP/simulation/qsim/work/_temp/vcom66dmrr".
+# O sistema não pode encontrar o caminho especificado. (GetLastError() = 3)
+# ** Error: Kmeans_CalcMapModuleFP.vho(30): VHDL Compiler exiting
+# End time: 10:44:19 on Apr 07,2017, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA/16.1/modelsim_ase/win32aloem/vcom failed.
+# Executing ONERROR command at macro ./Kmeans_CalcMapModuleFP.do line 3

@@ -1,0 +1,664 @@
+Determining the location of the ModelSim executable...
+
+Using: C:\altera\16.0\modelsim_ase\win32aloem
+
+To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
+Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-Altera will be used.
+
+**** Generating the ModelSim Testbench ****
+
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Kmeans_CalcMapModule -c Kmeans_CalcMapModule --vector_source="C:/Users/Lucas/Desktop/Kmeans_Processador/Kmeans_CalcMapModule/Kmeans_CalcMapModule.vwf" --testbench_file="C:/Users/Lucas/Desktop/Kmeans_Processador/Kmeans_CalcMapModule/simulation/qsim/Kmeans_CalcMapModule.vwf.vht"
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+    Info: Copyright (C) 2016  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel MegaCore Function License Agreement, or other 
+    Info: applicable license agreement, including, without limitation, 
+    Info: that your use is for the sole purpose of programming logic 
+    Info: devices manufactured by Intel and sold by Intel or its 
+    Info: authorized distributors.  Please refer to the applicable 
+    Info: agreement for further details.
+    Info: Processing started: Mon Apr 10 11:49:26 2017
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Kmeans_CalcMapModule -c Kmeans_CalcMapModule --vector_source=C:/Users/Lucas/Desktop/Kmeans_Processador/Kmeans_CalcMapModule/Kmeans_CalcMapModule.vwf --testbench_file=C:/Users/Lucas/Desktop/Kmeans_Processador/Kmeans_CalcMapModule/simulation/qsim/Kmeans_CalcMapModule.vwf.vht
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+
+ce file when writing test bench files
+
+n design
+
+Completed successfully. 
+
+**** Generating the functional simulation netlist ****
+
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/Lucas/Desktop/Kmeans_Processador/Kmeans_CalcMapModule/simulation/qsim/" Kmeans_CalcMapModule -c Kmeans_CalcMapModule
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+    Info: Copyright (C) 2016  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel MegaCore Function License Agreement, or other 
+    Info: applicable license agreement, including, without limitation, 
+    Info: that your use is for the sole purpose of programming logic 
+    Info: devices manufactured by Intel and sold by Intel or its 
+    Info: authorized distributors.  Please refer to the applicable 
+    Info: agreement for further details.
+    Info: Processing started: Mon Apr 10 11:49:34 2017
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/Lucas/Desktop/Kmeans_Processador/Kmeans_CalcMapModule/simulation/qsim/ Kmeans_CalcMapModule -c Kmeans_CalcMapModule
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (204019): Generated file Kmeans_CalcMapModule.vho in folder "C:/Users/Lucas/Desktop/Kmeans_Processador/Kmeans_CalcMapModule/simulation/qsim//" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 604 megabytes
+    Info: Processing ended: Mon Apr 10 11:49:41 2017
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:07
+
+Completed successfully. 
+
+**** Generating the ModelSim .do script ****
+
+C:/Users/Lucas/Desktop/Kmeans_Processador/Kmeans_CalcMapModule/simulation/qsim/Kmeans_CalcMapModule.do generated.
+
+Completed successfully. 
+
+**** Running the ModelSim simulation ****
+
+C:/altera/16.0/modelsim_ase/win32aloem/vsim -c -do Kmeans_CalcMapModule.do
+
+Reading C:/altera/16.0/modelsim_ase/tcl/vsim/pref.tcl
+
+
+# 10.4d
+
+
+# do Kmeans_CalcMapModule.do
+
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 11:49:49 on Apr 10,2017
+# vcom -work work Kmeans_CalcMapModule.vho 
+
+# -- Loading package STANDARD
+
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+
+# -- Loading package cycloneiv_atom_pack
+# -- Loading package cycloneiv_components
+# -- Compiling entity hard_block
+
+# -- Compiling architecture structure of hard_block
+
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Compiling entity Kmeans_CalcMapModule
+# -- Compiling architecture structure of Kmeans_CalcMapModule
+
+# End time: 11:49:54 on Apr 10,2017, Elapsed time: 0:00:05
+# Errors: 0, Warnings: 0
+
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 11:49:55 on Apr 10,2017
+# vcom -work work Kmeans_CalcMapModule.vwf.vht 
+# -- Loading package STANDARD
+
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Kmeans_CalcMapModule_vhd_vec_tst
+# -- Compiling architecture Kmeans_CalcMapModule_arch of Kmeans_CalcMapModule_vhd_vec_tst
+
+# End time: 11:49:56 on Apr 10,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+
+# vsim -novopt -c -t 1ps -L cycloneiv -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Kmeans_CalcMapModule_vhd_vec_tst 
+# Start time: 11:50:01 on Apr 10,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.kmeans_calcmapmodule_vhd_vec_tst(kmeans_calcmapmodule_arch)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading altera.dffeas_pack
+# Loading altera.altera_primitives_components
+# Loading cycloneiv.cycloneiv_atom_pack(body)
+# Loading cycloneiv.cycloneiv_components
+# Loading work.kmeans_calcmapmodule(structure)
+# Loading work.hard_block(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneiv.cycloneiv_io_obuf(arch)
+# Loading cycloneiv.cycloneiv_io_ibuf(arch)
+# Loading cycloneiv.cycloneiv_clkctrl(vital_clkctrl)
+# Loading cycloneiv.cycloneiv_ena_reg(behave)
+# Loading cycloneiv.cycloneiv_lcell_comb(vital_lcell_comb)
+# Loading altera.dffeas(vital_dffeas)
+# Loading ieee.std_logic_unsigned(body)
+# Loading cycloneiv.cycloneiv_mac_mult(vital_cycloneiv_mac_mult)
+# Loading cycloneiv.cycloneiv_mac_data_reg(vital_cycloneiv_mac_data_reg)
+# Loading cycloneiv.cycloneiv_mac_sign_reg(cycloneiv_mac_sign_reg)
+# Loading cycloneiv.cycloneiv_mac_mult_internal(vital_cycloneiv_mac_mult_internal)
+# Loading cycloneiv.cycloneiv_mac_out(vital_cycloneiv_mac_out)
+# ** Warning: Design size of 330151 statements exceeds ModelSim Altera Starter recommended capacity.
+# Expect performance to be adversely affected.
+
+# after#35
+
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult5\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult5\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult7\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult7\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult5\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult5\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult7\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult7\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult5\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult5\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult7\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult7\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult5\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult5\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult7\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult7\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult5\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult5\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult7\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult0|auto_generated|mac_mult7\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult3\/mac_multiply
+
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult5\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult5\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult7\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /kmeans_calcmapmodule_vhd_vec_tst/i1/\inst1|inst|Mult1|auto_generated|mac_mult7\/mac_multiply
+# Simulation time: 0 ps
+
+# Simulation time: 0 ps
+
+# Simulation time: 0 ps
+
+# Simulation time: 0 ps
+
+# Simulation time: 0 ps
+
+# Simulation time: 0 ps
+
+# Simulation time: 0 ps
+
+# Simulation time: 0 ps
+
+# Simulation time: 720000 ps
+
+# Simulation time: 720000 ps
+
+# Simulation time: 720000 ps
+
+# Simulation time: 720000 ps
+
+# End time: 11:50:40 on Apr 10,2017, Elapsed time: 0:00:39
+# Errors: 0, Warnings: 45
+
+Completed successfully. 
+
+**** Converting ModelSim VCD to vector waveform ****
+
+Reading C:/Users/Lucas/Desktop/Kmeans_Processador/Kmeans_CalcMapModule/Kmeans_CalcMapModule.vwf...
+
+Reading C:/Users/Lucas/Desktop/Kmeans_Processador/Kmeans_CalcMapModule/simulation/qsim/Kmeans_CalcMapModule.msim.vcd...
+
+Processing channel transitions... 
+
+Warning: o_dado[63] - signal not found in VCD.
+
+Warning: o_dado[62] - signal not found in VCD.
+
+Warning: o_dado[61] - signal not found in VCD.
+
+Warning: o_dado[60] - signal not found in VCD.
+
+Warning: o_dado[59] - signal not found in VCD.
+
+Warning: o_dado[58] - signal not found in VCD.
+
+Warning: o_dado[57] - signal not found in VCD.
+
+Warning: o_dado[56] - signal not found in VCD.
+
+Warning: o_dado[55] - signal not found in VCD.
+
+Warning: o_dado[54] - signal not found in VCD.
+
+Warning: o_dado[53] - signal not found in VCD.
+
+Warning: o_dado[52] - signal not found in VCD.
+
+Warning: o_dado[51] - signal not found in VCD.
+
+Warning: o_dado[50] - signal not found in VCD.
+
+Warning: o_dado[49] - signal not found in VCD.
+
+Warning: o_dado[48] - signal not found in VCD.
+
+Warning: o_dado[47] - signal not found in VCD.
+
+Warning: o_dado[46] - signal not found in VCD.
+
+Warning: o_dado[45] - signal not found in VCD.
+
+Warning: o_dado[44] - signal not found in VCD.
+
+Warning: o_dado[43] - signal not found in VCD.
+
+Warning: o_dado[42] - signal not found in VCD.
+
+Warning: o_dado[41] - signal not found in VCD.
+
+Warning: o_dado[40] - signal not found in VCD.
+
+Warning: o_dado[39] - signal not found in VCD.
+
+Warning: o_dado[38] - signal not found in VCD.
+
+Warning: o_dado[37] - signal not found in VCD.
+
+Warning: o_dado[36] - signal not found in VCD.
+
+Warning: o_dado[35] - signal not found in VCD.
+
+Warning: o_dado[34] - signal not found in VCD.
+
+Warning: o_dado[33] - signal not found in VCD.
+
+Warning: o_dado[32] - signal not found in VCD.
+
+Warning: o_dado[31] - signal not found in VCD.
+
+Warning: o_dado[30] - signal not found in VCD.
+
+Warning: o_dado[29] - signal not found in VCD.
+
+Warning: o_dado[28] - signal not found in VCD.
+
+Warning: o_dado[27] - signal not found in VCD.
+
+Warning: o_dado[26] - signal not found in VCD.
+
+Warning: o_dado[25] - signal not found in VCD.
+
+Warning: o_dado[24] - signal not found in VCD.
+
+Warning: o_dado[23] - signal not found in VCD.
+
+Warning: o_dado[22] - signal not found in VCD.
+
+Warning: o_dado[21] - signal not found in VCD.
+
+Warning: o_dado[20] - signal not found in VCD.
+
+Warning: o_dado[19] - signal not found in VCD.
+
+Warning: o_dado[18] - signal not found in VCD.
+
+Warning: o_dado[17] - signal not found in VCD.
+
+Warning: o_dado[16] - signal not found in VCD.
+
+Warning: o_dado[15] - signal not found in VCD.
+
+Warning: o_dado[14] - signal not found in VCD.
+
+Warning: o_dado[13] - signal not found in VCD.
+
+Warning: o_dado[12] - signal not found in VCD.
+
+Warning: o_dado[11] - signal not found in VCD.
+
+Warning: o_dado[10] - signal not found in VCD.
+
+Warning: wr_RamA - signal not found in VCD.
+
+Warning: wr_RamB - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[127] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[126] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[125] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[124] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[123] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[122] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[121] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[120] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[119] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[118] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[117] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[116] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[115] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[114] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[113] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[112] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[111] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[110] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[109] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[108] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[107] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[106] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[105] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[104] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[103] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[102] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[101] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[100] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[99] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[98] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[97] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[96] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[95] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[94] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[93] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[92] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[91] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[90] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[89] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[88] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[87] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[86] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[85] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[84] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[83] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[82] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[81] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[80] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[79] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[78] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[77] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[76] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[75] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[74] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[73] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[72] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[71] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[70] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[69] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[68] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[67] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[66] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[65] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[64] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[63] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[62] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[61] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[60] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[59] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[58] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[57] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[56] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[55] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[54] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[53] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[52] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[51] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[50] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[49] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[48] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[47] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[46] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[45] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[44] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[43] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[42] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[41] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[40] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[39] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[38] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[37] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[36] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[35] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[34] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[33] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[32] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[31] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[30] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[29] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[28] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[27] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[26] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[25] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[24] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[23] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[22] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[21] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[20] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[19] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[18] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[17] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[16] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[15] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[14] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[13] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[12] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[11] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[10] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[9] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[8] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[7] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[6] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[5] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[4] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[3] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[2] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[1] - signal not found in VCD.
+
+Warning: MinDistance:inst2|s_distanceCalc[0] - signal not found in VCD.
+
+Writing the resulting VWF to C:/Users/Lucas/Desktop/Kmeans_Processador/Kmeans_CalcMapModule/simulation/qsim/Kmeans_CalcMapModule_20170410115040.sim.vwf
+
+Finished VCD to VWF conversion.
+
+Completed successfully. 
+
+All completed.
