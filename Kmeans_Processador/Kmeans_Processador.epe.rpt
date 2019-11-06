@@ -1,0 +1,220 @@
+PowerPlay Early Power Estimator File Generator report for Kmeans_Processador
+Wed Jul 12 10:31:56 2017
+Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. PowerPlay Early Power Estimator File Generator Summary
+  3. PowerPlay Early Power Estimator File Generator Settings
+  4. Indeterminate Toggle Rates
+  5. PowerPlay Early Power Estimator File Generator Generated Files
+  6. Confidence Metric Details
+  7. Signal Activities
+  8. PowerPlay Early Power Estimator File Generator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------------------------+
+; PowerPlay Early Power Estimator File Generator Summary                                                   ;
++-------------------------------------------------------+--------------------------------------------------+
+; PowerPlay Early Power Estimator File Generator Status ; Successful - Wed Jul 12 10:31:56 2017            ;
+; Quartus Prime Version                                 ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition      ;
+; Revision Name                                         ; Kmeans_Processador                               ;
+; Top-level Entity Name                                 ; Kmeans_Processador                               ;
+; Family                                                ; Cyclone IV GX                                    ;
+; Device                                                ; EP4CGX150DF31I7AD                                ;
+; Power Estimation Confidence                           ; Low: user provided insufficient toggle rate data ;
++-------------------------------------------------------+--------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; PowerPlay Early Power Estimator File Generator Settings                                                                            ;
++----------------------------------------------------------------------------+---------------------------------------+---------------+
+; Option                                                                     ; Setting                               ; Default Value ;
++----------------------------------------------------------------------------+---------------------------------------+---------------+
+; Use smart compilation                                                      ; Off                                   ; Off           ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                                    ; On            ;
+; Enable compact report table                                                ; Off                                   ; Off           ;
+; Use Input Files                                                            ; On                                    ; Off           ;
+; Preset Cooling Solution                                                    ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ;               ;
+; Board thermal model                                                        ; None (CONSERVATIVE)                   ;               ;
+; Default Power Toggle Rate                                                  ; 12.5%                                 ; 12.5%         ;
+; Default Power Input I/O Toggle Rate                                        ; 12.5%                                 ; 12.5%         ;
+; Use vectorless estimation                                                  ; On                                    ; On            ;
+; Filter Glitches in VCD File Reader                                         ; On                                    ; On            ;
+; Power Analyzer Report Signal Activity                                      ; Off                                   ; Off           ;
+; Power Analyzer Report Power Dissipation                                    ; Off                                   ; Off           ;
+; Device Power Characteristics                                               ; TYPICAL                               ; TYPICAL       ;
+; Automatically Compute Junction Temperature                                 ; On                                    ; On            ;
+; Specified Junction Temperature                                             ; 25                                    ; 25            ;
+; Ambient Temperature                                                        ; 25                                    ; 25            ;
+; Use Custom Cooling Solution                                                ; Off                                   ; Off           ;
+; Board Temperature                                                          ; 25                                    ; 25            ;
++----------------------------------------------------------------------------+---------------------------------------+---------------+
+
+
++----------------------------------------------+
+; Indeterminate Toggle Rates                   ;
++----------------+-----------------------------+
+; Node           ; Reason                      ;
++----------------+-----------------------------+
+; continueButton ; No valid clock domain found ;
+; nDimensoes[0]  ; No valid clock domain found ;
+; scl            ; No valid clock domain found ;
+; sda            ; No valid clock domain found ;
+; clk            ; No valid clock domain found ;
+; nrst           ; No valid clock domain found ;
+; floatInput     ; No valid clock domain found ;
+; nIteracoes[6]  ; No valid clock domain found ;
+; nIteracoes[5]  ; No valid clock domain found ;
+; nIteracoes[4]  ; No valid clock domain found ;
+; nIteracoes[3]  ; No valid clock domain found ;
+; nIteracoes[2]  ; No valid clock domain found ;
+; nIteracoes[1]  ; No valid clock domain found ;
+; nIteracoes[0]  ; No valid clock domain found ;
+; nPontos[14]    ; No valid clock domain found ;
+; nPontos[13]    ; No valid clock domain found ;
+; nPontos[12]    ; No valid clock domain found ;
+; nPontos[11]    ; No valid clock domain found ;
+; nPontos[10]    ; No valid clock domain found ;
+; nPontos[9]     ; No valid clock domain found ;
+; nPontos[8]     ; No valid clock domain found ;
+; nPontos[7]     ; No valid clock domain found ;
+; nPontos[6]     ; No valid clock domain found ;
+; nPontos[5]     ; No valid clock domain found ;
+; nPontos[4]     ; No valid clock domain found ;
+; nPontos[3]     ; No valid clock domain found ;
+; nPontos[2]     ; No valid clock domain found ;
+; nPontos[1]     ; No valid clock domain found ;
+; nPontos[0]     ; No valid clock domain found ;
+; nCentroids[9]  ; No valid clock domain found ;
+; nDimensoes[2]  ; No valid clock domain found ;
+; nDimensoes[1]  ; No valid clock domain found ;
+; nCentroids[8]  ; No valid clock domain found ;
+; nCentroids[7]  ; No valid clock domain found ;
+; nCentroids[6]  ; No valid clock domain found ;
+; nCentroids[5]  ; No valid clock domain found ;
+; nCentroids[4]  ; No valid clock domain found ;
+; nCentroids[3]  ; No valid clock domain found ;
+; nCentroids[2]  ; No valid clock domain found ;
+; nCentroids[1]  ; No valid clock domain found ;
+; nCentroids[0]  ; No valid clock domain found ;
+; nDimensoes[3]  ; No valid clock domain found ;
+; InitAddr[13]   ; No valid clock domain found ;
+; InitAddr[12]   ; No valid clock domain found ;
+; InitAddr[11]   ; No valid clock domain found ;
+; InitAddr[10]   ; No valid clock domain found ;
+; InitAddr[9]    ; No valid clock domain found ;
+; InitAddr[8]    ; No valid clock domain found ;
+; InitAddr[7]    ; No valid clock domain found ;
+; InitAddr[6]    ; No valid clock domain found ;
+; InitAddr[5]    ; No valid clock domain found ;
+; InitAddr[4]    ; No valid clock domain found ;
+; InitAddr[3]    ; No valid clock domain found ;
+; InitAddr[2]    ; No valid clock domain found ;
+; InitAddr[1]    ; No valid clock domain found ;
+; InitAddr[0]    ; No valid clock domain found ;
++----------------+-----------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; PowerPlay Early Power Estimator File Generator Generated Files                                    ;
++----------------------------------------------------------------+----------------------------------+
+; Description                                                    ; Filename                         ;
++----------------------------------------------------------------+----------------------------------+
+; Design summary for PowerPlay Early Power Estimator spreadsheet ; Kmeans_Processador_early_pwr.csv ;
++----------------------------------------------------------------+----------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Confidence Metric Details                                                                                                                            ;
++----------------------------------------------------------------------------------------+---------------+------------+---------------+----------------+
+; Data Source                                                                            ; Total         ; Pin        ; Registered    ; Combinational  ;
++----------------------------------------------------------------------------------------+---------------+------------+---------------+----------------+
+; Simulation (from file)                                                                 ;               ;            ;               ;                ;
+;     -- Number of signals with Toggle Rate from Simulation                              ; 0 (0.0%)      ; 0 (0.0%)   ; 0 (0.0%)      ; 0 (0.0%)       ;
+;     -- Number of signals with Static Probability from Simulation                       ; 0 (0.0%)      ; 0 (0.0%)   ; 0 (0.0%)      ; 0 (0.0%)       ;
+;                                                                                        ;               ;            ;               ;                ;
+; Node, entity or clock assignment                                                       ;               ;            ;               ;                ;
+;     -- Number of signals with Toggle Rate from Node, entity or clock assignment        ; 0 (0.0%)      ; 0 (0.0%)   ; 0 (0.0%)      ; 0 (0.0%)       ;
+;     -- Number of signals with Static Probability from Node, entity or clock assignment ; 0 (0.0%)      ; 0 (0.0%)   ; 0 (0.0%)      ; 0 (0.0%)       ;
+;                                                                                        ;               ;            ;               ;                ;
+; Vectorless estimation                                                                  ;               ;            ;               ;                ;
+;     -- Number of signals with Toggle Rate from Vectorless estimation                   ; 27872 (99.8%) ; 46 (44.2%) ; 7530 (100.0%) ; 20296 (100.0%) ;
+;     -- Number of signals with Zero toggle rate, from Vectorless estimation             ; 704 (2.5%)    ; 6 (5.8%)   ; 61 (0.8%)     ; 637 (3.1%)     ;
+;     -- Number of signals with Static Probability from Vectorless estimation            ; 27872 (99.8%) ; 46 (44.2%) ; 7530 (100.0%) ; 20296 (100.0%) ;
+;                                                                                        ;               ;            ;               ;                ;
+; Default assignment                                                                     ;               ;            ;               ;                ;
+;     -- Number of signals with Toggle Rate from Default assignment                      ; 0 (0.0%)      ; 0 (0.0%)   ; 0 (0.0%)      ; 0 (0.0%)       ;
+;     -- Number of signals with Static Probability from Default assignment               ; 58 (0.2%)     ; 58 (55.8%) ; 0 (0.0%)      ; 0 (0.0%)       ;
+;                                                                                        ;               ;            ;               ;                ;
+; Assumed 0                                                                              ;               ;            ;               ;                ;
+;     -- Number of signals with Toggle Rate assumed 0                                    ; 58 (0.2%)     ; 58 (55.8%) ; 0 (0.0%)      ; 0 (0.0%)       ;
++----------------------------------------------------------------------------------------+---------------+------------+---------------+----------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Activities                                                                                                                           ;
++--------+------+---------------------------------------------+-------------------------+--------------------+--------------------------------+
+; Signal ; Type ; Toggle Rate (millions of transitions / sec) ; Toggle Rate Data Source ; Static Probability ; Static Probability Data Source ;
++--------+------+---------------------------------------------+-------------------------+--------------------+--------------------------------+
+(1) The "Signal Activity" Table has been hidden. To show this table, please select the "Write signal activities to report file" option under "PowerPlay Power Analyzer Settings".
+
+
++---------------------------------------------------------+
+; PowerPlay Early Power Estimator File Generator Messages ;
++---------------------------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime PowerPlay Early Power Estimator File Generator
+    Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+    Info: Processing started: Wed Jul 12 10:31:47 2017
+Info: Command: quartus_pow --read_settings_files=on --write_settings_files=off Kmeans_Processador -c Kmeans_Processador --estimate_power=off --output_epe=Kmeans_Processador_early_pwr.csv
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (21077): Low junction temperature is -40 degrees C
+Info (21077): High junction temperature is 100 degrees C
+Warning (335093): TimeQuest Timing Analyzer is analyzing 5 combinational loops as latches. For more details, run the Check Timing command in the TimeQuest Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'Kmeans_Processador.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Warning (332060): Node: clk was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register Kmeans_ControlBlocksUnit:inst4|s_muxNextState[2] is being clocked by clk
+Warning (332060): Node: Kmeans_OutputResult:inst27|s_enSaida was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Latch Kmeans_Result:inst5|hex0 is being clocked by Kmeans_OutputResult:inst27|s_enSaida
+Warning (332068): No clocks defined in design.
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (223000): Starting Vectorless Power Activity Estimation
+Warning (222013): Relative toggle rates could not be calculated because no clock domain could be identified for some nodes
+Info (223001): Completed Vectorless Power Activity Estimation
+Info (218000): Using Advanced I/O Power to simulate I/O buffers with the specified board trace model
+Info (214002): Created PowerPlay Early Power Estimation file "Kmeans_Processador_early_pwr.csv"
+Info (215029): No power estimate will be produced.
+Info (215049): Average toggle rate for this design is 0.000 millions of transitions / sec
+Info: Quartus Prime PowerPlay Early Power Estimator File Generator was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 1467 megabytes
+    Info: Processing ended: Wed Jul 12 10:31:56 2017
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:09
+
+

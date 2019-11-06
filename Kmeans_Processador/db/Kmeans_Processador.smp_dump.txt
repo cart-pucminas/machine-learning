@@ -1,0 +1,169 @@
+
+State Machine - |Kmeans_Processador|Kmeans_Arduino:inst8|state_fut
+Name state_fut.WAIT_STOP state_fut.WAIT_ACK_2 state_fut.WAIT_ACK_1 state_fut.READ_CMD state_fut.WRITE_CMD state_fut.SEND_ACK_1 state_fut.READ_ADDRESS state_fut.IDLE 
+state_fut.IDLE 0 0 0 0 0 0 0 0 
+state_fut.READ_ADDRESS 0 0 0 0 0 0 1 1 
+state_fut.SEND_ACK_1 0 0 0 0 0 1 0 1 
+state_fut.WRITE_CMD 0 0 0 0 1 0 0 1 
+state_fut.READ_CMD 0 0 0 1 0 0 0 1 
+state_fut.WAIT_ACK_1 0 0 1 0 0 0 0 1 
+state_fut.WAIT_ACK_2 0 1 0 0 0 0 0 1 
+state_fut.WAIT_STOP 1 0 0 0 0 0 0 1 
+
+State Machine - |Kmeans_Processador|Kmeans_Arduino:inst8|state
+Name state.WAIT_STOP state.WAIT_ACK_2 state.WAIT_ACK_1 state.READ_CMD state.WRITE_CMD state.SEND_ACK_1 state.READ_ADDRESS state.IDLE 
+state.IDLE 0 0 0 0 0 0 0 0 
+state.READ_ADDRESS 0 0 0 0 0 0 1 1 
+state.SEND_ACK_1 0 0 0 0 0 1 0 1 
+state.WRITE_CMD 0 0 0 0 1 0 0 1 
+state.READ_CMD 0 0 0 1 0 0 0 1 
+state.WAIT_ACK_1 0 0 1 0 0 0 0 1 
+state.WAIT_ACK_2 0 1 0 0 0 0 0 1 
+state.WAIT_STOP 1 0 0 0 0 0 0 1 
+
+State Machine - |Kmeans_Processador|Kmeans_CountClk:inst9|state_fut
+Name state_fut.WAITDATA2 state_fut.WAITDATA state_fut.READDATA state_fut.COUNT state_fut.IDLE state_fut.RESET 
+state_fut.RESET 0 0 0 0 0 0 
+state_fut.IDLE 0 0 0 0 1 1 
+state_fut.COUNT 0 0 0 1 0 1 
+state_fut.READDATA 0 0 1 0 0 1 
+state_fut.WAITDATA 0 1 0 0 0 1 
+state_fut.WAITDATA2 1 0 0 0 0 1 
+
+State Machine - |Kmeans_Processador|Kmeans_CountClk:inst9|state
+Name state.WAITDATA2 state.WAITDATA state.READDATA state.COUNT state.IDLE state.RESET 
+state.RESET 0 0 0 0 0 0 
+state.IDLE 0 0 0 0 1 1 
+state.COUNT 0 0 0 1 0 1 
+state.READDATA 0 0 1 0 0 1 
+state.WAITDATA 0 1 0 0 0 1 
+state.WAITDATA2 1 0 0 0 0 1 
+
+State Machine - |Kmeans_Processador|Kmodes_CalcCentroidModule:inst6|Kmodes_ControlCalcCentroid:inst1|state_fut
+Name state_fut.ENDSTATE state_fut.ADDCENTROID state_fut.STOREDATA state_fut.MODE state_fut.VERIFYMODE state_fut.COUNTFREQUENCE state_fut.WAITDATA state_fut.LOADDATA state_fut.IDLE state_fut.RESET 
+state_fut.RESET 0 0 0 0 0 0 0 0 0 0 
+state_fut.IDLE 0 0 0 0 0 0 0 0 1 1 
+state_fut.LOADDATA 0 0 0 0 0 0 0 1 0 1 
+state_fut.WAITDATA 0 0 0 0 0 0 1 0 0 1 
+state_fut.COUNTFREQUENCE 0 0 0 0 0 1 0 0 0 1 
+state_fut.VERIFYMODE 0 0 0 0 1 0 0 0 0 1 
+state_fut.MODE 0 0 0 1 0 0 0 0 0 1 
+state_fut.STOREDATA 0 0 1 0 0 0 0 0 0 1 
+state_fut.ADDCENTROID 0 1 0 0 0 0 0 0 0 1 
+state_fut.ENDSTATE 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |Kmeans_Processador|Kmodes_CalcMapModule:inst1|Kmodes_ControlCalcMap:inst2|state_fut
+Name state_fut.ENDSTATE state_fut.STOREDATA state_fut.MINDISTANCE state_fut.VERIFYDIMENSION state_fut.WAITCALCDISTANCE state_fut.CALCDISTANCE state_fut.ENDCENTROIDS state_fut.LOADDATA state_fut.VERIFYDATA state_fut.IDLE state_fut.RESET 
+state_fut.RESET 0 0 0 0 0 0 0 0 0 0 0 
+state_fut.IDLE 0 0 0 0 0 0 0 0 0 1 1 
+state_fut.VERIFYDATA 0 0 0 0 0 0 0 0 1 0 1 
+state_fut.LOADDATA 0 0 0 0 0 0 0 1 0 0 1 
+state_fut.ENDCENTROIDS 0 0 0 0 0 0 1 0 0 0 1 
+state_fut.CALCDISTANCE 0 0 0 0 0 1 0 0 0 0 1 
+state_fut.WAITCALCDISTANCE 0 0 0 0 1 0 0 0 0 0 1 
+state_fut.VERIFYDIMENSION 0 0 0 1 0 0 0 0 0 0 1 
+state_fut.MINDISTANCE 0 0 1 0 0 0 0 0 0 0 1 
+state_fut.STOREDATA 0 1 0 0 0 0 0 0 0 0 1 
+state_fut.ENDSTATE 1 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |Kmeans_Processador|Kmeans_CalcMapModuleFP:inst31|Kmeans_ControlCalcMapFP:inst1|state_fut
+Name state_fut.ENDSTATE state_fut.STOREDATA state_fut.MINDISTANCE state_fut.VERIFYDIMENSION state_fut.CALCDISTANCE state_fut.ENDCENTROIDS state_fut.LOADDATA state_fut.VERIFYDATA state_fut.IDLE state_fut.RESET 
+state_fut.RESET 0 0 0 0 0 0 0 0 0 0 
+state_fut.IDLE 0 0 0 0 0 0 0 0 1 1 
+state_fut.VERIFYDATA 0 0 0 0 0 0 0 1 0 1 
+state_fut.LOADDATA 0 0 0 0 0 0 1 0 0 1 
+state_fut.ENDCENTROIDS 0 0 0 0 0 1 0 0 0 1 
+state_fut.CALCDISTANCE 0 0 0 0 1 0 0 0 0 1 
+state_fut.VERIFYDIMENSION 0 0 0 1 0 0 0 0 0 1 
+state_fut.MINDISTANCE 0 0 1 0 0 0 0 0 0 1 
+state_fut.STOREDATA 0 1 0 0 0 0 0 0 0 1 
+state_fut.ENDSTATE 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |Kmeans_Processador|Kmeans_CalcMapModule:inst25|Kmeans_ControlCalcMap:inst|state_fut
+Name state_fut.ENDSTATE state_fut.STOREDATA state_fut.MINDISTANCE state_fut.VERIFYDIMENSION state_fut.CALCDISTANCE state_fut.ENDCENTROIDS state_fut.LOADDATA state_fut.VERIFYDATA state_fut.IDLE state_fut.RESET 
+state_fut.RESET 0 0 0 0 0 0 0 0 0 0 
+state_fut.IDLE 0 0 0 0 0 0 0 0 1 1 
+state_fut.VERIFYDATA 0 0 0 0 0 0 0 1 0 1 
+state_fut.LOADDATA 0 0 0 0 0 0 1 0 0 1 
+state_fut.ENDCENTROIDS 0 0 0 0 0 1 0 0 0 1 
+state_fut.CALCDISTANCE 0 0 0 0 1 0 0 0 0 1 
+state_fut.VERIFYDIMENSION 0 0 0 1 0 0 0 0 0 1 
+state_fut.MINDISTANCE 0 0 1 0 0 0 0 0 0 1 
+state_fut.STOREDATA 0 1 0 0 0 0 0 0 0 1 
+state_fut.ENDSTATE 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |Kmeans_Processador|Kmeans_CalcCentroidModuleFP:inst30|Kmeans_ControlCalcCentroidFP:inst|state_fut
+Name state_fut.ENDSTATE state_fut.VERIFYDIMENSION state_fut.STOREDATA state_fut.DIV state_fut.VERIFYDIV state_fut.SUM state_fut.WAITDATA state_fut.LOADDATA state_fut.IDLE state_fut.RESET 
+state_fut.RESET 0 0 0 0 0 0 0 0 0 0 
+state_fut.IDLE 0 0 0 0 0 0 0 0 1 1 
+state_fut.LOADDATA 0 0 0 0 0 0 0 1 0 1 
+state_fut.WAITDATA 0 0 0 0 0 0 1 0 0 1 
+state_fut.SUM 0 0 0 0 0 1 0 0 0 1 
+state_fut.VERIFYDIV 0 0 0 0 1 0 0 0 0 1 
+state_fut.DIV 0 0 0 1 0 0 0 0 0 1 
+state_fut.STOREDATA 0 0 1 0 0 0 0 0 0 1 
+state_fut.VERIFYDIMENSION 0 1 0 0 0 0 0 0 0 1 
+state_fut.ENDSTATE 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |Kmeans_Processador|Kmeans_CalcCentroidModuleFP:inst30|Kmeans_ControlCalcCentroidFP:inst|state
+Name state.ENDSTATE state.VERIFYDIMENSION state.STOREDATA state.DIV state.VERIFYDIV state.SUM state.WAITDATA state.LOADDATA state.IDLE state.RESET 
+state.RESET 0 0 0 0 0 0 0 0 0 0 
+state.IDLE 0 0 0 0 0 0 0 0 1 1 
+state.LOADDATA 0 0 0 0 0 0 0 1 0 1 
+state.WAITDATA 0 0 0 0 0 0 1 0 0 1 
+state.SUM 0 0 0 0 0 1 0 0 0 1 
+state.VERIFYDIV 0 0 0 0 1 0 0 0 0 1 
+state.DIV 0 0 0 1 0 0 0 0 0 1 
+state.STOREDATA 0 0 1 0 0 0 0 0 0 1 
+state.VERIFYDIMENSION 0 1 0 0 0 0 0 0 0 1 
+state.ENDSTATE 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |Kmeans_Processador|Kmeans_ControlCentroidInitialize:inst20|state_fut
+Name state_fut.READDATA state_fut.IDLE state_fut.RESET 
+state_fut.RESET 0 0 0 
+state_fut.IDLE 0 1 1 
+state_fut.READDATA 1 0 1 
+
+State Machine - |Kmeans_Processador|Kmeans_ControlCentroidInitialize:inst20|state
+Name state.READDATA state.IDLE state.RESET 
+state.RESET 0 0 0 
+state.IDLE 0 1 1 
+state.READDATA 1 0 1 
+
+State Machine - |Kmeans_Processador|Kmeans_CalcCentroidModule:inst26|Kmeans_ControlCalcCentroid:inst3|state_fut
+Name state_fut.ENDSTATE state_fut.VERIFYDIMENSION state_fut.STOREDATA state_fut.DIV state_fut.VERIFYDIV state_fut.SUM state_fut.WAITDATA state_fut.LOADDATA state_fut.IDLE state_fut.RESET 
+state_fut.RESET 0 0 0 0 0 0 0 0 0 0 
+state_fut.IDLE 0 0 0 0 0 0 0 0 1 1 
+state_fut.LOADDATA 0 0 0 0 0 0 0 1 0 1 
+state_fut.WAITDATA 0 0 0 0 0 0 1 0 0 1 
+state_fut.SUM 0 0 0 0 0 1 0 0 0 1 
+state_fut.VERIFYDIV 0 0 0 0 1 0 0 0 0 1 
+state_fut.DIV 0 0 0 1 0 0 0 0 0 1 
+state_fut.STOREDATA 0 0 1 0 0 0 0 0 0 1 
+state_fut.VERIFYDIMENSION 0 1 0 0 0 0 0 0 0 1 
+state_fut.ENDSTATE 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |Kmeans_Processador|Kmeans_CalcCentroidModule:inst26|Kmeans_ControlCalcCentroid:inst3|state
+Name state.ENDSTATE state.VERIFYDIMENSION state.STOREDATA state.DIV state.VERIFYDIV state.SUM state.WAITDATA state.LOADDATA state.IDLE state.RESET 
+state.RESET 0 0 0 0 0 0 0 0 0 0 
+state.IDLE 0 0 0 0 0 0 0 0 1 1 
+state.LOADDATA 0 0 0 0 0 0 0 1 0 1 
+state.WAITDATA 0 0 0 0 0 0 1 0 0 1 
+state.SUM 0 0 0 0 0 1 0 0 0 1 
+state.VERIFYDIV 0 0 0 0 1 0 0 0 0 1 
+state.DIV 0 0 0 1 0 0 0 0 0 1 
+state.STOREDATA 0 0 1 0 0 0 0 0 0 1 
+state.VERIFYDIMENSION 0 1 0 0 0 0 0 0 0 1 
+state.ENDSTATE 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |Kmeans_Processador|Kmeans_OutputResult:inst27|state_fut
+Name state_fut.READDATA state_fut.IDLE state_fut.RESET 
+state_fut.RESET 0 0 0 
+state_fut.IDLE 0 1 1 
+state_fut.READDATA 1 0 1 
+
+State Machine - |Kmeans_Processador|Kmeans_OutputResult:inst27|state
+Name state.READDATA state.IDLE state.RESET 
+state.RESET 0 0 0 
+state.IDLE 0 1 1 
+state.READDATA 1 0 1 

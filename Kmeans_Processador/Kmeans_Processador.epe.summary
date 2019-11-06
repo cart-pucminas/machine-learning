@@ -1,0 +1,7 @@
+PowerPlay Early Power Estimator File Generator Status : Successful - Wed Jul 12 10:31:56 2017
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Revision Name : Kmeans_Processador
+Top-level Entity Name : Kmeans_Processador
+Family : Cyclone IV GX
+Device : EP4CGX150DF31I7AD
+Power Estimation Confidence : Low: user provided insufficient toggle rate data

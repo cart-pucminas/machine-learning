@@ -1,0 +1,16 @@
+Fitter Status : Successful - Wed Aug  1 12:30:29 2018
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Revision Name : Kmeans_Processador
+Top-level Entity Name : Kmeans_Processador
+Family : Cyclone IV E
+Device : EP4CE115F29C7
+Timing Models : Final
+Total logic elements : 106,257 / 114,480 ( 93 % )
+    Total combinational functions : 105,416 / 114,480 ( 92 % )
+    Dedicated logic registers : 31,947 / 114,480 ( 28 % )
+Total registers : 31947
+Total pins : 457 / 529 ( 86 % )
+Total virtual pins : 0
+Total memory bits : 1,484,170 / 3,981,312 ( 37 % )
+Embedded Multiplier 9-bit elements : 62 / 532 ( 12 % )
+Total PLLs : 0 / 4 ( 0 % )
