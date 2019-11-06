@@ -1,0 +1,115 @@
+--|| Kmeans Processador 
+--|| Desenvolvedor: Lucas Andrade Maciel
+--|| Grupo: CArT - Computer Architecture and Parallel Processing Team
+--|| Bloco: Calc Min Distance
+--|| Descricao: Este bloco realiza o calculo da distancia euclidiana entre o ponto(dado) e o centroid recebidos. Ele armazena a menor
+--||            distancia entre todos os pontos e um centroid no reg4 e o numero do centroid correspondente no reg7.
+--||            Para cada dado e centroid ele calcula a distancia para o eixo x e y e depois concatena para a distancia final
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use ieee.std_logic_unsigned.all ;
+use ieee.numeric_std.all;
+
+Entity CalcSimpleMatch is
+    GENERIC ( Palavra      	 : INTEGER := 64;
+			     PalavraXY	   	 : INTEGER := 32;
+				  TamanhoSoma      : INTEGER := 128;
+			     MaxCentroidsBits : INTEGER := 10); 
+				  
+	 PORT (
+     clk            : in STD_LOGIC;                                       --Sinal de clock
+	  en_CalcMap     : in STD_LOGIC;	  												  --Habilita a execucao deste bloco
+	  dado			  : in STD_LOGIC_VECTOR(Palavra-1 downto 0);            --Ponto(dado) recebido
+	  centroid  	  : in STD_LOGIC_VECTOR(Palavra-1 downto 0);	           --Centroid recebido
+--	  reg4 		     : in STD_LOGIC_VECTOR(Palavra-1 downto 0);            --Distancia minima armazenada
+--	  reg7 		     : in STD_LOGIC_VECTOR(Palavra-1 downto 0);            --Centroid vinculado a distancia minima
+	--  count_Centroid : in STD_LOGIC_VECTOR(MaxCentroidsBits-1 downto 0);   --Contador que informa qual sera o centroid verificado	  
+	--  o_reg4         : out STD_LOGIC_VECTOR (Palavra-1 downto 0);          --Saida da distancia minima atualizada
+	--  o_reg7 		  : out STD_LOGIC_VECTOR (Palavra-1 downto 0);  	     --Saida do centroid atualizada
+	  distanceCalc   : out STD_LOGIC_VECTOR(TamanhoSoma-1 downto 0);       --Saida do somatorio das distancias
+	  o_endCalc 	  : out STD_LOGIC                                       --Bit que informa que o calculo da distancia terminou 
+    );
+END CalcSimpleMatch;
+
+ARCHITECTURE arch of CalcSimpleMatch is
+
+--Sinais de dados 
+SIGNAL s_dado    	    : STD_LOGIC_VECTOR (Palavra-1 downto 0) := (others =>'0');
+SIGNAL s_centroid  	 : STD_LOGIC_VECTOR (Palavra-1 downto 0) := (others =>'0');
+SIGNAL s_distanceCalc : STD_LOGIC_VECTOR (TamanhoSoma-1 downto 0) := (others =>'0');
+--SIGNAL s_reg4  		 : STD_LOGIC_VECTOR (Palavra-1 downto 0) := (others =>'0');
+--SIGNAL s_reg7		    : STD_LOGIC_VECTOR (Palavra-1 downto 0) := (others =>'0');
+SIGNAL squarex		    : STD_LOGIC_VECTOR (Palavra-1 downto 0) := (others =>'0');
+SIGNAL squarey		    : STD_LOGIC_VECTOR (Palavra-1 downto 0) := (others =>'0');
+SIGNAL subx       	 : STD_LOGIC_VECTOR (PalavraXY-1 downto 0) := (others =>'0');
+SIGNAL suby       	 : STD_LOGIC_VECTOR (PalavraXY-1 downto 0) := (others =>'0');
+--SIGNAL s_countCentroid: STD_LOGIC_VECTOR (MaxCentroidsBits-1 downto 0) := (others => '0');
+SIGNAL s_endCalc      : STD_LOGIC := '0';
+
+BEGIN
+
+	PROCESS(clk, en_CalcMap)
+		 
+	BEGIN
+		if en_CalcMap='0' then
+			s_endCalc <= '0';
+		elsif clk'event and clk='1' and en_CalcMap='1' then
+		   --Atribuicao de valores aos signals
+		   s_dado <= dado;
+		   s_centroid <= centroid;
+		  -- s_countCentroid <= count_Centroid;
+		   
+		   --Calcula distancia entre ponto e centroid			
+         if s_centroid(Palavra-1 downto PalavraXY) >  s_dado(Palavra-1 downto PalavraXY) then		
+				subx <= s_centroid(Palavra-1 downto PalavraXY) - s_dado(Palavra-1 downto PalavraXY);
+		   else	
+				subx <= s_dado(Palavra-1 downto PalavraXY) - s_centroid(Palavra-1 downto PalavraXY);
+		   end if;
+		   
+		   if s_centroid(PalavraXY-1 downto 0) > s_dado(PalavraXY-1 downto 0) then		 
+				suby <= s_centroid(PalavraXY-1 downto 0) - s_dado(PalavraXY-1 downto 0);
+		   else
+		        suby <= s_dado(PalavraXY-1 downto 0) - s_centroid(PalavraXY-1 downto 0);
+		   end if;
+		   
+		   --Eleva os valores de x e y ao quadrado somente quando nao puder dar overflow
+		   if (subx(PalavraXY-1)='1') then
+				squarex <= (others => '1');
+		   else
+				squarex <= std_logic_vector((signed(subx))*(signed(subx)));
+		   end if;
+		   
+		   if (suby(PalavraXY-1)='1') then	
+				squarey <= (others => '1');
+		   else	
+				squarey <= std_logic_vector((signed(suby))*(signed(suby)));
+		   end if;		
+		   
+		   --Soma os quadrados de x e y somente quando nao puder dar overflow
+		  -- if (squarex(Palavra-1)='1' and squarey(Palavra-1)='1') then
+			--   s_distanceCalc <= (others => '1');
+		   --else
+			   s_distanceCalc <= std_logic_vector(resize(signed(squarex + squarey),TamanhoSoma));			
+		   --end if;
+		   
+--			--Caso a distancia calculada for menor que a distancia armazenada no reg4 ou for o primeiro calculo, o reg4 e reg7 sao atualizados
+--		   if((s_countCentroid=0) or (s_distanceCalc < reg4)) then
+--				s_reg4 <= s_distanceCalc;	
+--				s_reg7 <= std_logic_vector(resize(signed(s_countCentroid),Palavra));				
+--			else
+--				s_reg4 <= reg4;
+--				s_reg7 <= reg7;
+--			end if;	
+			
+			s_endCalc <= '1';
+		end if;	
+		
+	END PROCESS;
+	
+o_endCalc <= s_endCalc;
+distanceCalc <= s_distanceCalc;
+--o_reg4 <= s_reg4;
+--o_reg7 <= s_reg7;
+
+END arch;

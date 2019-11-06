@@ -1,0 +1,18 @@
+MSW_SUBTRACT=NO
+PIPELINE=0
+REPRESENTATION=UNSIGNED
+RESULT_ALIGNMENT=LSB
+SHIFT=0
+SIZE=8
+WIDTH=1
+WIDTHR=4
+DEVICE_FAMILY="Cyclone V"
+data
+data
+data
+data
+data
+data
+data
+data
+result

@@ -1,0 +1,102 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/lucas/Documentos/Kmodes/Kmeans_Processador/Kmodes_CalcMapModule/simulation/qsim
+Ekmodes_calcmapmodule
+Z1 w1524926427
+Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 41KVoNENnj;RUmMIITVQg1
+Z3 DPx8 cyclonev 19 cyclonev_components 0 22 MmMkVfW5JWkR?lm<VcfRO1
+Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 3L]34bNSPL@[RD2AeKH]S3
+Z5 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z6 DPx6 altera 11 dffeas_pack 0 22 zWCf]NF6heG=Dhmc@B0=T2
+Z7 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z10 DPx6 altera 28 altera_primitives_components 0 22 _Q9E2TD5YB<<@P0[5jYTG0
+R0
+Z11 8Kmodes_CalcMapModule.vho
+Z12 FKmodes_CalcMapModule.vho
+l0
+L39
+V0Y4=@oJgSa:1E3=_kbJo?0
+!s100 m]@_[DTbY;2ZeCRBe7on51
+Z13 OV;C;10.5b;63
+32
+Z14 !s110 1524926429
+!i10b 1
+Z15 !s108 1524926429.000000
+Z16 !s90 -work|work|Kmodes_CalcMapModule.vho|
+Z17 !s107 Kmodes_CalcMapModule.vho|
+!i113 1
+Z18 o-work work
+Z19 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+DEx4 work 20 kmodes_calcmapmodule 0 22 0Y4=@oJgSa:1E3=_kbJo?0
+l1500
+L312
+VMEigfhA5[O^7nM`X>8]]N2
+!s100 0VYK4zJla2jJ@Q<LO<=@C0
+R13
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 1
+R18
+R19
+Ekmodes_calcmapmodule_vhd_vec_tst
+Z20 w1524926424
+R8
+R9
+R0
+Z21 8Waveform.vwf.vht
+Z22 FWaveform.vwf.vht
+l0
+L32
+V8YDZdC:^mEOZAU0NP_KTR1
+!s100 z`=>A<jS=fi0jM:9gGAX<3
+R13
+32
+R14
+!i10b 1
+R15
+Z23 !s90 -work|work|Waveform.vwf.vht|
+Z24 !s107 Waveform.vwf.vht|
+!i113 1
+R18
+R19
+Akmodes_calcmapmodule_arch
+R8
+R9
+Z25 DEx4 work 32 kmodes_calcmapmodule_vhd_vec_tst 0 22 8YDZdC:^mEOZAU0NP_KTR1
+l83
+L34
+V24:QcoEIY93z1dn`?6h923
+!s100 YB9zbaBLbAGURk8[aT=A`2
+R13
+32
+R14
+!i10b 1
+R15
+R23
+R24
+!i113 1
+R18
+R19

@@ -1,0 +1,177 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 392 272)
+	(text "Kmodes_CalcMapModule" (rect 5 0 156 14)(font "Intel Clear" (font_size 8)))
+	(text "inst" (rect 8 240 26 252)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 18 14)(font "Intel Clear" (font_size 8)))
+		(text "clk" (rect 21 27 39 41)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "nrst" (rect 0 0 24 14)(font "Intel Clear" (font_size 8)))
+		(text "nrst" (rect 21 43 45 57)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "en_KmodesControlCalcMap" (rect 0 0 165 14)(font "Intel Clear" (font_size 8)))
+		(text "en_KmodesControlCalcMap" (rect 21 59 186 73)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "reg1[9..0]" (rect 0 0 56 14)(font "Intel Clear" (font_size 8)))
+		(text "reg1[9..0]" (rect 21 75 77 89)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "reg3[14..0]" (rect 0 0 64 14)(font "Intel Clear" (font_size 8)))
+		(text "reg3[14..0]" (rect 21 91 85 105)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "reg5[13..0]" (rect 0 0 64 14)(font "Intel Clear" (font_size 8)))
+		(text "reg5[13..0]" (rect 21 107 85 121)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "reg8[2..0]" (rect 0 0 56 14)(font "Intel Clear" (font_size 8)))
+		(text "reg8[2..0]" (rect 21 123 77 137)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 128)(pt 16 128)(line_width 3))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "dado[63..0]" (rect 0 0 68 14)(font "Intel Clear" (font_size 8)))
+		(text "dado[63..0]" (rect 21 139 89 153)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 144)(pt 16 144)(line_width 3))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "centroid[63..0]" (rect 0 0 87 14)(font "Intel Clear" (font_size 8)))
+		(text "centroid[63..0]" (rect 21 155 108 169)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 160)(pt 16 160)(line_width 3))
+	)
+	(port
+		(pt 376 32)
+		(output)
+		(text "EndDistanceMatch" (rect 0 0 110 14)(font "Intel Clear" (font_size 8)))
+		(text "EndDistanceMatch" (rect 245 27 355 41)(font "Intel Clear" (font_size 8)))
+		(line (pt 376 32)(pt 360 32))
+	)
+	(port
+		(pt 376 48)
+		(output)
+		(text "DistanceMatch[3..0]" (rect 0 0 116 14)(font "Intel Clear" (font_size 8)))
+		(text "DistanceMatch[3..0]" (rect 239 43 355 57)(font "Intel Clear" (font_size 8)))
+		(line (pt 376 48)(pt 360 48)(line_width 3))
+	)
+	(port
+		(pt 376 64)
+		(output)
+		(text "enSimpleMatch" (rect 0 0 93 14)(font "Intel Clear" (font_size 8)))
+		(text "enSimpleMatch" (rect 262 59 355 73)(font "Intel Clear" (font_size 8)))
+		(line (pt 376 64)(pt 360 64))
+	)
+	(port
+		(pt 376 80)
+		(output)
+		(text "wr_Ram" (rect 0 0 47 14)(font "Intel Clear" (font_size 8)))
+		(text "wr_Ram" (rect 308 75 355 89)(font "Intel Clear" (font_size 8)))
+		(line (pt 376 80)(pt 360 80))
+	)
+	(port
+		(pt 376 96)
+		(output)
+		(text "o_dado[9..0]" (rect 0 0 74 14)(font "Intel Clear" (font_size 8)))
+		(text "o_dado[9..0]" (rect 281 91 355 105)(font "Intel Clear" (font_size 8)))
+		(line (pt 376 96)(pt 360 96)(line_width 3))
+	)
+	(port
+		(pt 376 112)
+		(output)
+		(text "next_State[3..0]" (rect 0 0 93 14)(font "Intel Clear" (font_size 8)))
+		(text "next_State[3..0]" (rect 262 107 355 121)(font "Intel Clear" (font_size 8)))
+		(line (pt 376 112)(pt 360 112)(line_width 3))
+	)
+	(port
+		(pt 376 128)
+		(output)
+		(text "addr_Ram_Dado[13..0]" (rect 0 0 135 14)(font "Intel Clear" (font_size 8)))
+		(text "addr_Ram_Dado[13..0]" (rect 220 123 355 137)(font "Intel Clear" (font_size 8)))
+		(line (pt 376 128)(pt 360 128)(line_width 3))
+	)
+	(port
+		(pt 376 144)
+		(output)
+		(text "addr_Ram_Centroid[13..0]" (rect 0 0 154 14)(font "Intel Clear" (font_size 8)))
+		(text "addr_Ram_Centroid[13..0]" (rect 201 139 355 153)(font "Intel Clear" (font_size 8)))
+		(line (pt 376 144)(pt 360 144)(line_width 3))
+	)
+	(port
+		(pt 376 160)
+		(output)
+		(text "KmodesEstatoMap[3..0]" (rect 0 0 140 14)(font "Intel Clear" (font_size 8)))
+		(text "KmodesEstatoMap[3..0]" (rect 215 155 355 169)(font "Intel Clear" (font_size 8)))
+		(line (pt 376 160)(pt 360 160)(line_width 3))
+	)
+	(port
+		(pt 376 176)
+		(output)
+		(text "enMinDistMatch" (rect 0 0 96 14)(font "Intel Clear" (font_size 8)))
+		(text "enMinDistMatch" (rect 259 171 355 185)(font "Intel Clear" (font_size 8)))
+		(line (pt 376 176)(pt 360 176))
+	)
+	(port
+		(pt 376 192)
+		(output)
+		(text "oReg7[9..0]" (rect 0 0 67 14)(font "Intel Clear" (font_size 8)))
+		(text "oReg7[9..0]" (rect 288 187 355 201)(font "Intel Clear" (font_size 8)))
+		(line (pt 376 192)(pt 360 192)(line_width 3))
+	)
+	(port
+		(pt 376 208)
+		(output)
+		(text "KmodesSumDist[6..0]" (rect 0 0 127 14)(font "Intel Clear" (font_size 8)))
+		(text "KmodesSumDist[6..0]" (rect 228 203 355 217)(font "Intel Clear" (font_size 8)))
+		(line (pt 376 208)(pt 360 208)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 360 240))
+	)
+)

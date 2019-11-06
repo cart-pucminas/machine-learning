@@ -1,0 +1,79 @@
+--parallel_add DEVICE_FAMILY="Cyclone V" MSW_SUBTRACT="NO" PIPELINE=0 REPRESENTATION="UNSIGNED" RESULT_ALIGNMENT="LSB" SHIFT=0 SIZE=8 WIDTH=1 WIDTHR=4 data result
+--VERSION_BEGIN 16.1 cbx_cycloneii 2016:10:19:21:26:20:SJ cbx_lpm_add_sub 2016:10:19:21:26:20:SJ cbx_mgl 2016:10:19:22:10:30:SJ cbx_nadder 2016:10:19:21:26:20:SJ cbx_padd 2016:10:19:21:26:20:SJ cbx_parallel_add 2016:10:19:21:26:20:SJ cbx_stratix 2016:10:19:21:26:20:SJ cbx_stratixii 2016:10:19:21:26:20:SJ cbx_util_mgl 2016:10:19:21:26:20:SJ  VERSION_END
+
+
+-- Copyright (C) 2016  Intel Corporation. All rights reserved.
+--  Your use of Intel Corporation's design tools, logic functions 
+--  and other software and tools, and its AMPP partner logic 
+--  functions, and any output files from any of the foregoing 
+--  (including device programming or simulation files), and any 
+--  associated documentation or information are expressly subject 
+--  to the terms and conditions of the Intel Program License 
+--  Subscription Agreement, the Intel Quartus Prime License Agreement,
+--  the Intel MegaCore Function License Agreement, or other 
+--  applicable license agreement, including, without limitation, 
+--  that your use is for the sole purpose of programming logic 
+--  devices manufactured by Intel and sold by Intel or its 
+--  authorized distributors.  Please refer to the applicable 
+--  agreement for further details.
+
+
+FUNCTION soft (in)
+RETURNS ( out);
+
+--synthesis_resources = lut 20 
+SUBDESIGN par_add_uke
+( 
+	data[7..0]	:	input;
+	result[3..0]	:	output;
+) 
+VARIABLE
+	add1_result[1..0]	:	WIRE;
+	add11_result[1..0]	:	WIRE;
+	add16_result[3..0]	:	WIRE;
+	add6_result[1..0]	:	WIRE;
+	sft10a[1..0] : soft;
+	sft12a[1..0] : soft;
+	sft13a[1..0] : soft;
+	sft14a[1..0] : soft;
+	sft15a[1..0] : soft;
+	sft17a[3..0] : soft;
+	sft18a[3..0] : soft;
+	sft19a[3..0] : soft;
+	sft20a[3..0] : soft;
+	sft2a[1..0] : soft;
+	sft3a[1..0] : soft;
+	sft4a[1..0] : soft;
+	sft5a[1..0] : soft;
+	sft7a[1..0] : soft;
+	sft8a[1..0] : soft;
+	sft9a[1..0] : soft;
+	w27w	: WIRE;
+	w56w[3..0]	: WIRE;
+
+BEGIN 
+	add1_result[] = sft2a[].out + sft3a[].out + sft4a[].out;
+	add11_result[] = sft12a[].out + sft13a[].out + sft14a[].out;
+	add16_result[] = sft17a[].out + sft18a[].out + sft19a[].out;
+	add6_result[] = sft7a[].out + sft8a[].out + sft9a[].out;
+	sft10a[].in = add6_result[];
+	sft12a[].in = ( w27w, data[7..7]);
+	sft13a[].in = ( w27w, data[0..0]);
+	sft14a[].in = ( w27w, w27w);
+	sft15a[].in = add11_result[];
+	sft17a[].in = ( w27w, ( w27w, ( sft5a[1..1].out, sft5a[0..0].out)));
+	sft18a[].in = ( w27w, ( w27w, ( sft10a[1..1].out, sft10a[0..0].out)));
+	sft19a[].in = ( w27w, ( w27w, ( sft15a[1..1].out, sft15a[0..0].out)));
+	sft20a[].in = add16_result[];
+	sft2a[].in = ( w27w, data[3..3]);
+	sft3a[].in = ( w27w, data[2..2]);
+	sft4a[].in = ( w27w, data[4..4]);
+	sft5a[].in = add1_result[];
+	sft7a[].in = ( w27w, data[5..5]);
+	sft8a[].in = ( w27w, data[1..1]);
+	sft9a[].in = ( w27w, data[6..6]);
+	result[3..0] = w56w[3..0];
+	w27w = B"0";
+	w56w[] = ( sft20a[3..3].out, sft20a[2..2].out, sft20a[1..1].out, sft20a[0..0].out);
+END;
+--VALID FILE
