@@ -4,7 +4,7 @@
 - O arquivo **mainTrain.cpp** realiza o treinamento da rede neural convolucional, através da leitura de dois arquivos CSV (Ex: *"/TrainCnn50000.csv"* e *"/Validation50000.csv"*), gerando ao final do processo um arquivo de saída (*result.csv*), contendo em cada linha o número da epóca, tempo de execução e acurácia;
 - O arquivo **mainTest.cpp** realiza a predição de novos registros a partir da rede neural treinada (*cnn-weights*). Ele espera como entrada um arquivo CSV, contendo apenas um registro no formato esperado pela CNN. Ao final do processo um arquivo de saída (*resultTest.csv*) é gerado, contendo em cada linha o número das classes identificadas e a probabilidade das mesmas;
 - Para executar os arquivos é necessário realizar os seguintes passos:
-    - Acessar a pasta **mestrado-cnn/opencl_cnn/FPGACNN**;
+    - Acessar a pasta **cnn-fpga/opencl_cnn/FPGACNN**;
     
     - Compilar os códigos;  
 
@@ -24,11 +24,11 @@
 
 - O arquivo **main.cpp** realiza o treinamento da rede neural convolucional, através da leitura de dois arquivos CSV (Ex: *"/FpgaEditTrain.csv"* e *"/FpgaTestTrain.csv"*), gerando ao final do processo um arquivo de saída (*result.csv*), contendo em cada linha o número da epóca, tempo de execução e acurácia;
 - Além disso, o arquivo possui uma chamada ao kernel OpenCL, responsável por executar partes do código em FPGA;
-- O arquivo *.cl* está disponível na pasta **mestrado-cnn/FpgaCNN/FpgaCNN/device**;
+- O arquivo *.cl* está disponível na pasta **cnn-fpga/FpgaCNN/FpgaCNN/device**;
 - Para executar os arquivos é necessário realizar os seguintes passos:
     - Acessar a infraestrutura da Intel `ssh myuser@ssh-iam.intel-research.net`
 
-    - Clonar o repositório [mestrado-cnn](https://github.com/lucasandradecb/mestrado-cnn);
+    - Clonar o repositório cnn-fpga;
 
     - Ajustar as variáveis de ambiente da plataforma, para executar os códigos em OpenCL;
 
@@ -38,7 +38,7 @@
 
         `qsub-fpga`
 
-    - Acessar a pasta **mestrado-cnn/opencl_cnn/FPGACNN/FpgaCNN/device** e gerar o arquivo *.aocx* do kernel;
+    - Acessar a pasta **cnn-fpga/opencl_cnn/FPGACNN/FpgaCNN/device** e gerar o arquivo *.aocx* do kernel;
 
         `qsub-aoc hello_world.cl`
 
@@ -50,11 +50,11 @@
 
         `make`
 
-    - Copiar o arquivo *.aocx* gerado para a pasta **mestrado-cnn/opencl_cnn/FPGACNN/FpgaCNN/bin**;
+    - Copiar o arquivo *.aocx* gerado para a pasta **cnn-fpga/opencl_cnn/FPGACNN/FpgaCNN/bin**;
 
-        `cp mestrado-cnn/opencl_cnn/FPGACNN/FpgaCNN/device/hello_world.aocx mestrado-cnn/opencl_cnn/FPGACNN/FpgaCNN/bin`
+        `cp cnn-fpga/opencl_cnn/FPGACNN/FpgaCNN/device/hello_world.aocx cnn-fpga/opencl_cnn/FPGACNN/FpgaCNN/bin`
     
-    - Acessar a pasta **mestrado-cnn/opencl_cnn/FPGACNN** e executar o treinamento da rede;
+    - Acessar a pasta **cnn-fpga/opencl_cnn/FPGACNN** e executar o treinamento da rede;
 
         `./FpgaCNN/bin/host --data_path FpgaCNN/nsl-kdd-csv/ --learning_rate 0.1 --epochs 10 --minibatch_size 10 --backend_type internal`
 
