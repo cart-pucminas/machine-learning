@@ -1,0 +1,6 @@
+dos
+u2r
+r2l
+probe
+normal
+unknown
