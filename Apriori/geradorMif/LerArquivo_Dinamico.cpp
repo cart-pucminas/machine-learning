@@ -1,6 +1,6 @@
 /*
 Autor: Juma Helena Costa de Miranda
-Entrada: Exemplo.txt
+Entrada: Control-Kombo.txt
 Saida: Control.mif
 
 O programa lê uma lista de palavras separadas por "," onde cada palavra na linha 
