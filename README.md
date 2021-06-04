@@ -3,7 +3,7 @@
 - Kmeans_Processador: VHDL codes for K-means e K-modes
 - cnn-fpga: convolutional neural network codes in C++/OpenCL for FPGA
 - Apriori: VHDL codes
-- About HARP Cluster at Paderborn University
+- About HARP Cluster at Paderborn University: https://pc2.uni-paderborn.de/hpc-services/available-systems/fpga-research-clusters/harp-research-cluster
 
 Publications:
 
