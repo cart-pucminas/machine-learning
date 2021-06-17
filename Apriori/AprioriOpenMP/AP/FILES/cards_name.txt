@@ -1,0 +1,282 @@
+Abomination
+Abusive Sergeant
+Acidic Swamp Ooze
+Acolyte of Pain
+Aldor Peacekeeper
+Amani Berserker
+Anduin Wrynn
+Animal Companion
+Annoy-o-Tron
+Anodized Robo Cub
+Antique Healbot
+Arcane Explosion
+Arcane Golem
+Arcane Intellect
+Arcane Missiles
+Arcane Nullifier X-21
+Archmage
+Argent Protector
+Argent Squire
+Armorsmith
+Assassinate
+Auchenai Soulpriest
+Avenging Wrath
+Azure Drake
+Backstab
+Baron Geddon
+Bestial Wrath
+Betrayal
+Big Game Hunter
+Blackwing Corruptor
+Blackwing Technician
+Blade Flurry
+Blessing of Kings
+Blessing of Might
+Blessing of Wisdom
+Blizzard
+Blood Knight
+Bloodmage Thalnos
+Bluegill Warrior
+Booty Bay Bodyguard
+Bouncing Blade
+Brawl
+Burly Rockjaw Trogg
+Cabal Shadow Priest
+Charge
+Chillwind Yeti
+Chromaggus
+Circle of Healing
+Claw
+Clockwork Gnome
+Coghammer
+Cogmaster
+Cold Blood
+Coldlight Oracle
+Cone of Cold
+Consecration
+Crackle
+Cruel Taskmaster
+Dagger Mastery
+Darkbomb
+Dark Iron Dwarf
+Dark Iron Skulker
+Deadly Poison
+Deadly Shot
+Deathlord
+Death's Bite
+Defender of Argus
+Demonfire
+Demonheart
+Dire Wolf Alpha
+Divine Favor
+Divine Spirit
+Doomguard
+Doomhammer
+Doomsayer
+Dragon Consort
+Dragonling Mechanic
+Dragon's Breath
+Drain Life
+Drakonid Crusher
+Dr. Boom
+Dread Corsair
+Dread Infernal
+Eaglehorn Bow
+Earthen Ring Farseer
+Echo of Medivh
+Edwin VanCleef
+Emperor Cobra
+Emperor Thaurissan
+Equality
+Eviscerate
+Execute
+Explosive Sheep
+Fan of Knives
+Feign Death
+Fireball
+Fireguard Destroyer
+Flamecannon
+Flame Imp
+Flamestrike
+Flametongue Totem
+Flare
+Flesheating Ghoul
+Floating Watcher
+Flying Machine
+Force of Nature
+Frostbolt
+Frost Nova
+Frothing Berserker
+Gadgetzan Auctioneer
+Gang Up
+Gilblin Stalker
+Glaivezooka
+Gnomish Inventor
+Grim Patron
+Guardian of Kings
+Gurubashi Berserker
+Hammer of Wrath
+Hand of Protection
+Harvest Golem
+Haunted Creeper
+Healing Touch
+Hellfire
+Hex
+Holy Fire
+Holy Light
+Holy Nova
+Holy Smite
+Holy Wrath
+Hunter's Mark
+Ice Lance
+Imp Gang Boss
+Imp-losion
+Imp Master
+Injured Blademaster
+Inner Fire
+Inner Rage
+Innervate
+Ironbark Protector
+Ironbeak Owl
+Ironfur Grizzly
+Keeper of the Grove
+Kel'Thuzad
+Kezan Mystic
+Kill Command
+King Mukla
+Knife Juggler
+Kobold Geomancer
+Lava Shock
+Leeroy Jenkins
+Leper Gnome
+Lesser Heal
+Lightbomb
+Lightning Bolt
+Lightning Storm
+Light of the Naaru
+Lightspawn
+Lightwarden
+Loatheb
+Loot Hoarder
+Lord of the Arena
+Lorewalker Cho
+Lost Tallstrider
+Mad Scientist
+Malfurion Stormrage
+Malorne
+Malygos
+Mana Tide Totem
+Mana Wyrm
+Mark of the Wild
+Mass Dispel
+Mechwarper
+Micro Machine
+Mind Blast
+Mind Control
+Mind Control Tech
+Mind Vision
+Mini-Mage
+Mirror Image
+Mistress of Pain
+Mortal Coil
+Muster for Battle
+Nat Pagle
+Naturalize
+Nerubian Egg
+Northshire Cleric
+Oasis Snapjaw
+Ogre Brute
+Ogre Magi
+Onyxia
+Perdition's Blade
+Piloted Shredder
+Poison Seeds
+Polymorph
+Power Overwhelming
+Power Word: Shield
+Preparation
+Prophet Velen
+Pyroblast
+Quartermaster
+Questing Adventurer
+Quick Shot
+Raging Worgen
+Ragnaros the Firelord
+Raid Leader
+Rampage
+Razorfen Hunter
+Resurrect
+Rockbiter Weapon
+Sabotage
+Sap
+Savage Roar
+Savannah Highmane
+Scavenging Hyena
+Sen'jin Shieldmasta
+Sense Demons
+Shade of Naxxramas
+Shadow Bolt
+Shadowboxer
+Shadowflame
+Shadowstep
+Shadow Word: Death
+Shadow Word: Pain
+Shattered Sun Cleric
+Shield Block
+Shielded Minibot
+Shieldmaiden
+Shield Slam
+Shiv
+SI:7 Agent
+Siphon Soul
+Sludge Belcher
+Sneed's Old Shredder
+Solemn Vigil
+Sorcerer's Apprentice
+Soulfire
+Spectral Knight
+Spellbreaker
+Spider Tank
+Sprint
+Stampeding Kodo
+Starfall
+Starfire
+Steady Shot
+Stonesplinter Trogg
+Stonetusk Boar
+Stormwind Champion
+Succubus
+Summoning Portal
+Swipe
+Sword of Justice
+Sylvanas Windrunner
+Thoughtsteal
+Thrall
+Tinker's Sharpsword Oil
+Tinkertown Technician
+Tirion Fordring
+Totemic Call
+Tracking
+Trade Prince Gallywix
+Tree of Life
+Truesilver Champion
+Twilight Drake
+Unleash the Hounds
+Unstable Ghoul
+Unstable Portal
+Valeera Sanguinar
+Vanish
+Velen's Chosen
+Violet Teacher
+Voidwalker
+Voodoo Doctor
+Warsong Commander
+Webspinner
+Whirling Zap-o-matic
+Whirlwind
+Wild Growth
+Wild Pyromancer
+Wolfrider
+Wrath
+Ysera
+Zombie Chow
