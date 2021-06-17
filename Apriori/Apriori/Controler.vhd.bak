@@ -1,0 +1,86 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+Entity Controler is
+  GENERIC (n: integer := 7);
+Port (
+	 clk_in : in std_logic;
+	 out_cont: in std_logic_vector(7 downto 0); --saida contador geral
+	 enable_rom: out std_logic; -- ativaModPF a Rom
+	 enable_1itemap: out std_logic; -- ativaModPF mod que retira os conjuntos de 1 item
+	 reset_cont : out bit ;  -- reseta o contador geral
+	 enable_proc1_1item: out bit;-- ativa o primeiro processo do mod que busca todos os 1 itens.
+	 enable1_MPF  : out bit; --ativa o enable do Modulo de ponto flutante;
+	 enable2_MPF  : out bit; --ativa e enable 
+	 enable3_MPF  : out bit;
+	 quant_totl   : out integer range 0 to 256;
+	 env_cem      : out integer range 0 to 256;
+	 end_proc1_1item: out std_logic_vector(7 downto 0);
+	 suporte : out integer range 0 to 256;
+	 endereco: out std_logic_vector(4 downto 0) -- endereco da Rom
+ 
+);
+end Entity;
+
+Architecture arch of Controler is
+signal proc2 : std_logic;
+Begin
+	Process(clk_in, out_cont)
+	variable cont, cont2, endMemRom, contMPF : integer range 0  to 40;
+	variable ativaModPF  : bit; -- ativaModPF o modulo ponto flutante para o contador.
+	variable contador : integer range 0 to 50;
+	Begin
+	contador := to_integer(unsigned(out_cont));
+	
+		if clk_in'event and clk_in = '1' then
+		
+			if contador < 41 and ativaModPF = '0' then
+				enable_rom <= '1' ;
+				enable_1itemap <= '1';
+				
+			elsif contador = 41 and ativaModPF = '0' then
+				enable_rom <= '0';
+				enable_1itemap <= '0';
+				reset_cont <= '1';
+				ativaModPF	:= '1';
+			end if;
+			
+			if cont = 8 and ativaModPF = '0' then
+				endMemRom := endMemRom + 1;	
+				cont := 0;
+			end if;
+			
+			cont := cont + 1;
+		--------------------------------------------------------------------	
+			if ativaModPF =  '1'then
+			   cont2 := cont2 + 1;
+				
+			end if;
+			
+			if cont2 >= 2 then
+			   reset_cont <= '0';
+				if contador = 0 then
+				reset_cont <= '0';
+					enable_1itemap <= '1';
+				   end_proc1_1item <= std_logic_vector(to_unsigned(contMPF, 8));
+					enable1_MPF <= '1';
+					enable2_MPF <= '1';
+					enable3_MPF <= '1';
+					quant_totl <= 5;
+					env_cem <= 100;
+					suporte <= 60;
+				end if;
+				if contador = 14 then
+				   contMPF := contMPF + 1;
+					reset_cont  <= '1';
+				end if;
+	
+			end if;
+		   
+		end if;
+		
+		endereco <= std_logic_vector(to_unsigned(endMemRom, 5));
+	end Process;
+
+end arch;
