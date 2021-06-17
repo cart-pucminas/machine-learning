@@ -1,0 +1,101 @@
+--Juma Helena Costa Miranda
+
+--Faz a parte2 do Apriorigem, que faz as combinações entre as palavras.
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+USE ieee.std_logic_unsigned.all;
+
+
+ENTITY Part2_Apriorigem is
+   Generic (n : INTEGER:= 7 );
+	PORT (
+		
+		clk_in  		    : in STD_LOGIC; 
+		nrst 			    : in STD_LOGIC; 
+		mem_onput1		 : in STD_LOGIC_VECTOR (n DOWNTO 0); --vem da saida da memoria
+		mem_onput2		 : in STD_LOGIC_VECTOR (n DOWNTO 0); --vem da saida da memoria
+		enable_proc1    : in STD_LOGIC; 
+		enable_proc2    : in STD_LOGIC;
+		tam_palavra     : in INTEGER range 0 to n; -- tamanho da palavra
+		teste           : out integer range 0 to n;
+		teste1          : out integer range 0 to n;
+		saida           : out STD_LOGIC_VECTOR (n DOWNTO 0)
+	   
+	);
+END ENTITY;
+
+ARCHITECTURE apriorigem OF Part2_Apriorigem IS
+
+type aux1_type is array (0 to n) OF integer range 0 to n;
+signal aux1, aux2 :  aux1_type;
+begin
+--- Processo que avalia os 1's da palavra e salva no array a posição do 1 encontrado
+	Process (clk_in,enable_proc1,mem_onput1, mem_onput2) 
+	variable i,j,y,cont : INTEGER range 0 to n; 
+	variable enable : bit;
+	variable rece_mem , rece_mem1 : STD_LOGIC_VECTOR (n DOWNTO 0);
+		begin
+		if clk_in' event and clk_in='1' and enable_proc1='1' then
+			
+			if (mem_onput1(i)='1')then
+				aux1(j)<=i;
+				j := j + 1;
+			end if;
+			if (mem_onput2(i)='1')then
+				aux2(y)<=i;
+				y := y + 1;
+			end if;
+			i := i + 1;
+			if (i > n)then
+		   	cont := 0;
+				i :=0;
+				j :=0;
+				y :=0;
+			end if;
+			
+			teste1 <= i;
+			end if;
+			
+  end Process;
+-- Processo para que verifica se os n-1 primeiras 1 da palavra é igual ao n-1 primeiroas da palavra2, e n posição da palavra1 é diferente da palavra2
+  Process (clk_in,enable_proc2) 
+  variable i, j: INTEGER range 0 to n;
+  variable vetor1, vetor2 : STD_LOGIC_VECTOR (n downto 0);
+	  Begin
+	  if clk_in' event and clk_in='1' and enable_proc2='1' then
+		  
+		  if (i < tam_palavra) then
+			  if aux1(i) = aux2(i) then
+				  vetor1(aux1(i)):='1';
+				  vetor1(aux1(i+1)):='0';
+				  vetor2(aux2(i)):='1';
+				  vetor2(aux2(i+1)):='0';
+			  else 
+				  j:=1;
+			  end if;
+		  end if;
+		  if (j = 0 and i = tam_palavra) then
+			  if aux1(i) /= aux2(i) then
+				  vetor1(aux1(i)):='1';
+				  vetor2(aux2(i)):='1';
+			  else
+				  j:=1;
+			  end if;
+		  end if;
+		  i := i +1;
+		  if (i >n) then
+			  i := 0;
+			  if (j=0) then 
+				  saida <= vetor1 or vetor2;
+				  vetor1:= (others => '0');
+				  vetor2:= (others => '0');
+			  else
+				  j:=0;	  
+			  end if;
+		  
+		 end if;
+	end if;
+  end Process;
+end ARCHITECTURE;
