@@ -1,0 +1,30 @@
+Library ieee;
+Use ieee.std_logic_1164.all;
+Use ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
+
+	Entity MiniRam is 
+	generic (n: integer := 7);
+	Port(
+		clk_in:  in std_logic;
+		reset:   in std_logic;
+		mem_rom: in std_logic_vector(n downto 0);
+	   enablepro1:  in std_logic;
+		enablepro2:  in std_logic;
+		enablepro3:  in std_logic;
+		endereco:   in integer range 0 to 128;;
+		saida_freq: out std_logic_vector(n downto 0)
+	);
+	end Entity;
+	Architecture arch of MiniRam is
+	type vetors is array (0 to n)  of std_logic_vector(n downto 0);
+	signal aux1 : vetors;
+	Begin
+	Process(clk_in)
+	variable cont1 : integer range 0 to 128;
+	Begin
+	 if clk_in'event and clk_in = '1' and enablepro1= '1' then
+	      aux1(cont1) <= mem_rom;
+			saida_freq <= aux1(endereco);
+	 end if;
+	end Process;

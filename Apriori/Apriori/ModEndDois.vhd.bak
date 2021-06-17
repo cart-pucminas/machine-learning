@@ -1,0 +1,38 @@
+
+Library ieee;
+Use ieee.std_logic_1164.all;
+Use ieee.std_logic_unsigned.all;
+
+
+Entity ModEndDois is 
+Port (
+	clk_in : in std_logic;
+	enable : in bit;
+	saida_end1 : out integer range 0 to 258;
+	saida_end2 : out integer range 0 to 258
+
+);
+end Entity;
+
+Architecture arch of ModEndDois is
+	Begin
+	Process(clk_in)
+	variable cont, cont2, cont3 : integer range 0 to 8;
+		Begin
+		if clk_in'event and clk_in = '1'and enable = '1' then
+			cont2 := cont2 + 1;
+	
+			if cont2 = 8 then --tamanha da memoria + 1
+				cont2 := 0;
+				cont3 := cont3 + 1;
+				cont := cont3;
+			end if;
+			if cont3 = 8 then --tamanha da memoria + 1
+				cont := 0;
+				cont3 := 0;
+			end if;
+		end if;
+		saida_end1 <= cont;
+		saida_end2 <= cont2;
+	end Process;
+end arch;

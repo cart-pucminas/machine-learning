@@ -1,0 +1,81 @@
+--- Juma Helena Costa Miranda
+
+--- Inputs: clk, saida da memoria que contem todas as transções, o tamanho da palavra
+--- Outputs; palavra com o tamanho de acordo com o tamanho passada na entrada
+--- Este bloco percorrerá cada transacao e a quebra em n palavras. 
+
+
+Library ieee;
+Use ieee.std_logic_1164.all;
+Use ieee.std_logic_unsigned.all;
+
+Entity SuporteFrequencia_1 is
+	generic (n: integer := 7); --tamanho da palavra
+	Port(
+		clk_in       : in std_logic;
+		enable_proc1 : in std_logic;
+		transacao    : in std_logic_vector(n downto 0);
+		k_item       : in integer range 0 to 128;
+		saida        : out std_logic_vector(n downto 0);
+		ativa_rom    : out bit
+	);
+end Entity;
+Architecture suport_Counting_arch of SuporteFrequencia_1 is
+signal teste : std_logic_vector(n downto 0);
+	Begin
+		Process(clk_in, enable_proc1)
+		variable cont, cont2, cont3 , cont4 : integer range 0 to 128;
+		variable aux3, aux4, aux5, aux6 : std_logic_vector(n downto 0);
+		variable ativa : bit;
+		begin
+		if clk_in'event and clk_in = '1' and enable_proc1 = '1' then
+	 
+		   if cont = 0 then
+				aux3 := (others => '0');
+				aux6 := (others => '0');
+			end if;
+			if cont2 <= k_item - 1 then
+			if transacao(cont) = '1' then
+			   aux3(cont) := '1';
+				aux4:= aux3;
+				aux5 := aux3;
+				cont2 := cont2 + 1;
+			end if;	
+			end if;
+			if cont2 > k_item - 1 then
+			   if transacao(cont) = '1' then
+				cont4:= cont4 + 1;
+				aux4(cont) := '1';
+				aux3 := aux4;
+				if aux5 /= aux6 then
+				saida <= aux3;
+				end if;
+				aux4(cont) := '0';
+				end if;
+				
+			end if;
+			cont := cont + 1;
+			if cont > n then
+			   aux6 := aux5;
+				aux3 := (others => '0');
+				cont3 := cont3 + 1;
+				cont := cont3;
+				cont2 := 0;
+			end if;
+			if cont3 = n - 2 then 
+				if cont = n - 2 then
+				ativa_rom <= '0';
+				end if;
+				if cont = n - 1 then
+				ativa_rom <= '1';
+				end if;			
+			end if;
+			if cont3 = n - 1 then
+				cont2 := 0;
+				cont := 0;
+				cont3 := 0;
+			   ativa_rom <= '1';
+			end if;
+			end if;
+	 end Process;
+end Architecture;

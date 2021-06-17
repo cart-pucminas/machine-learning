@@ -1,0 +1,24 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+Entity Mult is 
+generic (n : integer := 7); --tamanho da palavra;
+	Port(
+		entrada1: in  bit;
+		entrada2: in  bit;
+		entradaend1: in std_logic_vector(4 downto 0);
+		entradaend2: in std_logic_vector(4 downto 0);
+		ativa: in integer range 0 to 2;
+		saida_enable: out bit;
+		saida_ender: out std_logic_vector(4 downto 0)
+	);
+end Entity;
+
+
+ARCHITECTURE arch of Mult is
+	Begin
+	saida_ender <= entradaend1 when ativa = 1 else
+	 entradaend2 when ativa = 2 else
+	 (others => '0');
+	
+end arch;
