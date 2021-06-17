@@ -1,0 +1,43 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+USE ieee.std_logic_unsigned.all;
+
+Entity Apriorigem_3 is 
+Generic (n: INTEGER := 5);
+Port(
+	clk_in             : in std_logic;
+	enable_proc1       : in STD_LOGIC; 
+	out_DualRam1       : in STD_LOGIC_VECTOR (n DOWNTO 0); --vem da ROM
+	out_DualRam2       : in STD_LOGIC_VECTOR (n DOWNTO 0); 
+	cont_modEnd2       : in integer range 0 to 256;
+	verify             : out STD_LOGIC;
+	out_word           : out STD_LOGIC_VECTOR (n DOWNTO 0)
+);
+End Entity;
+-- Bloco para que verifica todos os n-itens na palavra está contido dentro da mememória que contém todos os n-itens frequentes
+-- recebe a quantidade de itens contido em cada palavra, além das quatidades de cada n-conjunto salva na memoria.
+ARCHITECTURE apriorigem OF Apriorigem_3 IS
+Signal aux1, aux2: Integer range 0 to n;
+
+	Begin
+		Process(clk_in,enable_proc1)
+		variable cont1, cont2 : Integer range 0 to n;
+		variable verificador1, verificador2, verificador3: STD_LOGIC; 
+		variable aux3 : STD_LOGIC_VECTOR (n DOWNTO 0);
+		Begin
+		
+			if clk_in' event and clk_in = '1' and enable_proc1 = '1' then
+		     if out_DualRam1 = out_DualRam2 then
+			     verificador1 := '1';
+			  end if;
+			  cont1 := cont1 + 1;
+			  if cont1 > cont_modEnd2 then
+			     if verificador1 = '0' then
+				     verify <= '1';
+				  end if;
+				 cont1 := 0;
+				end if;
+			 end if;	
+		end Process;
+end ARCHITECTURE;
