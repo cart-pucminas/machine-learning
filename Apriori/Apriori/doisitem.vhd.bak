@@ -1,0 +1,31 @@
+	library ieee;
+	use ieee.std_logic_1164.all;
+	
+	Entity doisitem is
+	generic (n: integer := 7);
+	Port (
+		clk_in     : in std_logic;
+		enablepro  : in std_logic;
+		mem_1item  : in std_logic_vector(n downto 0);
+		mem_1item_1: in std_logic_vector(n downto 0);
+		saida      : out std_logic_vector(n downto 0)
+	);
+	end Entity;
+	
+	Architecture arch of doisitem is
+	Begin
+		Process (clk_in, enablepro, mem_1item, mem_1item_1)
+		variable vector1, vector2, zero : std_logic_vector(n downto 0);
+		variable cont : integer range 0 to n;
+		Begin
+			if clk_in'event and clk_in = '1' and enablepro = '1' then
+			  zero := (others => '0');
+			  vector1 := mem_1item;
+				vector2 := mem_1item_1;
+				if vector1 /= zero and vector2 /= zero then
+					saida <= vector1 or vector2;
+				end if;
+			end if;
+
+		end Process;
+	end arch;
