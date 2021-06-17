@@ -1,0 +1,525 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "SaidaFinal[127]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[126]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[125]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[124]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[123]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[122]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[121]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[120]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[119]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[118]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[117]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[116]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[115]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[114]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[113]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[112]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[111]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[110]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[109]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[108]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[107]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[106]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[105]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[104]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[103]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[102]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[101]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[100]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[99]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[98]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[97]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[96]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[95]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[94]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[93]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[92]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[91]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[90]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[89]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[88]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[87]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[86]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[85]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[84]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[83]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[82]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[81]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[80]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[79]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[78]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[77]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[76]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[75]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[74]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[73]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[72]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[71]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[70]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[69]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[68]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[67]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[66]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[65]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[64]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[63]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[62]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[61]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[60]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[59]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[58]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[57]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[56]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[55]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[54]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[53]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[52]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[51]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[50]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[49]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[48]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[47]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[46]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[45]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[44]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[43]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[42]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[41]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[40]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[39]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[38]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[37]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[36]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[35]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[34]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[33]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[32]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[31]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[30]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[29]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[28]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[27]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[26]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[25]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[24]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[23]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[22]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[21]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[20]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[19]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[18]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[17]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[16]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[15]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[14]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[13]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[12]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[11]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[10]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[9]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[8]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[7]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SaidaFinal[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clk_in",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
