@@ -1,8 +1,8 @@
 ### Convolutional Neural Network - FPGA
 
-- Projeto de mestrado desenvolvido pelo aluno Lucas Andrade Maciel, utilizando como base a biblioteca open source tiny-dnn;
-- Divisão do projeto em duas partes (database e opencl_cnn);
-- Database: Contempla a base de dados original de detecção de intrusões de rede utilizada, e scripts em c, capazes de converter a base original no formato utilizado pela CNN;
-- Opencl_cnn: Contempla o código da rede neural utilizada, bem como os seus arquivos fontes e bases utilizadas para treino e teste;
-- Aplicação foi executada, utilizando como infraestrutura o cluster de FPGA vLab disponibilizado pela Intel;
-- Utilização das linguagens C/C++ e OpenCL no desenvolvimento do projeto.
+- Master's degree project developed by student Lucas Andrade Maciel, using the open-source tiny-dnn library as a base.
+- The project is divided into two parts (database and opencl_cnn).
+- Database: It includes the original network intrusion detection database used and C scripts that can convert the original database into the format used by the CNN.
+- Opencl_cnn: It includes the code of the neural network used, as well as its source files and databases used for training and testing.
+- The application was executed using the FPGA vLab cluster provided by Intel as infrastructure.
+- The use of C/C++ and OpenCL languages in the development of the project.
