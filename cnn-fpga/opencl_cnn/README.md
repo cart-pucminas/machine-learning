@@ -64,4 +64,4 @@
 
                `quartus_pow ./top.qdb --default_input_io_toggle_rate=12.5% --default_toggle_rate=12.5% --estimate_power=on`
 
-    - To check the hardware resource usage, simply view the report displayed in the **meuapp.log** file.
+    - To check the hardware resource usage, simply view the report displayed in the **myapp.log** file.
