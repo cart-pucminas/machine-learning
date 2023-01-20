@@ -1,5 +1,5 @@
 ### Database
-- The database used in this work is the NSL-KDD, available in the repository [defecom](https://github.com/defcom17/NSL_KDD);;
+- The database used in this work is the NSL-KDD, available in the repository [defecom](https://github.com/defcom17/NSL_KDD);
 - The original files of the database are located in the *nsl_kdd* folder;
 - The convert2cnn folder contains a script capable of converting a NSL-KDD database CSV file to a normalized format that can be processed by the developed CNN;
 - The source code of this script is available in the *convert2cnn/src* folder. In addition, a project was developed to run the script, with test files (*conver2cnn/codeblocks_project*);
