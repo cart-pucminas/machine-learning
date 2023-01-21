@@ -2,7 +2,7 @@
 https://www.cart-research.com/home/machine-learning
 
 - **cnn-fpga**: convolutional neural network codes in C++/OpenCL for CPU+FPGA platforms
-- **kmeans_processor**: VHDL codes for K-means and K-modes
+- **kmeans_processor** (*Kmeans_Processador*): VHDL codes for K-means and K-modes
 - **Apriori**: VHDL codes
 
 - About HARP Cluster at Paderborn University: https://pc2.uni-paderborn.de/hpc-services/available-systems/fpga-research-clusters/harp-research-cluster
