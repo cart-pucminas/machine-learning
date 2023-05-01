@@ -42,7 +42,7 @@
 
     - Access the folder **cnn-fpga/opencl_cnn/FPGACNN/FpgaCNN/device** and generate the *.aocx* file of the kernel;
 
-           `qsub-aoc hello_world.cl`
+           `qsub-aoc cnn_train.cl`
 
     - If you wish, you can verify if the *.cl* file is in the execution queue;
 
@@ -54,7 +54,7 @@
 
     - Copy the generated *.aocx* file to the folder **cnn-fpga/opencl_cnn/FPGACNN/FpgaCNN/bin**;
 
-             `cp cnn-fpga/opencl_cnn/FPGACNN/FpgaCNN/device/hello_world.aocx cnn-fpga/opencl_cnn/FPGACNN/FpgaCNN/bin`
+             `cp cnn-fpga/opencl_cnn/FPGACNN/FpgaCNN/device/cnn_train.aocx cnn-fpga/opencl_cnn/FPGACNN/FpgaCNN/bin`
 
     - Access the folder **cnn-fpga/opencl_cnn/FPGACNN** and execute the training of the network;
 
